@@ -4,7 +4,7 @@ This repo is intended to simply test Vue.
 
 ## Note
 
-You can [view here](githopkins.github.io).
+You can [view here](http://githopkins.github.io).
 
 
 ## lol
