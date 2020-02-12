@@ -1,7 +1,14 @@
-html, body, body > * {
+html, body {
     margin: 0;
     padding: 0;
     background: #191d24;
     color: #bdc3cd;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: .975rem;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
