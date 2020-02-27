@@ -8,28 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 </head>
+
+
 <body>
-    <div id="app">
-        {{ message }}
-      </div>
 
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div id="app">
+        <div class="cart">
+          <p>Cart({{ cart.length }})</p>
+        </div>
+        <product :premium="premium" @add-to-cart="updateCart"></product>    
+      </div> 
 
 <script src="main.js"></script>
 </body>
