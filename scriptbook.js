@@ -1,1 +1,1 @@
-/*AnnieMac Scriptbook Document*/
+// AnnieMac Script Document
