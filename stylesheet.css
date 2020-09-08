@@ -43,6 +43,10 @@ tr .delete-row {
 	width: 100%;
 }
 
+.required-asterisk {
+	display: contents;
+}
+
 input, select {
 	background: #fff;
     border: 0;
