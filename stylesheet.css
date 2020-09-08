@@ -17,7 +17,6 @@ th, td {
     text-align: left;
     height: 44px;
     width: 200px;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
