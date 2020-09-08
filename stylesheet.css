@@ -72,3 +72,8 @@
     line-height: 1.5;
     font-weight: 400;
 }
+
+#add-co-borrower, #add-asset-real-estate {
+    color: #006fa9 !important;
+    background: transparent !important;
+}
