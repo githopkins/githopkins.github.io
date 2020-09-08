@@ -31,7 +31,7 @@ td input, td select {
 	min-width: 100%;
 	margin: 0;
 	padding: 0 !important;
-	padding-left: 10px !important;
+	padding-left: 15px !important;
 	display: flex;
 }
 
@@ -41,6 +41,10 @@ tr .delete-row {
 
 .money-field {
 	width: 100%;
+}
+
+.money-field input {
+	text-indent: 0;
 }
 
 .required-asterisk {
