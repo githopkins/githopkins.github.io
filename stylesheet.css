@@ -28,7 +28,6 @@
 }
 
 .page-loan-apply td input, .page-loan-apply td select {
-	min-width: 100%;
 	margin: 0;
 	padding: 0 !important;
 	padding-left: 18px !important;
