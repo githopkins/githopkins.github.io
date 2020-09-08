@@ -72,7 +72,7 @@
     font-weight: 400;
 }
 
-#add-co-borrower, #add-asset-real-estate {
+#add-co-borrower, #add-asset-real-estate, #add-asset-account {
     color: #006fa9 !important;
     background: transparent !important;
     width: 250px !important;
