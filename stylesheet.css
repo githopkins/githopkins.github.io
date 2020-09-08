@@ -4,26 +4,26 @@
 	background: rgba(0,0,0,.05);
 }
 
-table {
+.page-loan-apply table {
     display: flex;
 }
 
-tr {
+.page-loan-apply tr {
     display: flex;
     flex-direction: column;
 }
 
-tbody {
+.page-loan-apply tbody {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-tbody tr {
+.page-loan-apply tbody tr {
 	margin-right: 15px;
 	margin-bottom: 30px;
 }
 
-th, td {
+.page-loan-apply th, .page-loan-apply td {
     height: 47px;
     width: 200px;
     display: flex;
@@ -32,7 +32,7 @@ th, td {
     margin: 4px 0px !important;
 }
 
-td input, td select {
+.page-loan-apply td input, .page-loan-apply td select {
 	min-width: 100%;
 	margin: 0;
 	padding: 0 !important;
@@ -40,23 +40,23 @@ td input, td select {
 	display: flex;
 }
 
-tr .delete-row {
+.page-loan-apply tr .delete-row {
 	margin-left: 0;
 }
 
-.money-field {
+.page-loan-apply .money-field {
 	width: 100%;
 }
 
-.money-field input {
+.page-loan-apply .money-field input {
 	text-indent: 2px;
 }
 
-.required-asterisk {
+.page-loan-apply .required-asterisk {
 	display: contents;
 }
 
-input, select {
+.page-loan-apply input, .page-loan-apply select {
 	background: #fff;
     border: 0;
     border-radius: 4px;
@@ -72,14 +72,3 @@ input, select {
     line-height: 1.5;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
