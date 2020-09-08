@@ -35,6 +35,10 @@ td input, td select {
 	display: flex;
 }
 
+.money-field {
+	width: 100%;
+}
+
 input, select {
 	background: #fff;
     border: 0;
