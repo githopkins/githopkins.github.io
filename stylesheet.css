@@ -71,7 +71,7 @@
     font-weight: 400;
 }
 
-.ethnicity_other input {
+.ethnicity_other input, .race_other input {
     margin: 0;
 }
 
