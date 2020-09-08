@@ -46,6 +46,10 @@
 	text-indent: 2px;
 }
 
+.money-field input {
+    background-position-x: 1%;
+}
+
 .page-loan-apply tbody .required-asterisk {
 	display: contents;
 }
