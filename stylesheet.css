@@ -71,4 +71,6 @@
     color: #006fa9 !important;
     background: transparent !important;
     width: 250px !important;
+    font-weight: bold;
+    font-size: 16px;
 }
