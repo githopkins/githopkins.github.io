@@ -24,6 +24,7 @@ th, td {
     display: flex;
     align-items: center;
     padding: 0px !important;
+    margin: 1px 0px !important;
 }
 
 td input, td select {
