@@ -19,7 +19,7 @@ tbody {
 }
 
 th, td {
-    height: 44px;
+    height: 47px;
     width: 200px;
     background: red;
     display: flex;
