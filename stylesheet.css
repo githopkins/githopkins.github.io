@@ -1,9 +1,4 @@
 /* AnnieMac Stylesheet Document */
-
-.page-loan-apply {
-	background: rgba(0,0,0,.05);
-}
-
 .page-loan-apply table {
     display: flex;
 }
