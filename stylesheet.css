@@ -13,7 +13,7 @@ tr {
     flex-direction: column;
 }
 
-th {
+th, td {
     text-align: left;
     height: 44px;
     width: 200px;
