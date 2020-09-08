@@ -35,6 +35,10 @@ td input, td select {
 	display: flex;
 }
 
+tr .delete-row {
+	margin-left: 0;
+}
+
 .money-field {
 	width: 100%;
 }
