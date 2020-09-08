@@ -38,15 +38,15 @@
 	margin-left: 0;
 }
 
-.page-loan-apply .money-field {
+.page-loan-apply tbody .money-field {
 	width: 91%;
 }
 
-.page-loan-apply .money-field input {
+.page-loan-apply tbody .money-field input {
 	text-indent: 2px;
 }
 
-.page-loan-apply .required-asterisk {
+.page-loan-apply tbody .required-asterisk {
 	display: contents;
 }
 
