@@ -43,7 +43,8 @@
 }
 
 .page-loan-apply tbody .money-field input {
-	text-indent: 2px;
+    text-indent: 10px;
+    background-position-x: 13px;
 }
 
 .money-field input {
