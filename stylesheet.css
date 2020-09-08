@@ -13,6 +13,10 @@ tr {
     flex-direction: column;
 }
 
+tbody {
+	display: flex;
+}
+
 th, td {
     text-align: left;
     height: 44px;
