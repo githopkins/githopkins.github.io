@@ -226,3 +226,7 @@ form input, form textarea {
     justify-content: space-between;
     align-items: center;
 }
+
+#asset-real-estate-wrapper > .form-horizontal {
+    flex-direction: column;
+}
