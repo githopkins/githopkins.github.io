@@ -1,4 +1,16 @@
 /* AnnieMac Stylesheet Document */
+.page-loan-apply form {
+    width: 100%;
+}
+
+form-horizontal {
+    display: flex;
+}
+
+.control-group {
+    width: 95%;
+}
+
 .page-loan-apply table {
     display: flex;
 }
