@@ -307,9 +307,6 @@ form input, form textarea {
 form label, .government-monitoring p {
     font-size: 15px;
 }
-#expense-housing .form-horizontal .span-half .control-group {
-    width: 50%;
-}
 #loan-app-form-step1 .control-group:nth-of-type(9) {
     margin-top: 10px;
     min-height: 275px;
