@@ -24,6 +24,7 @@
 
 .loan-app select {
     width: auto;
+    text-align: left;
 }
 
 .page-loan-apply th, .page-loan-apply td {
