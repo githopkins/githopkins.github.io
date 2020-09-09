@@ -20,6 +20,10 @@
     margin: 0 auto;
 }
 
+.loan-app p label {
+    margin-bottom: 0px;
+}
+
 .page-loan-apply table {
     display: flex;
 }
