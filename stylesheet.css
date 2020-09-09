@@ -362,8 +362,14 @@ form label, .government-monitoring p {
     font-size: 15px;
     text-align: center;
 }
+#sudoux_mortgagebundle_loanapplicationtype_loan_type .choice-row {
+    min-height: 50px;
+    justify-content: flex-start;
+    width: 250px;
+}
 .loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
     min-width: 22px;
     min-height: 22px;
+    flex: 0;
 }
 }
