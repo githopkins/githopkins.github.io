@@ -227,6 +227,14 @@ form input, form textarea {
     align-items: center;
 }
 
+#realtor-form {
+    width: 90%;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_title_company1, #sudoux_mortgagebundle_loanapplicationtype_title_company2 {
+    max-width: 400px;
+}
+
 #asset-real-estate-wrapper > .form-horizontal {
     flex-direction: column;
 }
