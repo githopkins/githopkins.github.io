@@ -3,6 +3,10 @@
     width: 90%;
 }
 
+#property-info-wrapper, #borrower-wrapper, #title-info, #employment-wrapper, #assets-wrapper, #housing-wrapper, #declarations-wrapper, #govt-monitoring-wrapper {
+    width: 100%;
+}
+
 .span-half:first-of-type {
     padding-right: 20px;
 }
