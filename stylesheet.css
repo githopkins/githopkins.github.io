@@ -54,12 +54,12 @@
     justify-content: space-between;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location {
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
     max-width: 80px;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode {
-    max-width: 160px;
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_location_zipcode {
+    max-width: 167px;
 }
 
 #sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school, #sudoux_mortgagebundle_loanapplicationtype_sale_price, #sudoux_mortgagebundle_loanapplicationtype_loan_amount, #sudoux_mortgagebundle_loanapplicationtype_num_units, #sudoux_mortgagebundle_loanapplicationtype_property_year_built {
