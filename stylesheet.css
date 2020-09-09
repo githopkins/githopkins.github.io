@@ -280,4 +280,7 @@ form input, form textarea {
     .page-loan-apply th, .page-loan-apply td {
         margin: 8px 0 !important;
     }
+    .declaration .choice-row {
+        margin-top: -8px;
+    }
 }
