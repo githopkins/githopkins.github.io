@@ -177,6 +177,10 @@ form input, form textarea {
     height: initial;
 }
 
+.government-monitoring .control-group .choice-row {
+    display: flex;
+}
+
 .government-monitoring .control-group .choice-row input {
     width: auto;
     flex: 0;
