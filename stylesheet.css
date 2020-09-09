@@ -1,6 +1,6 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply form {
-    width: 100%;
+    width: 90%;
 }
 
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
@@ -104,6 +104,7 @@ form input, form textarea {
 
 .employment-form div.span-half:nth-child(2) > div:nth-child(2) {
     display: flex;
+    justify-content: space-between;
 }
 
 .employment-form div.span-half:nth-child(2) > div:nth-child(2) > input {
