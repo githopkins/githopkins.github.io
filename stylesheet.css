@@ -70,6 +70,10 @@
     max-width: 162px;
 }
 
+#asset-account-wrapper select {
+    min-width: 204px;
+}
+
 .page-loan-apply th, .page-loan-apply td {
     height: 47px;
     width: 200px;
