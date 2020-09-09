@@ -24,6 +24,7 @@
 
 .loan-app select {
     width: auto;
+    padding: 16px;
     text-align: left;
 }
 
