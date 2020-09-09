@@ -303,6 +303,7 @@ form input, form textarea {
 }
 .declaration .choice-row {
     margin-top: -8px;
+    align-items: center;
 }
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
     width: 90%;
@@ -360,5 +361,8 @@ form label, .government-monitoring p {
     font-size: 15px;
     text-align: center;
 }
-
+.loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
+    min-width: 22px;
+    min-height: 22px;
+}
 }
