@@ -230,3 +230,7 @@ form input, form textarea {
 #asset-real-estate-wrapper > .form-horizontal {
     flex-direction: column;
 }
+
+#asset-real-estate-wrapper > .clearfix {
+    flex-direction: row;
+}
