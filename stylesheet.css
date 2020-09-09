@@ -375,4 +375,7 @@ form label, .government-monitoring p {
     min-height: 22px;
     flex: 0;
 }
+.pw-hint {
+    display: none;
+}
 }
