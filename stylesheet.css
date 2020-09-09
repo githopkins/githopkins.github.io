@@ -259,6 +259,9 @@ form input, form textarea {
 
 
 @media only screen and (max-width: 900px) {
+    #loan-application-nav li a > .description {
+        display: none;
+    }
     .form-horizontal, #asset-real-estate-wrapper .clearfix {
         flex-direction: column;
     }
