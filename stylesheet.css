@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.loan-app .clearfix, .borrower-form header, .government-monitoring {
+    width: 100%;
+    margin: 0 auto !important;
+}
+
 .page-loan-apply table {
     display: flex;
 }
