@@ -173,6 +173,15 @@ form input, form textarea {
     margin-top: 25px !important;
 }
 
+.government-monitoring .control-group {
+    height: initial;
+}
+
+.government-monitoring .control-group .choice-row input {
+    width: auto;
+    flex: 0;
+}
+
 #govt-monitoring-form-812030 {
     flex-direction: column;
 }
