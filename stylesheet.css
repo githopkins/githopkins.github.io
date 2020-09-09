@@ -96,11 +96,11 @@
 
 .page-loan-apply tbody .money-field input {
     text-indent: 10px;
-    background-position-x: 13px;
+    background-position-x: 12px;
 }
 
 .money-field input {
-    background-position-x: 1%;
+    background-position-x: 12px;
 }
 
 .page-loan-apply .required-asterisk {
