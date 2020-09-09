@@ -315,10 +315,10 @@ form input, form textarea {
 form label, .government-monitoring p {
     font-size: 16px;
 }
-/*#loan-app-form-step1 .control-group:nth-of-type(9) {
+#loan-app-form-step1 .span-half:first-of-type .control-group:nth-of-type(9) {
     margin-top: 10px;
     min-height: 275px;
-}*/
+}
 .property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
     display: flex;
     flex-direction: column;
