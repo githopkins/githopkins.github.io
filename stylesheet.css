@@ -353,6 +353,9 @@ form label, .government-monitoring p {
     display: flex;
     flex-direction: column;
 }
+.loan-app p {
+    width: 90%;
+}
 .loan-app > p:first-of-type {
     font-size: 15px;
     text-align: center;
