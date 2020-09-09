@@ -261,9 +261,9 @@ form input, form textarea {
 @media only screen and (max-width: 900px) {
 
 .loan-app {
-    width: 90%;
+    width: 95%;
     margin: 40px auto 0;
-    min-width: 600px;
+    max-width: 600px;
     overflow-x: hidden;
 }
 
