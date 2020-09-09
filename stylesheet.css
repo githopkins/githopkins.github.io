@@ -240,5 +240,6 @@ form input, form textarea {
 }
 
 #asset-real-estate-wrapper .clearfix {
+    display: flex;
     flex-direction: row;
 }
