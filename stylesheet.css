@@ -313,7 +313,7 @@ form input, form textarea {
     width: 90%;
 }
 form label, .government-monitoring p {
-    font-size: 15px;
+    font-size: 16px;
 }
 #loan-app-form-step1 .control-group:nth-of-type(9) {
     margin-top: 10px;
