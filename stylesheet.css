@@ -1,6 +1,6 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply form {
-    width: 100%;
+    width: 97%;
 }
 
 #property-info-wrapper, #borrower-wrapper, #title-info, #employment-wrapper, #assets-wrapper, #housing-wrapper, #declarations-wrapper, #govt-monitoring-wrapper {
@@ -16,7 +16,7 @@
 }
 
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
-    width: 100%;
+    width: 97%;
     margin: 0 auto;
 }
 
