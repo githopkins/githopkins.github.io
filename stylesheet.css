@@ -62,7 +62,7 @@
     max-width: 160px;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school, #sudoux_mortgagebundle_loanapplicationtype_sale_price, #sudoux_mortgagebundle_loanapplicationtype_loan_amount {
+#sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school, #sudoux_mortgagebundle_loanapplicationtype_sale_price, #sudoux_mortgagebundle_loanapplicationtype_loan_amount, #sudoux_mortgagebundle_loanapplicationtype_num_units, #sudoux_mortgagebundle_loanapplicationtype_property_year_built {
     max-width: 162px;
 }
 
