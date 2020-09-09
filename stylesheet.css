@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-form-horizontal {
+.form-horizontal {
     display: flex;
 }
 
