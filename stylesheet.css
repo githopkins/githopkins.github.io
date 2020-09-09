@@ -377,6 +377,7 @@ form label, .government-monitoring p {
     height: auto;
 }
 .pw-hint {
-    margin-bottom: 20px;
+    margin-top: -18px;
+    margin-bottom: 10px;
 }
 }
