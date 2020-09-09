@@ -3,6 +3,14 @@
     width: 90%;
 }
 
+.span-half:first-of-type {
+    padding-right: 20px;
+}
+
+.span-half:last-of-type {
+    padding-left: 20px;
+}
+
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
     width: 90%;
     margin: 0 auto;
