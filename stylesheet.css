@@ -30,7 +30,27 @@
 .loan-app select {
     width: auto;
     padding: 16px;
+    min-width: 190px;
     text-align: left;
+}
+
+#loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location {
+    max-width: 80px;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode {
+    max-width: 160px;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school {
+    max-width: 162px;
 }
 
 .page-loan-apply th, .page-loan-apply td {
