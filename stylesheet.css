@@ -4,8 +4,8 @@
 }
 
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
-    width: 100%;
-    margin: 0 auto !important;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .page-loan-apply table {
