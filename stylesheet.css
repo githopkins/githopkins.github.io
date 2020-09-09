@@ -325,4 +325,25 @@ form label, .government-monitoring p {
     display: flex;
     flex-direction: column;
 }
+.declaration-summary p {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    margin-left: -10px;
+    font-size: 16px;
+}
+.government-monitoring-wrapper tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.government-monitoring-wrapper tbody th {
+    width: 99%;
+    text-align: left;
+}
+.government-monitoring-wrapper tbody td {
+    width: 98%;
+    height: 12px;
+}
 }
