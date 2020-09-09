@@ -5,6 +5,7 @@
 
 .form-horizontal {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .control-group {
