@@ -70,7 +70,7 @@
     max-width: 162px;
 }
 
-#asset-account-wrapper select, #income-monthly-wrapper select {
+#asset-account-wrapper select, #income-monthly-wrapper select, #sudoux_mortgagebundle_loanapplicationtype_property_location_state {
     min-width: 204px;
 }
 
