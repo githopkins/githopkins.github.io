@@ -256,3 +256,20 @@ form input, form textarea {
     display: flex;
     flex-direction: row;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .form-horizontal {
+        flex-direction: column;
+    }
+    .span-half {
+        width: 100% !important;
+    }
+    .span-half:first-of-type {
+        padding-right: 0;
+    }
+    .span-half:last-of-type {
+        padding-left: 0;
+    }
+
+}
