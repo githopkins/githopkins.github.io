@@ -137,6 +137,14 @@
 
 .control-group {
     width: auto;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.control-label {
+    margin-bottom: -5px;
 }
 
 .controls {
