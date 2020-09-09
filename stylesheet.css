@@ -104,8 +104,6 @@ form input, form textarea {
 
 .employment-form div.span-half:nth-child(2) > div:nth-child(2) {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .declaration {
