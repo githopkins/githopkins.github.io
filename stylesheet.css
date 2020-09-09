@@ -104,6 +104,10 @@
     flex-direction: column;
 }
 
+.declaration-wrapper .clearfix {
+    width: 85%;
+}
+
 .declaration-wrapper .declaration .question {
     width: 100%;
     float: none;
