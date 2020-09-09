@@ -56,6 +56,10 @@
 	padding: 0 !important;
 	padding-left: 18px !important;
 	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    text-align: left;
 }
 
 .page-loan-apply tr .delete-row {
