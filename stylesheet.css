@@ -235,10 +235,10 @@ form input, form textarea {
     max-width: 400px;
 }
 
-#asset-real-estate-wrapper > .form-horizontal {
+#asset-real-estate-wrapper .form-horizontal {
     flex-direction: column;
 }
 
-#asset-real-estate-wrapper > .clearfix {
+#asset-real-estate-wrapper .clearfix {
     flex-direction: row;
 }
