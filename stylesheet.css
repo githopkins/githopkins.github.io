@@ -313,5 +313,7 @@ form label, .government-monitoring p {
     margin-top: 10px;
     min-height: 275px;
 }
-
+#co-borrowers-wrapper {
+    margin-top: -200px;
+}
 }
