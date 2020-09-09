@@ -264,6 +264,7 @@ form input, form textarea {
     width: 90%;
     margin: 40px auto 0;
     min-width: 600px;
+    overflow-x: hidden;
 }
 
 .borrower-form {
