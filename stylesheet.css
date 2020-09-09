@@ -99,6 +99,18 @@
     font-weight: 400;
 }
 
+.declaration {
+    display: flex;
+    flex-direction: column;
+}
+
+.declaration-wrapper .declaration .question {
+    width: 100%;
+    float: none;
+    order: -1;
+    margin-bottom: 20px;
+}
+
 .government-monitoring {
     margin-top: 25px !important;
 }
