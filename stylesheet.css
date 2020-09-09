@@ -8,6 +8,10 @@
     flex-wrap: wrap;
 }
 
+.span-half:last-of-type {
+    margin-top: -9px;
+}
+
 .control-group {
     width: 95%;
 }
