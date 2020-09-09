@@ -259,7 +259,7 @@ form input, form textarea {
 
 
 @media only screen and (max-width: 900px) {
-    
+
 .loan-app {
     margin-top: 40px;
 }
@@ -269,6 +269,12 @@ form input, form textarea {
 }
 #loan-application-nav li a > .description {
     display: none;
+}
+#loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2), #co-borrowers-wrapper > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .form-horizontal, #asset-real-estate-wrapper .clearfix {
     flex-direction: column;
@@ -303,6 +309,9 @@ form label, .government-monitoring p {
 #expense-housing .form-horizontal .span-half .control-group {
     width: 50%;
 }
-
+#loan-app-form-step1 .control-group:nth-of-type(9) {
+    margin-top: 10px;
+    min-height: 275px;
+}
 
 }
