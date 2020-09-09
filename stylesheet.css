@@ -374,5 +374,9 @@ form label, .government-monitoring p {
 }
 .control-group {
     min-height: 120px;
+    height: auto;
+}
+.pw-hint {
+    margin-bottom: 20px;
 }
 }
