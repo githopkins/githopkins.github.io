@@ -259,7 +259,9 @@ form input, form textarea {
 
 
 @media only screen and (max-width: 900px) {
-
+.title {
+    display: none;
+}
 .loan-app {
     width: 95%;
     margin: 80px auto 0;
