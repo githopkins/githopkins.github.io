@@ -108,6 +108,10 @@
     border-top: 0;
 }
 
+.hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
 #add-co-borrower, #add-asset-real-estate, #add-asset-account, #add-income-monthly {
     color: #006fa9 !important;
     background: transparent !important;
