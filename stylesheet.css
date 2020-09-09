@@ -22,6 +22,10 @@
 	margin-bottom: 30px;
 }
 
+.loan-app select {
+    width: auto;
+}
+
 .page-loan-apply th, .page-loan-apply td {
     height: 47px;
     width: 200px;
