@@ -271,5 +271,13 @@ form input, form textarea {
     .span-half:last-of-type {
         padding-left: 0;
     }
-
+    #income-monthly-wrapper table {
+        margin-left: 0 !important;
+    }
+    .table thead tr th:nth-of-type(1) {
+        padding-left: 0 !important;
+    }
+    .page-loan-apply th, .page-loan-apply td {
+        margin: 8px 0 !important;
+    }
 }
