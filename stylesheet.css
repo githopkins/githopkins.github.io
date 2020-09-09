@@ -42,6 +42,11 @@
     text-align: left;
 }
 
+.delete-borrower-form {
+    display: block;
+    margin-bottom: 40px;
+}
+
 #loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2), html body.page-loan-apply.step1.logged-in.site-type-corporate div#page-content.container div.row section#content-main.span12 div.inner div.loan-app form#loan-app-form-step1.loan-application-form div#co-borrowers-wrapper div#borrower-form-0.borrower-form.hide div.form-horizontal.clearfix div.span-half div.control-group div.controls {
     display: flex;
     flex-direction: row;
