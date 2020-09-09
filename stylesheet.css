@@ -266,7 +266,9 @@ form input, form textarea {
     max-width: 600px;
     overflow-x: hidden;
 }
-
+.control-label {
+    margin-bottom: 2px;
+}
 .borrower-form {
     width: 100%;
     margin: 0 auto;
