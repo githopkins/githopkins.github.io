@@ -283,4 +283,9 @@ form input, form textarea {
     .declaration .choice-row {
         margin-top: -8px;
     }
-}
+    .loan-app .clearfix, .borrower-form header, .government-monitoring {
+        width: 90%;
+    }
+    .government-monitoring p {
+        font-size: 15px;
+    }
