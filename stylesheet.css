@@ -317,7 +317,7 @@ form label, .government-monitoring p {
 #co-borrowers-wrapper {
     margin-top: -200px;
 }
-.modal-body .borrower-information, #housing-wrapper #housing-expenses {
+.property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
     display: flex;
     flex-direction: column;
 }
@@ -338,6 +338,9 @@ form label, .government-monitoring p {
     flex-direction: column;
     justify-content: flex-start;
 }
+.government-monitoring-wrapper tbody tr {
+    border-bottom: none;
+}
 .government-monitoring-wrapper tbody th {
     width: 99%;
     text-align: left;
@@ -350,4 +353,9 @@ form label, .government-monitoring p {
     display: flex;
     flex-direction: column;
 }
+.loan-app > p:first-of-type {
+    font-size: 15px;
+    text-align: center;
+}
+
 }
