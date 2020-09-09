@@ -117,7 +117,7 @@ form input, form textarea {
 }
 
 .declaration-wrapper .clearfix {
-    width: 85%;
+    width: 90%;
 }
 
 .declaration-wrapper .declaration .question {
@@ -131,6 +131,10 @@ form input, form textarea {
     margin-top: 25px !important;
 }
 
+#govt-monitoring-form-812030 {
+    flex-direction: column;
+}
+
 .ethnicity_other, .race_tribe, .race_other {
     display: none;
 }
@@ -138,6 +142,7 @@ form input, form textarea {
 .hmdaEthnicitySelections, .hmdaRaceSelections, .hmdaSexSelections {
     padding-top: 30px;
     border-top: 0;
+    height: auto;
 }
 
 .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(1) {
