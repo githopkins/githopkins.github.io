@@ -99,8 +99,8 @@
     font-weight: 400;
 }
 
-.ethnicity_other input, .race_other input {
-    margin: 0;
+.ethnicity_other, .race_tribe, .race_other {
+    display: none;
 }
 
 #add-co-borrower, #add-asset-real-estate, #add-asset-account, #add-income-monthly {
