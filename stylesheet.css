@@ -346,4 +346,8 @@ form label, .government-monitoring p {
     width: 98%;
     height: 12px;
 }
+.borrower-initials-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 }
