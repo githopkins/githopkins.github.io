@@ -319,7 +319,7 @@ form label, .government-monitoring p {
     min-height: 275px;
 }
 #co-borrowers-wrapper {
-    margin-top: -200px;
+    margin-top: -100px;
 }
 .property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
     display: flex;
