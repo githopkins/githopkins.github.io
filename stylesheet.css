@@ -3,26 +3,6 @@
     width: 100%;
 }
 
-.form-horizontal {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.span-half:last-of-type {
-    margin-top: -9px;
-}
-
-.control-group {
-    width: 95%;
-}
-
-.controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .page-loan-apply table {
     display: flex;
 }
@@ -138,4 +118,24 @@
     width: 250px !important;
     font-weight: bold;
     font-size: 16px;
+}
+
+.form-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.span-half:last-of-type {
+    margin-top: -9px;
+}
+
+.control-group {
+    width: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
