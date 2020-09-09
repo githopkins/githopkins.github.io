@@ -286,6 +286,13 @@ form input, form textarea {
     .loan-app .clearfix, .borrower-form header, .government-monitoring {
         width: 90%;
     }
-    .government-monitoring p {
+    form label, .government-monitoring p {
         font-size: 15px;
+    }
+    #expense-housing .form-horizontal .span-half {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #expense-housing .form-horizontal .span-half .control-group {
+        width: 50%;
     }
