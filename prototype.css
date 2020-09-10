@@ -290,9 +290,11 @@
 }
 #loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2), #co-borrowers-wrapper > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-start;
+    max-width: 300px;
+    margin-top: 1px;
 }
 .form-horizontal, #asset-real-estate-wrapper .clearfix {
     flex-direction: column;
