@@ -137,7 +137,7 @@
     font-weight: 400;
 }
 
-form input, form textarea {
+.loan-app form input, .loan-app form textarea {
     margin: 18px 0 25px 0;
     padding: 13px;
     border-radius: 4px;
