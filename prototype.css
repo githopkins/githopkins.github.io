@@ -64,8 +64,7 @@
 }
 
 #sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
-    max-width: 100px;
-    min-width: 99px;
+    max-width: 80px;
 }
 
 #sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_asset_real_estate_0_location_zipcode {
@@ -378,6 +377,9 @@ form label, .government-monitoring p {
     min-height: 50px;
     justify-content: flex-start;
     width: 250px;
+}
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
+    min-width: 99px !important;
 }
 .loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
     min-width: 22px;
