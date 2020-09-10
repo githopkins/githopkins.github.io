@@ -266,7 +266,7 @@
     margin-bottom: 33px;
 }
 .page-loan-apply .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
-    margin: 0 !important;
+    margin: 0 5px 0 0 !important;
 }
 
 @media only screen and (max-width: 900px) {
