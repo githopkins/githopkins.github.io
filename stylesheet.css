@@ -227,7 +227,7 @@ form input, form textarea {
 
 .control-group {
     width: auto;
-    height: 120px;
+    height: 127px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
