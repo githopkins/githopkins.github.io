@@ -260,7 +260,10 @@ form input, form textarea {
     display: flex;
     flex-direction: row;
 }
-
+.pw-hint {
+    margin-top: -23px;
+    margin-bottom: 33px;
+}
 
 @media only screen and (max-width: 900px) {
 .title {
