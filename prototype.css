@@ -64,7 +64,8 @@
 }
 
 #sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
-    max-width: 80px;
+    max-width: 100px;
+    min-width: 99px;
 }
 
 #sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_asset_real_estate_0_location_zipcode {
