@@ -268,11 +268,6 @@
 .page-loan-apply .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
     margin: 0 5px 0 0 !important;
 }
-.error {
-    display: block;
-    width: 100%;
-    margin-top: -36px;
-}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
