@@ -346,6 +346,9 @@ form label, .government-monitoring p {
     display: flex;
     flex-direction: column;
 }
+#declarations-wrapper h4 {
+    display: none;
+}
 .declaration-summary p {
     display: flex;
     height: auto;
@@ -416,6 +419,9 @@ form label, .government-monitoring p {
 }
 #asset-account-wrapper .money-field input {
     width: 95%;
+}
+.declaration-summary p {
+    margin: 15px auto 15px -10px;
 }
 .sigWrapper {
     display: block;
