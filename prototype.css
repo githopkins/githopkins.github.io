@@ -417,4 +417,8 @@ form label, .government-monitoring p {
 #asset-account-wrapper .money-field input {
     width: 95%;
 }
+.sigWrapper {
+    display: block;
+    width: 88vw;
+}
 }
