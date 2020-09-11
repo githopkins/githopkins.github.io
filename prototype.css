@@ -404,4 +404,17 @@ form label, .government-monitoring p {
     line-height: 20px;
     margin-bottom: 10px;
 }
+#asset-account-wrapper thead {
+    display: none;
+}
+#asset-account-wrapper tbody {
+    width: 100%;
+    margin-left: -10px;
+} 
+#asset-account-wrapper tr {
+    flex: 1;
+}
+#asset-account-wrapper .money-field input {
+    width: 95%;
+}
 }
