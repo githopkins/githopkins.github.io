@@ -271,6 +271,10 @@
 label.error {
     display: none !important;
 }
+.error, .error-txt, .error-txt li {
+    color: #e01e19;
+    border: 1px solid red !important;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
