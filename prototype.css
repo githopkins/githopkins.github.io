@@ -278,7 +278,7 @@
 label.error {
     display: none !important;
 }
-#employment-wrapper .table-striped thead tr td:nth-of-type(2), #employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
+#employment-wrapper thead th:nth-of-type(2), #employment-wrapper tbody tr td:nth-of-type(2) {
     display: flex !important;
     flex-direction: column !important;
     line-height: 1.7;
