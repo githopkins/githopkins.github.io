@@ -442,6 +442,19 @@ thead {
 #asset-account-wrapper .money-field input {
     width: 104%;
 }
+.borrower-info {
+    display: flex;
+    flex-direction: column;
+}
+#assets-wrapper tbody, #employment-wrapper tbody {
+    margin-left: 50px;
+}
+.government-monitoring-wrapper tbody {
+    width: 100%;
+}
+.government-monitoring-wrapper tbody tr {
+    border: none !important;
+}
 .declaration-summary p {
     margin: 15px auto 15px -10px;
 }
