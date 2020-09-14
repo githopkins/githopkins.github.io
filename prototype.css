@@ -374,6 +374,8 @@ form label, .government-monitoring p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 99%;
+    margin-left: 3px;
 }
 .government-monitoring-wrapper tbody tr {
     border-bottom: none;
