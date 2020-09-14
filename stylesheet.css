@@ -26,6 +26,7 @@
 
 .loan-app p {
     width: 99%;
+    text-align: left;
 }
 
 .loan-app p label {
@@ -536,5 +537,10 @@ thead {
 }
 #form {
     min-width: 95%;
+}
+#creditWell .declaration .question {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
 }
 }
