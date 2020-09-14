@@ -373,6 +373,10 @@ form #comments {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
     flex: 0;
 }
+.property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
@@ -438,10 +442,6 @@ form label, .government-monitoring p {
 #loan-app-form-step1 .span-half:first-of-type .control-group:nth-of-type(9) {
     margin-top: 10px;
     min-height: 275px;
-}
-.property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
-    display: flex;
-    flex-direction: column;
 }
 #declarations-wrapper h4 {
     display: none;
