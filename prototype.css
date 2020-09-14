@@ -372,6 +372,11 @@ form label, .government-monitoring p {
     width: 98%;
     height: 12px;
 }
+.government-monitoring p {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+}
 .borrower-initials-wrapper {
     display: flex;
     flex-direction: column;
