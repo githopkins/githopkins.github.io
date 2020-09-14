@@ -350,6 +350,11 @@ label.error {
     margin-right: 25px !important;
     margin-top: 10px !important;
 }
+form #comments {
+    border-top: 1px solid #7FC24A;
+    padding-top: 25px;
+    margin-top: 20px;
+}
 #comments textarea {
     width: 96%;
 }
