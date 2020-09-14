@@ -388,6 +388,13 @@ form #comments {
 .page-loan-apply.step7 h3.title {
     margin-bottom: 10px;
 }
+.hmdaEthnicitySelections .choice-row, .hmdaRaceSelections .choice-row, .hmdaSexSelections .choice-row {
+    display: flex;
+    align-items: center;
+}
+.hmdaEthnicitySelections .choice-row label, .hmdaRaceSelections .choice-row label, .hmdaSexSelections .choice-row label {
+    position: unset;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
