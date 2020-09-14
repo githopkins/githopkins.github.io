@@ -1,6 +1,6 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply form {
-    width: 97%;
+    width: 100%;
 }
 
 #property-info-wrapper, #borrower-wrapper, #title-info, #employment-wrapper, #assets-wrapper, #housing-wrapper, #declarations-wrapper, #govt-monitoring-wrapper {
@@ -356,7 +356,7 @@ label.error {
 form #comments {
     border-top: 1px solid #7FC24A;
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
 }
 #comments h3 {
     display: none !important;
