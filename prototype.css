@@ -317,6 +317,10 @@ label.error {
     padding-top: 5px;
     margin-bottom: 10px;
 }
+#creditWell {
+    border-top: 1px solid #7FC24A;
+    margin-top: 35px;
+}
 #creditWell .declaration {
     display: flex;
     width: 100%;
@@ -326,6 +330,9 @@ label.error {
 }
 #creditWell .declaration .question {
     padding-left: 0 !important;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 40px;
 }
 #creditWell .declaration .radio-group {
     margin: 0;
