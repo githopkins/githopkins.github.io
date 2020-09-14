@@ -274,6 +274,10 @@
 label.error {
     display: none !important;
 }
+#employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
 .error, .error-txt, .error-txt li {
     color: #e01e19;
     border: 1px solid red !important;
@@ -342,10 +346,6 @@ form label, .government-monitoring p {
     min-height: 275px;
 }
 .property-info, .modal-body .borrower-information, #housing-wrapper #housing-expenses {
-    display: flex;
-    flex-direction: column;
-}
-#employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
     display: flex;
     flex-direction: column;
 }
