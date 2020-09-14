@@ -392,6 +392,13 @@ form label, .government-monitoring p {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
     min-width: 99px !important;
 }
+.employment-form .span-half:last-of-type .control-group:nth-of-type(2) {
+    display: block;
+    color: transparent;
+}
+#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date {
+    float: left;
+}
 .loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
     min-width: 22px;
     min-height: 22px;
