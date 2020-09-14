@@ -281,6 +281,9 @@ label.error {
 #employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
     display: flex !important;
     flex-direction: column !important;
+    line-height: 1.7;
+    height: 80px !important;
+    align-items: flex-start;
 }
 #assets-wrapper p {
     text-align: left;
