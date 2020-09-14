@@ -379,6 +379,10 @@ form #comments {
     display: flex;
     flex-direction: column;
 }
+.page-loan-apply.step7 h3.title {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
