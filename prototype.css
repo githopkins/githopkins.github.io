@@ -323,12 +323,12 @@ label.error {
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
+    padding-left: 0;
 }
 #creditWell .declaration .radio-group {
     margin: 0;
     display: flex;
     margin-top: -50px;
-    padding-left: 35px;
     margin-bottom: 50px;
 }
 .checkbox {
