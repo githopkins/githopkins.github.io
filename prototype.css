@@ -287,10 +287,31 @@ label.error {
     border: 1px solid red !important;
 }
 .government-monitoring-wrapper tbody {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 99%;
+    margin-left: 3px;
 }
 .government-monitoring-wrapper tbody tr {
-    border: none !important;
+    border-bottom: none;
+}
+.government-monitoring-wrapper tbody th {
+    width: 99%;
+    text-align: left;
+}
+.government-monitoring-wrapper tbody td {
+    width: 98%;
+    margin: 0px 0;
+    font-size: 16px;
+    height: 12px;
+}
+.government-monitoring p {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 900px) {
 .title {
@@ -372,33 +393,6 @@ form label, .government-monitoring p {
     flex-direction: column;
     margin-left: -10px;
     font-size: 16px;
-}
-.government-monitoring-wrapper tbody {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 99%;
-    margin-left: 3px;
-}
-.government-monitoring-wrapper tbody tr {
-    border-bottom: none;
-}
-.government-monitoring-wrapper tbody th {
-    width: 99%;
-    text-align: left;
-}
-.government-monitoring-wrapper tbody td {
-    width: 98%;
-    margin: 0px 0;
-    font-size: 16px;
-    height: 12px;
-}
-.government-monitoring p {
-    width: 100%;
-    margin: 0;
-    text-align: left;
-    padding-top: 5px;
-    margin-bottom: 10px;
 }
 .loan-app p {
     width: 99%;
