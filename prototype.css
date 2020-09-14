@@ -279,8 +279,8 @@ label.error {
     display: none !important;
 }
 #employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 #assets-wrapper p {
     text-align: left;
