@@ -355,11 +355,13 @@ label.error {
 }
 form #comments {
     border-top: 1px solid #7FC24A;
-    padding-top: 25px;
     margin-top: 20px;
 }
+#comments h3 {
+    display: none !important;
+}
 #comments textarea {
-    width: 96%;
+    display: none !important;
 }
 .borrower-initials-wrapper {
     display: flex !important;
