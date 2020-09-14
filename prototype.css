@@ -313,6 +313,30 @@ label.error {
     padding-top: 5px;
     margin-bottom: 10px;
 }
+#creditWell .declaration {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+#creditWell .declaration .radio-group {
+    margin: 0;
+    display: flex;
+    margin-top: -50px;
+    padding-left: 35px;
+    margin-bottom: 50px;
+}
+.checkbox {
+    display: flex;
+    margin: 32px auto;
+}
+
+.checkbox input {
+    min-width: 30px;
+    margin-right: 25px !important;
+    margin-top: 10px !important;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
