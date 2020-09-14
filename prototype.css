@@ -371,10 +371,9 @@ form #comments {
     display: flex !important;
     flex-direction: row;
     flex: 0;
-    justify-content: flex-end;
-    margin-left: 0px;
+    justify-content: center;
+    padding-right: 60px !important;
     font-size: 15px;
-    padding-top: 26px;
 }
 #sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
     flex: 0;
