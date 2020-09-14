@@ -278,9 +278,19 @@ label.error {
     display: flex;
     flex-direction: column;
 }
+#assets-wrapper p {
+    text-align: left;
+    margin-left: 0;
+}
 .error, .error-txt, .error-txt li {
     color: #e01e19;
     border: 1px solid red !important;
+}
+.government-monitoring-wrapper tbody {
+    width: 100%;
+}
+.government-monitoring-wrapper tbody tr {
+    border: none !important;
 }
 @media only screen and (max-width: 900px) {
 .title {
@@ -452,12 +462,6 @@ thead {
 }
 #assets-wrapper tbody, #employment-wrapper tbody {
     margin-left: 50px;
-}
-.government-monitoring-wrapper tbody {
-    width: 100%;
-}
-.government-monitoring-wrapper tbody tr {
-    border: none !important;
 }
 .declaration-summary p {
     margin: 15px auto 15px -10px;
