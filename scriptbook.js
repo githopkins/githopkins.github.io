@@ -22,6 +22,13 @@ $(document).ready(function() {
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_3_balance").prop("placeholder", "Account Balance");
 		$("#add-asset-account").hide();
 	});
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_base").prop("placeholder", "Base");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_overtime").prop("placeholder", "Overtime");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_bonus").prop("placeholder", "Bonus");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_commission").prop("placeholder", "Commission");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_interest").prop("placeholder", "Interest");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_rent_net").prop("placeholder", "Net Rent");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_other").prop("placeholder", "Other");
 	$("#add-income-monthly").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_base").prop("placeholder", "Base");
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_overtime").prop("placeholder", "Overtime");
