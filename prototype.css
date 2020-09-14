@@ -356,7 +356,7 @@ label.error {
     display: flex !important;
     flex-direction: row;
     flex: 0;
-    float: left;
+    justify-content: flex-end;
     margin-left: 0px;
     font-size: 15px;
     padding-top: 26px;
