@@ -381,9 +381,9 @@ form #comments {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
     flex: 0;
 }
-.property-info, .modal-body .borrower-information, .borrower-info, , #title-info, #housing-wrapper #housing-expenses {
+#property-info-wrapper .property-info, .modal-body .borrower-info, .borrower-info, #title-info, #housing-wrapper #housing-expenses {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 .page-loan-apply.step7 h3.title {
     margin-bottom: 10px;
