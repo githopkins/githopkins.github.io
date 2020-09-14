@@ -352,6 +352,9 @@ label.error {
 #comments textarea {
     width: 96%;
 }
+#sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
+    flex: 0;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
