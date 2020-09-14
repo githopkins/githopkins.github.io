@@ -22,4 +22,14 @@ $(document).ready(function() {
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_3_balance").prop("placeholder", "Account Balance");
 		$("#add-asset-account").hide();
 	});
+	$("#add-income-monthly").click(function(){
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_base").prop("placholder", "Base");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_overtime").prop("placholder", "Overtime");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_bonus").prop("placholder", "Bonus");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_commission").prop("placholder", "Commission");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_interest").prop("placholder", "Interest");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_rent_net").prop("placholder", "Net Rent");
+		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_other").prop("placholder", "Other");
+		$("#add-income-monthly").hide();
+	});
 });
