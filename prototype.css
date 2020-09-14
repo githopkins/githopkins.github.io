@@ -352,6 +352,15 @@ label.error {
 #comments textarea {
     width: 96%;
 }
+.borrower-initials-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    flex: 0;
+    float: left;
+    margin-left: 0px;
+    font-size: 15px;
+    padding-top: 26px;
+}
 #sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
     flex: 0;
 }
