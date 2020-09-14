@@ -423,8 +423,11 @@ form label, .government-monitoring p {
 #asset-account-wrapper tr {
     flex: 1;
 }
+#asset-account-wrapper td {
+    width: 100%;
+}
 #asset-account-wrapper .money-field input {
-    width: 102%;
+    width: 93%;
 }
 .declaration-summary p {
     margin: 15px auto 15px -10px;
