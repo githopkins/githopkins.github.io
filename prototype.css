@@ -380,7 +380,7 @@ form #comments {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
     flex: 0;
 }
-.property-info, .modal-body .borrower-information, .borrower-info, #housing-wrapper #housing-expenses {
+.property-info, .modal-body .borrower-information, .borrower-info, , #title-info, #housing-wrapper #housing-expenses {
     display: flex;
     flex-direction: column;
 }
