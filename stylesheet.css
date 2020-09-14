@@ -1,4 +1,10 @@
 /* AnnieMac Stylesheet Document */
+
+
+
+
+
+/*Application*/
 .page-loan-apply form {
     width: 100%;
 }
@@ -553,5 +559,8 @@ thead {
     margin-top: 15px;
     text-align: center;
     width: 100%;
+}
+#calculations-and-numbers {
+    padding-bottom: 60px;
 }
 }
