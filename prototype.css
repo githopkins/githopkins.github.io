@@ -199,7 +199,7 @@
 }
 
 .hmdaEthnicitySelections, .hmdaRaceSelections, .hmdaSexSelections {
-    padding-top: 30px;
+    padding-top: 0px;
     border-top: 0;
     height: auto;
 }
@@ -448,5 +448,8 @@ thead {
 .sigWrapper {
     display: block;
     width: 88vw;
+}
+.hmdaEthnicitySelections .checkbox-group .choice-row:nth-of-type(5), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(9), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(15) {
+    margin-bottom: 10px !important;
 }
 }
