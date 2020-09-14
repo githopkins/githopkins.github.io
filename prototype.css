@@ -323,7 +323,9 @@ label.error {
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
-    padding-left: 0;
+}
+#creditWell .declaration .question {
+    padding-left: 0 !important;
 }
 #creditWell .declaration .radio-group {
     margin: 0;
