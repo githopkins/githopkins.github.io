@@ -298,7 +298,8 @@ label.error {
     margin-left: 3px;
 }
 .government-monitoring-wrapper tbody tr {
-    border-bottom: none;
+    border-bottom: none !important;
+    margin: 3px 0;
 }
 .government-monitoring-wrapper tbody th {
     width: 99%;
