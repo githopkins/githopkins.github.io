@@ -414,12 +414,15 @@ form #comments {
     width: 50%;
     justify-content: flex-start;
 }
+.borrower-previous-location-form h3 {
+    margin: 0 0 20px 0;
+}
 .borrower-previous-location-form .delete-form {
     display: none;
 }
 .borrower-previous-location-form p small {
     border: none !important;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: block;
     margin: -50px 0 0px;
@@ -595,5 +598,22 @@ thead {
 }
 #calculations-and-numbers {
     padding-bottom: 60px;
+}
+.borrower-previous-location-form p small {
+    border: none !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: -15px 0 0px;
+}
+.borrower-previous-location-form.loan-form {
+    width: 100%;
+    margin: 30px auto;
+        margin-left: auto;
+    margin-left: 33px;
+}
+.borrower-previous-location-form .span-half:last-of-type {
+    padding-left: 0 !important;
+    margin-left: -15px;
 }
 }
