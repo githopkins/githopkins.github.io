@@ -432,9 +432,6 @@ form #comments {
     display: block;
     margin: -45px 0 0px;
 }
-.borrower-previous-location-form .span-half:first-of-type {
-    margin-left: -15px;
-}
 .borrower-previous-location-form .span-half:last-of-type {
     padding-left: 0;
 }
