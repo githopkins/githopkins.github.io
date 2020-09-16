@@ -414,6 +414,9 @@ form #comments {
     width: 50%;
     justify-content: flex-start;
 }
+.borrower-previous-location-form .clearfix {
+    width: 96%;
+}
 .borrower-previous-location-form h3 {
     margin: 0 0 20px 0;
 }
