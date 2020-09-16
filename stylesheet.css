@@ -414,8 +414,16 @@ form #comments {
     width: 50%;
     justify-content: flex-start;
 }
-
-
+.borrower-previous-location-form p small {
+    border: none !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: -50px 0 0px;
+}
+.borrower-previous-location-form .span-half:last-of-type {
+    padding-left: 0;
+}
 
 
 
