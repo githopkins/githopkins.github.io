@@ -416,6 +416,7 @@ form #comments {
 }
 .borrower-previous-location-form .clearfix {
     width: 96%;
+    padding-left: 20px;
 }
 .borrower-previous-location-form h3 {
     text-align: left !important;
