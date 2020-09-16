@@ -3,9 +3,9 @@
 #we-provide-more-3 {
     order: -1;
 }
-.location-listing a p {
+.location-listing a p:first-of-type {
     width: 80%;
-    line-height: 10px;
+    line-height: 20px;
 }
 
 
