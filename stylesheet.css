@@ -626,6 +626,9 @@ thead {
         margin-left: auto;
     margin-left: 33px;
 }
+.borrower-previous-location-form .span-half:first-of-type {
+    margin-left: -15px;
+}
 .borrower-previous-location-form .span-half:last-of-type {
     padding-left: 0 !important;
     margin-left: -15px;
