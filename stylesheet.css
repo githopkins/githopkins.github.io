@@ -3,7 +3,11 @@
 #we-provide-more-3 {
     order: -1;
 }
-
+.location-listing a p {
+    width: 80%;
+    background: red;
+    line-height: 1.2;
+}
 
 
 /*Application*/
