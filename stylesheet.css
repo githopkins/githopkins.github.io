@@ -414,6 +414,9 @@ form #comments {
     width: 50%;
     justify-content: flex-start;
 }
+.borrower-previous-location-form .delete-form {
+    display: none;
+}
 .borrower-previous-location-form p small {
     border: none !important;
     text-align: center;
@@ -424,7 +427,9 @@ form #comments {
 .borrower-previous-location-form .span-half:last-of-type {
     padding-left: 0;
 }
-
+#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_own_residence .choice-row {
+    align-items: center;
+}
 
 
 @media only screen and (max-width: 900px) {
