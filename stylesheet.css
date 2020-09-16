@@ -442,7 +442,9 @@ form #comments {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_own_residence .choice-row {
     align-items: center;
 }
-
+.borrower-previous-location-form.loan-form {
+    margin-left: 16px;
+}
 
 @media only screen and (max-width: 900px) {
 .title {
