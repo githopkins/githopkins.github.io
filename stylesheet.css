@@ -418,7 +418,8 @@ form #comments {
     width: 96%;
 }
 .borrower-previous-location-form h3 {
-    margin: 0 0 20px 0;
+    text-align: left !important;
+    margin-bottom: 44px !important;
 }
 .borrower-previous-location-form .delete-form {
     display: none;
