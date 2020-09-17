@@ -541,29 +541,20 @@ form #comments {
     font-size: 15px;
 }
 .borrower-previous-location-form {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 70%;
     justify-content: flex-start;
-}
-.borrower-previous-location-form .clearfix {
-    padding-left: 7px;
-}
-.borrower-previous-location-form h3 {
-    text-align: left !important;
-    margin: 30px 17px 20px;
-    margin-bottom: 44px !important;
 }
 .borrower-previous-location-form .delete-form {
     display: none;
 }
 .borrower-previous-location-form p small {
     border: none !important;
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: block;
-    margin: -35px 17px 0px;
+    margin: -50px 17px 0px;
 }
 .borrower-previous-location-form .span-half:last-of-type {
     padding-left: 0;
