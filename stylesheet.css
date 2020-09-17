@@ -463,7 +463,9 @@ form #comments {
 .borrower-previous-location-form .span-half:last-of-type .control-group:nth-of-type(2) {
     height: 220px;
 }
-
+#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_city {
+    max-width: 250px !important;
+}
 @media only screen and (max-width: 900px) {
 .title {
     display: none;
@@ -626,7 +628,7 @@ thead {
     margin: 0;
     display: flex;
     flex-direction: column;
-    width: 38%;
+    width: 100%;
     justify-content: flex-start;
 }
 .borrower-previous-location-form p small {
