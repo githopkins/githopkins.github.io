@@ -1,0 +1,7 @@
+#add-co-borrower, #add-asset-real-estate, #add-asset-account, #add-income-monthly {
+    color: #97c553 !important;
+    background: transparent !important;
+    width: 250px !important;
+    font-weight: bold;
+    font-size: 16px;
+}
