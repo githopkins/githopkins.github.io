@@ -8,6 +8,10 @@
     line-height: 20px;
 }
 
+#copyrights ul:nth-of-type(1) {
+    flex-direction: column;
+}
+
 
 /*Application*/
 .page-loan-apply form {
