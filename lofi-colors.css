@@ -1,3 +1,14 @@
+html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inner-layout section#text-based p a.btn.btn-default {
+background: #97c553;
+color: #fff;
+font-weight: bold;
+display: inline-block;
+border-radius: 4px;
+padding: 10px 12px;
+padding-top: 120px;
+text-align: center;
+}
+
 #add-co-borrower, #add-asset-real-estate, #add-asset-account, #add-income-monthly {
     color: #97c553 !important;
     background: transparent !important;
