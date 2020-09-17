@@ -452,7 +452,7 @@ form #comments {
     padding-left: 0;
 }
 #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_address1, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_city {
-    width: 400px;
+    width: 100% !important;
 }
 #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_own_residence .choice-row {
     align-items: center;
