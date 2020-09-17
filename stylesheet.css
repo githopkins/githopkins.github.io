@@ -1,4 +1,116 @@
 /* AnnieMac Stylesheet Document */
+.site-type-branch nav #about-navigation .sub-menu-links li:nth-child(2) {
+    display: none;
+}
+. site-type-loan_officer nav #about-navigation .sub-menu-links li:nth-child(2) {
+    display: none;
+}
+#navigation-logo {
+    width: auto;
+    max-width: 250px;
+}
+.hide {
+display: none;
+}
+html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inner-layout section#text-based p a.btn.btn-default {
+background: #006fa9;
+color: #fff;
+font-weight: bold;
+display: inline-block;
+border-radius: 4px;
+padding: 10px 12px;
+padding-top: 120px;
+text-align: center;
+}
+.government-monitoring p {
+    width: 100%;
+    margin: 20px auto;
+}
+#navigation-logo > a > img {
+    max-height: 42px;
+}
+.page-branch-list > #product-banner {
+    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(/uploads/sites/10713/public/annie_mac_new_banner_branches.jpeg) top left no-repeat;
+    background-size: cover;
+    background-position-y: 53%;
+}
+
+.page-loan-apply-complete > #product-banner {
+    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(/uploads/sites/10713/public/complete.jpeg) top left no-repeat;
+    background-size: cover;
+    background-position-y: 32%;
+}
+
+#loan-officer-wrapper {
+display: none;
+}
+
+#covid-warning {
+background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 30px 25px 25px 25px;
+    line-height: 1.6;
+    margin-top: 90px;
+    z-index: 3;
+}
+
+#covid-warning h4 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #a91202;
+display: flex;
+align-items: center;
+}
+
+#covid-warning h4 span {
+font-size: 13px;
+    margin-left: 15px;
+    color: rgb(169 19 5);
+    border: 1px solid #a91305;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+#covid-warning h4 span:hover {
+cursor: pointer;
+}
+
+#covid-warning p {
+    margin: 15px 0 24px;
+}
+
+#covid-warning a {
+background: #a91202;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 12px;
+    width: 160px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#covid-warning a:hover {
+    opacity: .8;
+}
+
+#annie_mac-loan-officer > #branch-banner {
+background: url(/uploads/sites/10713/public/originator-background-image.jpeg) top left no-repeat;
+    background-size: cover;
+    background-position-y: 63%;
+}
+
+#annie_mac-loan-officer #branch-content h2 {
+    margin-top: 0 !important;
+}
+
+@media screen and (max-width: 800px) {
+#covid-warning {margin-top: 50px;}
+}
 
 #we-provide-more-3 {
     order: -1;
