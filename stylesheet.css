@@ -1,4 +1,22 @@
 /* AnnieMac Stylesheet Document */
+.user-login .inner-layout #form div.alert.alert-error {
+    background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 17px;
+    line-height: 27px;
+    text-align: left;
+    border-left: 8px solid #a91202;
+    border-radius: 0 3px 3px 0;
+}
+.locked-account {
+    text-align: center;
+    margin: -15px;
+}
+.locked-account a {
+    color: #006fa9;
+    font-weight: bold;
+}
 .site-type-branch nav #about-navigation .sub-menu-links li:nth-child(2) {
     display: none;
 }
