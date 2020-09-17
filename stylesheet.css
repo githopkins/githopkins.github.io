@@ -556,7 +556,7 @@ form label, .government-monitoring p {
     justify-content: flex-start;
     width: 250px;
 }
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
+#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_months_at_location {
     min-width: 99px !important;
 }
 .employment-form .span-half:last-of-type .control-group:nth-of-type(2) {
