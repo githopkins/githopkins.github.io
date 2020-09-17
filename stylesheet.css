@@ -746,10 +746,9 @@ thead {
 }
 .borrower-previous-location-form p small {
     border: none !important;
-    text-align: left;
-    width: 100%;
+    text-align: center;
     display: block;
-    margin: -35px 0 0px;
+    margin: -60px 17px 0px;
 }
 .borrower-previous-location-form.loan-form {
     margin: 30px auto;
