@@ -7,7 +7,12 @@
     width: 80%;
     line-height: 20px;
 }
-
+#calculations-and-numbers {
+    width: 90%;
+    display: flex;
+    margin: 60px auto 30px;
+    flex-direction: column;
+}
 #copyrights ul:nth-of-type(1) {
     flex-direction: column;
 }
@@ -20,14 +25,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 1460px) {
-    #calculations-and-numbers {
-        width: 90%;
-        display: flex;
-        margin: 60px auto 30px;
-        flex-direction: column;
-    }
-}
+    
 
 /*Application*/
 .page-loan-apply form {
