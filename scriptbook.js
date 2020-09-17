@@ -2,7 +2,7 @@
 var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
 var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
 var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span>Find Out More</span></h4><div id="covid-warning-container" class="hide"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
-var lockedAccount = '<p class="locked-account">Locked Account? <a href="mailto:webadmin@annie-mac.com">Contact Us.</a></p>'
+var lockedAccount = '<p class="locked-account"><a href="mailto:webadmin@annie-mac.com">Locked Account?</a></p>'
 
 $(document).ready(function() {
 
