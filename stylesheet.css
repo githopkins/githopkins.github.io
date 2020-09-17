@@ -574,6 +574,14 @@ form #comments {
 #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_city {
     max-width: 167px !important;
 }
+#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_years_at_location {
+    max-width: 80px !important;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_months_at_location {
+    max-width: 80px !important;
+}
+
 @media only screen and (max-width: 980px) {
 .title {
     display: none;
