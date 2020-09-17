@@ -107,7 +107,6 @@ background: url(/uploads/sites/10713/public/originator-background-image.jpeg) to
 #annie_mac-loan-officer #branch-content h2 {
     margin-top: 0 !important;
 }
-
 @media screen and (max-width: 800px) {
 #covid-warning {margin-top: 50px;}
 }
@@ -758,5 +757,13 @@ thead {
 .borrower-previous-location-form .span-half:last-of-type {
     padding-left: 0 !important;
     margin-left: -15px;
+}
+.borrower-previous-location-form .span-half:last-of-type > .control-group:nth-of-type(2) .controls {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    max-width: 300px !important;
+    margin-top: 1px;
 }
 }
