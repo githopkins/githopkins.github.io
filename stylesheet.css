@@ -20,7 +20,14 @@
         display: none;
     }
 }
-
+@media screen and (max-width: 1460px) {
+    #calculations-and-numbers {
+        width: 90%;
+        display: flex;
+        margin: 60px auto 30px;
+        flex-direction: column;
+    }
+}
 
 /*Application*/
 .page-loan-apply form {
@@ -633,7 +640,7 @@ thead {
 }
 .borrower-previous-location-form p small {
     border: none !important;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: block;
     margin: -35px 0 0px;
