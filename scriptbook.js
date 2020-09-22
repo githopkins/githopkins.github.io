@@ -25,11 +25,10 @@ if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) ||
 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
 	}
 
-if (window.location.href.indexOf("graphic-prequal") != -1) {
+if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
 $("#product-banner > h2").text("Pre-Qualify");
 $(".inner-layout").prepend(borrowerWarning);	
 }
-
 
 // Booking link for loan originators continued:
 	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
