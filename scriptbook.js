@@ -26,6 +26,7 @@ if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) ||
 	}
 
 if ((window.location.href.indexOf("/loan/graphic-prequal") != -1)){
+	$("#product-banner > h2").text("Pre-Qualify");
 	$(".inner-layout").prepend(borrowerWarning);
 }
 
