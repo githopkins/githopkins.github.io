@@ -2,7 +2,7 @@
 .user-login .inner-layout #form .register-title {
     display: none;
 }
-.user-login .inner-layout #form div.alert.alert-error, #co-borrower-addressing {
+.user-login .inner-layout #form div.alert.alert-error {
     background: #ffe7dc;
     margin-bottom: -1px;
     color: #a91202;
@@ -11,6 +11,18 @@
     text-align: left;
     border-left: 8px solid #a91202;
     border-radius: 0 3px 3px 0;
+}
+#co-borrower-addressing {
+    background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 17px;
+    line-height: 27px;
+    text-align: left;
+    border-left: 8px solid #a91202;
+    border-radius: 0 3px 3px 0;
+    width: 80%;
+    margin: 20px auto 0;
 }
 .locked-account {
     text-align: center;
