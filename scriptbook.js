@@ -18,7 +18,8 @@ if ($('body').hasClass('site-type-loan_officer')) {
 
 // PREQUAL link for loan originators who request:
 if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
-	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1)
+	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
+	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
 	){
 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
 	}

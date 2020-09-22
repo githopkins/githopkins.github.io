@@ -1,0 +1,199 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'inter', sans-serif;
+}
+#layout-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+#form-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+}
+/*#form-section h1 {
+	background: url('https://www.annie-mac.com/uploads/sites/10713/public/AMLogoTEST_3.png');
+	text-indent: -999vw;
+	width: 285px;
+	height: auto;
+	margin: 20px auto;
+	background-size: cover;
+}*/
+#header-section {
+	background: #004966e6;
+	border-bottom: 4px solid rgb(125, 203, 87);
+}
+#form-section h1 {
+	background: url('http://legacy.annie-mac.com/dev/themes/LandingAssets/img/am/amLogo.png');
+	text-indent: -999vw;
+	width: 285px;
+	height: auto;
+	margin: 20px auto;
+	background-size: cover;
+}
+#form-section h3 {
+	background: url('http://legacy.annie-mac.com/dev/themes/LandingAssets/img/am/realtor/realtorWebHeader.png');
+	text-indent: -999vw;
+	width: 272px;
+	height: 41px;
+	margin: 20px auto;
+	background-size: cover;
+}
+#disclaimer {
+	display: block;
+	line-height: 25px;
+	margin: 12px 0 30px;
+	opacity: .85;
+	display: inline-block;
+    line-height: 22px;
+    font-size: 12px;
+}
+#realtor-form {
+	display: flex;
+	flex-direction: column;
+	width: 89%;
+	margin: 35px auto 20px;
+}
+#realtor-form label {
+	display: inline-block;
+    line-height: 22px;
+    font-size: 11px;
+    letter-spacing: .8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+#realtor-form input {
+	font-size: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    letter-spacing: .56px;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    padding: 6px 4px;
+    border: 1px solid rgb(217, 221, 233);
+    border-radius: 3px;
+    margin: 0px 0px 25px 0px;
+    outline: none;
+}
+#realtor-form input:hover {
+	border: 1px solid rgb(177, 180, 189);
+}
+#realtor-form input:active, #realtor-form input:focus {
+	border: 1px solid rgb(125, 203, 87);
+	outline: none;
+	color: initial;
+	background: initial;
+}
+#realtor-form input:invalid  {
+	border: 1px solid rgb(255, 203, 203);
+    color: rgb(204, 107, 107);
+    background: rgb(255, 251, 251);
+}
+#realtor-form input:valid  {
+	border: 1px solid rgb(255, 203, 203);
+    color: rgb(125, 203, 87);
+    background: rgb(255, 251, 251);
+}
+.form-contained {
+	display: flex;
+	flex-direction: column;
+}
+/*.form-contained input {
+	flex: 1;
+}*/
+#submit-button {
+	border: none;
+	outline: none;
+	background: transparent;
+	margin: 5px auto 20px;
+}
+#submit-button:hover {
+	opacity: 1;
+}
+#submit-button img {
+	width: 215px;
+}
+#realtor-banner {
+	background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url('realtors.jpg') top left;
+	background-size: cover;
+	background-position-y: 70%;
+	position: relative;
+	width: 100%;
+	height: 360px;
+}
+#realtor-image-block {
+	display: none;
+}
+#breadcrumb-section {
+	background: #004966e6;
+	color: white;
+	flex: 1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#links {
+	display: flex;
+	list-style: none;
+	font-size: 14px;
+	justify-content: space-around;
+	padding: 4px 0;
+}
+#desktop-only {
+	display: none;
+}
+@media screen and (min-width: 985px) {
+	html, body {
+		overflow-x: hidden;
+	}
+	#form-section h1 {
+		margin: 20px 0 20px 40px;
+		width: 400px;
+		height: 56px;
+	}
+	#form-container {
+		display: flex;
+		flex-direction: row;
+		padding: 40px;
+	}
+	#realtor-banner {
+		display: block;
+	    visibility: hidden;
+	    height: 0px;
+    }
+    #breadcrumb-section {
+	    visibility: initial;
+	    position: absolute;
+	    order: 5;
+	    bottom: -200px;	
+	}
+    form #disclaimer, #form-section h3, .mobile-only {
+		display: none;
+	}
+	#realtor-image-block {
+		background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url('realtors.jpg') top left;
+		background-size: cover;
+		background-position-x: 50%;
+		width: 500px;
+		height: 520px;
+		display: inline-flex;
+		order: 1;
+		margin-left: 40px;
+		margin-top: 70px;
+	}
+	#desktop-only {
+		flex: 1;
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		width: 94%;
+		margin: -40px auto 80px;
+	}
+}
