@@ -96,11 +96,11 @@ body {
     color: rgb(204, 107, 107);
     background: rgb(255, 251, 251);
 }
-#realtor-form input:valid  {
-	border: 1px solid rgb(255, 203, 203);
-    color: rgb(125, 203, 87);
-    background: rgb(255, 251, 251);
-}
+/*#realtor-form input:valid  {
+	border: 1px solid rgb(196 223 182);
+    color: rgb(133 197 101);
+    background: rgb(253 255 251);
+}*/
 .form-contained {
 	display: flex;
 	flex-direction: column;

@@ -2,7 +2,7 @@
 .user-login .inner-layout #form .register-title {
     display: none;
 }
-.user-login .inner-layout #form div.alert.alert-error {
+.user-login .inner-layout #form div.alert.alert-error, #co-borrower-addressing {
     background: #ffe7dc;
     margin-bottom: -1px;
     color: #a91202;

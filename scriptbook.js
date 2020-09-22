@@ -1,6 +1,7 @@
 // Variables to drop HTML:
 var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
 var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
+var borrowerWarning = '<div id="co-borrower-addressing">We are currently having issues accepting co-borrowers with our prequal. This problem is being address. However, we recommend you apply with our full loan application using the Apply link above in the meantime.</div>';
 var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span>Find Out More</span></h4><div id="covid-warning-container" class="hide"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 var lockedAccount = '<p class="locked-account"><a href="mailto:webadmin@annie-mac.com">Locked Account?</a></p>'
 
@@ -23,6 +24,10 @@ if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) ||
 	){
 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
 	}
+
+if ((window.location.href.indexOf("/loan/graphic-prequal") != -1)){
+	$(".inner-layout").prepend(borrowerWarning);
+}
 
 // Booking link for loan originators continued:
 	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
