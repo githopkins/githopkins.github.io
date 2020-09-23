@@ -113,6 +113,7 @@ button, input[type="submit"] {
     background-size: cover !important;
     width: 250px !important;
     height: 51px !important;
+    margin: 0 auto !important;
 }
 
 .form-contained {
