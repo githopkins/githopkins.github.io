@@ -107,6 +107,14 @@ body {
     color: rgb(133 197 101);
     background: rgb(253 255 251);
 }*/
+button, input[type="submit"] {
+    background: url(realtorBtn.png) no-repeat !important;
+    border: none !important;
+    background-size: cover !important;
+    width: 250px !important;
+    height: 51px !important;
+}
+
 .form-contained {
 	display: flex;
 	flex-direction: column;
