@@ -185,8 +185,10 @@ body {
 	#form-section h3 {
 		background: url('web.png');
 		background-size: cover;
-	    width: 700px;
-	    height: 44px;
+	   /* width: 700px;
+	    height: 44px;*/
+	    width: 905px;
+height: 57px;
 	    margin-top: 25px;
 	}
     form #disclaimer, .mobile-only {
