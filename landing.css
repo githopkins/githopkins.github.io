@@ -240,4 +240,9 @@ body {
 		width: 94%;
 		margin: -40px auto 80px;
 	}
+	#links {
+		width: 900px;
+    	margin: 10px auto;
+    	float: left;
+	}
 }
