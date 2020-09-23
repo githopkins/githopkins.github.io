@@ -212,7 +212,8 @@ body {
 		position: relative;
 		margin-top: 70px;
 		border-radius: 5px;
-		box-shadow: 1px 2px 3px rgba(0,0,0,.2);
+		box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+    	border-right: 1px solid rgba(0,0,0,.05);
 	}
 	#realtor-image-overlay {
 		position: absolute;
@@ -226,7 +227,7 @@ body {
 		color: white;
 		text-shadow: 2px 2px 2px rgba(0,0,0,.6);
 		line-height: 20px;
-		font-size: 13px;
+		font-size: 23px;
 		letter-spacing: .8px;
 		width: 90%;
 		margin: 0 auto 15px;
