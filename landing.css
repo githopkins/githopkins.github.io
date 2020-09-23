@@ -30,7 +30,7 @@ body {
 	border-bottom: 4px solid rgb(125, 203, 87);	
 }
 #form-section h1 {
-	background: url('http://legacy.annie-mac.com/dev/themes/LandingAssets/img/am/amLogo.png');
+	background: url('amLogo.png');
 	text-indent: -999vw;
 	width: 402px;
     height: 69px;
@@ -38,7 +38,7 @@ body {
 	background-size: cover;
 }
 #form-section h3 {
-	background: url('http://legacy.annie-mac.com/dev/themes/LandingAssets/img/am/realtor/realtorWebHeader.png');
+	background: url('realtorWebHeader.png');
 	text-indent: -999vw;
 	width: 272px;
 	height: 34px;
