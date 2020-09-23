@@ -213,7 +213,7 @@ body {
 		margin-top: 70px;
 		border-radius: 5px;
 		box-shadow: 1px 2px 5px rgba(0,0,0,.2);
-    	border-right: 1px solid rgba(0,0,0,.05);
+    	border-right: 1px solid rgba(0,0,0,.025);
 	}
 	#realtor-image-overlay {
 		position: absolute;
