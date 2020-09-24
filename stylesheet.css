@@ -11,8 +11,12 @@
 .site-type-team #team-display {
     margin-top: -100px;
 }
-.page-loan-apply footer #sitemap {
+.page-loan-apply #product-banner, .page-loan-apply footer #sitemap {
     display: none;
+}
+.page-loan-apply .inner-layout {
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 .user-login .inner-layout #form div.alert.alert-error {
     background: #ffe7dc;
