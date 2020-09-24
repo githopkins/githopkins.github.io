@@ -11,6 +11,9 @@
 .site-type-team #team-display {
     margin-top: -100px;
 }
+.page-loan-apply footer #sitemap {
+    display: none;
+}
 .user-login .inner-layout #form div.alert.alert-error {
     background: #ffe7dc;
     margin-bottom: -1px;
