@@ -15,8 +15,7 @@
     display: none;
 }
 .page-loan-apply .inner-layout {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 80px;
 }
 .user-login .inner-layout #form div.alert.alert-error {
     background: #ffe7dc;
