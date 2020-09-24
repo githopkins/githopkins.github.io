@@ -2,7 +2,7 @@
 .user-login .inner-layout #form .register-title {
     display: none;
 }
-.site-type-team #apply-navigation {
+.site-type-team #apply-navigation, .site-type-team #branch-steps, .site-type-team #home-reviews {
     display: none;
 }
 .user-login .inner-layout #form div.alert.alert-error {
