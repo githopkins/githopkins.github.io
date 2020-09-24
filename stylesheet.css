@@ -15,6 +15,7 @@
     border-left: 8px solid #a91202;
     border-radius: 0 3px 3px 0;
 }
+
 #co-borrower-addressing {
     background: #ffe7dc;
     margin-bottom: -1px;
@@ -140,7 +141,7 @@ background: url(/uploads/sites/10713/public/originator-background-image.jpeg) to
     background-position-y: 63%;
 }
 
-#annie_mac-loan-officer #branch-content h2 {
+#annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
     margin-top: 0 !important;
 }
 @media screen and (max-width: 800px) {
