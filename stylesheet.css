@@ -11,7 +11,7 @@
 .site-type-team #team-display {
     margin-top: -100px;
 }
-.page-loan-apply #product-banner, .page-loan-apply footer #sitemap {
+.page-loan-apply #product-banner, .page-loan-apply footer {
     display: none;
 }
 .page-loan-apply .inner-layout {
