@@ -8,7 +8,7 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:webadmin@annie-ma
 $(document).ready(function() {
 
 // Login Error
-	$( lockedAccount ).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
+	$(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
 	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect.  Please check your information and try again.  If you've forgotten your password, please use the 'Forgot Password?' option below.   Accounts will be locked after 3 unsuccessful login attempts.");
 
 // Booking link for loan originators:
@@ -197,7 +197,6 @@ $("#covid-warning span").click(function(){
 		$("#navigation-logo > a > img").attr("src", "/uploads/sites/10713/public/Trye.png");
 		$("#navigation-logo > a > img").css("margin-top", "0px");
 	}
-
 // Closing the script.	
 });
 
