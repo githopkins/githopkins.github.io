@@ -1,4 +1,4 @@
-// Variables to drop HTML:
+// Variables to drop HTML below:
 var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
 var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
 var borrowerWarning = '<div id="co-borrower-addressing">We are currently having issues accepting co-borrowers with our prequal. This problem is being address. However, we recommend you apply with our full loan application using the Apply link above in the meantime.</div>';
