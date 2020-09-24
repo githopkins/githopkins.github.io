@@ -170,6 +170,7 @@ button, input[type="submit"] {
 		display: flex;
 		flex-direction: row;
 		padding: 40px;
+		padding-bottom: 5px;
 	}
 	#realtor-banner {
 		display: block;
