@@ -130,17 +130,14 @@ background: #a91202;
     text-align: center;
     margin-right: 30px;
 }
-
 #covid-warning a:hover {
     opacity: .8;
 }
-
 #annie_mac-loan-officer > #branch-banner {
 background: url(/uploads/sites/10713/public/originator-background-image.jpeg) top left no-repeat;
     background-size: cover;
     background-position-y: 63%;
 }
-
 #annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
     margin-top: 0 !important;
 }
