@@ -2,6 +2,9 @@
 .user-login .inner-layout #form .register-title {
     display: none;
 }
+.site-type-team #apply-navigation {
+    display: none;
+}
 .user-login .inner-layout #form div.alert.alert-error {
     background: #ffe7dc;
     margin-bottom: -1px;
