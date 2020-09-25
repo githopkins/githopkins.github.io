@@ -116,12 +116,16 @@ $("#covid-warning span").click(function(){
 	}
 	if (
 		(window.location.href.indexOf("teambruner.annie-mac.com") != -1) || 
-		(window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("winterpark.annie-mac.com") != -1)
 		){
 		$("#team-display > div.team-member-section > div:nth-child(2)").addClass("manager-information");
 		$("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
 		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
+	}
+	if (
+		(window.location.href.indexOf("newsmyrna.annie-mac.com") != -1)
+		){
+		
 	}
 	// Team: Andy Sikora
 	if (window.location.href.indexOf("reston.annie-mac.com") != -1) {
