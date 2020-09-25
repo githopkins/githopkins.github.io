@@ -7,7 +7,7 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:webadmin@annie-ma
 
 $(document).ready(function() {
 
-	$(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
+	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
 // Login Error
 	$(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
