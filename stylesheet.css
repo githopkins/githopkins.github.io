@@ -24,7 +24,7 @@
 .page-loan-apply .inner-layout {
     padding-top: 80px;
 }
-.user-login .inner-layout #form div.alert.alert-error {
+.user-login .inner-layout #form div.alert.alert-error, .team-site-warning {
     background: #ffe7dc;
     margin-bottom: -1px;
     color: #a91202;
@@ -34,7 +34,9 @@
     border-left: 8px solid #a91202;
     border-radius: 0 3px 3px 0;
 }
-
+.team-site-warning {
+    margin-top: -30px;
+}
 #co-borrower-addressing {
     background: #ffe7dc;
     margin-bottom: -1px;
