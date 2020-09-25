@@ -125,7 +125,9 @@ $("#covid-warning span").click(function(){
 	if (
 		(window.location.href.indexOf("newsmyrna.annie-mac.com") != -1)
 		){
-		
+			$("body > div.team-member-section > div:nth-child(3)").addClass("manager-information");
+			$("body > div.team-member-section > div:nth-child(3)").removeClass("team-member");
+			$("body > div.team-member-section > div:nth-child(3)").prependTo("#branch-managers");
 	}
 	// Team: Andy Sikora
 	if (window.location.href.indexOf("reston.annie-mac.com") != -1) {
