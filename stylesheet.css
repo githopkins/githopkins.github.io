@@ -11,6 +11,13 @@
 .site-type-team #team-display {
     margin-top: -100px;
 }
+.site-type-team #branch-content h2 {
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+}
+#team-site header ul {
+    display: none !important;
+}
 .page-loan-apply #product-banner, .page-loan-apply footer {
     display: none;
 }
