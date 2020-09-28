@@ -23,7 +23,12 @@
     flex-wrap: wrap;
 }
 .site-type-team .branch-manager-section {
-    width: 33%;
+    width: 28%;
+}
+@media screen and (max-width: 1110px) {
+    .site-type-team .branch-manager-section {
+        width: 33%;
+    }
 }
 .site-type-team .branch-manager-section::after {
     flex: auto;
