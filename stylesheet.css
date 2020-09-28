@@ -187,6 +187,13 @@ background: url(/uploads/sites/10713/public/originator-background-image.jpeg) to
 }
 
 @media screen and (max-width: 800px) {
+    .site-type-team #navigation-bar {
+        justify-content: space-between;
+        padding: 7px 14px;
+    }
+    .site-type-team #navigation-logo {
+        order: -3;
+    }
     #covid-warning {
         margin-top: 50px;
     }
