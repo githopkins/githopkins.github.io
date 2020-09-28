@@ -22,6 +22,9 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.site-type-team .branch-manager-section {
+    width: 28%;
+}
 #team-site header ul {
     display: none !important;
 }
