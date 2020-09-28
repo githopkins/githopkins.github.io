@@ -186,8 +186,9 @@ background: url(/uploads/sites/10713/public/originator-background-image.jpeg) to
     margin-top: 0 !important;
 }
 @media screen and (max-width: 800px) {
-#covid-warning {margin-top: 50px;}
-}
+#covid-warning {
+    margin-top: 50px;
+    }
 
 #we-provide-more-3 {
     order: -1;
@@ -204,6 +205,7 @@ background: url(/uploads/sites/10713/public/originator-background-image.jpeg) to
 }
 #copyrights ul:nth-of-type(1) {
     flex-direction: column;
+}
 }
 
 @media screen and (max-width: 750px) {
