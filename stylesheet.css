@@ -23,7 +23,7 @@
     flex-wrap: wrap;
 }
 .site-type-team .branch-manager-section {
-    width: 28%;
+    width: 33%;
 }
 .site-type-team .branch-manager-section::after {
     flex: auto;
