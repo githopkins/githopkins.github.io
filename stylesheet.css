@@ -25,6 +25,10 @@
 .site-type-team .branch-manager-section {
     width: 28%;
 }
+.site-type-team .branch-manager-section::after {
+    flex: auto;
+    content: "";
+}
 #team-site header ul {
     display: none !important;
 }
