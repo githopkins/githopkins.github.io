@@ -16,7 +16,7 @@
     margin-bottom: 40px;
 }
 .site-type-team #branch-managers {
-    padding: 40px 0;
+    padding: 40px 0 0 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
