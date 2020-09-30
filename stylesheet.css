@@ -27,7 +27,7 @@
 }
 @media screen and (max-width: 1110px) {
     .site-type-team .branch-manager-section {
-        width: 33%;
+        width: 37%;
     }
 }
 .site-type-team .branch-manager-section::after {
