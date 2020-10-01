@@ -7,7 +7,10 @@ html, body {
 
 #paws-container {
 	height: 390px;
-	width: 900px;
+	margin: 0 auto;
+	width: 800px;
+	border: 6px solid #088dc5;
+	font-family: 'Myriad Pro', system-ui, sans-serif;
 	position: relative;
 	background: #006BA7 url('right-dogs.png') bottom right no-repeat;
 	background-size: 200px;
