@@ -1,4 +1,4 @@
-
+$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
 
 function onSubmitSuccess() {
 	$('#push-form')
@@ -34,7 +34,6 @@ $("input[type='tel']")
 	});
 
 $(document).ready(function() {
-	$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
 		$("#toggle-captcha").click(function() {
 				$(window)
 					.scrollTop(0);
