@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>landing</title>
+	<link rel="stylesheet" type="text/css" href="paws.css">
+	<link rel="stylesheet" href="https://use.typekit.net/obw4pno.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+<body id="test">
+<div id="layout-container">
+	<div id="form-section">
+		<div id="header-section">
+			<div id="header-title">
+				<h1>AnnieMac</h1>
+			</div>
+				<div id="sub-header-title">
+				<h3>Realtor</h3>
+			</div>
+		</div>
+		<div id="form-container">
+			<div id="realtor-image-block">
+				<div id="realtor-image-overlay">
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+				</div>
+			</div>
+			<form action="/hi" id="realtor-form">
+				<div class="form-contained">
+					<label>First Name</label>
+					<input type="text" placeholder="First Name" name="first-name" id="first-name">
+					<label>Last Name</label>
+					<input type="text" placeholder="Last Name" name="last-name" id="last-name">
+				</div>
+				<label>Email Address</label>
+				<input type="email" placeholder="Email Address" name="email-address" id="email-address">
+				<label>Phone Number</label>
+				<input type="tel" pattern= "[0-9]" placeholder="Phone Number" name="phone-number" id="phone-number">
+				<label>Zip Code</label>
+				<input type="text" pattern= "[0-9]" placeholder="Zip Code" name="zip-code" id="zip-code">
+				<small id="disclaimer">By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply</small>
+				<input type="submit" id="submit-button" class="mobile-only" value=""/>
+			</form>
+		</div>
+		<div id="desktop-only">
+			<small id="disclaimer">By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply</small>
+			<input type="submit" id="submit-button" value=""/>
+		</div>
+		<div id="realtor-banner">
+			<div id="breadcrumb-section">
+				<ul id="links">
+					<li>Licensing</li>
+					<li>Privacy Policy</li>
+					<li>Service Agreement</li>
+					<li>NMLS #338923</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
