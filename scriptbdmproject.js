@@ -1,11 +1,8 @@
 $('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
 
 function onSubmitSuccess() {
-	$('#push-form')
-		.hide();
-	$('#thankyou')
-		.show();
-
+	$('#push-form').hide();
+	$('#thankyou').show();
 }
 
 $("input[type='tel']")
