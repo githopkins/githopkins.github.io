@@ -56,6 +56,9 @@
 .calculations-primary:first-of-type {
     padding-bottom: 60px;
 }
+#copyrights .flex:first-of-type {
+    flex-direction: column;
+}
 #team-site-warning {
     margin-top: -40px;
     margin-bottom: 40px;
