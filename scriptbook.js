@@ -6,7 +6,7 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-m
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
 
 $(document).ready(function() {
-
+	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, continue without.");
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
 // Login Error
