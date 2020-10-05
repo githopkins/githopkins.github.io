@@ -24,6 +24,17 @@
     background: #006fa9;
     text-align: center;
 }
+.graphicInput {
+    border-radius: 3px;
+    padding: 15px !important;
+    width: 85% !important;
+    max-width: 600px;
+    font-size: 16px !important;
+    margin: -1px 0 40px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.2);
+    height: auto;
+}
 @media screen and (max-width: 570px) {
     
 }
