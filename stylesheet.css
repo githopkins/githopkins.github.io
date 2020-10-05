@@ -6,15 +6,18 @@
     min-height: 77vh;
     padding: 0;
 }
+
 .page-loan-apply #question-container {
     width: 100%;
     margin-top: -35px;
 }
+
 .page-loan-apply  #questions .question {
     font-size: 20px;
     font-weight: bold;
     margin-top: 35px;
 }
+
 .page-loan-apply #questions .choiceButton {
     border-radius: 3px;
     padding: 15px;
@@ -24,6 +27,7 @@
     background: #006fa9;
     text-align: center;
 }
+
 .graphicButton {
     border-radius: 3px;
     padding: 15px;
@@ -33,6 +37,7 @@
     background: #78c254;
     text-align: center;
 }
+
 .graphicInput {
     border-radius: 3px;
     padding: 15px !important;
@@ -45,6 +50,7 @@
     height: auto;
     outline: none;
 }
+
 #options .choiceButton {
     border-radius: 3px;
     padding: 15px;
@@ -55,15 +61,19 @@
     text-align: center;
     margin: 6px auto;
 }
+
 @media screen and (max-width: 570px) {
     
 }
+
 .user-login .inner-layout #form .register-title {
     display: none;
 }
+
 .site-type-team #apply-navigation, .site-type-team #branch-steps, .site-type-team #home-provide, .site-type-team #home-reviews, .site-type-team #branch-banner button, .site-type-team #branch-banner .branch-content ul {
     display: none;
 }
+
 .site-type-team #branch-banner {
     height: 460px;
 }
