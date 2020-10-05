@@ -12,6 +12,7 @@
 .page-loan-apply  #questions .question {
     font-size: 20px;
     font-weight: bold;
+    margin-top: 35px;
 }
 .page-loan-apply #questions .choiceButton {
     border-radius: 3px;
@@ -21,6 +22,8 @@
     font-size: 16px;
     background: #006fa9;
     text-align: center;
+}
+@media screen and (max-width: 570px) {
 }
 .user-login .inner-layout #form .register-title {
     display: none;
