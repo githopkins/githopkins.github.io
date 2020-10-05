@@ -1,9 +1,10 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply #questions {
     width: 80vw;
-    margin: 30px auto 20px;
+    margin: 0 auto 20px;
     overflow-y: auto;
     min-height: 77vh;
+    padding: 0;
 }
 .page-loan-apply #question-container {
     width: 100%;
@@ -24,6 +25,7 @@
     text-align: center;
 }
 @media screen and (max-width: 570px) {
+    
 }
 .user-login .inner-layout #form .register-title {
     display: none;
