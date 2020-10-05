@@ -1,8 +1,8 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply #questions {
-    background: red;
     width: 80vw;
     margin: 30px auto 20px;
+    overflow-x: auto;
 }
 .page-loan-apply #question-container {
     width: 100%;
