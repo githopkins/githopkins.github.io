@@ -2,7 +2,8 @@
 .page-loan-apply #questions {
     width: 80vw;
     margin: 30px auto 20px;
-    overflow-x: auto;
+    overflow-y: auto;
+    min-height: 77vh;
 }
 .page-loan-apply #question-container {
     width: 100%;
