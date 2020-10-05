@@ -54,6 +54,34 @@ body {
     line-height: 22px;
     font-size: 12px;
 }
+#information-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 80px auto -20px;
+}
+.information-block {
+	width: 30%;
+	margin-bottom: 20px;
+}
+.information-block h4 {
+	text-align: center;
+	width: 90%;
+}
+.information-block p {
+	font-size: 14px;
+	line-height: 22px;
+	width: 85%;
+	margin: 0 auto;	
+}
+.information-block:last-of-type{
+	margin-left: 4.99%;
+}
+#information-container::after {
+  content: "";
+  flex: auto;
+}
 #realtor-form {
 	display: flex;
 	flex-direction: column;
