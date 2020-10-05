@@ -34,6 +34,7 @@
     text-align: center;
     border: 1px solid rgba(0,0,0,.2);
     height: auto;
+    outline: none;
 }
 #options .choiceButton {
     border-radius: 3px;
