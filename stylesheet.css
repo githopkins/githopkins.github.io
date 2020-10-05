@@ -1,8 +1,23 @@
 /* AnnieMac Stylesheet Document */
 .page-loan-apply #questions {
     background: red;
+    width: 80vw;
+    margin: 30px auto 20px;
 }
-
+.page-loan-apply #question-container {
+    width: 100%;
+}
+.page-loan-apply  #questions .question {
+    font-size: 20px;
+    font-weight: bold;
+}
+.page-loan-apply #questions .choiceButton {
+    border-radius: 3px;
+    padding: 12px;
+    width: 600px;
+    font-size: 16px;
+    background: #006fa9;
+}
 .user-login .inner-layout #form .register-title {
     display: none;
 }
