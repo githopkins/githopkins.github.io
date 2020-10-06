@@ -143,8 +143,8 @@ button, input[type="submit"] {
     background: url(realtorBtn.png) no-repeat !important;
     border: none !important;
     background-size: cover !important;
-    width: 250px !important;
-    height: 51px !important;
+    width: 261px !important;
+	height: 54px !important;
     margin: 0 auto !important;
 }
 .form-contained {
