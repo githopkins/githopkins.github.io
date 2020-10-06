@@ -45,7 +45,7 @@ body {
 	margin: 10px auto 25px;
 	background-size: cover;
 }
-#disclaimer {
+.disclaimer {
 	display: block;
 	line-height: 25px;
 	margin: 12px 0 30px;
@@ -59,28 +59,23 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 80px auto -20px;
 }
 .information-block {
 	width: 30%;
-	margin-bottom: 20px;
+	margin: 20px 0;
+	display: flex;
+	padding: 10px 20px;
+	flex-direction: column;
 }
 .information-block h4 {
-	text-align: center;
-	width: 90%;
+	color: #167bb1;
+	font-weight: normal;
+	margin-bottom: 5px;
 }
 .information-block p {
 	font-size: 14px;
-	line-height: 22px;
-	width: 85%;
-	margin: 0 auto;	
-}
-.information-block:last-of-type{
-	margin-left: 4.99%;
-}
-#information-container::after {
-  content: "";
-  flex: auto;
+	line-height: 24px;
+	color: #6b6c6e;	
 }
 #realtor-form {
 	display: flex;
@@ -137,16 +132,22 @@ button, input[type="submit"] {
 	display: flex;
 	flex-direction: column;
 }
-#submit-button {
+small {
+	line-height: 28px;
+	opacity: .7;
+	margin-bottom: 35px;
+	margin-top: 5px;
+}
+.submit-button {
 	border: none;
 	outline: none;
 	background: transparent;
 	margin: 5px auto 20px;
 }
-#submit-button:hover {
+.submit-button:hover {
 	opacity: 1;
 }
-#submit-button img {
+.submit-button img {
 	width: 215px;
 }
 #realtor-banner {
@@ -182,10 +183,33 @@ button, input[type="submit"] {
 #desktop-only {
 	display: none;
 }
-
+#what-offer {
+	min-width: 100%;
+	text-align: center;
+	font-weight: normal;
+	font-size: 28px;
+	color: #78c254;
+	margin-bottom: 0;
+	margin-top: 60px;
+}
+#and-more h2 {
+	color: #78c254;
+	text-align: center;
+}
+#and-more p {
+	font-size: 14.5px;
+	text-align: center;
+	color: #6b6c6e;
+	margin-bottom: -10px;
+}
 @media screen and (min-width: 985px) {
 	html, body {
 		overflow-x: hidden;
+	}
+	#containment {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1400px;
 	}
 	#form-section h1 {
 		margin: 20px 0 20px 40px;
@@ -218,7 +242,7 @@ button, input[type="submit"] {
 		height: 57px;
 	    margin-top: 25px;
 	}
-    form #disclaimer, .mobile-only {
+    form .disclaimer, .mobile-only {
 		display: none;
 	}
 	#header-title {
@@ -266,6 +290,6 @@ button, input[type="submit"] {
 		display: flex;
 		flex-direction: column;
 		width: 94%;
-		margin: -40px auto 80px;
+		margin: 40px auto 80px;
 	}
 }
