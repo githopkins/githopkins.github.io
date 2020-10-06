@@ -66,6 +66,7 @@ body {
 	display: flex;
 	padding: 10px 20px;
 	flex-direction: column;
+	height: 101px;
 }
 .information-block h4 {
 	color: #167bb1;
