@@ -58,10 +58,10 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 .information-block {
-	width: 30%;
+	width: 45%;
 	margin: 20px 0;
 	display: flex;
 	padding: 10px 20px;
@@ -69,8 +69,12 @@ body {
 }
 .information-block h4 {
 	color: #167bb1;
-	font-weight: normal;
-	margin-bottom: 5px;
+	margin-bottom: 1px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.06);
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 1.1px;
 }
 .information-block p {
 	font-size: 14px;
@@ -184,29 +188,26 @@ small {
 	display: none;
 }
 #what-offer {
-	min-width: 100%;
-	text-align: center;
-	font-weight: normal;
+	text-align: left;
+	font-weight: bold;
 	font-size: 28px;
 	color: #78c254;
-	margin-bottom: 0;
-	margin-top: 60px;
+	margin-bottom: -15px;
+	margin-top: 80px;
+	padding-left: 20px;
 }
 #and-more h2 {
 	color: #78c254;
-	text-align: center;
-}
-#and-more p {
-	font-size: 14.5px;
-	text-align: center;
-	color: #6b6c6e;
-	margin-bottom: -10px;
+	text-align: right;
+	font-weight: normal;
+	margin-top: 35px;
+	font-size: 22px;
 }
 @media screen and (min-width: 985px) {
 	html, body {
 		overflow-x: hidden;
 	}
-	#containment {
+	.containment {
 		width: 80%;
 		margin: 0 auto;
 		max-width: 1400px;
@@ -221,7 +222,7 @@ small {
 	#form-container {
 		display: flex;
 		flex-direction: row;
-		padding: 40px;
+		padding: 40px 20px;
 		padding-bottom: 5px;
 	}
 	#realtor-banner {
@@ -233,7 +234,7 @@ small {
 	    visibility: initial;
 	    position: absolute;
 	    order: 5;
-	    bottom: -202px;	
+	    bottom: -85px;	
 	}
 	#form-section h3 {
 		background: url('web.png');
