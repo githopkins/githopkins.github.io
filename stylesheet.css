@@ -1,12 +1,6 @@
 /* AnnieMac Stylesheet Document */
 #add-co-borrower {
-    margin-top: 136px;
-}
-.dependent-info {
-    width: 100%;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    display: flex !important;
+    margin-top: 278px;
 }
 .page-loan-apply #questions {
     width: 80vw;
@@ -1002,7 +996,4 @@ thead {
     max-width: 300px !important;
     margin-top: 1px;
 }
-}
-.hide {
-    display: none !important;
 }
