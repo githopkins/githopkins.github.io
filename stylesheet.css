@@ -6,7 +6,7 @@
     width: 100%;
     margin-top: 10px;
     padding-bottom: 20px;
-    display: flex;
+    display: flex !important;
 }
 .page-loan-apply #questions {
     width: 80vw;
@@ -1004,5 +1004,5 @@ thead {
 }
 }
 .hide {
-    display: none;
+    display: none !important;
 }
