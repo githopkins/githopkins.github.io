@@ -209,8 +209,6 @@ $("#covid-warning span").click(function(){
 	}
 // Closing the script.	
 });
-
-
 $(document).ready(function() {
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').removeClass('datepicker');
 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date").prop("placeholder", "MM/DD/YYYY format");
