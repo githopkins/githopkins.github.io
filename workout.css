@@ -1,0 +1,44 @@
+html, body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#workout-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.workout-section {
+	display: flex;
+	flex-direction: column;
+	width: 31%;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-right: 1px solid rgba(0,0,0,.3);
+}
+
+.workout-section h3 {
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.workout-section h3 span {
+	font-weight: bold;
+}
+
+.workout-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.workout-section li {
+	margin: 2.75px 0;
+	padding-left: 20px;
+}
+
+
+
