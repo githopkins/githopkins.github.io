@@ -107,12 +107,12 @@ body {
 #realtor-form label {
 	display: inline-block;
     line-height: 22px;
-    font-size: 11px;
-    letter-spacing: .8px;
-    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     margin: 0px 0px 10px 0px;
-    color: #515151;
+    color: #2b6191;
+	text-shadow: 1px 0px 0px #2b619124;
 }
 #realtor-form input {
 	font-size: 15px;
@@ -337,6 +337,7 @@ small {
 	}
 	#realtor-image-overlay {
 		position: absolute;
+		display: none;
 		bottom: 0;
 		width: 100%;
 		background: linear-gradient(0deg, rgba(0,0,0,.55) 62%, rgba(0,0,0,.30) 81%);
