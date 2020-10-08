@@ -207,7 +207,7 @@ small {
 	display: none;
 }
 #we-offer-this {
-	background: linear-gradient(-120deg, rgba(96, 96, 96, 0.35) 40%, #2020202b 80%), url('realtor2.jpg') top left;
+	background: linear-gradient(40deg, rgba(0,39,60,.35) 40%, #78c2542b 80%), url('realtor2.jpg') top left;
 	background-size: cover;
 	background-position-y: 36%;
 	height: 370px;
@@ -229,7 +229,6 @@ small {
 	text-align: center;
 	text-shadow: 2px 4px 3px rgba(0,0,0,.3);
 	position: absolute;
-	text-transform: uppercase;
 	bottom: 20px;
 }
 #and-more h2 {
