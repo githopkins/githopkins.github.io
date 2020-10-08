@@ -149,6 +149,9 @@ button, input[type="submit"] {
 	height: 54px !important;
     margin: 0 auto !important;
 }
+button:hover, input[type="submit"]:hover {
+	cursor: pointer;
+}
 .form-contained {
 	display: flex;
 	flex-direction: column;
