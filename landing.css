@@ -98,6 +98,15 @@ body {
 	border-top: 1px solid rgba(0,0,0,.06);
 	padding-top: 15px;
 }
+.information-block p span {
+	display: block;
+	font-size: 13px;
+	order: -1;
+	text-transform: capitalize;
+}
+.information-block p strong {
+	color: #2b6191;
+}
 #realtor-form {
 	display: flex;
 	flex-direction: column;
