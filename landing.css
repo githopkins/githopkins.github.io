@@ -71,20 +71,20 @@ body {
 	width: 45%;
 	margin: 20px 0;
 	display: flex;
+	height: 200px;
 	padding: 10px 20px;
 	flex-direction: column;
-	height: 120px;
 }
 .information-block h4 {
 	color: #167bb1;
 	margin-bottom: 1px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid rgba(0,0,0,.06);
 	font-size: 17px;
 	font-weight: bold;
 	letter-spacing: 1.1px;
 	display: flex;
 	align-items: center;
+	display: none;
 }
 .information-block h4 i {
 	color: #78c254;
@@ -92,9 +92,11 @@ body {
 	margin-right: 10px;
 }
 .information-block p {
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 15px;
+	line-height: 28px;
 	color: #6b6c6e;	
+	border-top: 1px solid rgba(0,0,0,.06);
+	padding-top: 15px;
 }
 #realtor-form {
 	display: flex;
@@ -155,7 +157,8 @@ small {
 	line-height: 28px;
 	opacity: .7;
 	margin-bottom: 35px;
-	margin-top: 5px;
+	margin-top: 12px;
+	font-size: 14px;
 }
 .submit-button {
 	border: none;
@@ -203,21 +206,54 @@ small {
 	display: none;
 }
 #what-offer {
-	text-align: left;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 35px;
 	color: #78c254;
-	margin-bottom: 10px;
-	margin-top: 80px;
+	margin-bottom: 35px;
+	margin-top: 90px;
 	padding-left: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1.72px;
+	text-align: center;
 }
 #and-more h2 {
 	color: #78c254;
 	text-align: right;
 	font-weight: normal;
-	margin-top: 35px;
+	margin-top: 80px;
 	font-size: 22px;
 }
+#anniemacworx {
+	width: 220px;
+	height: auto;
+	margin: 14px auto 8px;
+}	
+#salesboomerang {
+	width: 250px;
+	height: auto;
+	margin: 5px auto 8px;
+}
+#funneliq {
+	width: 120px;
+	height: auto;
+	margin: -30px auto 8px;
+}
+#getcredithealthy {
+	width: 180px;
+	height: auto;
+	margin: 5px auto 8px;
+}
+#perkplans {
+	width: 115px;
+	height: auto;
+	margin: 5px auto 8px;
+}
+#myworxsuite {
+	width: 80px;
+	height: auto;
+	margin: 5px auto 8px;
+}
+
 @media screen and (min-width: 985px) {
 	html, body {
 		overflow-x: hidden;
