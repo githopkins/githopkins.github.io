@@ -2,6 +2,10 @@
 .blog-home-entry, #home-blog h3 {
     display: none;
 }
+#branch-content h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
 #add-co-borrower {
     margin-top: 278px;
 }
