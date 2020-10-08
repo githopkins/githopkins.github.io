@@ -273,12 +273,12 @@ small {
 #perkplans {
 	width: 115px;
 	height: auto;
-	margin: 5px auto 8px;
+	margin: 13px auto 8px;
 }
 #myworxsuite {
 	width: 80px;
 	height: auto;
-	margin: 5px auto 8px;
+	margin: 13px auto 8px;
 }
 
 @media screen and (min-width: 985px) {
