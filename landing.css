@@ -173,7 +173,7 @@ small {
 	width: 215px;
 }
 #realtor-banner {
-	background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url('realtors.jpg') top left;
+	background: linear-gradient(40deg, rgba(11, 34, 15, 0.35) 70%, #6fabec2b 80%), url('realtors.jpg') top left;
 	background-size: cover;
 	background-position-y: 70%;
 	position: relative;
@@ -191,6 +191,7 @@ small {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	border-top: 4px solid rgb(125, 203, 87);
 }
 #links {
 	display: flex;
@@ -205,16 +206,31 @@ small {
 #desktop-only {
 	display: none;
 }
+#we-offer-this {
+	background: linear-gradient(-120deg, rgba(96, 96, 96, 0.35) 40%, #2020202b 80%), url('realtor2.jpg') top left;
+	background-size: cover;
+	background-position-y: 36%;
+	height: 370px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	margin-top: 70px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.4);
+	margin-bottom: 60px;
+}
 #what-offer {
 	font-weight: bold;
-	font-size: 35px;
-	color: #78c254;
-	margin-bottom: 35px;
-	margin-top: 90px;
-	padding-left: 20px;
-	text-transform: uppercase;
-	letter-spacing: 1.72px;
+	font-size: 60px;
+	color: #fff;
+	letter-spacing: 3.75px;
 	text-align: center;
+	text-shadow: 2px 4px 3px rgba(0,0,0,.3);
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 20px;
 }
 #and-more h2 {
 	color: #78c254;
