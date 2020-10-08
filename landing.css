@@ -209,7 +209,7 @@ small {
 #we-offer-this {
 	background: linear-gradient(40deg, rgba(0,39,60,.35) 40%, #78c2542b 80%), url('realtor2.jpg') top left;
 	background-size: cover;
-	background-position-y: 36%;
+	background-position-y: 55%;
 	height: 370px;
 	width: 100%;
 	display: flex;
@@ -223,20 +223,20 @@ small {
 }
 #what-offer {
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 50px;
 	color: #fff;
+	text-transform: uppercase;
 	letter-spacing: 3.75px;
 	text-align: center;
 	text-shadow: 2px 4px 3px rgba(0,0,0,.3);
 	position: absolute;
-	bottom: 20px;
 }
 #and-more h2 {
 	color: #78c254;
 	text-align: right;
 	font-weight: normal;
 	margin-top: 80px;
-	font-size: 22px;
+	font-size: 20px;
 }
 #anniemacworx {
 	width: 220px;
