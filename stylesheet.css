@@ -1,4 +1,7 @@
 /* AnnieMac Stylesheet Document */
+.blog-home-entry, #home-blog h3 {
+    display: none;
+}
 #add-co-borrower {
     margin-top: 278px;
 }
