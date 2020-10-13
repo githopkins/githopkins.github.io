@@ -6,10 +6,21 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-m
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
 
 $(document).ready(function() {
-	if (window.navigator.userAgent.indexOf("Trident/") > 0){
-		if (confirm("Internet Explorer is not supported.\n\n Please update your browser.")){
-		} 
+	function isIE() {
+	  ua = navigator.userAgent;
+	  /* MSIE used to detect old browsers and Trident used to newer ones*/
+	  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+	  
+	  return is_ie; 
 	}
+	/* Create an alert to show if the browser is IE or not */
+	if (isIE()){
+		alert('Our website is not supported on Internet Explorer.');
+	}
+	// else{
+	// 	alert('It is NOT InternetExplorer');
+	// }
+		
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
 	
 	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
