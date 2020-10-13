@@ -30,14 +30,31 @@
 				<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
 				<input type="hidden" data-xml-node="LeadSourceId" value="Q6UJ9A0V8YZK">
 				<input type="hidden" id="Entity" value="Contact">
-				<input type="hidden" id="UserId" value="LOS ID SYNFOMY">
-				<input type="hidden" id="title" data-xml-node="EmploymentTitle">
+				<!-- {% if site.siteType.keyName == 'loan_officer'%}
+				{% set officer = site.settings.loanOfficer %}
+				{% if officer.miqGuid is not empty%}
+				<input type="hidden" id="UserId" name="UserId" value="{{ officer.miqGuid }}">
+				{% else %}
+				<input type="hidden" id="UserId" name="UserId" value="">
+				{% endif %}
+				{% endif %}
+				<input type="hidden" id="title" data-xml-node="title" value="Realtor">
 				<input type="hidden" id="Lead Import" value="true">
+				<input type="hidden" data-xml-node="Type" value="Realtor">
+				<input type="hidden" id="Filter" value="CostCenter">
+				{% if site.siteType.keyName == 'branch'%}
+				{% set branch = site.settings.branch %}
+				{% if branch.costCenter is not empty %}
+				<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+				{% else %}
+				<input type="hidden" id="FilterValue" value="">
+				{% endif %}
+				{% endif %} -->
 				<input type="hidden" id="Assign" value="true">
 				<input type="hidden" id="agents" value="true">
 				<input type="hidden" id="Notification" value="New Prospect">
 				<input type="hidden" id="ContactId" data-xml-node="ContactId">
-				<input type="hidden" id="status" data-xml-node="Status" value="New Prospect">
+				<input type="hidden" id="status" data-xml-node="Status" value="New Prospect">	
 				<input type="hidden" id="parameters">
 				<div class="form-contained">
 					<label>First Name</label>
@@ -47,56 +64,57 @@
 				</div>
 				<label>Email Address</label>
 				<input type="email" placeholder="Email Address" name="email-address" id="email-address">
-				<label>Phone Number</label>
-				<input type="tel" pattern= "[0-9]" placeholder="Phone Number" name="phone-number" id="phone-number">
+				<label>Mobile Number</label>
+				<input type="tel" pattern= "[0-9]" placeholder="Mobile Number" name="mobile-number" id="mobile-number">
 				<label>Zip Code</label>
 				<input type="text" pattern= "[0-9]" placeholder="Zip Code" name="zip-code" id="zip-code">
-			</form>
+				<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+				<button type="submit" class="submit-button" value="Submit">Submit</button>
+				</form>
 		</div>
 		<div id="disclaimer-text">
 			<small>By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply</small>
-			<input type="submit" class="submit-button" value=""/>
 		</div>
 		<div id="we-offer-this">
 			<h4 id="what-offer">What We Have To Offer</h4>
 		</div>
 		<div id="information-container">
-			<div class="information-block">
+			<div class="information-block one-line">
 				<h4><i class="fas fa-briefcase"></i> AnnieMac Worx Platform</h4>
 				<img src="anniemacworx.png" alt="AnnieMac Worx" id="anniemacworx">
 				<p>No-cost coaching, certification and productivity platform 
 					<span>brought to you by <strong>AnnieMac Worx</strong></span>
 				</p>
 			</div>
-			<div class="information-block">
+			<div class="information-block one-line">
 				<h4><i class="fas fa-binoculars"></i> Opportunity Watch</h4>
 				<img src="salesboomerang.png" alt="Sales Boomerang" id="salesboomerang">
 				<p>Upload your database to our system and we will monitor your client for a range of options 
-					<span>brought to you by <strong>Opportunity Watch</strong></span>
+					<span>brought to you by <strong>Sales Boomerang</strong></span>
 				</p>
 			</div>
-			<div class="information-block">
+			<div class="information-block two-line">
 				<h4><i class="fas fa-funnel-dollar"></i> Funnel IQ technology</h4>
 				<img src="funneliq.png" alt="Funnel IQ" id="funneliq">
 				<p>Give us your prospect leads and our automated system with contact them, we’ll pre-approve them and hand them back as an opportunity 
 					<span>brought to you by <strong>Funnel IQ</strong></span>
 				</p>
 			</div>
-			<div class="information-block">
+			<div class="information-block two-line">
 				<h4><i class="fas fa-user-md"></i> Get Credit Healthy</h4>
 				<img src="getcredithealthy.png" alt="Get Credit Healthy" id="getcredithealthy">
 				<p>Never have a credit turn down slip through the cracks. We will get them credit worthy to buy the home. With Opportunity Watch, we will know when they are ready before even they do 
 					<span>brought to you by <strong>Get Credit Healthy</strong></span>
 				</p>
 			</div>
-			<div class="information-block">
+			<div class="information-block three-line">
 				<h4><i class="fas fa-cart-plus"></i> Perks Plan</h4>
 				<img src="perkplans.png" alt="PerkPlans" id="perkplans">
 				<p>We offer a no-cost perks solution for your clients, to give them discounts on 1000’s of store and products 
 					<span>brought to you by <strong>PerkPlans</strong></span>
 				</p>
 			</div>
-			<div class="information-block">
+			<div class="information-block three-line">
 				<h4><i class="fas fa-mail-bulk"></i> My Worx Suite</h4>
 				<img src="myworxsuite.png" alt="My Worx Suite" id="myworxsuite"> 
 				<p>No-cost Single property website, flyers, YouTube listing videos, Smart capture, open house security system 
