@@ -6,14 +6,27 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-m
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
 
 $(document).ready(function() {
-	function isIE() {
-	  ua = navigator.userAgent;
-	  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-	  return is_ie; 
+	function getInternetExplorerVersion()
+	{
+	  var rv = -1;
+	  if (navigator.appName == 'Microsoft Internet Explorer')
+	  {
+		var ua = navigator.userAgent;
+		var re = new RegExp("MSIE ([0-9]{1,}[\\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }
+	  else if (navigator.appName == 'Netscape')
+	  {
+		var ua = navigator.userAgent;
+		var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }
+	  return rv;
 	}
-	if (isIE()){
-		alert('Our website is not supported on Internet Explorer.');
-	}
+	
+	console.log('IE version:', getInternetExplorerVersion());
 		
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
 	
