@@ -26,13 +26,11 @@
     width: 100%;
     margin-top: -35px;
 }
-
 .page-loan-apply  #questions .question {
     font-size: 20px;
     font-weight: bold;
     margin-top: 35px;
 }
-
 .page-loan-apply #questions .choiceButton {
     border-radius: 3px;
     padding: 15px;
@@ -42,7 +40,6 @@
     background: #006fa9;
     text-align: center;
 }
-
 .graphicButton {
     border-radius: 3px;
     padding: 15px;
@@ -52,7 +49,6 @@
     background: #78c254;
     text-align: center;
 }
-
 .graphicInput {
     border-radius: 3px;
     padding: 15px !important;
@@ -65,7 +61,6 @@
     height: auto;
     outline: none;
 }
-
 #options .choiceButton {
     border-radius: 3px;
     padding: 15px;
@@ -76,19 +71,12 @@
     text-align: center;
     margin: 6px auto;
 }
-
-@media screen and (max-width: 570px) {
-    
-}
-
 .user-login .inner-layout #form .register-title {
     display: none;
 }
-
 .site-type-team #apply-navigation, .site-type-team #branch-steps, .site-type-team #home-provide, .site-type-team #home-reviews, .site-type-team #branch-banner button, .site-type-team #branch-banner .branch-content ul {
     display: none;
 }
-
 .site-type-team #branch-banner {
     height: 460px;
 }
@@ -121,7 +109,6 @@
     display: none !important;
     visibility: hidden;
 }
-
 #paws-motif {
     position: absolute;
     width: 100%;
@@ -231,10 +218,6 @@
     text-align: center;
     margin: 0 0 -15px;
 }
-/*.locked-account a {
-    color: #006fa9;
-    font-weight: bold;
-}*/
 .site-type-branch nav #about-navigation .sub-menu-links li:nth-child(2) {
     display: none;
 }
@@ -246,17 +229,17 @@
     max-width: 250px;
 }
 .hide {
-display: none;
+    display: none;
 }
 html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inner-layout section#text-based p a.btn.btn-default {
-background: #006fa9;
-color: #fff;
-font-weight: bold;
-display: inline-block;
-border-radius: 4px;
-padding: 10px 12px;
-padding-top: 120px;
-text-align: center;
+    background: #006fa9;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 12px;
+    padding-top: 120px;
+    text-align: center;
 }
 .government-monitoring p {
     width: 100%;
@@ -270,15 +253,13 @@ text-align: center;
     background-size: cover;
     background-position-y: 53%;
 }
-
 .page-loan-apply-complete > #product-banner {
     background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/complete.jpeg) top left no-repeat;
     background-size: cover;
     background-position-y: 32%;
 }
-
 #covid-warning {
-background: #ffe7dc;
+    background: #ffe7dc;
     margin-bottom: -1px;
     color: #a91202;
     padding: 30px 25px 25px 25px;
@@ -286,35 +267,30 @@ background: #ffe7dc;
     margin-top: 90px;
     z-index: 3;
 }
-
 #covid-warning h4 {
     font-size: 24px;
     margin: 0;
     font-weight: bold;
     color: #a91202;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
-
 #covid-warning h4 span {
-font-size: 13px;
+    font-size: 13px;
     margin-left: 15px;
     color: rgb(169 19 5);
     border: 1px solid #a91305;
     padding: 5px 12px;
     border-radius: 6px;
 }
-
 #covid-warning h4 span:hover {
-cursor: pointer;
+    cursor: pointer;
 }
-
 #covid-warning p {
     margin: 15px 0 24px;
 }
-
 #covid-warning a {
-background: #a91202;
+    background: #a91202;
     color: #fff;
     font-weight: bold;
     display: inline-block;
@@ -329,14 +305,13 @@ background: #a91202;
     opacity: .8;
 }
 #annie_mac-loan-officer > #branch-banner {
-background: url(https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg) top left no-repeat;
+    background: url(https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg) top left no-repeat;
     background-size: cover;
     background-position-y: 63%;
 }
 #annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
     margin-top: 0 !important;
 }
-
 @media screen and (max-width: 800px) {
     .site-type-team #navigation-bar {
         justify-content: space-between;
@@ -348,28 +323,23 @@ background: url(https://annie-mac.com/uploads/sites/10713/public/originator-back
     #covid-warning {
         margin-top: 50px;
     }
-    
     #we-provide-more-3 {
         order: -1;
     }
-    
     .location-listing a p:first-of-type {
         width: 80%;
         line-height: 20px;
     }
-    
     #calculations-and-numbers {
         width: 90%;
         display: flex;
         margin: 60px auto 30px;
         flex-direction: column;
     }
-    
     #copyrights ul:nth-of-type(1) {
         flex-direction: column;
     }
 }
-
 @media screen and (max-width: 750px) {
     #copyrights ul:nth-of-type(1) {
         margin: 5px auto 10px;
@@ -378,8 +348,6 @@ background: url(https://annie-mac.com/uploads/sites/10713/public/originator-back
         display: none;
     }
 }
-    
-
 /*Application*/
 .page-loan-apply form {
     width: 100%;
