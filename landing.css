@@ -244,7 +244,7 @@ small {
 	justify-content: center;
 	align-items: flex-end;
 	position: relative;
-	margin-top: 60px;
+	margin-top: 20px;
 	border-radius: 0;
 	box-shadow: none;
 	margin-bottom: 20px;
@@ -472,5 +472,17 @@ small {
 	}
 	#what-offer {
 		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 605px) {
+	#breadcrumb-section {
+		bottom: -130px;
+	}
+	#links {
+		flex-direction: column;
+		line-height: 29px;
+		margin-left: 20px;
+		text-align: left;
 	}
 }
