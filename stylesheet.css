@@ -16,7 +16,12 @@
     min-height: 77vh;
     padding: 0;
 }
-
+.delete-borrower-form {
+    margin-top: 200px;
+}
+#co-borrowers-wrapper {
+    margin-bottom: 250px;
+}
 .page-loan-apply #question-container {
     width: 100%;
     margin-top: -35px;

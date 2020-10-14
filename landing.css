@@ -175,9 +175,10 @@ button:hover, input[type="submit"]:hover {
 small {
 	line-height: 28px;
 	opacity: .7;
-	margin-bottom: 35px;
-	margin-top: 12px;
+	margin-bottom: 30px;
+	margin-top: 5px;
 	font-size: 14px;
+	padding: 0 35px;
 }
 .submit-button {
 	width: 275px;
@@ -318,6 +319,7 @@ small {
 		flex-direction: row;
 		padding: 40px 20px;
 		padding-bottom: 5px;
+		position: relative;
 	}
 	#realtor-banner {
 		display: block;
@@ -388,6 +390,30 @@ small {
 		width: 94%;
 		margin: 40px auto 80px;
 	}
+	small {
+		line-height: 28px;
+		opacity: .7;
+		margin-bottom: 130px;
+		margin-top: 0px;
+		font-size: 14px;
+		padding: 0;
+	}
+	.submit-button {
+		width: 275px;
+		font-size: 1.15rem;
+		height: 60px;
+		background: #7dcb57;
+		border-radius: 7px;
+		color: white;
+		border: none;
+		outline: none;
+		margin: 5px 0 20px;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+		font-weight: bold;
+		position: absolute;
+		bottom: -180px;
+	}
 	.information-block {
 		width: 44%;
 		margin: 20px 0;
@@ -431,7 +457,7 @@ small {
 	#anniemacworx {
 		width: 220px;
 		height: auto;
-		margin: 5px auto 8px;
+		margin: 13px auto 8px;
 	}	
 	#salesboomerang {
 		width: 250px;
