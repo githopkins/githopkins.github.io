@@ -1,4 +1,17 @@
 /* AnnieMac Stylesheet Document */
+@media screen and (max-width: 650px) {
+    #navigation-logo {
+        max-width: 200px;
+    }
+    #navigation-logo > a > img {
+        margin-top: 5px;
+    }
+    #branch-banner {
+        height: 350px;
+        max-height: 351px;
+        min-height: 350px;
+    }
+}
 .blog-home-entry, #home-blog h3 {
     display: none;
 }
