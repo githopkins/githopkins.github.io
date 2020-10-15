@@ -1,7 +1,7 @@
 /* AnnieMac Stylesheet Document */
 @media screen and (max-width: 650px) {
     #navigation-logo {
-        max-width: 200px;
+        max-width: 200px !important;
     }
     #navigation-logo > a > img {
         margin-top: 5px;
