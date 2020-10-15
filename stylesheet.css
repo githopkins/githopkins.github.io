@@ -11,6 +11,13 @@
         max-height: 351px;
         min-height: 350px;
     }
+    #covid-warning h4 {
+        font-size: 19px;
+    }
+    #covid-warning h4 span {
+        text-align: center;
+        width: 100px;
+    }
 }
 .blog-home-entry, #home-blog h3 {
     display: none;
