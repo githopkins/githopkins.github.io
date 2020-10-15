@@ -28,8 +28,8 @@
         margin: 20px;
     }
 }
-#originator #biography {
-    margin-left: -8px;
+.action-buttons-calcs button {
+    width: 280px;
 }
 .blog-home-entry, #home-blog h3 {
     display: none;
