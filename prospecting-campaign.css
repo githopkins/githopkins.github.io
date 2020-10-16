@@ -31,4 +31,23 @@
 		margin: -7px 0 15px 0;
 		padding: 0;
 	}
+	#background-contain {
+		margin-top: -15px;
+	}
+	#form-content {
+		margin-bottom: -66px;
+	}
+	#form-content form button {
+		width: 300px;
+	}
+	#callouts {
+		width: 100%;
+		min-height: 360px;
+	}
+	#download {
+		border-radius: 0;
+	}
+	#after-block {
+		width: 100%;
+	}
 }
