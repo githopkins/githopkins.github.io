@@ -16,7 +16,7 @@
 		left: 2%;
 	}
 	#kelsey-informational {
-		bottom: 15%;
+		top: 60%;
 		padding: 0;
 	}
 	#kelsey-blurb button {
@@ -27,7 +27,7 @@
 		line-height: 40px;
 	}
 	#kelsey-informational h5 {
-		font-size: 19px;
+		font-size: 18px;
 		margin: -7px 0 15px 0;
 		padding: 0;
 	}
