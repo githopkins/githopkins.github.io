@@ -30,7 +30,7 @@ body {
 	border-bottom: 4px solid rgb(125, 203, 87);	
 }
 #form-section h1 {
-	background: url('amLogo.png');
+	background: url('https://githopkins.github.io/amLogo.png');
 	text-indent: -999vw;
 	width: 402px;
     height: 69px;
@@ -38,7 +38,7 @@ body {
 	background-size: cover;
 }
 #form-section h3 {
-	background: url('realtorWebHeader.png');
+	background: url('https://githopkins.github.io/realtorWebHeader.png');
 	text-indent: -999vw;
 	width: 272px;
 	height: 34px;
@@ -201,7 +201,7 @@ small {
 	width: 215px;
 }
 #realtor-banner {
-	background: linear-gradient(40deg, rgba(11, 34, 15, 0.35) 70%, #6fabec2b 80%), url('realtors.jpg') top left;
+	background: linear-gradient(40deg, rgba(11, 34, 15, 0.35) 70%, #6fabec2b 80%), url('https://githopkins.github.io/realtors.jpg') top left;
 	background-size: cover;
 	background-position-x: 70%;
 	background-position-y: 67%;
@@ -236,7 +236,7 @@ small {
 	display: none;
 }
 #we-offer-this {
-	background: linear-gradient(40deg, rgba(0,39,60,.35) 40%, #78c2542b 80%), url('realtor2.jpg') top left;
+	background: linear-gradient(40deg, rgba(0,39,60,.35) 40%, #78c2542b 80%), url('https://githopkins.github.io/realtor2.jpg') top left;
 	background-size: cover;
 	background-position-y: 70%;
 	height: 270px;
@@ -333,7 +333,7 @@ small {
 	    bottom: -85px;	
 	}
 	#form-section h3 {
-		background: url('web.png');
+		background: url('https://githopkins.github.io/web.png');
 		background-size: cover;
 	    width: 905px;
 		height: 57px;
@@ -351,7 +351,7 @@ small {
 		margin: 20px auto -60px;
 	}
 	#realtor-image-block {
-		background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url('realtors.jpg') top left;
+		background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url('https://githopkins.github.io/realtors.jpg') top left;
 		background-size: cover;
 		background-position-x: 50%;
 		width: 500px;
