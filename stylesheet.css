@@ -1018,7 +1018,6 @@ thead {
     margin-top: 1px;
 }
 }
-.error-txt, .error-txt li {
-    color: #e01e19;
+p.error {
     border: none !important;
 }
