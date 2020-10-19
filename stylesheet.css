@@ -1,12 +1,4 @@
 /* AnnieMac Stylesheet Document */
-.error, .error-txt, .error-txt li {
-    color: #e01e19;
-    border: none !important;
-}
-.choice-row {
-    display: flex !important;
-    align-items: center;
-}
 @media screen and (max-width: 650px) {
     #navigation-logo {
         max-width: 200px !important;
@@ -1025,4 +1017,12 @@ thead {
     max-width: 300px !important;
     margin-top: 1px;
 }
+}
+.error, .error-txt, .error-txt li {
+    color: #e01e19;
+    border: none !important;
+}
+.choice-row {
+    display: flex !important;
+    align-items: center;
 }
