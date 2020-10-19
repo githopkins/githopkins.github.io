@@ -270,17 +270,6 @@ $(document).ready(function() {
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').removeClass('datepicker');
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
 		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
-		// var $jqDates = jQuery('.newdatepickertwo');
-		// $jqDates.bind('keyup','keydown', function(e){
-		// 	if(e.which !== 8) {	
-		// 		var numChars = $jqDates.val().length;
-		// 		if(numChars === 2 || numChars === 5){
-		// 			var thisVal = $jqDates.val();
-		// 			thisVal += '-';
-		// 			$jqDates.val(thisVal);
-		// 		}
-		//   }
-		// });
 	});
 	
 	$("#add-asset-account").click(function(){
@@ -315,7 +304,7 @@ $(document).ready(function() {
 	$("input[type=date]").datepicker({
 	  dateFormat: 'dd-mm-yyyy',
 	  onSelect: function(dateText, inst) {
-		$(inst).val(dateText); // Write the value in the input
+		$(inst).val(dateText);
 	  }
 	});
 	
