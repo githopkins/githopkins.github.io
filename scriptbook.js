@@ -282,14 +282,14 @@ $(document).ready(function() {
 	const element = $("employment-form.loan-form.hide")[0]; // [0] to get the raw element
 	const observer = new MutationObserver(records => {
 		if (element.style.display === "block") {
-			var $jqDate = jQuery('.newdatepicker');
-			$jqDate.bind('keyup','keydown', function(e){
+			var $jqDates = jQuery('.newdatepicker');
+			$jqDates.bind('keyup','keydown', function(e){
 				if(e.which !== 8) {	
-					var numChars = $jqDate.val().length;
+					var numChars = $jqDates.val().length;
 					if(numChars === 2 || numChars === 5){
-						var thisVal = $jqDate.val();
+						var thisVal = $jqDates.val();
 						thisVal += '-';
-						$jqDate.val(thisVal);
+						$jqDates.val(thisVal);
 					}
 			  }
 			});
