@@ -250,25 +250,25 @@ $(document).ready(function() {
 			}
 	  }
 	});
-	var $jqDate = jQuery('.startdate');
-	$jqDate.bind('keyup','keydown', function(e){
+	var $startdate = jQuery('.startdate');
+	$startdate.bind('keyup','keydown', function(e){
 		if(e.which !== 8) {	
-			var numChars = $jqDate.val().length;
+			var numChars = $startdate.val().length;
 			if(numChars === 2 || numChars === 5){
-				var thisVal = $jqDate.val();
+				var thisVal = $startdate.val();
 				thisVal += '-';
-				$jqDate.val(thisVal);
+				$startdate.val(thisVal);
 			}
 	  }
 	});
-	var $jqDate = jQuery('.enddate');
-	$jqDate.bind('keyup','keydown', function(e){
+	var $enddate = jQuery('.enddate');
+	$enddate.bind('keyup','keydown', function(e){
 		if(e.which !== 8) {	
-			var numChars = $jqDate.val().length;
+			var numChars = $enddate.val().length;
 			if(numChars === 2 || numChars === 5){
-				var thisVal = $jqDate.val();
+				var thisVal = $enddate.val();
 				thisVal += '-';
-				$jqDate.val(thisVal);
+				$enddate.val(thisVal);
 			}
 	  }
 	});
