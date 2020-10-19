@@ -238,6 +238,7 @@ $(document).ready(function() {
 	// 		}
 	//   }
 	// });
+	$('sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school').attr("type", "text");
 	$( "button" ).click(function() {
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker');
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').attr("type", "date");
