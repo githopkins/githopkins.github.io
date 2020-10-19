@@ -1,7 +1,7 @@
 /* AnnieMac Stylesheet Document */
 .error, .error-txt, .error-txt li {
     color: #e01e19;
-    border: 0 !important;
+    border: none !important;
 }
 @media screen and (max-width: 650px) {
     #navigation-logo {
