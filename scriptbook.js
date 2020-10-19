@@ -212,6 +212,7 @@ $("#covid-warning span").click(function(){
 // Closing the script.	
 });
 $(document).ready(function() {
+	
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').removeClass('datepicker');
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').attr("type", "date");
 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date").prop("placeholder", "MM-DD-YYYY format");
@@ -311,4 +312,12 @@ $(document).ready(function() {
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_other").prop("placeholder", "Other");
 		$("#add-income-monthly").hide();
 	});
+	$("input[type=date]").datepicker({
+	  dateFormat: 'dd-mm-yyyy',
+	  onSelect: function(dateText, inst) {
+		$(inst).val(dateText); // Write the value in the input
+	  }
+	});
+	
+
 });
