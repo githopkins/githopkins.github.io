@@ -1026,3 +1026,7 @@ p.error {
     text-align: center;
     margin: -20px 0 auto;
 }
+.radio-group .choice-row {
+    display: flex !important;
+    align-items: center !important;
+}
