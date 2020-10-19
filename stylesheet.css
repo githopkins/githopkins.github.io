@@ -1023,4 +1023,6 @@ thead {
 }
 p.error {
     border: none !important;
+    text-align: center;
+    margin: -20px 0 auto;
 }
