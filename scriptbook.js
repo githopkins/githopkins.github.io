@@ -257,6 +257,18 @@ $(document).ready(function() {
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').removeClass('datepicker');
 		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').addClass('newdatepickertwo');
 		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date").prop("placeholder", "MM-DD-YYYY format");
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').removeClass('datepicker');
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').addClass('newdatepickertwo');
+		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date").prop("placeholder", "MM-DD-YYYY format");
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').removeClass('datepicker');
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').addClass('newdatepickertwo');
+		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date").prop("placeholder", "MM-DD-YYYY format");
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').removeClass('datepicker');
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').addClass('newdatepickertwo');
+		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date").prop("placeholder", "MM-DD-YYYY format");
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').removeClass('datepicker');
+		$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').addClass('newdatepickertwo');
+		$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 		var $jqDates = jQuery('.newdatepickertwo');
 		$jqDates.bind('keyup','keydown', function(e){
 			if(e.which !== 8) {	
