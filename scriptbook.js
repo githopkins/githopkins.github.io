@@ -280,17 +280,6 @@ $(document).ready(function() {
 				}
 		  }
 		});
-		var $jqDatess = jQuery('.end-date');
-		$jqDatess.bind('keyup','keydown', function(e){
-			if(e.which !== 8) {	
-				var numChars = $jqDatess.val().length;
-				if(numChars === 2 || numChars === 5){
-					var thisVal = $jqDatess.val();
-					thisVal += '-';
-					$jqDatess.val(thisVal);
-				}
-		  }
-		});
 	});
 	
 	$("#add-asset-account").click(function(){
