@@ -279,23 +279,4 @@ $(document).ready(function() {
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_other").prop("placeholder", "Other");
 		$("#add-income-monthly").hide();
 	});
-	const element = $("employment-form.loan-form.hide")[0]; // [0] to get the raw element
-	const observer = new MutationObserver(records => {
-		if (element.style.display === "block") {
-			var $jqDates = jQuery('.newdatepicker');
-			$jqDates.bind('keyup','keydown', function(e){
-				if(e.which !== 8) {	
-					var numChars = $jqDates.val().length;
-					if(numChars === 2 || numChars === 5){
-						var thisVal = $jqDates.val();
-						thisVal += '-';
-						$jqDates.val(thisVal);
-					}
-			  }
-			});
-		}
-	});
-	observer.observe(element, {
-		attributes: true
-	});
 });
