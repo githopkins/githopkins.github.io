@@ -3,6 +3,10 @@
     color: #e01e19;
     border: none !important;
 }
+.choice-row {
+    display: flex !important;
+    align-items: center;
+}
 @media screen and (max-width: 650px) {
     #navigation-logo {
         max-width: 200px !important;
