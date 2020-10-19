@@ -220,22 +220,22 @@ $(document).ready(function() {
 	$("#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date").prop("placeholder", "MM/DD/YYYY format");
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').addClass('newdatepicker');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM/DD/YYYY format");
-	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker');
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM/DD/YYYY format");
+	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').addClass('newdatepicker2');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM/DD/YYYY format");
-	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker');
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM/DD/YYYY format");
+	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').addClass('newdatepicker');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date").prop("placeholder", "MM/DD/YYYY format");
-	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').removeClass('datepicker');
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date").prop("placeholder", "MM/DD/YYYY format");
+	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').addClass('newdatepicker2');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date").prop("placeholder", "MM/DD/YYYY format");
-	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').removeClass('datepicker');
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date").prop("placeholder", "MM/DD/YYYY format");
+	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').addClass('newdatepicker');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date").prop("placeholder", "MM/DD/YYYY format");
-	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').removeClass('datepicker');
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date").prop("placeholder", "MM/DD/YYYY format");
+	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').removeClass('datepicker');
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').addClass('newdatepicker2');
-	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date").prop("placeholder", "MM/DD/YYYY format");
+	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date").prop("placeholder", "MM/DD/YYYY format");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_institution_name").prop("placeholder", "Institution Name");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_account_number").prop("placeholder", "Account Number");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_balance").prop("placeholder", "Account Balance");
@@ -247,28 +247,6 @@ $(document).ready(function() {
 				var thisVal = $jqDate.val();
 				thisVal += '/';
 				$jqDate.val(thisVal);
-			}
-	  }
-	});
-	var $startdate = jQuery('.startdate');
-	$startdate.bind('keyup','keydown', function(e){
-		if(e.which !== 8) {	
-			var numChars = $startdate.val().length;
-			if(numChars === 2 || numChars === 5){
-				var thisVal = $startdate.val();
-				thisVal += '-';
-				$startdate.val(thisVal);
-			}
-	  }
-	});
-	var $enddate = jQuery('.enddate');
-	$enddate.bind('keyup','keydown', function(e){
-		if(e.which !== 8) {	
-			var numChars = $enddate.val().length;
-			if(numChars === 2 || numChars === 5){
-				var thisVal = $enddate.val();
-				thisVal += '-';
-				$enddate.val(thisVal);
 			}
 	  }
 	});
