@@ -271,13 +271,13 @@ $(document).ready(function() {
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 	});
 	$('input[type="date"]').on("change", function(){
-		var birthDate = this.value;
-		var year = birthDate.substr(0, 5); 
+		var date = this.value;
+		var year = date.substr(0, 5); 
 		year.replace(/[_\W]+/g, "");
-		birthDate = birthDate.slice(5);
+		date = date.slice(5);
 		year = year.slice(0, -1);
-		var newBirthDate = birthDate + "-" + year;
-		$(this).attr("value", newBirthDate);
+		var newDate = date + "-" + year;
+		$(this).attr("value", newDate);
 	});
 	$("#add-asset-account").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_institution_name").prop("placeholder", "Institution Name");
