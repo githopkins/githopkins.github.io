@@ -1034,3 +1034,28 @@ p.error {
     display: flex !important;
     align-items: center !important;
 }
+
+.ui-datepicker-calendar table, .ui-datepicker-calendar tbody {
+    max-width: 300px;
+    background: #e6e6e6;
+}
+
+.ui-datepicker-calendar thead {
+    display: none;
+}
+
+.ui-datepicker-calendar tr {
+    flex-direction: row;
+    width: 300px;
+    background: #e6e6e6;
+}
+
+.ui-datepicker-calendar tr > * {
+    width: 49px;
+    margin: 0 !important;
+    background: #e6e6e6;
+        background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
