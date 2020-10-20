@@ -1059,6 +1059,11 @@ p.error {
     align-items: center;
 }
 
+.ui-datepicker-calendar tbody tr {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
 .ui-datepicker-calendar tr td a {
     border: none !important;
     background: transparent !important;
