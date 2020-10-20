@@ -238,6 +238,7 @@ $(document).ready(function() {
 	 		}
 	   }
 	 });
+	 
 	$( "button" ).click(function() {
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker hasDatepicker');
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').attr("type", "date");
@@ -270,14 +271,16 @@ $(document).ready(function() {
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 	});
+	
 	$('input[type="date"]').on("change", function(){
-		var date = this.value; //
-		var year = date.substr(0, 5); //
-		date = date.slice(5); //
-		year = year.slice(0, -1);
-		var newDate = date + "-" + year;
-		$(this).attr("value", newDate);
+		var date = this.value; //Assign the value of date with whatever was filled into the date input fields.
+		var year = date.substr(0, 5); //Assign the value of year with the year with the dash at the end
+		date = date.slice(5); //Assign the value of date with the year and the dash removed so it is MM-DD
+		year = year.slice(0, -1); //Remove the dash from the end of the year.
+		var newDate = date + "-" + year; //Assign a new date using the old date concatenated with the year.
+		$(this).attr("value", newDate); //Assign the value of the input type date with the new date variable.
 	});
+	
 	$("#add-asset-account").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_institution_name").prop("placeholder", "Institution Name");
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_account_number").prop("placeholder", "Account Number");
@@ -297,6 +300,7 @@ $(document).ready(function() {
 	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_interest").prop("placeholder", "Interest");
 	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_rent_net").prop("placeholder", "Net Rent");
 	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_other").prop("placeholder", "Other");
+	
 	$("#add-income-monthly").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_base").prop("placeholder", "Base");
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_overtime").prop("placeholder", "Overtime");
