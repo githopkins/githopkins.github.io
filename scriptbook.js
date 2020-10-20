@@ -218,28 +218,26 @@ $(document).ready(function() {
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').attr("type", "date");
 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date").prop("placeholder", "MM-DD-YYYY format");
 	$('#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date').removeClass('datepicker hasDatepicker');
- 
 	$("#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date").prop("placeholder", "MM-DD-YYYY format");
 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').removeClass('datepicker hasDatepicker');
-	 $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').attr("type", "date");
-	 $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM-DD-YYYY format");
-	 $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker hasDatepicker');
-	
+	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').attr("type", "date");
+	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM-DD-YYYY format");
+	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker hasDatepicker');
     $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM-DD-YYYY format");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_institution_name").prop("placeholder", "Institution Name");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_account_number").prop("placeholder", "Account Number");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_balance").prop("placeholder", "Account Balance");
- var $jqDate = jQuery('.newdatepicker');
- $jqDate.bind('keyup','keydown', function(e){
- 	if(e.which !== 8) {	
- 		var numChars = $jqDate.val().length;
- 		if(numChars === 2 || numChars === 5){
- 			var thisVal = $jqDate.val();
- 			thisVal += '-';
- 			$jqDate.val(thisVal);
- 		}
-   }
- });
+	var $jqDate = jQuery('.newdatepicker');
+	 $jqDate.bind('keyup','keydown', function(e){
+	 	if(e.which !== 8) {	
+	 		var numChars = $jqDate.val().length;
+	 		if(numChars === 2 || numChars === 5){
+	 			var thisVal = $jqDate.val();
+	 			thisVal += '-';
+	 			$jqDate.val(thisVal);
+	 		}
+	   }
+	 });
 	$( "button" ).click(function() {
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker hasDatepicker');
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').attr("type", "date");
@@ -271,8 +269,16 @@ $(document).ready(function() {
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').removeClass('datepicker hasDatepicker');
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
-		 });
-	
+	});
+	('input[type="date"]').on("change", function(){
+		var birthDate = this.value; //Create a variable for birthdate using the value inputted into the date field
+		var year = birthDate.substr(0, 5)
+		year.replace(/[_\W]+/g, "");
+		birthDate = birthDate.slice(5);
+		year = year.slice(0, -1);
+		var newBirthDate = birthDate + "-" + year;
+		$(this).attr("value", newBirthDate);
+	});
 	$("#add-asset-account").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_institution_name").prop("placeholder", "Institution Name");
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_account_number").prop("placeholder", "Account Number");
