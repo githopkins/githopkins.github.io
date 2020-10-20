@@ -212,65 +212,66 @@ $("#covid-warning span").click(function(){
 // Closing the script.	
 });
 $(document).ready(function() {
+	$('#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date').attr("type", "date");
+	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').attr("type", "date");
+    $('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').removeClass('datepicker hasDatepicker');
+	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').attr("type", "date");
+	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date").prop("placeholder", "MM-DD-YYYY format");
+	$('#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date').removeClass('datepicker hasDatepicker');
+ 
+	$("#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date").prop("placeholder", "MM-DD-YYYY format");
+	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').removeClass('datepicker hasDatepicker');
+	 $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').attr("type", "date");
+	 $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker hasDatepicker');
 	
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').removeClass('datepicker');
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date').attr("type", "date");
-	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date").prop("placeholder", "MM-DD-YYYY format");
-	// $('#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date').removeClass('datepicker');
-	// $('#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date').attr("type", "date");
-	// $("#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date").prop("placeholder", "MM-DD-YYYY format");
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').removeClass('datepicker');
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date').attr("type", "date");
-	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker');
-	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').attr("type", "date");
-	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM-DD-YYYY format");
+    $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM-DD-YYYY format");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_institution_name").prop("placeholder", "Institution Name");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_account_number").prop("placeholder", "Account Number");
 	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_balance").prop("placeholder", "Account Balance");
-	// var $jqDate = jQuery('.newdatepicker');
-	// $jqDate.bind('keyup','keydown', function(e){
-	// 	if(e.which !== 8) {	
-	// 		var numChars = $jqDate.val().length;
-	// 		if(numChars === 2 || numChars === 5){
-	// 			var thisVal = $jqDate.val();
-	// 			thisVal += '-';
-	// 			$jqDate.val(thisVal);
-	// 		}
-	//   }
-	// });
-	// $( "button" ).click(function() {
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date").prop("placeholder", "MM-DD-YYYY format");
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').removeClass('datepicker');
-	// 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
-	// 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
-	// });
+ var $jqDate = jQuery('.newdatepicker');
+ $jqDate.bind('keyup','keydown', function(e){
+ 	if(e.which !== 8) {	
+ 		var numChars = $jqDate.val().length;
+ 		if(numChars === 2 || numChars === 5){
+ 			var thisVal = $jqDate.val();
+ 			thisVal += '-';
+ 			$jqDate.val(thisVal);
+ 		}
+   }
+ });
+	$( "button" ).click(function() {
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date").prop("placeholder", "MM-DD-YYYY format");
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').removeClass('datepicker hasDatepicker');
+	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
+	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
+		 });
 	
 	$("#add-asset-account").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_institution_name").prop("placeholder", "Institution Name");
