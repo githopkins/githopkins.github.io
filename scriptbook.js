@@ -270,7 +270,7 @@ $(document).ready(function() {
 	 	$('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date').attr("type", "date");
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 	});
-	('input[type="date"]').on("change", function(){
+	$('input[type="date"]').on("change", function(){
 		var birthDate = this.value;
 		var year = birthDate.substr(0, 5); 
 		year.replace(/[_\W]+/g, "");
