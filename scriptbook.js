@@ -271,8 +271,8 @@ $(document).ready(function() {
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 	});
 	('input[type="date"]').on("change", function(){
-		var birthDate = this.value; //Create a variable for birthdate using the value inputted into the date field
-		var year = birthDate.substr(0, 5)
+		var birthDate = this.value;
+		var year = birthDate.substr(0, 5); 
 		year.replace(/[_\W]+/g, "");
 		birthDate = birthDate.slice(5);
 		year = year.slice(0, -1);
