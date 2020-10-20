@@ -1054,7 +1054,6 @@ p.error {
     width: 49px;
     margin: 0 !important;
     background: #e6e6e6;
-        background-image: none;
     display: flex;
     justify-content: center;
     align-items: center;
