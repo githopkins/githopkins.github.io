@@ -271,10 +271,9 @@ $(document).ready(function() {
 	 	$("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date").prop("placeholder", "MM-DD-YYYY format");
 	});
 	$('input[type="date"]').on("change", function(){
-		var date = this.value;
-		var year = date.substr(0, 5); 
-		year.replace(/[_\W]+/g, "");
-		date = date.slice(5);
+		var date = this.value; //
+		var year = date.substr(0, 5); //
+		date = date.slice(5); //
 		year = year.slice(0, -1);
 		var newDate = date + "-" + year;
 		$(this).attr("value", newDate);
