@@ -614,10 +614,15 @@ p span {
 }
 
 @media screen and (max-width: 792px) {
+	h3 {
+		line-height: 35px;
+		margin: 63px 0;
+		font-size: 22px;
+	}
 	#landing-bar {
 		padding: 0 15px;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 	}
 	#landing-bar h1 {
 		width: 351px;
@@ -655,6 +660,98 @@ p span {
 		display: block;
 		border-radius: 7px;
 	}
-	
-	
+	#form-content {
+		margin-bottom: 0px;
+	}
+	.form-block {
+		width: 100%;
+	}
+	.form-block-final small {
+		text-align: justify;
+	}
+	#form-content form button {
+		width: 260px;
+	}
+	#callouts, #after-block {
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 0;
+	}
+	#download {
+		border-radius: 0;
+		margin: 35px 0px;
+	}
+	#after-block h4 {
+		margin: 15px 0 25px;
+	}
+	#after-block h3 {
+		font-size: 28px;
+	}
+	.gridded-block {
+		margin: 10px 0;
+		width: 100%;
+		padding: 0 10px;
+	}
+	.gridded_block_circle {
+		display: none;
+	}
+	.gridded-block p {
+		margin-left: 0;
+	}
+	.award {
+		width: 35%;
+	}
+	.accordion-selection {
+		width: 100%;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		padding: 20px 23px;
+		box-shadow: none;
+		border-radius: 0;
+		margin: 0;
+		position: relative;
+	}
+	.accordion-selection:hover {
+		box-shadow: none;
+	}
+	.accordion-description p {
+		border-top: none;
+	}
+	#expand-all {
+		padding: 14px;
+		border-bottom: none;
+		margin-top: -70px;
+	}
+	.accordion-row strong {
+		max-width: 335px;
+	}
+	.hide span {
+		position: absolute;
+		right: 20px;
+		top: 72px;
+	}
+	.portriat_test {
+		display: none;
+	}
+	.testimonial-container {
+		margin: 0px auto;
+		border-bottom: 1px solid rgba(0,0,0,.05);
+		box-shadow: none;
+	}
+	.testimonial_quote {
+		width: 100%;
+		border-radius: 0;
+		padding: 20px;
+		box-shadow: none;
+	}
+	.testimonial_said {
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.testimonial_said span {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+	#footer {
+		border-top: 0;
+	}
 }
