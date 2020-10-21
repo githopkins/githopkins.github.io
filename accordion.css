@@ -13,6 +13,10 @@ body {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 strong {
 	font-weight: bolder;
 }
@@ -607,4 +611,50 @@ p span {
 	font-weight: bold;
 	margin: 0 5px;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 792px) {
+	#landing-bar {
+		padding: 0 15px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#landing-bar h1 {
+		width: 351px;
+	}
+	#landing-bar a button {
+		font-size: 15px;
+	}
+	#iframe-video {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+	#iframe-video iframe {
+		height: 310px;
+		max-width: 600px;
+		margin-left: 0;
+	}
+	#call-to-action {
+		margin-left: 0;
+		text-align: center;
+		width: 100vw;
+	}
+	#call-to-action h4 {
+		font-size: 30px;
+		letter-spacing: .025em;
+		margin-bottom: 20px;
+	}
+	#call-to-action h5 {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+	#call-to-action button {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		border-radius: 7px;
+	}
+	
+	
 }
