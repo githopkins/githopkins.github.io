@@ -1,0 +1,395 @@
+<html>
+<head>
+<title>Accordion</title>
+<link rel="stylesheet" href="https://use.typekit.net/obw4pno.css">
+<link rel="stylesheet" href="accordion.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="accordion.js"></script>
+</head>
+
+<body>
+	<div id="welcome-landing">
+		<div id="landing-bar">
+			<h1>AnnieMac Home Mortgage</h1>
+			<a href="tel:856-252-0289"><button>856-252-0289</button></a>
+		</div>
+		<div id="iframe-video">
+			<iframe src="https://player.vimeo.com/video/428184271?title=0&amp;byline=0&amp;portrait=0&amp;controls=1&amp;autoplay=0" frameborder="0" width="100%"></iframe>
+		</div>
+		<div id="call-to-action">
+			<h4>Upgrade Your Branch Today!</h4>
+			<h5>Give Your Branch The Support and Security It Needs to Succeed</h5>
+			<a href="#after-block"><button>Learn More</button></a>
+		</div>
+	</div>
+	<div id="form-content">
+		<h2>Get More Information</h2>
+		<form action="./kelseythanks" id="push-form">
+			<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+			<input type="hidden" data-xml-node="LeadSourceId" value="Q6UJ9A143NIF">
+			<input type="hidden" id="Entity" value="Contact">
+			<input type="hidden" id="UserId" value="U6UJ9A0000BF">
+			<input type="hidden" id="title" data-xml-node="EmploymentTitle">
+			<input type="hidden" id="Lead Import" value="true">
+			<input type="hidden" id="Assign" value="true">
+			<input type="hidden" id="agents" value="true">
+			<input type="hidden" id="Notification" value="New Lead">
+			<input type="hidden" id="ContactId" data-xml-node="ContactId">
+			<input type="hidden" id="parameters">
+			<p>Fill out the form below to download our booklet and learn how we provide more than any other lender</p>
+			<div class="form-block">
+				<label>Name <span>Required</span></label>
+				<input placeholder="What's your name?" type="text" data-xml-node="BorrowerFullName" required="">
+			</div>
+			<div class="form-block">
+				<label>Phone Number <span>Required</span></label>
+				<input placeholder="What's your phone number?" type="number" data-xml-node="MobilePhone" required="">
+			</div>
+			<div class="form-block">
+				<label>Email Address <span>Required</span></label>
+				<input placeholder="What's your email address?" type="email" data-xml-node="Email" required="">
+			</div>
+			<div class="form-block">
+				<label>NMLS ID <span>Required</span></label>
+				<input placeholder="What's your NMLS ID?" type="number" data-xml-node="LicenseNumber" required="">
+			</div>
+			<div class="form-block">
+				<div id="state-selection">
+					<label>Choose a state: <span>Required</span>
+						<input list="states" placeholder="Choose a state" name="state" data-xml-node="State" required=""></label>
+					<datalist id="states">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</datalist>
+				</div>
+			</div>
+			<input type="hidden" class="width-100" id="Comments" data-xml-node="Comments">
+			<div class="form-block-final">
+				<small>By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply.</small>
+				<button data-qlf-submit="" id="toggle-captcha" class="g-recaptcha" data-sitekey="6LdDJPoUAAAAAMi9pjPYdfetUKDQk4AIRE4UdSL6" data-callback="onSubmit" data-action="submit">Submit</button>
+			</div>
+		</form>
+		<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+	</div>
+	<div id="callouts" class="">
+		<div id="download">
+			<h3>Download</h3>
+			<small>Download our handy booklet and learn everything you need to know about working with AnnieMac.</small>
+			<button>Download</button>
+		</div>
+	</div>
+	<div id="after-block">
+		<h4>Give Yourself The Success and Security you Deserve</h4>
+		<h3>Elevate Your Career Today</h3>
+		<div id="after-block-content-container">
+			<div class="gridded-block">
+				<div class="gridded_block_circle">
+				</div>
+				<strong>Lorem</strong>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="gridded-block">
+				<div class="gridded_block_circle">
+				</div>
+				<strong>Lorem</strong>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="gridded-block">
+				<div class="gridded_block_circle">
+				</div>
+				<strong>Lorem</strong>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="gridded-block">
+				<div class="gridded_block_circle">
+				</div>
+				<strong>Lorem</strong>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<div id="awarded">
+			<strong>Awards and Accolades</strong>
+			<div id="award-grid">
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+				<div class="award">
+					<div class="award-title">Title</div>
+					<span>Date 20, 2020</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>The Benefits of Working With Us</h3>
+	<div id="accordion-container">
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>AnnieMac Company Culture</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						We care about our community, our customers and our AnnieMac family, and we show it with exciting events and projects ike our "Fetch The Ball" Golf Tournament benefitting Freedom Service Dogs of America, our Annual Blood Drive and our Sunshine Fund, created to help AnnieMac family members in need.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>National Lunch &amp; Learns</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						This popular program features one-of-a-kind in-person and remote learning and networking opportunities.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Renovation &amp; Construction Support</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						With lots of people working from home, construction projects and fixer-uppers are more popular than ever, and we offer plenty of options so borrowers can create their dream homes.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Double Your Revenue/Production</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						Earning twice your current revenue isn’t a pipe dream. In fact, most new team members accomplish this goal after only 12-18 months with us.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>AnnieMac University</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						Offer your realtor partners exclusive Training &amp; Certification opportunities taught by the industry's most respected experts.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Growing Realtor Relationships</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						We'll suggest structured processes to help you effectively farm your local market and win over those A-list realtor partners you've been yearning for.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Team-Building</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						We'll help you recruit, vet and hire a winning team that will take your branch to the top of your market.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Work Less, Earn More, Live More</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						Our operational support will improve your work-life balance by freeing up 10-15 hours every week.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Manage People, Not Pipeline</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						We'll handle your processing and underwriting in-house so your team can focus on building relationships and helping families.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-selection">
+			<div class="accordion-row">
+				<strong>Weathering Industry Storms</strong>
+				<div class="toggle"><span>Expand</span></div>
+			</div>
+			<div class="accordion-row">
+				<div class="accordion-description">
+					<p class="hide">
+						<span>Collapse</span>
+						AnnieMac has the experience, insight and infrastructure to predict any changes in industry trends and remain successful no matter what.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>What People Say</h3>
+	<div class="testimonial-container">
+		<div class="testimonial_avatar">
+		</div>
+		<div class="testimonial_quote">
+			<div class="portriat_test" id="mud">
+			</div>
+			<div class="testimonial_said">
+				<h5>Mud Mhiripiri</h5>
+				<span><strong>Branch Manager</strong>
+					<strong>Eden Prairie, MN</strong></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</div>
+	</div>
+	<div class="testimonial-container">
+		<div class="testimonial_avatar flip">
+		</div>
+		<div class="testimonial_quote">
+			<div class="portriat_test" id="trye">
+			</div>
+			<div class="testimonial_said">
+				<h5>Stephen Trye</h5>
+				<span><strong>Branch Manager</strong>
+					<strong>Towson, MD</strong></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</div>
+	</div>
+	<div class="testimonial-container">
+		<div class="testimonial_avatar">
+		</div>
+		<div class="testimonial_quote">
+			<div class="portriat_test" id="shealey">
+			</div>
+			<div class="testimonial_said">
+				<h5>Jeff Shealey</h5>
+				<span><strong>Loan Originator</strong>
+					<strong>Katy, TX</strong></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="equal-housing">
+		</div>
+		<small>
+			&copy; 2020 AnnieMac Home Mortgage - NMLS 338923.<br />
+			<a href="https://www.annie-mac.com/page/licensing">Licensing</a> |
+			<a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/338923">NMLS Consumer Access</a><br>
+			<small>Equal Opportunity Employer. This site contains business-to-business material which is solely intended for business development purposes and is not intended for consumer use or distribution. This is not an application for employment.
+			</small>
+	</div>
+</body>
+</html>
