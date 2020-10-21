@@ -459,9 +459,12 @@ form button, .message-contents button, .go {
 }
 
 #expand-all .toggle span {
-	font-weight: bolder;
 	color: #025c8c;
 	opacity: 1;
+}
+
+#expand-all .toggle:hover {
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
 }
 
 #expand-all:hover {
