@@ -451,6 +451,19 @@ form button, .message-contents button, .go {
 	cursor: pointer;
 }
 
+#expand-all {
+	background: transparent;
+	box-shadow: none;
+	padding: 3px;
+	margin-top: -35px;
+}
+
+#expand-all .toggle span {
+	font-weight: bolder;
+	color: #025c8c;
+	opacity: 1;
+}
+
 p span {
 	float: right;
 	margin-top: -52px;
