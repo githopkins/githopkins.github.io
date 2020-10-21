@@ -74,10 +74,10 @@ h3 {
 }
 
 #iframe-video iframe {
-	height: 400px;
+	height: 375px;
 	border: none;
 	max-width: 800px;
-	margin-left: -10px;
+	margin-left: -35px;
 }
 
 #call-to-action {
