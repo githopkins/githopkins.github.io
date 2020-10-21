@@ -238,6 +238,7 @@ form button, .message-contents button, .go {
 
 #callouts {
 	width: 80%;
+	min-width: 1020px;
 	min-height: 300px;
 	margin: 75px auto;
 }
@@ -295,6 +296,7 @@ form button, .message-contents button, .go {
 
 #after-block {
 	width: 80%;
+	min-width: 1020px;
 	margin: 50px auto 0;
 	background: white;
 	padding: 20px;
@@ -417,6 +419,7 @@ form button, .message-contents button, .go {
 
 .accordion-selection {
 	width: 80%;
+	min-width: 1020px;
 	display: flex;
 	background: #ffffff;
 	box-shadow: 1px 3px 9px rgba(0, 0, 0, .12);
@@ -518,6 +521,7 @@ p span {
 
 .testimonial_quote {
 	width: 80%;
+	min-width: 1020px;
 	display: flex;
 	background: #ffffff;
 	box-shadow: 1px 3px 9px rgba(0, 0, 0, .3);
@@ -619,17 +623,39 @@ p span {
 	}
 }
 
+@media screen and (max-width: 1123px) {
+	.form-block {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	#callouts, #after-block, .accordion-selection, .testimonial_quote {
+		min-width: auto;
+		width: 90%;
+	}
+}	
+
 @media screen and (max-width: 1000px) {
 	#welcome-landing {
 		background-position-x: 18vw;
+	}
+	.gridded_block_circle {
+		display: none;
+	}
+	.gridded-block p {
+		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: 835px) {
 	#welcome-landing {
-			background-image: none !important;
-			background: #d1d5d9;
-		}
+		background-image: none !important;
+		background: #d1d5d9;
+	}
+	#form-content form {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 792px) {
@@ -682,9 +708,6 @@ p span {
 	#form-content {
 		margin-bottom: 0px;
 	}
-	.form-block {
-		width: 100%;
-	}
 	.form-block-final small {
 		text-align: justify;
 	}
@@ -710,12 +733,6 @@ p span {
 		margin: 10px 0;
 		width: 100%;
 		padding: 0 10px;
-	}
-	.gridded_block_circle {
-		display: none;
-	}
-	.gridded-block p {
-		margin-left: 0;
 	}
 	.award {
 		width: 35%;
