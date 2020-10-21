@@ -30,7 +30,7 @@ h3 {
 
 #welcome-landing {
 	min-height: 97vh;
-	background: url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg') no-repeat;
+	background: #d1d5d9 url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg') no-repeat;
 	background-size: cover;
 	background-position-x: 390px;
 	display: flex;
@@ -61,7 +61,7 @@ h3 {
 	border-bottom: 4px solid rgba(0, 0, 0, .2);
 }
 
-#landing-bar a button:hover {
+#landing-bar a:hover button {
 	cursor: pointer;
 	background: #006fa9;
 	border: 1px solid #006fa9;
