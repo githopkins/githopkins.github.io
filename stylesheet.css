@@ -672,9 +672,6 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 .page-loan-apply .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
     margin: 0 5px 0 0 !important;
 }
-label.error {
-    display: none !important;
-}
 #employment-wrapper thead th:nth-of-type(2), #employment-wrapper tbody tr td:nth-of-type(2) {
     display: flex !important;
     flex-direction: column !important;
