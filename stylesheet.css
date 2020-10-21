@@ -31,6 +31,15 @@
 .alert-error {
 background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
 }
+.loan-app > p:first-of-type {
+    color: white;
+    font-weight: bold;
+    background: #006FA9;
+    padding: 10px 12px;
+    border-radius: 0px;
+    width: 97%;
+    line-height: 1.7;
+}
 .action-buttons-calcs button {
     width: 280px;
 }
