@@ -17,10 +17,6 @@ strong {
 	font-weight: bolder;
 }
 
-.hide {
-	display: none;
-}
-
 h3 {
 	text-align: center;
 	margin: 75px 0;
@@ -464,6 +460,10 @@ p span {
 	display: flex;
 	width: 100%;
 	flex: 1;
+}
+
+.hide {
+	display: none;
 }
 
 .accordion-description p {
