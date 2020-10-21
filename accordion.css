@@ -613,6 +613,25 @@ p span {
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 1280px) {
+	#welcome-landing {
+		background-position-x: 24vw;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#welcome-landing {
+		background-position-x: 18vw;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	#welcome-landing {
+			background-image: none !important;
+			background: #d1d5d9;
+		}
+}
+
 @media screen and (max-width: 792px) {
 	h3 {
 		line-height: 35px;
