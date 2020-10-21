@@ -28,6 +28,9 @@
         margin: 20px;
     }
 }
+.alert-error {
+background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
+}
 .action-buttons-calcs button {
     width: 280px;
 }
