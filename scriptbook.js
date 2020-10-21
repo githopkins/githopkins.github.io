@@ -212,6 +212,17 @@ $("#covid-warning span").click(function(){
 // Closing the script.	
 });
 $(document).ready(function() {
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_base").prop("placeholder", "Base");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_overtime").prop("placeholder", "Overtime");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_bonus").prop("placeholder", "Bonus");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_commission").prop("placeholder", "Commission");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_interest").prop("placeholder", "Interest");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_rent_net").prop("placeholder", "Net Rent");
+	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_other").prop("placeholder", "Other");
+	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_institution_name").prop("placeholder", "Institution Name");
+	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_account_number").prop("placeholder", "Account Number");
+	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_balance").prop("placeholder", "Account Balance");
+	
 	$("#add-asset-account").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_institution_name").prop("placeholder", "Institution Name");
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_1_account_number").prop("placeholder", "Account Number");
@@ -224,14 +235,6 @@ $(document).ready(function() {
 		$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_3_balance").prop("placeholder", "Account Balance");
 		$("#add-asset-account").hide();
 	});
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_base").prop("placeholder", "Base");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_overtime").prop("placeholder", "Overtime");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_bonus").prop("placeholder", "Bonus");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_commission").prop("placeholder", "Commission");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_interest").prop("placeholder", "Interest");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_rent_net").prop("placeholder", "Net Rent");
-	$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_0_other").prop("placeholder", "Other");
-	
 	$("#add-income-monthly").click(function(){
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_base").prop("placeholder", "Base");
 		$("#sudoux_mortgagebundle_loanapplicationtype_income_monthly_1_overtime").prop("placeholder", "Overtime");
@@ -254,9 +257,7 @@ $(document).ready(function() {
 	// $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date").prop("placeholder", "MM-DD-YYYY format");
 	// $('#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date').removeClass('datepicker hasDatepicker');
     // $("#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date").prop("placeholder", "MM-DD-YYYY format");
-	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_institution_name").prop("placeholder", "Institution Name");
-	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_account_number").prop("placeholder", "Account Number");
-	$("#sudoux_mortgagebundle_loanapplicationtype_asset_account_0_balance").prop("placeholder", "Account Balance");
+	
 	// var $jqDate = jQuery('.newdatepicker');
 	//  $jqDate.bind('keyup','keydown', function(e){
 	//  	if(e.which !== 8) {	
