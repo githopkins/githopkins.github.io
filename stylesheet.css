@@ -683,6 +683,9 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
     text-align: left;
     margin-left: 0;
 }
+label.error {
+    border: none !important;
+}
 .error, .error-txt, .error-txt li {
     color: #e01e19;
     border: 1px solid red !important;
