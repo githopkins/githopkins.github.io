@@ -5,4 +5,8 @@ $(document).ready(function() {
 		$('.toggle', this).toggle();
 		$('.hide', this).toggle();
 	});
+	$('#expand-all').click(function() {
+		$('.toggle').toggle();
+		$('.accordion-selection .hide').toggle();
+	});
 });

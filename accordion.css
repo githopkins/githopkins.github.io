@@ -464,6 +464,10 @@ form button, .message-contents button, .go {
 	opacity: 1;
 }
 
+#expand-all:hover {
+	cursor: default;
+}
+
 p span {
 	float: right;
 	margin-top: -52px;
