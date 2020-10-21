@@ -657,6 +657,10 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
     max-width: 400px;
 }
 
+#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_employed {
+    margin: 0 auto;
+}
+
 #asset-real-estate-wrapper .form-horizontal {
     flex-direction: column;
 }
