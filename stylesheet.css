@@ -30,6 +30,7 @@
 }
 .alert-error {
     background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
+    padding: 20px;
 }
 .loan-app > p:first-of-type {
     color: white;
