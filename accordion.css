@@ -34,7 +34,7 @@ h3 {
 
 #welcome-landing {
 	min-height: 97vh;
-	background: url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg');
+	background: url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg') no-repeat;
 	background-size: cover;
 	background-position-x: 390px;
 	display: flex;
