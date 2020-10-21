@@ -1021,15 +1021,7 @@ thead {
     margin-top: 1px;
 }
 }
-.error, .error-txt, .error-txt li {
-display: contents !important;
-}
 
-p.error {
-    border: none !important;
-    text-align: center;
-    margin: -20px 0 auto;
-}
 .radio-group .choice-row {
     display: flex !important;
     align-items: center !important;
