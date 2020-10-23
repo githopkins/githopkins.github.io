@@ -1,3 +1,14 @@
+nav,
+#product-banner,
+footer {
+	display: none;
+}
+
+#text-based {
+	width: 100%;
+	margin: 0px;
+}
+
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -32,13 +43,26 @@ h3 {
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
 }
 
-#welcome-landing {
-	min-height: 97vh;
+#welcome-landing-kelsey {
+	min-height: 800px;
 	background: #d1d5d9 url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg') no-repeat;
 	background-size: cover;
 	background-position-x: 390px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#welcome-landing {
+	min-height: 800px;
+	background: #d1d5d9;
+	background-size: cover;
+	background-position-x: 390px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
 }
 
 #landing-bar {
@@ -46,12 +70,14 @@ h3 {
 	align-items: center;
 	padding: 0 30px;
 	justify-content: space-between;
+	width: 95vw;
+	height: 100px;
 }
 
 #landing-bar h1 {
 	width: 375px;
 	height: 60px;
-	text-indent: -100vw;
+	text-indent: -105vw;
 	background: url('https://annie-mac.com/uploads/sites/10713/public/logobox-hor.png');
 	background-size: cover;
 }
@@ -73,56 +99,61 @@ h3 {
 }
 
 #iframe-video {
-	margin-top: 50px;
-	margin-bottom: 95px;
+	width: 700px;
+	margin-top: -90px;
 }
 
 #iframe-video iframe {
-	height: 375px;
+	height: 415px;
 	border: none;
 	max-width: 800px;
-	margin-left: -35px;
 }
 
 #call-to-action {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	height: 195px;
-	margin-left: 30px;
-	padding-bottom: 60px;
-	width: 715px;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 275px;
+	margin-left: 60px;
 }
 
 #call-to-action h4 {
 	color: white;
-	font-size: 40px;
+	font-size: 60px;
 	letter-spacing: .045em;
 	margin: 0;
 	margin-top: -10px;
 	padding: 0;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
+	width: 620px;
+	text-align: center;
+	line-height: 67px;
 }
 
 #call-to-action h5 {
 	color: white;
-	font-size: 20px;
+	font-size: 25px;
 	letter-spacing: .045em;
-	margin: 0;
 	padding: 0;
 	font-weight: normal;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
+	width: 648px;
+	text-align: center;
+	line-height: 32px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
 #call-to-action button {
 	background: #006fa9;
 	color: #fff;
 	font-weight: bold;
-	border-radius: 40px;
+	border-radius: 17px;
 	border: none;
 	outline: none;
-	padding: 15px 20px;
-	font-size: 13px;
+	padding: 22px 36px;
+	font-size: 16px;
 	letter-spacing: .13em;
 	border-bottom: 2px solid rgba(0, 0, 0, .2);
 	float: right;
@@ -146,9 +177,10 @@ h3 {
 }
 
 #form-content h2 {
+	font-size: 30px;
 	padding-top: 15px;
 	text-align: center;
-	margin-bottom: -30px;
+	margin-bottom: 0px;
 }
 
 #form-content p {
@@ -193,7 +225,8 @@ h3 {
 	width: 100%;
 }
 
-#form-content form input, #form-content form select {
+#form-content form input,
+#form-content form select {
 	padding: 13px;
 	border-radius: 4px;
 	letter-spacing: .03em;
@@ -229,7 +262,9 @@ button {
 	height: 70px;
 }
 
-form button, .message-contents button, .go {
+form button,
+.message-contents button,
+.go {
 	background: #78c254;
 	border: 1px solid #78c254;
 	color: #FFF;
@@ -243,7 +278,7 @@ form button, .message-contents button, .go {
 	margin: 75px auto;
 }
 
-#callouts > * {
+#callouts>* {
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -252,7 +287,7 @@ form button, .message-contents button, .go {
 	flex-direction: column;
 }
 
-#callouts > * h3 {
+#callouts>* h3 {
 	text-align: center;
 	text-transform: initial;
 	margin: 60px 0 15px 0;
@@ -263,7 +298,7 @@ form button, .message-contents button, .go {
 	text-shadow: 4px 4px 6px rgba(0, 0, 0, .65);
 }
 
-#callouts > * small {
+#callouts>* small {
 	width: 70%;
 	color: white;
 	font-size: .9rem;
@@ -323,7 +358,7 @@ form button, .message-contents button, .go {
 	letter-spacing: .02em;
 	margin: 17px 0;
 	text-transform: initial;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 #after-block-content-container {
@@ -630,19 +665,25 @@ p span {
 }
 
 @media screen and (max-width: 1060px) {
-	#callouts, #after-block, .accordion-selection, .testimonial_quote {
+
+	#callouts,
+	#after-block,
+	.accordion-selection,
+	.testimonial_quote {
 		min-width: auto;
 		width: 90%;
 	}
-}	
+}
 
 @media screen and (max-width: 1000px) {
 	#welcome-landing {
 		background-position-x: 18vw;
 	}
+
 	.gridded_block_circle {
 		display: none;
 	}
+
 	.gridded-block p {
 		margin-left: 0;
 	}
@@ -650,9 +691,9 @@ p span {
 
 @media screen and (max-width: 835px) {
 	#welcome-landing {
-		background-image: none !important;
 		background: #d1d5d9;
 	}
+
 	#form-content form {
 		width: 90%;
 	}
@@ -664,129 +705,160 @@ p span {
 		margin: 63px 0;
 		font-size: 22px;
 	}
+
 	#landing-bar {
 		padding: 0 15px;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	#landing-bar h1 {
 		width: 351px;
 	}
+
 	#landing-bar a button {
 		font-size: 15px;
 	}
+
 	#iframe-video {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 60px;
 	}
+
 	#iframe-video iframe {
 		height: 310px;
 		max-width: 600px;
 		margin-left: 0;
 	}
+
 	#call-to-action {
 		margin-left: 0;
 		text-align: center;
 		width: 100vw;
 	}
+
 	#call-to-action h4 {
 		font-size: 30px;
 		letter-spacing: .025em;
 		margin-bottom: 20px;
 	}
+
 	#call-to-action h5 {
 		font-size: 18px;
 		margin-bottom: 35px;
 	}
+
 	#call-to-action button {
 		float: none;
 		margin: 0 auto;
 		display: block;
 		border-radius: 7px;
 	}
+
 	#form-content {
 		margin-bottom: 0px;
 	}
+
 	.form-block-final small {
 		text-align: justify;
 	}
+
 	#form-content form button {
 		width: 260px;
 	}
-	#callouts, #after-block {
+
+	#callouts,
+	#after-block {
 		width: 100%;
 		margin: 0 auto;
 		border-radius: 0;
 	}
+
 	#download {
 		border-radius: 0;
 		margin: 35px 0px;
 	}
+
 	#after-block h4 {
 		margin: 15px 0 25px;
 	}
+
 	#after-block h3 {
 		font-size: 28px;
 	}
+
 	.gridded-block {
 		margin: 10px 0;
 		width: 100%;
 		padding: 0 10px;
 	}
+
 	.award {
 		width: 35%;
 	}
+
 	.accordion-selection {
 		width: 100%;
-		border-bottom: 1px solid rgba(0,0,0,.1);
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
 		padding: 20px 23px;
 		box-shadow: none;
 		border-radius: 0;
 		margin: 0;
 		position: relative;
 	}
+
 	.accordion-selection:hover {
 		box-shadow: none;
 	}
+
 	.accordion-description p {
 		border-top: none;
 	}
+
 	#expand-all {
 		padding: 14px;
 		border-bottom: none;
 		margin-top: -70px;
 	}
+
 	.accordion-row strong {
 		max-width: 335px;
 	}
+
 	.hide span {
 		position: absolute;
 		right: 20px;
 		top: 72px;
 	}
+
 	.portriat_test {
 		display: none;
 	}
+
 	.testimonial-container {
 		margin: 0px auto;
-		border-bottom: 1px solid rgba(0,0,0,.05);
+		border-bottom: 1px solid rgba(0, 0, 0, .05);
 		box-shadow: none;
 	}
+
 	.testimonial_quote {
 		width: 100%;
 		border-radius: 0;
 		padding: 20px;
 		box-shadow: none;
 	}
+
 	.testimonial_said {
 		padding-left: 0;
 		margin-left: 0;
 	}
+
 	.testimonial_said span {
 		padding-bottom: 0;
 		border-bottom: 0;
 	}
+
 	#footer {
 		border-top: 0;
 	}
