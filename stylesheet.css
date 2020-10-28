@@ -239,7 +239,7 @@
 .user-login .inner-layout #form div.alert.alert-error, #team-site-warning {
     background: #ffe7dc;
     margin-bottom: -1px;
-    color: #a91202;
+    color: white;
     padding: 17px;
     line-height: 27px;
     text-align: left;
@@ -447,13 +447,13 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 }
 
 .page-loan-apply tbody {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .page-loan-apply tbody tr {
-	margin-right: 15px;
-	margin-bottom: 30px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .loan-app select {
@@ -505,10 +505,10 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 } 
 
 .page-loan-apply td input, .page-loan-apply td select {
-	margin: 0;
-	padding: 0 !important;
-	padding-left: 18px !important;
-	display: flex;
+    margin: 0;
+    padding: 0 !important;
+    padding-left: 18px !important;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: inherit;
@@ -516,11 +516,11 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 }
 
 .page-loan-apply tr .delete-row {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .page-loan-apply tbody .money-field {
-	width: 91%;
+    width: 91%;
 }
 
 .page-loan-apply tbody .money-field input {
@@ -534,11 +534,11 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 }
 
 .page-loan-apply .required-asterisk {
-	display: contents;
+    display: contents;
 }
 
 .page-loan-apply table input, .page-loan-apply table select {
-	background: #fff;
+    background: #fff;
     border: 0;
     border-radius: 4px;
     box-shadow: inset 0 0 0 1px #696969;

@@ -22,6 +22,7 @@ body {
 	background: #dedede;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 a {
@@ -55,14 +56,13 @@ h3 {
 }
 
 #welcome-landing {
-	min-height: 800px;
-	background: #d1d5d9;
+	min-height: 700px;
+	background: linear-gradient(180deg, rgba(0,39,60,.35) 50%, #003b6c 90%), url('https://annie-mac.com/uploads/sites/10713/public/landing.jpeg') top left no-repeat;
 	background-size: cover;
-	background-position-x: 390px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;	
+	justify-content: center;
 }
 
 #landing-bar {
@@ -72,13 +72,14 @@ h3 {
 	justify-content: space-between;
 	width: 95vw;
 	height: 100px;
+	margin-bottom: -60px;
 }
 
 #landing-bar h1 {
 	width: 375px;
-	height: 60px;
+	height: 70px;
 	text-indent: -105vw;
-	background: url('https://annie-mac.com/uploads/sites/10713/public/logobox-hor.png');
+	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
 	background-size: cover;
 }
 
@@ -104,9 +105,10 @@ h3 {
 }
 
 #iframe-video iframe {
-	height: 415px;
+	height: 360px;
 	border: none;
 	max-width: 800px;
+	margin-top: 50px;
 }
 
 #call-to-action {
@@ -115,7 +117,7 @@ h3 {
 	justify-content: space-evenly;
 	align-items: center;
 	height: 275px;
-	margin-left: 60px;
+	/*! margin-left: 60px; */
 }
 
 #call-to-action h4 {
@@ -138,35 +140,31 @@ h3 {
 	padding: 0;
 	font-weight: normal;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
-	width: 648px;
+	width: 630px;
 	text-align: center;
-	line-height: 32px;
+	line-height: 35px;
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
 
-#call-to-action button {
-	background: #006fa9;
-	color: #fff;
+#landing-bar a button, #call-to-action button {
+	font-size: 1.1rem;
 	font-weight: bold;
-	border-radius: 17px;
-	border: none;
-	outline: none;
-	padding: 22px 36px;
-	font-size: 16px;
-	letter-spacing: .13em;
-	border-bottom: 2px solid rgba(0, 0, 0, .2);
-	float: right;
-	margin-top: 10px;
+	color: white;
+	background: #78c254;
+	border: 1px solid #78c254;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
 }
 
-#call-to-action button:hover {
-	background: #0f4777;
+#landing-bar a:hover button, #call-to-action button:hover {
 	cursor: pointer;
+	background: #006fa9;
+	border: 1px solid #006fa9;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
 }
 
 #form-content {
-	background: radial-gradient(circle, rgba(15, 71, 119, 1) 20%, rgba(32, 104, 164, 1) 94%);
+	background: linear-gradient(180deg, rgb(0, 59, 108) 20%, rgb(32, 104, 164) 94%);
 	color: #fff;
 	flex: 1;
 	display: flex;
@@ -177,10 +175,10 @@ h3 {
 }
 
 #form-content h2 {
-	font-size: 30px;
+	font-size: 50px;
 	padding-top: 15px;
 	text-align: center;
-	margin-bottom: 0px;
+	margin-bottom: -15px;
 }
 
 #form-content p {
@@ -309,7 +307,7 @@ form button,
 #download {
 	background: linear-gradient(14deg, rgba(5, 6, 6, 0.81) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/staff.jpeg') top right no-repeat;
 	background-size: cover;
-	border-radius: 4px;
+	background-position-x: 56%;
 	flex: 1;
 	border-right: 1px solid rgba(255, 255, 255, .3);
 	position: relative;
@@ -573,8 +571,6 @@ p span {
 }
 
 .testimonial_said {
-	padding-left: 11px;
-	margin-left: 11px;
 	display: flex;
 	flex-direction: column;
 }
@@ -652,9 +648,19 @@ p span {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1408px) {
 	#welcome-landing {
-		background-position-x: 24vw;
+		min-height: 99vh;
+	}
+	#call-to-action h4 {
+		font-size: 45px;
+		line-height: 50px;
+	}
+}
+
+@media screen and (max-width: 1330px) {
+	#landing-bar {
+		margin-bottom: 40px;
 	}
 }
 
@@ -676,10 +682,6 @@ p span {
 }
 
 @media screen and (max-width: 1000px) {
-	#welcome-landing {
-		background-position-x: 18vw;
-	}
-
 	.gridded_block_circle {
 		display: none;
 	}
@@ -690,10 +692,6 @@ p span {
 }
 
 @media screen and (max-width: 835px) {
-	#welcome-landing {
-		background: #d1d5d9;
-	}
-
 	#form-content form {
 		width: 90%;
 	}
@@ -714,6 +712,7 @@ p span {
 
 	#landing-bar h1 {
 		width: 351px;
+		min-height: 62px !important;
 	}
 
 	#landing-bar a button {
@@ -723,7 +722,8 @@ p span {
 	#iframe-video {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 60px;
+		margin-bottom: 0;
+		margin-top: 40px;
 	}
 
 	#iframe-video iframe {
@@ -735,18 +735,18 @@ p span {
 	#call-to-action {
 		margin-left: 0;
 		text-align: center;
-		width: 100vw;
 	}
 
 	#call-to-action h4 {
 		font-size: 30px;
 		letter-spacing: .025em;
-		margin-bottom: 20px;
+		margin-top: -15px;
 	}
 
 	#call-to-action h5 {
 		font-size: 18px;
-		margin-bottom: 35px;
+		margin-top: -30px;
+		width: 400px;
 	}
 
 	#call-to-action button {
@@ -777,7 +777,7 @@ p span {
 
 	#download {
 		border-radius: 0;
-		margin: 35px 0px;
+		/*! margin: 35px 0px; */
 	}
 
 	#after-block h4 {
@@ -849,11 +849,6 @@ p span {
 		box-shadow: none;
 	}
 
-	.testimonial_said {
-		padding-left: 0;
-		margin-left: 0;
-	}
-
 	.testimonial_said span {
 		padding-bottom: 0;
 		border-bottom: 0;
@@ -861,5 +856,14 @@ p span {
 
 	#footer {
 		border-top: 0;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	#landing-bar {
+		margin-bottom: 0;
+	}
+	#call-to-action h5 {
+		margin-bottom: 0;
 	}
 }
