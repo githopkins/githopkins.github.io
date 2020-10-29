@@ -166,8 +166,6 @@
     position: relative;
     background: #006BA7 url('right-dogs.png') bottom right no-repeat;
     background-size: 200px;
-    display: none !important;
-    visibility: hidden;
 }
 #paws-motif {
     position: absolute;
