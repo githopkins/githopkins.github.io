@@ -157,6 +157,9 @@
 .site-type-team .branch-manager-section {
     width: 21.5%;
 }
+#new-perk-plans {
+    margin: 0 auto;
+}
 #paws-container {
     height: 390px;
     margin: 0 auto;
@@ -166,6 +169,8 @@
     position: relative;
     background: #006BA7 url('right-dogs.png') bottom right no-repeat;
     background-size: 200px;
+    margin-top: 120px;
+    margin-bottom: -40px;
 }
 #paws-motif {
     position: absolute;
