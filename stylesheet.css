@@ -28,6 +28,12 @@
         margin: 20px;
     }
 }
+.action-buttons-calcs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 .alert-error {
     background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
     padding: 20px !important;
