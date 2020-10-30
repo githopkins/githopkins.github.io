@@ -378,6 +378,25 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 #annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
     margin-top: 0 !important;
 }
+@media screen and (max-width: 854px) {
+    #paws-container {
+        width: 100vw;
+    }
+    #paws-motif h1 {
+        width: 390px;
+        height: 133px;
+    }
+    #paws-motif h3 {
+        color: #fff;
+    }
+    #paws-motif h4 {
+        margin: -5px 0 35px;
+    }
+    #paws-motif button {
+        background: #078CC4;
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 800px) {
     .site-type-team #navigation-bar {
         justify-content: space-between;
