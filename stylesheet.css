@@ -315,12 +315,12 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
     max-height: 42px;
 }
 .page-branch-list > #product-banner {
-    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/annie_mac_new_banner_branches.jpeg) top left no-repeat;
+    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/annie_mac_new_banner_branches.jpeg') top left no-repeat;
     background-size: cover;
     background-position-y: 53%;
 }
 .page-loan-apply-complete > #product-banner {
-    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/complete.jpeg) top left no-repeat;
+    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/complete.jpeg') top left no-repeat;
     background-size: cover;
     background-position-y: 32%;
 }
@@ -371,7 +371,7 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
     opacity: .8;
 }
 #annie_mac-loan-officer > #branch-banner {
-    background: url(https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg) top left no-repeat;
+    background: url('https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg') top left no-repeat;
     background-size: cover;
     background-position-y: 63%;
 }
