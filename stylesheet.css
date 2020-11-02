@@ -2,7 +2,6 @@
 #home-banner {
     background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november.jpeg) top left no-repeat;
     background-size: cover;
-    background-position-y: 96%;
 }
 @media screen and (max-width: 650px) {
     #navigation-logo {
