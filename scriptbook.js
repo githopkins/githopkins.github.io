@@ -15,7 +15,7 @@ $(document).ready(function() {
 // Login Error
 	$(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
 	$(alreadyBorrower).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
-	$(".user-login .inner-layout #form  div.alert.alert-ersror").text("Your email or password is incorrect.  Please check your information and try again.  If you've forgotten your password, please use the 'Forgot Password?' option below.   Accounts will be locked after 3 unsuccessful login attempts.");
+	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect.  Please check your information and try again.  If you've forgotten your password, please use the 'Forgot Password?' option below.   Accounts will be locked after 3 unsuccessful login attempts.");
 
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
