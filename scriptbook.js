@@ -7,7 +7,6 @@ var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan offic
 
 $(document).ready(function() {
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
-	
 	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
@@ -30,7 +29,7 @@ if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) ||
 	}
 
 if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
-$("#product-banner > h2").text("Pre-Qualify");	
+	$("#product-banner > h2").text("Pre-Qualify");	
 }
 
 // Booking link for loan originators continued:
@@ -54,15 +53,15 @@ $("#covid-warning span").click(function(){
   $("#covid-warning > h4 > span").addClass("hide");
 });
 
-	// Below are team members added who need to be removed from the application because they do not originate.
-		// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
-		$('option[value="9443"]').hide();
-		$('option[value="9441"]').hide();
-		// Hide Terri from application on all locations, in the event someone selects from corporate.
-		$('option[value="9442"]').hide();
-		$('option[value="9440"]').hide();
-		// Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
-		$('option[value="9115"]').hide();
+// Below are team members added who need to be removed from the application because they do not originate.
+	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
+	$('option[value="9443"]').hide();
+	$('option[value="9441"]').hide();
+	// Hide Terri from application on all locations, in the event someone selects from corporate.
+	$('option[value="9442"]').hide();
+	$('option[value="9440"]').hide();
+	// Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
+	$('option[value="9115"]').hide();
 
 
 // Customizations for TEAM Specific pages:
