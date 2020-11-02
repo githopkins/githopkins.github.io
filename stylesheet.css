@@ -1,30 +1,4 @@
 /* AnnieMac Stylesheet Document */
-/* #home-banner {
-    background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url(/uploads/sites/10713/public/pexel-family_1.jpeg) top right no-repeat;
-    background-size: cover;
-    background-position-y: 25%;
-    height: 670px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 0 0 155px 105px;
-    border-bottom: 10px solid #78c254;
-    color: white;
-} */
-
-#home-banner {
-    background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november.jpeg) top right no-repeat;
-    background-size: cover;
-    background-position-y: 96%;
-    height: 580px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 0 0 155px 105px;
-    border-bottom: 10px solid #78c254;
-    color: white;
-}
-
 @media screen and (max-width: 650px) {
     #navigation-logo {
         max-width: 200px !important;
