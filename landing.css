@@ -17,6 +17,15 @@ body {
 	justify-content: space-between;
 	flex: 1;
 }
+#thanks {
+	width: 100%;
+	flex: 1;
+	text-align: center;
+	margin-top: 40px;
+}
+#thanks h4 {
+	font-size: 30px;
+}
 #header-section {
 	display: flex;
 	flex-direction: column;
