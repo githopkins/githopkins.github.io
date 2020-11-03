@@ -26,6 +26,11 @@ body {
 #thanks h4 {
 	font-size: 30px;
 }
+#disclaimed {
+	width: 80%;
+	margin: 40px auto -20px;
+}
+
 #header-section {
 	display: flex;
 	flex-direction: column;
