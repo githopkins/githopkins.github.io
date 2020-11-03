@@ -1,12 +1,19 @@
 /* AnnieMac Stylesheet Document */
+.top-links-header {
+    align-items: end;
+    height: 15px;
+}
+.header-links-content {
+    margin-top: -17px;
+}
+.header-links-content button {
+    border: none !important;
+    margin-right: 10px;
+}
 #home-banner {
     background: linear-gradient(150deg, rgba(22, 31, 36, 0.35) 70%, #2642192b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
     background-size: cover !important;
     background-position-y: 90% !important;
-}
-.header-links-content button {
-    border: 1px solid rgba(255,255,255,.5);
-    margin-right: 10px;
 }
 #sitemap li#list_11563 {
     display: none;
