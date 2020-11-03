@@ -4,6 +4,10 @@
     background-size: cover !important;
     background-position-y: 90% !important;
 }
+.header-links-content button {
+    border: 1px solid rgba(255,255,255,.5);
+    margin-right: 10px;
+}
 @media screen and (max-width: 650px) {
     #navigation-logo {
         max-width: 200px !important;
