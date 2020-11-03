@@ -1,6 +1,6 @@
 /* AnnieMac Stylesheet Document */
 #home-banner {
-    background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
+    background: linear-gradient(150deg, rgba(22, 31, 36, 0.35) 70%, #2642192b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
     background-size: cover !important;
     background-position-y: 90% !important;
 }
