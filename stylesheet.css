@@ -15,6 +15,9 @@
     background-size: cover !important;
     background-position-y: 90% !important;
 }
+#home-reviews {
+    width: 82%;
+}
 #sitemap li#list_11563 {
     display: none;
 }
