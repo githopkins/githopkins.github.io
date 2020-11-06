@@ -1,0 +1,142 @@
+body, html, h1, h2, h3, h4, h5, ul, li, p { 
+	margin: 0;
+	padding: 0;
+	font-family: Ballinger, sans-serif;
+}
+
+header {
+	background: linear-gradient(0deg, rgb(15, 71, 119) 0%, rgb(32, 104, 164) 94%);
+	min-height: 400px;
+	position: relative;
+}
+
+nav {
+	height: 50px;
+	margin-bottom: -50px !important;
+	position: sticky;
+	z-index: 1;
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	color: #fff;
+	font-family: Ballinger, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .20em;
+	margin-right: 50px;
+	margin-top: 20px;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.23);
+}
+
+#header-inner-container {
+	background: url('renovation.png') top left repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-size: 113%;
+}
+
+#header-container {
+	background: linear-gradient(0deg, rgba(15, 71, 119, 0.84) 0%, rgba(32, 104, 164, 0.98) 94%);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
+
+#header-container h1 {
+	font-family: marine, sans-serif; 
+	font-size: 64px;
+	margin-top: 30px;
+	letter-spacing: .035em;
+	text-shadow: 0px -1px 3px rgba(0,0,0,.46);
+}
+
+#header-container h2 {
+	font-family: allotrope, sans-serif;
+	font-weight: 400;
+	margin-top: 20px;
+	font-size: 30px;
+	letter-spacing: .06em;
+	text-shadow: 0px -1px 3px rgba(0,0,0,.25);
+}
+
+#coming-soon {
+	margin: -43px auto 0;
+	z-index: 111 !important;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+}
+
+#coming-soon button {
+	background: #78c254;
+	color: #FFF;
+	outline: none;
+	border: none;
+	font-family: Ballinger, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 600px;
+	font-size: 22px;
+	letter-spacing: .30em;
+	padding: 25px 50px;
+	border-radius: 2px;
+	box-shadow: 0px -3px 15px rgba(0,0,0,.10);
+}
+
+.image-section {
+	background: red;
+	height: 340px;
+	margin: 15px 0 30px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+#image1 {
+	background: url(house.jpg);
+	background-size: cover;
+	background-position-y: 30%;
+}
+
+#reading-content h3 {
+	padding-bottom: 10px;
+}
+
+#reading-content p {
+	padding-bottom: 20px;
+}
+
+#sidebar-content {
+	width: 700px;
+	border-radius: 6px;
+	padding: 10px 20px;
+	margin-left: 40px;
+	background: rgba(0,0,0,.025);
+	display: none;
+}
+
+#main-content {
+	display: flex;
+	line-height: 30px;
+	width: 96%;
+	margin: 50px auto;
+	width: 90%;
+}

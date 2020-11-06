@@ -273,10 +273,10 @@
 .user-login .inner-layout #form div.alert.alert-error, #team-site-warning {
     background: #ffe7dc;
     margin-bottom: -1px;
-    color: white;
     padding: 17px;
     line-height: 27px;
     text-align: left;
+    color: #a91202;
     border-left: 8px solid #a91202;
     border-radius: 0 3px 3px 0;
 }
