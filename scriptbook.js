@@ -69,7 +69,7 @@ $("#covid-warning span").click(function(){
 
 
 // Customizations for TEAM Specific pages:
-	Community Mortgage
+	// Community Mortgage
 	if (
 		(window.location.href.indexOf("jamiehannigan.annie-mac.com/") != -1) || (window.location.href.indexOf("joeharrison.annie-mac.com/") != -1) || 
 		(window.location.href.indexOf("tomfox.annie-mac.com/") != -1) || 
