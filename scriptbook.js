@@ -71,10 +71,28 @@ $("#covid-warning span").click(function(){
 // Customizations for TEAM Specific pages:
 	// Community Mortgage
 	if (
-		(window.location.href.indexOf("jamiehannigan.annie-mac.com/") != -1) || (window.location.href.indexOf("joeharrison.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("jamiehannigan.annie-mac.com/") != -1) || 		
+		(window.location.href.indexOf("joeharrison.annie-mac.com/") != -1) || 
 		(window.location.href.indexOf("tomfox.annie-mac.com/") != -1) || 
-		(window.location.href.indexOf("shawnyocum.annie-mac.com/") != -1) || (window.location.href.indexOf("raymondmoore.annie-mac.com/") != -1) || (window.location.href.indexOf("randyfiocchi.annie-mac.com/") != -1) || (window.location.href.indexOf("jamiehannigan.annie-mac.com/") != -1) || (window.location.href.indexOf("michaelspillman.annie-mac.com/") != -1) || (window.location.href.indexOf("matthewsiderio.annie-mac.com/") != -1) || (window.location.href.indexOf("jesseschwager.annie-mac.com/") != -1) || (window.location.href.indexOf("jasontrotte.annie-mac.com/") != -1) || (window.location.href.indexOf("jasonleibowitz.annie-mac.com/") != -1) || (window.location.href.indexOf("edyucis.annie-mac.com/") != -1) || (window.location.href.indexOf("dominiccarlucci.annie-mac.com/") != -1) || (window.location.href.indexOf("dajshiagibson.annie-mac.com/") != -1) || (window.location.href.indexOf("christamartin.annie-mac.com/") != -1) || (window.location.href.indexOf("cathymiller.annie-mac.com/") != -1) || (window.location.href.indexOf("brianvoytko.annie-mac.com/") != -1) || (window.location.href.indexOf("amysodowich.annie-mac.com/") != -1) || (window.location.href.indexOf("aarontedrow.annie-mac.com/") != -1)
-		){
+		(window.location.href.indexOf("shawnyocum.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("raymondmoore.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("randyfiocchi.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("jamiehannigan.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("michaelspillman.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("matthewsiderio.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("jesseschwager.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("jasontrotte.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("jasonleibowitz.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("edyucis.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("dominiccarlucci.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("dajshiagibson.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("christamartin.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("cathymiller.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("brianvoytko.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("amysodowich.annie-mac.com/") != -1) || 
+		(window.location.href.indexOf("aarontedrow.annie-mac.com/") != -1)
+		)
+	{
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/11832/public/7283-SEPT2020_AM-Community-Mortgage-Team-Logo-WEBSITE.png");
 	}
 	
