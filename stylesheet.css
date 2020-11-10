@@ -14,6 +14,7 @@
     background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/new-va-loan.jpeg) top left no-repeat;
     background-size: cover !important;
     background-position-y: 90% !important;
+    height: 500px;
 }
 /* #home-banner {
     background: linear-gradient(150deg, rgba(22, 31, 36, 0.35) 70%, #2642192b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
