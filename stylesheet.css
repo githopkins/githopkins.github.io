@@ -27,6 +27,11 @@
 #sitemap li#list_11563 {
     display: none;
 }
+
+#navigation-menu li:not(last-of-type) {
+    margin-right: 30px;
+}
+
 @media screen and (max-width: 650px) {
     #navigation-logo {
         max-width: 200px !important;
