@@ -1,0 +1,163 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system,"Helvetica Neue",Helvetica,"Hiragino Sans",sans-serif;
+	overflow-x: hidden !important;
+}
+
+#site-navigation {
+	border-top: 1px solid rgba(0,0,0,.045);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px 10px;
+}
+
+#site-navigation ul {
+	display: flex;	
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: inherit;
+}
+
+#site-navigation ul li {
+	width: inherit;
+	font-family: -apple-system,"Helvetica Neue",Helvetica,"Hiragino Sans",sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 0 12px;
+	line-height: .6;
+}
+
+.navigation-sectional {
+	display: flex;
+	flex-direction: row;
+}
+	
+#site-navigation ul .navigation-sectional li img {
+	width: 280px;
+	height: auto;
+}
+
+.navigation-sectional:nth-of-type(1) {
+	order: 2;
+	/* background: red; */
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation-sectional:nth-of-type(2) {
+	order: 1;
+	/* background: green; */
+	flex: 1;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.navigation-sectional:nth-of-type(2) li {
+	margin-right: 10px;
+}
+
+.navigation-sectional:nth-of-type(3) {
+	order: 3;
+	/* background: blue; */
+	flex: 1;
+	align-items: center;
+	justify-content: right;
+}
+
+.navigation-sectional:nth-of-type(3) li {
+	margin-right: 10px;
+}
+
+.navigation-sectional:nth-of-type(3) li:last-of-type {
+	margin-right: 15px;
+}
+
+.navigation-sectional:nth-of-type(4) {
+	order: -1;
+	/* background: blue; */
+	margin-right: 10px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#site-navigation ul li ul {
+	display: none;
+}
+
+.sub-site-navigation li {
+	
+}
+
+#covid-warning {
+	background: #ffe7dc;
+	margin-bottom: -1px;
+	color: #a91202;
+	padding: 17px 20px 18px 20px;
+	line-height: 1.6;
+	z-index: 3;
+}
+#covid-warning h4 {
+	font-size: 24px;
+	margin: 0;
+	font-weight: bold;
+	color: #a91202;
+	display: flex;
+	align-items: center;
+}
+#covid-warning h4 span {
+	font-size: 13px;
+	margin-left: 15px;
+	color: rgb(169 19 5);
+	border: 1px solid #a91305;
+	padding: 5px 12px;
+	border-radius: 6px;
+}
+#covid-warning h4 span:hover {
+	cursor: pointer;
+}
+#covid-warning p {
+	margin: 15px 0 24px;
+}
+#covid-warning a {
+	background: #a91202;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 12px;
+	width: 160px;
+	margin-top: 10px;
+	text-align: center;
+	margin-right: 30px;
+}
+#covid-warning a:hover {
+	opacity: .8;
+}
+
+.hide {
+	display: none;
+}
+
+#home-banner {
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/new-va-loan.jpeg) top left no-repeat;
+		background-position-y: 0%, top;
+		background-size: auto, auto;
+	background-size: cover !important;
+	background-position-y: 68% !important;
+	height: 600px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 0 0 155px 105px;
+	border-bottom: 10px solid #78c254;
+	color: white;
+}
