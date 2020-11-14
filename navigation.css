@@ -68,9 +68,9 @@ html, body {
 	justify-content: flex-start;
 }
 
-.navigation-sectional:nth-of-type(2) li {
+/* .navigation-sectional:nth-of-type(2) li {
 	margin-right: 10px;
-}
+} */
 
 .navigation-sectional:nth-of-type(3) {
 	order: 3;
@@ -80,9 +80,9 @@ html, body {
 	justify-content: flex-end;
 }
 
-.navigation-sectional:nth-of-type(3) li {
+/* .navigation-sectional:nth-of-type(3) li {
 	margin-right: 10px;
-}
+} */
 
 .navigation-sectional:nth-of-type(3) li:last-of-type {
 	margin-right: 15px;
