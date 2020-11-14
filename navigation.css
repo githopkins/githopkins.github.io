@@ -1,7 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'neue-haas-unica', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	overflow-x: hidden !important;
 }
 
@@ -24,17 +24,23 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: inherit;
+	font-family: protipo, sans-serif;
 }
 
 #site-navigation ul li {
 	width: inherit;
-	font-family: -apple-system,"Helvetica Neue",Helvetica,"Hiragino Sans",sans-serif;
-	font-weight: 500;
+	font-family: protipo, -apple-system,"Helvetica Neue",Helvetica,"Hiragino Sans",sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	padding: 0 12px;
 	line-height: .6;
 	position: relative;
+}
+
+#site-navigation ul li a {
+	color: inherit;
+	text-decoration: none;
 }
 
 .navigation-sectional {
