@@ -15,6 +15,78 @@ html, body {
 	justify-content: space-around;
 	align-items: center;
 	padding: 12px 10px;
+	position: relative;
+}
+
+#navigation-sidebar {
+	position: fixed;
+	overflow: auto;
+	top: 70px;
+	left: 0;
+	padding: 20px 25px;
+	width: 300px;
+	height: 80vh;
+	overflow-y: initial;
+	background: white;
+	box-shadow: 0px 7px 4px rgba(0,0,0,.25);
+	z-index: 100;
+	border-radius: 0 10px 10px 0;
+}
+
+#navigation-sidebar h4 {
+	font-size: 19px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: protipo, sans-serif;
+	border-bottom: 1px solid rgba(0,0,0,.25);
+	padding-bottom: 8px;
+	width: 94%;
+	margin: 15px auto 20px;
+}
+
+#navigation-sidebar h4 span {
+	font-size: 12px;
+	opacity: .6;
+}
+
+.option-listing {
+	border-bottom: 1px solid rgba(0,0,0,.04);
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.option-listing:last-of-type {
+	border-bottom: none;
+	margin-bottom: 30px;
+}
+
+.option-listing strong {
+	font-size: 14px;
+	font-family: protipo, sans-serif;
+	padding-bottom: 10px;
+}
+
+.option-listing p {
+	margin-top: 0;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+.option-listing-go {
+	width: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.option-listing-go i {
+	font-size: 20px;
 }
 
 #site-navigation ul {
