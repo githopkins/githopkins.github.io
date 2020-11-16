@@ -27,7 +27,8 @@ html, body {
 	width: 300px;
 	height: 80vh;
 	overflow-y: initial;
-	background: white;
+	background: radial-gradient(circle, rgba(15, 71, 119, 1) 0%, rgba(32, 104, 164, 1) 94%);
+	color: white;
 	box-shadow: 0px 7px 4px rgba(0,0,0,.25);
 	z-index: 100;
 	border-radius: 0 10px 10px 0;
@@ -41,7 +42,7 @@ html, body {
 	font-weight: normal;
 	text-transform: uppercase;
 	font-family: protipo, sans-serif;
-	border-bottom: 1px solid rgba(0,0,0,.25);
+	border-bottom: 1px solid rgba(255,255,255,.25);
 	padding-bottom: 8px;
 	width: 94%;
 	margin: 15px auto 20px;
@@ -52,8 +53,48 @@ html, body {
 	opacity: .6;
 }
 
+#close-navigation-side i {
+	float: right;
+	font-size: 20px;
+}
+
+.navigation-sidebar-sectional:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+#navigation-sidebar .navigation-sidebar-sectional:nth-child(2) h4 {
+	border-bottom: none;
+	font-size: 14px;
+	display: flex;
+	margin-bottom: 25px;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1;
+}
+
+#apply-now-sidebar {
+	margin: 0 auto 18px;
+	background: blue;
+	width: 68%;
+	text-align: center;
+	padding: 8px 0;
+	border-radius: 6px;
+}
+
+#navigation-sidebar .navigation-sidebar-sectional:nth-child(2) h4  span {
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	margin-right: 10px;
+}
+
 .option-listing {
-	border-bottom: 1px solid rgba(0,0,0,.04);
+	border-bottom: 1px solid rgba(255,255,255,.04);
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	display: flex;
@@ -207,8 +248,8 @@ html, body {
 	color: white;
 	padding: 13px 5px;
 	border-radius: 3px;
-	box-shadow: 0px 7px 4px rgba(0,0,0,.25);
-	border-top: .6px solid rgba(0,0,0,.065);
+	box-shadow: 0px 7px 4px rgba(255,255,255,.25);
+	border-top: .6px solid rgba(255,255,255,.065);
 }
 
 .sub-site-navigation li {
