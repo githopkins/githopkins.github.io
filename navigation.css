@@ -281,6 +281,92 @@ html, body {
 	margin: 16px 0 3px;
 }
 
+#loan-originator-blurb-container {
+	width: 95%;
+	margin: -480px auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-shadow: 1px 2px 1px rgba(0,0,0,.2);
+}
+
+#originator-portrait {
+	background: white;
+	width: 180px;
+	height: 180px;
+	border-radius: 80px;
+	margin: 0 auto 30px;
+	box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+	visibility: hidden;
+}
+
+#originator-main-details {
+	display: flex;
+	align-items: flex-end;
+}
+
+#originator-core-details {
+	margin-right: 40px;
+}
+
+#loan-originator-blurb-container h1, #loan-originator-blurb-container h2, #loan-originator-blurb-container h3, #loan-originator-blurb-container h4, #loan-originator-blurb-container h5 {
+	margin: 0;
+	padding: 0;
+}
+
+#loan-originator-blurb-container h2 {
+	font-family: protipo, sans-serif;
+	font-size: 42px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.6);
+	text-transform: uppercase;
+	letter-spacing: 2.3px;
+}
+
+#loan-originator-blurb-container h4 {
+	letter-spacing: 1.2px;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: 2px 3px 4px rgba(0,0,0,.85);
+	display: flex;
+	flex-direction: column;
+}
+
+#loan-originator-blurb-container h4 span {
+	font-weight: normal;
+	font-size: 15px;
+}
+
+#originator-address-details {
+	line-height: 30px;
+	font-size: 16px;
+	text-shadow: 2px 3px 4px rgba(0,0,0,.85);
+}
+
+#originator-social-details ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: flex-end;
+	width: 500px;
+}
+
+#originator-social-details li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 15px 10px;
+	width: 95px;
+	font-size: 14px;
+}
+
+#originator-social-details li i {
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+
 #covid-warning {
 	background: #ffe7dc;
 	margin-bottom: -1px;
@@ -288,6 +374,7 @@ html, body {
 	padding: 12px 20px;
 	line-height: 1.6;
 }
+
 #covid-warning h4 {
 	font-size: 24px;
 	margin: 0;
@@ -296,6 +383,7 @@ html, body {
 	display: flex;
 	align-items: center;
 }
+
 #covid-warning h4 span {
 	font-size: 13px;
 	margin-left: 15px;
@@ -304,12 +392,15 @@ html, body {
 	padding: 5px 12px;
 	border-radius: 6px;
 }
+
 #covid-warning h4 span:hover {
 	cursor: pointer;
 }
+
 #covid-warning p {
 	margin: 15px 0 24px;
 }
+
 #covid-warning a {
 	background: #a91202;
 	color: #fff;
@@ -322,6 +413,7 @@ html, body {
 	text-align: center;
 	margin-right: 30px;
 }
+
 #covid-warning a:hover {
 	opacity: .8;
 }
@@ -335,8 +427,8 @@ html, body {
 		background-position-y: 0%, top;
 		background-size: auto, auto;
 	background-size: cover !important;
-	background-position: 42%;
-	height: 450px;
+	background-position-y: 45%;
+	height: 500px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
