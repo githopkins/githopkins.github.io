@@ -285,9 +285,8 @@ html, body {
 	background: #ffe7dc;
 	margin-bottom: -1px;
 	color: #a91202;
-	padding: 17px 20px 18px 20px;
+	padding: 12px 20px;
 	line-height: 1.6;
-	z-index: 3;
 }
 #covid-warning h4 {
 	font-size: 24px;
@@ -332,12 +331,12 @@ html, body {
 }
 
 #home-banner {
-	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/new-va-loan.jpeg) top left no-repeat;
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://jillgranato.annie-mac.com/uploads/sites/10713/public/family-updated.jpeg) top left no-repeat;
 		background-position-y: 0%, top;
 		background-size: auto, auto;
 	background-size: cover !important;
-	background-position-y: 68% !important;
-	height: 600px;
+	background-position: 42%;
+	height: 450px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
