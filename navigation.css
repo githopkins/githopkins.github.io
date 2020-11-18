@@ -73,8 +73,8 @@ html, body {
 	margin-top: 10px;
 }
 
-#apply-now-sidebar {
-	margin: -5 auto 0px;
+#apply-now-sidebar, #prequal-now-sidebar {
+	margin: -5px auto 10px;
 	background: #01436b;
 	width: 70%;
 	text-align: center;
