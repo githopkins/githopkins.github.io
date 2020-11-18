@@ -47,7 +47,7 @@ body {
 	background: url('https://githopkins.github.io/amLogo.png');
 	text-indent: -999vw;
 	width: 402px;
-    height: 69px;
+	height: 69px;
 	margin: 20px auto;
 	background-size: cover;
 }
@@ -65,8 +65,8 @@ body {
 	margin: 12px 0 30px;
 	opacity: .85;
 	display: inline-block;
-    line-height: 22px;
-    font-size: 12px;
+	line-height: 22px;
+	font-size: 12px;
 }
 #information-container {
 	display: flex;
@@ -136,26 +136,26 @@ body {
 }
 #realtor-form label {
 	display: inline-block;
-    line-height: 22px;
-    font-size: 12px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    margin: 0px 0px 10px 0px;
-    color: #2b6191;
+	line-height: 22px;
+	font-size: 12px;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px;
+	color: #2b6191;
 	text-shadow: 1px 0px 0px #2b619124;
 }
 #realtor-form input {
 	font-size: 15px;
-    text-indent: 10px;
-    line-height: 20px;
-    letter-spacing: .56px;
-    height: 45px;
-    background: rgb(255, 255, 255);
-    padding: 6px 4px;
-    border: 1px solid rgb(217, 221, 233);
-    border-radius: 3px;
-    margin: 0px 0px 25px 0px;
-    outline: none;
+	text-indent: 10px;
+	line-height: 20px;
+	letter-spacing: .56px;
+	height: 45px;
+	background: rgb(255, 255, 255);
+	padding: 6px 4px;
+	border: 1px solid rgb(217, 221, 233);
+	border-radius: 3px;
+	margin: 0px 0px 25px 0px;
+	outline: none;
 }
 #realtor-form input:hover {
 	border: 1px solid rgb(177, 180, 189);
@@ -168,16 +168,16 @@ body {
 }
 #realtor-form input:invalid  {
 	border: 1px solid rgb(255, 203, 203);
-    color: rgb(204, 107, 107);
-    background: rgb(255, 251, 251);
+	color: rgb(204, 107, 107);
+	background: rgb(255, 251, 251);
 }
 /* button, input[type="submit"] {
-    background: url(realtorBtn.png) no-repeat !important;
-    border: none !important;
-    background-size: cover !important;
-    width: 261px !important;
+	background: url(realtorBtn.png) no-repeat !important;
+	border: none !important;
+	background-size: cover !important;
+	width: 261px !important;
 	height: 54px !important;
-    margin: 0 auto !important;
+	margin: 0 auto !important;
 } */
 button:hover, input[type="submit"]:hover {
 	cursor: pointer;
@@ -313,6 +313,13 @@ small {
 	font-size: 20px;
 }
 @media screen and (min-width: 985px) {
+	@media not all and (min-resolution:.001dpcm) { 
+		@media {
+			#form-container { 
+				margin-top: 200px;
+			}
+		}
+	}
 	html, body {
 		overflow-x: hidden;
 	}
@@ -326,7 +333,7 @@ small {
 		width: 400px;
 		height: 66px;
 		float: right;
-    	margin-right: 40px;
+		margin-right: 40px;
 	}
 	#form-container {
 		display: flex;
@@ -337,23 +344,23 @@ small {
 	}
 	#realtor-banner {
 		display: block;
-	    visibility: hidden;
-	    height: 0px;
-    }
-    #breadcrumb-section {
-	    visibility: initial;
-	    position: absolute;
-	    order: 5;
-	    bottom: -85px;	
+		visibility: hidden;
+		height: 0px;
+	}
+	#breadcrumb-section {
+		visibility: initial;
+		position: absolute;
+		order: 5;
+		bottom: -85px;	
 	}
 	#form-section h3 {
 		background: url('https://githopkins.github.io/web.png');
 		background-size: cover;
-	    width: 905px;
+		width: 905px;
 		height: 57px;
-	    margin-top: 25px;
+		margin-top: 25px;
 	}
-    form .disclaimer, .mobile-only {
+	form .disclaimer, .mobile-only {
 		display: none;
 	}
 	#header-title {
@@ -377,7 +384,7 @@ small {
 		margin-top: 70px;
 		border-radius: 5px;
 		box-shadow: 1px 2px 5px rgba(0,0,0,.2);
-    	border-right: 1px solid rgba(0,0,0,.025);
+		border-right: 1px solid rgba(0,0,0,.025);
 	}
 	#realtor-image-overlay {
 		position: absolute;
@@ -390,11 +397,11 @@ small {
 	#realtor-image-overlay p {
 		color: white;
 		text-shadow: 2px 2px 2px rgba(0,0,0,.6);
-	    line-height: 27px;
-	    font-size: 14px;
-	    letter-spacing: .8px;
-	    width: 90%;
-	    margin: 24px auto;
+		line-height: 27px;
+		font-size: 14px;
+		letter-spacing: .8px;
+		width: 90%;
+		margin: 24px auto;
 	}
 	#desktop-only {
 		flex: 1;
@@ -530,3 +537,4 @@ small {
 		text-align: left;
 	}
 }
+

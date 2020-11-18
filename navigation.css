@@ -250,6 +250,10 @@ html, body {
 	min-width: 120px;
 }
 
+#site-navigation ul li ul li:hover a {
+	font-weight: bold;
+}
+
 #site-navigation ul li ul li:last-of-type {
 	font-weight: 300 !important;
 	text-transform: none;
@@ -262,6 +266,7 @@ html, body {
 .sub-site-navigation-listing {
 	background: radial-gradient(circle, rgba(15, 71, 119, 1) 0%, rgba(32, 104, 164, 1) 94%);
 	color: white;
+	width: 190px;
 	padding: 13px 5px;
 	border-radius: 3px;
 	box-shadow: 0px 7px 4px rgba(0,0,0,.25);
@@ -282,8 +287,6 @@ html, body {
 }
 
 #loan-originator-blurb-container {
-	width: 95%;
-	margin: -480px auto;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -299,15 +302,13 @@ html, body {
 	margin: 0 auto 30px;
 	box-shadow: 1px 2px 1px rgba(0,0,0,.2);
 	visibility: hidden;
+	display: none;
 }
 
 #originator-main-details {
 	display: flex;
-	align-items: flex-end;
-}
-
-#originator-core-details {
-	margin-right: 40px;
+	flex-direction: column;
+	text-align: center;
 }
 
 #loan-originator-blurb-container h1, #loan-originator-blurb-container h2, #loan-originator-blurb-container h3, #loan-originator-blurb-container h4, #loan-originator-blurb-container h5 {
@@ -319,13 +320,12 @@ html, body {
 	font-family: protipo, sans-serif;
 	font-size: 42px;
 	text-shadow: 2px 2px 5px rgba(0,0,0,.6);
-	text-transform: uppercase;
 	letter-spacing: 2.3px;
 }
 
 #loan-originator-blurb-container h4 {
 	letter-spacing: 1.2px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: normal;
 	text-shadow: 2px 3px 4px rgba(0,0,0,.85);
 	display: flex;
@@ -350,7 +350,8 @@ html, body {
 	display: flex;
 	flex-wrap: wrap;
 	align-self: flex-end;
-	width: 500px;
+	width: 400px;
+	margin-top: 40px;
 }
 
 #originator-social-details li {
@@ -365,6 +366,7 @@ html, body {
 #originator-social-details li i {
 	font-size: 23px;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.65);
 }
 
 #covid-warning {
@@ -422,17 +424,16 @@ html, body {
 	display: none;
 }
 
-#home-banner {
-	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://jillgranato.annie-mac.com/uploads/sites/10713/public/family-updated.jpeg) top left no-repeat;
-		background-position-y: 0%, top;
-		background-size: auto, auto;
+#loan-originator-backdrop {
+	background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/family-updated.jpeg) top left no-repeat;
 	background-size: cover !important;
-	background-position-y: 45%;
-	height: 500px;
+	background-position-y: 50%;
+	height: 675px;
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-	padding: 0 0 155px 105px;
+	align-items: center;
+	/* Change below from flex-start to center to flex-end to determine where the information is shown. */
+	justify-content: flex-start; 
 	border-bottom: 10px solid #78c254;
 	color: white;
+	padding: 0 25px;
 }
