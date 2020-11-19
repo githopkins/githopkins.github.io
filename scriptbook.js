@@ -181,6 +181,10 @@ $("#covid-warning span").click(function(){
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/CraigSanders.png");
 		$("#navigation-logo > a > img").css("margin-top", "5px");
 	}
+	// Team: Northwest Lending
+	if (window.location.href.indexOf("lakeoswego.annie-mac.com") != -1) {
+		$("#navigation-logo > a > img").css("margin-top", "5px");
+	}
 	// Team: East Brunswick
 	if (window.location.href.indexOf("eastbrunswick.annie-mac.com") != -1) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/EastBrunswick.png");
