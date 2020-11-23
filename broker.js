@@ -7,4 +7,10 @@ $(document).ready(function() {
 		$('#contact-information').show();
 		$('#broker-information').hide();
 	});
+	$('#role-selection').on('change',function(){
+		$('.disable').prop('disabled',true);
+	});
+	$('#state-selection').on('change',function(){
+		$('.disable').prop('disabled',true);
+	});
 });
