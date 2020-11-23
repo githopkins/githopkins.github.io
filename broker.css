@@ -145,7 +145,7 @@ body {
 	border: none;
 	outline: none;
 	padding: 15px 20px;
-	width: 140px !important;
+	min-width: 140px !important;
 	font-size: 15px;
 }
 
@@ -159,7 +159,7 @@ body {
 	border: none;
 	outline: none;
 	padding: 15px 20px;
-	width: 140px !important;
+	min-width: 140px !important;
 	font-size: 15px;
 }
 
@@ -173,7 +173,7 @@ body {
 	border: none;
 	outline: none;
 	padding: 15px 20px;
-	width: 140px !important;
+	min-width: 140px !important;
 	font-size: 15px;
 	visibility: none;
 	opacity: 0;
@@ -193,7 +193,7 @@ body {
 	border: none;
 	outline: none;
 	padding: 15px 20px;
-	width: 140px !important;
+	min-width: 140px !important;
 	font-size: 15px;
 	align-self: flex-end;	
 }
