@@ -8,9 +8,9 @@ $(document).ready(function() {
 		$('#broker-information').hide();
 	});
 	$('#role-selection').on('change',function(){
-		$('.disable').prop('disabled',true);
+		$('#disable-role').prop('disabled',true);
 	});
 	$('#state-selection').on('change',function(){
-		$('.disable').prop('disabled',true);
+		$('#disable-state').prop('disabled',true);
 	});
 });
