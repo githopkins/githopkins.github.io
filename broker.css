@@ -1,5 +1,5 @@
 body {
-	background: 
+	box-sizing: border-box;
 }
 
 #broker-landing-page {
@@ -53,6 +53,9 @@ body {
 	text-align: center;
 	margin-bottom: 12px;
 	padding: 0;
+	font-size: 22px;
+	letter-spacing: .8px;
+	color: #7FC24A;
 }
 
 #broker-landing-page #contact-information, #broker-landing-page #broker-information {
@@ -228,4 +231,50 @@ body {
 	box-shadow: inset 0 0 0 1px #696969;
 	color: #141414;	
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 880px) {
+	#broker-landing-page form {
+		width: 100vw;
+		margin: 0;
+		margin-top: 0;
+	}
+	#broker-landing-page small {
+		padding-bottom: 20px;
+		width: 86vw;
+		font-size: 13.6px;
+	}
+	#broker-landing-page label {
+		font-size: 16px;
+	}
+	#broker-landing-page label span {
+		font-size: 14px;
+	}
+	#broker-landing-page #prev {
+		display: none;
+		flex: 1;
+	}
+	#broker-landing-page .card-row {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin: 16px 0 10px;
+	}
+	#broker-landing-page .card-row-column {
+		display: flex;
+		flex-direction: column;
+		flex: none;
+		margin: 0 20px;
+		width: 90vw;
+	}
+	#broker-landing-page input, #broker-landing-page textarea, #broker-landing-page select {
+		padding: 10px;
+		font-size: 15px;
+		margin: 7px 0 15px;
+		min-height: 50px;
+	}
+	#flex-between {
+		justify-content: center;
+	}
 }
