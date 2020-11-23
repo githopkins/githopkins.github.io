@@ -89,7 +89,8 @@ body {
 #broker-landing-page label span {
 	font-size: 12px;
 	margin-left: 15px;
-	color: #337ab7;
+	color: rgb(15, 71, 119);
+	opacity: .8;
 	letter-spacing: .8px;
 	font-weight: bold;
 }
