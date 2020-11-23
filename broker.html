@@ -2,26 +2,29 @@
 	<head>
 	<title>Broker</title>
 	<link rel="stylesheet" href="broker.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="broker.js"></script>
 </head>
 <body id="broker-landing-page">
-	<a href="https://www.anniemacb2b.com/"><img src="https://asset-service-bucket-prod.s3.us-west-2.amazonaws.com/fc2718bd-45d9-463e-b609-4944f6464e4e" alt="" id="b2b-logo">
-	</a>
 	<form action="">
+		<a href="https://www.anniemacb2b.com/"><img src="https://asset-service-bucket-prod.s3.us-west-2.amazonaws.com/fc2718bd-45d9-463e-b609-4944f6464e4e" alt="" id="b2b-logo">
+		</a>
 		<div id="contact-information">
 			<h4>Contact Information</h4>
 			<div class="card-row">
 				<div class="card-row-column">
-					<label>First Name</label>
+					<label>First Name <span>Required</span></label>
 					<input type="text">
 				</div>
 				<div class="card-row-column">
-					<label>Last Name</label>
+					<label>Last Name <span>Required</span></label>
 					<input type="text">
 				</div>
 			</div>
 			<div class="card-row">
 				<div class="card-row-column">
-					<label>Email Address</label>
+					<label>Email Address <span>Required</span></label>
 					<input type="text">
 				</div>
 				<div class="card-row-column">
@@ -29,7 +32,7 @@
 					<input type="text">
 				</div>
 				<div class="card-row-column">
-					<label>Prefered Contact Method</label>
+					<label>Preferred Contact Method</label>
 					<select class="select">
 						<option value="">Email</option>
 						<option value="">Phone</option>
@@ -38,7 +41,7 @@
 			</div>
 			<div class="card-row">
 				<div class="card-row-column">
-					<label>Your Role</label>
+					<label>Your Role <span>Required</span></label>
 					<select class="select">
 						<option value="">Select Role...</option>
 						<option value="">Broker</option>
@@ -55,16 +58,20 @@
 					<textarea name="" id=""></textarea>
 				</div>
 			</div>
+			<div id="flex-between">
+				<div id="prev-1"></div>
+				<div id="continue">Continue</div>
+			</div>
 		</div>
 		<div id="broker-information">
 			<h4>Broker Information</h4>
 			<div class="card-row">
 				<div class="card-row-column">
-					<label>Company Name</label>
+					<label>Company Name <span>Required</span></label>
 					<input type="text">
 				</div>
 				<div class="card-row-column">
-					<label>Broker NMLS</label>
+					<label>Broker NMLS <span>Required</span></label>
 					<input type="text">
 				</div>
 			</div>
@@ -131,11 +138,16 @@
 					</select>
 				</div>
 				<div class="card-row-column">
-					<label>Zip Code</label>
+					<label>Zip Code <span>Required</span></label>
 					<input type="text">
 				</div>
 			</div>
+			<div id="flex-between">
+				<div id="prev">Previous</div>
+				<button id="submit">Submit</button>
+			</div>
 		</div>
 	</form>
+	<small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, saepe voluptatem nulla possimus, maiores impedit laudantium qui quae assumenda, placeat non similique? Mollitia eligendi consectetur blanditiis animi ab totam ut.</small>
 </body>
 </html>
