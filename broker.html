@@ -16,27 +16,27 @@
 			<div class="card-row">
 				<div class="card-row-column">
 					<label>First Name <span>Required</span></label>
-					<input type="text">
+					<input name="first-name" id="first-name" type="text">
 				</div>
 				<div class="card-row-column">
 					<label>Last Name <span>Required</span></label>
-					<input type="text">
+					<input name="last-name" id="last-name" type="text">
 				</div>
 			</div>
 			<div class="card-row">
 				<div class="card-row-column">
 					<label>Email Address <span>Required</span></label>
-					<input type="text">
+					<input name="email-address" id="email-address" type="email">
 				</div>
 				<div class="card-row-column">
 					<label>Phone Number</label>
-					<input type="text">
+					<input name="phone-number" id="phone-number" type="tel">
 				</div>
 				<div class="card-row-column">
 					<label>Preferred Contact Method</label>
 					<select class="select">
-						<option value="">Email (Default)</option>
-						<option value="">Phone</option>
+						<option value="email-selected">Email (Default)</option>
+						<option value="phone-selected">Phone</option>
 					</select>
 				</div>
 			</div>
@@ -45,18 +45,18 @@
 					<label>Your Role <span>Required</span></label>
 					<select class="select" id="role-selection">
 						<option id="disable-role">Select Role...</option>
-						<option value="">Broker</option>
-						<option value="">Executive or Management</option>
-						<option value="">Loan Officer</option>
-						<option value="">Processing and Operations</option>
-						<option value="">Other</option>
+						<option value="broker">Broker</option>
+						<option value="executive">Executive or Management</option>
+						<option value="loan-originator">Loan Officer</option>
+						<option value="operations">Processing and Operations</option>
+						<option value="other">Other</option>
 					</select>
 				</div>
 			</div>
 			<div class="card-row">
 				<div class="card-row-column">
 					<label>Comments</label>
-					<textarea name="" id=""></textarea>
+					<textarea name="comments" id="comments"></textarea>
 				</div>
 			</div>
 			<div id="flex-between">
@@ -69,17 +69,17 @@
 			<div class="card-row">
 				<div class="card-row-column">
 					<label>Company Name <span>Required</span></label>
-					<input type="text">
+					<input name="company-name" id="company-name" type="text" autocomplete="off">
 				</div>
 				<div class="card-row-column">
 					<label>Broker NMLS <span>Required</span></label>
-					<input type="text">
+					<input name="broker-nmls" id="broker-nmls" type="text" pattern="[0-9]" autocomplete="off">
 				</div>
 			</div>
 			<div class="card-row">
 				<div class="card-row-column">
 					<label>City</label>
-					<input type="text">
+					<input name="" id="" type="text">
 				</div>
 				<div class="card-row-column">
 					<label>State</label>
@@ -140,7 +140,7 @@
 				</div>
 				<div class="card-row-column">
 					<label>Zip Code <span>Required</span></label>
-					<input type="text">
+					<input name="zip-code" id="zip-code" type="text" pattern="[0-9]">
 				</div>
 			</div>
 			<div id="flex-between">
