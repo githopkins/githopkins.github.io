@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="https://use.typekit.net/obw4pno.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="ad.js"></script>
 
-
-<form action="./elevated-career" id="push-form">
+Name, email, phone, state, grab url params, and hidden field for landing page (purch, refi, va, refi)
+<form action="" id="push-form">
 	<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
 	<input type="hidden" data-xml-node="LeadSourceId" value="LEAD SOURCE">
 	<input type="hidden" id="Entity" value="Contact">
@@ -14,27 +15,24 @@
 	<input type="hidden" id="Notification" value="New Lead">
 	<input type="hidden" id="ContactId" data-xml-node="ContactId">
 	<input type="hidden" id="parameters">
-	<p>Fill out the form below to download our booklet and learn how we provide more than any other lender</p>
+	<input type="hidden" id="landing-page-type"> 
+	<!-- Purchase, Refinance, VA -->
 	<div class="form-block">
 		<label>Name <span>Required</span></label>
 		<input placeholder="What's your name?" type="text" data-xml-node="BorrowerFullName" required="">
-	</div>
-	<div class="form-block">
-		<label>Phone Number <span>Required</span></label>
-		<input placeholder="What's your phone number?" type="tel" data-xml-node="MobilePhone" required="">
 	</div>
 	<div class="form-block">
 		<label>Email Address <span>Required</span></label>
 		<input placeholder="What's your email address?" type="email" data-xml-node="Email" required="">
 	</div>
 	<div class="form-block">
-		<label>NMLS ID <span>Required</span></label>
-		<input placeholder="What's your NMLS ID?" type="number" data-xml-node="LicenseNumber" required="">
+		<label>Phone Number <span>Required</span></label>
+		<input placeholder="What's your phone number?" type="tel" data-xml-node="MobilePhone" required="">
 	</div>
 	<div class="form-block">
 		<div id="state-selection">
 			<label>Choose a state: <span>Required</span>
-				<input list="states" placeholder="Choose a state" name="state" data-xml-node="State" required=""></label>
+			<input list="states" placeholder="Choose a state" name="state" data-xml-node="State" required=""></label>
 			<datalist id="states">
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -91,10 +89,6 @@
 		</div>
 	</div>
 	<input type="hidden" class="width-100" id="Comments" data-xml-node="Comments">
-	<div class="form-block-final">
-		<small>By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply.</small>
-		<button data-qlf-submit="" id="toggle-captcha" class="g-recaptcha" data-sitekey="6LdDJPoUAAAAAMi9pjPYdfetUKDQk4AIRE4UdSL6" data-callback="onSubmit" data-action="submit">Submit</button>
-	</div>
 </form>
 <script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
 
