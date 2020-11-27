@@ -1,38 +1,45 @@
-<link rel="stylesheet" href="https://use.typekit.net/obw4pno.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="ad.js"></script>
-
-Name, email, phone, state, grab url params, and hidden field for landing page (purch, refi, va, refi)
-<form action="" id="push-form">
-	<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
-	<input type="hidden" data-xml-node="LeadSourceId" value="LEAD SOURCE">
-	<input type="hidden" id="Entity" value="Contact">
-	<input type="hidden" id="title" data-xml-node="EmploymentTitle">
-	<input type="hidden" id="Lead Import" value="true">
-	<input type="hidden" id="Assign" value="true">
-	<input type="hidden" id="agents" value="true">
-	<input type="hidden" id="Notification" value="New Lead">
-	<input type="hidden" id="ContactId" data-xml-node="ContactId">
-	<input type="hidden" id="parameters">
-	<input type="hidden" id="landing-page-type" value="Purchase, Refinance, VA"> 
-	<div class="form-block">
-		<label>Name <span>Required</span></label>
-		<input placeholder="What's your name?" type="text" data-xml-node="BorrowerFullName" required="">
-	</div>
-	<div class="form-block">
-		<label>Email Address <span>Required</span></label>
-		<input placeholder="What's your email address?" type="email" data-xml-node="Email" required="">
-	</div>
-	<div class="form-block">
-		<label>Phone Number <span>Required</span></label>
-		<input placeholder="What's your phone number?" type="tel" data-xml-node="MobilePhone" required="">
-	</div>
-	<div class="form-block">
-		<div id="state-selection">
-			<label>Choose a state: <span>Required</span>
-			<input list="states" placeholder="Choose a state" name="state" data-xml-node="State" required=""></label>
-			<datalist id="states">
+<head>
+	<link rel="stylesheet" href="https://use.typekit.net/obw4pno.css">
+	<link rel="stylesheet" href="ad.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="ad.js"></script>
+</head>
+<body>
+<div id="top-portion">
+	<h1>AnnieMac Home Mortgage</h1>	
+	<h2>Lorem ipsum dolor sit</h2>
+	<h4>Labore alias iusto nesciunt voluptas voluptates architecto.</h4>
+</div>
+<div id="form-container">
+	<form action="" id="push-form">
+		<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+		<input type="hidden" data-xml-node="LeadSourceId" value="LEAD SOURCE">
+		<input type="hidden" id="Entity" value="Contact">
+		<input type="hidden" id="title" data-xml-node="EmploymentTitle">
+		<input type="hidden" id="Lead Import" value="true">
+		<input type="hidden" id="Assign" value="true">
+		<input type="hidden" id="agents" value="true">
+		<input type="hidden" id="Notification" value="New Lead">
+		<input type="hidden" id="ContactId" data-xml-node="ContactId">
+		<input type="hidden" id="parameters">
+		<input type="hidden" id="landing-page-type" value="Purchase, Refinance, VA"> 
+		<div class="form-block">
+			<label>Name <span>Required</span></label>
+			<input placeholder="What's your name?" type="text" data-xml-node="BorrowerFullName" required="">
+		</div>
+		<div class="form-block">
+			<label>Email Address <span>Required</span></label>
+			<input placeholder="What's your email address?" type="email" data-xml-node="Email" required="">
+		</div>
+		<div class="form-block">
+			<label>Phone Number <span>Required</span></label>
+			<input placeholder="What's your phone number?" type="tel" data-xml-node="MobilePhone" required="">
+		</div>
+		<div class="form-block">
+			<label>Residence <span>Required</span></label>
+			<select name="state" class="select" id="state-selection" placeholder="Select State...">
+				<option value="" disabled selected>Select your option</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -84,10 +91,11 @@ Name, email, phone, state, grab url params, and hidden field for landing page (p
 				<option value="WV">West Virginia</option>
 				<option value="WI">Wisconsin</option>
 				<option value="WY">Wyoming</option>
-			</datalist>
+			</select>
 		</div>
-	</div>
-	<input type="hidden" class="width-100" id="Comments" data-xml-node="Comments">
-</form>
-<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+		<input type="hidden" class="width-100" id="Comments" data-xml-node="Comments">
+		<button>Learn More</button>
+	</form>
+	<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+</div>
 
