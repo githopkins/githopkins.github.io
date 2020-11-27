@@ -1,15 +1,17 @@
 body {
-	box-sizing: border-box;
-	overflow-y: hidden;
+	
+	
 }
 
 #broker-landing-page {
 	display: flex;
+	box-sizing: border-box;
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: column;
 	background: linear-gradient(0deg, rgb(15, 71, 119) 0%, rgb(32, 104, 164) 94%);
 	color: #FFF;
+	overflow-y: hidden;
 }
 
 #broker-landing-page small {
