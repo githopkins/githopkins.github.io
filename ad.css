@@ -1,0 +1,31 @@
+nav,
+#product-banner,
+footer {
+	display: none;
+}
+
+#text-based {
+	width: 100%;
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'interstate', sans-serif;
+	color: #444;
+	letter-spacing: .015em;
+	line-height: 1.75em;
+	background: #dedede;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
