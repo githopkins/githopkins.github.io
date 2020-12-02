@@ -31,61 +31,6 @@ a {
 	color: inherit;
 }
 
-#top-portion {
-	background: linear-gradient(to right, rgb(15, 71, 119), #0d7054);
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	height: 550px;
-}
-
-h1, h2, h3, h4 {
-	margin: 0;
-	text-align: center;
-	font-weight: normal;
-	color: #fff;
-}
-
-#top-portion h1 {
-	width: 343px;
-	height: 70px;
-	text-indent: -1005vw;
-	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
-	background-size: cover;
-	margin-top: 30px;
-	margin-bottom: 20px;
-}
-
-#top-portion h2 {
-	font-size: 31px;
-	line-height: 1.18;
-	font-weight: bold;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	letter-spacing: -0.5px;
-}
-
-#top-portion h4 {
-	font-size: 20px;
-	opacity: 0.8;
-	width: 600px;
-	font-weight: 300;
-	letter-spacing: -.3px;
-}
-
-#form-container {
-	margin: -310px auto 0px;
-	background: #F7F8F9;
-	padding: 40px 40px 30px 40px;
-	width: 660px;
-	z-index: 100;
-	border-radius: 15px;
-	display: flex;
-	flex-direction: column;
-	box-shadow: 1px 4px 10px rgba(0,0,0,.25);
-}
-
 label {
 	display: flex;
 	align-items: baseline;
@@ -138,20 +83,100 @@ button:hover {
 	cursor: pointer;
 }
 
-#form-container input:hover,
-#form-container select:hover,
-#form-container textarea:hover {
-	box-shadow: inset 0 0 0 1px #28477f;
-}
-
 option {
 	opacity: .8;
 }
 
 small {
 	display: block;
-	text-align: center;
 	margin-top: 30px;
+	margin-bottom: -10px;
 	font-size: 14px;
 	color: rgb(53, 60, 65);
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+#top-portion {
+	background: linear-gradient(to right, rgb(15, 71, 119), #0d7054);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 550px;
+}
+
+#top-portion h1 {
+	width: 343px;
+	height: 70px;
+	text-indent: -1005vw;
+	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
+	background-size: cover;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+#top-portion h2 {
+	font-size: 31px;
+	line-height: 1.18;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	letter-spacing: -0.5px;
+	color: #fff;
+}
+
+#top-portion h4 {
+	font-size: 20px;
+	opacity: 0.8;
+	width: 600px;
+	font-weight: 300;
+	letter-spacing: -.3px;
+	color: #fff;
+}
+
+#form-container {
+	margin: -290px auto 0px;
+	background: #F7F8F9;
+	padding: 40px 40px 10px 40px;
+	max-width: 660px;
+	z-index: 100;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	color: #444;
+	box-shadow: 1px 4px 10px rgba(0,0,0,.25);
+}
+
+#form-container h4 {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.new-height {
+	height: 370px !important;
+}
+
+.container-pushdowns {
+	margin-top: -110px !important;
+}
+
+#form-container input:hover,
+#form-container select:hover,
+#form-container textarea:hover {
+	box-shadow: inset 0 0 0 1px #28477f;
+}
+
+@media screen and (max-width: 660px) {
+	body {
+		background: #F7F8F9;
+	}
+	#form-container {
+		box-shadow: none;
+	}
 }
