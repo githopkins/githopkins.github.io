@@ -151,6 +151,7 @@ h1, h2, h3, h4 {
 	flex-direction: column;
 	color: #444;
 	box-shadow: 1px 4px 10px rgba(0,0,0,.25);
+	margin-bottom: 30px;
 }
 
 #form-container h4 {
@@ -178,5 +179,6 @@ h1, h2, h3, h4 {
 	}
 	#form-container {
 		box-shadow: none;
+		margin-bottom: none;
 	}
 }
