@@ -103,12 +103,12 @@ $("#covid-warning span").click(function(){
 		$("#branch-content > h2").text("Team Barrow");
 		$(document).prop('title', 'Team Barrow');
 		// Hide loan originators who aren't Tyler based on index of all team members.
-		var people = $(".team-member");
-		people.each((index, teamMember) => {
-			if (![1].includes(index)) {
-				teamMember.style.display = "none"
-			}
-		})
+		// var people = $(".team-member");
+		// people.each((index, teamMember) => {
+		// 	if (![1].includes(index)) {
+		// 		teamMember.style.display = "none"
+		// 	}
+		// })
 		// Hide options from dropdown on team page that don't include only specified loan originators.
 		$("#sudoux_mortgagebundle_loanapplicationtype_loan_officer > option").each((i, option) => {
 			value = option.getAttribute('value');
