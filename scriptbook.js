@@ -96,29 +96,7 @@ $("#covid-warning span").click(function(){
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/11832/public/7283-SEPT2020_AM-Community-Mortgage-Team-Logo-WEBSITE.png");
 		$("#navigation-logo > a > img").css("margin-top", "6px");
 	}
-	
-	
-	// Team: Barrow
-	if (window.location.href.indexOf("teambarrow.annie-mac.com") != -1) {
-		$("#branch-content > h2").text("Team Barrow");
-		$(document).prop('title', 'Team Barrow');
-		// Hide loan originators who aren't Tyler based on index of all team members.
-		// var people = $(".team-member");
-		// people.each((index, teamMember) => {
-		// 	if (![1].includes(index)) {
-		// 		teamMember.style.display = "none"
-		// 	}
-		// })
-		// Hide options from dropdown on team page that don't include only specified loan originators.
-		$("#sudoux_mortgagebundle_loanapplicationtype_loan_officer > option").each((i, option) => {
-			value = option.getAttribute('value');
-			// The following are the ID values for the loan officers who are able to be seleted from the drop down. Everyone whose ID does not match is hidden.
-			if (value !== "9069") {
-				option.setAttribute('hidden', 'true');
-			}
-		})
 
-	}
 	// Team: Fillyaw
 	if (window.location.href.indexOf("teamfillyaw.annie-mac.com") != -1) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/TeamFillyaw.png");
