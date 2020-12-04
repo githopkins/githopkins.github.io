@@ -8,8 +8,7 @@ var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mort
 
 $(document).ready(function() {
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);
-	
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
 	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
