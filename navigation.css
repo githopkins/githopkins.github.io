@@ -25,11 +25,11 @@ html, body {
 #navigation-sidebar {
 	position: fixed;
 	overflow: auto;
-	top: 70px;
+	top: 13px;
 	left: 0;
 	padding: 20px 25px;
-	width: 300px;
-	height: 822px;
+	width: 320px;
+	height: 80vh;
 	overflow-y: initial;
 	background: radial-gradient(circle, rgba(15, 71, 119, 1) 0%, rgba(32, 104, 164, 1) 94%);
 	color: white;
@@ -85,6 +85,10 @@ html, body {
 	font-size: 13px;
 }
 
+.navigation-sidebar-sectional {
+	margin-top: 25px;
+}
+
 #navigation-sidebar .navigation-sidebar-sectional:nth-child(2) h4:first-of-type {
 	border-top: 1px solid rgba(255,255,255,.25);
 	padding-top: 30px;
@@ -94,7 +98,7 @@ html, body {
 	border-bottom: none;
 	font-size: 14px;
 	display: flex;
-	margin-bottom: 25px;
+	margin-bottom: 2px;
 	justify-content: flex-start;
 	align-items: center;
 	flex: 1;
@@ -178,7 +182,7 @@ html, body {
 }
 	
 #site-navigation ul .navigation-sectional li img {
-	width: 280px;
+	width: 220px;
 	height: auto;
 }
 
@@ -187,31 +191,24 @@ html, body {
 	align-items: center;
 	justify-content: center;
 	width: max-content;
+	flex: 1;
 }
 
 .navigation-sectional:nth-of-type(2) {
 	order: 1;
-	/* background: green; */
+	float: left;
 	flex: 1;
 	align-items: center;
 	justify-content: flex-start;
 }
 
-/* .navigation-sectional:nth-of-type(2) li {
-	margin-right: 10px;
-} */
-
 .navigation-sectional:nth-of-type(3) {
 	order: 3;
-	/* background: blue; */
 	flex: 1;
+	float: right;
 	align-items: center;
 	justify-content: flex-end;
 }
-
-/* .navigation-sectional:nth-of-type(3) li {
-	margin-right: 10px;
-} */
 
 .navigation-sectional:nth-of-type(3) li:last-of-type {
 	margin-right: 15px;
@@ -289,26 +286,18 @@ html, body {
 #loan-originator-blurb-container {
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: flex-start;
 	text-shadow: 1px 2px 1px rgba(0,0,0,.2);
-}
-
-#originator-portrait {
-	background: white;
-	width: 180px;
-	height: 180px;
-	border-radius: 80px;
-	margin: 0 auto 30px;
-	box-shadow: 1px 2px 1px rgba(0,0,0,.2);
-	visibility: hidden;
-	display: none;
+	width: 100%;
 }
 
 #originator-main-details {
 	display: flex;
-	flex-direction: column;
-	text-align: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 #loan-originator-blurb-container h1, #loan-originator-blurb-container h2, #loan-originator-blurb-container h3, #loan-originator-blurb-container h4, #loan-originator-blurb-container h5 {
@@ -321,6 +310,7 @@ html, body {
 	font-size: 42px;
 	text-shadow: 2px 2px 5px rgba(0,0,0,.6);
 	letter-spacing: 2.3px;
+	text-align: center;
 }
 
 #loan-originator-blurb-container h4 {
@@ -330,6 +320,7 @@ html, body {
 	text-shadow: 2px 3px 4px rgba(0,0,0,.85);
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
 #loan-originator-blurb-container h4 span {
@@ -350,8 +341,28 @@ html, body {
 	display: flex;
 	flex-wrap: wrap;
 	align-self: flex-end;
-	width: 400px;
-	margin-top: 40px;
+	width: 250px;
+	margin-top: 0px;
+}
+
+#originator-core-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 55px;
+	border-right: 1px solid white;
+	margin-right: 40px;
+	text-align: center;
+}
+
+#originator-core-details-portrait img {
+	background: white;
+	width: 170px;
+	height: 170px;
+	border-radius: 100%;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
 #originator-social-details li {
@@ -367,6 +378,108 @@ html, body {
 	font-size: 23px;
 	margin-bottom: 10px;
 	text-shadow: 2px 2px 3px rgba(0,0,0,.65);
+}
+
+#review-social-section {
+	margin-top: 40px;
+}
+
+#review-social-section h3 {
+	font-family: protipo, sans-serif;
+	font-size: 38px;
+	letter-spacing: 1.5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: #006fa9;
+	text-align: center;
+}
+
+#review-social-section h3 span {
+	display: block;
+	font-size: 20px;
+	margin-top: 10px;
+	color: #7FC24A;
+}
+
+#social-review-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.social-review {
+	width: 45%;
+	min-width: 580px;
+	margin: 20px 10px;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 5px;
+	padding: 10px 20px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.16);
+}
+
+.social-review a {
+	text-decoration: none;
+	color: #2068a4;
+	font-weight: bold;
+}
+
+.social-review a:hover {
+	color: #006fa9;
+	text-decoration: underline;
+}
+
+.social-customer-review {
+	margin: 0;
+	font-weight: normal;
+}
+
+.social-loan-officer {
+	margin-top: 25px;
+	font-size: 18px;
+	font-family: protipo, sans-serif;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	padding: 35px 20px 15px;
+	margin: -20px;
+	text-align: center;
+}
+
+.review-social-rating {
+	text-align: center;
+}
+
+.review-social-rating i {
+	color: #7FC24A;
+	margin: 0 8px;
+	margin-left: 0;
+	font-size: 25px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.social-review a i, p i {
+	color: #7FC24A;
+	margin: 0 3px; 
+}
+
+.social-customer-review {
+	margin: 0;
+}
+
+.average-social-rating {
+	border-top: 1px solid rgba(0,0,0,.15);
+	line-height: 13px;
+	margin: -20px;
+	padding: 11px 20px 25px;
+	margin-top: 40px;
+}
+
+.social-review-survey {
+	line-height: 35px;
+	margin-top: 30px;
+	margin-bottom: -15px;
+	padding: 3px;
 }
 
 #covid-warning {
@@ -427,68 +540,106 @@ html, body {
 #loan-originator-backdrop {
 	background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://annie-mac.com/uploads/sites/10713/public/family-updated.jpeg) top left no-repeat;
 	background-size: cover !important;
-	background-position-y: 50%;
-	height: 600px;
+	background-position-y: 43.5%;
+	height: 485px;
 	display: flex;
 	align-items: center;
-	/* Change below from flex-start to center to flex-end to determine where the information is shown. */
 	justify-content: flex-start; 
 	color: white;
 	padding: 0 25px;
 }
 
-#loan-originator-content-section {
-	display: flex;
+@media only screen and (max-width: 1006px) {
+	.navigation-sectional:nth-of-type(3) li:last-of-type {
+		display: none;
+	}
+	.navigation-sectional:nth-of-type(3) li:nth-of-type(2) {
+		margin-right: 15px;
+	}
+
+@media only screen and (max-width: 845px) {
+	#site-navigation ul li {
+		font-size: 12.5px;
+	}
 }
 
-#loan-originator-redo-biography-section {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	padding: 20px;
-	font-size: 17px;
-	line-height: 27px;
+@media only screen and (max-width: 800px) {
+	.navigation-sectional li:not(:first-of-type) {
+		display: none;
+	}
+	.navigation-sectional:nth-of-type(2) {
+		flex: 0;
+		float: left;
+		margin-right: -50px;
+	}
+	#loan-originator-backdrop {
+		justify-content: center;
+	}
+	.navigation-sectional:nth-child(3) {
+		display: none;
+	}
+	#loan-originator-backdrop {
+		height: 580px;
+	}
+	#loan-originator-blurb-container h2 {
+		font-size: 32px;
+	}
+	#originator-core-details-portrait img {
+		margin-right: 50px;
+		height: 120px;
+		width: 120px;
+	}
+	#originator-core-details {
+		flex-direction: row;
+		padding-right: 0;
+		border-right: none;
+		margin-right: 0;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+	}
+	#originator-main-details {
+		flex-direction: column;
+	}
+	#originator-social-details ul {
+		width: 500px;
+	}
 }
 
-#loan-originator-redo-subcontent-section {
-	display: flex;
-	flex-direction: column;
-	width: 500px;
-	padding: 20px;
-}
-
-#loan-originator-redo-biography-section h4 {
-	margin-bottom: 15px;
-	color: #006fa9;
-	width: 100%;
-	font-size: 25px;
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-#loan-originator-redo-subcontent-section h5 {
-	margin-bottom: 15px;
-	color: #006fa9;
-	width: 100%;
-	font-size: 20px;
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-#loan-originator-redo-subcontent-section button {
-	padding: 20px 25px;
-	border-radius: 4px;
-	width: auto;
-	font-size: 13px;
-	color: #fff;
-	margin: 0 auto;
-	border: none;
-	outline: none;
-	font-weight: bold;
-	line-height: 27px;
-	text-transform: capitalize;
-	display: block;
-	margin-top: 25px;
-	background: #7FC24A;
-	width: 200px;
+@media only screen and (max-width: 610px) {
+	#social-review-grid {
+		width: auto;
+	}
+	.social-review {
+		width: 100%;
+		min-width: 93%;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		border-top: 1px solid rgba(0,0,0,.1);
+	}
+	.average-social-rating {
+		border: none;
+		margin-top: 16px;
+		margin-bottom: -50px;
+	}
+	.average-social-rating p:last-of-type {
+		line-height: 20px;
+	}
+	.review-social-rating {
+		text-align: left;
+		margin-top: 15px;
+	}
+	.social-loan-officer {
+		text-align: left;
+		line-height: 29px;
+		margin-top: -30px;
+		border-bottom: none;
+		margin-bottom: -35px;
+	}
+	.social-review-survey {
+		padding: 0;
+	}
+	.social-loan-officer span {
+		display: block;
+	}
 }
