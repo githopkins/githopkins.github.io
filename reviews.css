@@ -1,0 +1,148 @@
+html, body {
+margin: 0;
+padding: 0;
+font-family: 'neue-haas-unica', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+overflow-x: hidden !important;
+}
+
+#review-social-section {
+margin-top: 40px;
+}
+
+#review-social-section h3 {
+font-family: protipo, sans-serif;
+font-size: 38px;
+letter-spacing: 1.5px;
+margin-top: 15px;
+margin-bottom: 20px;
+color: #006fa9;
+text-align: center;
+}
+
+#review-social-section h3 span {
+display: block;
+font-size: 20px;
+margin-top: 10px;
+color: #7FC24A;
+}
+
+#social-review-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 90%;
+margin: 0 auto;
+}
+
+.social-review {
+width: 45%;
+min-width: 580px;
+margin: 20px 10px;
+border: 1px solid rgba(0,0,0,.15);
+border-radius: 5px;
+padding: 10px 20px;
+box-shadow: 1px 1px 5px rgba(0,0,0,.16);
+}
+
+.social-review a {
+text-decoration: none;
+color: #2068a4;
+font-weight: bold;
+}
+
+.social-review a:hover {
+color: #006fa9;
+text-decoration: underline;
+}
+
+.social-customer-review {
+margin: 0;
+font-weight: normal;
+}
+
+.social-loan-officer {
+margin-top: 25px;
+font-size: 18px;
+font-family: protipo, sans-serif;
+border-bottom: 1px solid rgba(0,0,0,.15);
+padding: 35px 20px 15px;
+margin: -20px;
+text-align: center;
+}
+
+.review-social-rating {
+text-align: center;
+}
+
+.review-social-rating i {
+color: #7FC24A;
+margin: 0 8px;
+margin-left: 0;
+font-size: 25px;
+margin-top: 15px;
+margin-bottom: 10px;
+}
+
+.social-review a i, p i {
+color: #7FC24A;
+margin: 0 3px; 
+}
+
+.social-customer-review {
+margin: 0;
+}
+
+.average-social-rating {
+border-top: 1px solid rgba(0,0,0,.15);
+line-height: 13px;
+margin: -20px;
+padding: 11px 20px 25px;
+margin-top: 40px;
+}
+
+.social-review-survey {
+line-height: 35px;
+margin-top: 30px;
+margin-bottom: -15px;
+padding: 3px;
+}
+
+
+@media only screen and (max-width: 610px) {
+	#social-review-grid {
+		width: auto;
+	}
+	.social-review {
+		width: 100%;
+		min-width: 93%;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		border-top: 1px solid rgba(0,0,0,.1);
+	}
+	.average-social-rating {
+		border: none;
+		margin-top: 16px;
+		margin-bottom: -50px;
+	}
+	.average-social-rating p:last-of-type {
+		line-height: 20px;
+	}
+	.review-social-rating {
+		text-align: left;
+		margin-top: 15px;
+	}
+	.social-loan-officer {
+		text-align: left;
+		line-height: 29px;
+		margin-top: -30px;
+		border-bottom: none;
+		margin-bottom: -35px;
+	}
+	.social-review-survey {
+		padding: 0;
+	}
+	.social-loan-officer span {
+		display: block;
+	}
+}
