@@ -97,18 +97,11 @@ $("#covid-warning span").click(function(){
 	}
 	
 	// Team: Barrow		
-	 if (window.location.href.indexOf("teambarrow.annie-mac.com") != -1) {		
+	 if (window.location.href.indexOf("teambarrow.annie-mac.com") != -1) {	
 		 $("#branch-content > h2").text("Team Barrow");		
 		 $(document).prop('title', 'Team Barrow');		
 		 $("#branch-content > h5 > a.tel").text("(252) 917-8400");
 		 $("#branch-content > h5 > a.tel").attr("href", "tel:252-917-8400");
-		  // Hide loan originators who aren't Tyler based on index of all team members.		
-		  // var people = $(".team-member");		
-		  // people.each((index, teamMember) => {		
-		  // 	if (![1].includes(index)) {		
-		  // 		teamMember.style.display = "none"		
-		  // 	}		
-		  // })	
 		  var people = $(".team-member");
 		  people.each((index, teamMember) => {
 			  if (![1].includes(index)) {
@@ -123,6 +116,7 @@ $("#covid-warning span").click(function(){
 				 option.setAttribute('hidden', 'true');		
 			 }		
 		 })
+	 }
 
 	// Team: Fillyaw
 	if (window.location.href.indexOf("teamfillyaw.annie-mac.com") != -1) {
