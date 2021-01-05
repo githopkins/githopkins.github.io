@@ -112,10 +112,12 @@ $("#covid-warning span").click(function(){
 		 $("#sudoux_mortgagebundle_loanapplicationtype_loan_officer > option").each((i, option) => {		
 			 value = option.getAttribute('value');		
 			 // The following are the ID values for the loan officers who are able to be seleted from the drop down. Everyone whose ID does not match is hidden.		
-			 if (value !== "9069") {		
+			 if (value !== "") {		
 				 option.setAttribute('hidden', 'true');		
 			 }		
 		 })
+		 $('#sudoux_mortgagebundle_loanapplicationtype_loan_officer').find('option[value=9069]').attr('selected','selected');
+		 $('#loan-officer-wrapper').hide();
 	 }
 
 	// Team: Fillyaw
