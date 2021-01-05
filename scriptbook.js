@@ -103,12 +103,18 @@ $("#covid-warning span").click(function(){
 		 $("#branch-content > h5 > a.tel").text("(252) 917-8400");
 		 $("#branch-content > h5 > a.tel").attr("href", "tel:252-917-8400");
 		  // Hide loan originators who aren't Tyler based on index of all team members.		
-		  var people = $(".team-member");		
-		  people.each((index, teamMember) => {		
-		  	if (![1].includes(index)) {		
-		  		teamMember.style.display = "none"		
-		  	}		
-		  })		
+		  // var people = $(".team-member");		
+		  // people.each((index, teamMember) => {		
+		  // 	if (![1].includes(index)) {		
+		  // 		teamMember.style.display = "none"		
+		  // 	}		
+		  // })	
+		  var people = $(".team-member");
+		  people.each((index, teamMember) => {
+			  if (![1].includes(index)) {
+				  teamMember.style.display = "none"
+			  }
+		  })	
 		  // Hide options from dropdown on team page that don't include only specified loan originators.		
 		 $("#sudoux_mortgagebundle_loanapplicationtype_loan_officer > option").each((i, option) => {		
 			 value = option.getAttribute('value');		
