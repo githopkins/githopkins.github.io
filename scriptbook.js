@@ -167,6 +167,7 @@ $("#covid-warning span").click(function(){
 		$("#team-display > div.team-member-section > div:nth-child(1)").addClass("manager-information");
 		$("#team-display > div.team-member-section > div:nth-child(1)").removeClass("team-member");
 		$("#team-display > div.team-member-section > div:nth-child(1)").prependTo(".branch-manager-section");
+		$("#team-display > h3:nth-child(3)").hide();
 	}
 	if (
 		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
