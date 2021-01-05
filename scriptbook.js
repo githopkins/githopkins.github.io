@@ -145,9 +145,7 @@ $("#covid-warning span").click(function(){
 		$("#branch-content > h2").text("Team Bruner");
 		$(document).prop('title', 'Team Bruner');		
 	}
-	if (
-		(window.location.href.indexOf("newsmyrna.annie-mac.com") != -1)
-		){
+	if (window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) {
 			$("body > div.team-member-section > div:nth-child(4)").addClass("manager-information");
 			$("body > div.team-member-section > div:nth-child(4)").removeClass("team-member");
 			$("body > div.team-member-section > div:nth-child(4)").prependTo("#branch-managers");
