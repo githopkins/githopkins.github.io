@@ -151,7 +151,7 @@ $("#covid-warning span").click(function(){
 			$("body > div.team-member-section > div:nth-child(4)").prependTo("#branch-managers");
 			$("body > div.team-member-section > div:nth-child(1) > div > button:nth-child(6)").html("386-427-3445 <i class='fas fa-mobile-alt'></i>");
 			$("body > div.team-member-section > div:nth-child(3) > div > button:nth-child(6)").html("407-205-0190 x1816 <i class='fas fa-mobile-alt'></i>");
-			("#branch-managers > div > div > button:nth-child(6)").html("386-427-3445 <i class='fas fa-mobile-alt'></i>");
+			$("#branch-managers > div > div > button:nth-child(6)").html("386-427-3445 <i class='fas fa-mobile-alt'></i>");
 	}
 	if (
 		(window.location.href.indexOf("teambruner.annie-mac.com") != -1) || 
