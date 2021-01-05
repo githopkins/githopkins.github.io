@@ -153,9 +153,6 @@ $("#covid-warning span").click(function(){
 			$("body > div.team-member-section > div:nth-child(3) > div > button:nth-child(6)").html("(407) 205-0190 x1816 <i class='fas fa-mobile-alt'></i>");
 			$("#branch-managers > div > div > button:nth-child(6)").html("386-427-3445 <i class='fas fa-mobile-alt'></i>");
 	}
-	if (window.location.href.indexOf("chesapeake.annie-mac.com") != -1) { 
-		
-	}
 	if (
 		(window.location.href.indexOf("teambruner.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("winterpark.annie-mac.com") != -1)
@@ -165,6 +162,11 @@ $("#covid-warning span").click(function(){
 		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
 		$("#team-display > div.team-member-section > div > div > button:nth-child(6)").html("(407) 205-0190 x1816 <i class='fas fa-mobile-alt'></i>");
 		$("#branch-managers > div > div:nth-child(1) > div > button:nth-child(6)").html("(386) 427-3445 <i class='fas fa-mobile-alt'></i>");
+	}
+	if (window.location.href.indexOf("chesapeake.annie-mac.com") != -1) { 
+		$("#team-display > div.team-member-section > div:nth-child(1)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(1)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(1)").prependTo(".branch-manager-section");
 	}
 	if (
 		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
