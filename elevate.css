@@ -66,7 +66,7 @@ h3 {
 }
 
 #landing-bar h1 {
-	width: 375px;
+	width: 340px;
 	height: 70px;
 	text-indent: -105vw;
 	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
@@ -104,23 +104,19 @@ h3 {
 #call-to-action {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
 	align-items: center;
-	height: 275px;
-	/*! margin-left: 60px; */
 }
 
 #call-to-action h4 {
 	color: white;
 	font-size: 60px;
 	letter-spacing: .045em;
-	margin: 0;
-	margin-top: 100px;
-	padding: 0;
+	margin-bottom: 5px;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
-	width: 620px;
+	max-width: 700px;
 	text-align: center;
-	line-height: 67px;
+	line-height: 70px;
+	margin-top: 150px;
 }
 
 #call-to-action h5 {
@@ -130,11 +126,20 @@ h3 {
 	padding: 0;
 	font-weight: normal;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
-	width: 630px;
 	text-align: center;
 	line-height: 35px;
 	margin-top: 15px;
-	margin-bottom: 20px;
+	margin-bottom: -20px;
+}
+
+#iframe-videos {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#iframe-videos iframe {
+	height: 460px;
+	width: 100vw;
 }
 
 #intro-section {
@@ -145,30 +150,67 @@ h3 {
 
 #intro-section h4 {
 	color: white;
-	font-size: 20px;
+	font-size: 26px;
 	letter-spacing: .045em;
 	padding: 0;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
 	text-align: center;
 	margin: 0;
 	line-height: 35px;
+	margin-bottom: 41px;
 }
 
 #intro-section p {
-	max-width: 630px;
+	max-width: 700px;
 	margin: 20px auto;
-	line-height: 35px;
-	padding-bottom: 120px;
+	line-height: 37px;
+	padding-bottom: 90px;
+	font-size: 17px;
+}
+
+#work-less, #earn-more, #live-better {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.benefit-callout {
+	background: #ffffff;
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, .3);
+	padding: 25px 35px;
+	border-radius: 4px;
+	width: 33%;
+	height: 405px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 4px;
+}
+
+.benefit-callout h5 {
+	font-size: 15px;
+	color: #025c8c;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	padding-bottom: 15px;
+	margin-top: 8px;
+	line-height: 24px;
+	margin-bottom: 1px;
 }
 
 #landing-bar a button,
 #call-to-action button {
-	font-size: 1.1rem;
+	font-size: 16px;
 	font-weight: bold;
 	color: white;
 	background: #78c254;
 	border: 1px solid #78c254;
-	border-bottom: 4px solid rgba(0, 0, 0, .2);
+	border-bottom: 2px solid rgba(0, 0, 0, .2);
 }
 
 #landing-bar a:hover button,
@@ -188,6 +230,7 @@ h3 {
 	justify-content: space-between;
 	margin-bottom: 60px;
 	padding: 50px 0 30px;
+	margin-top: 90px;
 }
 
 #form-content h2 {
@@ -259,7 +302,7 @@ h3 {
 
 .form-block-final small {
 	text-align: center;
-	margin: 25px 0;
+	margin: 60px 0 -15px;
 }
 
 button {
