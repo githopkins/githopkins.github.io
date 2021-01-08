@@ -174,6 +174,7 @@ h3 {
 	width: 90%;
 	justify-content: space-between;
 	margin: 0 auto;
+	flex-direction: column;
 }
 
 .benefit-callout {
@@ -181,8 +182,8 @@ h3 {
 	box-shadow: 1px 3px 9px rgba(0, 0, 0, .3);
 	padding: 25px 35px;
 	border-radius: 4px;
-	width: 33%;
-	height: 405px;
+	width: 53%;
+	height: 205px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
