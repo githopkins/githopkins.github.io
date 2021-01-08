@@ -14,7 +14,7 @@ $(document).ready(function() {
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
 // Login Error
-	$(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
+	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
 	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
 
 // Booking link for loan originators:
