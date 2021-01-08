@@ -1,0 +1,867 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'interstate', sans-serif;
+	color: #444;
+	letter-spacing: .015em;
+	line-height: 1.75em;
+	background: #dedede;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+h3 {
+	text-align: center;
+	margin: 75px 0;
+	font-size: 29px;
+	font-weight: normal;
+	color: #025c8c;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
+}
+
+#welcome-landing-kelsey {
+	min-height: 800px;
+	background: #d1d5d9 url('https://annie-mac.com/uploads/sites/10713/public/kelsey-background.jpeg') no-repeat;
+	background-size: cover;
+	background-position-x: 390px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#welcome-landing {
+	min-height: 700px;
+	background: linear-gradient(180deg, rgba(0, 39, 60, .35) 50%, #003b6c 90%), url('https://annie-mac.com/uploads/sites/10713/public/landing.jpeg') top left no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#landing-bar {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	justify-content: space-between;
+	width: 95vw;
+	height: 100px;
+	margin-bottom: -60px;
+}
+
+#landing-bar h1 {
+	width: 375px;
+	height: 70px;
+	text-indent: -105vw;
+	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
+	background-size: cover;
+}
+
+#landing-bar a button {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+	background: #78c254;
+	border: 1px solid #78c254;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
+}
+
+#landing-bar a:hover button {
+	cursor: pointer;
+	background: #006fa9;
+	border: 1px solid #006fa9;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
+}
+
+#iframe-video {
+	width: 700px;
+	margin-top: -90px;
+}
+
+#iframe-video iframe {
+	height: 360px;
+	border: none;
+	max-width: 800px;
+	margin-top: 50px;
+}
+
+#call-to-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 275px;
+	/*! margin-left: 60px; */
+}
+
+#call-to-action h4 {
+	color: white;
+	font-size: 60px;
+	letter-spacing: .045em;
+	margin: 0;
+	margin-top: -10px;
+	padding: 0;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
+	width: 620px;
+	text-align: center;
+	line-height: 67px;
+}
+
+#call-to-action h5 {
+	color: white;
+	font-size: 25px;
+	letter-spacing: .045em;
+	padding: 0;
+	font-weight: normal;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
+	width: 630px;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+#landing-bar a button,
+#call-to-action button {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+	background: #78c254;
+	border: 1px solid #78c254;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
+}
+
+#landing-bar a:hover button,
+#call-to-action button:hover {
+	cursor: pointer;
+	background: #006fa9;
+	border: 1px solid #006fa9;
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
+}
+
+#form-content {
+	background: linear-gradient(180deg, rgb(0, 59, 108) 20%, rgb(32, 104, 164) 94%);
+	color: #fff;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	padding: 50px 0 30px;
+}
+
+#form-content h2 {
+	font-size: 50px;
+	padding-top: 15px;
+	text-align: center;
+	margin-bottom: -15px;
+}
+
+#form-content p {
+	margin: 0 auto;
+	margin-bottom: 45px;
+	text-align: center;
+	width: 100%;
+}
+
+#form-content form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.form-block {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	margin: 6px 9px;
+}
+
+#form-content form label {
+	font-size: .9rem;
+	position: relative;
+	letter-spacing: .08em;
+	margin-bottom: 5px;
+}
+
+#form-content form label span {
+	font-size: .8rem;
+	font-weight: bold;
+	color: #78c255;
+	margin-left: 8px;
+}
+
+#state-selection input {
+	display: block;
+	margin-top: 5px;
+	width: 100%;
+}
+
+#form-content form input,
+#form-content form select {
+	padding: 13px;
+	border-radius: 4px;
+	letter-spacing: .03em;
+	font-size: .95rem;
+	border: 1px solid rgba(0, 0, 0, .3);
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.form-block-final {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 9px auto;
+}
+
+.form-block-final small {
+	text-align: center;
+	margin: 25px 0;
+}
+
+button {
+	border-radius: 10px;
+	outline: none;
+	padding: 15px 18px;
+	font-weight: normal;
+	font-size: 13px;
+	letter-spacing: .13em;
+}
+
+#form-content form button {
+	width: 25%;
+	height: 70px;
+}
+
+form button,
+.message-contents button,
+.go {
+	background: #78c254;
+	border: 1px solid #78c254;
+	color: #FFF;
+	margin: 30px auto -20px;
+}
+
+#callouts {
+	width: 80%;
+	min-width: 1020px;
+	min-height: 300px;
+	margin: 75px auto;
+}
+
+#callouts>* {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#callouts>* h3 {
+	text-align: center;
+	text-transform: initial;
+	margin: 60px 0 15px 0;
+	color: #FFF;
+	font-size: 1.45rem;
+	letter-spacing: .05em;
+	font-weight: normal;
+	text-shadow: 4px 4px 6px rgba(0, 0, 0, .65);
+}
+
+#callouts>* small {
+	width: 70%;
+	color: white;
+	font-size: .9rem;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .65);
+}
+
+#download {
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.81) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/staff.jpeg') top right no-repeat;
+	background-size: cover;
+	border-radius: 4px;
+	flex: 1;
+	border-right: 1px solid rgba(255, 255, 255, .3);
+	position: relative;
+	padding-bottom: 70px;
+}
+
+#download button {
+	background: #fff;
+	color: #30342f;
+	font-weight: bold;
+	border-radius: 40px;
+	border: none;
+	margin-top: 20px;
+	outline: none;
+	padding: 15px 20px;
+	font-size: 13px;
+	letter-spacing: .13em;
+}
+
+#after-block {
+	width: 80%;
+	min-width: 1020px;
+	margin: 50px auto 0;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 17px rgba(0, 0, 0, .13);
+	margin-bottom: 80px;
+	min-height: 300px;
+}
+
+#after-block h4 {
+	text-align: center;
+	font-weight: normal;
+	color: #006fa9;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	font-size: .97rem;
+	margin: 50px 0 20px;
+}
+
+#after-block h3 {
+	text-align: center;
+	color: #78c254;
+	font-size: 2.3rem;
+	letter-spacing: .02em;
+	margin: 17px 0;
+	text-transform: initial;
+	font-weight: bold;
+}
+
+#after-block-content-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	padding: 20px 0 15px;
+	border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.gridded-block {
+	width: 38%;
+	margin: 40px 0;
+}
+
+.gridded_block_circle {
+	width: 80px;
+	height: 80px;
+	margin-right: 30px;
+	background: #78c254;
+	float: left;
+	border-radius: 100%;
+	margin-bottom: 50px;
+}
+
+.gridded-block strong {
+	color: #006fa9;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.gridded-block p {
+	font-size: .9rem;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#awarded {
+	margin: 20px auto;
+	padding: 40px 0 20px;
+	margin-bottom: 45px;
+	width: 95%;
+}
+
+#awarded strong {
+	color: #78c254;
+	display: block;
+	text-align: center;
+	font-size: 1.3rem;
+	letter-spacing: .02em;
+	margin-bottom: 20px;
+}
+
+#award-grid {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+
+.award {
+	width: 25%;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.award-title {
+	color: #006fa9;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: .77rem;
+	display: block;
+	font-weight: bold;
+}
+
+.award span {
+	font-size: .9rem;
+	display: block;
+	font-size: .8rem;
+}
+
+#accordion-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 75px auto;
+}
+
+.accordion-selection {
+	width: 80%;
+	min-width: 1020px;
+	display: flex;
+	background: #ffffff;
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, .12);
+	padding: 20px 40px;
+	border-radius: 2px;
+	flex-direction: column;
+	margin: 9px auto 7px;
+}
+
+.accordion-selection:hover {
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, .3);
+	cursor: pointer;
+}
+
+.accordion-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accordion-row strong {
+	flex: 100;
+	color: #006fa9;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.toggle span {
+	opacity: .8;
+}
+
+.toggle span:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#expand-all {
+	background: transparent;
+	box-shadow: none;
+	padding: 3px;
+	margin-top: -35px;
+}
+
+#expand-all .toggle span {
+	color: #025c8c;
+	opacity: 1;
+}
+
+#expand-all .toggle:hover {
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
+}
+
+#expand-all:hover {
+	cursor: default;
+}
+
+p span {
+	float: right;
+	margin-top: -52px;
+	opacity: .8;
+}
+
+.accordion-description {
+	display: flex;
+	width: 100%;
+	flex: 1;
+}
+
+.hide {
+	display: none;
+}
+
+.accordion-description p {
+	flex: 1;
+	border-top: 1px solid #c1c1c1;
+	margin-top: 8px;
+	padding-top: 15px;
+}
+
+.testimonial-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 75px auto;
+}
+
+.testimonial_avatar {
+	width: 200px;
+	height: 200px;
+	background: #ffffff;
+	box-shadow: 1px 1px 9px rgba(0, 0, 0, .15);
+	margin-right: 100px;
+	border-radius: 100%;
+	display: none;
+}
+
+.testimonial_quote {
+	width: 80%;
+	min-width: 1020px;
+	display: flex;
+	background: #ffffff;
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, .3);
+	padding: 20px 40px;
+	border-radius: 2px;
+	align-items: center;
+}
+
+.portriat_test {
+	border-radius: 100%;
+	min-width: 120px;
+	min-height: 120px;
+	margin-right: 16px;
+}
+
+.testimonial_said {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.testimonial_said h5 {
+	font-size: 1.3rem;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	color: #006fa9;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.testimonial_said span {
+	display: flex;
+	align-items: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.testimonial_said strong:last-of-type {
+	font-weight: normal;
+	margin-left: 10px;
+	font-size: .7rem;
+}
+
+#mud {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/mud.jpeg');
+	background-size: cover;
+	background-position-x: 65%;
+}
+
+#trye {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/stephenTryeCustom.jpeg');
+	background-size: cover;
+}
+
+#shealey {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/shealey.jpeg');
+	background-size: cover;
+	background-position-x: 65%;
+}
+
+#footer {
+	text-align: center;
+	margin-bottom: -25px;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+#footer small {
+	max-width: 80vw;
+	margin: 14px auto;
+	display: block;
+	line-height: 23px;
+}
+
+#equal-housing {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/equalhousing.png');
+	background-size: cover;
+	height: 32px;
+	margin: 0px auto 15px;
+	opacity: .8;
+	width: 30px;
+}
+
+#footer a {
+	color: #006fa9;
+	letter-spacing: .08em;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 5px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1408px) {
+	#welcome-landing {
+		min-height: 99vh;
+	}
+
+	#call-to-action h4 {
+		font-size: 45px;
+		line-height: 50px;
+	}
+}
+
+@media screen and (max-width: 1330px) {
+	#landing-bar {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 1123px) {
+	.form-block {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+
+	#callouts,
+	#after-block,
+	.accordion-selection,
+	.testimonial_quote {
+		min-width: auto;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.gridded_block_circle {
+		display: none;
+	}
+
+	.gridded-block p {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	#form-content form {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 792px) {
+	h3 {
+		line-height: 35px;
+		margin: 63px 0;
+		font-size: 22px;
+	}
+
+	#landing-bar {
+		padding: 0 15px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#landing-bar h1 {
+		width: 351px;
+		min-height: 62px !important;
+	}
+
+	#landing-bar a button {
+		font-size: 15px;
+	}
+
+	#iframe-video {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0;
+		margin-top: 40px;
+	}
+
+	#iframe-video iframe {
+		height: 310px;
+		max-width: 600px;
+		margin-left: 0;
+	}
+
+	#call-to-action {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	#call-to-action h4 {
+		font-size: 30px;
+		letter-spacing: .025em;
+		margin-top: -15px;
+	}
+
+	#call-to-action h5 {
+		font-size: 18px;
+		margin-top: -30px;
+		width: 400px;
+	}
+
+	#call-to-action button {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		border-radius: 7px;
+	}
+
+	#form-content {
+		margin-bottom: 0px;
+	}
+
+	.form-block-final small {
+		text-align: justify;
+	}
+
+	#form-content form button {
+		width: 260px;
+	}
+
+	#callouts,
+	#after-block {
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 0;
+	}
+
+	#download {
+		border-radius: 0;
+		margin: 35px 0px;
+	}
+
+	#after-block h4 {
+		margin: 15px 0 25px;
+	}
+
+	#after-block h3 {
+		font-size: 28px;
+	}
+
+	.gridded-block {
+		margin: 10px 0;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.award {
+		width: 35%;
+	}
+
+	.accordion-selection {
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+		padding: 20px 23px;
+		box-shadow: none;
+		border-radius: 0;
+		margin: 0;
+		position: relative;
+	}
+
+	.accordion-selection:hover {
+		box-shadow: none;
+	}
+
+	.accordion-description p {
+		border-top: none;
+	}
+
+	#expand-all {
+		padding: 14px;
+		border-bottom: none;
+		margin-top: -70px;
+	}
+
+	.accordion-row strong {
+		max-width: 335px;
+	}
+
+	.hide span {
+		position: absolute;
+		right: 20px;
+		top: 72px;
+	}
+
+	.portriat_test {
+		display: none;
+	}
+
+	.testimonial-container {
+		margin: 0px auto;
+		border-bottom: 1px solid rgba(0, 0, 0, .05);
+		box-shadow: none;
+	}
+
+	.testimonial_quote {
+		width: 100%;
+		border-radius: 0;
+		padding: 20px;
+		box-shadow: none;
+	}
+
+	.testimonial_said span {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	#footer {
+		border-top: 0;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	#landing-bar {
+		margin-bottom: 0;
+	}
+
+	#call-to-action h5 {
+		margin-bottom: 0;
+	}
+}
+
+#call-to-action button {
+	display: none;
+}
