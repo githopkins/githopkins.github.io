@@ -115,7 +115,7 @@ h3 {
 	font-size: 60px;
 	letter-spacing: .045em;
 	margin: 0;
-	margin-top: -10px;
+	margin-top: 100px;
 	padding: 0;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
 	width: 620px;
@@ -135,6 +135,30 @@ h3 {
 	line-height: 35px;
 	margin-top: 15px;
 	margin-bottom: 20px;
+}
+
+#intro-section {
+	background: #003b6c;
+	margin-top: -21px;
+	color: white;
+}
+
+#intro-section h4 {
+	color: white;
+	font-size: 20px;
+	letter-spacing: .045em;
+	padding: 0;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, .35);
+	text-align: center;
+	margin: 0;
+	line-height: 35px;
+}
+
+#intro-section p {
+	max-width: 630px;
+	margin: 20px auto;
+	line-height: 35px;
+	padding-bottom: 120px;
 }
 
 #landing-bar a button,
@@ -640,7 +664,7 @@ p span {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 1408px) {
+/* @media screen and (max-width: 1408px) {
 	#welcome-landing {
 		min-height: 99vh;
 	}
@@ -860,7 +884,7 @@ p span {
 	#call-to-action h5 {
 		margin-bottom: 0;
 	}
-}
+} */
 
 #call-to-action button {
 	display: none;
