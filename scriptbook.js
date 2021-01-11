@@ -171,6 +171,15 @@ $("#covid-warning span").click(function(){
 		$("#team-display > div.team-member-section > div:nth-child(1)").prependTo(".branch-manager-section");
 		$("#team-display > h3:nth-child(3)").hide();
 	}
+	if (window.location.href.indexOf("louisville.annie-mac.com") != -1) {
+		$("#team-display > div.team-member-section > div:nth-child(5)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(5)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(5)").prependTo(".branch-manager-section");
+		$("#team-display > div.team-member-section > div:nth-child(2)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
+		$("#branch-managers > div > div:nth-child(3)").css("order", "-1");
+	}
 	if (
 		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("mylendingrate.com") != -1)
