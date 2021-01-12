@@ -184,11 +184,6 @@ $("#covid-warning span").click(function(){
 		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
 		$("#branch-managers > div > div:nth-child(3)").css("order", "-1");
 	}
-	// Team: Andy Sikora
-	if (window.location.href.indexOf("reston.annie-mac.com") != -1) {
-		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/AndySikora.png");
-		$("#navigation-logo > a > img").css("margin-top", "4px");
-	}
 	// Team: Autullo
 	if (window.location.href.indexOf("cincinnati.annie-mac.com") != -1) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/Autullo.png");
