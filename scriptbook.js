@@ -7,8 +7,9 @@ var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan offic
 var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mortgage</a></button>';
 
 $(document).ready(function() {
+	// Remove the link for My Mortgage
 	$("#calculators-navigation > a").removeAttr("href");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide();
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
