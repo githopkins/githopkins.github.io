@@ -7,10 +7,6 @@ var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan offic
 var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mortgage</a></button>';
 
 $(document).ready(function() {
-	if ((window.location.href.indexOf("themtgco.com") != -1) {
-		$("#deserve-more-container-master > iframe").hide();
-		$("#biography > div.manager-biography > iframe").hide();
-	}
 	// Remove the link for My Mortgage
 	$("#calculators-navigation > a").removeAttr("href");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
@@ -40,6 +36,11 @@ if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) ||
 
 if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
 	$("#product-banner > h2").text("Pre-Qualify");	
+}
+
+if ((window.location.href.indexOf(".themtgco.com") != -1) {
+	$("#deserve-more-container-master > iframe").hide();
+	$("#biography > div.manager-biography > iframe").hide();
 }
 
 // Booking link for loan originators continued:
