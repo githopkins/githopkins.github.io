@@ -9,6 +9,7 @@ var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mort
 $(document).ready(function() {
 	if ((window.location.href.indexOf("themtgco.com") != -1) {
 		$("#deserve-more-container-master > iframe").hide();
+		$("#biography > div.manager-biography > iframe").hide();
 	}
 	// Remove the link for My Mortgage
 	$("#calculators-navigation > a").removeAttr("href");
