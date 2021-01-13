@@ -38,11 +38,6 @@ if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
 	$("#product-banner > h2").text("Pre-Qualify");	
 }
 
-if (window.location.href.indexOf("themtgco.com") != -1) {
-	$("#deserve-more-container-master > iframe").hide();
-	$("#biography > div.manager-biography > iframe").hide();
-}
-
 // Booking link for loan originators continued:
 	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
 }
