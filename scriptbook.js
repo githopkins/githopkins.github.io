@@ -98,7 +98,10 @@ $("#covid-warning span").click(function(){
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/11832/public/7283-SEPT2020_AM-Community-Mortgage-Team-Logo-WEBSITE.png");
 		$("#navigation-logo > a > img").css("margin-top", "6px");
 	}
-	
+	if (window.location.href.indexOf("themtgco.com") != -1) {	
+		$("body > nav > div.top-links-header.order-1 > div > a.tel").text("855-559-8651");
+		$("body > nav > div.top-links-header.order-1 > div > a.tel").attr("href", "tel:855-559-8651");
+	}
 	// Team: Barrow		
 	 if (window.location.href.indexOf("teambarrow.annie-mac.com") != -1) {	
 		 $("#branch-content > h2").text("Team Barrow");		

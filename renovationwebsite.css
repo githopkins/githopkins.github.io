@@ -41,6 +41,14 @@ a {
 	width: 50%;
 }
 
+#renovation-presence:hover {
+	background: red;
+}
+
+#construction-presence:hover {
+	background: green;
+}
+
 #links-for-other {
 	min-width: 100vw;
 	display: flex;
