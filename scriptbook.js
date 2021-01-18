@@ -229,11 +229,6 @@ $("#covid-warning span").click(function(){
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/JimmyValley.png");
 		$("#navigation-logo > a > img").css("margin-top", "4px");
 	}
-	// Team: LPK Group
-	if (window.location.href.indexOf("louisville.annie-mac.com") != -1) {
-		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/LPKGroup.png");
-		$("#navigation-logo > a > img").css("margin-top", "3px");
-	}
 	// Team: Michelle Miller
 	if (window.location.href.indexOf("warsaw.annie-mac.com") != -1) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/MichelleMiller.png");
