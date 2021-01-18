@@ -16,7 +16,8 @@ a {
 }
 
 #selection-container {
-	background: linear-gradient(180deg, rgb(0, 59, 108) 20%, rgb(32, 104, 164) 94%);
+	background: linear-gradient(180deg, rgba(0, 39, 60, .35) 50%, #003b6c 90%), url('https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80');
+	background-size: cover;
 	color: #fff;
 	height: 100vh;
 	display: flex;
@@ -33,6 +34,20 @@ a {
 	top: 60px;
 }
 
+#corporate-presence h1 {
+	width: 408px;
+	height: 91px;
+	text-indent: -105vw;
+	margin-top: -25px;
+	background: url(white-reno-construction.png);
+	background-size: cover;
+}
+
+#corporate-presence h2 {
+	margin: 0;
+	font-size: 22px;
+}
+
 #selection-container section {
 	margin: 0 auto;
 	display: flex;
@@ -42,11 +57,15 @@ a {
 }
 
 #renovation-presence:hover {
-	background: red;
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(renrenovation.jpeg);
+	background-size: cover;
+	background-position-y: 80%;
 }
 
 #construction-presence:hover {
-	background: green;
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url(house.jpg);
+	background-size: cover;
+	background-position-y: 80%;
 }
 
 #links-for-other {
@@ -60,6 +79,7 @@ a {
 #selection-container section button {
 	background: #fff;
 	font-size: 30px;
+	margin-top: 200px;
 	padding: 35px 20px;
 	color: #0e5a98;
 	border: none;
