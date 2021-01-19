@@ -8,7 +8,7 @@ var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mort
 
 $(document).ready(function() {
 	// Remove the link for My Mortgage
-	$("#calculators-navigation > a").removeAttr("href");
+	// $("#calculators-navigation > a").removeAttr("href");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
