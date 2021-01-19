@@ -58,13 +58,13 @@ a {
 }
 
 #renovation-presence {
-	background: linear-gradient(14deg, rgba(5, 6, 6, 0.82) 30%, rgba(107, 97, 28, 0.28) 80%), url(renrenovation.jpeg);
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.82) 30%, rgba(107, 97, 28, 0.48) 80%), url(renrenovation.jpeg);
 	background-size: cover;
 	background-position-y: 80%;
 }
 
 #construction-presence {
-	background: linear-gradient(14deg, rgba(5, 6, 6, 0.82) 30%, rgba(107, 97, 28, 0.28) 80%), url(house.jpg);
+	background: linear-gradient(14deg, rgba(5, 6, 6, 0.82) 30%, rgba(107, 97, 28, 0.48) 80%), url(house.jpg);
 	background-size: cover;
 	background-position-y: 80%;
 }
