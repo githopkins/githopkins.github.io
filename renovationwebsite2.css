@@ -101,7 +101,7 @@ body {
 	border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
-#contractors a {
+#contractors p {
 	display: block;
 	width: auto;
 	line-height: 30px;
@@ -109,7 +109,7 @@ body {
 	text-decoration: none;
 }
 
-#contractors a strong {
+#contractors p a {
 	color: #78c254;
 }
 
