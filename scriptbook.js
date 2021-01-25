@@ -267,7 +267,7 @@ $("#covid-warning span").click(function(){
 	// Team: kevinhulsey
 	if (window.location.href.indexOf("kevinhulsey.annie-mac.com") != -1) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/hulsey.png");
-		$("#navigation-logo > a > img").css("margin-top", "0px");
+		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 // Closing the script.	
 });
