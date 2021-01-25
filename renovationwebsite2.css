@@ -10,7 +10,8 @@ body {
 }
 
 #background-homescreen {
-	background: linear-gradient(-90deg, rgb(145 191 2 / 17%) 80%, #1a2835 99%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);	
+	background: #c7cace;
+	/* background: linear-gradient(-90deg, rgb(145 191 2 / 17%) 80%, #1a2835 99%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */	
 	background-position-y: 98%;
 	background-position-x: -30%;
 	display: flex;
