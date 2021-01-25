@@ -54,7 +54,7 @@ body {
 	text-indent: -105vw;
 	background: url(white-reno-construction.png);
 	background-size: cover;
-	margin-top: -40px;
+	margin-top: -30px;
 }
 
 #corporate-presence h2 {
@@ -97,20 +97,19 @@ body {
 }
 
 #contractors {
-	padding-bottom: 35px;
+	padding-bottom: 15px;
 	border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
 #contractors p {
-	display: block;
-	width: auto;
 	line-height: 30px;
 	color: 	#fff;
-	text-decoration: none;
 }
 
 #contractors p a {
 	color: #78c254;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #secondary-links {
