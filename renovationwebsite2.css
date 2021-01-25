@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	line-height: 26px;
+}
+
+#background-homescreen {
+	background: linear-gradient(-90deg, rgb(145 191 2 / 17%) 80%, #1a2835 99%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);	
+	background-position-y: 98%;
+	background-position-x: -30%;
+	display: flex;
+}
+
+#container-homescreen {
+	background: #1a2735;
+	width: 56%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#container-homescreen:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: inherit;
+	background-size: contain;
+	transform-origin: top left;
+	transform: skewX(10deg);
+	z-index: -1;
+}
+
+#corporate-presence {
+	width: 80%;
+	color: white;
+	margin: 0 auto;
+	font-size: 17px;
+}
+
+#corporate-presence h1 {
+	width: 408px;
+	height: 91px;
+	margin-bottom: 60px;
+	text-indent: -105vw;
+	background: url(white-reno-construction.png);
+	background-size: cover;
+	margin-top: -40px;
+}
+
+#corporate-presence h2 {
+	font-size: 33px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	font-family: 'Khula', sans-serif;
+}
+
+#corporate-presence h2 span {
+	color: #78c254;
+	display: block;
+}
+
+#presence-links {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#presence-links a {
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	letter-spacing: .10em;
+	text-decoration: none;
+	color: #fff;
+	padding: 18px 0px;
+	background: #78c254;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+#presence-links a:first-of-type {
+	margin-right: 25px;
+	color: #041d31;
+	background: #fff;
+}
+
+#contractors {
+	padding-bottom: 35px;
+	border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+#contractors a {
+	display: block;
+	width: auto;
+	line-height: 30px;
+	color: 	#fff;
+	text-decoration: none;
+}
+
+#contractors a strong {
+	color: #78c254;
+}
+
+#secondary-links {
+	width: 30%;
+	float: right;
+	font-size: 15px;
+	margin-top: -40px;
+	justify-content: flex-end;
+	display: flex;
+	font-family: 'Khula', sans-serif;
+}
+
+#secondary-links a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: .020em;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 17px;
+	padding: 12px 15px 7px;
+	border: 1px solid rgba(255,255,255,.25);
+}
+
+#footer-presence-links {
+	width: 72%;
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer-presence-links a {
+	text-decoration: none;
+	color: #d1d5da;
+}
