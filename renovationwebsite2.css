@@ -20,7 +20,6 @@ body {
 #container-homescreen {
 	background: #041b33;
 	width: 57%;
-	min-width: 730px;
 	height: 100vh;
 	display: flex;
 	align-items: center;
