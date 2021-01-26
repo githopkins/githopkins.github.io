@@ -12,14 +12,14 @@ body {
 #background-homescreen {
 	background: linear-gradient(-90deg, rgb(145 191 2 / 17%) 80%, #1a2835 99%), url(reno-background.jpg);
 	background-position-y: 76%;
-	background-position-x: 190px;
+	background-position-x: 250px;
 	background-size: 99%;
 	display: flex;
 }
 
 #container-homescreen {
 	background: #041b33;
-	width: 56%;
+	width: 59%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
