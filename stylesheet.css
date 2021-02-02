@@ -36,6 +36,14 @@
 .manager-information {
     display: none;
 }
+#originator-core-details-portrait img {
+    background: transparent;
+    width: 190px;
+    height: 190px;
+    border-radius: 26%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 .manager-biography {
     margin-top: 0;
     margin-left: 0;
