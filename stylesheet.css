@@ -433,6 +433,9 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 #covid-warning h4 span:hover {
     cursor: pointer;
 }
+#covid-warning p {
+    margin: 8px 0;
+}
 #covid-warning-container {
     padding-bottom: 10px;
 }
