@@ -53,7 +53,7 @@ if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
 $(".site-type-team #team-display").prepend(loanOfficerBoxlet);
 
 // Customizations for site-wide application:
-$( covid ).insertBefore( $( ".main-content" ) );
+$( covid ).insertBefore( $( "#biography" ) );
 $("#covid-warning span").click(function(){
   $("#covid-warning-container").toggleClass("hide");
   $("#covid-warning > h4 > span").addClass("hide");
