@@ -33,6 +33,9 @@
 .container-fluid, .h-100 {
     padding: 10px 0 150px 0;
 }
+.page-testimonial .inner-layout {
+    background: #ffffff;
+}
 #biography .manager-information {
     display: none;
 }
