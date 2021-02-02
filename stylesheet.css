@@ -36,6 +36,9 @@
 .manager-information {
     display: none;
 }
+#list_11344 > a, #list_11343 > a, #list_11350 > a {
+    display: block;
+}
 #originator-core-details-portrait img {
     background: transparent;
     width: 190px;
