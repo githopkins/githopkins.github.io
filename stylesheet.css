@@ -10,7 +10,7 @@
     color: white;
     padding: 0 25px;
 }
-#loan-originator-blurb-container h4, #loan-originator-blurb-container h4 span {
+#loan-originator-blurb-container h4, #loan-originator-blurb-container h4 span, #navigation-sidebar h4 {
     color: white;
 }
 .top-links-header {
