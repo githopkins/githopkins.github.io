@@ -33,7 +33,7 @@
 .container-fluid, .h-100 {
     padding: 10px 0 150px 0;
 }
-.manager-information {
+#biography .manager-information {
     display: none;
 }
 #list_11344 > a, #list_11343 > a, #list_11350 > a {
