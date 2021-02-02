@@ -33,6 +33,14 @@
 .container-fluid, .h-100 {
     padding: 10px 0 150px 0;
 }
+.manager-information {
+    display: none;
+}
+.manager-biography {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
 /* #home-banner {
     background: linear-gradient(150deg, rgba(22, 31, 36, 0.35) 70%, #2642192b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
     background-size: cover !important;
