@@ -36,6 +36,10 @@
 .page-testimonial .inner-layout {
     background: #ffffff;
 }
+.social-loan-officer i.fas.fa-map-marker {
+    margin: 0 6px;
+    font-size: 18px;
+}
 #biography .manager-information {
     display: none;
 }
