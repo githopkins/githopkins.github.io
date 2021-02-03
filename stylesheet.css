@@ -30,6 +30,9 @@
     background-position-y: 68% !important;
     height: 500px;
 }
+.review h4 {
+    font-size: 20px;
+}
 .container-fluid, .h-100 {
     padding: 10px 0 150px 0;
 }
@@ -60,11 +63,9 @@
     padding-left: 0;
     padding-top: 0;
 }
-/* #home-banner {
-    background: linear-gradient(150deg, rgba(22, 31, 36, 0.35) 70%, #2642192b 80%), url(https://annie-mac.com/uploads/sites/10713/public/november-family.jpeg) top center no-repeat !important;
-    background-size: cover !important;
-    background-position-y: 90% !important;
-} */
+.manager-biography iframe {
+    display: none;
+}
 #home-reviews {
     width: 82%;
 }
