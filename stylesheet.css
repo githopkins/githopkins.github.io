@@ -69,6 +69,9 @@
 .manager-biography iframe {
     display: none;
 }
+#loan-originator-blurb-container h2 {
+    font-size: 35px;
+}
 #home-reviews {
     width: 82%;
 }
