@@ -63,6 +63,9 @@
     padding-left: 0;
     padding-top: 0;
 }
+.manager-biography p:first-of-type {
+    margin-top: none;
+}
 .manager-biography iframe {
     display: none;
 }
