@@ -72,6 +72,10 @@
 #loan-originator-blurb-container h2 {
     font-size: 35px;
 }
+#originator-core-details-text h4 span {
+    margin-top: 11px;
+    font-weight: bold;
+}
 #home-reviews {
     width: 82%;
 }
