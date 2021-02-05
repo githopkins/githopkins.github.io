@@ -22,6 +22,7 @@ $(document).ready(function() {
 
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
+	$( ".manager-biography h2" ).prepend("About ");
 	$("#apply-navigation").css("display", "flex");
 	$("#apply-navigation").css("margin-right", "10px");
 	$("#apply-navigation").css("align-items", "center");
