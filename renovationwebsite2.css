@@ -107,7 +107,7 @@ body {
 	text-indent: -105vw;
 	background: url(white-reno-construction.png);
 	background-size: cover;
-	margin-top: 45px;
+	margin-top: -5px;
 }
 
 #corporate-presence h2 {
@@ -184,7 +184,7 @@ body {
 	width: 30%;
 	float: right;
 	font-size: 15px;
-	margin-top: 40px;
+	margin-top: 3px;
 	justify-content: flex-end;
 	display: flex;
 	font-family: 'Khula', sans-serif;
@@ -218,7 +218,10 @@ body {
 #footer-presence-links a:hover {
 	color: #78c254;
 }
-
+#about-us-container #footer-presence-links {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
 #looking-page-button:hover, #presence-links a:hover {
 	color: #78c254;
 	background: transparent;
@@ -238,5 +241,183 @@ body {
 
 #licensed-state-list {
 	margin-top: 20px;
-	margin-bottom: 90px;
+}
+
+/* Renovation and Construction Loan Pages */
+#reno-construction-informational-page {
+	background: #f3f4f6;
+}
+#reno-construction-informational-page a {
+	color: #275881;
+	text-decoration: none;
+}
+#reno-construction-informational-page a:hover {
+	text-decoration: underline;
+}
+#renovation-banner {
+	background: #275881;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+#renovation-banner h1 {
+	width: 380px;
+	height: 85px;
+	text-indent: -105vw;
+	background: url(white-reno-construction.png);
+	background-size: cover;
+}
+#renovation-banner h2 {
+	font-size: 22px;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	font-weight: 300;
+}
+#reno-construction-main-section {
+	display: flex;
+	margin: 0 auto;
+}
+#side-bar-section {
+	padding: 0 20px;
+	margin-right: 15px;
+	min-width: 400px;
+	flex: 1;
+}
+#readable-section {
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+}
+#bruce-statement {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+	margin-bottom: 30px;
+}
+#bruce-photo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+}
+#bruce-photo-container {
+	background: #78c254;
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+#bruce-photo-container i {
+	font-size: 40px;
+}
+#bruce-quote {
+	border-top: 1px solid rgba(0,0,0,.15);
+	padding: 20px 20px 20px 20px;
+}
+#whosaid {
+	background: rgba(0,0,0,.025);
+	margin: -20px;
+	padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.10);
+	margin-bottom: 20px;
+}
+#bruce-quote h4 {
+	margin: 0;
+	font-size: 20px;
+}
+#bruce-quote h5 {
+	margin: 0;
+	font-size: 16px;
+	opacity: .75;
+}
+#bruce-quote p {
+	font-size: 14px;
+	opacity: .8;
+}
+.sectional-header h3 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+#in-summary, #resource-links {
+	margin-top: -20px;
+}
+#transformation-grid {
+	background: #78c254;
+	border-radius: 4px;
+	height: 470px;
+	margin-bottom: 40px;
+	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+}
+#transformation-section a {
+	background: #275881;
+	color: white;
+	text-decoration: none;
+	letter-spacing: .04em;
+	padding: 10px 15px;
+	font-weight: 300;
+	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+}
+#resource-links ul {
+	margin: 0;
+	line-height: 30px;
+	padding: 0;
+	list-style-type: none;
+}
+.sectional-header:not(:first-of-type) {
+	margin-top: 25px;
+}
+#product-container-section {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+}
+.product-selectable {
+	width: 50%;
+	padding: 10px 20px;
+}
+#grid1 {
+	border-right: 1px solid rgba(0,0,0,.2);
+}
+#grid3 {
+	border-top: 1px solid rgba(0,0,0,.2);
+	border-right: 1px solid rgba(0,0,0,.2);
+}
+#grid4 {
+	border-top: 1px solid rgba(0,0,0,.2);
+}
+.product-selectable i {
+	font-size: 24px;
+	background: #0f4777;
+	color: white;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 15px 0 10px;
+}
+.product-selectable span {
+	float: right;
+	margin-top: 10px;
+	opacity: .9;
+	font-size: 13px;
+}
+.product-selectable h3 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.product-selectable p {
+	font-size: 15px;
+	opacity: .6;
 }
