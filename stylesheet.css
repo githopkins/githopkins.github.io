@@ -30,6 +30,12 @@
     background-position-y: 68% !important;
     height: 500px;
 }
+.manager-biography h2:first-of-type {
+    font-size: 25px;
+    margin: 25px auto 15px;
+    display: block;
+    text-align: center;
+}
 .review h4 {
     font-size: 20px;
 }
