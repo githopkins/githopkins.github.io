@@ -1226,3 +1226,15 @@ thead {
     border: none !important;
     background: transparent !important;
 }
+
+@media screen and (max-width: 1190px) { 
+    #list_11930 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    .navigation-sectional:nth-of-type(3) li:last-of-type {
+        display: block !important;
+    }
+}
