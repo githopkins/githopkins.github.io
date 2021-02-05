@@ -1259,3 +1259,7 @@ thead {
         margin-top: 0;
     }
 }
+
+.navigation-sidebar-sectional ul li {
+    display: block !important;
+}
