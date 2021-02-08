@@ -17,6 +17,9 @@
 .branch-manager-section {
     width: auto;
 }
+.branch-manager-section .manager-information {
+    margin: 0 15px;
+}
 #loan-originator-blurb-container h4, #loan-originator-blurb-container h4 span, #navigation-sidebar h4, #navigation-sidebar .navigation-sidebar-sectional:nth-child(2) h4 span {
     color: white;
 }
