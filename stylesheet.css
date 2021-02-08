@@ -14,6 +14,14 @@
     min-width: 130px;
     text-align: center;
 }
+#list_12148 a {
+    background: #7FC24A;
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .branch-manager-section {
     width: auto;
 }
