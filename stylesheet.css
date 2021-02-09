@@ -1505,6 +1505,19 @@ thead {
     #accolades-originator {
         /* margin-right: -460px; */
     }
+    #accolates-originator #we-provide-more-master {
+        margin: 0;
+    }
+    #accolates-originator #what-we-provide {
+        flex-direction: column;
+    }
+    #accolades-originator .we-provide-this {
+        width: 100%;
+    }
+    #accolades-originator .we-provide-this h4 {
+        color: white;
+        margin-top: 12px;
+    }
     .site-type-loan_officer .branch-manager-section {
         width: 95%;
         padding: 40px 15px 50px;
