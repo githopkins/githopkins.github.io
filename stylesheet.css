@@ -1397,11 +1397,12 @@ thead {
     }
     #originator-core-details-portrait img {
         background: transparent;
-        width: 210px;
-        height: 210px;
+        max-width: 210px;
+        max-height: 210px;
         border-radius: 0;
         margin-left: 0px;
         margin-bottom: 20px;
+        border-radius: 100%;
     }
     #originator-main-details {
         display: flex;

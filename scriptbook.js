@@ -32,16 +32,16 @@ if ($('body').hasClass('site-type-loan_officer')) {
 	// $("#apply-navigation").css("align-items", "center");
 
 // PREQUAL link for loan originators who request:
-if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
-	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
-	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
-	){
-	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
-	}
+// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
+// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
+// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
+// 	){
+// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
+// 	}
 
-if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
-	$("#product-banner > h2").text("Pre-Qualify");	
-}
+// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
+// 	$("#product-banner > h2").text("Pre-Qualify");	
+// }
 
 // Booking link for loan originators continued:
 	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
