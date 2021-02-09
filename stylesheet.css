@@ -1438,7 +1438,7 @@ thead {
         flex-wrap: nowrap;
         align-self: flex-end;
         width: 100%;
-        margin-top: -1px;
+        margin-top: -21px;
         flex-direction: column;
     }
     #originator-social-details ul a {
