@@ -1493,9 +1493,7 @@ thead {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 16px;
-        line-height: .6;
-        position: relative;
-        display: block;
+        line-height: 17px;
     }
     #inserted-banner > #button-container-home > a:nth-child(1):hover {
         border: none;
