@@ -1348,6 +1348,7 @@ thead {
 #originator-core-details-text h4 span {
     margin-top: 5px;
     font-weight: normal;
+    color: inherit;
 }
 
 #originator-address-details {
@@ -1384,6 +1385,10 @@ thead {
     margin-right: 0;
     text-align: center;
     padding-top: 50px;
+}
+
+#originator-address-details p {
+    text-align: left;
 }
 
 #originator-social-details {
