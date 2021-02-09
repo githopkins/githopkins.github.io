@@ -17,35 +17,11 @@ $(document).ready(function() {
 	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
-// Login Error
-	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
-	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
 
-// Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-	// $(dropbanner).insertAfter('#site-navigation');
 	$( ".manager-biography h2" ).prepend("About ");
-	// $("#apply-navigation").css("display", "flex");
-	// $("#apply-navigation").css("margin-right", "10px");
-	// $("#apply-navigation").css("align-items", "center");
-
-// PREQUAL link for loan originators who request:
-// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
-// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
-// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
-// 	){
-// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
-// 	}
-
-// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
-// 	$("#product-banner > h2").text("Pre-Qualify");	
-// }
-
-// Booking link for loan originators continued:
-	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
 }
-
 // Custom appearance for specific Loan Originators
 	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
 		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
