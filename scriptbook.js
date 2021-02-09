@@ -8,6 +8,7 @@ var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mort
 var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>You Deserve More.<span>We Provide More.</span></h3></div></div>';
 
 $(document).ready(function() {
+	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
 	// Remove the link for My Mortgage
 	// $("#calculators-navigation > a").removeAttr("href");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
