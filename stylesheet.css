@@ -1333,7 +1333,6 @@ thead {
 #loan-originator-blurb-container h2 {
     font-size: 35px;
     text-shadow: none;
-    color: #000;
 }
 
 #loan-originator-blurb-container h4 {
@@ -1387,6 +1386,10 @@ thead {
     padding-top: 50px;
 }
 
+#originator-social-details {
+    width: inherit;
+}
+
 #originator-social-details ul {
     list-style: none;
     margin: 0;
@@ -1395,8 +1398,13 @@ thead {
     flex-wrap: nowrap;
     align-self: flex-end;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -21px;
     flex-direction: column;
+}
+
+#originator-social-details ul a {
+    border-top: 1px solid rgba(0,0,0,.05);
+    width: 100%;
 }
 
 #originator-social-details li {
