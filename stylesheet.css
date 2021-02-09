@@ -1293,6 +1293,7 @@ thead {
 #loan-originator-backdrop {
     background: none;
     /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
+    background: none;
     background-position-y: 43.5%;
     height: auto;
     display: flex;
@@ -1301,10 +1302,27 @@ thead {
     color: #000;
     order: 2;
     padding: 0 20px;
-    margin-right: 15px;
+    margin-right: 0px;
     min-width: 400px;
     flex: 1;
     flex-direction: column;
+    margin-top: 25px;
+}
+
+#annie_mac-loan-officer > #originator {
+    margin-top: -45px;
+    margin-right: -15px;
+}
+
+#covid-warning {
+    background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 14px 25px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 #loan-originator-blurb-container {
@@ -1358,6 +1376,14 @@ thead {
     color: #000;
 }
 
+#originator-address-details p {
+    text-align: left;
+    opacity: .8;
+    margin-bottom: 3px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
 #originator-core-details-portrait img {
     background: transparent;
     width: 210px;
@@ -1387,9 +1413,7 @@ thead {
     padding-top: 50px;
 }
 
-#originator-address-details p {
-    text-align: left;
-}
+
 
 #originator-social-details {
     width: inherit;
