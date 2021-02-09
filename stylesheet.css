@@ -1483,3 +1483,7 @@ thead {
     align-items: flex-end;
     padding-bottom: 88px;
 }
+
+#accolades-originator {
+    margin-right: -440px;
+}
