@@ -1471,7 +1471,7 @@ thead {
     }
     #inserted-banner {
         height: 350px;
-        background: linear-gradient(177deg, rgb(160 132 82 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/1519796954266.jpeg) top left no-repeat;
+        background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/1519796954266.jpeg) top left no-repeat;
         background-position-y: 64%;
         display: flex;
         justify-content: center;
