@@ -6,14 +6,6 @@ var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>'
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
-	// Remove the link for My Mortgage
-	// $("#calculators-navigation > a").removeAttr("href");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
-	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
-	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
-	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
 
 if ($('body').hasClass('site-type-loan_officer')) {
