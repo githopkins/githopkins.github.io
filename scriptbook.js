@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-	$( ".manager-biography h2" ).prepend("About ");
+	$( ".manager-biography h2" ).prepend("About "); 
 // Custom appearance for specific Loan Originators
 	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
 		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
@@ -37,16 +37,6 @@ $( covid ).insertBefore( $( "#biography" ) );
 //   $("#covid-warning-container").toggleClass("hide");
 //   $("#covid-warning > h4 > span").addClass("hide");
 // });
-
-// Below are team members added who need to be removed from the application because they do not originate.
-	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
-	$('option[value="9443"]').hide();
-	$('option[value="9441"]').hide();
-	// Hide Terri from application on all locations, in the event someone selects from corporate.
-	$('option[value="9442"]').hide();
-	$('option[value="9440"]').hide();
-	// Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
-	$('option[value="9115"]').hide();
 
 
 // Customizations for TEAM Specific pages:
