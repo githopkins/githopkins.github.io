@@ -1487,3 +1487,7 @@ thead {
 #accolades-originator {
     margin-right: -440px;
 }
+
+.site-type-loan_officer .branch-manager-section {
+    width: auto;
+}
