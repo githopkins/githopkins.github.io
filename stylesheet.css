@@ -1296,13 +1296,13 @@ thead {
 .navigation-sidebar-sectional ul li {
     display: block !important;
 }
-@media only screen and (max-width: 1224px) {
+@media only screen and (max-width: 1114px) {
     #inserted-banner {
         display: none;
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1115px) {
     #annie_mac-loan-officer {
         display: flex;
     }
