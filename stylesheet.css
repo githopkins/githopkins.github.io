@@ -1284,7 +1284,6 @@ thead {
     #annie_mac-loan-officer {
         display: flex;
     }
-    
     #inserted-banner {
         height: 300px;
         background: linear-gradient(
@@ -1292,7 +1291,6 @@ thead {
     , rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat;
         background-position-y: 12%;
     }
-    
     #loan-originator-backdrop {
         background: none;
         /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
@@ -1311,12 +1309,10 @@ thead {
         flex-direction: column;
         margin-top: 25px;
     }
-    
     #annie_mac-loan-officer > #originator {
         margin-top: -28px;
         margin-right: -15px;
     }
-    
     #covid-warning {
         background: #ffe7dc;
         margin-bottom: -1px;
@@ -1327,7 +1323,6 @@ thead {
         margin: 10px;
         border-radius: 5px;
     }
-    
     #loan-originator-blurb-container {
         color: rgba(0,0,0,.6);
         display: flex;
@@ -1341,7 +1336,6 @@ thead {
         border: 1px solid rgba(0,0,0,.2);
         box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%); 
     }
-    
     #originator-core-details-text {
         background: rgba(0,0,0,.025);
         border-top: 1px solid rgba(0,0,0,.10);
@@ -1352,7 +1346,6 @@ thead {
         width: 100%;
         margin: 0 5px;
     }
-    
     #loan-originator-blurb-container h2 {
         font-size: 28px;
         text-shadow: none;
@@ -1360,7 +1353,6 @@ thead {
         text-align: left;
         font-family: 'neue-haas-unica', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    
     #loan-originator-blurb-container h4 {
         letter-spacing: 1.2px;
         font-size: 16px;
@@ -1371,20 +1363,17 @@ thead {
         text-align: left;
         color: black;
     }
-    
     #originator-core-details-text h4 span {
         margin-top: 5px;
         font-weight: normal;
         color: inherit;
     }
-    
     #originator-address-details {
         line-height: 30px;
         font-size: 16px;
         text-shadow: none;
         color: #000;
     }
-    
     #originator-address-details p {
         text-align: left;
         opacity: .8;
@@ -1392,7 +1381,6 @@ thead {
         font-size: 15px;
         line-height: 26px;
     }
-    
     #originator-core-details-portrait img {
         background: transparent;
         width: 210px;
@@ -1401,7 +1389,6 @@ thead {
         margin-left: 0px;
         margin-bottom: 20px;
     }
-    
     #originator-main-details {
         display: flex;
         width: 100%;
@@ -1409,7 +1396,6 @@ thead {
         align-items: center;
         flex-direction: column;
     }
-    
     #originator-core-details {
         display: flex;
         flex-direction: column;
@@ -1421,11 +1407,9 @@ thead {
         text-align: center;
         padding-top: 30px;
     }
-    
     #originator-social-details {
         width: inherit;
     }
-    
     #originator-social-details ul {
         list-style: none;
         margin: 0;
@@ -1437,12 +1421,10 @@ thead {
         margin-top: -1px;
         flex-direction: column;
     }
-    
     #originator-social-details ul a {
         border-top: 1px solid rgba(0,0,0,.05);
         width: 100%;
     }
-    
     #originator-social-details li {
         display: flex;
         flex-direction: row;
@@ -1453,7 +1435,6 @@ thead {
         height: 51px;
         justify-content: flex-start;
     }
-    
     #originator-social-details li i {
         font-size: 23px;
         margin-bottom: 0;
@@ -1462,12 +1443,10 @@ thead {
         display: flex;
         justify-content: center;
     }
-    
     .site-type-loan_officer .manager-biography p {
         width: auto;
         padding: 0 25px;
     }
-    
     .manager-biography h2:first-of-type {
         font-size: 25px;
         color: #006fa9;
@@ -1475,7 +1454,6 @@ thead {
         display: block;
         text-align: center;
     }
-    
     #inserted-banner {
         height: 310px;
         background: linear-gradient(
@@ -1488,12 +1466,9 @@ thead {
         align-items: flex-end;
         padding-bottom: 88px;
     }
-    
     #accolades-originator {
         margin-right: -440px;
     }
-    
-    
     .site-type-loan_officer .branch-manager-section {
         width: 95%;
         padding: 40px 15px 50px;
