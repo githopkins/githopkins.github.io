@@ -1479,6 +1479,9 @@ thead {
         align-items: center;
         padding-top: 60px;
     }
+    #inserted-banner .container-section {
+        flex-direction: column;
+    }
     #accolades-originator {
         margin-right: -400px;
     }
