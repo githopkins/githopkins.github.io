@@ -2,12 +2,8 @@
 var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 var loanoriginatortitle  = document.querySelector("#originator-core-details-text > h4").innerText;
 
-var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
-var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
 var covid = '<div id="covid-warning"><h4>To those affected by COVID-19</h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
-var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-mac.com" class="link">Having trouble logging in?</a><br/><a href="https://www.anniemacservicing.com" class="link">Looking to manage a payment?</a></p>';
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
-var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mortgage</a></button>';
 var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a></div></div></div>';
 
 $(document).ready(function() {
