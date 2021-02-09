@@ -1305,7 +1305,7 @@ thead {
 @media only screen and (min-width: 1115px) {
     #annie_mac-loan-officer {
         display: flex;
-        background: #f7f7f9;
+        background: #f7f7f963;
         color: #333;
     }
     #loan-originator-backdrop {
@@ -1523,6 +1523,12 @@ thead {
     }
     #annie_mac-loan-officer .manager-biography p {
         text-align: justify;
+    }
+    #accolades-originator #calculations-and-numbers {
+        width: 100%;
+        margin: 45px 0 0 0;
+        display: flex;
+        flex-direction: column;
     }
     .site-type-loan_officer .branch-manager-section {
         width: 95%;
