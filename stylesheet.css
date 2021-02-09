@@ -1296,8 +1296,12 @@ thead {
 .navigation-sidebar-sectional ul li {
     display: block !important;
 }
-
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 1224px) {
+    #inserted-banner {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1225px) {
     #annie_mac-loan-officer {
         display: flex;
     }
@@ -1360,8 +1364,7 @@ thead {
         border-bottom: 1px solid rgba(0,0,0,.10);
         margin-bottom: 20px;
         color: rgba(0,0,0,.85);
-        width: 100%;
-        margin: 0 5px;
+        width: auto;
     }
     #loan-originator-blurb-container h2 {
         font-size: 28px;
