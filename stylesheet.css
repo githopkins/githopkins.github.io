@@ -1497,6 +1497,9 @@ thead {
         position: relative;
         display: block;
     }
+    #inserted-banner > #button-container-home > a:nth-child(1):hover {
+        border: none;
+    }
     #accolades-originator {
         margin-right: -400px;
     }
