@@ -1301,7 +1301,8 @@ thead {
         display: none;
     }
 }
-@media only screen and (min-width: 1225px) {
+
+@media only screen and (min-width: 900px) {
     #annie_mac-loan-officer {
         display: flex;
     }
@@ -1352,13 +1353,13 @@ thead {
         align-items: flex-start;
         text-shadow: 0 0 black;
         width: 100%;
-        background: #fff;
+        background: #036fa8;
         border-radius: 4px;
         border: 1px solid rgba(0,0,0,.2);
-        box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%); 
+        box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
     }
     #originator-core-details-text {
-        background: rgba(0,0,0,.025);
+        background: rgb(0 0 0 / 18%);
         border-top: 1px solid rgba(0,0,0,.10);
         padding: 20px;
         border-bottom: 1px solid rgba(0,0,0,.10);
@@ -1369,7 +1370,7 @@ thead {
     #loan-originator-blurb-container h2 {
         font-size: 28px;
         text-shadow: none;
-        color: rgba(0,0,0,.85);
+        color: white;
         text-align: left;
         font-family: 'neue-haas-unica', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
@@ -1377,11 +1378,11 @@ thead {
         letter-spacing: 1.2px;
         font-size: 16px;
         font-weight: normal;
-        text-shadow: 0 0 black;
+        text-shadow: none;
         display: flex;
         flex-direction: column;
         text-align: left;
-        color: black;
+        color: white;
     }
     #originator-core-details-text h4 span {
         margin-top: 5px;
@@ -1392,14 +1393,14 @@ thead {
         line-height: 30px;
         font-size: 16px;
         text-shadow: none;
-        color: #000;
+        color: white;
     }
     #originator-address-details p {
         text-align: left;
-        opacity: .8;
-        margin-bottom: 3px;
+        opacity: 1;
+        margin-bottom: 0;
         font-size: 15px;
-        line-height: 26px;
+        line-height: 24px;
     }
     #originator-core-details-portrait img {
         background: transparent;
@@ -1415,6 +1416,7 @@ thead {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: white;
     }
     #originator-core-details {
         display: flex;
