@@ -56,11 +56,11 @@ if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
 $(".site-type-team #team-display").prepend(loanOfficerBoxlet);
 
 // Customizations for site-wide application:
-$( covid ).insertBefore( $( "#biography" ) );
-$("#covid-warning span").click(function(){
-  $("#covid-warning-container").toggleClass("hide");
-  $("#covid-warning > h4 > span").addClass("hide");
-});
+// $( covid ).insertBefore( $( "#biography" ) );
+// $("#covid-warning span").click(function(){
+//   $("#covid-warning-container").toggleClass("hide");
+//   $("#covid-warning > h4 > span").addClass("hide");
+// });
 
 // Below are team members added who need to be removed from the application because they do not originate.
 	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
