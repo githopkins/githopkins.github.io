@@ -1482,7 +1482,7 @@ thead {
     #inserted-banner .container-section {
         flex-direction: column;
     }
-    #inserted-banner > #button-container-home > a:nth-child(1) {
+    #inserted-banner #button-container-home > a:nth-child(1) {
         margin-left: 0;
         background: #7FC24A;
         border-radius: 5px;
