@@ -1349,8 +1349,11 @@ thead {
 }
 
 #loan-originator-blurb-container h2 {
-    font-size: 35px;
+    font-size: 28px;
     text-shadow: none;
+    color: rgba(0,0,0,.85);
+    text-align: left;
+    font-family: 'neue-haas-unica', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #loan-originator-blurb-container h4 {
