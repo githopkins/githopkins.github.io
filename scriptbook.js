@@ -1,16 +1,55 @@
 // Variables to drop HTML below:
 var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
+var loanoriginatortitle  = document.querySelector("#originator-core-details-text > h4").innerText;
+
+var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
+var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
 var covid = '<div id="covid-warning"><h4>To those affected by COVID-19</h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
+var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-mac.com" class="link">Having trouble logging in?</a><br/><a href="https://www.anniemacservicing.com" class="link">Looking to manage a payment?</a></p>';
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
+var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mortgage</a></button>';
 var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a></div></div></div>';
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
+	// Remove the link for My Mortgage
+	// $("#calculators-navigation > a").removeAttr("href");
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
+	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
+	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
+	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
 	
+// Login Error
+	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
+	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
 
+// Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-	$( ".manager-biography h2" ).prepend("About "); 
+	// $(dropbanner).insertAfter('#site-navigation');
+	$( ".manager-biography h2" ).prepend("About ");
+	// $("#apply-navigation").css("display", "flex");
+	// $("#apply-navigation").css("margin-right", "10px");
+	// $("#apply-navigation").css("align-items", "center");
+
+// PREQUAL link for loan originators who request:
+// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
+// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
+// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
+// 	){
+// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
+// 	}
+
+// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
+// 	$("#product-banner > h2").text("Pre-Qualify");	
+// }
+
+// Booking link for loan originators continued:
+	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
+}
+
 // Custom appearance for specific Loan Originators
 	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
 		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
@@ -27,6 +66,16 @@ $( covid ).insertBefore( $( "#biography" ) );
 //   $("#covid-warning-container").toggleClass("hide");
 //   $("#covid-warning > h4 > span").addClass("hide");
 // });
+
+// Below are team members added who need to be removed from the application because they do not originate.
+	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
+	$('option[value="9443"]').hide();
+	$('option[value="9441"]').hide();
+	// Hide Terri from application on all locations, in the event someone selects from corporate.
+	$('option[value="9442"]').hide();
+	$('option[value="9440"]').hide();
+	// Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
+	$('option[value="9115"]').hide();
 
 
 // Customizations for TEAM Specific pages:
