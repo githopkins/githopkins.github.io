@@ -1518,6 +1518,12 @@ thead {
         color: white;
         margin-top: 12px;
     }
+    #accolades-originator .calculations-primary img {
+        display: none;
+    }
+    #annie_mac-loan-officer .manager-biography p {
+        text-align: justify;
+    }
     .site-type-loan_officer .branch-manager-section {
         width: 95%;
         padding: 40px 15px 50px;
