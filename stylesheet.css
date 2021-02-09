@@ -1500,7 +1500,7 @@ thead {
         border: none;
     }
     #accolades-originator {
-        margin-right: -460px;
+        /* margin-right: -460px; */
     }
     .site-type-loan_officer .branch-manager-section {
         width: 95%;
