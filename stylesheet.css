@@ -1305,7 +1305,7 @@ thead {
 @media only screen and (min-width: 1115px) {
     #annie_mac-loan-officer {
         display: flex;
-        background: #f7f7f963;
+        background: #fff;
         color: #333;
     }
     #loan-originator-backdrop {
