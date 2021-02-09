@@ -24,7 +24,8 @@ $(document).ready(function() {
 
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
-	$(dropbanner).insertAfter('#site-navigation');
+	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+	// $(dropbanner).insertAfter('#site-navigation');
 	$( ".manager-biography h2" ).prepend("About ");
 	// $("#apply-navigation").css("display", "flex");
 	// $("#apply-navigation").css("margin-right", "10px");
