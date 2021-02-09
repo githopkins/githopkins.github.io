@@ -21,7 +21,6 @@ $(document).ready(function() {
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 	$( ".manager-biography h2" ).prepend("About ");
-}
 // Custom appearance for specific Loan Originators
 	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
 		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
