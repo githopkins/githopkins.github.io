@@ -25,6 +25,17 @@
 .option-listing-go i {
     display: none;
 }
+#apply-now-sidebar, #prequal-now-sidebar {
+    margin: -5px auto 10px;
+    background: #01436b;
+    width: 70%;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+    color: #c2e8ff;
+    letter-spacing: 1.2px;
+    font-size: 13px;
+}
 .branch-manager-section {
     width: auto;
 }
