@@ -13,6 +13,7 @@ var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Li
 
 $( document ).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
+	$("#prequal-now-sidebar").hide();
 	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
