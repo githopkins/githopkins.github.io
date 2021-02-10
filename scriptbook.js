@@ -1,4 +1,4 @@
-// Variables
+// Variables to drop HTML below:
 var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 var loanoriginatornmls  = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 var firstname = loanoriginatorname.split(" ");
@@ -13,20 +13,75 @@ var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Li
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
+	// Remove the link for My Mortgage
+	// $("#calculators-navigation > a").removeAttr("href");
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
+	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
+	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
+	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
+	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
+	
+// Login Error
+	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
+	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
 
-	// Booking link for loan originators:
-	if ($('body').hasClass('site-type-loan_officer')) {
-		$( covid ).insertBefore( $( "#biography" ) );
-		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
-		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
-		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	});
-});
+// Booking link for loan originators:
+if ($('body').hasClass('site-type-loan_officer')) {
+	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+	$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
+	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
+	// $(dropbanner).insertAfter('#site-navigation');
+	$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
+	// $("#apply-navigation").css("display", "flex");
+	// $("#apply-navigation").css("margin-right", "10px");
+	// $("#apply-navigation").css("align-items", "center");
+
+// PREQUAL link for loan originators who request:
+// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
+// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
+// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
+// 	){
+// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
+// 	}
+
+// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
+// 	$("#product-banner > h2").text("Pre-Qualify");	
+// }
+
+// Booking link for loan originators continued:
+	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
+}
+
+// Custom appearance for specific Loan Originators
+	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
+		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
+		$("#branch-banner").css('background-size','cover');
+		$("#branch-banner").css('background-position-y','42%')
+	}
+// GENERAL
+
+$(".site-type-team #team-display").prepend(loanOfficerBoxlet);
+
+// Customizations for site-wide application:
+$( covid ).insertBefore( $( "#biography" ) );
+// $("#covid-warning span").click(function(){
+//   $("#covid-warning-container").toggleClass("hide");
+//   $("#covid-warning > h4 > span").addClass("hide");
+// });
+
+// Below are team members added who need to be removed from the application because they do not originate.
+	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
+	// $('option[value="9443"]').hide();
+	// $('option[value="9441"]').hide();
+	// // Hide Terri from application on all locations, in the event someone selects from corporate.
+	// $('option[value="9442"]').hide();
+	// $('option[value="9440"]').hide();
+	// // Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
+	// $('option[value="9115"]').hide();
 
 
 // Customizations for TEAM Specific pages:
-$(document).ready(function() {
 	// Community Mortgage
 	if (
 		(window.location.href.indexOf("jamiehannigan.annie-mac.com") != -1) || 		
@@ -228,4 +283,5 @@ $(document).ready(function() {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/hulsey.png");
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
+// Closing the script.	
 });
