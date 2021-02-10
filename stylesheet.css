@@ -1333,7 +1333,7 @@ thead {
 }
 #annie_mac-loan-officer > #originator {
     margin-top: -28px;
-    margin-right: -15px;
+    margin-right: 15px;
     max-width: 1000px;
 }
 #originator .negative-60 {
@@ -1622,6 +1622,9 @@ thead {
         margin-left: 40px;
     }
 }
+#links-sidebar-full-width { 
+    display: none;
+}
 @media screen and (min-width: 1200px) {
     #links-sidebar-full-width {
         display: block;
@@ -1658,9 +1661,6 @@ thead {
     #originator-main-details {
         flex-direction: column;
     }
-}
-#links-sidebar-full-width { 
-    display: none;
 }
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'inter', sans-serif !important;
