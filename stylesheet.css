@@ -1722,6 +1722,9 @@ p, li, a {
         visibility: visible;
         font-size: 20px;
     }
+    #loan-originator-blurb-container {
+        padding-bottom: 60px;
+    }
 }
 @media screen and (max-width: 500px) { 
     #inserted-banner {
