@@ -211,62 +211,47 @@ $(document).ready(function() {
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 
-// Booking link for loan originators:
-if ($('body').hasClass('site-type-loan_officer')) {
-	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-	$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
-	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
-	// $(dropbanner).insertAfter('#site-navigation');
-	$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	// $("#apply-navigation").css("display", "flex");
-	// $("#apply-navigation").css("margin-right", "10px");
-	// $("#apply-navigation").css("align-items", "center");
-
-// PREQUAL link for loan originators who request:
-// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
-// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
-// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
-// 	){
-// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
-// 	}
-
-// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
-// 	$("#product-banner > h2").text("Pre-Qualify");	
-// }
-
-// Booking link for loan originators continued:
-	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
-}
-
-// Custom appearance for specific Loan Originators
-	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
-		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
-		$("#branch-banner").css('background-size','cover');
-		$("#branch-banner").css('background-position-y','42%')
+	// Booking link for loan originators:
+	if ($('body').hasClass('site-type-loan_officer')) {
+		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
+		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
+		// $(dropbanner).insertAfter('#site-navigation');
+		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
+		// $("#apply-navigation").css("display", "flex");
+		// $("#apply-navigation").css("margin-right", "10px");
+		// $("#apply-navigation").css("align-items", "center");
+	
+	// PREQUAL link for loan originators who request:
+	// if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
+	// 	(window.location.href.indexOf("cosmoberardinelli.annie-mac.com") != -1) ||
+	// 	(window.location.href.indexOf("ryankennedy.annie-mac.com") != -1)
+	// 	){
+	// 	$("#apply-navigation").prepend(prequalLinkLoanOriginatorDrop);
+	// 	}
+	
+	// if (window.location.href.indexOf(".annie-mac.com/loan/graphic-prequal") != -1) {
+	// 	$("#product-banner > h2").text("Pre-Qualify");	
+	// }
+	
+	// Booking link for loan originators continued:
+		$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
 	}
-// GENERAL
-
-$(".site-type-team #team-display").prepend(loanOfficerBoxlet);
-
-// Customizations for site-wide application:
-$( covid ).insertBefore( $( "#biography" ) );
-// $("#covid-warning span").click(function(){
-//   $("#covid-warning-container").toggleClass("hide");
-//   $("#covid-warning > h4 > span").addClass("hide");
-// });
-
-// Below are team members added who need to be removed from the application because they do not originate.
-	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
-	// $('option[value="9443"]').hide();
-	// $('option[value="9441"]').hide();
-	// // Hide Terri from application on all locations, in the event someone selects from corporate.
-	// $('option[value="9442"]').hide();
-	// $('option[value="9440"]').hide();
-	// // Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
-	// $('option[value="9115"]').hide();
-});
-
-// Customizations for TEAM Specific pages:
-	// Community Mortgage
-// Closing the script.	
+	
+	// Custom appearance for specific Loan Originators
+		if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
+			$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
+			$("#branch-banner").css('background-size','cover');
+			$("#branch-banner").css('background-position-y','42%')
+		}
+	// GENERAL
+	
+	$(".site-type-team #team-display").prepend(loanOfficerBoxlet);
+	
+	// Customizations for site-wide application:
+	$( covid ).insertBefore( $( "#biography" ) );
+	// $("#covid-warning span").click(function(){
+	//   $("#covid-warning-container").toggleClass("hide");
+	//   $("#covid-warning > h4 > span").addClass("hide");
+	// });
 });
