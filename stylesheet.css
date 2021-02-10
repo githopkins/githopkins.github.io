@@ -1295,24 +1295,8 @@ thead {
 }
 
 @media only screen and (max-width: 800px) {
-    #loan-originator-backdrop {
-        height: 800px;
-    }
-    #originator-core-details-portrait img {
-        margin: -90px auto 50px;
-    }
-    #originator-core-details {
-        flex-direction: column;
-    }
-    #originator-social-details {
-        margin-bottom: -100px;
-    }
     #list_11344 {
         display: none;
-    }
-    #covid-warning {
-        margin-top: 0;
-        margin-bottom: 60px;
     }
 }
 
