@@ -1605,9 +1605,9 @@ thead {
         color: white;
     }
 }
-#accolades-originator #we-provide-more-master {
+/* #accolades-originator #we-provide-more-master {
     display: none;
-}
+} */
 #originator-social-details a:hover {
     background: #bed3de;
 }
