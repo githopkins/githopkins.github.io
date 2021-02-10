@@ -80,7 +80,10 @@ $( covid ).insertBefore( $( "#biography" ) );
 	// // Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
 	// $('option[value="9115"]').hide();
 
+});
 
+
+$(document).ready(function() {
 // Customizations for TEAM Specific pages:
 	// Community Mortgage
 	if (
@@ -283,5 +286,4 @@ $( covid ).insertBefore( $( "#biography" ) );
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/10713/public/hulsey.png");
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
-// Closing the script.	
 });
