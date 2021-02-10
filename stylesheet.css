@@ -1638,6 +1638,7 @@ thead {
     #links-sidebar-full-width h4 {
         font-size: 21px;
         color: #333;
+        font-weight: bold;
     }
     #links-sidebar-full-width a {
         color: #036fa8;
