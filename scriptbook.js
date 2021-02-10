@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
+	$( covid ).insertBefore( $( "#biography" ) );
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 	$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
