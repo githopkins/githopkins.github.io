@@ -1605,6 +1605,9 @@ thead {
     #originator-social-details a:first-of-type li, #originator-social-details a:first-of-type li i {
         color: white;
     }
+    #accolades-originator {
+        display: none;
+    }
 }
 @media screen and (max-width: 1200px) {
     #annie_mac-loan-officer {
