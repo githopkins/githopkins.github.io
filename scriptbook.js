@@ -1,4 +1,4 @@
-// Variables to drop HTML below:
+// Variables
 var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 var loanoriginatornmls  = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 var firstname = loanoriginatorname.split(" ");
@@ -13,18 +13,13 @@ var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Li
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
-	// Remove the link for My Mortgage
-	// $("#calculators-navigation > a").removeAttr("href");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
 	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
 	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
 	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
 	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
-	
-// Login Error
-	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
-	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
+
 
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
@@ -49,16 +44,8 @@ if ($('body').hasClass('site-type-loan_officer')) {
 // 	$("#product-banner > h2").text("Pre-Qualify");	
 // }
 
-// Booking link for loan originators continued:
-	$("#apply-navigation").prepend(bookingLinkLoanOriginatorDrop);
-}
 
-// Custom appearance for specific Loan Originators
-	if (window.location.href.indexOf("jillgranato.annie-mac.com") != -1) {
-		$("#branch-banner").css('background-image','url(uploads/sites/10713/public/family-updated.jpeg)');
-		$("#branch-banner").css('background-size','cover');
-		$("#branch-banner").css('background-position-y','42%')
-	}
+
 // GENERAL
 
 $(".site-type-team #team-display").prepend(loanOfficerBoxlet);
