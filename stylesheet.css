@@ -1567,7 +1567,6 @@ thead {
     width: 95%;
     padding: 40px 15px 50px;
 }
-
 .calculations-primary h3 {
     margin-bottom: 15px;
     color: #006fa9;
@@ -1577,13 +1576,11 @@ thead {
     border-bottom: 1px solid rgba(0,0,0, .06);
     padding-bottom: 20px;
 }
-
 .action-buttons-calcs {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
 }
-
 .action-buttons-calcs button {
     width: 280px;
     margin: 0 23px 0 0;
