@@ -1606,7 +1606,7 @@ thead {
         border-left: none;
         padding-left: 0;
         border-bottom: 1px solid rgba(0,0,0,.15);
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
     #originator-main-details {
         flex-direction: row;
