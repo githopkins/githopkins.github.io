@@ -1703,6 +1703,7 @@ p, li, a {
     }
     #loan-originator-blurb-container {
         padding-bottom: 60px;
+        width: 100vw;
     }
 }
 @media screen and (max-width: 500px) { 
@@ -1715,6 +1716,9 @@ p, li, a {
     #loan-originator-backdrop {
         margin-left: 0;
         padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        margin: 0 auto;
     }
     #originator-main-details {
         margin-left: 0;
