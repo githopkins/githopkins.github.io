@@ -47,8 +47,7 @@ $(document).ready(function() {
 		(window.location.href.indexOf("brianvoytko.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("amysodowich.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("aarontedrow.annie-mac.com") != -1)
-		)
-	{
+		) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/11832/public/7283-SEPT2020_AM-Community-Mortgage-Team-Logo-WEBSITE.png");
 		$("#navigation-logo > a > img").css("margin-top", "6px");
 	}
