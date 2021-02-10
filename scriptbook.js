@@ -29,7 +29,7 @@ $(document).ready(function() {
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-	$(fullwidthsidebarlinks).append("#loan-originator-blurb-container");
+	$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 	// $(dropbanner).insertAfter('#site-navigation');
 	$( ".manager-biography h2" ).prepend("About ");
