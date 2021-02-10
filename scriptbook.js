@@ -221,5 +221,4 @@ $( document ).ready(function() {
 		$("#team-display > h3:nth-child(3)").hide();
 	}
 }
-)
-});
+);
