@@ -72,13 +72,13 @@ $( covid ).insertBefore( $( "#biography" ) );
 
 // Below are team members added who need to be removed from the application because they do not originate.
 	// Hide Susie Bruner from application on all locations, in the event someone selects from corporate.
-	$('option[value="9443"]').hide();
-	$('option[value="9441"]').hide();
-	// Hide Terri from application on all locations, in the event someone selects from corporate.
-	$('option[value="9442"]').hide();
-	$('option[value="9440"]').hide();
-	// Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
-	$('option[value="9115"]').hide();
+	// $('option[value="9443"]').hide();
+	// $('option[value="9441"]').hide();
+	// // Hide Terri from application on all locations, in the event someone selects from corporate.
+	// $('option[value="9442"]').hide();
+	// $('option[value="9440"]').hide();
+	// // Hide Robert Fillyaw from application on all locations, in the event someone selects from corporate.
+	// $('option[value="9115"]').hide();
 
 
 // Customizations for TEAM Specific pages:
