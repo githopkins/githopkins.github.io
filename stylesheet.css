@@ -4,6 +4,9 @@
 ul.menu.nav {
     display: flex;
 }
+#calculations-and-numbers .calculations-primary:first-of-type {
+    display: none;
+}
 #navigation-sidebar > div:nth-child(2) > a:nth-child(2) {
     display: none;
 }
