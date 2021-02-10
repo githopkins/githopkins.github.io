@@ -1337,6 +1337,10 @@ thead {
 #originator .negative-60 {
     margin-left: 0;
 }
+#originator .padding-60 {
+    padding: 0;
+    margin: 50px 0;
+}
 #originator  > #we-provide-more-master {
     display: flex;
     flex-wrap: wrap;
