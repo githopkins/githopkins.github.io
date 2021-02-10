@@ -1625,7 +1625,7 @@ p, li, a {
     background: #bed3de;
 }
 #originator-social-details a:hover li, #originator-social-details a:hover li i{
-    color: #0f5c84;
+    color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
