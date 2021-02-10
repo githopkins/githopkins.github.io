@@ -229,7 +229,7 @@ $(document).ready(function() {
 	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-		$( covid ).insertBefore( $( "#biography" ) );
+		$(covid).insertBefore( $( "#biography" ) );
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
