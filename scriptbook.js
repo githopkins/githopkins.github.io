@@ -32,7 +32,7 @@ if ($('body').hasClass('site-type-loan_officer')) {
 	$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 	// $(dropbanner).insertAfter('#site-navigation');
-	$( ".manager-biography h2" ).prepend("About ");
+	$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	// $("#apply-navigation").css("display", "flex");
 	// $("#apply-navigation").css("margin-right", "10px");
 	// $("#apply-navigation").css("align-items", "center");
