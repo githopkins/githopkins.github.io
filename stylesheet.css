@@ -1372,12 +1372,11 @@ p, li, a {
     padding: 14px 25px;
     line-height: 1.6;
     margin-top: 0;
-    margin: 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 85%;
-    margin: 30px auto 10px;
+    width: 90%;
+    margin: 30px auto -15px;
 }
 #loan-originator-blurb-container {
     display: flex;
