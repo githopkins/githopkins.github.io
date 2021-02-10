@@ -1704,6 +1704,24 @@ p, li, a {
     #loan-originator-backdrop {
         margin-top: 0;
     }
+    #originator-social-details {
+        width: auto;
+    }
+    #originator-social-details ul a {
+        border-top: none;
+    }
+    #originator-social-details ul {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    #originator-social-details li {
+        visibility: hidden;
+        width: 65px;
+    }
+    #originator-social-details li i {
+        visibility: visible;
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 500px) { 
     #inserted-banner {
