@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* AnnieMac Stylesheet Document - Updated Nov 13 2020 */
+ul.menu.nav {
+    display: flex;
+}
 #loan-originator-backdrop {
     background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat;
     background-size: cover !important;
@@ -1680,7 +1683,6 @@ thead {
         display: none;
     }
 }
-
 @media screen and (max-width: 970px) { 
     #inserted-banner {
         height: 250px;
