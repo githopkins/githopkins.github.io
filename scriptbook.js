@@ -11,14 +11,13 @@ var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>'
 var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/page/buyer-guide"><li>First Time Home Buyer</li></a><a href="/page/faq"><li>Frequent Questions</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a><a href="/contact"><li>Contact Me</li></a></ul></div>';
 
 $( document ).ready(function() {
-	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 		$(covid).insertBefore( $( "#biography" ) );
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	};
+	});
 	// Domains
 	// if (
 	// 	(window.location.href.indexOf("jamiehannigan.annie-mac.com") > -1) || 		
