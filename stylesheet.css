@@ -1522,6 +1522,9 @@ thead {
     #accolates-originator #what-we-provide {
         flex-direction: column;
     }
+    #accolades-originator .we-provide-more-master {
+        width: 100%;
+    }
     #accolades-originator .we-provide-this {
         width: 100%;
     }
