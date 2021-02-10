@@ -11,7 +11,7 @@ var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mort
 var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '<span>' + loanoriginatornmls + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a></div></div></div>';
 var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/page/buyer-guide"><li>First Time Home Buyer</li></a><a href="/page/faq"><li>Frequent Questions</li></a><a href="/mortgage/quiz"><li>Assess Your Situation</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a><a href="/contact"><li>Contact Me</li></a></ul></div>';
 
-$(document).ready(function() {
+$( document ).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
 	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
