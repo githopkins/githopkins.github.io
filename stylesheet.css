@@ -1312,6 +1312,8 @@ thead {
     background: #fff;
     color: #333;
     justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 #loan-originator-backdrop {
     background: none;
