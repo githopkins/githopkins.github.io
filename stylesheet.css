@@ -1585,7 +1585,11 @@ thead {
     width: 280px;
     margin: 0 23px 0 0;
 }
-
+@media screen and (max-width: 1200px) {
+    #annie_mac-loan-officer {
+        flex-direction: column;
+    }
+}
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'inter', sans-serif !important;
 }
