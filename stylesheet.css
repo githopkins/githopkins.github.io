@@ -1604,6 +1604,9 @@ thead {
     #originator-social-details a:first-of-type li, #originator-social-details a:first-of-type li i {
         color: white;
     }
+    #originator-social-details a:first-of-type:hover {
+        background: #02517b;
+    }
 }
 /* #accolades-originator #we-provide-more-master {
     display: none;
