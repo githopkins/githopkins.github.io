@@ -1,1543 +1,2593 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* AnnieMac Stylesheet Document - Updated Nov 13 2020 */
-#loan-originator-backdrop {
-    background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat;
-    background-size: cover !important;
-    background-position-y: 43.5%;
-    height: 575px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    padding: 0 25px;
-}
-#button-container-home > a {
-    min-width: 130px;
-    text-align: center;
-}
-#list_12148 a {
-    background: #7FC24A;
-    padding: 10px;
-    border-radius: 5px;
-    color: white !important;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-#navigation-sidebar a:hover {
-    font-weight: normal !important;
-}
-.option-listing-go i {
-    display: none;
-}
-#apply-now-sidebar, #prequal-now-sidebar {
-    margin: -5px auto 10px;
-    background: #01436b;
-    width: 70%;
-    text-align: center;
-    padding: 4px 0;
-    border-radius: 6px;
-    color: #c2e8ff;
-    letter-spacing: 1.2px;
-    font-size: 13px;
-}
-.branch-manager-section {
-    width: auto;
-}
-.branch-manager-section .manager-information {
-    margin: 0 15px;
-}
-#loan-originator-blurb-container h4, #loan-originator-blurb-container h4 span, #navigation-sidebar h4, #navigation-sidebar .navigation-sidebar-sectional:nth-child(2) h4 span {
-    color: white;
-}
-.top-links-header {
-    align-items: end;
-    height: 15px;
-}
-.header-links-content {
-    margin-top: -17px;
-}
-.header-links-content button {
-    border: none !important;
-    margin-right: 10px;
-}
-#home-banner {
-    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/family-outside.jpeg') top left no-repeat;
-    background-size: cover !important;
-    background-position-y: 68% !important;
-    height: 500px;
-}
-.review h4 {
-    font-size: 20px;
-}
-.container-fluid, .h-100 {
-    padding: 10px 0 150px 0;
-}
+/**
+Part from custom css
+*/
+/*Testimonials*/
 .page-testimonial .inner-layout {
-    background: #ffffff;
+display: flex;
+flex-direction: column;
+background: #d0d5d9;
 }
-.social-loan-officer i.fas.fa-map-marker {
-    margin: 0 6px;
-    font-size: 18px;
+.testimonial-title {
+text-align: center;
+display: none;
 }
-#biography .manager-information {
-    display: none;
+.kwik-testimonial {
+width: 80%;
+background: #ffffff;
+box-shadow: 1px 3px 9px rgba(0,0,0,.3);
+padding: 20px 40px;
+border-radius: 2px;
+margin: 30px auto;
 }
+.kwik-testimonial-content {
+display: flex;
+}
+.kwik-testimonial-content em {
+display: block;
+border-top: 1px solid rgba(0,0,0,.1);
+margin-top: 30px;
+padding-top: 10px;
+font-style: normal;
+color: #006fa9;
+letter-spacing: .08em;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+.kwik-testimonial-sig {
+display: none;
+}
+.kwik-quote {
+display: none;
+}
+.add-testimonial {
+order: 2;
+width: 40%;
+margin: 20px auto;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+background: #006fa9;
+color: white;
+letter-spacing: .10em;
+border: none;
+}
+.testimonial-add #sudoux_cms_nodebundle_testimonialtype_body, .testimonial-add #sudoux_cms_nodebundle_testimonialtype_signature {
+width: 95%;
+height: 200px;
+}
+#sudoux_cms_nodebundle_testimonialtype_signature {
+margin-bottom: 60px;
+}
+.testimonial-add .controls {
+text-align: center;
+}
+.testimonial-add #node-form{
+margin-top: 0px;
+}
+.testimonial-add .controls .btn {
+background: #7FC24A;
+color: #fff;
+border-radius: 40px;
+border: none;
+outline: none;
+padding: 15px 20px;
+display: block;
+font-weight: normal;
+margin: 0 auto;
+width: auto;
+font-size: 13px;
+letter-spacing: .13em;
+}
+/*core*/
+
+
+.sub-menu-links li {
+padding-left: 0px !important;
+margin-right: 0px !important;
+}
+
+.sub-menu-links li:hover {
+font-weight: normal;
+border-left: 0;
+}
+
+footer #list_11081 {
+display: none;
+}
+
+footer #sitemap ul.menu.nav {
+justify-content: flex-start;
+}
+
+footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_11343, footer #sitemap #list_11350 {
+width: 28%;
+min-width: 200px;
+}
+
 #list_11344 > a, #list_11343 > a, #list_11350 > a {
-    display: block;
+display: none;
 }
-#originator-core-details-portrait img {
-    background: transparent;
-    width: auto;
-    height: auto;
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 50%;
-    margin-left: 0px;
+
+.blog-home-entry {
+line-height: 1.9;
 }
-.manager-biography {
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 0;
+.blog-home-entry h4 {
+margin-bottom: 10px;
 }
-.site-type-loan_officer #we-provide-more-master h3 {
-    font-size: 35px;
+
+#annie_mac-loan-officer > #originator {
+margin-top: -45px;
 }
 .manager-biography p:first-of-type {
-    margin-top: 0px;
+margin-top: 45px;
 }
-/* .manager-biography iframe {
-    display: none;
-} */
-#loan-originator-blurb-container h2 {
-    font-size: 35px;
+.branch-manager-section {
+padding: 40px 31px 50px;
+display: flex;
+width: 88%;
+margin: 0 auto;
 }
-#originator-core-details-text h4 span {
-    margin-top: 11px;
-    font-weight: bold;
+.manager-biography {
+margin-left: 0;
 }
-#home-reviews {
-    width: 82%;
+.manager-biography p {
+padding-bottom: 10px;
+width: 85%;
+margin: 0 auto;
 }
-#sitemap li#list_11563 {
-    display: none;
+.main-content, #annie_mac-branch {
+display: flex;
+flex-direction: column;
+}
+#annie_mac-branch iframe {
+width: 80vw;
+}
+.row-item .content {
+padding: 0 20px;
+}
+#annie_mac-branch > #branch-welcome {
+display: none;
+}
+#annie_mac-branch > #branch-banner {
+order: -999;
+}
+#annie_mac-branch > #home-deserve {
+order: 1;
+}
+#annie_mac-branch > #home-provide {
+order: 2;
+padding-bottom: 65px;
+}
+#home-provide {
+width: 90%;
+}
+#annie_mac-branch > #team-display {
+order: 3;
+}
+#annie_mac-branch > #perks-home {
+order: 4;
+}
+#annie_mac-branch > #home-reviews {
+order: 3;
+}
+#annie_mac-branch > .content-block-list {
+order: 5
+}
+.site-type-branch #home-deserve {
+flex-direction: column;
+}
+.site-type-branch #branch-steps {
+display: none;
+}
+#contact-buttons {
+margin: 0 auto;
+width: 80%;
+}
+#branch-content {
+text-shadow: 1px 2px 2px rgba(0,0,0,.7);
+}
+#perks-home {
+padding: 80px 0;
+margin-bottom: 25px;
+}
+.review {
+border-bottom: none;
+flex: 1;
+}
+#home-reviews h3 {
+padding-top: 15px;
+}
+#more-reviews {
+width: 80%;
+margin: 0 auto;
+border: none;
+}
+.review-grid {
+flex-wrap: wrap;
+}
+#branch-content button {
+margin: 30px auto -10px;
+}
+#branch-content button:hover {
+background: #7FC24A;
+color: #ffffff;
+}
+#branch-welcome h3 {
+display: none;
+}
+.team-member-section {
+justify-content: flex-start;
 }
 
-#navigation-menu li:not(last-of-type) {
-    margin-right: 30px;
+.team-member-portrait {
+margin: 0 auto 20px;
+}
+.team-member-information button {
+width: 240px;
+margin: 5px auto;
 }
 
-@media screen and (max-width: 650px) {
-    #navigation-logo {
-        max-width: 200px !important;
-    }
-    #navigation-logo > a > img {
-        margin-top: 5px;
-    }
-    #branch-banner {
-        height: 350px;
-        max-height: 351px;
-        min-height: 350px;
-    }
-    #covid-warning h4 {
-        font-size: 19px;
-    }
-    #covid-warning h4 span {
-        text-align: center;
-        width: 100px;
-    }
-    #covid-warning a {
-        margin-right: 6px;
-    }
-}
-@media screen and (max-width: 980px) {
-    #calculations-and-numbers {
-        padding-bottom: 60px;
-        margin: 20px;
-    }
-}
-.action-buttons-calcs {
-    /* width: 100%; */
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-.alert-error {
-    background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
-    padding: 20px !important;
-}
-.loan-app > p:first-of-type {
-    color: white;
-    font-weight: bold;
-    background: #006FA9;
-    padding: 10px 12px;
-    border-radius: 0px;
-    width: 97%;
-    line-height: 1.7;
-}
-.action-buttons-calcs button {
-    width: 280px;
-    margin: 0 23px 0 0;
-}
-.blog-home-entry, #home-blog h3 {
-    display: none;
-}
-.site-type-loan_officer .manager-biography ul {
-    width: 90%;
-    margin: 15px auto 30px;
-    padding-left: 35px;
-    list-style-type: square;
-}
-.site-type-loan_officer .manager-biography li {
-    padding-left: 5px;
-}
-#branch-content h2 {
-    margin-top: 0;
-    font-size: 2.5rem;
-}
-/* #add-co-borrower {
-    margin-top: 278px;
-} */
-.page-loan-apply #questions {
-    width: 80vw;
-    margin: 0 auto 20px;
-    overflow-y: auto;
-    min-height: 77vh;
-    padding: 0;
-}
-.delete-borrower-form {
-    margin-top: 200px;
-}
-#co-borrowers-wrapper {
-    margin-bottom: 250px;
-}
-.page-loan-apply #question-container {
-    width: 100%;
-    margin-top: -35px;
-}
-.page-loan-apply  #questions .question {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 35px;
-}
-.page-loan-apply #questions .choiceButton {
-    border-radius: 3px;
-    padding: 15px;
-    width: 85%;
-    max-width: 600px;
-    font-size: 16px;
-    background: #006fa9;
-    text-align: center;
-}
-.graphicButton {
-    border-radius: 3px;
-    padding: 15px;
-    width: 85%;
-    max-width: 600px;
-    font-size: 16px;
-    background: #78c254;
-    text-align: center;
-}
-.graphicInput {
-    border-radius: 3px;
-    padding: 15px !important;
-    width: 85% !important;
-    max-width: 600px;
-    font-size: 16px !important;
-    margin: -1px 0 40px;
-    text-align: center;
-    border: 1px solid rgba(0,0,0,.2);
-    height: auto;
-    outline: none;
-}
-#options .choiceButton {
-    border-radius: 3px;
-    padding: 15px;
-    width: 85%;
-    max-width: 600px;
-    font-size: 16px;
-    background: #006fa9;
-    text-align: center;
-    margin: 6px auto;
-}
-.user-login .inner-layout #form .register-title {
-    display: none;
-}
-.site-type-team #apply-navigation, .site-type-team #branch-steps, .site-type-team #home-provide, .site-type-team #home-reviews, .site-type-team #branch-banner button, .site-type-team #branch-banner .branch-content ul {
-    display: none;
-}
-.site-type-team #branch-banner {
-    height: 460px;
-}
-.site-type-team #team-display {
-    margin-top: -100px;
-}
-.site-type-team #branch-content h2 {
-    margin-top: 0 !important;
-    margin-bottom: 40px;
-}
-.site-type-team #branch-managers {
-    padding: 40px 0 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.site-type-team .branch-manager-section {
-    width: 300px;
-}
-#new-perk-plans {
-    margin: 90px auto 50px;
-}
-.location-listing {
-    padding: 15px 35px 15px 0;
-}
-#paws-container {
-    height: 390px;
-    margin: 0 auto;
-    width: 800px;
-    border: 6px solid #088dc5;
-    font-family: 'Myriad Pro', system-ui, sans-serif;
-    position: relative;
-    background: #006BA7 url('right-dogs.png') bottom right no-repeat;
-    background-size: 200px;
-    margin-top: 120px;
-    margin-bottom: -40px;
-}
-#paws-motif {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('left-dogs.png') bottom left no-repeat;
-    background-size: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-#paws-motif h1 {
-    background: url('logo.png');
-    text-indent: -999vw;
-    margin: -10px 0 30px;
-    width: 490px;
-    height: 167px;
-    background-size: cover;
-}
-#paws-motif h3 {
-    color: #7FBB41;
-    font-weight: 200;
-    margin: 0 0 10px;
-    font-size: 22px;
-    letter-spacing: .8px;
-    text-transform: uppercase;
-}
-#paws-motif h4 {
-    order: -1;
-    margin: -1px 0 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #fff;
-    font-weight: 200;
-}
-#paws-motif button {
-    background: #7FBB41;
-    border: 0;
-    outline: 0;
-    color: white;
-    font-size: 18px;
-    padding: 13px 20px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-#paws-motif button:hover {
-    cursor: pointer;
-}
-#paws-motif button span {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0 2px;
-}
-@media screen and (max-width: 1110px) {
-    .site-type-team .branch-manager-section {
-        width: 37%;
-    }
-}
-.site-type-team .branch-manager-section::after {
-    flex: auto;
-    content: "";
-}
-#team-site header ul {
-    display: none !important;
-}
-.page-loan-apply #product-banner, .page-loan-apply footer {
-    display: none;
-}
-.page-loan-apply .inner-layout {
-    padding-top: 80px;
-}
-.user-login .inner-layout #form div.alert.alert-error {
-    background: #ffe7dc;
-    margin-bottom: -1px;
-    padding: 17px;
-    line-height: 27px;
-    height: auto;
-    text-align: left;
-    color: white;
-    border-left: 8px solid #a91202;
-    border-radius: 0 3px 3px 0;
-}
-#team-site-warning {
-    background: #ffe7dc;
-    margin-bottom: -1px;
-    padding: 17px;
-    line-height: 27px;
-    height: auto;
-    text-align: left;
-    color: #a91202;
-    border-left: 8px solid #a91202;
-    border-radius: 0 3px 3px 0;
-}
-.calculations-primary:first-of-type {
-    padding-bottom: 60px;
-}
-#copyrights .flex:first-of-type {
-    flex-direction: column;
-}
-#team-site-warning {
-    margin-top: -40px;
-    margin-bottom: 40px;
-}
-#co-borrower-addressing {
-    background: #ffe7dc;
-    margin-bottom: -1px;
-    color: #a91202;
-    padding: 17px;
-    line-height: 27px;
-    text-align: left;
-    border-left: 8px solid #a91202;
-    border-radius: 0 3px 3px 0;
-    width: 80%;
-    margin: 20px auto 0;
-}
-.locked-account {
-    text-align: center;
-    margin: 0 0 -15px;
-}
-.site-type-branch nav #about-navigation .sub-menu-links li:nth-child(2) {
-    display: none;
-}
-. site-type-loan_officer nav #about-navigation .sub-menu-links li:nth-child(2) {
-    display: none;
-}
-#navigation-logo {
-    width: auto;
-    max-width: 250px;
-}
-.hide {
-    display: none;
-}
-html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inner-layout section#text-based p a.btn.btn-default {
-    background: #006fa9;
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 12px;
-    padding-top: 120px;
-    text-align: center;
-}
-.government-monitoring p {
-    width: 100%;
-    margin: 20px auto;
-}
-#navigation-logo > a > img {
-    max-height: 42px;
-}
-.page-branch-list > #product-banner {
-    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/annie_mac_new_banner_branches.jpeg') top left no-repeat;
-    background-size: cover;
-    background-position-y: 53%;
-}
-.page-loan-apply-complete > #product-banner {
-    background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('https://annie-mac.com/uploads/sites/10713/public/complete.jpeg') top left no-repeat;
-    background-size: cover;
-    background-position-y: 32%;
-}
-#covid-warning {
-    background: #ffe7dc;
-    margin-bottom: -1px;
-    color: #a91202;
-    padding: 14px 25px;
-    line-height: 1.6;
-    margin-top: 0;
-}
-#covid-warning h4 {
-    font-size: 24px;
-    margin: 0;
-    font-weight: bold;
-    color: #a91202;
-    display: flex;
-    align-items: center;
-}
-#covid-warning h4 span {
-    font-size: 13px;
-    margin-left: 15px;
-    color: rgb(169 19 5);
-    border: 1px solid #a91305;
-    padding: 5px 12px;
-    border-radius: 6px;
-}
-#covid-warning h4 span:hover {
-    cursor: pointer;
-}
-#covid-warning p {
-    margin: 8px 0;
-}
-#covid-warning-container {
-    padding-bottom: 10px;
-}
-#covid-warning a {
-    background: #a91202;
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 12px;
-    width: 160px;
-    margin-top: 10px;
-    text-align: center;
-    margin-right: 30px;
-}
-#covid-warning a:hover {
-    opacity: .8;
-}
-#annie_mac-loan-officer > #branch-banner {
-    background: url('https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg') top left no-repeat;
-    background-size: cover;
-    background-position-y: 63%;
-}
-#annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
-    margin-top: 0 !important;
-}
-@media screen and (max-width: 854px) {
-    #paws-container {
-        width: 100vw;
-    }
-    #paws-motif h1 {
-        width: 390px;
-        height: 133px;
-    }
-    #paws-motif h3 {
-        color: #fff;
-    }
-    #paws-motif h4 {
-        margin: -5px 0 35px;
-    }
-    #paws-motif button {
-        background: #078CC4;
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 850px) {
-    #sitemap #list_11538 {
-        display: none;
-    }
-}
-@media screen and (max-width: 800px) {
-    .site-type-team #navigation-bar {
-        justify-content: space-between;
-        padding: 7px 14px;
-    }
-    .site-type-team #navigation-logo {
-        order: -3;
-    }
-    #covid-warning {
-        margin-top: 50px;
-    }
-    #we-provide-more-3 {
-        order: -1;
-    }
-    .location-listing a p:first-of-type {
-        width: 80%;
-        line-height: 20px;
-    }
-    #calculations-and-numbers {
-        width: 90%;
-        display: flex;
-        margin: 60px auto 30px;
-        flex-direction: column;
-    }
-    #copyrights ul:nth-of-type(1) {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 750px) {
-    #copyrights ul:nth-of-type(1) {
-        margin: 5px auto 10px;
-    }
-    #social-media {
-        display: none;
-    }
-}
-/*Application*/
-.page-loan-apply form {
-    width: 100%;
+.manager-information .team-member-information {
+width: 300px;
 }
 
-#property-info-wrapper, #borrower-wrapper, #title-info, #employment-wrapper, #assets-wrapper, #housing-wrapper, #declarations-wrapper, #govt-monitoring-wrapper {
-    width: 100%;
+.team-member {
+width: 33%;
+margin: 0 auto 50px;
 }
 
-.span-half:first-of-type {
-    padding-right: 20px;
+@media only screen and (max-width: 860px) {
+.team-member {
+    width: 49%;
+}
+.team-member:last-of-type {
+    margin-left: 14px;
+}
 }
 
-.span-half:last-of-type {
-    padding-left: 35px;
+.team-member-section {
+justify-content: flex-start;
 }
 
+.team-member-section::after {
+flex: auto;
+content: "";
+}
+
+.team-member:last-of-type {
+margin-left: 5px;
+}
+
+.header-links-content a {
+display: flex;
+align-items: center;
+}
+
+#home-banner h2, #home-banner h4 {
+color: #ffffff;
+text-align: center;
+}
+
+#product-banner h4 {
+display: none;
+}
+
+#page-banner h2, #video-banner h2, #product-banner h2, #brand-banner h2, #core-banner h2 {
+font-size: 5vw;
+}
+
+.product-block {
+width: 33vw;
+}
+
+.blog-home-entry {
+justify-content: flex-start !important;
+}
+
+#more-blogs {
+margin-top: 25px;
+}
+
+/*APPLICATION*/
+
+a.icon-remove.delete-borrower-form::before {
+background: #78c254;
+border: 1px solid #78c254;
+color: #FFF;
+content: "remove co-borrower";
+border-radius: 40px;
+border: none;
+outline: none;
+padding: 15px 20px;
+display: block;
+font-weight: normal;
+margin: 0 auto;
+width: auto;
+font-size: 13px;
+letter-spacing: .13em;
+}
 .loan-app {
-    width: 96vw;
+display: flex;
+margin: 50px auto;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
+margin-top: 0px;
+margin-right: 8px;
+width: 17px;
+height: 17px;
+}
+
+.loan-app > p:first-of-type {
+color: white;
+font-weight: bold;
+background: #7FC24A;
+padding: 10px 12px;
+border-radius: 6px;
+width: 96%;
+line-height: 1.7;
+}
+
+.visible-desktop {
+width: 100%;
+margin: 0 auto;
+}
+
+.hidden {
+display: none;
+}
+
+.nav-steps {
+margin-top: 25px;
+}
+
+.nav-steps li a:before {
+display: none;
+}
+
+.nav-steps li a:after {
+display: none;
 }
 
 .loan-app .clearfix, .borrower-form header, .government-monitoring {
-    width: 90%;
-    margin: 0 auto;
+width: 85%;
+margin: 0 auto !important;
 }
 
-.loan-app p {
-    width: 99%;
-    text-align: left;
+.loan-app header p {
+display: none;
 }
 
-.loan-app p label {
-    margin-bottom: 0px;
+
+.required-asterisk {
+color: #c51f1f;
+font-weight: bold;
+border: 1px solid #c51f1f;
+border-radius: 100%;
+padding: 2px 8px 0;
+margin-left: 5px;
+font-size: 13px;
+background: #fff5f5;
 }
 
-.page-loan-apply table {
-    display: flex;
+.controls > label > .required-asterisk {
+display: none;
 }
 
-.page-loan-apply tr {
-    display: flex;
-    flex-direction: column;
+.borrower-previous-location-form .clearfix {
+width: 100%;
 }
 
-.page-loan-apply tbody {
-    display: flex;
-    flex-wrap: wrap;
+.loan-type > .required, #loan-officer-wrapper label {
+font-weight: bold;
 }
 
-.page-loan-apply tbody tr {
-    margin-right: 15px;
-    margin-bottom: 30px;
+.loan-app .span-half {
+width: 100%;
+}
+
+.completed {
+background: inherit;
 }
 
 .loan-app select {
-    width: auto;
-    padding: 16px;
-    min-width: 190px;
-    text-align: left;
-    margin-top: 18px;
+width: 98%;
+text-transform: none;
+font-weight: normal;
 }
 
-.delete-borrower-form {
-    display: block;
-    margin-bottom: 40px;
+#loan-application-nav {
+width: 98%;
+display: flex;
+margin: 20px auto;
 }
 
-#loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2), #co-borrowers-wrapper > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+.nav-steps li {
+flex: 1;
+text-align: center;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location {
-    max-width: 80px;
+#loan-application-nav li a {
+padding: 25px;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_location_zipcode, #sudoux_mortgagebundle_loanapplicationtype_asset_real_estate_0_location_zipcode {
-    max-width: 167px;
+.nav-steps li:first-child a {
+padding-left: 0;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_ssn, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_ssn, #sudoux_mortgagebundle_loanapplicationtype_borrower_birth_date, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_birth_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_years_of_school, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_years_of_school, #sudoux_mortgagebundle_loanapplicationtype_sale_price, #sudoux_mortgagebundle_loanapplicationtype_loan_amount, #sudoux_mortgagebundle_loanapplicationtype_num_units, #sudoux_mortgagebundle_loanapplicationtype_property_year_built, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_end_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_end_date, 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_end_date, 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_end_date, 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_start_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_end_date, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_years_employed, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_1_years_employed, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_2_years_employed, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_3_years_employed, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_4_years_employed, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_5_years_employed {
-    max-width: 162px;
+.nav-steps li a {
+display: flex;
+flex-direction: column;
+flex: 1;
+float: none;
+margin: 0;
+padding: 0;
 }
 
-#asset-account-wrapper select, #income-monthly-wrapper select, #sudoux_mortgagebundle_loanapplicationtype_property_location_state {
-    min-width: 204px;
+.borrower-form {
+width: 100%;
+margin: 40px auto;
 }
 
-.page-loan-apply th, .page-loan-apply td {
-    height: 47px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    padding: 0px !important;
-    margin: 4px 0px !important;
-} 
-
-.page-loan-apply td input, .page-loan-apply td select {
-    margin: 0;
-    padding: 0 !important;
-    padding-left: 18px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    text-align: left;
+.borrower-form h3 {
+font-size: 2rem;
 }
 
-.page-loan-apply tr .delete-row {
-    margin-left: 0;
+#loan-officer-wrapper {
+width: 100%;
+margin: 30px auto -20px;
+display: flex;
+flex-direction: column;
 }
 
-.page-loan-apply tbody .money-field {
-    width: 91%;
+#sudoux_mortgagebundle_loanapplicationtype_loan_type {
+width: 80%;
+margin: 0 auto;
 }
 
-.page-loan-apply tbody .money-field input {
-    text-indent: 10px;
-    background-position-x: 12px;
-    width: 187px;
+#sudoux_mortgagebundle_loanapplicationtype_loan_type .choice-row label {
+margin-top: 0 !important;
 }
 
-.money-field input {
-    background-position-x: 12px;
+#sudoux_mortgagebundle_loanapplicationtype_borrower_employed {
+margin: 0 auto;
 }
 
-.page-loan-apply .required-asterisk {
-    display: contents;
+#sudoux_mortgagebundle_loanapplicationtype_loan_type .choice-row, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_own_residence .choice-row, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_dependents .choice-row, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_previous_location_0_own_residence .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_own_residence .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_dependents .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_outstanding_judgement .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_bankruptcy .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_forclosure .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_lawsuit .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_forclosure_obligation .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_in_default .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_alimony_child_support .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_down_payment_borrowed .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_note_endorser .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_us_citizen .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_resident_alien .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_primary_residence .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_ownership_within_three_years .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_is_male .choice-row, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_self_employed .choice-row {
+align-items: center;
 }
 
-.page-loan-apply table input, .page-loan-apply table select {
-    background: #fff;
-    border: 0;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 1px #696969;
-    color: rgba(0, 0, 0, .75);
-    display: block;
-    padding: 0 16px;
-    width: 100%;
-    -webkit-appearance: none;
-    min-height: 48px;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
+#sudoux_mortgagebundle_loanapplicationtype_borrower_is_male .choice-row label:first-of-type {
+margin-right: 25px;
 }
 
-.loan-app form input, .loan-app form textarea {
-    margin: 18px 0 25px 0;
-    padding: 13px;
-    border-radius: 4px;
-    font-size: 1rem;
-    outline: none;
-    font-family: 'neue-haas-unica', sans-serif;
-    width: auto;
-    flex: 1;
+.choice-row {
+display: flex !important;
 }
 
-.employment-form div.span-half:nth-child(2) > div:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
+.choice-row input {
+width: 30px;
+padding-top: 40px;
+margin: 0;
 }
 
-.employment-form div.span-half:nth-child(2) > div:nth-child(2) > input {
-    width: 140px;
-}
-
-.declaration {
-    display: flex;
-    flex-direction: column;
-}
-
-.declaration-wrapper .clearfix {
-    width: 90%;
-}
-
-.declaration-wrapper .declaration .question {
-    width: 100%;
-    float: none;
-    order: -1;
-    margin-bottom: 20px;
-}
-
-.government-monitoring {
-    margin-top: 25px !important;
-}
-
-.government-monitoring .control-group {
-    height: initial;
-}
-
-.government-monitoring .control-group .choice-row {
-    display: flex;
-}
-
-.government-monitoring .control-group .choice-row input {
-    width: auto;
-    flex: 0;
-}
-
-#govt-monitoring-form-817313 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.ethnicity_other, .race_tribe, .race_other {
-    display: none;
-}
-
-.hmdaEthnicitySelections, .hmdaRaceSelections, .hmdaSexSelections {
-    padding-top: 0px;
-    border-top: 0;
-    height: auto;
-}
-
-.hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(1) {
-    margin-bottom: 10px;
-}
-.borrower-previous-location-form.loan-form {
-    margin-top: 250px;
-    margin-bottom: -270px;
-}
-#add-co-borrower, #add-asset-real-estate, #add-asset-account, #add-income-monthly {
-    color: #006fa9 !important;
-    background: transparent !important;
-    width: 250px !important;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.form-horizontal {
-    display: flex;
-    justify-content: space-between;
-}
-
-.span-half {
-    width: 49% !important;
-}
-
-.control-group {
-    width: auto;
-    height: 127px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.control-label {
-    margin-bottom: -2px;
+.choice-row label {
+margin: 0;
+font-weight: normal;
 }
 
 .controls {
+flex-wrap: wrap;
+}
+
+.controls, .pw-hint {
+margin-top: -12px;
+margin-bottom: 13px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-0 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-6 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-2 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-8 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-4 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-10 .control-group:nth-of-type(2) .controls {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 500px;
+justify-content: space-between;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location {
+margin-right: 20px
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-0 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-6 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-2 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-8 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-4 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) .controls, #borrower-previous-location-form-10 .control-group:nth-of-type(2) .controls input {
+margin-right: 40px;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-0 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-6 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-2 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-8 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-4 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) label, #borrower-previous-location-form-10 .control-group:nth-of-type(2) label {
+margin: 0;
+padding: 0;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-0 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-6 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-2 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-8 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-4 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+.control-group:nth-of-type(9) .controls label, #borrower-previous-location-form-10 .control-group:nth-of-type(2) .controls label {
+margin: 0;
+padding: 0;
+margin-top: -10px;
+font-weight: normal;
+flex: 1;
+}
+
+#borrower-previous-location-form-0 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+#borrower-previous-location-form-6 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+#borrower-previous-location-form-2 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+#borrower-previous-location-form-8 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+#borrower-previous-location-form-4 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+#borrower-previous-location-form-10 .control-group:nth-of-type(2) .controls input {
+margin-right: 30px;
+}
+
+.control-group:nth-of-type(9) {
+margin-top: 10px;
+}
+
+.control-group:nth-of-type(9) .choice-row label {
+margin: 0;
+}
+
+.loan-type {
+display: flex;
+flex-direction: column;
+}
+
+#add-co-borrower, #add-asset-real-estate {
+width: 40%;
+margin: 20px auto;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+background: #006fa9;
+color: white;
+letter-spacing: .10em;
+border: none;
+}
+
+.btn-inverse {
+width: 300px;
+padding: 10px;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+background: #006fa9;
+color: white;
+letter-spacing: .10em;
+border: none;
+}
+
+.loan-app p {
+width: 80%;
+font-weight: normal;
+margin: 0 auto;
+padding: 0;
+display: block;
+}
+
+.loan-app p label {
+margin-bottom: 33px;
+font-weight: normal;
+}
+
+.loan-app p input {
+display: block;
+margin: 14px auto;
+width: 100%;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_loan_officer {
+width: 600px;
+margin: 40px auto 60px;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_loan_type {
+width: 94%;
+margin-top: -27px;
+margin-bottom: 27px;
+}
+
+.controls {
+display: flex;
+flex-direction: column;
+}
+
+.page-loan-apply .submit-wrapper {
+border: none;
+}
+
+#borrower-form-0 {
+margin-top: -10px;
+}
+
+#borrower-form-0 h3 {
+margin-bottom: 20px
+}
+
+#borrower-form-0 .span-half:last-of-type .control-group:last-of-type controls {
+display: flex;
+margin: 10px 0;
+align-items: center;
+}
+
+form h3 {
+text-align: center;
+margin: 60px auto;
+}
+#borrower-form-0 .span-half:last-of-type .choice-row:nth-of-type(2) {
+margin-top: 0px !important;
+}
+
+input {
+padding-right: 20px;
+}
+
+.radio-group {
+display: flex;
+margin-top: 10px;
+align-items: center;
+height: 50px;
+width: 170px;
+justify-content: space-between;
+}
+
+#has-realtor {
+display: block !important;
+justify-content: center;
+}
+
+#has-realtor .radio-group {
+display: flex !important;
+margin: 0 auto;
+}
+
+#has-realtor .radio-group  .choice-row {
+align-items: baseline !important;
+}
+
+.alert-error {
+margin-top: 33px;
+margin-bottom: -30px;
+text-align: center;
+background: #78c254;
+padding-bottom: 10px;
+color: white;
+display: flex;
+align-items: center;
+height: 60px;
+padding-top: 6px;
+justify-content: center;
+}
+
+.alert-error button {
+display: none;
+}
+
+th {
+text-align: left;
+padding-left: 5px;
+}
+
+.prototype-table-wrapper .table thead tr th:nth-of-type(1) {
+padding-left: 0px;
+}
+
+.prototype-table-wrapper .table tbody tr td:nth-of-type(2), .prototype-table-wrapper .table tbody tr td:nth-of-type(4) {
+padding-right: 20px;
+}
+
+.prototype-table-wrapper .table {
+margin: 0 auto;
+width: 90%;
+border-bottom: 0;
+margin-left: 100px;
+margin-bottom: 40px;
+}
+#income-monthly-wrapper p {
+width: 99%;
+}
+#income-monthly-wrapper p small span {
+margin-right: 10px;
+}
+
+#income-monthly-wrapper .table {
+margin-left: 15px;
+}
+
+#add-asset-account, #add-income-monthly {
+display: inline-block;
+width: 120px !important;
+background: #006fa9;
+border: 1px solid #006fa9;
+color: #FFF;
+border-radius: 40px;
+border: none;
+outline: none;
+padding: 15px 20px;
+display: block;
+font-weight: normal;
+margin: 0 auto;
+font-size: 13px;
+letter-spacing: .13em;
+}
+
+#income-monthly-wrapper .table {
+width: 100%;
+}
+
+.declaration {
+display: flex;
+min-height: 60px;
+padding-bottom: 25px;
+}
+
+.declaration-wrapper .clearfix {
+width: 80%;
+}
+
+.declaration-wrapper .question, .declaration-wrapper .radio-group {
+margin: 0;
+padding: 0;
+border-radius: 0;
+}
+
+.declaration-wrapper .question:hover {
+background: inherit;
+}
+
+.declaration-wrapper .declaration {
+margin-bottom: 20px;
+}
+
+.declaration-wrapper .choice-row {
+margin-top: -10px;
+margin-right: 15px;
+}
+
+.declaration-wrapper .question label {
+font-weight: normal;
+margin-top: 5px;
+line-height: 1.9;
+}
+
+.declaration-wrapper .declaration .additional-questions textarea {
+min-width: 97%;
+}
+
+.additional-questions label {
+padding-top: 20px;
+}
+
+.additional-questions textarea {
+width: 100%;
+}
+
+.help-block {
+display: none;
+}
+
+.form-inline {
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+}
+
+.form-inline input {
+margin: 0;
+padding: 0;
+width: 20px;
+}
+
+.form-inline label {
+padding: 0;
+margin: 4px;
+margin-top: -15px;
+font-weight: normal;
+}
+
+.government-monitoring .form-inline {
+display: flex !important;
+flex-direction: row;
+}
+
+.dependent-info {
+display: block;
+width: 100%;
+margin-top: 10px;
+}
+
+.dependent-info p {
+width: 100%;
+margin: inherit;
+}
+
+.dependent-info p label {
+font-weight: bold !important;
+}
+
+.dependent-info p input {
+width: 30%;
+margin: 12px 0px;
+}
+
+#property-info-wrapper, #borrower-wrapper, #title-info, #employment-wrapper, #assets-wrapper, #housing-wrapper, #declarations-wrapper, #govt-monitoring-wrapper {
+width: 85%;
+margin-top: 30px;
+margin: 0 auto;
+}
+
+#property-info-wrapper h3, #borrower-wrapper h3, #title-info h3, #employment-wrapper h3, .employment-form-wrapper h3, #assets-wrapper h3, #housing-wrapper h3, #declarations-wrapper h3, #govt-monitoring-wrapper h3 {
+display: flex;
+align-items: center;
+text-align: center;
+border-bottom: 1px solid;
+margin-bottom: 20px;
+padding-bottom: 10px;
+margin-top: 50px;
+}
+
+.employment-form-wrapper h3 {
+display: block !important;
+border-bottom: none !important;
+margin-top: 0px !important;
+}
+
+#property-info-wrapper h3 a, #borrower-wrapper h3 a, #title-info h3 a, #employment-wrapper h3 a, .employment-form-wrapper h3 a, #assets-wrapper h3 a, #housing-wrapper h3 a, #declarations-wrapper h3 a, #govt-monitoring-wrapper h3 a {
+order: 2;
+visibility: none;
+border: 0;
+}
+
+#property-info-wrapper h3 a:hover, #borrower-wrapper h3 a:hover, #title-info h3 a:hover, #employment-wrapper h3 a:hover, #assets-wrapper h3 a:hover, #housing-wrapper h3 a:hover, #declarations-wrapper h3 a:hover, #govt-monitoring-wrapper h3 a:hover {
+background: inherit;
+}
+
+#property-info-wrapper h3 a:after, #borrower-wrapper h3 a:after, #title-info h3 a:after, #employment-wrapper h3 a:after, #assets-wrapper h3 a:after, #housing-wrapper h3 a:after, #declarations-wrapper h3 a:after, #govt-monitoring-wrapper h3 a:after {
+margin-left: 20px;
+content: "edit" !important;
+height: 28px;
+text-align: center;
+display: inline-block;
+color: #036ea9;
+text-transform: capitalize;
+letter-spacing: .07em;
+font-size: 16px;
+}
+
+#govt-monitoring-wrapper div p {
+width: 100%;
+}
+
+#borrower-wrapper .modal-footer {
+display: none;
+}
+
+.modal-content {
+margin-top: 40px;
+}
+
+.modal-title, .loan-type {
+font-size: 1.8rem;
+font-weight: normal;
+color: #066195;
+}
+
+#assets-wrapper table {
+margin-bottom: 40px;
+}
+
+#assets-wrapper p {
+text-align: center;
+}
+
+#comments {
+width: 100%;
+margin: 0 auto;
+margin-bottom: 80px;
+}
+
+#comments h3 {
+color: #066195;
+}
+
+#comments textarea {
+margin-top: -30px;
+height: 200px;
+margin-bottom: 100px;
+margin: 0 auto;
+width: 80%;
+display: block;
+}
+
+.sigWrapper {
+width: 603px;
+}
+
+.page-loan-apply .submit-wrapper a {
+display: none;
+}
+.hidden-desktop {
+order: 3;
+margin-top: 30px;
+display: inline-grid;
+justify-content: center;
+}
+.hidden-desktop a {
+margin: 5px 0;
+}
+
+.government-monitoring-wrapper {
+margin-top: 15px !important;
+margin-left: -5px !important;
+}
+
+#well-signature {
+display: flex !important;
+justify-content: center !important;
+}
+
+.declaration-summary {
+margin: 0px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.declaration-summary p {
+display: flex;
+height: 55px;
+width: 100%;
+margin-left: -10px;
+line-height: 1.5;
+font-size: 16px;
+}
+
+.declaration-summary p b {
+margin-right: 15px;
+}
+
+.borrower-initials-wrapper input {
+width: 60px !important;
+float: right !important;
+margin: 0 !important;
+}
+
+.borrower-initials-wrapper b {
+margin-right: 30px;
+font-weight: normal;
+}
+
+.borrower-signature {
+display: flex !important;
+flex-direction: column !important;
+width: 100% !important;
+margin-left: -6% !important;
+}
+
+.borrower-initials-wrapper {
+display: flex !important;
+align-items: center !important;
+margin-top: 35px !important;
+margin-bottom: 35px !important;
+order: 2;
+margin-right: -36% !important;
+}
+
+.borrower-previous-location-form p {
+width: 100%;
+margin-bottom: 15px;
+}
+
+#sudoux_mortgagebundle_loanapplicationtype_agreement_one, #sudoux_mortgagebundle_loanapplicationtype_agreement_two, #sudoux_mortgagebundle_loanapplicationtype_agreement_three
+, #sudoux_mortgagebundle_loanapplicationtype_tcpa_consent
+{
+width: 30px;
+height: 30px;
+}
+
+@media only screen and (max-width: 860px) {
+.loan-app {
+    padding: 0px !important;
+    margin: 10px auto 0px;
+}
+.loan-app select, .header-links-content a {
+    display: flex;
+    align-items: center;
+}
+.loan-app > p:first-of-type {
+    color: white;
+    font-weight: normal;
+    background: #7FC24A;
+    padding: 10px 12px;
+    border-radius: 0px;
+    line-height: 1.7;
+}
+#home-banner h2, #home-banner h4 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#product-banner h4 {
+    display: none;
+}
+
+#page-banner h2, #video-banner h2, #product-banner h2, #brand-banner h2, #core-banner h2 {
+    font-size: 5vw;
+}
+
+.product-block {
+    width: 33vw;
+}
+
+.borrower-employed {
+    display: flex !important;
+    flex-direction: column !important;
+}
+}
+@media only screen and (max-width: 900px) {
+.loan-app {
+    padding: 0px !important;
+    margin-bottom: 0px;
+}
+form {
+    margin-top: 10px !important;
+}
+form h3 {
+    margin: 30px auto 20px;
+}
+.loan-app select, #sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_location_state {
+    width: 101%;
+}
+.visible-desktop {
+    margin-top: 45px;
+    order: 2;
+}
+#loan-application-nav {
+    flex-wrap: wrap;
+}
+.nav-steps {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#loan-application-nav li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
-#realtor-form {
-    width: 90%;
+#loan-application-nav li .title {
+    font-size: 16px !important;
 }
-
-#sudoux_mortgagebundle_loanapplicationtype_title_company1, #sudoux_mortgagebundle_loanapplicationtype_title_company2 {
-    max-width: 400px;
+#loan-application-nav li a > .description {
+    font-size: 13px;
+    line-height: 25px;
+    height: 45px;
+    text-align: right;
+    margin-top: 0px;
 }
-
-#sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_employed {
+.nav-steps li {
+    box-sizing: border-box;
+    flex: none;
+    width: 50%;
+    border-bottom: 1px solid rgba(0,0,0,.095);
+}
+.nav-steps li:nth-of-type(odd) {
+    border-right: 1px solid rgba(0,0,0,.095);
+}
+.nav-steps li:last-of-type {
+    border-right: none;
+    flex: 1;
+}
+.nav-steps li:last-of-type a > .description {
+    display: none;
+}
+.nav-steps li:last-of-type a > .title {
     margin: 0 auto;
 }
-
-#asset-real-estate-wrapper .form-horizontal {
-    flex-direction: column;
+form {
+    margin-top: 70px;
 }
-
-#asset-real-estate-wrapper .clearfix {
+.hidden-desktop {
+    margin-bottom: 30px;
+}
+#sudoux_mortgagebundle_loanapplicationtype_loan_type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: -20px;
+}
+#sudoux_mortgagebundle_loanapplicationtype_loan_officer, #sudoux_mortgagebundle_loanapplicationtype_refinance_purpose {
+    width: 86% !important;
+}
+#loan-officer-wrapper {
+    margin-bottom: -40px !important;
+}
+.loan-type p {
+    width: 100%;
+    text-align: center;
+}
+.visible-desktop {
+    margin-top: 45px;
+    order: 2;
+}
+#loan-application-nav {
+    flex-wrap: wrap;
+}
+.nav-steps {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#loan-application-nav li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#loan-application-nav li .title {
+    font-size: 16px !important;
+}
+#loan-application-nav li a > .description {
+    font-size: 13px;
+    line-height: 25px;
+    height: 45px;
+    text-align: right;
+    margin-top: 0px;
+}
+.nav-steps li {
+    box-sizing: border-box;
+    flex: none;
+    width: 50%;
+    border-bottom: 1px solid rgba(0,0,0,.095);
+}
+.nav-steps li:nth-of-type(odd) {
+    border-right: 1px solid rgba(0,0,0,.095);
+}
+.nav-steps li:last-of-type {
+    border-right: none;
+    flex: 1;
+}
+.nav-steps li:last-of-type a > .description {
+    display: none;
+}
+.nav-steps li:last-of-type a > .title {
+    margin: 0 auto;
+}
+form {
+    margin-top: 70px;
+}
+#sudoux_mortgagebundle_loanapplicationtype_loan_type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: -20px;
+}
+#sudoux_mortgagebundle_loanapplicationtype_loan_officer, #sudoux_mortgagebundle_loanapplicationtype_refinance_purpose {
+    width: 86% !important;
+}
+#loan-officer-wrapper {
+    margin-bottom: -40px !important;
+}
+.prototype-table-wrapper .table {
+    margin-left: 0;
+    margin: 0 auto 30px;
+}
+.table {
+    margin-left: 40px !important;
+}
+table {
     display: flex;
     flex-direction: row;
 }
-.pw-hint {
-    margin-top: -23px;
-    margin-bottom: 33px;
+#income-monthly-wrapper p {
+    width: 99%;
+    text-align: center;
+    margin: -10px 0 20px;
 }
-.page-loan-apply .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
-    margin: 0 5px 0 0 !important;
+table th {
+    height: 50px;
+    align-items: center;
+    display: flex;
 }
-#employment-wrapper thead th:nth-of-type(2), #employment-wrapper tbody tr td:nth-of-type(2) {
-    display: flex !important;
-    flex-direction: column !important;
-    line-height: 1.7;
-    height: 80px !important;
-    align-items: flex-start;
+.table thead tr th:nth-of-type(1) {
+    padding-left: 4px !important;
+}
+table th > .required-asterisk {
+    display: none;
+}
+table tr th {
+    margin-right: 20px;
+    font-size: 16px !important;
+    line-height: 1.3;
+}
+thead {
+    width: 30%;
+}
+table td {
+    width: 100%;
+}
+tr {
+    display: flex;
+    flex-direction: column;
+}
+.money-field input {
+    width: 100%;
+}
+.borrower-select {
+    width: 112% !important;
+}
+.declaration-wrapper .clearfix {
+    width: 85%;
+}
+.declaration-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.declaration {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px !important;
+}
+.declaration .question {
+    order: -1;
+}
+.declaration .choice-row {
+    margin-top: 30px;
+}
+#borrower-wrapper .table, #employment-wrapper .table, #asset-wrapper .table, .table-striped {
+    margin-left: 0px !important;
+}
+.table-striped th {
+    height: 44px !important;
 }
 #assets-wrapper p {
     text-align: left;
     margin-left: 0;
 }
-label.error {
-    border: none !important;
+.government-monitoring-wrapper tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#employment-wrapper .table-striped thead tr th:nth-of-type(2), #employment-wrapper .table-striped tbody tr td:nth-of-type(2) {
+    line-height: 1.7;
+    height: 80px !important;
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 4px;
+}
+.sigPad {
+    width: 94% !important;
+}
+.borrower-initials-wrapper {
+    width: 92% !important;
+}
+}
+
+
+.add-testimonial {
+display: none;
+}
+
+ul li:hover > ol, #navigation-menu ul li:hover ul, ul li:focus-within > ol, ul li ol:hover, ul li ol:focus {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 200px;
+}
+
+.blog-image {
+width: 85%;
+background: none;
+height: 35vw;
+margin: 20px auto;
+border-radius: 6px;
+display: flex;
+}
+
+.blog-image img {
+margin: 0 auto;
+}
+
+#blog-entry-page p {
+width: 100%;
+}
+
+.header-links-content a.tel {
+padding: 5px 10px;
+background: transparent;
+color: white;
+font-size: 13px;
+letter-spacing: .13em;
+}
+.borrower-previous-location-form .controls {
+display: block;
+}
+
+.borrower-previous-location-form a.icon-remove.delete-form:after {
+content: 'X';
+height: 10px;
+color: #e5254b;
+display: block;
+font-size: 13pt;
+position: relative;
+top: 7px;
+left: 152px;
+font-weight: 400;
+}
+
+.declaration-wrapper .additional-questions{
+margin-top: 35px !important;
+}
+.declaration-wrapper .money-field input {
+min-width: 200px;
+}
+.ethnicity_other,.race_asian_other, .race_islander_other,.race_other.race_tribe  {
+position: inherit !important;
+margin: 0 !important;
+margin-bottom: 25px !important;
+}
+
+
+.hmdaEthnicitySelections .choice-row label, .hmdaRaceSelections .choice-row label, .hmdaSexSelections  .choice-row label{
+position: relative;
+top: -13px;
+}
+.hmdaRaceSelections p, .hmdaSexSelections p , .hmdaEthnicitySelections p {
+margin: initial;
+}
+
+.hmdaEthnicitySelections .checkbox-group .choice-row:nth-of-type(5), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(9), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(15) {
+margin-bottom: 30px !important;
+}
+
+html {
+scroll-behavior: smooth;
 }
 .error, .error-txt, .error-txt li {
-    color: #e01e19;
-    border: 1px solid red !important;
+margin-bottom: 10px;
 }
-.government-monitoring-wrapper tbody {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 99%;
-    margin-left: 3px;
-}
-.government-monitoring-wrapper tbody tr {
-    border-bottom: none !important;
-    margin: 3px 0;
-}
-.government-monitoring-wrapper tbody th {
-    width: 99%;
-    text-align: left;
-}
-.government-monitoring-wrapper tbody td {
-    width: 98%;
-    margin: 0px 0;
-    font-size: 16px;
-    height: 12px;
-}
-.government-monitoring p {
-    width: 100%;
-    margin: 0;
-    text-align: left;
-    padding-top: 5px;
-    margin-bottom: 10px;
-}
-#creditWell .declaration {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-#creditWell .declaration .question {
-    padding-left: 0 !important;
-    font-weight: bold;
-    line-height: 25px;
-    margin-bottom: 40px;
-    order: -1;
-}
-#creditWell .declaration .radio-group {
-    margin: -40px auto 50px;
-    display: flex;
-    align-items: center;
-}
-#creditWell .declaration .radio-group .choice-row {
-    display: flex;
-    align-items: center;
-}
-.checkbox {
-    display: flex;
-    margin: 32px auto;
-}
-.checkbox input {
-    min-width: 30px;
-    margin-right: 25px !important;
-    margin-top: 10px !important;
-}
-form #comments {
-    border-top: 1px solid #7FC24A;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-#comments h3 {
-    display: none !important;
-}
-#comments textarea {
-    display: none !important;
-}
-.loan-application-form h3:nth-of-type(2) {
-    padding-top: 30px;
-}
-.borrower-initials-wrapper {
-    display: flex !important;
-    flex-direction: row;
-    flex: 0;
-    justify-content: center;
-    padding-right: 60px !important;
-    font-size: 15px;
-}
-#sudoux_mortgagebundle_loanapplicationtype_borrower_initials {
-    flex: 0;
-}
-#property-info-wrapper .property-info, .modal-body .borrower-info, .borrower-info, #title-info, #housing-wrapper #housing-expenses {
-    display: flex;
-    flex-direction: column !important;
-}
-.page-loan-apply.step7 h3.title {
-    margin-bottom: 10px;
-}
-.hmdaEthnicitySelections .choice-row, .hmdaRaceSelections .choice-row, .hmdaSexSelections .choice-row {
-    display: flex;
-    align-items: center;
-}
-.hmdaEthnicitySelections .choice-row label, .hmdaRaceSelections .choice-row label, .hmdaSexSelections .choice-row label {
-    position: unset;
-}
-#assets-wrapper p {
-    font-size: 15px;
-}
-.borrower-previous-location-form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.borrower-previous-location-form .delete-form {
-    display: none;
-}
-.borrower-previous-location-form p small {
-    border: none !important;
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin: -50px 17px 0px;
-}
-.borrower-previous-location-form .span-half:last-of-type {
-    padding-left: 0;
-}
-#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_address1, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_city {
-    width: 100% !important;
-}
-#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_own_residence .choice-row {
-    align-items: center;
-}
-.borrower-previous-location-form.loan-form {
-    margin-left: 16px;
-}
-#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_location_city {
-    max-width: 167px !important;
-}
-#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_years_at_location {
-    max-width: 80px !important;
+#originator .manager-biography {
+flex: 1;
 }
 
-#sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_months_at_location {
-    max-width: 80px !important;
+#sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_alimony_child_support_alimony, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_alimony_child_support_child_support, #sudoux_mortgagebundle_loanapplicationtype_borrower_declaration_alimony_child_support_separate_maintenance {
+width: 130px !important;
+padding: 10px !important;
+}
+.login-content .alert-error {margin-top: -10px; margin-bottom: 0px;}
+.page-loan-apply form {
+width: 80vw;
+}
+#branch-banner {
+height: 600px;
+}
+#branch-managers {
+width: auto;
+}
+.site-type-loan_officer section#originator {
+padding: 44px 0;
+width: 100%;
+}
+.site-type-loan_officer .branch-manager-section {
+width: 90%;
+}
+.site-type-loan_officer .manager-biography p {
+width: 90%;
+}
+.page-contact #product-banner {
+display: none;
+}
+.error-field {
+width: 100%;
+}
+.page-contact_info {
+padding: 28px 40px;
+width: 50%;
+background: linear-gradient(20deg, rgb(15, 71, 119) 0%, rgb(32, 104, 164) 64%);
+color: white;
+box-shadow: 1px 3px 9px rgba(0,0,0,.4);
+border-radius: 4px;
+margin: 110px auto -10px;
+}
+.page-contact section.inner-layout section#text-based div.col-md-4 form.contactform div.contact-submit-box input.btn.button-main {
+width: 600px;
+margin: 50px auto 10px;
+display: block;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+background: #006fa9;
+color: white;
+letter-spacing: .10em;
+border: none;
+}
+.page-contact_info .c-title {
+font-weight: bold;
+}
+.page-contact .contactform {
+width: 80%;
+margin: 10px auto;
+}
+.page-contact_info #contact-footer {
+font-weight: normal;
+}
+.page-contact .inner-layout .contactform .message {
+width: 100%;
+}
+.page-contact .inner-layout .contactform .message .smalltext {
+font-size: 13px;
+margin: -32px auto 30px;
+}
+.contactform .error-txt {
+font-size: 13px;
+margin: -32px auto 0px;
+}
+.question p {
+display: block;
+}
+.question:hover {
+background: transparent;
+}
+#search-questions {
+margin: 20px auto;
+padding: 13px;
+border-radius: 4px;
+font-size: 1rem;
+border: 1px solid rgba(0,0,0,.3);
+outline: none;
+font-family: 'neue-haas-unica', sans-serif;
+width: 55%;
+}
+#faq h3 {
+text-align: center;
+margin-bottom: 40px;
+}
+#blockquote {
+padding: 41px 3px;
+background: linear-gradient(20deg, rgb(15, 71, 119) 0%, rgb(32, 104, 164) 64%);
+color: white;
+font-size: 16px;
+box-shadow: 1px 3px 9px rgba(0,0,0,.4);
+border-radius: 4px;
+display: flex;
+justify-content: center;
+width: 60vw;
+margin: 0 auto;
+max-width: 1000px;
+min-width: 600px;
+text-align: center;
+}
+#contact-address {
+flex: 1;
+border-right: 1px solid rgba(255,255,255,.4);
+}
+#contact-phone {
+flex: 1;
+}
+#blockquote strong {
+border-bottom: 2px solid #D0EAFF;
+padding-bottom: 4px;
+margin: 0 3px;
+color: #D0EAFF;
 }
 
-@media only screen and (max-width: 980px) {
-.title {
-    display: none;
+.actions {
+justify-content: flex-start;
 }
-#comments .title {
-    display: block;
+
+.action {
+height: 300px;
+text-align: center;
 }
-.loan-app {
-    width: 95vw;
-    margin: 80px auto 0;
-    overflow-x: hidden;
+
+.action button {
+background: #78c254;
 }
-.control-label {
-    margin-bottom: 2px;
+
+.covid-action {
+background: linear-gradient(14deg, rgba(57, 21, 21, 0.57) 30%, rgba(83, 87, 87, 0.28) 80%), url('/uploads/sites/10713/public/covid.jpeg') top right no-repeat !important;
+background-size: auto, auto;
+background-size: cover !important;
 }
-.borrower-form {
-    width: 100%;
-    margin: 0 auto;
+
+.quiz-action {
+background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('/uploads/sites/10713/public/time-action.jpeg') top right no-repeat !important;
+background-size: auto, auto;
+background-size: cover !important;
 }
-#loan-application-nav li a > .description {
-    display: none;
+
+.reno-action {
+background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('/uploads/sites/10713/public/header.jpeg') top right no-repeat !important;
+background-size: auto, auto;
+background-size: cover !important;
 }
-#loan-app-form-step1 div.span-half:nth-child(1) > div:nth-child(9) > div:nth-child(2), #co-borrowers-wrapper > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    max-width: 300px;
-    margin-top: 1px;
+
+.licensed-state-action {
+background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('/uploads/sites/10713/public/licensed-states_1.jpeg') top right no-repeat !important;
+background-size: cover !important;
+margin-top: 130px;
 }
-.form-horizontal, #asset-real-estate-wrapper .clearfix {
-    flex-direction: column;
+
+.giving-back-action {
+background: linear-gradient(14deg, rgba(5, 6, 6, 0.51) 30%, rgba(107, 97, 28, 0.28) 80%), url('/uploads/sites/10713/public/heart-hands.jpeg') top right no-repeat !important;
+background-size: cover !important;
+margin-top: 35px;
 }
-.span-half {
-    width: 100% !important;
+
+.row-item .content {
+padding: 0;
 }
-.span-half:first-of-type {
-    padding-right: 0;
+#state-list h4 {
+margin: 40px 0 6px;
 }
-.span-half:last-of-type {
-    padding-left: 0;
+.text-content ul {
+margin-top: -15px;
 }
-#income-monthly-wrapper table {
-    margin-left: 0 !important;
+.content-row {
+margin: 15px auto;
+display: flex;
+flex-wrap: wrap;
+max-width: 1200px;
 }
-.table thead tr th:nth-of-type(1) {
-    padding-left: 0 !important;
+
+.page-page-detail .text-content {
+max-width: 64%;
 }
-.page-loan-apply th, .page-loan-apply td {
-    margin: 8px 0 !important;
-    font-size: 15px;
+.page-page-detail .text-content h3 {
+margin-bottom: 15px;
 }
-.declaration .choice-row {
-    margin-top: -8px;
-    align-items: center;
+.page-page-detail .text-content h4 {
+color: #006fa9;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 15px;
 }
-.loan-app .clearfix, .borrower-form header, .government-monitoring {
-    width: 90%;
+
+.page-page-detail .text-content p {
+margin: 0;
+padding-bottom: 20px;
 }
-form label, .government-monitoring p {
-    font-size: 15px;
+
+#home-banner {
+background: linear-gradient(40deg, rgba(0,39,60,.35) 70%, #78c2542b 80%), url(/uploads/sites/10713/public/pexel-family_1.jpeg) top right no-repeat;
+background-size: cover;
+background-position-y: 25%;
+height: 670px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+padding: 0 0 155px 105px;
+border-bottom: 10px solid #78c254;
+color: white;
 }
-#loan-app-form-step1 .span-half:first-of-type .control-group:nth-of-type(9) {
-    margin-top: 10px;
-    min-height: 275px;
+#home-reviews {
+background: radial-gradient(circle, rgba(15, 71, 119, 1) 0%, rgba(32, 104, 164, 1) 94%);
+color: #ffffff;
+width: 80%;
+margin: -100px auto 60px;
+z-index: 2;
+box-shadow: 1px 3px 9px rgba(0,0,0,.4);
 }
-#declarations-wrapper h4 {
-    display: none;
+#perks-home, #home-deserve, section#home-blog {
+display: none !important;
 }
-.declaration-summary p {
-    display: flex;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    margin-left: -10px;
-    font-size: 16px;
+#more-reviews > a:nth-child(1) {
+display: flex;
+align-items: center;
 }
-.borrower-initials-wrapper {
-    display: flex;
-    flex-direction: column;
+#more-reviews i {
+display: block;
+font-size: 40px;
+margin: 0;
+margin-left: 0px;
+margin-left: 25px;
 }
-.loan-app > p:first-of-type {
-    font-size: 15px;
-    text-align: center;
+#home-deserve {
+display: flex;
+flex-direction: column;
+width: auto;
 }
-#sudoux_mortgagebundle_loanapplicationtype_loan_type .choice-row {
-    min-height: 50px;
-    justify-content: flex-start;
-    width: 250px;
+#home-deserve iframe {
+display: none;
 }
-#sudoux_mortgagebundle_loanapplicationtype_borrower_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_co_borrower_0_location_months_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_years_at_location, #sudoux_mortgagebundle_loanapplicationtype_borrower_previous_location_0_months_at_location {
-    min-width: 99px !important;
+#you-totally-deserve-more {
+font-size: 60px;
+margin: 20px auto 60px;
+text-align: center;
 }
-.employment-form .span-half:last-of-type .control-group:nth-of-type(2) {
-    display: block;
-    color: transparent;
+#deserve-more-container-master {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+margin: 0 auto 70px;
 }
-#sudoux_mortgagebundle_loanapplicationtype_borrower_employment_0_end_date {
-    float: left;
+#deserve-more-container-master h3 {
+width: 100%;
+margin-bottom: 45px;
+order: -1;
+display: flex;
+justify-content: center;
+font-size: 60px;
 }
-.loan-app .radio-group input[type="radio"], .loan-app .checkbox-group input[type="checkbox"] {
-    min-width: 22px;
-    min-height: 22px;
-    flex: 0;
+#deserve-more-container-master img {
+width: 60%;
+height: auto;
 }
-.control-group {
-    min-height: 120px;
-    height: auto;
+#deserve-more-container-master iframe {
+height: 348px;
+width: 655px;
 }
-.pw-hint {
-    margin-top: -18px;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 10px;
+
+blockquote {
+padding: 65px;
+background: linear-gradient(20deg, rgb(15, 71, 119) 0%, rgb(32, 104, 164) 64%);
+color: white;
+font-size: 16px;
+box-shadow: 1px 3px 9px rgba(0,0,0,.4);
+border-radius: 4px;
 }
-thead {
-    width: 33%;
+blockquote span {
+display: block;
+font-size: 43px;
+margin-bottom: 16px;
+font-weight: bold;
+letter-spacing: .07em;
+text-transform: capitalize;
 }
-#asset-account-wrapper thead {
-    display: none;
+blockquote strong {
+border-bottom: 2px solid #D0EAFF;
+padding-bottom: 4px;
+margin: 0 3px;
+color: #D0EAFF;
 }
-#asset-account-wrapper tbody {
-    width: 100%;
-    margin-left: -10px;
-} 
-#asset-account-wrapper tr {
-    flex: 1;
+#we-believe-quote {
+margin: 0 !important;
+width: 100%;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: -17% !important;
+line-height: 36px;
 }
-#asset-account-wrapper td {
-    width: 100%;
+section#home-provide .content-block-list {
+display: flex;
+flex-direction: column;
 }
-#asset-account-wrapper .money-field input {
-    width: 104%;
+#start-your-story {
+margin: 30px auto -10px;
 }
-#assets-wrapper tbody, #employment-wrapper tbody {
-    margin-left: 50px;
+#we-believe-statement-styling {
+background: transparent;
+color: inherit;
+padding: 0;
+box-shadow: none;
+margin-top: 20px;
 }
-.declaration-summary p {
-    margin: 15px auto 15px -10px;
+#we-believe-statement-styling span {
+color: #006fa9;
+text-align: center;
+display: block;
+font-size: 38px;
+margin-bottom: 16px;
+font-weight: bold;
+letter-spacing: .07em;
+text-transform: capitalize;
 }
-.sigWrapper {
-    display: block;
-    width: 88vw;
+#we-believe-statement-styling strong {
+border-bottom: 2px solid #7FC24A;
+padding-bottom: 4px;
+margin: 0 3px;
+color: #7FC24A;
 }
-.hmdaEthnicitySelections .checkbox-group .choice-row:nth-of-type(5), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(9), .hmdaRaceSelections .checkbox-group .choice-row:nth-of-type(15) {
-    margin-bottom: 10px !important;
+#new-perk-plans {
+margin: 125px auto 35px;
 }
-#form {
-    min-width: 95%;
+#new-perk-plans a {
+display: block;
+margin: 23px 0 -20px;
+background: #D0EAFF;
+width: 200px;
+text-align: center;
+padding: 4px 0;
+border-radius: 5px;
+color: #18598f;
+font-weight: bold;
 }
-#creditWell .declaration .question {
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
+#we-provide-more-master {
+display: flex;
+flex-wrap: wrap;
+width: 94%;
+position: relative;
+margin: 25px auto 25px;
+}
+#we-provide-more-master h3 {
+color: #006fa9;
+font-size: 60px;
+width: 100%;
+text-align: center;
+margin-bottom: 35px;
+}
+#what-we-provide {
+display: flex;
+flex-direction: row;
+margin: 0 auto;
+margin-left: auto;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.we-provide-this {
+color: white;
+text-shadow: 1px 1px 1px rgba(0,0,0,.9);
+width: 40%;
+display: flex;
+flex-direction: column;
+box-shadow: 1px 1px 6px rgba(0,0,0,.24);
+padding: 50px 50px 35px 50px;
+margin: 15px auto 20px;
+border-radius: 4px;
+}
+.provided-links {
+padding-top: 20px;
+margin-bottom: 20px;
+}
+.provided-links a {
+background: white;
+border-radius: 5px;
+padding: 8px 15px;
+text-shadow: none;
+color: rgba(0,0,0,.8);
+font-weight: bold;
+letter-spacing: .09em;
+box-shadow: 0px 1px 8px rgba(0,0,0,.31);
+font-size: 16px;
+margin-right: 10px;
+opacity: .925;
+}
+.provided-links a:hover {
+opacity: 1;
+color: rgba(0,0,0,.95);
+box-shadow: 0px 1px 8px rgba(0,0,0,.5);
+}
+.we-provide-this h4 {
+color: white;
+margin-top: 120px;
+border-bottom: 1px solid rgba(255,255,255,.25);
+padding-top: 30px;
+font-weight: bold;
+padding-bottom: 20px;
+font-size: 2.4rem;
+letter-spacing: .1em;
+text-shadow: 2px 0px 1px rgb(0, 0, 0);
+}
+.we-provide-this p {
+font-size: 1.1rem;
+text-shadow: 2px 0px 1px rgb(0, 0, 0);
+}
+#we-provide-more-1 {
+background: linear-gradient(180deg, rgba(111, 111, 111, 0.35) 10%, #242424d1 80%), url(/uploads/sites/10713/public/more-resources.jpeg) top right no-repeat;
+background-size: cover;
+background-position-y: 100%;
+}
+#we-provide-more-2 {
+background: linear-gradient(180deg, rgba(111, 111, 111, 0.35) 10%, #242424d1 80%), url(/uploads/sites/10713/public/more-support.jpeg) top right no-repeat;
+background-size: cover;
+background-position-y: 100%;
+}
+#we-provide-more-3 {
+background: linear-gradient(180deg, rgba(111, 111, 111, 0.35) 10%, #242424d1 80%), url(/uploads/sites/10713/public/more-solutions.jpeg) top right no-repeat;
+background-size: cover;
+background-position-y: 60%;
+}
+#we-provide-more-4 {
+background: linear-gradient(180deg, rgba(111, 111, 111, 0.35) 10%, #242424d1 80%), url(/uploads/sites/10713/public/more-humanity.jpeg) top right no-repeat;
+background-size: cover;
+background-position-y: 60%;
 }
 #calculations-and-numbers {
-    padding-bottom: 60px;
+width: 90%;
+display: flex;
+margin: 60px auto -30px;
 }
-.borrower-previous-location-form {
-    margin: 0;
+.calculations-primary {
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+margin: 0 35px;
+}
+.calculations-primary h3 {
+margin-bottom: 15px;
+color: #006fa9;
+width: 100%;
+font-size: 28px;
+text-align: left;
+border-bottom: 1px solid rgba(0,0,0, .06);
+padding-bottom: 20px;
+}
+.calculations-primary img {
+order: -1;
+width: 300px;
+height: 253px;
+}
+.calculations-primary p {
+margin: 10px auto 25px;
+}
+.action-buttons-calcs {
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.action-buttons-calcs button {
+padding: 20px 25px;
+border-radius: 4px;
+width: auto;
+font-size: 13px;
+font-weight: bold;
+line-height: 27px;
+background: #7FC24A;
+}
+.action-buttons-calcs button:hover {
+background: #006fa9;
+}
+#home-blog {
+margin: 100px auto 15px;
+display: flex;
+padding: 0;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+}
+#home-blog h3 {
+margin: 0 auto 15px;
+width: 97%;
+text-align: center;
+border-bottom: 1px solid rgba(0,0,0, .06);
+padding-bottom: 20px;
+}
+.blog-home-entry {
+margin: 29px 7px 45px;
+color: white;
+text-shadow: 1px 1px 1px rgba(0,0,0,.9);
+display: flex;
+flex-direction: column;
+box-shadow: 1px 1px 6px rgba(0,0,0,.4);
+padding: 45px;
+border-radius: 8px;
+position: relative;
+flex: 1;
+}
+.blog-home-entry h4 {
+color: white;
+font-weight: bold;
+border-bottom: 1px solid rgba(255,255,255,.5);
+padding-bottom: 15px;
+margin-bottom: 5px;
+}
+.blog-home-entry p {
+height: 165px;
+}
+.read-blog-entry {
+order: 6;
+margin-top: 10px;
+position: absolute;
+bottom: 25px;
+}
+.read-blog-entry button {
+display: flex;
+padding: 15px 25px;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+background: #7FC24A;
+font-weight: bold;
+box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+.read-blog-entry button:hover {
+background: #006fa9;
+}
+div.blog-home-entry:nth-child(2) {
+background: linear-gradient(180deg, rgba(193, 127, 127, 0.35) 20%, #171717cc 70%), url(/uploads/sites/10713/public/blog-1.jpeg);
+background-size: auto, auto;
+background-size: cover;
+}
+div.blog-home-entry:nth-child(3) {
+background: linear-gradient(180deg, rgba(94, 96, 38, 0.35) 20%, #171717cc 70%), url(/uploads/sites/10713/public/blog-2.jpeg);
+background-size: auto, auto;
+background-size: cover;
+}
+div.blog-home-entry:nth-child(4) {
+background: linear-gradient(180deg, rgba(127, 134, 193, 0.16) 20%, #171717cc 70%), url(/uploads/sites/10713/public/blog-3.jpeg);
+background-size: auto, auto;
+background-size: cover;
+}
+#home-blog > a:nth-child(5) {
+width: 300px;
+display:block;
+margin: 20px auto;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+font-weight: bold;
+background: #006fa9;
+color: white;
+letter-spacing: .10em;
+border: none;
+}
+.user-login > #product-banner, .member-registration > #product-banner {
+background: linear-gradient(14deg, rgb(78 118 127 / 48%) 30%, rgb(28 85 107 / 28%) 80%), url(/uploads/sites/10713/public/login.jpeg) top left no-repeat;
+background-position-y: 0%, top;
+background-size: auto, auto;
+background-size: cover;
+background-position-y: 30%;
+}
+.alert-success {
+display: none;
+}
+.entry {
+min-height: 305px;
+}
+#page-banner h2, #video-banner h2, #product-banner h2, #brand-banner h2, #core-banner h2 {
+font-size: 60px;
+line-height: 1.5;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0,0,0,.65);
+letter-spacing: 1.9px;
+}
+.description-text {
+height: 50px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.description-text button {
+margin-top: 0;
+background: white;
+color: rgba(0,0,0,.9);
+font-weight: bold;
+margin-bottom: 30px;
+order: -1;
+}
+.header-links-content a.tel {
+padding: 5px 10px;
+background: transparent;
+color: white;
+font-size: 13px;
+letter-spacing: .13em;
+}
+
+.top-links-header {
+height: 30px;
+}
+#home-container {
+width: 500px;
+color: white;
+justify-content: space-between;
+display: flex;
+flex-direction: column;
+margin-left: -20px;
+}
+.container-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.container-section h3 {
+font-family: 'neue-haas-unica', sans-serif;
+color: white;
+margin-bottom: 20px;
+font-size: 50px;
+letter-spacing: 1.5px;
+text-shadow: 1px 2px 1px rgba(0,0,0,.50);
+}
+.container-section h3 span {
+font-weight: normal;
+font-size: 28px;
+margin-top: 2px;
+display: block;
+}
+.container-section strong {
+margin-top: -10px;
+font-size: 17px;
+letter-spacing: 1.25px;
+font-weight: 100;
+margin-bottom: 25px;
+text-shadow: 1px 2px 1px rgba(0,0,0,.25);
+}
+#button-container-home {
+margin: 0 !important;
+width: 350px;
+justify-content: flex-start;
+}
+#button-container-home > a  {
+background: #78c254;
+border: 1px solid #78c254;
+color: #FFF;
+border-radius: 10px;
+outline: none;
+padding: 12px 35px !important;
+font-weight: normal;
+width: auto;
+font-size: 13px;
+letter-spacing: .13em;
+padding: 18px 35px;
+font-weight: bold;
+font-size: 15px;
+border-radius: 8px;
+background: transparent;
+}
+#button-container-home > a:nth-child(1) {
+background: #006fa9;
+margin-left: 0;
+border: 1px solid #006fa9;
+}
+#button-container-home > a:nth-child(2){
+margin-left: 20px;
+}
+#button-container-home > a:nth-child(1):hover {
+background: #0f4777;
+border: 1px solid #0f4777;
+}
+#button-container-home > a:nth-child(2):hover {
+background: #78c254;
+}
+
+#about-blurb {
+width: 750px;
+padding: 20px;
+position: absolute;
+bottom: 20.4%;
+right: -5%;
+color: white;
+text-shadow: -1px 1px 1px rgba(0,0,0,.35);
+}
+#banner-deserve-more {
+text-align: center;
+display: block;
+font-size: 60px;
+word-spacing: 50vw;
+font-weight: normal;
+font-family: 'neue-haas-unica', sans-serif;
+line-height: 1.25;
+margin: 0;
+text-shadow: 8px 2px 9px rgba(0,0,0,.25);
+letter-spacing: 3.25px;
+}
+#banner-deserve-more span {
+font-size: 98px;
+letter-spacing: .12em;
+font-weight: bold;
+text-transform: uppercase;
+}
+#banner-deserve-more-2 {
+font-size: 32px;
+letter-spacing: 1.5px;
+text-shadow: none;
+text-align: center;
+font-weight: normal;
+font-style: italic;
+text-shadow: -1px 1px 1px rgba(0,0,0,.15);
+margin-bottom: 75px;
+}
+#button-container {
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}
+#button-container small {
+width: 100%;
+margin-bottom: 15px;
+font-size: 14px;
+text-align: center;
+}
+#button-container button {
+margin: 12px 18px;
+padding: 18px 35px;
+font-weight: bold;
+font-size: 15px;
+border-radius: 8px;
+background: transparent;
+}
+#button-container button:first-of-type {
+background: #006fa9;
+border: 1px solid #006fa9;
+}
+#annie_mac-branch > #home-reviews {
+order: -1;
+margin: -45px auto 60px;
+}
+.stage-number h4 {
+font-size: 2.8rem !important;
+color: #fff !important;
+font-weight: normal !important;
+padding: 15px 20px !important;
+margin-top: 0 !important;
+}
+.stage-step h5 {
+margin-bottom: 20px;
+}
+.round-dont {
+margin: 0 0 24px 0 !important;
+padding: 14px 26px !important;
+line-height: 30px;
+}
+#aw-acc-title {
+color: #006fa9;
+font-size: 30px;
+width: 100%;
+text-align: center;
+padding-bottom: 20px;
+}
+@media screen and (max-width: 1460px) {
+#calculations-and-numbers {
+    width: 90%;
     display: flex;
+    margin: 60px auto -30px;
     flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
 }
-.borrower-previous-location-form p small {
-    margin: -20px 0 -5px;
-}
-.borrower-previous-location-form.loan-form {
-    margin: 30px auto;
-        margin-left: auto;
-    margin-left: 26px;
-}
-.borrower-previous-location-form .span-half:first-of-type {
-    margin-left: -15px;
-}
-.borrower-previous-location-form .span-half:last-of-type {
-    padding-left: 0 !important;
-    margin-left: -15px;
-}
-.borrower-previous-location-form .span-half:last-of-type > .control-group:nth-of-type(2) .controls {
-    display: flex !important;
-    flex-wrap: wrap;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    max-width: 300px !important;
-    margin-top: 1px;
+div.calculations-primary:nth-child(2) {
+    margin-top: 50px;
 }
 }
-
-.radio-group .choice-row {
-    display: flex !important;
-    align-items: center !important;
-}
-
-.ui-datepicker-calendar table, .ui-datepicker-calendar tbody {
-    max-width: 300px;
-    height: 300px;
-    background: white;
-}
-
-.ui-datepicker-calendar thead {
-    display: none;
-}
-
-.ui-datepicker-calendar tr {
-    flex-direction: row;
-    width: 300px;
-    background: white;
-}
-
-.ui-datepicker-calendar tr > * {
-    width: 49px;
-    margin: 0 !important;
-    background: white;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1390px) {
+#home-banner {
+    background-position-y: 19%;
+    max-height: 545px;
+    padding: 0 0 155px 0;
+    justify-content: flex-end;
+    text-align: center;
     align-items: center;
 }
-
-.ui-datepicker-calendar tbody tr {
-    margin-right: 0 !important;
-    margin-bottom: 0 !important;
+.container-section {
+    margin: 0 auto;
+}
+.container-section strong {
+    font-size: 18px;
+    margin: -10px auto 25px;
+}
+#button-container-home {
+    margin: 0 auto !important;
+}
+}
+@media screen and (max-width: 1279px) {
+#home-reviews > div > div:nth-child(2) {
+    display: none;
+}
+#deserve-more-container-master iframe {
+    margin: 0 auto 40px;
+}
+#start-your-story {
+    flex: none;
+}
+#we-believe-quote {
+    margin-left: 2% !important;
+}
+#start-your-story {
+    width: 100%;
+}
+#we-provide-more-master h3 {
+    width: 91%;
+    margin: 0 auto 35px;
+}
+.we-provide-this {
+    margin: 0 auto 25px;
+    width: 88%;
+    height: auto;
+}
+.we-provide-this h4 {
+    padding-top: 1px;
+    margin-top: 58px;
+}
+.provided-links {
+    margin-top: 20px;
+    padding-top: 0;
+}
+#new-perk-plans blockquote strong {
+    display: inline-block;
+}
+}
+@media screen and (max-width: 1070px) {
+.site-type-loan_officer .manager-information {
+    display: flex;
+    flex-direction: column;
+}
+.site-type-loan_officer  #text-information {
+    flex-direction: column;
+    order: 0;
+    flex: 1;
+}
+.site-type-loan_officer  #originator .team-member-information {
+    width: 90%;
+    margin: -25px auto 30px;
+    display: flex;
+    justify-content: center;
+}
+.site-type-loan_officer  #contact-buttons {
+    flex-direction: row;
+    order: 3;
+    margin: 10px auto -20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.site-type-loan_officer  #contact-buttons button {
+    margin: 0;
+    margin-top: 0px;
+    height: 45px;
+    margin-top: 5px;
+}
+}
+@media screen and (max-width: 970px) {
+.product-block {
+    width: 100% !important;
+}
+#home-banner {
+    height: 300px;
+    background-size: cover;
+    padding: 0 0 115px 0;
+}
+#more-reviews > a:nth-child(1) {
+    display: flex;
+    align-content: center;
+    margin: -25px auto;
+}
+#home-container {
+    margin-left: 0;
+}
+.container-section h3 {
+    font-size: 30px;
+}
+.container-section h3 span {
+    font-size: 22px;
+}
+.container-section strong {
+    display: none;
+}
+#home-reviews {
+    width: 100%;
+    margin: 0 auto 60px;
+    padding: 40px 0;
+}
+div.review:nth-child(3) {
+    display: none;
+}
+.review {
+    flex: 100%;
+}
+#deserve-more-container-master {
+    width: 100%;
+}
+#deserve-more-container-master h3, #we-provide-more-master h3 {
+    margin: -25px auto 45px;
+    font-size: 35px;
+    color: #006FA9;
 }
 
-.ui-datepicker-calendar tr td a {
-    border: none !important;
-    background: transparent !important;
+.provided-links a {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+.we-provide-this h4 {
+    padding-top: 1px;
+    margin-top: 25px;
+}
+.provided-links {
+    margin-top: 5px;
+    padding-bottom: 0;
+}
+#new-perk-plans {
+    visibility: hidden;
+    height: 0;
+    margin: 40px auto -40px;
+}
+.we-provide-this h4 {
+    font-size: 33px;
+    text-align: center;
+}
+.we-provide-this p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+.action-buttons-calcs {
+    flex-direction: column;
+}
+.calculations-primary {
+    margin: 20px 0;
+}
+#home-blog {
+    flex-direction: column;
+}
+.blog-home-entry {
+    padding: 45px 30px 35px;
+}
+.blog-home-entry h4, .blog-home-entry p {
+    height: auto;
+    text-align: center;
+}
+}
+@media screen and (max-width: 900px) {
+#home-provide {
+    width: 95%;
+    padding: 10px;
+}
+#start-your-story {
+    margin-top: -25px;
+}
+#we-believe-statement-styling {
+    margin: 15px 20px;
+}
+.page-page-detail .text-content {
+    max-width: 96%;
+    margin: 0 auto;
+}
+#page-banner h2, #video-banner h2, #product-banner h2, #brand-banner h2, #core-banner h2 {
+    font-size: 28px;
+}
+}
+@media screen and (max-width: 600px) {
+.review p {
+    margin-bottom: -25px
+}
+#deserve-more-container-master {
+    margin: 0 auto 30px;
+}
+#deserve-more-container-master h3 {
+    margin: -25px auto 0;
+}
+#deserve-more-container-master iframe {
+    height: 286px;
+    width: 455px;
+}
+#we-provide-more-master h3 {
+    margin: -25px auto 30px;
+}
+#we-provide-more-master {
+    width: 100%;
+    margin: 25px auto 0;
+}
+.we-provide-this {
+    padding: 40px 20px;
+    width: 90%;
+}
+.provided-links a {
+    font-size: 14px;
+}
+.blog-home-entry {
+    padding: 40px 20px;
+    width: 88%;
+    margin-bottom: 15px;
+}
+.we-provide-this h4, .blog-home-entry h4 {
+    font-size: 26px;
+    text-align: center;
+    border: none;
+    padding-bottom: 0;
+    margin-top: 5px;
+}
+.we-provide-this p, .blog-home-entry p {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+    margin: 18px auto;
+}
+.provided-links {
+    width: 85%;
+    margin: 0 auto;
+}
+#calculations-and-numbers {
+    margin: 20px auto -30px;
+}
+.calculations-primary h3 {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+.calculations-primary img {
+    display: none;
+}
+.action-buttons-calcs button {
+    border-radius: 5px;
+    padding: 8px 15px;
+    letter-spacing: .09em;
+    font-size: 14px;
+}
+#conventional-purchase, #va-purchase, #fha-purchase, #usda-purchase, #renovation-purchase, #jumbo-purchase, #text-based {
+    width: 90%;
+    margin: 20px auto;
+}
+.product-block {
+    width: 100%;
+}
+.calculator-first-time, .about-blub-side {
+    width: 88%;
+}
+.question {
+    padding: 0;
+}
 }
 
-@media screen and (max-width: 1190px) { 
-    #list_11930 {
-        display: none;
-    }
+body > .main-content{
+max-width: 100vw !important;
+overflow-x: hidden;
 }
-
-@media screen and (max-width: 1006px) {
-    .navigation-sectional:nth-of-type(3) li:last-of-type {
-        display: block !important;
-    }
+.blog-image, #blog-entry-page .date {
+display: none;
 }
-
-@media only screen and (max-width: 800px) {
-    #loan-originator-backdrop {
-        height: 800px;
-    }
-    #originator-core-details-portrait img {
-        margin: -90px auto 50px;
-    }
-    #originator-core-details {
-        flex-direction: column;
-    }
-    #originator-social-details {
-        margin-bottom: -100px;
-    }
-    #list_11344 {
-        display: none;
-    }
-    #covid-warning {
-        margin-top: 0;
-        margin-bottom: 60px;
-    }
+#blog-entry-page p {
+width: 100%;
+margin: -11px 0 25px;
+font-size: 16px;
 }
-
-.navigation-sidebar-sectional ul li {
-    display: block !important;
+#blog-entry-page {
+margin-top: 70px;
+margin-bottom: 20px;
+padding: 0;
 }
-@media only screen and (max-width: 1114px) {
-    #inserted-banner {
-        display: none;
-    }
+#blog-entry-page h3 {
+display: block;
+font-size: 30px;
+text-align: left;
+width: 100%;
 }
-
-@media only screen and (min-width: 1115px) {
-    #annie_mac-loan-officer {
-        display: flex;
-        background: #fff;
-        color: #333;
-    }
-    #loan-originator-backdrop {
-        background: none;
-        /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
-        background: none;
-        background-position-y: 43.5%;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        order: 2;
-        padding: 0 20px;
-        margin-right: 0px;
-        min-width: 400px;
-        flex: 1;
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    #annie_mac-loan-officer > #originator {
-        margin-top: -28px;
-        margin-right: -15px;
-    }
-    #covid-warning {
-        background: #ffe7dc;
-        margin-bottom: -1px;
-        color: #a91202;
-        padding: 14px 25px;
-        line-height: 1.6;
-        margin-top: 0;
-        margin: 10px;
-        border-radius: 5px;
-    }
-    #loan-originator-blurb-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-shadow: 0 0 black;
-        width: 100%;
-        background: rgba(0,0,0,.05);
-        border-radius: 4px;
-        border: 1px solid rgba(0,0,0,.2);
-        box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
-    }
-    #originator-core-details-text {
-        background: rgba(0,0,0,.025);
-        border-top: 1px solid rgba(0,0,0,.10);
-        padding: 20px;
-        border-bottom: 1px solid rgba(0,0,0,.10);
-        margin-bottom: 20px;
-        min-width: 362px;
-    }
-    #loan-originator-blurb-container h2 {
-        font-size: 27px;
-        text-shadow: none;
-        text-align: left;
-        color: black;
-        opacity: .8;
-    }
-    #loan-originator-blurb-container h4 {
-        letter-spacing: 1px;
-        font-size: 16px;
-        text-shadow: none;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        color: black;
-        opacity: .67;
-        font-weight: bold;
-    }
-    #originator-core-details-text h4 span {
-        margin-top: 5px;
-        font-weight: normal;
-        color: inherit;
-        font-size: 12px;
-    }
-    #originator-address-details {
-        line-height: 30px;
-        font-size: 16px;
-        text-shadow: none;
-        color: black;
-        opacity: .8;
-    }
-    #originator-address-details p {
-        text-align: left;
-        opacity: 1;
-        margin-bottom: 0;
-        font-size: 15px;
-        line-height: 22px;
-    }
-    #originator-core-details-portrait img {
-        background: transparent;
-        max-width: 210px;
-        max-height: 210px;
-        border-radius: 0;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        border-radius: 100%;
-    }
-    #originator-main-details {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Inter', sans-serif;
-    }
-    #originator-core-details {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 0;
-        border-right: none;
-        margin-right: 0;
-        text-align: center;
-        padding-top: 30px;
-    }
-    #originator-social-details {
-        width: inherit;
-    }
-    #originator-social-details ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: nowrap;
-        align-self: flex-end;
-        width: 100%;
-        margin-top: -21px;
-        flex-direction: column;
-    }
-    #originator-social-details ul a {
-        border-top: 1px solid rgba(0,0,0,.05);
-        width: 100%;
-    }
-    #originator-social-details li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-        width: auto;
-        font-size: 15px;
-        height: 45px;
-        justify-content: flex-start;
-        color: black;
-        opacity: .7;
-    }
-    #originator-social-details li i {
-        font-size: 18px;
-        margin-bottom: 0;
-        text-shadow: none;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-    }
-    .site-type-loan_officer .manager-biography p {
-        width: auto;
-        padding: 0 25px;
-    }
-    .manager-biography h2:first-of-type {
-        font-size: 25px;
-        color: #006fa9;
-        margin: 25px auto 15px;
-        display: block;
-        text-align: center;
-    }
-    #inserted-banner {
-        height: 350px;
-        background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        padding-top: 60px;
-        background-position-y: 68%;
-        background-size: 101%;
-    }
-    #inserted-banner .container-section {
-        flex-direction: column;
-    }
-    #inserted-banner #button-container-home > a:nth-child(1) {
-        margin-left: 0;
-        background: #006fa9;
-        border-radius: 5px;
-        color: white !important;
-        letter-spacing: 1px;
-        border: none;
-        font-family: protipo, -apple-system, "Helvetica Neue", Helvetica, "Hiragino Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 17px;
-    }
-    #inserted-banner > #button-container-home > a:nth-child(1):hover {
-        border: none;
-    }
-    #accolades-originator {
-        /* margin-right: -460px; */
-    }
-    #accolates-originator #we-provide-more-master {
-        margin: 0;
-    }
-    #accolates-originator #what-we-provide {
-        flex-direction: column;
-    }
-    #accolades-originator .we-provide-this {
-        width: 100%;
-    }
-    #accolades-originator .we-provide-this h4 {
-        color: white;
-        margin-top: 12px;
-    }
-    #accolades-originator .calculations-primary img {
-        display: none;
-    }
-    #annie_mac-loan-officer .manager-biography p {
-        text-align: justify;
-    }
-    #accolades-originator #calculations-and-numbers {
-        width: 100%;
-        margin: 45px 0 0 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .site-type-loan_officer .branch-manager-section {
-        width: 95%;
-        padding: 40px 15px 50px;
-    }
+.page-loan-apply .alert-error {
+text-align: center !important;
+color: white !important;
+line-height: 1 !important;
+padding: 30px 0 !important;
+width: 100% !important;
 }
