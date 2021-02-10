@@ -1486,6 +1486,7 @@ thead {
         margin: 25px auto 15px;
         display: block;
         text-align: center;
+        font-family: 'inter',sans-serif;
     }
     #inserted-banner {
         height: 350px;
