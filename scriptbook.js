@@ -1,7 +1,7 @@
 // Variables to drop HTML below:
 var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
-var loanoriginatornmls  = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 var firstname = loanoriginatorname.split(" ");
+var loanoriginatornmls  = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 var bookingLinkLoanOriginatorDrop = '<a href="/page/bookings"><button style="background: #78c254">Book</button></a>';
 var prequalLinkLoanOriginatorDrop = '<a href="/loan/graphic-prequal"><button>Prequal</button></a>';
 var covid = '<div id="covid-warning"><h4>To those affected by COVID-19</h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
