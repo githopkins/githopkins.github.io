@@ -13,19 +13,22 @@ var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Li
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
-	// Remove the link for My Mortgage
-	// $("#calculators-navigation > a").removeAttr("href");
-	// $("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
-	// $("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
-	// $("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
-	// $('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
-	// $("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
-	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
-	
-// Login Error
-	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
-	// $(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
-	
+	if (
+		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
+		(window.location.href.indexOf("mylendingrate.com") != -1)
+		) {
+		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='http://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
+		$("#team-display > div.team-member-section > div:nth-child(7)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(7)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(7)").prependTo(".branch-manager-section");
+		$("#team-display > div.team-member-section > div:nth-child(4)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(4)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(4)").prependTo(".branch-manager-section");
+		$("#team-display > div.team-member-section > div:nth-child(2)").addClass("manager-information");
+		$("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
+		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
+		$("#branch-managers > div > div:nth-child(3)").css("order", "-1");
+	}
 	if (
 		(window.location.href.indexOf("jamiehannigan.annie-mac.com") != -1) || 		
 		(window.location.href.indexOf("joeharrison.annie-mac.com") != -1) || 
@@ -54,22 +57,6 @@ $(document).ready(function() {
 	if (window.location.href.indexOf("themtgco.com") != -1) {	
 		$("body > nav > div.top-links-header.order-1 > div > a.tel").text("855-559-8651");
 		$("body > nav > div.top-links-header.order-1 > div > a.tel").attr("href", "tel:855-559-8651");
-	}
-	if (
-		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
-		(window.location.href.indexOf("mylendingrate.com") != -1)
-		) {
-		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='http://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
-		$("#team-display > div.team-member-section > div:nth-child(7)").addClass("manager-information");
-		$("#team-display > div.team-member-section > div:nth-child(7)").removeClass("team-member");
-		$("#team-display > div.team-member-section > div:nth-child(7)").prependTo(".branch-manager-section");
-		$("#team-display > div.team-member-section > div:nth-child(4)").addClass("manager-information");
-		$("#team-display > div.team-member-section > div:nth-child(4)").removeClass("team-member");
-		$("#team-display > div.team-member-section > div:nth-child(4)").prependTo(".branch-manager-section");
-		$("#team-display > div.team-member-section > div:nth-child(2)").addClass("manager-information");
-		$("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
-		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
-		$("#branch-managers > div > div:nth-child(3)").css("order", "-1");
 	}
 	// Team: Autullo
 	if (window.location.href.indexOf("cincinnati.annie-mac.com") != -1) {
