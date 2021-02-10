@@ -12,20 +12,7 @@ var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>'
 var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/page/buyer-guide"><li>First Time Home Buyer</li></a><a href="/page/faq"><li>Frequent Questions</li></a><a href="/mortgage/quiz"><li>Assess Your Situation</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a><a href="/contact"><li>Contact Me</li></a></ul></div>';
 
 $(document).ready(function() {
-	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
-	// Remove the link for My Mortgage
-	// $("#calculators-navigation > a").removeAttr("href");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").hide(); 
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2) > button").text("My Application");
-	$("body > nav > div.top-links-header.order-1 > div > a:nth-child(2)").prepend(myservice);	
-	$('#loan-application-nav > li:nth-child(7) > a:nth-child(1) > span:nth-child(1)').text("Final Review");
-	$("#loan-officer-wrapper > label:nth-child(1)").text("If you are working with a loan officer, select from below. If not, please skip.");
-	// $(".site-type-team #branch-managers > div > div > div > button.go.flex.space-between.align-center").text("Apply On Website");
-	
-// Login Error
-	// $(lockedAccount).insertBefore( $( ".user-login .inner-layout #form > p:nth-child(4)" ) );
-	$(".user-login .inner-layout #form  div.alert.alert-error").text("Your email or password is incorrect. Please check your information and try again. Keep in mind, this login is for new applicants. If you are already a borrower of ours, you can manage your account using the manage payment link below. If you are looking to complete your application and  are still having trouble accessing your account, please reach out to us using the link below.");
-	
+	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();	
 	if (
 		(window.location.href.indexOf("jamiehannigan.annie-mac.com") != -1) || 		
 		(window.location.href.indexOf("joeharrison.annie-mac.com") != -1) || 
