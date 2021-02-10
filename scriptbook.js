@@ -211,7 +211,6 @@ $(document).ready(function() {
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 
-	// Booking link for loan originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		$(".site-type-team #team-display").prepend(loanOfficerBoxlet);
 		$( covid ).insertBefore( $( "#biography" ) );
