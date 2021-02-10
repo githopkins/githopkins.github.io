@@ -1495,7 +1495,7 @@ thead {
 }
 .site-type-loan_officer .manager-biography p {
     width: auto;
-    padding: 0 25px;
+    padding: 0;
 }
 .manager-biography h2:first-of-type {
     font-size: 35px;
@@ -1659,6 +1659,9 @@ thead {
     }
     #inserted-banner > .container-section > h3 {
         font-size: 35px !important;
+    }
+    #originator-core-details-text {
+        padding: 20px 0;
     }
 }
 @media screen and (max-width: 500px) { 
