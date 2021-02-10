@@ -226,7 +226,7 @@ $(document).ready(function() {
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 
-	// Booking link for loan originators:
+	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 		$( covid ).insertBefore( $( "#biography" ) );
