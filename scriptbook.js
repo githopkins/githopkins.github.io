@@ -8,6 +8,7 @@ var lockedAccount = '<p class="locked-account"><a href="mailto:myaccount@annie-m
 var loanOfficerBoxlet = '<div id="team-site-warning">Please find your loan officer from those listed below and click "More Information" to go to their website to apply.</div>';
 var myservice = '<button><a href="https://www.anniemacservicing.com">Pay My Mortgage</a></button>';
 var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '<span>' + loanoriginatornmls + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a></div></div></div>';
+var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/mortgage/quiz"><li>Assess Your Situation</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a></ul></div>';
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
@@ -27,6 +28,7 @@ $(document).ready(function() {
 // Booking link for loan originators:
 if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+	$(fullwidthsidebarlinks).insertAfter( $( "#loan-originator-blurb-container" ) );
 	// $(dropbanner).insertAfter('#site-navigation');
 	$( ".manager-biography h2" ).prepend("About ");
 	// $("#apply-navigation").css("display", "flex");

@@ -1622,6 +1622,24 @@ thead {
         margin-left: 40px;
     }
 }
+@media screen and (min-width: 1200px) {
+    #links-sidebar-full-width {
+        display: block;
+        margin-top: 50px;
+        margin-left: 37px;
+    }
+    #links-sidebar-full-width h4 {
+        font-size: 21px;
+        color: #333;
+    }
+    #links-sidebar-full-width a {
+        color: #036fa8;
+    }
+    #links-sidebar-full-width ul {
+        margin-top: 16px;
+    }
+}
+
 @media screen and (max-width: 970px) { 
     #inserted-banner {
         height: 250px;
@@ -1637,6 +1655,9 @@ thead {
     #originator-main-details {
         flex-direction: column;
     }
+}
+#links-sidebar-full-width { 
+    display: none;
 }
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'inter', sans-serif !important;
