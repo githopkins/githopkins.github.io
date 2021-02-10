@@ -31,11 +31,7 @@ if ($('body').hasClass('site-type-loan_officer')) {
 	$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 	$(fullwidthsidebarlinks).append("#loan-originator-blurb-container");
 	$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
-	// $(dropbanner).insertAfter('#site-navigation');
 	$( ".manager-biography h2" ).prepend("About ");
-	// $("#apply-navigation").css("display", "flex");
-	// $("#apply-navigation").css("margin-right", "10px");
-	// $("#apply-navigation").css("align-items", "center");
 
 // PREQUAL link for loan originators who request:
 // if ((window.location.href.indexOf("rudybenitez.annie-mac.com") != -1) || 
