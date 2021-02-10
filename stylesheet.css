@@ -1616,6 +1616,22 @@ thead {
         margin-left: 40px;
     }
 }
+@media screen and (max-width: 970px) { 
+    #inserted-banner {
+        height: 250px;
+    }
+    #inserted-banner > .container-section > h3 {
+        font-size: 35px !important;
+    }
+}
+@media screen and (max-width: 500px) { 
+    #inserted-banner {
+        margin-bottom: 65px;
+    }
+    #originator-main-details {
+        flex-direction: column;
+    }
+}
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'inter', sans-serif !important;
 }
