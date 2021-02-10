@@ -130,3 +130,4 @@ $( document ).ready(function() {
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 });
+);
