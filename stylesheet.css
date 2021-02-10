@@ -1701,6 +1701,9 @@ p, li, a {
     #inserted-banner > .container-section > h3 {
         font-size: 35px !important;
     }
+    #originator-main-details {
+        flex-direction: column;
+    }
     #originator-core-details-text {
         padding: 20px 0;
     }
@@ -1713,6 +1716,9 @@ p, li, a {
         margin-top: -45px;
         padding: 30px 25px;
         margin-bottom: 10px;
+    }
+    #loan-originator-backdrop {
+        margin-top: 0;
     }
 }
 @media screen and (max-width: 500px) { 
