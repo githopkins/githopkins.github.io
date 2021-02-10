@@ -1598,6 +1598,14 @@ thead {
     width: 280px;
     margin: 0 23px 0 0;
 }
+@media screen and (min-width: 1201px) {
+    #originator-social-details a:first-of-type {
+        background: #036fa8;
+    }
+    #originator-social-details a:first-of-type li, #originator-social-details a:first-of-type li i {
+        color: white;
+    }
+}
 @media screen and (max-width: 1200px) {
     #annie_mac-loan-officer {
         flex-direction: column;
@@ -1610,8 +1618,8 @@ thead {
         order: -1;
     }
     #loan-originator-blurb-container {
-        border-left: none;
-        padding-left: 0;
+        border-right: none;
+        padding-right: 0;
         border-bottom: 1px solid rgba(0,0,0,.15);
         padding-bottom: 0px;
     }
