@@ -226,9 +226,11 @@ $(document).ready(function() {
 		$("#navigation-logo > a > img").css("margin-top", "3px");
 	}
 
-	// Booking link for loan originators:
+	// LOAN ORIGINATORS:
 	if ($('body').hasClass('site-type-loan_officer')) {	
-		$(".site-type-team #team-display").prepend(loanOfficerBoxlet);
-		$( covid ).insertBefore( $( "#biography" ) );
+		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
+		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
+		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	}
 });
