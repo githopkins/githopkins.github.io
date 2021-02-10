@@ -1638,6 +1638,9 @@ thead {
     #links-sidebar-full-width ul {
         margin-top: 16px;
     }
+    #accolades-originator #calculations-and-numbers {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 970px) { 
