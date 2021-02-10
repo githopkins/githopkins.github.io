@@ -1655,6 +1655,7 @@ thead {
 @media screen and (max-width: 970px) { 
     #inserted-banner {
         height: 250px;
+        margin-bottom: 100px;
     }
     #inserted-banner > .container-section > h3 {
         font-size: 35px !important;
