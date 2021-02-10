@@ -1538,6 +1538,9 @@ thead {
 #inserted-banner > #button-container-home > a:nth-child(1):hover {
     border: none;
 }
+#originator .manager-biography {
+    margin-left: 0px;
+}
 #accolades-originator {
     /* margin-right: -460px; */
 }
