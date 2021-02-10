@@ -1570,3 +1570,7 @@ thead {
     width: 280px;
     margin: 0 23px 0 0;
 }
+
+body > * {
+    font-family: 'inter', sans-serif !important;
+}
