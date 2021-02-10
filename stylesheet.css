@@ -1589,6 +1589,32 @@ thead {
     #annie_mac-loan-officer {
         flex-direction: column;
     }
+    #annie_mac-loan-officer > #originator {
+        max-width: none;
+        margin: 0 auto;
+    }
+    #loan-originator-backdrop {
+        order: -1;
+    }
+    #loan-originator-blurb-container {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        padding-bottom: 20px;
+    }
+    #originator-main-details {
+        flex-direction: row;
+        width: auto;
+        margin: 0 auto;
+    }
+    #originator-core-details-text {
+        min-width: auto;
+    }
+    #originator-social-details {
+        width: 300px;
+        margin: 0;
+        margin-left: 40px;
+    }
 }
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'inter', sans-serif !important;
