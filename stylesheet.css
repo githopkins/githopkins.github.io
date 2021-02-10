@@ -1363,7 +1363,6 @@ thead {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    flex: 1;
     width: 85%;
     margin: 30px auto 10px;
 }
