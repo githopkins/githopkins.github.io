@@ -210,7 +210,7 @@ $(document).ready(function() {
 		$("#team-display > div.team-member-section > div:nth-child(1)").prependTo(".branch-manager-section");
 		$("#team-display > h3:nth-child(3)").hide();
 	}
-	
+}
 $("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
 	// Originators:
 	if ($('body').hasClass('site-type-loan_officer')) {	
