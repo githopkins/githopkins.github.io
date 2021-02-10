@@ -1709,6 +1709,7 @@ p, li, a {
     }
     #originator-social-details ul a {
         border-top: none;
+        width: 80px;
     }
     #originator-social-details ul {
         flex-direction: row;
