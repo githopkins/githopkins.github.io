@@ -1466,8 +1466,7 @@ thead {
         font-size: 15px;
         height: 45px;
         justify-content: flex-start;
-        color: black;
-        opacity: .7;
+        color: #555;
     }
     #originator-social-details li i {
         font-size: 18px;
@@ -1476,6 +1475,7 @@ thead {
         width: 50px;
         display: flex;
         justify-content: center;
+        color: #036fa8;
     }
     .site-type-loan_officer .manager-biography p {
         width: auto;
