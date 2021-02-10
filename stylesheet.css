@@ -1406,7 +1406,7 @@ p, li, a {
     font-size: 27px;
     text-shadow: none;
     text-align: left;
-    opacity: .8;
+    color: #333;
     font-family: 'inter', sans-serif;
 }
 #loan-originator-blurb-container h4 {
@@ -1416,7 +1416,7 @@ p, li, a {
     display: flex;
     flex-direction: column;
     text-align: left;
-    opacity: 1;
+    color: #333;
     font-weight: normal;
 }
 #originator-core-details-text h4 span {
