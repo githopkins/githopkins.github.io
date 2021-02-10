@@ -107,9 +107,9 @@
 .manager-biography p:first-of-type {
     margin-top: 0px;
 }
-/* .manager-biography iframe {
+.manager-biography iframe {
     display: none;
-} */
+}
 #loan-originator-blurb-container h2 {
     font-size: 35px;
 }
