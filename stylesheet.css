@@ -1685,9 +1685,6 @@ p, li, a {
     #inserted-banner > .container-section > h3 {
         font-size: 35px !important;
     }
-    #originator-main-details {
-        flex-direction: column;
-    }
     #originator-core-details-text {
         padding: 20px 0;
     }
@@ -1704,25 +1701,6 @@ p, li, a {
     #loan-originator-backdrop {
         margin-top: 0;
     }
-    #originator-social-details {
-        width: auto;
-    }
-    #originator-social-details ul a {
-        border-top: none;
-        width: 80px;
-    }
-    #originator-social-details ul {
-        flex-direction: row;
-        margin: 0 auto;
-    }
-    #originator-social-details li {
-        visibility: hidden;
-        width: 65px;
-    }
-    #originator-social-details li i {
-        visibility: visible;
-        font-size: 20px;
-    }
     #loan-originator-blurb-container {
         padding-bottom: 60px;
     }
@@ -1733,5 +1711,19 @@ p, li, a {
     }
     #originator-main-details {
         flex-direction: column;
+    }
+    #loan-originator-backdrop {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #originator-main-details {
+        margin-left: 0;
+        padding-left: 0;
+        width: unset;
+    }
+    #originator-core-details-portrait img {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
     }
 }
