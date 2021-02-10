@@ -1578,6 +1578,7 @@ p, li, a {
 }
 #annie_mac-loan-officer .manager-biography p {
     text-align: justify;
+    margin: 8px 0;
 }
 #accolades-originator #calculations-and-numbers {
     width: 100%;
