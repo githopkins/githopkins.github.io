@@ -1543,9 +1543,8 @@ p, li, a {
     color: white !important;
     letter-spacing: 1px;
     border: none;
-    font-family: protipo, -apple-system, "Helvetica Neue", Helvetica, "Hiragino Sans", sans-serif;
+    font-family: 'inter', sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
     font-size: 16px;
     line-height: 17px;
 }
