@@ -12,9 +12,7 @@ var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>'
 var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/page/buyer-guide"><li>First Time Home Buyer</li></a><a href="/page/faq"><li>Frequent Questions</li></a><a href="/mortgage/quiz"><li>Assess Your Situation</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a><a href="/contact"><li>Contact Me</li></a></ul></div>';
 
 $( document ).ready(function() {
-	if (
-		(window.location.href.indexOf("louisville.annie-mac.com") != -1)
-		) {
+	if (window.location.href.indexOf("louisville.annie-mac.com") != -1) {
 		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
 		$("#team-display > div.team-member-section > div:nth-child(7)").addClass("manager-information");
 		$("#team-display > div.team-member-section > div:nth-child(7)").removeClass("team-member");
