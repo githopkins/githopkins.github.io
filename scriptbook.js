@@ -20,7 +20,7 @@ $( document ).ready(function() {
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	}
+	};
 	// Domains
 	if (
 		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
@@ -37,7 +37,7 @@ $( document ).ready(function() {
 		$("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
 		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
 		$("#branch-managers > div > div:nth-child(3)").css("order", "-1");
-	}
+	};
 	if (
 		(window.location.href.indexOf("jamiehannigan.annie-mac.com") != -1) || 		
 		(window.location.href.indexOf("joeharrison.annie-mac.com") != -1) || 
@@ -62,7 +62,7 @@ $( document ).ready(function() {
 		) {
 		$("#navigation-logo > a > img").attr("src", "https://annie-mac.com/uploads/sites/11832/public/7283-SEPT2020_AM-Community-Mortgage-Team-Logo-WEBSITE.png");
 		$("#navigation-logo > a > img").css("margin-top", "6px");
-	}
+	};
 	if (window.location.href.indexOf("themtgco.com") != -1) {	
 		$("body > nav > div.top-links-header.order-1 > div > a.tel").text("855-559-8651");
 		$("body > nav > div.top-links-header.order-1 > div > a.tel").attr("href", "tel:855-559-8651");
@@ -195,7 +195,7 @@ $( document ).ready(function() {
 	if (window.location.href.indexOf("teambruner.annie-mac.com") != -1) {
 		$("#branch-content > h2").text("Team Bruner");
 		$(document).prop('title', 'Team Bruner');		
-	}
+	};
 	if (window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) {
 			$("body > div.team-member-section > div:nth-child(4)").addClass("manager-information");
 			$("body > div.team-member-section > div:nth-child(4)").removeClass("team-member");
@@ -203,7 +203,7 @@ $( document ).ready(function() {
 			$("body > div.team-member-section > div:nth-child(1) > div > button:nth-child(6)").html("(386) 427-3445 <i class='fas fa-mobile-alt'></i>");
 			$("body > div.team-member-section > div:nth-child(3) > div > button:nth-child(6)").html("(407) 205-0190 x1816 <i class='fas fa-mobile-alt'></i>");
 			$("#branch-managers > div > div > button:nth-child(6)").html("386-427-3445 <i class='fas fa-mobile-alt'></i>");
-	}
+	};
 	if (
 		(window.location.href.indexOf("teambruner.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("winterpark.annie-mac.com") != -1)
@@ -213,7 +213,7 @@ $( document ).ready(function() {
 		$("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
 		$("#team-display > div.team-member-section > div > div > button:nth-child(6)").html("(407) 205-0190 x1816 <i class='fas fa-mobile-alt'></i>");
 		$("#branch-managers > div > div:nth-child(1) > div > button:nth-child(6)").html("(386) 427-3445 <i class='fas fa-mobile-alt'></i>");
-	}
+	};
 	if (window.location.href.indexOf("chesapeake.annie-mac.com") != -1) { 
 		$("#team-display > div.team-member-section > div:nth-child(1)").addClass("manager-information");
 		$("#team-display > div.team-member-section > div:nth-child(1)").removeClass("team-member");
