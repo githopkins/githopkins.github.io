@@ -92,7 +92,7 @@
     height: auto;
     max-width: 250px;
     max-height: 250px;
-    border-radius: 50%;
+    border-radius: 5%;
     margin-left: 0px;
 }
 .manager-biography {
@@ -1432,7 +1432,7 @@ thead {
     border-radius: 0;
     margin-left: 0px;
     margin-bottom: 20px;
-    border-radius: 100%;
+    border-radius: 5%;
 }
 #originator-main-details {
     display: flex;
