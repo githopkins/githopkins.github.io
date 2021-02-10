@@ -158,10 +158,10 @@
     }
 }
 .action-buttons-calcs {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 .alert-error {
     background: linear-gradient(#901e1e 0%, #ab1c1c 64%) !important;
@@ -178,6 +178,7 @@
 }
 .action-buttons-calcs button {
     width: 280px;
+    margin: 0 23px 0 0;
 }
 .blog-home-entry, #home-blog h3 {
     display: none;
@@ -1362,22 +1363,21 @@ thead {
         min-width: 362px;
     }
     #loan-originator-blurb-container h2 {
-        font-size: 24px;
+        font-size: 27px;
         text-shadow: none;
         text-align: left;
         color: black;
-        opacity: .9;
+        opacity: .8;
     }
     #loan-originator-blurb-container h4 {
         letter-spacing: 1px;
-        font-size: 15px;
-        font-weight: normal;
+        font-size: 16px;
         text-shadow: none;
         display: flex;
         flex-direction: column;
         text-align: left;
         color: black;
-        opacity: .8;
+        opacity: .67;
         font-weight: bold;
     }
     #originator-core-details-text h4 span {
