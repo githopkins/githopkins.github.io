@@ -1718,7 +1718,17 @@ p, li, a {
         padding-left: 0;
         margin-right: 0;
         padding-right: 0;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #originator-social-details {
+        margin-left: 0;
+    }
+    #originator-social-details li {
+        font-size: 16px;
+        height: 50px;
     }
     #originator-main-details {
         margin-left: 0;
