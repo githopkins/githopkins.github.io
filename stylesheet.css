@@ -1361,7 +1361,7 @@ thead {
     flex-direction: column;
     flex: 1;
     width: 85%;
-    margin: 10px auto;
+    margin: 30px auto 10px;
 }
 #loan-originator-blurb-container {
     display: flex;
