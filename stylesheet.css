@@ -1333,6 +1333,14 @@ thead {
         margin-right: -15px;
         max-width: 1000px;
     }
+    #originator .negative-60 {
+        margin-left: 0;
+    }
+    #originator  > #we-provide-more-master {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
     #covid-warning {
         background: #ffe7dc;
         margin-bottom: -1px;
