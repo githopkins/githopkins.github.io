@@ -13,6 +13,15 @@ var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Li
 
 $(document).ready(function() {
 	$("#navigation-sidebar > div:nth-child(2) > a:nth-child(2)").hide();
+	// Originators:
+	if ($('body').hasClass('site-type-loan_officer')) {	
+		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		$(covid).insertBefore( $( "#biography" ) );
+		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
+		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
+		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
+	}
+	// Domains
 	if (
 		(window.location.href.indexOf("louisville.annie-mac.com") != -1) || 
 		(window.location.href.indexOf("mylendingrate.com") != -1)
@@ -212,14 +221,5 @@ $(document).ready(function() {
 		$("#team-display > h3:nth-child(3)").hide();
 	}
 }
-
-	// Originators:
-	if ($('body').hasClass('site-type-loan_officer')) {	
-		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
-		$(covid).insertBefore( $( "#biography" ) );
-		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
-		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
-		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	}
 )
 });
