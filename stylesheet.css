@@ -1609,12 +1609,14 @@ thead {
         display: none;
     }
 }
+
 #originator-social-details a:hover {
     background: #bed3de;
 }
 #originator-social-details a:hover li, #originator-social-details a:hover li i{
-    color: #345c71;
+    color: #0f5c84;
 }
+
 @media screen and (max-width: 1200px) {
     #annie_mac-loan-officer {
         flex-direction: column;
