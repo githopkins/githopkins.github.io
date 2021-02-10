@@ -1299,273 +1299,273 @@ thead {
 .navigation-sidebar-sectional ul li {
     display: block !important;
 }
-@media only screen and (max-width: 1114px) {
+/* @media only screen and (max-width: 1114px) {
     #inserted-banner {
         display: none;
     }
-}
+} */
 
-@media only screen and (min-width: 1115px) {
-    #annie_mac-loan-officer {
-        display: flex;
-        background: #fff;
-        color: #333;
-        justify-content: space-around;
-    }
-    #loan-originator-backdrop {
-        background: none;
-        /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
-        background: none;
-        background-position-y: 43.5%;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        order: 2;
-        padding: 0 20px;
-        margin-right: 0px;
-        min-width: 400px;
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    #annie_mac-loan-officer > #originator {
-        margin-top: -28px;
-        margin-right: -15px;
-        max-width: 1000px;
-    }
-    #originator .negative-60 {
-        margin-left: 0;
-    }
-    #originator  > #we-provide-more-master {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    #covid-warning {
-        background: #ffe7dc;
-        margin-bottom: -1px;
-        color: #a91202;
-        padding: 14px 25px;
-        line-height: 1.6;
-        margin-top: 0;
-        margin: 10px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        width: 85%;
-        margin: 10px auto;
-    }
-    #loan-originator-blurb-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-shadow: 0 0 black;
-        width: 100%;
-        background: transparent;
-        border-radius: 0px;
-        border: none;
-        box-shadow: none;
-        border-left: 1px solid rgba(0,0,0,.15);
-        padding-left: 20px;
-    }
-    #originator-core-details-text {
-        background: transparent;
-        border-top: none;
-        padding: 20px;
-        border-bottom: none;
-        margin-bottom: 20px;
-        min-width: 362px;
-        padding-bottom: 44px;
-    }
-    #loan-originator-blurb-container h2 {
-        font-size: 27px;
-        text-shadow: none;
-        text-align: left;
-        color: black;
-        opacity: .8;
-        font-family: 'inter', sans-serif;
-    }
-    #loan-originator-blurb-container h4 {
-        letter-spacing: 1px;
-        font-size: 16px;
-        text-shadow: none;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        color: black;
-        opacity: 1;
-        font-weight: normal;
-    }
-    #originator-core-details-text h4 span {
-        margin-top: 5px;
-        font-weight: normal;
-        color: inherit;
-        font-size: 12px;
-    }
-    #originator-address-details {
-        line-height: 30px;
-        font-size: 16px;
-        text-shadow: none;
-        color: black;
-        opacity: .8;
-    }
-    #originator-address-details p {
-        text-align: left;
-        opacity: 1;
-        margin-bottom: 0;
-        font-size: 15px;
-        line-height: 22px;
-    }
-    #originator-core-details-portrait img {
-        background: transparent;
-        max-width: 210px;
-        max-height: 210px;
-        border-radius: 0;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        border-radius: 100%;
-    }
-    #originator-main-details {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Inter', sans-serif;
-    }
-    #originator-core-details {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 0;
-        border-right: none;
-        margin-right: 0;
-        text-align: center;
-        padding-top: 30px;
-    }
-    #originator-social-details {
-        width: 96%;
-        margin: 0 auto;
-    }
-    #originator-social-details ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: nowrap;
-        align-self: flex-end;
-        width: 100%;
-        margin-top: -21px;
-        flex-direction: column;
-    }
-    #originator-social-details ul a {
-        border-top: 1px solid rgba(0,0,0,.05);
-        width: 100%;
-    }
-    #originator-social-details li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-        width: auto;
-        font-size: 15px;
-        height: 45px;
-        justify-content: flex-start;
-        color: #555;
-    }
-    #originator-social-details li i {
-        font-size: 18px;
-        margin-bottom: 0;
-        text-shadow: none;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        color: #036fa8;
-    }
-    .site-type-loan_officer .manager-biography p {
-        width: auto;
-        padding: 0 25px;
-    }
-    .manager-biography h2:first-of-type {
-        font-size: 35px;
-        color: #006fa9;
-        margin: 25px auto 15px;
-        display: block;
-        text-align: center;
-        font-family: 'inter',sans-serif;
-    }
-    #inserted-banner {
-        height: 350px;
-        background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        padding-top: 60px;
-        background-position-y: 68%;
-        background-size: 101%;
-    }
-    #inserted-banner .container-section {
-        flex-direction: column;
-    }
-    #inserted-banner .container-section h3 span {
-        font-size: 15px;
-    }
-    #inserted-banner #button-container-home > a:nth-child(1) {
-        margin-left: 0;
-        background: #006fa9;
-        border-radius: 5px;
-        color: white !important;
-        letter-spacing: 1px;
-        border: none;
-        font-family: protipo, -apple-system, "Helvetica Neue", Helvetica, "Hiragino Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 17px;
-    }
-    #inserted-banner > #button-container-home > a:nth-child(1):hover {
-        border: none;
-    }
-    #accolades-originator {
-        /* margin-right: -460px; */
-    }
-    #accolates-originator #we-provide-more-master {
-        margin: 0;
-    }
-    #accolates-originator #what-we-provide {
-        flex-direction: column;
-    }
-    #accolades-originator .we-provide-more-master {
-        width: 100%;
-    }
-    #accolades-originator .we-provide-this {
-        width: 100%;
-    }
-    #accolades-originator .we-provide-this h4 {
-        color: white;
-        margin-top: 12px;
-    }
-    #accolades-originator .calculations-primary img {
-        display: none;
-    }
-    #annie_mac-loan-officer .manager-biography p {
-        text-align: justify;
-    }
-    #accolades-originator #calculations-and-numbers {
-        width: 100%;
-        margin: 45px 0 0 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .site-type-loan_officer .branch-manager-section {
-        width: 95%;
-        padding: 40px 15px 50px;
-    }
+
+/* BEGIN NEW CODE FOR LOAN OFFICERS */
+#annie_mac-loan-officer {
+    display: flex;
+    background: #fff;
+    color: #333;
+    justify-content: space-around;
+}
+#loan-originator-backdrop {
+    background: none;
+    /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
+    background: none;
+    background-position-y: 43.5%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    order: 2;
+    padding: 0 20px;
+    margin-right: 0px;
+    min-width: 400px;
+    flex-direction: column;
+    margin-top: 25px;
+}
+#annie_mac-loan-officer > #originator {
+    margin-top: -28px;
+    margin-right: -15px;
+    max-width: 1000px;
+}
+#originator .negative-60 {
+    margin-left: 0;
+}
+#originator  > #we-provide-more-master {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#covid-warning {
+    background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 14px 25px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 85%;
+    margin: 10px auto;
+}
+#loan-originator-blurb-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 0 0 black;
+    width: 100%;
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    border-left: 1px solid rgba(0,0,0,.15);
+    padding-left: 20px;
+}
+#originator-core-details-text {
+    background: transparent;
+    border-top: none;
+    padding: 20px;
+    border-bottom: none;
+    margin-bottom: 20px;
+    min-width: 362px;
+    padding-bottom: 44px;
+}
+#loan-originator-blurb-container h2 {
+    font-size: 27px;
+    text-shadow: none;
+    text-align: left;
+    color: black;
+    opacity: .8;
+    font-family: 'inter', sans-serif;
+}
+#loan-originator-blurb-container h4 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    opacity: 1;
+    font-weight: normal;
+}
+#originator-core-details-text h4 span {
+    margin-top: 5px;
+    font-weight: normal;
+    color: inherit;
+    font-size: 12px;
+}
+#originator-address-details {
+    line-height: 30px;
+    font-size: 16px;
+    text-shadow: none;
+    color: black;
+    opacity: .8;
+}
+#originator-address-details p {
+    text-align: left;
+    opacity: 1;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+#originator-core-details-portrait img {
+    background: transparent;
+    max-width: 210px;
+    max-height: 210px;
+    border-radius: 0;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+#originator-main-details {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+#originator-core-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+#originator-social-details {
+    width: 96%;
+    margin: 0 auto;
+}
+#originator-social-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    width: 100%;
+    margin-top: -21px;
+    flex-direction: column;
+}
+#originator-social-details ul a {
+    border-top: 1px solid rgba(0,0,0,.05);
+    width: 100%;
+}
+#originator-social-details li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: auto;
+    font-size: 15px;
+    height: 45px;
+    justify-content: flex-start;
+    color: #555;
+}
+#originator-social-details li i {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-shadow: none;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color: #036fa8;
+}
+.site-type-loan_officer .manager-biography p {
+    width: auto;
+    padding: 0 25px;
+}
+.manager-biography h2:first-of-type {
+    font-size: 35px;
+    color: #006fa9;
+    margin: 25px auto 15px;
+    display: block;
+    text-align: center;
+    font-family: 'inter',sans-serif;
+}
+#inserted-banner {
+    height: 350px;
+    background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 60px;
+    background-position-y: 68%;
+    background-size: 101%;
+}
+#inserted-banner .container-section {
+    flex-direction: column;
+}
+#inserted-banner .container-section h3 span {
+    font-size: 15px;
+}
+#inserted-banner #button-container-home > a:nth-child(1) {
+    margin-left: 0;
+    background: #006fa9;
+    border-radius: 5px;
+    color: white !important;
+    letter-spacing: 1px;
+    border: none;
+    font-family: protipo, -apple-system, "Helvetica Neue", Helvetica, "Hiragino Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 17px;
+}
+#inserted-banner > #button-container-home > a:nth-child(1):hover {
+    border: none;
+}
+#accolades-originator {
+    /* margin-right: -460px; */
+}
+#accolates-originator #we-provide-more-master {
+    margin: 0;
+}
+#accolates-originator #what-we-provide {
+    flex-direction: column;
+}
+#accolades-originator .we-provide-more-master {
+    width: 100%;
+}
+#accolades-originator .we-provide-this {
+    width: 100%;
+}
+#accolades-originator .we-provide-this h4 {
+    color: white;
+    margin-top: 12px;
+}
+#accolades-originator .calculations-primary img {
+    display: none;
+}
+#annie_mac-loan-officer .manager-biography p {
+    text-align: justify;
+}
+#accolades-originator #calculations-and-numbers {
+    width: 100%;
+    margin: 45px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.site-type-loan_officer .branch-manager-section {
+    width: 95%;
+    padding: 40px 15px 50px;
 }
 
 .calculations-primary h3 {
