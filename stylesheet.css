@@ -1387,9 +1387,8 @@ thead {
         flex-direction: column;
         text-align: left;
         color: black;
-        opacity: .67;
-        font-weight: bold;
-        font-family: 'inter', sans-serif;
+        opacity: 1;
+        font-weight: normal;
     }
     #originator-core-details-text h4 span {
         margin-top: 5px;
