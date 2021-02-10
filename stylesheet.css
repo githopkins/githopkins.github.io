@@ -1354,18 +1354,19 @@ thead {
         align-items: flex-start;
         text-shadow: 0 0 black;
         width: 100%;
-        background: rgba(0,0,0,.05);
+        background: transparent;
         border-radius: 4px;
-        border: 1px solid rgba(0,0,0,.2);
-        box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
+        border: none;
+        box-shadow: none;
     }
     #originator-core-details-text {
-        background: rgba(0,0,0,.025);
-        border-top: 1px solid rgba(0,0,0,.10);
+        background: transparent;
+        border-top: none;
         padding: 20px;
-        border-bottom: 1px solid rgba(0,0,0,.10);
+        border-bottom: none;
         margin-bottom: 20px;
         min-width: 362px;
+        padding-bottom: 44px;
     }
     #loan-originator-blurb-container h2 {
         font-size: 27px;
@@ -1437,7 +1438,8 @@ thead {
         padding-top: 30px;
     }
     #originator-social-details {
-        width: inherit;
+        width: 96%;
+        margin: 0 auto;
     }
     #originator-social-details ul {
         list-style: none;
