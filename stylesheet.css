@@ -1606,7 +1606,7 @@ thead {
         color: white;
     }
 }
-#accolades-originator {
+#accolades-originator #we-provide-more-master {
     display: none;
 }
 #originator-social-details a:hover {
@@ -1627,7 +1627,7 @@ thead {
     #loan-originator-backdrop {
         order: -1;
     }
-    #accolades-originator {
+    #accolades-originator #we-provide-more-master {
         display: block;
     }
     #loan-originator-blurb-container {
