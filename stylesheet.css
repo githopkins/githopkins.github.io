@@ -1736,6 +1736,7 @@ p, li, a {
     #product-container-section {
         flex-direction: column !important;
         width: 100%;
+        margin-bottom: 30px;
     }
     .product-selectable {
        width: auto !important;
