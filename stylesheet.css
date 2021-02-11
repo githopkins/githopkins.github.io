@@ -1735,9 +1735,13 @@ p, li, a {
 @media screen and (max-width: 994px) { 
     #product-container-section {
         flex-direction: column !important;
+        width: 100%;
     }
     .product-selectable {
-        width: 100% !important;
+       width: auto !important;
+    }
+    .product-selectable h3 {
+        text-align: left !important;
     }
     #grid1, #grid2, #grid3, #grid4 {
         min-height: 250px !important;
