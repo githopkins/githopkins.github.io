@@ -1744,7 +1744,7 @@ p, li, a {
     }
     #originator-main-details {
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
     #loan-originator-backdrop {
         margin-left: 0;
