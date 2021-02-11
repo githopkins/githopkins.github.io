@@ -1702,8 +1702,27 @@ p, li, a {
         margin-top: 0;
     }
     #loan-originator-blurb-container {
-        padding-bottom: 60px;
+        padding-bottom: 15px;
         width: 100vw;
+    }
+    #originator > * {
+        max-width: 97vw !important;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    #accolades-originator #calculations-and-numbers {
+        margin: 0;
+    }
+    .action-buttons-calcs {
+        flex-direction: column;
+    }
+    .calculations-primary:nth-child(2) {
+        margin-top: 30px;
+        margin: 0 25px;
+    }
+    .action-buttons-calcs button {
+        margin: 10px 0;
+        padding: 16px 0;
     }
 }
 @media screen and (max-width: 500px) { 
@@ -1726,9 +1745,22 @@ p, li, a {
     #originator-social-details {
         margin-left: 0;
     }
+    #originator-social-details ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #originator-social-details ul a {
+        width: 50%;
+        border-top: none;
+    }
     #originator-social-details li {
-        font-size: 16px;
-        height: 50px;
+        font-size: 14px;
+        height: 80px;
+        flex-direction: column;
+    }
+    #originator-social-details li i {
+        font-size: 25px;
+        margin-bottom: 5px;
     }
     #originator-main-details {
         margin-left: 0;
