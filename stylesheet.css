@@ -1816,17 +1816,17 @@ p, li, a {
     color: white;
     border-radius: 5px;
     padding: 8px;
-    margin: 15px 0 10px;
+    margin: 15px 0 10px !important;
 }
 .product-selectable span {
     float: right;
-    margin-top: 10px;
+    margin-top: 10px ;
     opacity: .9;
     font-size: 13px !important;
 }
 .product-selectable h3 {
     font-size: 18px !important;
-    margin: 10px 0;
+    margin: 10px 0 !important;
 }
 .product-selectable p {
     font-size: 15px !important;
