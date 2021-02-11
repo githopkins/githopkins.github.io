@@ -1646,6 +1646,9 @@ p, li, a {
     border-radius: 5px;
     background: #7FC24A;
 }
+.product-selectable button:hover {
+    background: #006fa9;
+}
 .product-selectable h3 {
     font-size: 18px !important;
     margin: 10px 0 !important;
