@@ -99,8 +99,8 @@ ul.menu.nav {
 #biography .manager-information {
     display: none;
 }
-#list_11344 > a, #list_11343 > a, #list_11350 > a {
-    display: block;
+footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
+    display: none;
 }
 #originator-core-details-portrait img {
     background: transparent;
