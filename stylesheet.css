@@ -1600,6 +1600,51 @@ p, li, a {
     width: 280px;
     margin: 0 23px 0 0;
 }
+#product-container-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+}
+.product-selectable {
+    width: 50%;
+    padding: 10px 20px;
+}
+#grid1 {
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+#grid3 {
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+#grid4 {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+.product-selectable i {
+    font-size: 24px;
+    background: #0f4777;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 15px 0 10px;
+}
+.product-selectable span {
+    float: right;
+    margin-top: 10px;
+    opacity: .9;
+    font-size: 13px;
+}
+.product-selectable h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-selectable p {
+    font-size: 15px;
+    opacity: .6;
+}
 @media screen and (min-width: 1201px) {
     #originator-social-details a:first-of-type {
         background: #036fa8;
