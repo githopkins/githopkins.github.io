@@ -1799,6 +1799,8 @@ p, li, a {
 .product-selectable {
     width: 45.6% !important;
     padding: 10px 20px;
+    min-height: 401px;
+    position: relative;
 }
 #grid1 {
     border-right: 1px solid rgba(0,0,0,.2);
@@ -1818,11 +1820,9 @@ p, li, a {
     padding: 8px;
     margin: 15px 0 10px !important;
 }
-.product-selectable span {
-    float: right;
-    margin-top: 10px ;
-    opacity: .9;
-    font-size: 13px !important;
+.product-selectable a {
+    position: absolute;
+    bottom: 20px;
 }
 .product-selectable h3 {
     font-size: 18px !important;
