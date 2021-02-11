@@ -1799,7 +1799,7 @@ p, li, a {
 .product-selectable {
     width: 45.6% !important;
     padding: 10px 20px;
-    min-height: 401px;
+    min-height: 340px;
     position: relative;
 }
 #grid1 {
@@ -1834,4 +1834,5 @@ p, li, a {
 .product-selectable p {
     font-size: 15px !important;
     opacity: .6;
+    line-height: 30px;
 }
