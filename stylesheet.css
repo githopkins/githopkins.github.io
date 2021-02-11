@@ -1833,6 +1833,7 @@ p, li, a {
     border-radius: 5px;
 }
 .product-selectable h3 {
+    color: #7FC24A !important;
     font-size: 18px !important;
     margin: 10px 0 !important;
 }
