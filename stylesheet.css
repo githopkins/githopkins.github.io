@@ -1743,8 +1743,14 @@ p, li, a {
     .product-selectable h3 {
         text-align: left !important;
     }
+    .product-selectable a {
+        position: revert;
+    }
+    .product-selectable button {
+        margin: 0 0 20px;
+    }
     #grid1, #grid2, #grid3, #grid4 {
-        min-height: 250px !important;
+        min-height: auto !important;
         border: none !important;
     }
     #grid2, #grid3, #grid4 { 
