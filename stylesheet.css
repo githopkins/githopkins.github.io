@@ -99,9 +99,6 @@ ul.menu.nav {
 #biography .manager-information {
     display: none;
 }
-footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
-    display: none;
-}
 #originator-core-details-portrait img {
     background: transparent;
     width: auto;
@@ -1873,5 +1870,8 @@ p, li, a {
     }
 }
 #product-containment {
+    display: none;
+}
+footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     display: none;
 }
