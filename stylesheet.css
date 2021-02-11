@@ -1744,7 +1744,7 @@ p, li, a {
         border: none !important;
     }
     #grid2, #grid3, #grid4 { 
-        border-top: 1px solid rgba(0,0,0,.2);
+        border-top: 1px solid rgba(0,0,0,.2) !important;
     }
 }
 @media screen and (max-width: 970px) { 
