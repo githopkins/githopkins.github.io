@@ -1600,6 +1600,61 @@ p, li, a {
     width: 280px;
     margin: 0 23px 0 0;
 }
+#product-container-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+}
+.product-selectable {
+    width: 45.66% !important;
+    padding: 10px 20px;
+    position: relative;
+}
+#grid1 {
+    border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 280px;
+}
+#grid2 {
+    min-height: 280px;
+}
+#grid3 {
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
+}
+#grid4 {
+    border-top: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
+}
+.product-selectable i {
+    font-size: 24px !important;
+    background: #0f4777;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 15px 0 10px !important;
+}
+.product-selectable a {
+    position: absolute;
+    bottom: 20px;
+}
+.product-selectable button {
+    border-radius: 5px;
+    background: #7FC24A;
+}
+.product-selectable h3 {
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+}
+.product-selectable p {
+    font-size: 15px !important;
+    opacity: .6;
+    line-height: 30px;
+}
 @media screen and (min-width: 1201px) {
     #originator-social-details a:first-of-type {
         background: #036fa8;
@@ -1798,59 +1853,4 @@ p, li, a {
         margin: 0;
         margin-bottom: 30px;
     }
-}
-#product-container-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 4px;
-    border: 1px solid rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
-}
-.product-selectable {
-    width: 45.66% !important;
-    padding: 10px 20px;
-    position: relative;
-}
-#grid1 {
-    border-right: 1px solid rgba(0,0,0,.2);
-    min-height: 280px;
-}
-#grid2 {
-    min-height: 280px;
-}
-#grid3 {
-    border-top: 1px solid rgba(0,0,0,.2);
-    border-right: 1px solid rgba(0,0,0,.2);
-    min-height: 340px;
-}
-#grid4 {
-    border-top: 1px solid rgba(0,0,0,.2);
-    min-height: 340px;
-}
-.product-selectable i {
-    font-size: 24px !important;
-    background: #0f4777;
-    color: white;
-    border-radius: 5px;
-    padding: 8px;
-    margin: 15px 0 10px !important;
-}
-.product-selectable a {
-    position: absolute;
-    bottom: 20px;
-}
-.product-selectable button {
-    border-radius: 5px;
-    background: #7FC24A;
-}
-.product-selectable h3 {
-    font-size: 18px !important;
-    margin: 10px 0 !important;
-}
-.product-selectable p {
-    font-size: 15px !important;
-    opacity: .6;
-    line-height: 30px;
 }
