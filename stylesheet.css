@@ -1710,6 +1710,11 @@ p, li, a {
         margin: 10px auto;
         padding: 10px;
     }
+    #covid-warning {
+        padding: 20px 10px;
+        margin-top: -45px;
+        margin-bottom: 30px;
+    }
     #accolades-originator #calculations-and-numbers {
         margin: 0;
     }
