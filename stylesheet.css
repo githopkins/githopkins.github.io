@@ -1713,6 +1713,10 @@ p, li, a {
     #accolades-originator #calculations-and-numbers {
         margin: 0;
     }
+    .we-provide-this {
+        margin: 8px 0;
+        border-radius: 0;
+    }
     .action-buttons-calcs {
         flex-direction: column;
     }
