@@ -1728,6 +1728,10 @@ p, li, a {
         margin: 10px 0;
         padding: 16px 0;
     }
+    .manager-biography h2:first-of-type, .site-type-loan_officer #we-provide-more-master h3 {
+        text-align: center;
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 500px) { 
     #inserted-banner {
