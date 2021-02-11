@@ -1799,18 +1799,23 @@ p, li, a {
 .product-selectable {
     width: 45.6% !important;
     padding: 10px 20px;
-    min-height: 340px;
     position: relative;
 }
 #grid1 {
     border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 240px;
+}
+#grid2 {
+    min-height: 240px;
 }
 #grid3 {
     border-top: 1px solid rgba(0,0,0,.2);
     border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
 }
 #grid4 {
     border-top: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
 }
 .product-selectable i {
     font-size: 24px !important;
