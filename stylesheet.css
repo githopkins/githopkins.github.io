@@ -1797,7 +1797,7 @@ p, li, a {
     box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
 }
 .product-selectable {
-    width: 45.6%;
+    width: 45.6% !important;
     padding: 10px 20px;
 }
 #grid1 {
@@ -1811,7 +1811,7 @@ p, li, a {
     border-top: 1px solid rgba(0,0,0,.2);
 }
 .product-selectable i {
-    font-size: 24px;
+    font-size: 24px !important;
     background: #0f4777;
     color: white;
     border-radius: 5px;
@@ -1822,13 +1822,13 @@ p, li, a {
     float: right;
     margin-top: 10px;
     opacity: .9;
-    font-size: 13px;
+    font-size: 13px !important;
 }
 .product-selectable h3 {
-    font-size: 18px;
+    font-size: 18px !important;
     margin: 10px 0;
 }
 .product-selectable p {
-    font-size: 15px;
+    font-size: 15px !important;
     opacity: .6;
 }
