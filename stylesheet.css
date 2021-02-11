@@ -1740,7 +1740,7 @@ p, li, a {
         width: 100% !important;
     }
     #grid1, #grid2, #grid3, #grid4 {
-        min-height: auto !important;
+        min-height: 250px !important;
         border: none !important;
     }
     #grid2, #grid3, #grid4 { 
