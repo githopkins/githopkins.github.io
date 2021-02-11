@@ -1677,6 +1677,18 @@ p, li, a {
         display: none;
     }
 }
+@media screen and (max-width: 994px) { 
+    #product-container-section {
+        flex-direction: column;
+    }
+    .product-selectable {
+        width: 100%;
+    }
+    #grid1, #grid2, #grid3, #grid4 {
+        min-height: auto;
+        border: none;
+    }
+}
 @media screen and (max-width: 970px) { 
     #inserted-banner {
         height: 250px;
