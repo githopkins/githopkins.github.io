@@ -1803,10 +1803,10 @@ p, li, a {
 }
 #grid1 {
     border-right: 1px solid rgba(0,0,0,.2);
-    min-height: 240px;
+    min-height: 280px;
 }
 #grid2 {
-    min-height: 240px;
+    min-height: 280px;
 }
 #grid3 {
     border-top: 1px solid rgba(0,0,0,.2);
