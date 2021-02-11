@@ -1743,6 +1743,9 @@ p, li, a {
         min-height: auto !important;
         border: none !important;
     }
+    #grid2, #grid3, #grid4 { 
+        border-top: 1px solid rgba(0,0,0,.2);
+    }
 }
 @media screen and (max-width: 970px) { 
     #inserted-banner {
