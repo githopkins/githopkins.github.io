@@ -1734,14 +1734,14 @@ p, li, a {
 }
 @media screen and (max-width: 994px) { 
     #product-container-section {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .product-selectable {
-        width: 100%;
+        width: 100% !important;
     }
     #grid1, #grid2, #grid3, #grid4 {
-        min-height: auto;
-        border: none;
+        min-height: auto !important;
+        border: none !important;
     }
 }
 @media screen and (max-width: 970px) { 
