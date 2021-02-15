@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>Testingform</title>
+		<link rel="stylesheet" href="testingform.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="testingform.js"></script>
+	</head>
+<body>
+	<div id="top-portion">
+	<h1></h1>
+	<h2>Purchase Quiz</h2>
+	<h4>Fill out the form below and we will get in touch with you!</h4>
+</div>
+<div id="form-container">
+	<form action="/page/prospect-thanks" id="push-form">
+		<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+		<input type="hidden" data-xml-node="LeadSourceId" value="Q6UJ9A0USZFN">
+		<input type="hidden" id="Entity" value="PreQual">
+		{% if site.siteType.keyName == 'branch'%}
+		{% set branch = site.settings.branch %}
+		{% if branch.costCenter is not empty %}
+		<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+		{% else %}
+		<input type="hidden" id="FilterValue" value="">
+		{% endif %}
+		{% endif %}
+		{% if site.siteType.keyName == 'loan_officer'%}
+		{% set officer = site.settings.loanOfficer %}
+		{% if site.settings.loanOfficer.miqGuid is not empty%}
+		<input type="hidden" id="UserId" name="UserId" value="{{ site.settings.loanOfficer.miqGuid }}">
+		{% else %}
+		<input type="hidden" id="UserId" name="UserId" value="">
+		{% endif %}
+		{% endif %}
+		<input type="hidden" id="title" data-xml-node="Purchase Quiz">
+		<input type="hidden" id="Lead Import" value="true">
+		<input type="hidden" id="Assign" value="true">
+		<input type="hidden" id="agents" value="true">
+		<input type="hidden" id="Notification" value="New Lead">
+		<div id="home-contents">
+			<h4>Home Details</h4>
+			<div class="form-block">
+				<label>Are you a first time home buyer?</label>
+				<select name="lead[first_time_buyer]" data-xml-node="FirstTimeBuyer" id="miq-firstTimeHomeBuyer">
+					<option value="">Please Select</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+			</div>
+			<div class="form-block">
+				<label>What type of home are you looking to buy? <span>Required</span></label>
+				<select name="lead[property_type]" data-xml-node="PropertyType" id="miq-propertyType" required>
+					<option value="">Please Select</option>
+					<option value="Detached">Single Family Home</option>
+					<option value="Attached">Townhome</option>
+					<option value="Condominium">Condo</option>
+					<option value="Cooperative">Multi-Family</option>
+				</select>
+			</div>
+			<div class="form-block">
+				<label>What is your desired loan amount? <span>Required</span></label>
+				<input type="text" pattern="[0-9]+" placeholder="Enter your desired loan amount." name="lead[purchase_price]" data-xml-node="PurchasePrice" id="miq-desiredLoanAmount" required>
+			</div>
+			<div class="form-block">
+				<label>What are you comfortable with as a downpayment? <span>Required</span></label>
+				<input type="text" pattern="[0-9]+" placeholder="Enter the amount for a downpayment." name="lead[down_payment]" data-xml-node="DownPayment" id="miq-downPayment" required>
+				<label>What is your gross monthly income? <span>Required</span></label>
+				<input type="text" pattern="[0-9]+" placeholder="Enter your gross monthly income." name="lead[gross_monthly_income]" data-xml-node="GrossMonthlyIncome" id="miq-grossMonthlyIncome" required>
+			</div>
+			<div class="form-block">
+				<label>When are you looking to close?</label>
+				<input type="date" name="lead[estimated_close_date]" data-xml-node="EstimatedCloseDate" id="miq-close-date">
+			</div>
+			<div class="form-block">
+				<label>Are you Active Duty a Veteran of the U.S. Armed Forces?</label>
+				<select name="lead[veteran_status]" data-xml-node="VeteranStatus" id="miq-veteran-status">
+					<option value="">Please Select</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+			</div>
+			<div id="next-button">Next</div>
+		</div>
+		<div id="personal-contents" class="hide">
+			<h4>Your Details</h4>
+			<div class="form-block">
+				<label>What's your first name? <span>Required</span></label>
+				<input type="text" placeholder="Enter your first name." name="lead[first_name]" data-xml-node="FirstName" id="miq-firstName" required>
+				<label>What's your last name? <span>Required</span></label>
+				<input type="text" placeholder="Enter your last name." name="lead[last_name]" data-xml-node="LastName" id="miq-lastName" required>
+			</div>
+			<div class="form-block">
+				<label>What's your email address? <span>Required</span></label>
+				<input type="email" placeholder="Enter your email address." name="lead[email]" data-xml-node="Email" id="miq-email" required>
+				<label>What's your phone number? <span>Required</span></label>
+				<input type="tel" placeholder="Enter your phone number." name="lead[mobile_phone]" data-xml-node="MobilePhone" id="miq-mobile-phone" required>
+			</div>
+			<div class="form-block">
+				<label>What range is your credit score? <span>Required</span></label>
+				<select name="lead[credit_score]" data-xml-node="CreditScore" id="miq-credit-score" required>
+					<option value="">Please Select</option>
+					<option value="">Poor</option>
+					<option value="">Fair</option>
+					<option value="">Good</option>
+					<option value="">Excellent</option>
+				</select>
+			</div>
+			<div class="form-block">
+				<label>What zip code is the home you are looking to purchase?</label>
+				<input type="text" pattern="[0-9]+" placeholder="Enter the zip code of where you are looking to purchase." name="lead[property_zip]" data-xml-node="PropertyZipCode" id="miq-propertyZipCode">
+			</div>
+			<small>By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply.</small>
+			<button data-qlf-submit="" id="toggle-captcha" class="g-recaptcha" data-sitekey="6LdDJPoUAAAAAMi9pjPYdfetUKDQk4AIRE4UdSL6" data-callback="onSubmit" data-action="submit">Send Form</button>
+			<div id="previous-button">Back</div>
+
+		</div>
+	</form>
+	<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+</div>
+</body></html>

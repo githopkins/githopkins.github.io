@@ -1,0 +1,237 @@
+#site-navigation,
+#product-banner,
+footer {
+	display: none;
+}
+
+#next-button,
+#previous-button {
+	background: #7d7d7d;
+	width: 104px;
+	text-align: center;
+	align-self: center;
+	box-shadow: none;
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 15px;
+	border-radius: 3px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+#next-button {
+	float: right;
+	margin-right: 30px;
+}
+
+#next-button:hover,
+#previous-button:hover {
+	cursor: pointer;
+}
+
+form h4 {
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.hide {
+	display: none;
+}
+
+#text-based {
+	width: 100%;
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: #444;
+	letter-spacing: .015em;
+	line-height: 1.75em;
+	background: #dedede;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+label {
+	display: flex;
+	align-items: baseline;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+label span {
+	font-size: 11px;
+	color: #1f6590;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	min-height: 48px;
+	box-sizing: border-box;
+	padding: 0 16px;
+	font-size: 15px;
+	line-height: 1.5;
+	font-weight: 400;
+	box-shadow: inset 0 0 0 1px #696969;
+	color: #141414;
+	margin-bottom: 25px;
+	border: none !important;
+}
+
+button {
+	background: #1f6590;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	color: #fff;
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+
+button:hover {
+	background: #0d7054;
+	cursor: pointer;
+}
+
+option {
+	opacity: .8;
+}
+
+small {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: -10px;
+	font-size: 14px;
+	color: rgb(53, 60, 65);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+#top-portion {
+	background: linear-gradient(to right, rgb(15, 71, 119), #0d7054);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 550px;
+}
+
+#top-portion h1 {
+	width: 343px;
+	height: 64px;
+	text-indent: -1005vw;
+	background: url('https://annie-mac.com/uploads/sites/10713/public/anniemaclogowhitehorizontal.png');
+	background-size: cover;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+#top-portion h2 {
+	font-size: 31px;
+	line-height: 1.18;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	letter-spacing: -0.5px;
+	color: #fff;
+}
+
+#top-portion h4 {
+	font-size: 20px;
+	opacity: 0.8;
+	width: 600px;
+	font-weight: 300;
+	letter-spacing: -.3px;
+	color: #fff;
+}
+
+#form-container {
+	margin: -280px auto 0px;
+	background: #F7F8F9;
+	padding: 40px 40px 10px 40px;
+	max-width: 660px;
+	z-index: 100;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	color: #444;
+	box-shadow: 1px 4px 10px rgba(0, 0, 0, .25);
+	margin-bottom: 30px;
+}
+
+#form-container h4 {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.new-height {
+	height: 370px !important;
+}
+
+.container-pushdowns {
+	margin-top: -110px !important;
+}
+
+#form-container input:hover,
+#form-container select:hover,
+#form-container textarea:hover {
+	box-shadow: inset 0 0 0 1px #28477f;
+}
+
+form {
+	margin-top: 0px;
+	width: 105%;
+}
+
+select {
+	width: 95%;
+}
+
+@media screen and (max-width: 660px) {
+	body {
+		background: #F7F8F9;
+	}
+
+	#form-container {
+		box-shadow: none;
+		margin-bottom: none;
+	}
+}
