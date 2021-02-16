@@ -20,6 +20,10 @@ ul.menu.nav {
 #branch-managers {
     max-width: 80%;
 }
+.team-member-section {
+    justify-content: center;
+    margin: 0 auto;
+}
 select {
     text-transform: none;
     font-weight: normal;
