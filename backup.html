@@ -1,0 +1,415 @@
+<input type="hidden" id="Filter" value="CostCenter">
+{% if site.siteType.keyName == 'branch'%}
+{% set branch = site.settings.branch %}
+{% if branch.costCenter is not empty %}
+<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+{% else %}
+<input type="hidden" id="FilterValue" value="">
+{% endif %}
+{% endif %}
+<input id="leadSource" type="hidden" data-xml-node="LeadSourceId" value="Q6UJ9A0USZFN">
+<input type="hidden" id="Entity" value="PreQual">
+<input type="hidden" id="Redirect" name="redirect" value="/mortgage/bookings">
+<input type="hidden" id="Redirect2" name="redirect2" value="/mortgage/bookings">
+<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+{% if site.siteType.keyName == 'loan_officer'%}
+{% set officer = site.settings.loanOfficer %}
+{% if officer.miqGuid is not empty%}
+<input type="hidden" id="UserId" name="UserId" value="{{ officer.miqGuid }}">
+{% else %}
+<input type="hidden" id="UserId" name="UserId" value="">
+{% endif %}
+{% endif %}
+<input type="hidden" name="lead[first_time_buyer]" data-xml-node="FirstTimeBuyer" id="miq-firstTimeHomeBuyer">
+<input type="hidden" name="lead[property_type]" data-xml-node="PropertyType" id="miq-propertyType">
+<input type="hidden" name="lead[property_zip]" data-xml-node="PropertyZipCode" id="miq-propertyZipCode">
+<input type="hidden" name="lead[purchase_price]" data-xml-node="PurchasePrice" id="miq-desiredLoanAmount">
+<input type="hidden" name="lead[down_payment]" data-xml-node="DownPayment" id="miq-downPayment">
+<input type="hidden" name="lead[gross_monthly_income]" data-xml-node="GrossMonthlyIncome" id="miq-grossMonthlyIncome">
+<input type="hidden" name="lead[estimated_close_date]" data-xml-node="EstimatedCloseDate" id="miq-close-date">
+<input type="hidden" name="lead[first_name]" data-xml-node="FirstName" id="miq-firstName">
+<input type="hidden" name="lead[last_name]" data-xml-node="LastName" id="miq-lastName">
+<input type="hidden" name="lead[email]" data-xml-node="Email" id="miq-email">
+<input type="hidden" name="lead[mobile_phone]" data-xml-node="MobilePhone" id="miq-mobile-phone">
+<input type="hidden" name="lead[credit_score]" data-xml-node="CreditScore" id="miq-credit-score">
+<input type="hidden" name="lead[veteran_status]" data-xml-node="VeteranStatus" id="miq-veteran-status">
+<div class="container-fluid mt-1 d-none d-sm-block " style="position:fixed; z-index:2; top:0;left:0;">
+	<div class="col-3">
+		<div class="card ">
+			<div class="card-body text-info">
+				<ul class="list-group" id="answersChart">
+					<li class="list-group-item" id="q0a"></li>
+					<li class="list-group-item" id="q1a"></li>
+					<li class="list-group-item" id="q2a"></li>
+					<li class="list-group-item" id="q3a"></li>
+					<li class="list-group-item" id="q4a"></li>
+					<li class="list-group-item" id="q5a"></li>
+					<li class="list-group-item" id="q6a"></li>
+					<li class="list-group-item" id="q7a"></li>
+					<li class="list-group-item" id="q8a"></li>
+					<li class="list-group-item" id="q9a"></li>
+					<li class="list-group-item" id="q10a"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid mt-1 d-none d-sm-block" id="dba-logo" style="position:fixed; z-index:3; top:0;right:0;">
+</div>
+
+<div id="TitlePage" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<h1 class="text-muted text-center">CAN YOU AFFORD TO BUY?</h1>
+			<h3 class="text-info text-center">Take our Homebuyer Quiz now to see if you're likely to be able to afford a
+				new home</h3>
+			<div class="mt-3 next-container text-center">
+				<a id="beginQuizBtn" class="btn btn-primary" href="#questionZero">Take the Quiz!</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="questionZero" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q1"></p>
+			<p class="text-muted">Welcome! Let's
+				get started. Are you an Active Duty service member or a Veteran of the U.S. Armed Forces?</p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q0-o1">Yes</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q0-o2">No</button>
+			<div class="mt-3 next-container text-center">
+				<a id="questionZeroNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q0-err"></div>
+		</div>
+	</div>
+</div>
+<div id="questionOne" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q1"></p>
+			<p class="text-muted"><small class="text-info">1 <i class="fas fa-arrow-right"></i></small> Will this be your
+				first home purchase in 3 years or more?</p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q1-o1">Yes</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q1-o2">No</button>
+			<div class="mt-3 next-container text-center">
+				<a id="questionPrevNextBtn" class="btn btn-primary" href="#questionZero">Back</a>
+				<a id="questionOneNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q1-err"></div>
+		</div>
+	</div>
+</div>
+<div id="questionTwo" class="container-fluid h-100 ">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q2"></p>
+			<p class="text-muted"><small class="text-info">2 <i class="fas fa-arrow-right"></i></small> Great! What type
+				of home are you looking to buy?</p>
+			<div class="form-group">
+				<select class="form-control text-info" id="q2-sel">
+					<option disabled selected>Select an option</option>
+					<option id="q2-o1" value="Detached">Single Family Home</option>
+					<option id="q2-o2" value="Attached">Townhome</option>
+					<option id="q2-o3" value="Condominium">Condo</option>
+					<option id="q2-o4" value="Cooperative">Multi-Family</option>
+				</select>
+			</div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionTwoPrevBtn" class="btn btn-primary" href="#questionOne">Back</a>
+				<a id="questionTwoNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q2-err"></div>
+		</div>
+	</div>
+</div>
+<div id="questionThree" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q3"></p>
+			<p class="text-muted"><small class="text-info">3 <i class="fas fa-arrow-right"></i></small> When do you plan
+				on purchasing this property?</p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q3-o1" value="Within 30 days">Within 30
+				days</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q3-o2" value="Within 90 days">Within 90
+				days</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q3-o3" value="More than 6 months">More than
+				6 months</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q3-o4" value="Researching options">Researching options</button>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionThreePrevBtn" class="btn btn-primary" href="#questionTwo">Back</a>
+				<a id="questionThreeNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q3-err"></div>
+		</form>
+	</div>
+</div>
+<div id="questionFour" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q4"></p>
+			<p class="text-muted"><small class="text-info">4 <i class="fas fa-arrow-right"></i></small> In what zip code
+				are you hoping to purchase a home?</p>
+			<div class="form-group">
+				<input type="text" class="form-control text-info" id="q4-zip" placeholder="5 digit zip code" value="" autocomplete="off">
+			</div>
+
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionFourPrevBtn" class="btn btn-primary" href="#questionThree">Back</a>
+				<a id="questionFourNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-1 text-danger text-center" id="q4-empty-err"></div>
+			<div class="mt-1 text-danger text-center" id="q4-num-err"></div>
+			<div class="mt-1 text-danger text-center" id="q4-len-err"></div>
+		</form>
+	</div>
+
+</div>
+<div id="questionFive" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q5"></p>
+			<p class="text-muted"><small class="text-info">5 <i class="fas fa-arrow-right"></i></small> What home price
+				(roughly) have you been considering?</p>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><i class="fas fa-dollar-sign text-success"></i></span>
+				</div>
+				<input type="number" class="form-control text-info" id="q5-price">
+			</div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionFivePrevBtn" class="btn btn-primary" href="#questionFour">Back</a>
+				<a id="questionFiveNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q5-err"></div>
+		</form>
+	</div>
+</div>
+<div id="questionSix" class="container-fluid h-100 ">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q6"></p>
+			<p class="text-muted"><small class="text-info">6 <i class="fas fa-arrow-right"></i></small> How much money
+				could you comfortably use for down payment?</p>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"><i class="fas fa-dollar-sign text-success"></i></span>
+					</div>
+					<input type="number" class="form-control text-info" id="q6-down-payment">
+				</div>
+			</div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionSixPrevBtn" class="btn btn-primary" href="#questionFive">Back</a>
+				<a id="questionSixNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q6-err"></div>
+		</div>
+	</div>
+</div>
+<div id="questionSeven" class="container-fluid h-100 ">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q7"></p>
+			<p class="text-muted"><small class="text-info">7 <i class="fas fa-arrow-right"></i></small> Estimated gross
+				<span class="text-info">monthly</span> household income
+			</p>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"><i class="fas fa-dollar-sign text-success"></i></span>
+					</div>
+					<input type="number" class="form-control text-info" id="q7-gross-monthly-income">
+				</div>
+			</div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionSevenPrevBtn" class="btn btn-primary" href="#questionSix">Back</a>
+				<a id="questionSevenNextBtn" class="btn btn-primary">Next</a>
+			</div>
+			<div class="mt-3 text-danger text-center" id="q7-err"></div>
+		</div>
+	</div>
+</div>
+<div id="questionEight" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q8"></p>
+			<p class="text-muted"><small class="text-info">8 <i class="fas fa-arrow-right"></i></small> Are you
+				currently working with a real estate agent</p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q8-o1">Yes</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q8-o2">No</button>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionEightPrevBtn" class="btn btn-primary" href="#questionSeven">Back</a>
+				<a id="questionEightNextBtn" class="btn btn-primary" href="#questionNine">Next</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="questionNine" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<div class="col-md-6 col-xs-12">
+			<p class="text-muted text-center" id="counter-q9"></p>
+			<p class="text-muted"><small class="text-info">9 <i class="fas fa-arrow-right"></i></small> Would you like a
+				free list of "best value" homes for sale in <span id="enteredZip" class="text-info"></span>, priced
+				around <span class="text-success">$<span id="priceRange"></span></span> or below? </p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q9-o1">Yes</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q9-o2">No</button>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionNinePrevBtn" class="btn btn-primary" href="#questionEight">Back</a>
+				<a id="questionNineNextBtn" class="btn btn-primary" href="#questionTen">Next</a>
+			</div>
+			<div class="text-center"><small class="text-muted">(Some may even qualify for special financing).</small>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="questionTen" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12" autocomplete="off">
+			<p class="text-muted"><small class="text-info">11 <i class="fas fa-arrow-right"></i></small> What is your
+				credit range? (optional)</p>
+			<button type="button" class="btn btn-outline-info btn-block" id="q10-o1" value="Excellent">Excellent</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q10-o2" value="Good">Good</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q10-o3" value="Fair">Fair</button>
+			<button type="button" class="btn btn-outline-info btn-block" id="q10-o4" value="Poor">Poor</button>
+
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionTenPrevBtn" class="btn btn-primary" href="#questionNine">Back</a>
+				<a id="questionTenNextBtn" class="btn btn-primary" href="#questionEleven">Next</a>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="questionEleven" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12" autocomplete="off">
+			<p class="text-muted text-center" id="counter-q11"></p>
+			<h4 class="text-muted text-center">Congrats! You're almost done.</h4>
+			<p>We just need know where to send your results.</p>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<input type="text" class="form-control text-info" id="q11-first-name" value="" placeholder="First name">
+					<div class="text-danger mt-1 fname-err"></div>
+				</div>
+				<div class="form-group col-md-6">
+					<input type="text" class="form-control text-info" id="q11-last-name" value="" placeholder="Last name">
+					<div class="text-danger mt-1 lname-err"></div>
+				</div>
+			</div>
+			<div class="input-group mb-1">
+				<div class="input-group-prepend">
+					<span class="input-group-text">1+</span>
+				</div>
+				<input type="number" class="form-control text-info" id="q11-phone" placeholder="Phone number">
+			</div>
+			<div class="text-danger mt-1 mb-3 phone-err"></div>
+			<div class="form-group">
+				<input type="text" class="form-control text-info" id="q11-email" value="" placeholder="Email address">
+				<div class="text-danger mb-1 email-err"></div>
+			</div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="questionElevenPrevBtn" class="btn btn-primary" href="#questionTen">Back</a>
+				<a id="questionElevenNextBtn" class="btn btn-primary" href="#endOfQuiz">Finish</a>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="endOfQuiz" class="container-fluid h-100">
+	<div class="row h-100 justify-content-center align-items-center">
+		<form class="col-md-6 col-xs-12">
+			<p class="text-muted text-center">Thanks <span id="fname"></span>!</p>
+			<div class="text-muted text-center" id="lastPage"></div>
+			<div class="form-group mt-3 next-container text-center">
+				<a id="endOfQuizPrevBtn" class="btn btn-primary" href="#questionEleven">Back</a>
+				<input class="btn btn-primary" type="button" data-qlf-submit="" value="Submit" data-target="#submissionModal" data-toggle="modal" data-backdrop="static" data-keyboard="false" name="fullSubmit">
+			</div>
+			<div class="text-center"><small class="text-muted">* This quiz is provided for informational purposes and is
+					not a commitment to lend. You have not been pre-approved or pre-qualified.</small></div>
+			<div class="form-group text-center mt-2">
+				<small class="text-muted">* By submitting, I am authorizing AnnieMac Home Mortgage to deliver
+					telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or
+					a prerecorded message. I also understand that I am not required to provide this authorization
+					as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling
+					rates will apply.</small>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Low income modal Modal -->
+<div class="modal fade" id="incomeModal" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h3 class="modal-title text-info">Are you sure your ready?</h3>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center text-muted">Based on your income, now may not be the best time to purchase a
+							home.
+							But don't worry, one of our Loan Originators will be happy to get you on the right track.
+						</p>
+						<div class="form-group">
+							<input type="text" class="form-control form-control-lg" placeholder="First name" id="loIncFirstName" autocomplete="off">
+							<div class="text-danger" id="loIncFirstName-err"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control form-control-lg" placeholder="Last name" id="loIncLastName" autocomplete="off">
+							<div class="text-danger" id="loIncLastName-err"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control form-control-lg" placeholder="Email" id="loIncEmail" autocomplete="off">
+							<div class="text-danger" id="loIncEmail-err"></div>
+						</div>
+						<div class="form-group mt-3 next-container text-center" id="lowIncomeButtonContainer">
+							<a id="resetIncomeBtn" class="btn btn-primary" href="#questionSeven" data-dismiss="modal">Back</a>
+							<input class="btn btn-primary" type="button" value="Submit" name="miq-submit" data-qlf-submit="" data-toggle="modal" data-target="#submissionModal" data-backdrop="static" data-keyboard="false">
+						</div>
+						<div class="form-group mt-2">
+							<small class="text-muted">By submitting, I am authorizing AnnieMac Home Mortgage to deliver
+								telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or
+								a prerecorded message. I also understand that I am not required to provide this authorization
+								as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling
+								rates will apply.</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Submission Modal -->
+<div id="submissionModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+			</div>
+			<div class="modal-body text-center" style="padding-top:4%;padding-bottom:4%;">
+				<div class="fa-3x">
+					<div class="mb-3" id="db-logo-submit"></div>
+					<h3 class="text-info"><i class="fas fa-spinner fa-spin"></i> Submitting your info, please wait.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="/dev/themes/QuizAssets/scripts/loadCss.js"></script>
+<script type="text/javascript" src="/dev/themes/QuizAssets/scripts/script.js"></script>
+<script type="text/javascript" src="/dev/themes/QuizAssets/scripts/validation.js"></script>
+<script type="text/javascript" src="/dev/themes/QuizAssets/scripts/animate.js"></script>
+<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+{% endblock %}
