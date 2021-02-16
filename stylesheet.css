@@ -24,6 +24,10 @@ ul.menu.nav {
     justify-content: center;
     margin: 0 auto;
 }
+.team-member {
+    width: auto;
+    margin: 0 50px 50px;
+}
 select {
     text-transform: none;
     font-weight: normal;
