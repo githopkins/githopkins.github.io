@@ -18,9 +18,12 @@ $( document ).ready(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
+	if ($('body').hasClass('site-type-corporate')) {
+		$(covid).insertBefore( $( "#home-provide" ) );
+	};
 	if ($('body').hasClass('site-type-branch')) {
 		$(covid).insertBefore( $( "#home-provide" ) );
-	}
+	};
 });
 
 	
