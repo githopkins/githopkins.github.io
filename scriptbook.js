@@ -8,6 +8,12 @@ var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>'
 var fullwidthsidebarlinks = '<div id="links-sidebar-full-width"><h4>Important Links</h4><ul><a href="/page/buyer-guide"><li>First Time Home Buyer</li></a><a href="/page/faq"><li>Frequent Questions</li></a><a href="/mortgage/calculator/affordability"><li>Mortgage Affordability Calculator</li></a><a href="/mortgage/calculator/refinance"><li>Should I Refinance?</li></a><a href="/contact"><li>Contact Me</li></a></ul></div>';
 
 $( document ).ready(function() {
+	if ($('body').hasClass('site-type-corporate')) {
+		$(covid).insertBefore( $( "#home-provide" ) );
+	};
+	if ($('body').hasClass('site-type-branch')) {
+		$(covid).insertBefore( $( "#home-provide" ) );
+	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 		var loanoriginatornmls  = document.querySelector("#originator-core-details-text > h4 > span").innerText;
@@ -17,12 +23,6 @@ $( document ).ready(function() {
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-	};
-	if ($('body').hasClass('site-type-corporate')) {
-		$(covid).insertBefore( $( "#home-provide" ) );
-	};
-	if ($('body').hasClass('site-type-branch')) {
-		$(covid).insertBefore( $( "#home-provide" ) );
 	};
 });
 
