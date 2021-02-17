@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$(body).hide();
+	console.log('this is working so far');
 // 	$(window)
 // 		.keydown(function(event) {
 // 			if (event.keyCode == 13) {
