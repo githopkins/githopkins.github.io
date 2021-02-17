@@ -186,6 +186,11 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
         margin-right: 6px;
     }
 }
+@media screen and (max-width: 1390px) {
+    #button-container-home {
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 980px) {
     #calculations-and-numbers {
         padding-bottom: 60px;
