@@ -13,6 +13,7 @@ $( document ).ready(function() {
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		var firstname = loanoriginatorname.split(" ");
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		$( dropnumber ).prependTo( $( "#list_12148" ) );
 		$(covid).insertBefore( $( "#biography" ) );
 		$('#list_11409').addClass('hide');
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
