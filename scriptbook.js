@@ -11,7 +11,7 @@ $( document ).ready(function() {
 		var firstname = loanoriginatorname.split(" ");
 		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 		$(covid).insertBefore( $( "#biography" ) );
-		$('#list_11409').hide();
+		$('#list_11409').addClass('hide');
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
