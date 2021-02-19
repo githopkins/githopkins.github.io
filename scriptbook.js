@@ -11,11 +11,11 @@ $( document ).ready(function() {
 		loanoriginatornumber = loanoriginatornumber.substring(1);
 		var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
 		$( dropnumber ).prependTo( $( "#list_12148" ) );
+		$('#list_11409').addClass('hide');
 		var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 		var loanoriginatornmls = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 		var firstname = loanoriginatorname.split(" ");
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
-		$('#list_11409').addClass('hide');
 	};
 });
