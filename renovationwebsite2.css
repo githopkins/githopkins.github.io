@@ -280,12 +280,12 @@ body {
 #reno-construction-main-section {
 	display: flex;
 	margin: 0 auto;
+	flex: 1;
 }
 #side-bar-section {
 	padding: 0 20px;
 	margin-right: 15px;
 	min-width: 400px;
-	flex: 1;
 }
 #readable-section {
 	display: flex;
@@ -507,6 +507,8 @@ body {
 form {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
 }
 
 label {
@@ -528,6 +530,16 @@ input {
 	font-weight: 300;
 	margin-bottom: 15px;
 	letter-spacing: .8px;
+}
+
+input[type="submit"] {
+	width: 300px;
+	margin: 50px auto 0;
+	background: #78c254;
+	border: none;
+	color: white;
+	letter-spacing: 1.6px;
+	font-size: 17px;
 }
 
 input:active, input:focus {
