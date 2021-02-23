@@ -491,9 +491,6 @@ body {
 	text-align: center;
 	font-size: 14px;
 }
-.learn-more:hover {
-	background: #78c254;
-}
 .learn-more strong a {
 	color: white !important;
 	font-size: 15px;
