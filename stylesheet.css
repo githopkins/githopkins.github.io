@@ -1853,6 +1853,7 @@ p, li, a {
     #inserted-banner {
         min-height: 245px;
         margin-bottom: 65px;
+        background-size: cover;
     }
     #originator-main-details {
         flex-direction: column;
