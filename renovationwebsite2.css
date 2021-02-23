@@ -399,25 +399,109 @@ body {
 #grid4 {
 	border-top: 1px solid rgba(0,0,0,.2);
 }
-.product-selectable i {
+.product-selectable i, .compare-selection i {
 	font-size: 24px;
 	background: #0f4777;
 	color: white;
 	border-radius: 5px;
 	padding: 8px;
 	margin: 15px 0 10px;
+	width: fit-content;
 }
-.product-selectable span {
+.product-selectable span, .compare-selection span {
 	float: right;
 	margin-top: 10px;
 	opacity: .9;
 	font-size: 13px;
 }
-.product-selectable h3 {
+.product-selectable h3, .compare-selection h3 {
 	font-size: 18px;
 	margin: 10px 0;
 }
-.product-selectable p {
+.product-selectable p, .compare-selection p {
 	font-size: 15px;
 	opacity: .6;
+}
+#compare-options-section {
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	margin-top: 60px;
+}
+#compare-chart {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 140px;
+}
+.compare-selection {
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
+	padding: 14px 20px;
+	min-height: 690px;
+	margin: 0 20px 0 0;
+	position: relative;
+}
+.compare-selection i {
+	margin-top: 5px;
+}
+.specific {
+	border-top: 1px solid rgba(0,0,0,.08);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 40px;
+	margin: 0 -20px;
+	padding: 0 17px;
+}
+.columnize {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 -20px;
+	padding: 8px 17px;
+}
+.specific strong {
+	font-size: 14px;
+	/* order: 2; */
+}
+.specific span {
+	margin-top: 0;
+	font-weight: normal;
+}
+/* .columnize strong {
+	order: -1;
+} */
+.learn-more {
+	position: absolute;
+	bottom: -43px;
+	background: #0f4777;
+	display: block;
+	margin: -20px;
+	width: 100.6%;
+	border-radius: 0 0 4px 4px;
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
+	left: 19px;
+	text-align: center;
+	font-size: 14px;
+}
+.learn-more:hover {
+	background: #78c254;
+}
+.learn-more strong a {
+	color: white !important;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 4px rgb(0 0 0 / 35%);
+	font-weight: 300;
+}
+.learn-more:hover strong a {
+	font-weight: 600;
+	text-decoration: none !important;
 }
