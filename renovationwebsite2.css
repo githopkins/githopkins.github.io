@@ -502,3 +502,9 @@ body {
 	font-weight: 600;
 	text-decoration: none !important;
 }
+
+/* Lead Capture */
+form {
+	display: flex;
+	flex-direction: column;
+}
