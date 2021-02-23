@@ -1791,6 +1791,9 @@ p, li, a {
         height: 216px;
         margin-bottom: 0px;
     }
+    #inserted-banner {
+        padding-top: 0px;
+    }
     #inserted-banner > .container-section > h3 {
         font-size: 35px !important;
     }
