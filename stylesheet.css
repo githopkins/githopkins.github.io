@@ -1905,3 +1905,22 @@ p, li, a {
 footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     display: none;
 }
+#mobile-apply a {
+    margin-left: 0;
+    background: #7fc14a;
+    border-radius: 5px;
+    color: white !important;
+    border: none;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    min-width: 250px !important;
+    display: block;
+    margin-top: 10px;
+}
+@media screen and (min-width: 970px) { 
+    #mobile-apply {
+        display: none;
+    }
+}
