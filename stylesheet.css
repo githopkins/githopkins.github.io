@@ -1851,6 +1851,7 @@ p, li, a {
 }
 @media screen and (max-width: 969px) { 
     #inserted-banner {
+        min-height: 245px;
         margin-bottom: 65px;
     }
     #originator-main-details {
