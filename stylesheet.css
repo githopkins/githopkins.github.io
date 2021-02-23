@@ -1788,7 +1788,6 @@ p, li, a {
 }
 @media screen and (max-width: 970px) { 
     #inserted-banner {
-        height: 216px;
         margin-bottom: 0px;
     }
     #inserted-banner {
