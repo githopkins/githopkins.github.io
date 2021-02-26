@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 	$('#hide-popover').click(function() {
-		$('#beginner-guide-to-mortgages').hide(800);
+		$('#beginner-guide-to-mortgages').hide(200);
 		localStorage.setItem('podcastpopuphidden', 'true');
 	});
 	if ((localStorage.podcastpopuphidden) == "true") {
-		$('#beginner-guide-to-mortgages').hide(800);
+		$('#beginner-guide-to-mortgages').hide(200);
 		console.log('popup hidden for podcast');
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
