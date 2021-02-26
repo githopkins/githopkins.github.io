@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 	$('#hide-popover').click(function() {
-		$('#beginner-guide-to-mortgages').addClass('hide');
+		$('#beginner-guide-to-mortgages').hide();
 		localStorage.setItem('podcastInformation', false);
 	});
 	if(podcastInformation){
-		$('#beginner-guide-to-mortgages').removeClass('hide');
+		$('#beginner-guide-to-mortgages').show();
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19</h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
