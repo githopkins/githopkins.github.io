@@ -3,7 +3,7 @@ $( document ).ready(function() {
 		$('#beginner-guide-to-mortgages').hide();
 		localStorage.setItem('podcastpopuphidden', 'true');
 	});
-	if (localStorage.getItem('podcastpopuphidden') === "0") {
+	if (localStorage.getItem('podcastpopuphidden') === "true") {
 		$('#beginner-guide-to-mortgages').style('display', 'none');
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
