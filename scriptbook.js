@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	$('#hide-popover').click(function() {
-		$('#beginner-guide-to-mortgages').hide();
+		$('#beginner-guide-to-mortgages').hide(800);
 		localStorage.setItem('podcastpopuphidden', 'true');
 	});
 	if (localStorage.getItem('podcastpopuphidden') === "true") {
