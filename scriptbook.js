@@ -2,7 +2,7 @@ $( document ).ready(function() {
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
 		localStorage.setItem('podcastpopuphidden', 'true');
-	});
+	};
 	if (localStorage.getItem('podcastpopuphidden') === "0") {
 		$('#beginner-guide-to-mortgages').style('display', 'none');
 	};
