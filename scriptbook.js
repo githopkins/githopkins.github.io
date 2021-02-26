@@ -1,9 +1,9 @@
 $( document ).ready(function() {
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
-		localStorage.setItem('podcastInformation', true);
+		localStorage.setItem('hidePodcastPopup', 'true');
 	});
-	if(podcastInformation){
+	if('hidePodcastPopup' === 'true'){
 		$('#beginner-guide-to-mortgages').hide();
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
