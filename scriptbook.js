@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+	if (localStorage.getItem('hidepodcastpopup') === 'true') {
+		$("#beginner-guide-to-mortgages").addClass('hide');
+	  }
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
 	});
