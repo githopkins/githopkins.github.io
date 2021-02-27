@@ -7,14 +7,6 @@ $( document ).ready(function() {
 		$('#beginner-guide-to-mortgages').hide(200);
 		console.log('popup hidden for podcast');
 	};
-	$('#dismisscovid').click(function() {
-		$('#covid-warning').hide(200);
-		localStorage.setItem('covidwarninghidden', 'true');
-	});
-	if ((localStorage.covidwarninghidden) == "true") {
-		$('#covid-warning').hide(200);
-		console.log('covid warning hidden');
-	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
@@ -32,5 +24,13 @@ $( document ).ready(function() {
 		var firstname = loanoriginatorname.split(" ");
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
+	};
+	$('#dismisscovid').click(function() {
+		$('#covid-warning').hide(200);
+		localStorage.setItem('covidwarninghidden', 'true');
+	});
+	if ((localStorage.covidwarninghidden) == "true") {
+		$('#covid-warning').hide(200);
+		console.log('covid warning hidden');
 	};
 });
