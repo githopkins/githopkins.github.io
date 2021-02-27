@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		localStorage.setItem('covidwarninghidden', 'true');
 	});
 	if ((localStorage.covidwarninghidden) == "true") {
-		$('#dismisscovid').hide(200);
+		$('#covid-warning').hide(200);
 		console.log('covid warning hidden');
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
