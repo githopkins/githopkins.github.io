@@ -360,6 +360,14 @@ body {
 	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
 	position: relative;
 }
+#construction-picture {
+	background: url(renrenovation.jpeg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position-y: 30%;
+}
 #transformation-before {
 	background: url(kitchen_before.jpeg);
 	position: absolute;
