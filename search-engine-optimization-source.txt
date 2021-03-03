@@ -1,7 +1,6 @@
 <!-- BEGIN CORPORATE -->
 <!-- On Every Page -->
 <meta name="author" content="https://annie-mac.com">
-<meta name="keywords" content="keywords for entire site">	
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="business">
 <meta name="keywords" content="AnnieMac, AnnieMac Home Mortgage, AnnieMac Home Mortgage NJ, home loan mortgage calculator, va home loan mortgage calculator, FHA loan, VA loan, mortgage refinance, mortgage application">
