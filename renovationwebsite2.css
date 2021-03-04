@@ -457,7 +457,7 @@ body {
 	margin: 10px 0;
 }
 .product-selectable p, .compare-selection p {
-	font-size: 16.5px;
+	font-size: 15.5px;
 	opacity: .6;
 }
 #compare-options-section {
@@ -470,6 +470,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 140px;
+	font-family: 'quasimoda', sans-serif;
 }
 .compare-selection {
 	display: flex;
