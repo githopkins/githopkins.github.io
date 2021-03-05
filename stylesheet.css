@@ -8,6 +8,9 @@
 #page-banner h2, #video-banner h2, #product-banner h2, #brand-banner h2, #core-banner h2 {
     font-size: 45px;
 }
+.site-type-branch #home-reviews {
+    display: none;
+}
 ul.menu.nav {
     display: flex;
 }
