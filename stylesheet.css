@@ -11,6 +11,10 @@
 .site-type-team #branch-managers, .branch-manager-section {
     padding: 10px 0 !important;
 }
+.site-type-team .team-member {
+    width: auto;
+    margin: 0;
+}
 .branch-manager-section .manager-information {
     margin: 0 !important;
 }
