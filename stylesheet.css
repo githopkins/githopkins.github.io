@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* AnnieMac Stylesheet Document - Updated Nov 13 2020 */
+/* AnnieMac Stylesheet Document - Updated Mar 5 2021 */
+#page-banner, #video-banner, #product-banner, #core-banner {
+    height: 23vw;
+    min-height: 300px;
+}
 ul.menu.nav {
     display: flex;
 }
