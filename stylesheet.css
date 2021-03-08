@@ -1974,6 +1974,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         padding: 0;
         justify-content: center;
         background-position-x: 59%;
+        border-bottom: 0;
     }
     .site-type-corporate #home-provide {
         width: 100%;
