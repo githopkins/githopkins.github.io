@@ -268,7 +268,6 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
 .page-loan-apply #questions {
     width: 80vw;
     margin: 0 auto 20px;
-    overflow-y: auto;
     min-height: 77vh;
     padding: 0;
 }
