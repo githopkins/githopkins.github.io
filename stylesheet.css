@@ -1951,7 +1951,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .site-type-corporate #home-banner {
         min-height: 1px !important;
         max-height: 350px;
@@ -1993,7 +1993,17 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     #navigation_new_upper .menu {
         display: none;
     }
-}
-* {
-    overflow: initial !important;
+    #sitemap {
+        display: flex;
+        flex-direction: column;
+    }
+    footer #copyrights {
+        align-items: flex-start;
+    }
+    #copyrights ul:nth-of-type(1) {
+        margin: 0;
+    }
+    footer #sitemap ul.menu.nav li ul {
+        margin: 10px 0px;
+    }
 }
