@@ -1962,6 +1962,10 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     .site-type-corporate #home-provide {
         width: 100%;
         padding: 0;
+        margin-top: 60px;
+    }
+    .site-type-corporate #home-provide iframe {
+        display: none;
     }
     .site-type-corporate #we-provide-more-master h3 {
         font-size: 37px;
