@@ -1953,17 +1953,17 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
 }
 
 @media screen and (max-width: 700px) {
-    .site-type-corporate > #home-banner {
+    .site-type-corporate #home-banner {
         min-height: 1px !important;
         max-height: 300px;
         padding: 0;
         justify-content: center;
     }
-    .site-type-corporate > #home-provide {
+    .site-type-corporate #home-provide {
         width: 100%;
         padding: 0;
     }
-    .site-type-corporate > #we-provide-more-master h3 {
+    .site-type-corporate #we-provide-more-master h3 {
         font-size: 37px;
     }
 }
