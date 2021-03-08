@@ -1951,3 +1951,9 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         display: none;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .site-type-corporate #home-banner {
+        max-height: 400px;
+    }
+}
