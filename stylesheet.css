@@ -1951,7 +1951,19 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     }
 }
 
-/* @media screen and (max-width: 750px) {
+ @media screen and (max-width: 750px) {
+    #annie_mac-loan-officer .manager-biography p {
+        margin: 0;
+        padding: 0;
+    }
+    .site-type-loan_officer .manager-biography p {
+        width: 100%;
+    }
+    #originator .manager-biography {
+        width: auto;
+        padding: 10px;
+    }
+     /*
     .site-type-corporate #home-banner {
         min-height: 1px !important;
         max-height: 350px;
