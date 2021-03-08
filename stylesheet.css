@@ -1994,6 +1994,6 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         display: none;
     }
 }
-html, body {
-    overflow: hidden !important;
+* {
+    overflow: initial !important;
 }
