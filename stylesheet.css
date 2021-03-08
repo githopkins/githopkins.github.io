@@ -2022,4 +2022,8 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     footer #sitemap ul.menu.nav li ul {
         margin: 10px 0px;
     }
+    footer #sitemap ul.menu.nav {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
 }
