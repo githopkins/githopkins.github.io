@@ -1985,7 +1985,6 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         justify-content: space-between;
     }
     .site-type-corporate .action-buttons-calcs button {
-        width: 145px;
-        
+        width: 150px;   
     }
 }
