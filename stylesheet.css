@@ -1963,4 +1963,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         width: 100%;
         padding: 0;
     }
+    .site-type-corporate > #we-provide-more-master h3 {
+        font-size: 37px;
+    }
 }
