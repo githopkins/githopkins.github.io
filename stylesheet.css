@@ -1959,6 +1959,11 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     .site-type-loan_officer .manager-biography p {
         width: 100%;
     }
+    #originator #biography {
+        margin: 0;
+        padding: 0;
+        width: 98%;
+    }
     #originator .manager-biography {
         width: auto;
         padding: 10px;
