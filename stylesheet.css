@@ -1967,7 +1967,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
         font-size: 37px;
     }
     .site-type-corporate #home-reviews {
-        width: 100%;
+        display: none;
     }
     .site-type-corporate #calculations-and-numbers {
         margin-top: 0px;
