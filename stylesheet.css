@@ -2009,6 +2009,9 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     #navigation_new_upper .menu {
         display: none;
     }
+    #start-your-story {
+        margin-top: 10px;
+    }
     #sitemap {
         display: flex;
         flex-direction: column;
