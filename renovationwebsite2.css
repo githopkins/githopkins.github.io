@@ -273,7 +273,7 @@ body {
 	background: url(white-reno-construction.png);
 	background-size: cover;
 }
-#renovation-banner h2 {
+#renovation-banner h2, #construction-banner h2 {
 	font-size: 22px;
 	margin: 0 0 20px;
 	font-family: 'gravesend-sans', serif;
@@ -486,6 +486,9 @@ body {
 	margin: 0 20px 0 0;
 	position: relative;
 }
+.construction-selection {
+	min-height: 400px !important; 
+}
 .compare-selection i {
 	margin-top: 5px;
 }
@@ -589,9 +592,30 @@ input[type="submit"] {
 	font-size: 17px;
 }
 
+input[type="checkbox"], input[type="radio"] {
+	padding: 13px !important;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 0;
+}
+
+select {
+	margin-top: 6px;
+}
+
 input:active, input:focus {
 	outline: none;
 	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 5%);
+}
+
+.single-selection {
+	display: flex;
+	align-items: center;
+}
+
+.single-selection label span {
+	margin-left: 4px;
+	font-size: 12px;
 }
 
 .inherit_full_width {
@@ -599,8 +623,21 @@ input:active, input:focus {
 	margin: 0 auto;
 	flex: revert !important;
 	min-width: 800px;
+	padding-bottom: 60px !important;
 }
 
+.inherit_full_width h4 {
+	margin: 0;
+	color: #275881;
+}
+
+.primary-label {
+	font-weight: 700;
+}
+
+.primary-label:not(:first-of-type) {
+	margin-top: 15px;
+}
 .blue_overlay {
 	background: #275881 !important;
 }
