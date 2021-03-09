@@ -1564,12 +1564,6 @@ p, li, a {
     text-align: left;
     font-family: 'inter',sans-serif;
 }
-#tmc-loan-officer .manager-biography h2:first-of-type {
-    color: #319d31;
-}
-#lofidirect-loan-officer .manager-biography h2:first-of-type {
-    color: #95c553;
-}
 #inserted-banner {
     height: 350px;
     background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
@@ -1598,6 +1592,12 @@ p, li, a {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
+}
+#tmc-loan-officer .manager-biography h2:first-of-type {
+    color: #319d31;
+}
+#lofidirect-loan-officer .manager-biography h2:first-of-type {
+    color: #95c553;
 }
 #tmc-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
     background: #319d31;
