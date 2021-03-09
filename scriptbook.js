@@ -30,20 +30,24 @@ $( document ).ready(function() {
 		$(fullwidthsidebarlinks).appendTo( $( "#loan-originator-backdrop" ) );
 		var loanoriginatornumber = document.querySelector("#navigation-sidebar > div:nth-child(2) > a:nth-child(4) > h4").innerText;
 		loanoriginatornumber = loanoriginatornumber.substring(1);
-		var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
-		$( dropnumber ).prependTo( $( "#list_12148" ) );
 		$('#list_11409').addClass('hide');
 		var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 		var loanoriginatornmls = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 		var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '<span>' + loanoriginatornmls + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a><div id="mobile-apply"><a href="/loan/apply">Apply Now</a></div></div></div></div>';
 		if (window.location.href.indexOf("annie-mac.com") > -1) {
 			$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+			var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
+			$( dropnumber ).prependTo( $( "#list_12148" ) );
 		}
 		if (window.location.href.indexOf("lofidirect.com") > -1) {
 			$(dropbanner).insertBefore( $( "#lofidirect-loan-officer" ) );
+			var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
+			$( dropnumber ).prependTo( $( "#list_12170" ) );
 		}
 		if (window.location.href.indexOf("themtgco.com") > -1) {
 			$(dropbanner).insertBefore( $( "#tmc-loan-officer" ) );
+			var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
+			$( dropnumber ).prependTo( $( "#list_12171" ) );
 		}
 		var firstname = loanoriginatorname.split(" ");
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
