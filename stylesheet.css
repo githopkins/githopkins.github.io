@@ -76,7 +76,7 @@ select {
     min-width: 130px;
     text-align: center;
 }
-#list_12148 a {
+#list_12148 a, #list_12170 a, #list_12171 a {
     background: #7FC24A;
     padding: 10px;
     border-radius: 5px;
