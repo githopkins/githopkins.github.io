@@ -36,7 +36,15 @@ $( document ).ready(function() {
 		var loanoriginatorname = document.querySelector("#originator-core-details-text > h2").innerText;
 		var loanoriginatornmls = document.querySelector("#originator-core-details-text > h4 > span").innerText;
 		var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '<span>' + loanoriginatornmls + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">What People Say About Me</a><div id="mobile-apply"><a href="/loan/apply">Apply Now</a></div></div></div></div>';
-		$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		if (window.location.href.indexOf("annie-mac.com") > -1) {
+			$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
+		}
+		if (window.location.href.indexOf("lofidirect.com") > -1) {
+			$(dropbanner).insertBefore( $( "#lofidirect-loan-officer" ) );
+		}
+		if (window.location.href.indexOf("themtgco.com") > -1) {
+			$(dropbanner).insertBefore( $( "#tmc-loan-officer" ) );
+		}
 		var firstname = loanoriginatorname.split(" ");
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
