@@ -1564,6 +1564,9 @@ p, li, a {
     text-align: left;
     font-family: 'inter',sans-serif;
 }
+#tmc-loan-officer .manager-biography h2:first-of-type {
+    color: #319d31;
+}
 #inserted-banner {
     height: 350px;
     background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
