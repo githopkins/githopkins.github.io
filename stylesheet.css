@@ -579,12 +579,12 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 #covid-warning a:hover {
     opacity: .8;
 }
-#annie_mac-loan-officer > #branch-banner {
+#annie_mac-loan-officer > #branch-banner, #tmc-loan-officer > #branch-banner, #lofidirect-loan-officer > #branch-banner {
     background: url('https://annie-mac.com/uploads/sites/10713/public/originator-background-image.jpeg') top left no-repeat;
     background-size: cover;
     background-position-y: 63%;
 }
-#annie_mac-loan-officer #branch-content h2, .site-type-team #branch-content h2 {
+#annie_mac-loan-officer #branch-content h2, #tmc-loan-officer #branch-content h2, .site-type-team #branch-content h2, #lofidirect-loan-officer #branch-content h2 {
     margin-top: 0 !important;
 }
 @media screen and (max-width: 854px) {
@@ -1362,7 +1362,7 @@ p, li, a {
     font-weight: 400;
 }
 /* BEGIN NEW CODE FOR LOAN OFFICERS */
-#annie_mac-loan-officer {
+#annie_mac-loan-officer, #tmc-loan-officer, #lofidirect-loan-officer {
     display: flex;
     background: #fff;
     color: #333;
@@ -1386,7 +1386,7 @@ p, li, a {
     flex-direction: column;
     margin-top: 25px;
 }
-#annie_mac-loan-officer > #originator {
+#annie_mac-loan-officer > #originator, #tmc-loan-officer > #originator, #lofidirect-loan-officer > #originator {
     margin-top: -28px;
     margin-left: 25px;
     max-width: 1000px;
@@ -1613,7 +1613,7 @@ p, li, a {
 #accolades-originator .calculations-primary img {
     display: none;
 }
-#annie_mac-loan-officer .manager-biography p {
+#annie_mac-loan-officer .manager-biography p, #tmc-loan-officer .manager-biography p, #lofidirect-loan-officer .manager-biography p {
     text-align: justify;
     margin: 8px 0;
 }
@@ -1724,10 +1724,10 @@ p, li, a {
 } */
 
 @media screen and (max-width: 1200px) {
-    #annie_mac-loan-officer {
+    #annie_mac-loan-officer, #tmc-loan-officer, #lofidirect-loan-officer {
         flex-direction: column;
     }
-    #annie_mac-loan-officer > #originator {
+    #annie_mac-loan-officer > #originator, #tmc-loan-officer > #originator, #lofidirect-loan-officer > #originator{
         max-width: none;
         margin: 0 auto;
     }
@@ -1952,7 +1952,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
 }
 
  @media screen and (max-width: 750px) {
-    #annie_mac-loan-officer .manager-biography p {
+    #annie_mac-loan-officer .manager-biography p, #tmc-loan-officer .manager-biography p, #lofidirect-loan-officer .manager-biography p {
         margin: 0;
         padding: 0;
     }
