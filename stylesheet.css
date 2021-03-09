@@ -1599,10 +1599,10 @@ p, li, a {
     font-size: 16px;
     line-height: 17px;
 }
-#tmc-loan-officer #inserted-banner #button-container-home > a:nth-child(1) {
+#tmc-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
     background: #319d31;
 }
-#lofidirect-loan-officer #inserted-banner #button-container-home > a:nth-child(1) {
+#lofidirect-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
     background: #95c553;
 }
 #inserted-banner > #button-container-home > a:nth-child(1):hover {
