@@ -85,7 +85,7 @@ select {
     letter-spacing: 1px;
 }
 #list_12171 a {
-    background: #319d31;
+    background: #40a051;
     padding: 10px;
     border-radius: 5px;
     color: white !important;
@@ -1594,13 +1594,13 @@ p, li, a {
     line-height: 17px;
 }
 #tmc-loan-officer .manager-biography h2:first-of-type {
-    color: #319d31;
+    color: #40a051;
 }
 #lofidirect-loan-officer .manager-biography h2:first-of-type {
     color: #95c553;
 }
 #tmc-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
-    background: #319d31;
+    background: #40a051;
 }
 #lofidirect-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
     background: #95c553;
