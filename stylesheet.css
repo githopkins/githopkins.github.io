@@ -76,8 +76,16 @@ select {
     min-width: 130px;
     text-align: center;
 }
-#list_12148 a, #list_12170 a, #list_12171 a {
+#list_12148 a, #list_12170 a {
     background: #7FC24A;
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#list_12171 a {
+    background: #319d31;
     padding: 10px;
     border-radius: 5px;
     color: white !important;
