@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Inter', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	line-height: 26px;
 	font-weight: 300;
 }
@@ -118,7 +118,7 @@ body {
 	line-height: 40px;
 	margin-bottom: 15px;
 	margin-top: -15px;
-	font-family: 'quasimoda-2', sans-serif;
+	font-family: 'quasimoda', sans-serif;
 }
 
 #corporate-presence h2 span {
@@ -144,7 +144,7 @@ body {
 	border-radius: 6px;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 	border: 1px solid rgba(0,0,0,0);
-	font-family: 'quasimoda', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 }
 
 #presence-links a:first-of-type {
@@ -196,7 +196,7 @@ body {
 #secondary-links a, #return-links a {
 	text-decoration: none;
 	color: #fff;
-	font-family: 'quasimoda', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	letter-spacing: .020em;
 	text-align: center;
 	border-radius: 3px;
@@ -276,7 +276,8 @@ body {
 #renovation-banner h2, #construction-banner h2 {
 	font-size: 22px;
 	margin: 0 0 20px;
-	font-family: 'gravesend-sans', serif;
+	font-family: 'quasimoda', serif;
+	font-weight: 400;
 	text-transform: capitalize;
 	font-weight: normal;
 	letter-spacing: .60px;
@@ -284,12 +285,12 @@ body {
 #reno-construction-main-section {
 	display: flex;
 	margin: 0 auto;
-	font-family: 'quasimoda', sans-serif;;
+	font-family: 'proxima-nova', sans-serif;;
 }
 #reno-construction-main-section h1, #reno-construction-main-section h2, #reno-construction-main-section h3, #reno-construction-main-section h4, #reno-construction-main-section h5 {
-	font-family: 'gravesend-sans', serif;
+	font-family: 'quasimoda', serif;
+	font-weight: 400;
 	text-transform: capitalize;
-	font-weight: normal;
 	letter-spacing: .60px;
 }
 #side-bar-section {
@@ -450,8 +451,12 @@ body {
 .product-selectable span, .compare-selection span {
 	float: right;
 	margin-top: 10px;
-	opacity: .9;
+	opacity: .6;
 	font-size: 13px;
+}
+.product-selectable span:hover {
+	opacity: 1;
+	cursor: pointer;
 }
 .product-selectable h3, .compare-selection h3 {
 	font-size: 18px;
@@ -469,6 +474,7 @@ body {
 }
 #compare-chart {
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	margin-bottom: 140px;
 	font-family: 'quasimoda', sans-serif;
@@ -485,6 +491,25 @@ body {
 	min-height: 690px;
 	margin: 0 20px 0 0;
 	position: relative;
+}
+.compare-more {
+	width: 270px;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 100%;
+	border: 1px solid rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
+	padding: 14px 20px;
+	margin: 0 40px;
+	opacity: .6;
+	height: 270px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.compare-more p {
+	width: 80%;
+	margin: 0 auto;
 }
 .construction-selection {
 	min-height: 400px !important; 
@@ -643,4 +668,8 @@ input:active, input:focus {
 }
 .green_overlay {
 	background: #5ba737 !important;
+}
+
+.hide {
+	display: none;
 }

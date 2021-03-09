@@ -44,25 +44,25 @@
 			</div>
 			<div id="product-container-section">
 				<div id="grid1" class="product-selectable">
-					<span><a href="">Compare</a></span>
+					<!-- <span id="selectable-1">Compare</span> -->
 					<i class="fas fa-home"></i>
 					<h3>FHA 203k</h3>
 					<p>The Standard FHA 203k allows for home buyers and homeowners to renovate their house while financing it into their mortgage. This can be done with a new home purchase as well as a refinance of an existing home. Renovation possibilities with this product include adding new appliances, replacing a septic system, building a new level, and most other home improvement projects imaginable.</p>
 				</div>
 				<div id="grid2" class="product-selectable">
-					<span><a href="">Compare</a></span>
+					<span id="selectable-2">Compare</span>
 					<i class="fas fa-home"></i>
 					<h3>FHA Limited</h3>
 					<p>The FHA Limited 203(k) Rehabilitation Loan is intended for smaller scale projects that are not structural in nature. This program can help a buyer or homeowner remodel a kitchen, change the flooring, or install an outdoor deck, adding to their own enjoyment of the home and adding to its value at the same time.</p>
 				</div>
 				<div id="grid3" class="product-selectable">
-					<span><a href="">Compare</a></span>
+					<span id="selectable-3">Compare</span>
 					<i class="fas fa-home"></i>
 					<h3>VA Renovation</h3>
 					<p>The VA Renovation is designed for minor renovations through either new home purchase or refinance. This loan allows a veteran to use their benefits to roll the cost of renovation into the mortgage without putting any money down!</p>
 				</div>
 				<div id="grid4" class="product-selectable">
-					<span><a href="">Compare</a></span>
+					<span id="selectable-4">Compare</span>
 					<i class="fas fa-home"></i>
 					<h3>Fannie Mae Homestyle</h3>
 					<p>The Fannie Mae HomeStyle is a renovation loan that can be used on new home purchase as well as refinance. It is like the FHA 203k, but it allows for renovations of luxury items where the FHA 203k does not. Luxury items can include basketball courts, swimming pools, sauna, and more. A HomeStyle can also be used for second homes, unlike a FHA 203k.</p>
@@ -106,10 +106,9 @@
 			<h3>Weigh Your Options</h3>
 		</div>
 		<div id="compare-chart">
-			<div class="compare-selection">
+			<div class="compare-selection" id="selection-1">
 				<i class="fas fa-home"></i>
 				<h3>FHA 203k</h3>
-				<!-- <p>The Standard FHA 203k allows for home buyers and homeowners to renovate their house while financing it into their mortgage. This can be done with a new home purchase as well as a refinance of an existing home. Renovation possibilities with this product include adding new appliances, replacing a septic system, building a new level, and most other home improvement projects imaginable.</p> -->
 				<div class="specific">
 					<strong>Minimum Credit</strong>
 					<span>600<span>
@@ -150,10 +149,12 @@
 					<strong><a href="renovation-lead.html?division=renovation&product-type=fha-203k">Learn More</a></strong>
 				</div>
 			</div>
-			<div class="compare-selection">
+			<div class="compare-more">
+				<p>Use the 'compare' links above to compare the options you're interested in. By default, our most popular product is already showing.</p>
+			</div>
+			<div class="compare-selection hide" id="selection-2">
 				<i class="fas fa-home"></i>
 				<h3>FHA Limited</h3>
-				<!-- <p>The FHA Limited 203(k) Rehabilitation Loan is intended for smaller scale projects that are not structural in nature. This program can help a buyer or homeowner remodel a kitchen, change the flooring, or install an outdoor deck, adding to their own enjoyment of the home and adding to its value at the same time.</p> -->
 				<div class="specific">
 					<strong>Minimum Credit</strong>
 					<span>600<span>
@@ -195,10 +196,9 @@
 				</div>
 			</div>
 			
-			<div class="compare-selection">
+			<div class="compare-selection hide" id="selection-3">
 				<i class="fas fa-home"></i>
 				<h3>Fannie Mae Homestyle</h3>
-				<!-- <p>The Fannie Mae HomeStyle is a renovation loan that can be used on new home purchase as well as refinance. It is like the FHA 203k, but it allows for renovations of luxury items where the FHA 203k does not. Luxury items can include basketball courts, swimming pools, sauna, and more. A HomeStyle can also be used for second homes, unlike a FHA 203k.</p> -->
 				<div class="specific">
 					<strong>Minimum Credit</strong>
 					<span>620<span>
@@ -238,10 +238,9 @@
 				<strong><a href="renovation-lead.html?division=renovation&product-type=reno-homestyle">Learn More</a></strong>
 			</div>
 		</div>
-		<div class="compare-selection">
+		<div class="compare-selection hide" id="selection-4">
 			<i class="fas fa-home"></i>
 			<h3>VA Renovation</h3>
-			<!-- <p>The VA Renovation is designed for minor renovations through either new home purchase or refinance. This loan allows a veteran to use their benefits to roll the cost of renovation into the mortgage without putting any money down!</p> -->
 			<div class="specific">
 				<strong>Minimum Credit</strong>
 				<span>620<span>
