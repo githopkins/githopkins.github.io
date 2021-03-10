@@ -2020,9 +2020,8 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     .site-type-corporate #new-perk-plans {
         margin: 0 !important;
     }
-    .site-type-corporate .action-buttons-calcs {
-        flex-direction: row;
-        justify-content: space-between;
+    #calculations-and-numbers {
+        padding-bottom: 0;
     }
     .site-type-corporate .action-buttons-calcs button {
         width: 150px;   
