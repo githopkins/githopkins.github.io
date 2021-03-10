@@ -619,7 +619,7 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
         display: none;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     .site-type-team #navigation-bar {
         justify-content: space-between;
         padding: 7px 14px;
