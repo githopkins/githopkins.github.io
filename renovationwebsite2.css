@@ -727,6 +727,13 @@ input:active, input:focus {
 	opacity: .8;
 }
 
+.hub-consultant p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	opacity: .8;
+}
+
 .blue_overlay {
 	background: #275881 !important;
 }
