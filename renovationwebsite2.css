@@ -683,33 +683,48 @@ input:active, input:focus {
 
 #hub-grid {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	width: 100%;
+	justify-content: flex-start;
 }
 
-#hub-grid > * {
+.hub-grid-row {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.hub-grid-row > * {
 	width: 25%;
 	flex: 1;
 }
 
 .hub-consultant {
-	
+	line-height: 26px;
+	margin-bottom: 20px;
 }
 
 .hub-consultant h4 {
-	
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .hub-consultant h5 {
-	
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .hub-consultant h6 {
-	
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	opacity: .8;
 }
 
 .hub-consultant h6 span {
-	
+	opacity: .8;
 }
 
 .blue_overlay {
