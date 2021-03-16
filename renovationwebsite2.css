@@ -689,6 +689,7 @@ input:active, input:focus {
 	flex-direction: column;
 	width: 100%;
 	justify-content: flex-start;
+	margin: 20px auto 0;
 }
 
 .hub-grid-row {
