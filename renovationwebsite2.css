@@ -8,7 +8,25 @@ body {
 	font-family: 'proxima-nova', sans-serif;
 	line-height: 26px;
 	font-weight: 300;
+	font-size: 16px;
 }
+
+#reno-construction-informational-page h1 {
+	font-size: 26px;
+}
+
+#reno-construction-informational-page h2 {
+	font-size: 24px;
+}
+
+#reno-construction-informational-page h3 {
+	font-size: 20px;
+}
+
+#reno-construction-informational-page h4 {
+	font-size: 18px;
+}
+
 
 #background-homescreen {
 	background: linear-gradient(-90deg, rgb(145 191 2 / 17%) 80%, #1a2835 99%), url(reno-background.jpg) no-repeat;
@@ -176,7 +194,6 @@ body {
 #secondary-links {
 	width: 30%;
 	float: right;
-	font-size: 15px;
 	margin-top: 40px;
 	justify-content: flex-end;
 	display: flex;
@@ -186,7 +203,6 @@ body {
 #return-links {
 	width: 30%;
 	float: right;
-	font-size: 15px;
 	margin-top: 3px;
 	justify-content: flex-end;
 	display: flex;
@@ -200,7 +216,6 @@ body {
 	letter-spacing: .020em;
 	text-align: center;
 	border-radius: 3px;
-	font-size: 16px;
 	padding: 12px;
 	border: 1px solid rgba(255,255,255,.25);
 }
@@ -208,7 +223,6 @@ body {
 #footer-presence-links {
 	width: 72%;
 	margin-top: 25px;
-	font-size: 15px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -236,7 +250,6 @@ body {
 	display: block;
 	outline: none;
 	border: none;
-	font-size: 16px;
 	border-radius: 4px;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 	padding: 16px 14px;
@@ -386,9 +399,11 @@ body {
 #in-summary, #resource-links {
 	margin-top: -20px;
 }
+#transformation-section {
+	margin-bottom: -45px;
+}
 #transformation-grid {
 	background: #78c254;
-	border-radius: 4px;
 	height: 470px;
 	margin-bottom: 40px;
 	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
@@ -446,18 +461,14 @@ body {
 	box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
 }
 .product-selectable {
-	width: 50%;
+	width: 33.3%;
 	padding: 10px 20px;
 }
 #grid1 {
 	border-right: 1px solid rgba(0,0,0,.2);
 }
-#grid3 {
-	border-top: 1px solid rgba(0,0,0,.2);
+#grid2 {
 	border-right: 1px solid rgba(0,0,0,.2);
-}
-#grid4 {
-	border-top: 1px solid rgba(0,0,0,.2);
 }
 .product-selectable i, .compare-selection i {
 	font-size: 24px;
@@ -480,6 +491,7 @@ body {
 }
 .product-selectable h3, .compare-selection h3 {
 	font-size: 18px;
+	font-weight: 500;
 	margin: 10px 0;
 }
 .product-selectable p, .compare-selection p {
@@ -501,7 +513,7 @@ body {
 }
 .compare-selection {
 	display: flex;
-	width: 300px;
+	width: 375px;
 	flex-direction: column;
 	background: #fff;
 	border-radius: 4px;
@@ -513,12 +525,8 @@ body {
 	position: relative;
 }
 .compare-more {
-	width: 270px;
 	flex-direction: column;
 	background: #fff;
-	border-radius: 100%;
-	border: 1px solid rgba(0,0,0,.15);
-	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 3%);
 	padding: 14px 20px;
 	margin: 0 40px;
 	opacity: .6;
@@ -581,7 +589,6 @@ body {
 }
 .learn-more strong a {
 	color: white !important;
-	font-size: 15px;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 4px rgb(0 0 0 / 35%);
 	font-weight: 300;
@@ -600,7 +607,6 @@ form {
 }
 
 label {
-	font-size: 15px;
 	font-weight: 400;
 	margin: 10px 0;
 	letter-spacing: .8px;
@@ -612,11 +618,11 @@ input, select {
 	border: 1px solid rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 1.5%);
 	padding: 18px;
-	font-size: 16px;
 	color: rgba(0,0,0,.55);
 	font-weight: 300;
 	margin-bottom: 15px;
 	letter-spacing: .8px;
+	font-size: 16px;
 }
 
 select {
@@ -711,7 +717,6 @@ input:active, input:focus {
 	border: 1px solid rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 2%);
 	padding: 18px;
-	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: .8px;
 }
@@ -724,13 +729,11 @@ input:active, input:focus {
 
 .hub-consultant h5 {
 	margin: 0;
-	font-size: 16px;
 	font-weight: normal;
 }
 
 .hub-consultant h6 {
 	margin: 0;
-	font-size: 16px;
 	font-weight: normal;
 	opacity: .8;
 }
@@ -738,7 +741,6 @@ input:active, input:focus {
 .hub-consultant p {
 	margin: 0;
 	opacity: .85;
-	font-size: 16px;
 	line-height: 35px;
 	font-weight: normal;
 }
