@@ -2096,3 +2096,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
 .breadcrumb {
     display: none;
 }
+
+#site-navigation {
+    z-index: 1000;
+}
