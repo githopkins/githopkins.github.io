@@ -1789,12 +1789,33 @@ p, li, a {
 #links-sidebar-full-width { 
     display: none;
 }
+#sidebar-apply-now {
+    display: block;
+    margin: -30px auto 30px;
+}
+#sidebar-apply-now a {
+    background: #7fc14a;
+    border-radius: 5px;
+    color: white !important;
+    border: none;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    min-width: 250px !important;
+    display: block;
+    margin-top: 10px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
 @media screen and (min-width: 1200px) {
     #links-sidebar-full-width {
         display: block;
         margin-top: 50px;
         margin-left: 12px;
         margin-bottom: 100px;
+        width: -webkit-fill-available;
     }
     #links-sidebar-full-width h4 {
         font-size: 21px;
