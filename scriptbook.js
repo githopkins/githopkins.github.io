@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-	$(function() {
+$(function() {
 	const locationListings = $(".location-listing");
 		locationListings.forEach((LocationListing) => {
 		const domain = locationListing.find("h4 a").attr('href');
