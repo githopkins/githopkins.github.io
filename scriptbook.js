@@ -1,10 +1,4 @@
 $(function() {
-	const locationListings = $(".location-listing");
-	locationListings.forEach((locationListing) => {
-	const domain = locationListing.find("h4 a").attr('href');
-	const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
-	locationListing.id = subdomain;
-	});
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
 		localStorage.setItem('podcastpopuphidden', 'true');
@@ -59,4 +53,10 @@ $(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
+	const locationListings = $(".location-listing");
+	locationListings.forEach((locationListing) => {
+	const domain = locationListing.find("h4 a").attr('href');
+	const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
+	locationListing.id = subdomain;
+	});
 });
