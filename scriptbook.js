@@ -54,9 +54,9 @@ $(function() {
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
 	const locationListings = $(".location-listing");
-	locationListings.forEach((locationListing) => {
-	const domain = locationListing.find("h4 a").attr('href');
+	locationListings.each((locationListing) => {
+	const domain = $(locationListing).find("h4 a").attr('href');
 	const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
-	locationListing.id = subdomain;
+	$(locationListing).id = subdomain;
 	});
 });
