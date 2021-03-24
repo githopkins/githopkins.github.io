@@ -18,12 +18,14 @@
 #team-display h3:nth-of-type(2) {
     margin-top: 65px;
 }
-.team-member {
-    margin: 20px 0 !important;
-    width: 25% !important;
-}
-.team-member:last-of-type {
-    margin-left: 0 !important;
+@media only screen and (min-width: 951px) {
+    .team-member {
+        margin: 20px 0 !important;
+        width: 25% !important;
+    }
+    .team-member:last-of-type {
+        margin-left: 0 !important;
+    }
 }
 #start-your-story {
     margin: -40px 0 0;
