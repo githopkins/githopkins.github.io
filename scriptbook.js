@@ -1,10 +1,10 @@
 $(function() {
 	const locationListings = $(".location-listing");
-		locationListings.forEach((LocationListing) => {
+	locationListings.forEach((LocationListing) => {
 		const domain = locationListing.find("h4 a").attr('href');
 		const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
 		locationListing.id = subdomain;
-	})
+		})
 	});
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
