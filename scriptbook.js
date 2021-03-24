@@ -53,10 +53,10 @@ $(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
-	const locationListings = $(".location-listing");
-	locationListings.each((locationListing) => {
-	const domain = $(locationListing).find("h4 a").attr('href');
-	const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
-	$(locationListing).id = subdomain;
+	const locationBranch = $(".location-listing");
+	$( locationBranch ).each(function() {
+		const domain = $(this).find( "h4 > a" ).attr('href');
+		const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
+		(this).id = subdomain;
 	});
 });
