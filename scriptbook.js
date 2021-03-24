@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	$(function() {
-	const locationListing = $(".location-listing");
-		locationListing.forEach((LocationListing) => {
+	const locationListings = $(".location-listing");
+		locationListings.forEach((LocationListing) => {
 		const domain = locationListing.find("h4 a").attr('href');
 		const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
 		locationListing.id = subdomain;
