@@ -19,11 +19,11 @@
     margin-top: 65px;
 }
 .team-member {
-    margin: 20px 0;
-    width: 25%;
+    margin: 20px 0 !important;
+    width: 25% !important;
 }
 .team-member:last-of-type {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 #start-your-story {
     margin: -40px 0 0;
