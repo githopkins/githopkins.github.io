@@ -5,6 +5,9 @@
     margin: 20px 0;
     width: 33%;
 }
+.team-member:last-of-type {
+    margin-left: 0;
+}
 #tmg-branch-listing, #outofstatereferral-branch-listing, #perkplans-branch-listing, #welcome-branch-listing, #welcometo-branch-listing {
     display: none;
 }
