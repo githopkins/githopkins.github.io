@@ -58,6 +58,7 @@ $(function() {
 		$( locationBranch ).each(function() {
 			const domain = $(this).find( "h4 > a" ).attr('href');
 			const subdomain = domain.replace('.annie-mac.com', '').replace('https://', '');
+			subdomain = subdomain + "-branch-listing";
 			(this).id = subdomain;
 		});
 	};
