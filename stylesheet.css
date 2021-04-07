@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* AnnieMac Stylesheet Document - Updated Mar 23 2021 */
-
+#blog-entry-page a {
+    font-weight: bold;
+    color: #036fa8;
+}
 #tmg-branch-listing, #outofstatereferral-branch-listing, #perkplans-branch-listing, #welcome-branch-listing, #welcometo-branch-listing {
     display: none;
 }
