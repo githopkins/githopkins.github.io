@@ -1862,140 +1862,140 @@ font-weight: 100;
 }
 
 @media only screen and (max-width: 600px) {
-h1 {
-	font-size: 22px;
-}
-h2 {
-	font-size: 22px;
-}
-h2 br {
-	display: none;
-}
-h3 {
-	font-size: 22px;
-}
-h4 {
-	font-size: 22px;
-}
-#reno-logo {
-	width: 325px;
-	margin: -75px -3px 91px;
-}
-#annie-mac-2021-redesign-header-section #nested-container-text h1, #product-information-section h2, .sectional-header h3 {
-	line-height: 40px;
-	font-size: 30px;
-}
-#annie-mac-2021-redesign-header-section #nested-container-text h1 span {
-	font-size: 22px;
-	line-height: 30px;
-}
-#annie-mac-2021-covid-warning {
-	padding: 30px 27px;
-}
-.annie-mac-2021-redesign-section {
-	padding: 0 15px;
-}
-#nested-button-selection button {
-	padding: 19px 18px;
-	margin-top: 15px;
-	margin-right: 11px;
-	font-size: 18px;
-	min-width: 140px;
-}
-#annie-mac-2021-product-option-grid {
-	margin: 50px -15px 70px;
-	width: 100vw;
-}
-#conventional-2021, #fha-2021 {
-	border-radius: 0;
-}
-#readable-section button, #lead-capture-reno-construction input[type="submit"] {
-	padding: 19px 18px;
-	margin: 18px auto 10px;
-	font-size: 18px;
-	min-width: 100%;
-}
-#annie-mac-2021-product-option-grid .annie-mac-2021-product-option p button {
-	min-width: 100%;
-	line-height: 28px;
-}
-#hub-grid-filter-container-2 {
-	margin: -4px 0 0px;
-	flex-direction: column;
-}
-.hub-grid-filter {
-	margin: 0 auto 9px;
-	min-width: 285px;
-}
-.hub-grid-filter:first-of-type {
-	margin-left: auto;
-}
-.hub-consultant {
-	max-height: initial;
-}
-.contractor-type {
-	float: initial;
-	min-width: 145px;
-	margin: 0 auto 15px;
-}
-#resource-section {
-	padding: 50px 15px;
-}
-.compare-selection h3 {
-	font-size: 18px;
-	min-width: 110px;
-	padding-right: 15px;
-	background: rgba(0,0,0,.07);
-	padding-left: 10px;
-}
-#compare-chart-header .compare-selection h3 span {
-	display: none;
-}
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h2 br {
+		display: none;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	h4 {
+		font-size: 22px;
+	}
+	#reno-logo {
+		width: 325px;
+		margin: -75px -3px 91px;
+	}
+	#annie-mac-2021-redesign-header-section #nested-container-text h1, #product-information-section h2, .sectional-header h3 {
+		line-height: 40px;
+		font-size: 30px;
+	}
+	#annie-mac-2021-redesign-header-section #nested-container-text h1 span {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	#annie-mac-2021-covid-warning {
+		padding: 30px 27px;
+	}
+	.annie-mac-2021-redesign-section {
+		padding: 0 15px;
+	}
+	#nested-button-selection button {
+		padding: 19px 18px;
+		margin-top: 15px;
+		margin-right: 11px;
+		font-size: 18px;
+		min-width: 140px;
+	}
+	#annie-mac-2021-product-option-grid {
+		margin: 50px -15px 70px;
+		width: 100vw;
+	}
+	#conventional-2021, #fha-2021 {
+		border-radius: 0;
+	}
+	#readable-section button, #lead-capture-reno-construction input[type="submit"] {
+		padding: 19px 18px;
+		margin: 18px auto 10px;
+		font-size: 18px;
+		min-width: 100%;
+	}
+	#annie-mac-2021-product-option-grid .annie-mac-2021-product-option p button {
+		min-width: 100%;
+		line-height: 28px;
+	}
+	#hub-grid-filter-container-2 {
+		margin: -4px 0 0px;
+		flex-direction: column;
+	}
+	.hub-grid-filter {
+		margin: 0 auto 9px;
+		min-width: 285px;
+	}
+	.hub-grid-filter:first-of-type {
+		margin-left: auto;
+	}
+	.hub-consultant {
+		max-height: initial;
+	}
+	.contractor-type {
+		float: initial;
+		min-width: 145px;
+		margin: 0 auto 15px;
+	}
+	#resource-section {
+		padding: 50px 15px;
+	}
+	.compare-selection h3 {
+		font-size: 18px;
+		min-width: 110px;
+		padding-right: 15px;
+		background: rgba(0,0,0,.07);
+		padding-left: 10px;
+	}
+	#compare-chart-header .compare-selection h3 span {
+		display: none;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-body, #annie-mac-2021-redesign-container, #transformation-section, footer {
-	background: #001a27;
-	color: white;
-}
-#reno-logo {
-	background: url('https://annie-mac.com/uploads/sites/10713/public/nightmode.png');
-	background-size: 100%;
-	object-position: -99999px 99999px;
-	background-repeat: no-repeat;
-}
-#annie-mac-2021-header-renovation-contruction-background-right {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) top;
-	background-size: cover;
-	background-position-y: 100%;
-}
-#product-information-section h2, #product-information-section h2, h4, #annie-mac-2021-redesign-header-section #nested-container-text h1, h4  {
-	color: #77c253;
-	font-weight: 500;
-}
-#lead-capture-reno-construction label {
-	color: #efefef;
-}
-#readable-section .sectional-header a, #annie-mac-2021-redesign-header-section #nested-container-text a {
-	color: #40bcff;
-}
-#resource-section {
-	background: linear-gradient(900deg,#001a27fa 0%,#001a27 100%), url(https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-}
-.hub-consultant, .transformation-photo {
-	background: #00151f;
-}
-#annie-mac-2021-covid-warning {
-	color: #e8e8e8;
-	background: #032535;
-}
-#annie-mac-2021-covid-warning h5 span, #annie-mac-2021-covid-warning button {
-	background: #036fa8;
-}
-#annie-mac-2021-covid-warning button:hover, #annie-mac-2021-covid-warning h5 span:hover {
-	background: #076fa7;
-}
-#nested-button-selection button, #readable-section button, #lead-capture-reno-construction input[type="submit"] {
-	background: #036fa8;
-}
+	body, #annie-mac-2021-redesign-container, #transformation-section, footer {
+		background: #001a27;
+		color: white;
+	}
+	#reno-logo {
+		background: url('https://annie-mac.com/uploads/sites/10713/public/nightmode.png');
+		background-size: 100%;
+		object-position: -99999px 99999px;
+		background-repeat: no-repeat;
+	}
+	#annie-mac-2021-header-renovation-contruction-background-right {
+		background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) top;
+		background-size: cover;
+		background-position-y: 100%;
+	}
+	#product-information-section h2, #product-information-section h2, h4, #annie-mac-2021-redesign-header-section #nested-container-text h1, h4  {
+		color: #77c253;
+		font-weight: 500;
+	}
+	#lead-capture-reno-construction label {
+		color: #efefef;
+	}
+	#readable-section .sectional-header a, #annie-mac-2021-redesign-header-section #nested-container-text a {
+		color: #40bcff;
+	}
+	#resource-section {
+		background: linear-gradient(900deg,#001a27fa 0%,#001a27 100%), url(https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	.hub-consultant, .transformation-photo {
+		background: #00151f;
+	}
+	#annie-mac-2021-covid-warning {
+		color: #e8e8e8;
+		background: #032535;
+	}
+	#annie-mac-2021-covid-warning h5 span, #annie-mac-2021-covid-warning button {
+		background: #036fa8;
+	}
+	#annie-mac-2021-covid-warning button:hover, #annie-mac-2021-covid-warning h5 span:hover {
+		background: #076fa7;
+	}
+	#nested-button-selection button, #readable-section button, #lead-capture-reno-construction input[type="submit"] {
+		background: #036fa8;
+	}
 }
