@@ -69,4 +69,7 @@ $(function() {
 			(this).id = subdomain;
 		});
 	}
+	if (window.location.href.indexOf("kevinhulsey") != -1) {
+		$("#we-provide-more-2").hide();
+	};
 });
