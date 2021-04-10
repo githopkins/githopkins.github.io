@@ -1616,7 +1616,7 @@ p, li, a {
     line-height: 17px;
     order: 3;
     margin-top: 10px;
-    min-width: 250px !important;
+    width: 206px !important;
 }
 #tmc-loan-officer .manager-biography h2:first-of-type {
     color: #40a051;
