@@ -1614,6 +1614,8 @@ p, li, a {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
+    order: 3;
+    margin-top: 10px;
 }
 #tmc-loan-officer .manager-biography h2:first-of-type {
     color: #40a051;
