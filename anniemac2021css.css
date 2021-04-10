@@ -1440,27 +1440,27 @@ form label {
 }
 
 #transformation-renovation-project-1-after {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url(https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-front.png');
 	background-size: cover;
 }
 
 #project-1-before-1 {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/before-living.jpeg');
 	background-size: cover;
 }
 
 #project-1-before-2 {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://images.unsplash.com/photo-1559329145-afaf18e3f349?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/after-living.jpeg');
 	background-size: cover;
 }
 
 #project-1-before-3 {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-before.jpg');
 	background-size: cover;
 }
 
 #project-1-before-4 {
-	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://images.unsplash.com/photo-1571654443889-863482ff3f42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-after.jpg');
 	background-size: cover;
 }
 
@@ -1489,7 +1489,7 @@ form label {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	min-height: 270px;
+	min-height: 400px;
 	margin: 6px;
 	padding: 20px;
 	box-shadow: 1px 7px 11px rgb(0 0 0 / 20%);
@@ -1502,6 +1502,63 @@ form label {
 	margin-bottom: 0px !important;
 	margin-right: 2px;
 	font-weight: 100;
+}
+
+#attic-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/attic-before.jpg');
+	background-size: cover;
+}
+#attic-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-attic.jpg');
+	background-size: cover;
+}
+#bathroom-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-before.jpeg');
+	background-size: cover;
+}
+#bathroom-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-after.jpeg');
+	background-size: cover;
+}
+#kitchen1-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-before.jpg');
+	background-size: cover;
+}
+#kitchen1-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-after.jpg');
+	background-size: cover;
+}
+#living-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/before-living.jpeg');
+	background-size: cover;
+}
+#living-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/after-living.jpeg');
+	background-size: cover;
+}
+#kitchen2-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-before.jpg');
+	background-size: cover;
+}
+#kitchen2-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-after.jpg');
+	background-size: cover;
+}
+#front-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/before-front.png');
+	background-size: cover;
+}
+#front-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-front.png');
+	background-size: cover;
+}
+#kitchen3-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-before.jpg');
+	background-size: cover;
+}
+#kitchen3-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 72%) 14%, rgb(21 21 21 / 35%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-after.jpg');
+	background-size: cover;
 }
 
 @media screen and (max-width: 750px) {
