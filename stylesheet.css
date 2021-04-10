@@ -1907,7 +1907,6 @@ p, li, a {
         width: 100vw;
     }
     #originator > * {
-        max-width: 97vw !important;
         margin: 10px auto;
         padding: 10px;
     }
