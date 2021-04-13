@@ -1,4 +1,6 @@
 $(function() {
+	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
+	$(headeradditional).appendTo( $( "#navigation_new_upper > div:nth-child(1) > li > a" ) );
 	$('#hide-popover').click(function() {
 		$('#beginner-guide-to-mortgages').hide();
 		localStorage.setItem('podcastpopuphidden', 'true');

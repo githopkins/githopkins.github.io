@@ -222,7 +222,8 @@ footer #sitemap ul {
 
 #nested-button-selection button,
 #readable-section button,
-#lead-capture-reno-construction input[type="submit"] {
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
 	background: #7FC24A;
 	padding: 28px 35px;
 	border-radius: 6px;
@@ -237,20 +238,23 @@ footer #sitemap ul {
 }
 
 #readable-section button,
-#lead-capture-reno-construction input[type="submit"] {
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
 	margin: 45px auto;
 	display: block;
 	outline: none;
 	border: none;
 }
 
-#lead-capture-reno-construction input[type="submit"] {
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
 	max-width: 280px;
 }
 
 #nested-button-selection button:hover,
 #readable-section button:hover,
-#lead-capture-reno-construction input[type="submit"]:hover {
+#lead-capture-reno-construction input[type="submit"]:hover,
+#lead-capture-reno-construction input[type="button"]:hover {
 	background: #76ce31;
 }
 
@@ -2101,7 +2105,8 @@ form label {
 	}
 
 	#readable-section button,
-	#lead-capture-reno-construction input[type="submit"] {
+	#lead-capture-reno-construction input[type="submit"],
+	#lead-capture-reno-construction input[type="button"] {
 		padding: 19px 18px;
 		margin: 18px auto 10px;
 		font-size: 18px;
@@ -2227,7 +2232,8 @@ form label {
 
 	#nested-button-selection button,
 	#readable-section button,
-	#lead-capture-reno-construction input[type="submit"] {
+	#lead-capture-reno-construction input[type="submit"],
+	#lead-capture-reno-construction input[type="button"] {
 		background: #036fa8;
 	}
 	

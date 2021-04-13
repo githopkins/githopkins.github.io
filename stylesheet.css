@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* AnnieMac Stylesheet Document - Updated Mar 23 2021 */
+h1.header-additional {
+    float: left;
+    text-indent: -40000vw;
+    height: 0px;
+}
 #blog-entry-page a {
     font-weight: bold;
     color: #036fa8;
