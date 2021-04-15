@@ -23,8 +23,7 @@ $(function() {
 		$("div#annie-mac-covid-container").hide();
 	};
 	if (window.location.href.indexOf("annie-mac.com/login") > -1) {
-		$(".user-login #form").hide();
-		$(location).attr('href', './');
+		$(location).attr('href', './?login-attempt=true');
 	}
 	if (window.location.href.indexOf("professional-disclaimer") != -1) {
 		$('#lead-capture-reno-construction').on('keyup keypress', function(e) {
