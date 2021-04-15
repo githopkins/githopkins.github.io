@@ -361,6 +361,9 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
     text-align: center;
     margin: 6px auto;
 }
+.user-login #form .text-center {
+    display: none;
+}
 .site-type-team #apply-navigation, .site-type-team #branch-steps, .site-type-team #home-provide, .site-type-team #home-reviews, .site-type-team #branch-banner button, .site-type-team #branch-banner .branch-content ul {
     display: none;
 }
