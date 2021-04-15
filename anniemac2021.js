@@ -24,6 +24,7 @@ $(function() {
 	};
 	if (window.location.href.indexOf("annie-mac.com/login") > -1) {
 		$(".user-login #form").hide();
+		$(location).attr('href', './');
 	}
 	if (window.location.href.indexOf("professional-disclaimer") != -1) {
 		$('#lead-capture-reno-construction').on('keyup keypress', function(e) {
