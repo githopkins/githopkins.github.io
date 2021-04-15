@@ -1,0 +1,139 @@
+<div id="annie-mac-2021-content-container">
+	<div class="annie-mac-2021-redesign-section" id="hub-consultant-disclaimer">
+		<div id="readable-section">
+			<div class="sectional-header">
+				<h3>AnnieMac Home Mortgage Hub</h3>
+				<p>AnnieMac Home Mortgage makes no endorsement, representations or warranties regarding any products or services provided by third-party vendors, including contractors, sub-contractors and suppliers of materials. AnnieMac’s acceptance of a contractor constitutes neither a recommendation nor an endorsement of the quality of the contractor’s work, professionalism or punctuality. The contractors we’ve identified as acceptable have met our licensing, insurance, financial, and experience requirements to participate in our 203K and Home-style Renovation Programs. Our review consists only of a licensing check and customer references.</p>
+				<p>The contractor is hired by the borrowers. It is the borrowers’ responsibility to complete a thorough due diligence review to make sure the contractor can meet their needs. The contract between the contractor and the borrower must explicitly set forth the desires of both parties moving forward.</p>
+				<p>If you have any questions about the products or services provided by any vendors, you must contact the vendor(s) directly or consult your own professional advisor for all advice concerning business or legal matter in connection with your project.</p>
+				<p>Click 'I agree' below to acknowledge your understanding of the limitations of AnnieMac’s Accepted Contractor’s List.</p>
+				<div id="contractor-form" class="hide">
+					<form id="lead-capture-reno-construction" action="./professional-hub">
+						<h4>Contractor Disclaimer Agreement</h4>
+						<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+						<input type="hidden" id="Filter" value="CostCenter">
+						{% if site.siteType.keyName == 'branch'%}
+						{% set branch = site.settings.branch %}
+						{% if branch.costCenter is not empty %}
+						<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+						{% else %}
+						<input type="hidden" id="FilterValue" value="">
+						{% endif %}
+						{% endif %}
+						<input id="leadSource" type="hidden" data-xml-node="LeadSourceId" value="AnnieMacWebsiteContactForm">
+						<input type="hidden" id="Entity" value="PreQual">
+						{% if site.siteType.keyName == 'loan_officer'%}
+						{% set officer = site.settings.loanOfficer %}
+						{% if site.settings.loanOfficer.miqGuid is not empty%}
+						<input type="hidden" id="UserId" name="UserId" value="{{ site.settings.loanOfficer.miqGuid }}">
+						{% else %}
+						<input type="hidden" id="UserId" name="UserId" value="">
+						{% endif %}
+						{% endif %}
+						<input type="hidden" id="Lead Import" value="true">
+						<input type="hidden" id="Notification" value="New Lead">
+						<input type="hidden" id="parameters">
+						<input type="hidden" name="defaultview" value="contractor">
+						<div class="capture-field-group">
+							<div class="capture-input-field">
+								<label for="name" class="primary-label">Name</label>
+								<input type="name" data-xml-node="BorrowerFullName" name="name">
+							</div>
+							<div class="capture-input-field">
+								<label for="email-address" class="primary-label">Email</label>
+								<input type="email" data-xml-node="Email" name="email-address">
+							</div>
+						</div>
+						<input type="hidden" name="agreement-timestamp" id="timestamp-marker" value="No timestamp recorded.">
+						<input type="submit" value="Submit" id="time-stamp-agreement" data-qlf-submit="" data-callback="onSubmit" data-action="submit">
+						<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+					</form>
+				</div>
+				<div id="consultant-form" class="hide">
+					<form id="lead-capture-reno-construction" action="./professional-hub">
+						<h4>Consultant Disclaimer Agreement</h4>
+						<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+						<input type="hidden" id="Filter" value="CostCenter">
+						{% if site.siteType.keyName == 'branch'%}
+						{% set branch = site.settings.branch %}
+						{% if branch.costCenter is not empty %}
+						<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+						{% else %}
+						<input type="hidden" id="FilterValue" value="">
+						{% endif %}
+						{% endif %}
+						<input id="leadSource" type="hidden" data-xml-node="LeadSourceId" value="AnnieMacWebsiteContactForm">
+						<input type="hidden" id="Entity" value="PreQual">
+						{% if site.siteType.keyName == 'loan_officer'%}
+						{% set officer = site.settings.loanOfficer %}
+						{% if site.settings.loanOfficer.miqGuid is not empty%}
+						<input type="hidden" id="UserId" name="UserId" value="{{ site.settings.loanOfficer.miqGuid }}">
+						{% else %}
+						<input type="hidden" id="UserId" name="UserId" value="">
+						{% endif %}
+						{% endif %}
+						<input type="hidden" id="Lead Import" value="true">
+						<input type="hidden" id="Notification" value="New Lead">
+						<input type="hidden" id="parameters">
+						<input type="hidden" name="defaultview" value="consultant">
+						<div class="capture-field-group">
+							<div class="capture-input-field">
+								<label for="name" class="primary-label">Name</label>
+								<input type="name" data-xml-node="BorrowerFullName" name="name">
+							</div>
+							<div class="capture-input-field">
+								<label for="email-address" class="primary-label">Email</label>
+								<input type="email" data-xml-node="Email" name="email-address">
+							</div>
+						</div>
+						<input type="hidden" name="agreement-timestamp" id="timestamp-marker" value="No timestamp recorded.">
+						<input type="submit" value="Submit" id="time-stamp-agreement" data-qlf-submit="" data-callback="onSubmit" data-action="submit">
+						<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+					</form>
+				</div>
+				<div id="builder-form" class="hide">
+					<form id="lead-capture-reno-construction" action="./professional-hub">
+						<h4>Builder Disclaimer Agreement</h4>
+						<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+						<input type="hidden" id="Filter" value="CostCenter">
+						{% if site.siteType.keyName == 'branch'%}
+						{% set branch = site.settings.branch %}
+						{% if branch.costCenter is not empty %}
+						<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+						{% else %}
+						<input type="hidden" id="FilterValue" value="">
+						{% endif %}
+						{% endif %}
+						<input id="leadSource" type="hidden" data-xml-node="LeadSourceId" value="AnnieMacWebsiteContactForm">
+						<input type="hidden" id="Entity" value="PreQual">
+						{% if site.siteType.keyName == 'loan_officer'%}
+						{% set officer = site.settings.loanOfficer %}
+						{% if site.settings.loanOfficer.miqGuid is not empty%}
+						<input type="hidden" id="UserId" name="UserId" value="{{ site.settings.loanOfficer.miqGuid }}">
+						{% else %}
+						<input type="hidden" id="UserId" name="UserId" value="">
+						{% endif %}
+						{% endif %}
+						<input type="hidden" id="Lead Import" value="true">
+						<input type="hidden" id="Notification" value="New Lead">
+						<input type="hidden" id="parameters">
+						<input type="hidden" name="defaultview" value="builder">
+						<div class="capture-field-group">
+							<div class="capture-input-field">
+								<label for="name" class="primary-label">Name</label>
+								<input type="name" data-xml-node="BorrowerFullName" name="name">
+							</div>
+							<div class="capture-input-field">
+								<label for="email-address" class="primary-label">Email</label>
+								<input type="email" data-xml-node="Email" name="email-address">
+							</div>
+						</div>
+						<input type="hidden" name="agreement-timestamp" id="timestamp-marker" value="No timestamp recorded.">
+						<input type="submit" value="Submit" id="time-stamp-agreement" data-qlf-submit="" data-callback="onSubmit" data-action="submit">
+						<script src="https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js"></script>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
