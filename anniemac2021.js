@@ -22,10 +22,6 @@ $(function() {
 	if ((localStorage.covidwarninghidden) == "true") {
 		$("div#annie-mac-covid-container").hide();
 	};
-	if (window.location.href.indexOf("/login") > -1) {
-		$("#product-banner").hide();
-		$("footer").hide();
-	};
 	if (window.location.href.indexOf("professional-disclaimer") != -1) {
 		$('#lead-capture-reno-construction').on('keyup keypress', function(e) {
 			var keyCode = e.keyCode || e.which;
