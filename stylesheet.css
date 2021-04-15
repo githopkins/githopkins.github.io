@@ -366,14 +366,14 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
 }
 #not-consumer {
     margin-bottom: -30px;
-    background: #036fa8;
+    background: #a80303;
     padding: 10px 20px;
     line-height: 28px;
     color: white;
     width: 94%;
 }
 #not-consumer a {
-    color: #bce8ff;
+    color: #ffbcbc;
     font-weight: bold;
     text-decoration: underline;
 }
