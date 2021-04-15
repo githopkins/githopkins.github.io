@@ -23,7 +23,7 @@ $(function() {
 		$("div#annie-mac-covid-container").hide();
 	};
 	if (window.location.href.indexOf("annie-mac.com/login") > -1) {
-		$(location).attr('href', './?login-attempt=true');
+		$(location).attr('href', './');
 	}
 	if (window.location.href.indexOf("login-attempt=true") != -1) {
 		
