@@ -75,4 +75,12 @@ $(function() {
 		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
 	};
+	if (window.location.href.indexOf("edenprairie.annie-mac.com") != -1) {
+		$("#titusmhiripiri").addClass("manager-information");
+		$("#titusmhiripiri").removeClass("team-member");
+		$("#titusmhiripiri").prependTo(".branch-manager-section");
+		$("#scottmiller").addClass("manager-information");
+		$("#scottmiller").removeClass("team-member");
+		$("#scottmiller").prependTo(".branch-manager-section");
+	};
 });
