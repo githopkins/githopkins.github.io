@@ -64,6 +64,12 @@ $(function() {
 		});
 	};
 	if ($('body').hasClass('site-type-branch')) {	
+		const branchmanager = $(".manager-information");
+		$( branchmanager ).each(function() {
+			var domain = $(this).find( "button > a" ).attr('href');
+			var subdomain = domain.replace('.annie-mac.com', '').replace('https://', '').replace('http://', '');
+			(this).id = subdomain;
+		});
 		const teamMember = $(".team-member");
 		$( teamMember ).each(function() {
 			var domain = $(this).find( "button > a" ).attr('href');
