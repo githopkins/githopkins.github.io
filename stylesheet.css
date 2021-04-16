@@ -554,7 +554,7 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
     max-width: 250px;
 }
 .hide {
-    display: none;
+    display: none !important;
 }
 html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inner-layout section#text-based p a.btn.btn-default {
     background: #006fa9;

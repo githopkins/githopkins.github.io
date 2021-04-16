@@ -23,6 +23,8 @@ $(function() {
 		$("div#annie-mac-covid-container").hide();
 	};
 	if (window.location.href.indexOf("professional-disclaimer") != -1) {
+		var windowurl = window.location.href
+		var windowurlmessage = "Summary: This lead was captured at " + windowurl 
 		$('#lead-capture-reno-construction').on('keyup keypress', function(e) {
 			var keyCode = e.keyCode || e.which;
 			if (keyCode === 13) { 
@@ -30,7 +32,7 @@ $(function() {
 				return false;
 			}
 		});
-		$("#time-stamp-agreement").mouseover(function() {
+		$("#submit-overlay").mouseover(function() {
 			var date = new Date();
 			var day = date.getDate(),
 				month = date.getMonth() + 1,
@@ -41,19 +43,22 @@ $(function() {
 			day = (day < 10 ? "0" : "") + day;
 			hour = (hour < 10 ? "0" : "") + hour;
 			min = (min < 10 ? "0" : "") + min;
-			var today = day + "-" + month + "-" + year,
+			var today = month + "/" + day + "/" + year,
 			displayTime = hour + ":" + min; 
 			$('#timestamp-marker').attr('value', today + " at " + displayTime); 
 		});
 	};
 	if (window.location.href.indexOf("/professional-disclaimer?profession=contractor") != -1) {
 		$("#contractor-form").removeClass("hide");
+		$("#lead-capture-reno-construction").removeClass("hide");
 	}
 	if (window.location.href.indexOf("/professional-disclaimer?profession=consultant") != -1) {
 		$("#consultant-form").removeClass("hide");
+		$("#lead-capture-reno-construction").removeClass("hide");
 	}
 	if (window.location.href.indexOf("/professional-disclaimer?profession=builder") != -1) {
 		$("#builder-form").removeClass("hide");
+		$("#lead-capture-reno-construction").removeClass("hide");
 	}
 	if (window.location.href.indexOf("/professional-hub?defaultview=contractor") != -1) {
 		$("#builder-filter").toggleClass("filtered-inactive");

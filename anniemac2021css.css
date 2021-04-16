@@ -1084,6 +1084,10 @@ margin-bottom: 60px;
 	margin-top: 33px;
 }
 
+#contractor-form h4, #consultant-form h4, #builder-form h4 {
+	margin: 40px 0 15px;
+}
+
 form label {
 	font-family: 'inter', sans-serif !important;
 	font-weight: 300 !important;
