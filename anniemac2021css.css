@@ -1,3 +1,7 @@
+#product-banner {
+	display: none;
+}
+
 #home-banner,
 #home-reviews {
 	display: none;
@@ -260,6 +264,37 @@ footer #sitemap ul {
 
 #nested-button-selection a:last-of-type button {
 	background: #777;
+}
+
+#submit-overlayment {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background .75s;
+}
+
+#submit-overlay {
+	position: relative;
+}
+
+#submit-overlayment h4 {
+	display: none;
+}
+
+#submit-overlayment:hover {
+	background: rgb(255 255 255 / 54%);
+	cursor: not-allowed;
+}
+
+#submit-overlayment:hover h4 {
+	display: block;
+	font-weight: 600;
 }
 
 #learn-more-button-navigation:hover,
