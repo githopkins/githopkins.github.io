@@ -89,9 +89,6 @@ $(function() {
 		$("#scottmiller").removeClass("team-member");
 		$("#scottmiller").prependTo(".branch-manager-section");
 	};
-	if (window.location.href.indexOf("/get-more") != -1) {
-		$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
-	};
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
 		$("#overlay-missing-selection").();
 		$("#number-id").attr("href", "tel:856-252-0289");
