@@ -92,6 +92,7 @@ $(function() {
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
+		$("#push-form").attr('action', "/get-more-thanks?bdm=kelsey");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
@@ -107,6 +108,7 @@ $(function() {
 	if (window.location.href.indexOf("/get-more?bdm=stacy") != -1) {
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
+		$("#push-form").attr('action', "/get-more-thanks?bdm=stacy");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
@@ -122,6 +124,7 @@ $(function() {
 	if (window.location.href.indexOf("/get-more?bdm=linda") != -1) {
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
+		$("#push-form").attr('action', "/get-more-thanks?bdm=linda");
 		$("#UserId").attr('value', "U6UJ9A00040G");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
