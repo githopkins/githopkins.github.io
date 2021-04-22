@@ -89,11 +89,6 @@ $(function() {
 		$("#scottmiller").removeClass("team-member");
 		$("#scottmiller").prependTo(".branch-manager-section");
 	};
-	if ($('body').hasClass('node-120937')) {
-		var overlaybdm = "<div id='overlay-missing-selection'><h4>BDM Missing!</h4><p>You arrived at a page without selecting a business manager. Please select one from the list below.</p><ul><li><a href='./get-more?bdm=kelsey'>Kelsey Rauchet</a></li><li><a href='./get-more?bdm=linda'>Linda Boyle</a></li></ul></div>";
-		$(overlaybdm).appendTo( $( "body" ) );
-		$("#text-based > div.content-detail > div").hide(); 
-	};
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
