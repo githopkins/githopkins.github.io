@@ -93,6 +93,7 @@ $(function() {
 		$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
 	};
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
+		$("#overlay-missing-selection").remove();
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -114,6 +115,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more?bdm=stacy") != -1) {
+		$("#overlay-missing-selection").remove();
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -135,6 +137,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more?bdm=linda") != -1) {
+		$("#overlay-missing-selection").remove();
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#UserId").attr('value', "U6UJ9A00040G");
