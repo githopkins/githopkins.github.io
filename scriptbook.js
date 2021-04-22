@@ -89,7 +89,7 @@ $(function() {
 		$("#scottmiller").removeClass("team-member");
 		$("#scottmiller").prependTo(".branch-manager-section");
 	};
-	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
+	if (window.location.href.indexOf("/get-elevated?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -110,7 +110,7 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more?bdm=stacy") != -1) {
+	if (window.location.href.indexOf("/get-elevated?bdm=stacy") != -1) {
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -131,7 +131,7 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more?bdm=linda") != -1) {
+	if (window.location.href.indexOf("/get-elevated?bdm=linda") != -1) {
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#UserId").attr('value', "U6UJ9A00040G");
