@@ -76,7 +76,7 @@ $(function() {
 			var subdomain = domain.replace('.annie-mac.com', '').replace('https://', '').replace('http://', '');
 			(this).id = subdomain;
 		});
-	}
+	};
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
 		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
