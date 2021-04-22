@@ -91,13 +91,10 @@ $(function() {
 	};
 	
 	if (window.location.href.indexOf("page/linda") != -1) {
-		$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
-		
 		function onSubmitSuccess() {
 			$('#push-form').hide();
 			$('#thankyou').show();
 		}
-		
 		$("input[type='tel']").each(function() {
 			$(this).on("change keyup paste", function(e) {
 				var output,
@@ -120,9 +117,9 @@ $(function() {
 				}
 			});
 		});
-		
 		$(document).ready(function() {
-		
+			$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
+			$("#event-types > div:nth-child(2) > label > span").hide();
 			$("#toggle-captcha").click(function() {
 				$(window).scrollTop(0);
 			});
