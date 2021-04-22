@@ -92,12 +92,6 @@ $(function() {
 	if (window.location.href.indexOf("/get-more") != -1) {
 		$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
 	};
-	var url = window.location.href;
-	if (url = "https://www.annie-mac.com/page/get-more") {
-		var overlaybdm = "<div id='overlay-missing-selection'><h4>Missing!</h4><p>You arrived at a page without selecting a business manager. Please select one from the list below.</p><ul><li><a href='get-more?bdm=kelsey'>Kelsey Rauchet</a></li><li><a href='page/get-more?bdm=linda'>Linda Boyle</a></li></ul></div>";
-		$(overlaybdm).appendTo( $( "body" ) );
-		$("#text-based > div.content-detail > div").hide(); 
-	};
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
 		$("#overlay-missing-selection").();
 		$("#number-id").attr("href", "tel:856-252-0289");
@@ -163,5 +157,11 @@ $(function() {
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
+	};
+	var url = window.location.href;
+	if (url = "https://www.annie-mac.com/page/get-more") {
+		var overlaybdm = "<div id='overlay-missing-selection'><h4>Missing!</h4><p>You arrived at a page without selecting a business manager. Please select one from the list below.</p><ul><li><a href='get-more?bdm=kelsey'>Kelsey Rauchet</a></li><li><a href='page/get-more?bdm=linda'>Linda Boyle</a></li></ul></div>";
+		$(overlaybdm).appendTo( $( "body" ) );
+		$("#text-based > div.content-detail > div").hide(); 
 	};
 });
