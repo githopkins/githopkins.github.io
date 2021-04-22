@@ -8,18 +8,19 @@ if (valid) {
 $(":input").on("keyup change", function(e) {
 var selectedState = $("#state-selection").val();
 $('input[name=state]').val(selectedState);
+var jobTitle = $("#originator-title").val();
+$('input[name=originator-type]').val(jobTitle);
 var windowurl = window.location.href
 var windowurlmessage = "Summary: This lead was captured at " + windowurl
-var nameinput = " Borrower Informaton: The borrower's name is " + $('input[name=name]').val() + ". "
-var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
+var nameinput = " Prospect Informaton: The prospect's name is " + $('input[name=name]').val() + ". "
+var borrowerLocation = "The prospect is from " + $('input[name=state]').val() + ". "
 var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
 var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
-var loanPurpose = "The loan purpose is " + $('input[name="loan-type"]:checked').val() + ". "
-var lotStatus = "The lot status is " + $('input[name="lot-status"]:checked').val() + ". "
-var creditScore = "The borrower's credit score is " + $('input[name="credit-rating"]:checked').val() + ". "
-var propertySelectedType = "The property type is " + $('input[name="property-type"]:checked').val() + "."
+var nmlsid = "Their NMLS is " + $('input[name=nmls-id]').val() + ". "
+var position = "Their position is " + $('input[name=originator-type]').val() + ". "
+var eventinterested = "The prospect is " + $('input[name="event-interest"]:checked').val() + ". "
 $("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
-$("#Production").val(loanPurpose + " " + lotStatus + " " + creditScore + " " + propertySelectedType);
+$("#Production").val(nmlsid + " " + position + " " + eventinterested);
 var commentScruba = $('#Production').val();
 if (commentScruba.indexOf(undefined) < 1) {
 	var productionsummary = $("#Production").val()
