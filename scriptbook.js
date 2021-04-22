@@ -96,4 +96,18 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
+	if (window.location.href.indexOf("/get-more-thanks?bdm=stacy") != -1) {
+		$("#number-id").attr("href", "tel:302-273-0795");
+		$("#number-id").text("(302) 273-0795");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
+	};
+	if (window.location.href.indexOf("/get-more-thanks?bdm=linda") != -1) {
+		$("#number-id").attr("href", "tel:856-209-2015");
+		$("#number-id").text("(856) 209-2015");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
+	};
 });
