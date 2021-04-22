@@ -91,7 +91,7 @@ $(function() {
 	};
 	if (window.location.href.indexOf("/get-more") != -1) {
 		$('link[href="/dev/themes/annie_mac/styles.css"]').prop('disabled', true);
-	}
+	};
 	if (window.location.href.indexOf("/get-more?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
