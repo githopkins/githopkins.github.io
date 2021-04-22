@@ -123,7 +123,6 @@ $(function() {
 			$("#toggle-captcha").click(function() {
 				$(window).scrollTop(0);
 			});
-		
 			function getAllUrlParams(url) {
 				var urlString = url ? url.split('?')[1] : window.location.search.slice(1);
 				var urlParameters = {};
