@@ -58,7 +58,6 @@ $(function() {
 			} ,2750);
 	   });
 	};
-	reno-construction-sent
 	if (window.location.href.indexOf("professional-disclaimer?profession=builder") != -1) {
 		$("#agreement-type").text("Builder Disclaimer Agreement");
 		$('input[name=agreement-type]').attr('value', "Builder Professional Hub Disclaimer Agreement");
