@@ -89,4 +89,9 @@ $(function() {
 		$("#scottmiller").removeClass("team-member");
 		$("#scottmiller").prependTo(".branch-manager-section");
 	};
+	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
+	};
 });
