@@ -78,7 +78,16 @@ $(function() {
 		});
 	};
 	if (window.location.href.indexOf("louisville") != -1) {
-			$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
+		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
+		$("#mikeprestigiacomo").addClass("manager-information");
+		$("#mikeprestigiacomo").removeClass("team-member");
+		$("#mikeprestigiacomo").prependTo(".branch-manager-section");
+		$("#brianlykins").addClass("manager-information");
+		$("#brianlykins").removeClass("team-member");
+		$("#brianlykins").prependTo(".branch-manager-section");
+		$("#kevinhulsey").addClass("manager-information");
+		$("#kevinhulsey").removeClass("team-member");
+		$("#kevinhulsey").prependTo(".branch-manager-section");
 	};
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
 		$("#we-provide-more-2").hide();
