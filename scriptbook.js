@@ -77,6 +77,19 @@ $(function() {
 			(this).id = subdomain;
 		});
 	};
+	if (window.location.href.indexOf("louisville") != -1) {
+			$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div class='team-member-portrait'><img src='https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg' style='border-radius: 4px'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
+					// $("#team-display > div.team-member-section > div:nth-child(7)").addClass("manager-information");
+					// $("#team-display > div.team-member-section > div:nth-child(7)").removeClass("team-member");
+					// $("#team-display > div.team-member-section > div:nth-child(7)").prependTo(".branch-manager-section");
+					// $("#team-display > div.team-member-section > div:nth-child(4)").addClass("manager-information");
+					// $("#team-display > div.team-member-section > div:nth-child(4)").removeClass("team-member");
+					// $("#team-display > div.team-member-section > div:nth-child(4)").prependTo(".branch-manager-section");
+					// $("#team-display > div.team-member-section > div:nth-child(2)").addClass("manager-information");
+					// $("#team-display > div.team-member-section > div:nth-child(2)").removeClass("team-member");
+					// $("#team-display > div.team-member-section > div:nth-child(2)").prependTo(".branch-manager-section");
+					// $("#branch-managers > div > div:nth-child(3)").css("order", "-1");
+	}
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
 		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
