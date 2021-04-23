@@ -35,6 +35,10 @@ h1.header-additional {
         margin-left: 0 !important;
     }
 }
+.team-member-section::after {
+    flex: initial !important;
+    content: initial !important;
+}
 #start-your-story {
     margin: -40px 0 0;
 }
