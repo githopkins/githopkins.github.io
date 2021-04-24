@@ -2337,3 +2337,10 @@ form label {
 		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
 	} */
 }
+
+#product-information-section,
+#annie-mac-2021-resource-option,
+#transformation-grid,
+#readable-section {
+	max-width: 1670px;
+}
