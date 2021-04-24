@@ -2177,3 +2177,6 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     background-position-y: 68% !important;
     background-size: 101% !important;
 }
+#branch-overlay {
+    background: transparent;
+}
