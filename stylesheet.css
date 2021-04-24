@@ -86,6 +86,10 @@ ul.menu.nav {
     width: auto;
     margin: 0 50px 50px;
 }
+.team-member-portrait {
+    border-radius: 100%;
+    width: 210px;
+}
 select {
     text-transform: none;
     font-weight: normal;
