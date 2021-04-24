@@ -74,7 +74,8 @@ ul.menu.nav {
     flex-direction: column;
 }
 #branch-managers {
-    max-width: 100% !important;
+    width: 100% !important;
+    margin: initial !important;
 }
 .team-member-section {
     justify-content: flex-start;
