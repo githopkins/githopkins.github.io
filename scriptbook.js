@@ -90,6 +90,10 @@ $(function() {
 		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
 	};
+	if (window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) {
+		$("#susiebruner > div > button.go.flex.space-between.align-center").hide();
+		$("#susiebruner > div > h5:nth-child(3)").text("Non-Originating");
+	};
 	if (window.location.href.indexOf("winterpark.annie-mac.com") != -1) {
 		$("#robertkube").hide();
 		var teamMemberReassignedBranchManager = ['#susiebruner1'];
