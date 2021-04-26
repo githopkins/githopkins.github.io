@@ -87,21 +87,21 @@ $(function() {
 		$(".consultant-type-contractor").toggleClass("hide");
 	};
 	if (window.location.href.indexOf("product-type=fha-203k") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(1) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-203k").attr('checked', true);
 	};
 	if (window.location.href.indexOf("product-type=fha-limited") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(2) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-limited").attr('checked', true);
 	};
 	if (window.location.href.indexOf("product-type=homestyle") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(3) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-homestyle").attr('checked', true);
 	};
 	if (window.location.href.indexOf("product-type=builder-conventional") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(1) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-conventional").attr('checked', true);
 	};
 	if (window.location.href.indexOf("product-type=builder-fha") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(2) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-fha").attr('checked', true);
 	};
 	if (window.location.href.indexOf("product-type=builder-va") != -1) {
-		$("#lead-capture-reno-construction > div:nth-child(19) > div:nth-child(3) > input[type=checkbox]").attr('checked', true);
+		$("#product-type-va").attr('checked', true);
 	};
 })
