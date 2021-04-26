@@ -91,6 +91,7 @@ $(function() {
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
 	};
 	if (window.location.href.indexOf("winterpark.annie-mac.com") != -1) {
+		$("#robertkube").hide();
 		var teamMemberReassignedBranchManager = ['#susiebruner1'];
 		for (i = 0; i < teamMemberReassignedBranchManager.length; i++) {
 			$(teamMemberReassignedBranchManager[i]).addClass("manager-information");
