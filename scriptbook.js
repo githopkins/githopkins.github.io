@@ -96,6 +96,8 @@ $(function() {
 			$(teamMemberReassignedBranchManager[i]).addClass("manager-information");
 			$(teamMemberReassignedBranchManager[i]).removeClass("team-member");
 			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
+			$("#susiebruner1 > div > button.go.flex.space-between.align-center").hide();
+			$("#susiebruner1 > div > h5:nth-child(3)").text("Non-Originating");
 		}
 	};
 	if (window.location.href.indexOf("edenprairie.annie-mac.com") != -1) {
