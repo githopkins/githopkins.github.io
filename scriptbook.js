@@ -98,14 +98,6 @@ $(function() {
 			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
 		}
 	};
-	if (window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) {
-		var teamMemberReassignedBranchManager = ['#susiebruner'];
-		for (i = 0; i < teamMemberReassignedBranchManager.length; i++) {
-			$(teamMemberReassignedBranchManager[i]).addClass("manager-information");
-			$(teamMemberReassignedBranchManager[i]).removeClass("team-member");
-			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
-		}
-	};
 	if (window.location.href.indexOf("edenprairie.annie-mac.com") != -1) {
 		var teamMemberReassignedBranchManager = ['#titusmhiripiri', '#scottmiller'];
 		for (i = 0; i < teamMemberReassignedBranchManager.length; i++) {
