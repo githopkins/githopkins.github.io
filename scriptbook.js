@@ -139,7 +139,8 @@ $(function() {
 	};
 	// Stacy Amon
 	if (window.location.href.indexOf("/get-elevated?r=s") != -1) {
-		// $("#bdm-avatar").style('');
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").text("samon@annie-mac.com");
 		$("#bdm-title-phone").text("(302) 273-0795");
@@ -157,7 +158,8 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=s") != -1) {
-		// $("#bdm-avatar").style('');
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").text("samon@annie-mac.com");
 		$("#bdm-title-phone").text("(302) 273-0795");
