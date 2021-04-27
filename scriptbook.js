@@ -141,8 +141,8 @@ $(function() {
 	if (window.location.href.indexOf("/get-elevated?r=s") != -1) {
 		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Stacy Amon");
-		$("#bdm-title-email > a").text("samon@annie-mac.com");
-		$("#bdm-title-phone > a").text("(302) 273-0795");
+		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-phone").text("(302) 273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -159,8 +159,8 @@ $(function() {
 	if (window.location.href.indexOf("/get-more-thanks?r=s") != -1) {
 		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Stacy Amon");
-		$("#bdm-title-email > a").text("samon@annie-mac.com");
-		$("#bdm-title-phone > a").text("(302) 273-0795");
+		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-phone").text("(302) 273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
@@ -171,8 +171,8 @@ $(function() {
 	if (window.location.href.indexOf("/get-elevated?r=l") != -1) {
 		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Linda Boyle");
-		$("#bdm-title-email > a").text("lboyle@annie-mac.com");
-		$("#bdm-title-phone > a").text("(856) 209-2015");
+		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-phone").text("(856) 209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#UserId").attr('value', "U6UJ9A00040G");
@@ -189,8 +189,8 @@ $(function() {
 	if (window.location.href.indexOf("/get-more-thanks?r=l") != -1) {
 		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Linda Boyle");
-		$("#bdm-title-email > a").text("lboyle@annie-mac.com");
-		$("#bdm-title-phone > a").text("(856) 209-2015");
+		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-phone").text("(856) 209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
