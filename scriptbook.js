@@ -139,6 +139,7 @@ $(function() {
 	};
 	// Stacy Amon
 	if (window.location.href.indexOf("/get-elevated?r=s") != -1) {
+		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
 		$("#bdm-title-email").text("samon@annie-mac.com");
@@ -158,6 +159,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=s") != -1) {
+		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
 		$("#bdm-title-email").text("samon@annie-mac.com");
@@ -171,6 +173,7 @@ $(function() {
 	};
 	// Linda Boyle
 	if (window.location.href.indexOf("/get-elevated?r=l") != -1) {
+		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
@@ -190,6 +193,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=l") != -1) {
+		// $("#bdm-avatar").style('');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
