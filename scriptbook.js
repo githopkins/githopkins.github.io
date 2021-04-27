@@ -143,7 +143,9 @@ $(function() {
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
 		$("#bdm-title-phone").text("(302) 273-0795");
+		$("#bdm-title-phone").attr("href", "tel:302-273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -162,7 +164,9 @@ $(function() {
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
 		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
 		$("#bdm-title-phone").text("(302) 273-0795");
+		$("#bdm-title-phone").attr("href", "tel:302-273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
@@ -175,7 +179,9 @@ $(function() {
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 209-2015");
+		$("#bdm-title-phone").attr("href", "tel:856-209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#UserId").attr('value', "U6UJ9A00040G");
@@ -194,7 +200,9 @@ $(function() {
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 209-2015");
+		$("#bdm-title-phone").attr("href", "tel:856-209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
