@@ -1283,8 +1283,8 @@ form label {
 	text-transform: capitalize;
 	text-align: center;
 	background: #7FC24A;
-	margin-bottom: 24px;
-	float: right;
+	order: 2;
+	margin-left: 20px;
 	min-width: 90px;
 }
 
@@ -1317,29 +1317,48 @@ form label {
 	letter-spacing: .8px;
 }
 
+.company-main-information {
+	display: flex;
+	align-items: center;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	min-height: 75px;
+	margin-top: -13px;
+}
+
+.company-details {
+	margin-top: -30px;
+	padding-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
 .hub-consultant h4 {
 	margin: 0;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 15px;
 	margin-bottom: -4px;
 }
 
 .hub-consultant h5 {
-	margin: 0;
 	font-weight: 300;
+	color: #444;
 	font-size: 15px;
-	margin-bottom: -5px;
+	margin: -6px 00 13px;
 }
 
 .hub-consultant h6 {
-	margin: 0;
-	font-weight: 200;
-	margin-bottom: -10px;
-	font-size: 14px;
+	order: -1;
+	color: #444;
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 15px;
 }
 
 .hub-consultant p {
 	margin: 0;
+	font-size: 15px;
 	line-height: 35px;
 	font-weight: 300;
 }
@@ -1354,20 +1373,8 @@ form label {
 	justify-content: space-between;
 	border-top: 1px solid rgba(0, 0, 0, .15);
 	margin: 0 -18px;
-	padding: 15px;
+	padding: 14px 18px;
 	margin-top: 33px;
-}
-
-.hub-consultant p:first-of-type {
-	border-top: 1px solid rgba(0, 0, 0, .15);
-	margin: 0 -18px;
-	margin-top: 20px;
-	margin-bottom: -12px;
-	padding: 5px 18px;
-}
-
-.hub-consultant p:last-of-type {
-	margin-bottom: -9px;
 }
 
 #transformation-section {

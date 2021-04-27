@@ -116,20 +116,20 @@ $(function() {
 			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
 		}
 	};
-	if (window.location.href.indexOf("/get-elevated?bdm=kelsey") != -1) {
-		$("#number-id").attr("href", "tel:856-252-0289");
-		$("#number-id").text("(856) 252-0289");
-		$("#UserId").attr('value', "U6UJ9A0000BF");
-		$("#toggle-captcha").click(function(){
-			$("#form-content").fadeOut(2500);
-			setTimeout(function(){
-			   window.location.href='./get-more-thanks?bdm=kelsey';
-			  } ,2750);
-		});
-		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
-		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
-		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
-	};
+	// if (window.location.href.indexOf("/get-elevated?bdm=kelsey") != -1) {
+	// 	$("#number-id").attr("href", "tel:856-252-0289");
+	// 	$("#number-id").text("(856) 252-0289");
+	// 	$("#UserId").attr('value', "U6UJ9A0000BF");
+	// 	$("#toggle-captcha").click(function(){
+	// 		$("#form-content").fadeOut(2500);
+	// 		setTimeout(function(){
+	// 		   window.location.href='./get-more-thanks?bdm=kelsey';
+	// 		  } ,2750);
+	// 	});
+	// 	$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
+	// 	$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
+	// 	$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
+	// };
 	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
 		$("#number-id").text("(856) 252-0289");
@@ -139,6 +139,11 @@ $(function() {
 	};
 	// Stacy Amon
 	if (window.location.href.indexOf("/get-elevated?r=s") != -1) {
+		$("#bdm-title-name").text("Stacy Amon");
+		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
+		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-phone").attr("href", "tel:302-273-0795");
+		$("#bdm-title-phone").text("(302) 273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#UserId").attr('value', "U6UJ9A0000BF");
@@ -153,6 +158,11 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=s") != -1) {
+		$("#bdm-title-name").text("Stacy Amon");
+		$("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
+		$("#bdm-title-email").text("samon@annie-mac.com");
+		$("#bdm-title-phone").attr("href", "tel:302-273-0795");
+		$("#bdm-title-phone").text("(302) 273-0795");
 		$("#number-id").attr("href", "tel:302-273-0795");
 		$("#number-id").text("(302) 273-0795");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
@@ -161,6 +171,11 @@ $(function() {
 	};
 	// Linda Boyle
 	if (window.location.href.indexOf("/get-elevated?r=l") != -1) {
+		$("#bdm-title-name").text("Linda Boyle");
+		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
+		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-phone").attr("href", "tel:856-209-2015");
+		$("#bdm-title-phone").text("(856) 209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#UserId").attr('value', "U6UJ9A00040G");
@@ -175,6 +190,11 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=l") != -1) {
+		$("#bdm-title-name").text("Linda Boyle");
+		$("#bdm-title-email").attr("href", "mailto:lboyle@annie-mac.com");
+		$("#bdm-title-email").text("lboyle@annie-mac.com");
+		$("#bdm-title-phone").attr("href", "tel:856-209-2015");
+		$("#bdm-title-phone").text("(856) 209-2015");
 		$("#number-id").attr("href", "tel:856-209-2015");
 		$("#number-id").text("(856) 209-2015");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
