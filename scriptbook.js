@@ -169,7 +169,8 @@ $(function() {
 	};
 	// Linda Boyle
 	if (window.location.href.indexOf("/get-elevated?r=l") != -1) {
-		// $("#bdm-avatar").style('');
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 209-2015");
@@ -187,7 +188,8 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=l") != -1) {
-		// $("#bdm-avatar").style('');
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
 		$("#bdm-title-email").text("lboyle@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 209-2015");
