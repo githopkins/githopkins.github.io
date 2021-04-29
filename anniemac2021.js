@@ -104,4 +104,28 @@ $(function() {
 	if (window.location.href.indexOf("product-type=builder-va") != -1) {
 		$("#product-type-va").attr('checked', true);
 	};
+	$('#product-type-203k').click(function(){
+		$("#product-type-limited").removeAttr('checked');
+		$("#product-type-homestyle").removeAttr('checked');
+	});
+	$('#product-type-limited').click(function(){
+		$('#product-type-203k').removeAttr('checked');
+		$("#product-type-homestyle").removeAttr('checked');
+	});
+	$('#product-type-homestyle').click(function(){
+		$('#product-type-203k').removeAttr('checked');
+		$("#product-type-limited").removeAttr('checked');
+	});
+	$('#product-type-conventional').click(function(){
+		$("#product-type-fha").removeAttr('checked');
+		$("#product-type-va").removeAttr('checked');
+	});
+	$('#product-type-fha').click(function(){
+		$("#product-type-conventional").removeAttr('checked');
+		$("#product-type-va").removeAttr('checked');
+	});
+	$('#product-type-va').click(function(){
+		$("#product-type-conventional").removeAttr('checked');
+		$("#product-type-fha").removeAttr('checked');
+	});
 })

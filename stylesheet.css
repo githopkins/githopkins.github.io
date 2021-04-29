@@ -5,6 +5,7 @@ h1.header-additional {
     float: left;
     text-indent: -40000vw;
     height: 0px;
+    width: 0px;
 }
 #blog-entry-page a {
     font-weight: bold;
