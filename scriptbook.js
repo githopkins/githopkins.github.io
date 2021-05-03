@@ -118,15 +118,15 @@ $(function() {
 	};
 	// Olivia Bacio
 	if (window.location.href.indexOf("/get-elevated?r=o") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
-		// $("#bdm-avatar").css('background-size', 'cover');
-		// $("#bdm-title-name").text("Olivia Bacio");
-		// $("#bdm-title-email").text("samon@annie-mac.com");
-		// $("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
-		// $("#bdm-title-phone").text("(302) 273-0795");
-		// $("#bdm-title-phone").attr("href", "tel:302-273-0795");
-		// $("#number-id").attr("href", "tel:302-273-0795");
-		// $("#number-id").text("(302) 273-0795");
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Olivia Bacio");
+		$("#bdm-title-email").text("OBacino@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:OBacino@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 242-5749");
+		$("#bdm-title-phone").attr("href", "tel:856-242-5749");
+		$("#number-id").attr("href", "tel:856-242-5749");
+		$("#number-id").text("(856) 242-5749");
 		$("#UserId").attr('value', "U6UJ9A00047E");
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
@@ -134,22 +134,22 @@ $(function() {
 			   window.location.href='./get-more-thanks?r=o';
 			  } ,2750);
 		});
-		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
-		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-olivia");
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=o") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
-		// $("#bdm-avatar").css('background-size', 'cover');
-		// $("#bdm-title-name").text("Olivia Bacio");
-		// $("#bdm-title-email").text("samon@annie-mac.com");
-		// $("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
-		// $("#bdm-title-phone").text("(302) 273-0795");
-		// $("#bdm-title-phone").attr("href", "tel:302-273-0795");
-		// $("#number-id").attr("href", "tel:302-273-0795");
-		// $("#number-id").text("(302) 273-0795");
-		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
-		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Olivia Bacio");
+		$("#bdm-title-email").text("OBacino@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:OBacino@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 242-5749");
+		$("#bdm-title-phone").attr("href", "tel:856-242-5749");
+		$("#number-id").attr("href", "tel:856-242-5749");
+		$("#number-id").text("(856) 242-5749");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-olivia");
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Jeanna Grebinger
