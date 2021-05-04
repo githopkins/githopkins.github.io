@@ -136,6 +136,7 @@ $(function() {
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-olivia");
+		$("#booking-id").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=o") != -1) {
@@ -150,6 +151,7 @@ $(function() {
 		$("#number-id").text("(856) 242-5749");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-olivia");
+		$("#booking-id").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Jeanna Grebinger
