@@ -117,7 +117,7 @@ $(function() {
 		}
 	};
 	// Olivia Bacio
-	if (window.location.href.indexOf("/get-elevated?r=j") != -1) {
+	if (window.location.href.indexOf("/get-elevated?r=jessica") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Jessica Helwig");
@@ -131,7 +131,7 @@ $(function() {
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./get-more-thanks?r=j';
+			   window.location.href='./get-more-thanks?r=jessica';
 			  } ,2750);
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
@@ -139,7 +139,7 @@ $(function() {
 		$("#booking-id").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more-thanks?r=j") != -1) {
+	if (window.location.href.indexOf("/get-more-thanks?r=jessica") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Jessica Helwig");
@@ -155,7 +155,7 @@ $(function() {
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Olivia Bacio
-	if (window.location.href.indexOf("/get-elevated?r=o") != -1) {
+	if (window.location.href.indexOf("/get-elevated?r=olivia") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Olivia Bacio");
@@ -169,7 +169,7 @@ $(function() {
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./get-more-thanks?r=o';
+			   window.location.href='./get-more-thanks?r=olivia';
 			  } ,2750);
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
@@ -177,7 +177,7 @@ $(function() {
 		$("#booking-id").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more-thanks?r=o") != -1) {
+	if (window.location.href.indexOf("/get-more-thanks?r=olivia") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Olivia Bacio");
@@ -193,7 +193,7 @@ $(function() {
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Jeanna Grebinger
-	if (window.location.href.indexOf("/get-elevated?r=j") != -1) {
+	if (window.location.href.indexOf("/get-elevated?r=jeanna") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/jeanna.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Jeanna Grebinger");
@@ -207,14 +207,14 @@ $(function() {
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./get-more-thanks?r=j';
+			   window.location.href='./get-more-thanks?r=jeanna';
 			  } ,2750);
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jeanna");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/jgrebinger1@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more-thanks?r=j") != -1) {
+	if (window.location.href.indexOf("/get-more-thanks?r=jeanna") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/jeanna.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Jeanna Grebinger");
@@ -237,7 +237,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
 	// Stacy Amon
-	if (window.location.href.indexOf("/get-elevated?r=s") != -1) {
+	if (window.location.href.indexOf("/get-elevated?r=stacy") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
@@ -251,14 +251,14 @@ $(function() {
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./get-more-thanks?r=s';
+			   window.location.href='./get-more-thanks?r=stacy';
 			  } ,2750);
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more-thanks?r=s") != -1) {
+	if (window.location.href.indexOf("/get-more-thanks?r=stacy") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Stacy Amon");
@@ -273,7 +273,7 @@ $(function() {
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Linda Boyle
-	if (window.location.href.indexOf("/get-elevated?r=l") != -1) {
+	if (window.location.href.indexOf("/get-elevated?r=linda") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
@@ -287,14 +287,14 @@ $(function() {
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./get-more-thanks?r=l';
+			   window.location.href='./get-more-thanks?r=linda';
 			  } ,2750);
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
 	};
-	if (window.location.href.indexOf("/get-more-thanks?r=l") != -1) {
+	if (window.location.href.indexOf("/get-more-thanks?r=linda") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Linda Boyle");
