@@ -154,15 +154,15 @@ $(function() {
 	};
 	// Jeanna Grebinger
 	if (window.location.href.indexOf("/get-elevated?r=j") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
-		// $("#bdm-avatar").css('background-size', 'cover');
-		// $("#bdm-title-name").text("Jeanna Grebinger");
-		// $("#bdm-title-email").text("samon@annie-mac.com");
-		// $("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
-		// $("#bdm-title-phone").text("(302) 273-0795");
-		// $("#bdm-title-phone").attr("href", "tel:302-273-0795");
-		// $("#number-id").attr("href", "tel:302-273-0795");
-		// $("#number-id").text("(302) 273-0795");
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/jeanna.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Jeanna Grebinger");
+		$("#bdm-title-email").text("JGrebinger@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:JGrebinger@Annie-Mac.com");
+		$("#bdm-title-phone").text("(352) 448-2674");
+		$("#bdm-title-phone").attr("href", "tel:352-448-2674");
+		$("#number-id").attr("href", "tel:352-448-2674");
+		$("#number-id").text("(352) 448-2674");
 		$("#UserId").attr('value', "U6UJ9A0004CZ");
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
@@ -170,22 +170,22 @@ $(function() {
 			   window.location.href='./get-more-thanks?r=j';
 			  } ,2750);
 		});
-		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
-		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jeanna");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=j") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
-		// $("#bdm-avatar").css('background-size', 'cover');
-		// $("#bdm-title-name").text("Jeanna Grebinger");
-		// $("#bdm-title-email").text("samon@annie-mac.com");
-		// $("#bdm-title-email").attr("href", "mailto:samon@annie-mac.com");
-		// $("#bdm-title-phone").text("(302) 273-0795");
-		// $("#bdm-title-phone").attr("href", "tel:302-273-0795");
-		// $("#number-id").attr("href", "tel:302-273-0795");
-		// $("#number-id").text("(302) 273-0795");
-		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-stacy");
-		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-stacy");
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/jeanna.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Jeanna Grebinger");
+		$("#bdm-title-email").text("JGrebinger@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:JGrebinger@Annie-Mac.com");
+		$("#bdm-title-phone").text("(352) 448-2674");
+		$("#bdm-title-phone").attr("href", "tel:352-448-2674");
+		$("#number-id").attr("href", "tel:352-448-2674");
+		$("#number-id").text("(352) 448-2674");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jeanna");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Thanks Kelsey
