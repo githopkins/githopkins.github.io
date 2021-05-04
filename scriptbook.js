@@ -136,7 +136,7 @@ $(function() {
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jessica");
-		$("#booking-id").hide();
+		$("#bdm-contact > h4:nth-child(3)").hide();
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=jessica") != -1) {
