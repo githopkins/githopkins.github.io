@@ -117,43 +117,43 @@ $(function() {
 		}
 	};
 	// Jessica Helwig
-	// if (window.location.href.indexOf("/get-elevated?r=jessica") != -1) {
-	// 	$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
-	// 	$("#bdm-avatar").css('background-size', 'cover');
-	// 	$("#bdm-title-name").text("Jessica Helwig");
-	// 	$("#bdm-title-email").text("JHelwig@Annie-Mac.com");
-	// 	$("#bdm-title-email").attr("href", "mailto:JHelwig@Annie-Mac.com");
-	// 	$("#bdm-title-phone").text("(856) 545-1513");
-	// 	$("#bdm-title-phone").attr("href", "tel:856-545-1513");
-	// 	$("#number-id").attr("href", "tel:856-545-1513");
-	// 	$("#number-id").text("(856) 545-1513");
-	// 	// $("#UserId").attr('value', "");
-	// 	$("#toggle-captcha").click(function(){
-	// 		$("#form-content").fadeOut(2500);
-	// 		setTimeout(function(){
-	// 		   window.location.href='./get-more-thanks?r=jessica';
-	// 		  } ,2750);
-	// 	});
-	// 	$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
-	// 	$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jessica");
-	// 	$("#booking-id").hide();
+	if (window.location.href.indexOf("/get-elevated?r=jessica") != -1) {
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Jessica Helwig");
+		$("#bdm-title-email").text("JHelwig@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:JHelwig@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 545-1513");
+		$("#bdm-title-phone").attr("href", "tel:856-545-1513");
+		$("#number-id").attr("href", "tel:856-545-1513");
+		$("#number-id").text("(856) 545-1513");
+		// $("#UserId").attr('value', "");
+		$("#toggle-captcha").click(function(){
+			$("#form-content").fadeOut(2500);
+			setTimeout(function(){
+			   window.location.href='./get-more-thanks?r=jessica';
+			  } ,2750);
+		});
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jessica");
+		$("#booking-id").hide();
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
+	};
+	if (window.location.href.indexOf("/get-more-thanks?r=jessica") != -1) {
+		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Jessica Helwig");
+		$("#bdm-title-email").text("JHelwig@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:JHelwig@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 545-1513");
+		$("#bdm-title-phone").attr("href", "tel:856-545-1513");
+		$("#number-id").attr("href", "tel:856-545-1513");
+		$("#number-id").text("(856) 545-1513");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jessica");
+		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
-	// };
-	// if (window.location.href.indexOf("/get-more-thanks?r=jessica") != -1) {
-	// 	$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
-	// 	$("#bdm-avatar").css('background-size', 'cover');
-	// 	$("#bdm-title-name").text("Jessica Helwig");
-	// 	$("#bdm-title-email").text("JHelwig@Annie-Mac.com");
-	// 	$("#bdm-title-email").attr("href", "mailto:JHelwig@Annie-Mac.com");
-	// 	$("#bdm-title-phone").text("(856) 545-1513");
-	// 	$("#bdm-title-phone").attr("href", "tel:856-545-1513");
-	// 	$("#number-id").attr("href", "tel:856-545-1513");
-	// 	$("#number-id").text("(856) 545-1513");
-	// 	$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jessica");
-	// 	$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jessica");
-	// 	$("#booking-id").hide();
-	// 	// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
-	// };
+	};
 	// Olivia Bacio
 	if (window.location.href.indexOf("/get-elevated?r=olivia") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
