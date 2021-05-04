@@ -172,7 +172,7 @@ $(function() {
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jeanna");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
-		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/jgrebinger1@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=j") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/jeanna.jpeg")');
@@ -186,7 +186,7 @@ $(function() {
 		$("#number-id").text("(352) 448-2674");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-jeanna");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
-		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/jgrebinger1@annie-mac.com/bookings/");
 	};
 	// Thanks Kelsey
 	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
