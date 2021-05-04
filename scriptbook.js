@@ -228,14 +228,6 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-jeanna");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/jgrebinger1@annie-mac.com/bookings/");
 	};
-	// Thanks Kelsey
-	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
-		$("#number-id").attr("href", "tel:856-252-0289");
-		$("#number-id").text("(856) 252-0289");
-		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
-		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
-		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
-	};
 	// Stacy Amon
 	if (window.location.href.indexOf("/get-elevated?r=stacy") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/stacy.jpeg")');
@@ -307,5 +299,13 @@ $(function() {
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
+	};
+	// Thanks Kelsey
+	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
+		$("#number-id").attr("href", "tel:856-252-0289");
+		$("#number-id").text("(856) 252-0289");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
+		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
 });
