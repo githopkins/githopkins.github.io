@@ -189,7 +189,7 @@ $(function() {
 		$("#number-id").text("(856) 242-5749");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-olivia");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-olivia");
-		$("#booking-id").hide();
+		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
 	// Jeanna Grebinger
