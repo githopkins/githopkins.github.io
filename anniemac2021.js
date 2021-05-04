@@ -39,6 +39,7 @@ $(function() {
 		});
 	};
 	if (window.location.href.indexOf("/professional-disclaimer?profession=contractor") != -1) {
+		$("#builder-agreement-disclaimer").hide();
 		$("#agreement-type").text("Contractor Disclaimer Agreement");
 		$('input[name=agreement-type]').attr('value', "Contractor Professional Hub Disclaimer Agreement");
 		$('#submit-form').click(function(){
@@ -48,17 +49,8 @@ $(function() {
 		  	} ,2750);
 		});
 	};
-	if (window.location.href.indexOf("professional-disclaimer?profession=consultant") != -1) {
-		$("#agreement-type").text("Consultant Disclaimer Agreement");
-		$('input[name=agreement-type]').attr('value', "Consultant Professional Hub Disclaimer Agreement");
-		$('#submit-form').click(function(){
-			$("#hub-consultant-disclaimer").fadeOut(2500);
-			setTimeout(function(){
-			   window.location.href='./professional-hub?defaultview=consultant';
-			} ,2750);
-	   });
-	};
 	if (window.location.href.indexOf("professional-disclaimer?profession=builder") != -1) {
+		$("#contractor-agreement-disclaimer").hide();
 		$("#agreement-type").text("Builder Disclaimer Agreement");
 		$('input[name=agreement-type]').attr('value', "Builder Professional Hub Disclaimer Agreement");
 		$('#submit-form').click(function(){
