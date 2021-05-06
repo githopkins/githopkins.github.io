@@ -4,7 +4,9 @@
 #list-switch {
     display: none;
 }
-
+.location-listing {
+    padding: 0;
+}
 h1.header-additional {
     float: left;
     text-indent: -40000vw;
