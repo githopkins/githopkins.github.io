@@ -45,7 +45,7 @@ $(function() {
 		$('#submit-form').click(function(){
 			$("#hub-consultant-disclaimer").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./professional-hub?defaultview=contractor';
+			   window.location.href='./contractor-hub';
 		  	} ,2750);
 		});
 	};
@@ -56,23 +56,29 @@ $(function() {
 		$('#submit-form').click(function(){
 			$("#hub-consultant-disclaimer").fadeOut(2500);
 		    setTimeout(function(){
-			   window.location.href='./professional-hub?defaultview=builder';
+			   window.location.href='./builder-hub';
 		  	},2750);
 		});
 	};
-	if (window.location.href.indexOf("/professional-hub?defaultview=contractor") != -1) {
+	if (window.location.href.indexOf("/hub-onboard") != -1) {
+		$("#builder-acceptance-blurb").hide();
+		$("#contractor-acceptance-blurb").hide();
+	};
+	if (window.location.href.indexOf("/hub-onboard?profession=contractor") != -1) {
+		$("#contractor-acceptance-blurb").show();
+		$("#both-acceptance-blurb").hide();
+	};
+	if (window.location.href.indexOf("/hub-onboard?profession=builder") != -1) {
+		$("#builder-acceptance-blurb").show();
+		$("#both-acceptance-blurb").hide();
+	};
+	if (window.location.href.indexOf("/contractor-hub") != -1) {
 		$("#builder-filter").toggleClass("filtered-inactive");
 		$("#consultant-filter").toggleClass("filtered-inactive");
 		$(".consultant-type-consultant").toggleClass("hide");
 		$(".consultant-type-builder").toggleClass("hide");
 	};
-	if (window.location.href.indexOf("/professional-hub?defaultview=consultant") != -1) {
-		$("#contractor-filter").toggleClass("filtered-inactive");
-		$("#builder-filter").toggleClass("filtered-inactive");
-		$(".consultant-type-contractor").toggleClass("hide");
-		$(".consultant-type-builder").toggleClass("hide");
-	};
-	if (window.location.href.indexOf("/professional-hub?defaultview=builder") != -1) {
+	if (window.location.href.indexOf("/builder-hub") != -1) {
 		$("#consultant-filter").toggleClass("filtered-inactive");
 		$("#contractor-filter").toggleClass("filtered-inactive");
 		$(".consultant-type-consultant").toggleClass("hide");

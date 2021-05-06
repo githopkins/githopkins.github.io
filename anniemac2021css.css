@@ -1066,7 +1066,7 @@ margin-bottom: 60px;
 	margin: 60px auto 0;
 }
 
-.sectional-header p {
+.sectional-header p, form p {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 33px;
@@ -1346,6 +1346,7 @@ form label {
 	font-weight: 300;
 	font-size: 15px;
 	margin: -6px 00 13px;
+	color: inherit;
 }
 
 .hub-consultant h6 {
@@ -1391,6 +1392,7 @@ form label {
 #featured-transformation h5 {
 	font-size: 25px;
 	font-weight: 200;
+	color: inherit;
 }
 
 #transformation-section p,
