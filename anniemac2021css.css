@@ -433,6 +433,7 @@ margin-bottom: 60px;
 	flex-direction: row;
 	width: 100%;
 	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+	border-radius: 4px;
 }
 
 #annie-mac-2021-product-option-grid-row-1>* {
@@ -447,6 +448,7 @@ margin-bottom: 60px;
 	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
 	margin-top: 65px;
 	margin-bottom: 60px;
+	border-radius: 4px;
 }
 
 .remove-margin-top {
@@ -502,7 +504,7 @@ margin-bottom: 60px;
 	color: white;
 	order: 2;
 	position: relative;
-	border-radius: 0 6px 6px 0;
+	border-radius: 0;
 }
 
 #selected-usda h2 {
