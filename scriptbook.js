@@ -120,6 +120,15 @@ $(function() {
 			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
 		}
 	};
+	// Hide branch management if no branch management are present.
+	if ($('.branch-manager-section > .manager-information').length < 1) {
+		$("#team-display > h3:nth-child(1)").hide();
+	};
+	// Hide team members if no team members are present.
+	if ($('.team-member-section > .team-member').length < 1) {
+		$("#team-display > h3:nth-child(3)").hide();
+	};
+	// BEGIN BDM PAGES
 	// Jessica Helwig
 	if (window.location.href.indexOf("/get-elevated?r=jessica") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
@@ -311,11 +320,5 @@ $(function() {
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
-	};
-	if ($('.branch-manager-section > .manager-information').length < 1) {
-		$("#team-display > h3:nth-child(1)").hide();
-	};
-	if ($('.team-member-section > .team-member').length < 1) {
-		$("#team-display > h3:nth-child(3)").hide();
 	};
 });
