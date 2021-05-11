@@ -312,4 +312,10 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
+	if ($('.branch-manager-section > .manager-information').length = 0) {
+		$("#team-display > h3:nth-child(1)").hide();
+	};
+	if ($('.team-member-section > .team-member').length = 0) {
+		$("#team-display > h3:nth-child(3)").hide();
+	};
 });
