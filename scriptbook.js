@@ -167,11 +167,11 @@ $(function() {
 		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_samon@annie-mac.com/bookings/");
 	};
-	// Olivia Bacio
+	// Olivia Bacino
 	if (window.location.href.indexOf("/get-elevated?r=olivia") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
-		$("#bdm-title-name").text("Olivia Bacio");
+		$("#bdm-title-name").text("Olivia Bacino");
 		$("#bdm-title-email").text("OBacino@Annie-Mac.com");
 		$("#bdm-title-email").attr("href", "mailto:OBacino@Annie-Mac.com");
 		$("#bdm-title-phone").text("(856) 242-5749");
@@ -193,7 +193,7 @@ $(function() {
 	if (window.location.href.indexOf("/get-more-thanks?r=olivia") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/olivia.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
-		$("#bdm-title-name").text("Olivia Bacio");
+		$("#bdm-title-name").text("Olivia Bacino");
 		$("#bdm-title-email").text("OBacino@Annie-Mac.com");
 		$("#bdm-title-email").attr("href", "mailto:OBacino@Annie-Mac.com");
 		$("#bdm-title-phone").text("(856) 242-5749");

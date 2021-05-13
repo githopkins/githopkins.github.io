@@ -60,6 +60,30 @@ $(function() {
 		  	},2750);
 		});
 	};
+	if (window.location.href.indexOf("-hub") != -1) {
+		$("#search-hub").keyup(function() {
+			var filter = $(this).val(),
+				count = 0;
+			$('#hub-grid > div > div > div.company-details > h5').each(function() {
+				if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+				$(this).parent().parent().hide();
+				} 
+				else {	
+				$(this).parent().parent().show();
+				count++;
+				}
+			});
+		});
+		var searchvalue = "";
+		$("#search-hub").on("keyup change", function(e) {
+			searchvalue = $("#search-hub").prop('value');
+			if (searchvalue != "") {
+				$("#lead-capture-reno-construction > label").text("Displaying results for: " + searchvalue);
+			} else {
+				$("#lead-capture-reno-construction > label").text("");
+			}
+		});
+	};
 	if (window.location.href.indexOf("/hub-onboard") != -1) {
 		$("#builder-acceptance-blurb").hide();
 		$("#contractor-acceptance-blurb").hide();
