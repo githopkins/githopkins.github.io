@@ -1430,3 +1430,760 @@ thead {
         display: none;
     }
 } */
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'inter', sans-serif !important;
+}
+p, li, a {
+    letter-spacing: normal !important;
+    font-weight: 400;
+}
+/* BEGIN NEW CODE FOR LOAN OFFICERS */
+#annie_mac-loan-officer, #tmc-loan-officer, #lofidirect-loan-officer {
+    display: flex;
+    background: #fff;
+    color: #333;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+#loan-originator-backdrop {
+    background: none;
+    /* background: linear-gradient(50deg, rgba(5, 6, 6, 0.61) 30%, rgba(107, 97, 28, 0.28) 80%), url(https://www.annie-mac.com/dev/themes/annie_mac/img/indexbg.jpeg) top left no-repeat; */
+    background: none;
+    background-position-y: 43.5%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    order: 0;
+    padding: 0 20px;
+    margin-right: 0px;
+    min-width: 400px;
+    flex-direction: column;
+    margin-top: 25px;
+}
+#annie_mac-loan-officer > #originator, #tmc-loan-officer > #originator, #lofidirect-loan-officer > #originator {
+    margin-top: -28px;
+    margin-left: 25px;
+    max-width: 1000px;
+}
+#originator .negative-60 {
+    margin-left: 0;
+}
+#originator .padding-60 {
+    padding: 0;
+    margin: 50px 0;
+}
+#originator  > #we-provide-more-master {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#covid-warning {
+    background: #ffe7dc;
+    margin-bottom: -1px;
+    color: #a91202;
+    padding: 14px 25px;
+    line-height: 1.6;
+    margin-top: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto -15px;
+}
+#loan-originator-blurb-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 0 0 black;
+    width: 100%;
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    border-right: 1px solid rgba(0,0,0,.15);
+    padding-right: 20px;
+}
+#originator-core-details-text {
+    background: transparent;
+    border-top: none;
+    padding: 20px;
+    border-bottom: none;
+    margin-bottom: 20px;
+    min-width: 362px;
+    padding-bottom: 44px;
+}
+#loan-originator-blurb-container h2 {
+    font-size: 27px;
+    text-shadow: none;
+    text-align: left;
+    color: #333;
+    font-family: 'inter', sans-serif;
+}
+#loan-originator-blurb-container h4 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #333;
+    font-weight: normal;
+}
+#originator-core-details-text h4 span {
+    margin-top: 5px;
+    font-weight: normal;
+    color: inherit;
+    font-size: 12px;
+}
+#originator-address-details {
+    line-height: 30px;
+    font-size: 16px;
+    text-shadow: none;
+    color: black;
+    opacity: .8;
+}
+#originator-address-details p {
+    text-align: left;
+    opacity: 1;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+#originator-core-details-portrait img {
+    background: transparent;
+    max-width: 210px;
+    max-height: 210px;
+    border-radius: 0;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+#originator-main-details {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+#originator-core-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+#originator-social-details {
+    width: 96%;
+    margin: 0 auto;
+}
+#originator-social-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    width: 100%;
+    margin-top: -21px;
+    flex-direction: column;
+}
+#originator-social-details ul a {
+    border-top: 1px solid rgba(0,0,0,.05);
+    width: 100%;
+}
+#originator-social-details li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: auto;
+    font-size: 15px;
+    height: 45px;
+    justify-content: flex-start;
+    color: #555;
+}
+#originator-social-details li i {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-shadow: none;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color: #036fa8;
+}
+.site-type-loan_officer .manager-biography p {
+    width: auto;
+    padding: 0;
+}
+.manager-biography h2:first-of-type {
+    font-size: 35px;
+    color: #006fa9;
+    margin: 25px auto 15px;
+    display: block;
+    text-align: left;
+    font-family: 'inter',sans-serif;
+}
+#inserted-banner {
+    height: 350px;
+    background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 60px;
+    background-position-y: 68%;
+    background-size: 101%;
+}
+#inserted-banner .container-section {
+    flex-direction: column;
+}
+#inserted-banner .container-section h3 span {
+    font-size: 15px;
+}
+#inserted-banner #button-container-home > a:nth-child(1) {
+    margin-left: 0;
+    background: #4c4c4c;
+    border-radius: 5px;
+    color: white !important;
+    letter-spacing: 1px;
+    border: none;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    order: 3;
+    margin-top: 10px;
+    width: 206px !important;
+}
+#tmc-loan-officer .manager-biography h2:first-of-type {
+    color: #40a051;
+}
+#lofidirect-loan-officer .manager-biography h2:first-of-type {
+    color: #95c553;
+}
+#tmc-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
+    background: #40a051;
+}
+#lofidirect-loan-officer > #inserted-banner #button-container-home > a:nth-child(1) {
+    background: #95c553;
+}
+#inserted-banner > #button-container-home > a:nth-child(1):hover {
+    border: none;
+}
+#originator .manager-biography {
+    margin-left: 0px;
+}
+#accolades-originator {
+    /* margin-right: -460px; */
+}
+#accolates-originator #we-provide-more-master {
+    margin: 0;
+}
+#accolates-originator #what-we-provide {
+    flex-direction: column;
+}
+#accolades-originator .we-provide-more-master {
+    width: 100%;
+}
+#accolades-originator .we-provide-this {
+    width: 100%;
+}
+#accolades-originator .we-provide-this h4 {
+    color: white;
+    margin-top: 12px;
+}
+#accolades-originator .calculations-primary img {
+    display: none;
+}
+#annie_mac-loan-officer .manager-biography p, #tmc-loan-officer .manager-biography p, #lofidirect-loan-officer .manager-biography p {
+    text-align: justify;
+    margin: 8px 0;
+}
+#accolades-originator #calculations-and-numbers {
+    width: 100%;
+    margin: 45px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.site-type-loan_officer .branch-manager-section {
+    width: 95%;
+    padding: 40px 15px 50px;
+}
+.calculations-primary h3 {
+    margin-bottom: 15px;
+    color: #006fa9;
+    width: 100%;
+    font-size: 28px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0, .06);
+    padding-bottom: 20px;
+}
+.action-buttons-calcs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.action-buttons-calcs button {
+    width: 280px;
+    margin: 0 23px 0 0;
+}
+#product-container-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.025);
+    width: 95%;
+}
+.product-selectable {
+    width: 45.66% !important;
+    padding: 10px 20px;
+    position: relative;
+}
+#grid1 {
+    border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 280px;
+}
+#grid2 {
+    min-height: 280px;
+}
+#grid3 {
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
+}
+#grid4 {
+    border-top: 1px solid rgba(0,0,0,.2);
+    min-height: 340px;
+}
+.product-selectable i {
+    font-size: 24px !important;
+    background: #0f4777;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 15px 0 10px !important;
+}
+.product-selectable a {
+    position: absolute;
+    bottom: 20px;
+}
+.product-selectable button {
+    border-radius: 5px;
+    background: #7FC24A;
+}
+.product-selectable button:hover {
+    background: #006fa9;
+}
+.product-selectable h3 {
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+}
+.product-selectable p {
+    font-size: 15px !important;
+    opacity: .6;
+    line-height: 30px;
+}
+#list_11344 > a, #list_11343 > a, #list_11350 > a {
+    display: block;
+}
+@media screen and (min-width: 1201px) {
+    #originator-social-details a:first-of-type {
+        background: #036fa8;
+        border-radius: 2px;
+    }
+    #originator-social-details a:first-of-type li, #originator-social-details a:first-of-type li i {
+        color: white;
+    }
+    #originator-social-details a:first-of-type:hover {
+        background: #02517b;
+    }
+}
+/* #accolades-originator #we-provide-more-master {
+    display: none;
+} */
+
+@media screen and (max-width: 1200px) {
+    #annie_mac-loan-officer, #tmc-loan-officer, #lofidirect-loan-officer {
+        flex-direction: column;
+    }
+    #annie_mac-loan-officer > #originator, #tmc-loan-officer > #originator, #lofidirect-loan-officer > #originator{
+        max-width: none;
+        margin: 0 auto;
+    }
+    #loan-originator-backdrop {
+        order: -1;
+    }
+    #accolades-originator #we-provide-more-master {
+        display: block;
+    }
+    #loan-originator-blurb-container {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        padding-bottom: 0px;
+    }
+    #originator-main-details {
+        flex-direction: row;
+        width: auto;
+        margin: 0 auto;
+    }
+    #originator-core-details-text {
+        min-width: auto;
+    }
+    #originator-social-details {
+        width: 300px;
+        margin: 0;
+        margin-left: 40px;
+    }
+}
+#links-sidebar-full-width { 
+    display: none;
+}
+#sidebar-apply-now {
+    display: block;
+    margin: -30px auto 30px;
+}
+#sidebar-apply-now a {
+    background: #7fc14a;
+    border-radius: 5px;
+    color: white !important;
+    border: none;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    min-width: 250px !important;
+    display: block;
+    margin-top: 10px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    #links-sidebar-full-width {
+        display: block;
+        margin-top: 50px;
+        margin-left: 12px;
+        margin-bottom: 100px;
+        width: -webkit-fill-available;
+    }
+    #links-sidebar-full-width h4 {
+        font-size: 21px;
+        color: #333;
+        font-weight: bold;
+    }
+    #links-sidebar-full-width a {
+        color: #036fa8;
+    }
+    #links-sidebar-full-width ul {
+        margin-top: 16px;
+    }
+    #links-sidebar-full-width li {
+        height: 30px;
+    }
+    #accolades-originator #calculations-and-numbers {
+        display: none;
+    }
+}
+@media screen and (max-width: 994px) { 
+    #product-container-section {
+        flex-direction: column !important;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product-selectable {
+       width: auto !important;
+    }
+    .product-selectable h3 {
+        text-align: left !important;
+    }
+    .product-selectable a {
+        position: revert;
+    }
+    .product-selectable button {
+        margin: 20px ​0 20px;
+    }
+    #grid1, #grid2, #grid3, #grid4 {
+        min-height: auto !important;
+        border: none !important;
+    }
+    #grid2, #grid3, #grid4 { 
+        border-top: 1px solid rgba(0,0,0,.2) !important;
+    }
+}
+@media screen and (max-width: 970px) { 
+    #inserted-banner {
+        margin-bottom: 0px;
+    }
+    #inserted-banner {
+        padding-top: 0px;
+    }
+    #inserted-banner > .container-section > h3 {
+        font-size: 35px !important;
+    }
+    #originator-core-details-text {
+        padding: 20px 0;
+    }
+    .calculations-primary:nth-child(2) {
+        margin-top: 50px;
+        margin: 0 50px;
+    }
+    #covid-warning {
+        width: auto;
+        margin-top: -45px;
+        padding: 30px 25px;
+        margin-bottom: 10px;
+    }
+    #loan-originator-backdrop {
+        margin-top: 0;
+    }
+    #loan-originator-blurb-container {
+        padding-bottom: 15px;
+        width: 100vw;
+    }
+    #originator > * {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    #covid-warning {
+        padding: 20px 10px;
+        margin-top: -45px;
+        margin-bottom: 30px;
+    }
+    #accolades-originator #calculations-and-numbers {
+        margin: 0;
+    }
+    .we-provide-this {
+        margin: 8px 0;
+        border-radius: 0;
+    }
+    .action-buttons-calcs {
+        flex-direction: column;
+    }
+    .calculations-primary:nth-child(2) {
+        margin-top: 30px;
+        margin: 0 25px;
+    }
+    .action-buttons-calcs button {
+        margin: 10px 0;
+        padding: 16px 0;
+    }
+    .manager-biography h2:first-of-type, .site-type-loan_officer #we-provide-more-master h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 969px) { 
+    #inserted-banner {
+        min-height: 245px;
+        margin-bottom: 65px;
+        background-size: cover;
+    }
+    #originator-main-details {
+        flex-direction: column;
+        margin: 0 auto !important;
+    }
+    #loan-originator-backdrop {
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #originator-social-details {
+        margin-left: 0;
+    }
+    #originator-social-details ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #originator-social-details ul a {
+        width: 50%;
+        border-top: none;
+    }
+    #originator-social-details li {
+        font-size: 14px;
+        height: 80px;
+        flex-direction: column;
+    }
+    #originator-social-details li i {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    #originator-main-details {
+        margin-left: 0;
+        padding-left: 0;
+        width: unset;
+    }
+    #originator-core-details-portrait img {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+#product-containment {
+    display: none;
+}
+footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
+    display: none;
+}
+#mobile-apply a {
+    margin-left: 0;
+    background: #7fc14a;
+    border-radius: 5px;
+    color: white !important;
+    border: none;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    min-width: 250px !important;
+    display: block;
+    margin-top: 10px;
+}
+#mobile-call a {
+    margin-left: 0;
+    background: #006fa9;
+    border-radius: 5px;
+    color: white !important;
+    border: none;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    min-width: 250px !important;
+    display: block;
+    margin-top: 10px;
+}
+@media screen and (min-width: 800px) { 
+    #mobile-call {
+        display: none;
+    }
+}
+
+ @media screen and (max-width: 750px) {
+    #annie_mac-loan-officer .manager-biography p, #tmc-loan-officer .manager-biography p, #lofidirect-loan-officer .manager-biography p {
+        margin: 0;
+        padding: 0;
+    }
+    .site-type-loan_officer .manager-biography p {
+        width: 100%;
+    }
+    #originator #biography {
+        margin: 0;
+        padding: 0;
+        width: 98%;
+    }
+    #originator .manager-biography {
+        width: auto;
+        padding: 10px;
+    }
+    .site-type-corporate #home-banner {
+        min-height: 1px !important;
+        max-height: 350px;
+        padding: 0;
+        justify-content: center;
+        background-position-x: 59%;
+        border-bottom: 0;
+    }
+    .site-type-corporate #home-provide {
+        width: 100%;
+        padding: 0;
+        margin-top: 60px;
+    }
+    .site-type-corporate #home-provide iframe {
+        display: none;
+    }
+    .site-type-corporate #we-provide-more-master h3 {
+        font-size: 37px;
+    }
+    .site-type-corporate #home-reviews {
+        display: none;
+    }
+    .site-type-corporate #calculations-and-numbers {
+        margin-top: 0px;
+    }
+    .site-type-corporate .calculations-primary:nth-child(2) {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .site-type-corporate #new-perk-plans {
+        margin: 0 !important;
+    }
+    #calculations-and-numbers {
+        padding-bottom: 0;
+    }
+    .site-type-corporate .action-buttons-calcs button {
+        width: 150px;   
+    }
+    #navigation_new_upper .menu {
+        display: none;
+    }
+    #start-your-story {
+        margin-top: 10px;
+    }
+    #sitemap {
+        display: flex;
+        flex-direction: column;
+    }
+    footer #copyrights {
+        align-items: flex-start;
+    }
+    #copyrights ul:nth-of-type(1) {
+        margin: 0;
+    }
+    footer #sitemap ul.menu.nav li ul {
+        margin: 10px 0px;
+    }
+    footer #sitemap ul.menu.nav {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .we-provide-this h4, .blog-home-entry h4 {
+        font-size: 26px;
+        text-align: left;
+        border: none;
+        padding-bottom: 0;
+        margin-top: 5px;
+    }
+    .we-provide-this p, .blog-home-entry p {
+        font-size: 16px;
+        text-align: left;
+        width: auto;
+        margin: 18px auto;
+    }
+}
+.breadcrumb {
+    display: none;
+}
+.site-type-branch #covid-warning {
+    margin-top: 10px !important;
+}
+#site-navigation {
+    z-index: 1000;
+}
+#branch-banner {
+    background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
+    max-height: 450px !important;
+    background-position-y: 68% !important;
+    background-size: 101% !important;
+}
+#branch-overlay {
+    background: transparent;
+}
