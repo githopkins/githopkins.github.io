@@ -1,0 +1,15 @@
+Product pages, to be accessible from Corporate, LO, Branch through relative links:
+Construction Overview /construction
+- Construction Lead /construction-start
+Renovation Overview /renovation
+- Renovation Transformation Photos /transformation-photos -> /renovation-photos
+- Renovation Lead /renovation-start
+Reno/Construction Lead Sent /reno-construction-sent -> /lead-sent
+
+Hub pages from Corporate with absolute links to corporate, linked directly on pages to corporate level:
+Professional Hub - Onboard /hub-onboard -> /professional-onboarding
+Professional Disclaimer /professional-disclaimer
+Builder Hub /builder-hub
+Contractor Hub /contractor-hub
+Consultant Hub /consultant-hub
+
