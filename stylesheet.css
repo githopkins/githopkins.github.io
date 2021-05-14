@@ -2268,6 +2268,12 @@ footer {
     font-weight: 300;
     font-size: 18px;
 }
+#sitemap .menu ul {
+    font-size: 15px;
+}
+#sitemap .menu li {
+    line-height: 29px;
+}
 /* footer #sitemap ul {
     display: none !important;
 } */
