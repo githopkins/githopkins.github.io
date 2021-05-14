@@ -321,7 +321,6 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
-
 	// Renovation and Construction
 	if (window.location.href.indexOf("/renovation-start") != -1) {
 		$('#submit-form').click(function(){
@@ -396,18 +395,6 @@ $(function() {
 	if (window.location.href.indexOf("/professional-onboarding?profession=builder") != -1) {
 		$("#builder-acceptance-blurb").show();
 		$("#both-acceptance-blurb").hide();
-	};
-	if (window.location.href.indexOf("/contractor-hub") != -1) {
-		$("#builder-filter").toggleClass("filtered-inactive");
-		$("#consultant-filter").toggleClass("filtered-inactive");
-		$(".consultant-type-consultant").toggleClass("hide");
-		$(".consultant-type-builder").toggleClass("hide");
-	};
-	if (window.location.href.indexOf("/builder-hub") != -1) {
-		$("#consultant-filter").toggleClass("filtered-inactive");
-		$("#contractor-filter").toggleClass("filtered-inactive");
-		$(".consultant-type-consultant").toggleClass("hide");
-		$(".consultant-type-contractor").toggleClass("hide");
 	};
 	if (window.location.href.indexOf("product-type=fha-203k") != -1) {
 		$("#product-type-203k").attr('checked', true);
