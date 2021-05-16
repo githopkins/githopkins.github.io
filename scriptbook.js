@@ -358,6 +358,7 @@ $(function() {
 			$("#Comments").attr('value', personalsummary + " " + productionsummary);
 		});
 		$('#submit-form').click(function(){
+			$( window ).scrollTop( 30 );
 			$("#construction-lead-capture-section").fadeOut(2500);
 			setTimeout(function(){
 			   window.location.href='./lead-sent';
@@ -400,6 +401,7 @@ $(function() {
 			$("#Comments").attr('value', personalsummary + " " + productionsummary);
 		});
 		$('#submit-form').click(function(){
+			$( window ).scrollTop( 30 );
 			$("#construction-lead-capture-section").fadeOut(2500);
 			setTimeout(function(){
 			   window.location.href='./lead-sent';
