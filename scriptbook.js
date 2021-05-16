@@ -323,6 +323,40 @@ $(function() {
 	};
 	// Renovation and Construction
 	if (window.location.href.indexOf("/renovation-start") != -1) {
+		$("input[type='tel']").on("keyup", function() {
+			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
+			val = this.value;
+			if (valid) {
+				$('#submit-overlayment').hide();
+			}
+		});
+		$(":input").on("keyup change", function(e) {
+			var selectedState = $("#state-selection").val();
+			$('input[name=state]').val(selectedState);
+			var referred = $("#referred-selection").val();
+			$('input[name=referred]').val(referred);
+			var windowurl = window.location.href
+			var windowurlmessage = "Summary: This lead was captured at " + windowurl
+			var nameinput = " Borrower Informaton: The borrower's name is " + $('input[name=name]').val() + ". "
+			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
+			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
+			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
+			var producttype = "The product type is " + $('input[name="product-type"]:checked').val() + ". "
+			var contractorStatus = "The contractor status is " + $('input[name="contractor-status"]:checked').val() + ". "
+			var lotstatus = "The lot status is " + $('input[name="purchase-own"]:checked').val() + ". "
+			var referredStatus = "The borrower was referred to us by: " + $('input[name="referred"]').val() + "."
+			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
+			$("#Production").val(producttype + " " + contractorStatus + " " + lotstatus + " " + referredStatus);
+			var commentScruba = $('#Production').val();
+			if (commentScruba.indexOf(undefined) < 1) {
+				var productionsummary = $("#Production").val()
+			}
+			var commentScrubb = $('#Personals').val();
+			if (commentScrubb.indexOf("is .") < 1) {
+				var personalsummary = $("#Personals").val()
+			}
+			$("#Comments").attr('value', personalsummary + " " + productionsummary);
+		});
 		$('#submit-form').click(function(){
 			$("#construction-lead-capture-section").fadeOut(2500);
 			setTimeout(function(){
@@ -331,6 +365,41 @@ $(function() {
 		});
 	};
 	if (window.location.href.indexOf("/construction-start") != -1) {
+		$("input[type='tel']").on("keyup", function() {
+			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
+				val = this.value;
+			if (valid) {
+				$('#submit-overlayment')
+					.hide();
+			}
+		});
+		$(":input").on("keyup change", function(e) {
+			var selectedState = $("#state-selection").val();
+			$('input[name=state]').val(selectedState);
+			var referred = $("#referred-selection").val();
+			$('input[name=referred]').val(referred);
+			var windowurl = window.location.href
+			var windowurlmessage = "Summary: This lead was captured at " + windowurl
+			var nameinput = " Borrower Informaton: The borrower's name is " + $('input[name=name]').val() + ". "
+			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
+			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
+			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
+			var producttype = "The product type is " + $('input[name="product-type"]:checked').val() + ". "
+			var builderStatus = "The builder status is " + $('input[name="builder-status"]:checked').val() + ". "
+			var lotstatus = "The lot status is " + $('input[name="lot-status"]:checked').val() + ". "
+			var referredStatus = "The borrower was referred to us by: " + $('input[name="referred"]').val() + "."
+			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
+			$("#Production").val(producttype + " " + builderStatus + " " + lotstatus + " " + referredStatus);
+			var commentScruba = $('#Production').val();
+			if (commentScruba.indexOf(undefined) < 1) {
+				var productionsummary = $("#Production").val()
+			}
+			var commentScrubb = $('#Personals').val();
+			if (commentScrubb.indexOf("is .") < 1) {
+				var personalsummary = $("#Personals").val()
+			}
+			$("#Comments").attr('value', personalsummary + " " + productionsummary);
+		});
 		$('#submit-form').click(function(){
 			$("#construction-lead-capture-section").fadeOut(2500);
 			setTimeout(function(){
@@ -338,6 +407,9 @@ $(function() {
 			  } ,2750);
 		});
 	};
+	if (window.location.href.indexOf("-start") != -1) {
+		
+	}
 	if (window.location.href.indexOf("/professional-disclaimer?profession=contractor") != -1) {
 		$("#builder-agreement-disclaimer").hide();
 		$("#agreement-type").text("Contractor Disclaimer Agreement");
