@@ -406,9 +406,6 @@ $(function() {
 			  } ,2750);
 		});
 	};
-	if (window.location.href.indexOf("-start") != -1) {
-		
-	}
 	if (window.location.href.indexOf("/professional-disclaimer?profession=contractor") != -1) {
 		$("#builder-agreement-disclaimer").hide();
 		$("#agreement-type").text("Contractor Disclaimer Agreement");
