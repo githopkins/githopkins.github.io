@@ -8,6 +8,9 @@
 #site-navigation ul li ul li a:hover {
     font-weight: normal !important;
 }
+.sub-site-navigation-listing {
+    width: 200px;
+}
 #list-switch {
     display: none;
 }
