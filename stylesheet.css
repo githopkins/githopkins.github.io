@@ -5,7 +5,7 @@
     border-bottom: none !important;
     padding-bottom: 10px !important;
 }
-#site-navigation ul li ul li a:hover {
+#site-navigation ul li ul li a:hover, #site-navigation ul li ul li:hover, #site-navigation ul li ul:hover {
     font-weight: normal !important;
 }
 .sub-site-navigation-listing {
