@@ -313,6 +313,42 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
 	};
+	// Sean King
+	if (window.location.href.indexOf("/get-elevated?r=sean") != -1) {
+		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Sean King");
+		$("#bdm-title-email").text("SKing@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:SKing@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 229-0639");
+		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
+		$("#number-id").attr("href", "tel:856-229-0639");
+		$("#number-id").text("(856) 229-0639");
+		// $("#UserId").attr('value', "U6UJ9A00040G");
+		$("#toggle-captcha").click(function(){
+			$("#form-content").fadeOut(2500);
+			setTimeout(function(){
+			   window.location.href='./get-more-thanks?r=sean';
+			  } ,2750);
+		});
+		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
+		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
+		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
+	};
+	if (window.location.href.indexOf("/get-more-thanks?r=sean") != -1) {
+		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background-size', 'cover');
+		$("#bdm-title-name").text("Sean King");
+		$("#bdm-title-email").text("SKing@Annie-Mac.com");
+		$("#bdm-title-email").attr("href", "mailto:SKing@Annie-Mac.com");
+		$("#bdm-title-phone").text("(856) 229-0639");
+		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
+		$("#number-id").attr("href", "tel:856-229-0639");
+		$("#number-id").text("(856) 229-0639");
+		// $("#download-id-1").attr("href", "https://annie-mac.com/getmore-linda");
+		// $("#download-id-2").attr("href", "https://annie-mac.com/getmore-linda");
+		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/lboyle1@annie-mac.com/bookings/");
+	};
 	// Thanks Kelsey
 	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
 		$("#number-id").attr("href", "tel:856-252-0289");
