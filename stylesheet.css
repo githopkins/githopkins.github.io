@@ -8,6 +8,9 @@
 #site-navigation ul li ul li a:hover, #site-navigation ul li ul li:hover, #site-navigation ul li ul:hover {
     font-weight: normal !important;
 }
+#site-navigation ul#navigation_new_upper li a {
+    font-weight: normal !important;
+}
 .sub-site-navigation-listing {
     width: 200px;
 }
