@@ -318,8 +318,8 @@ $(function() {
 		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Sean King");
-		$("#bdm-title-email").text("SKing@Annie-Mac.com");
-		$("#bdm-title-email").attr("href", "mailto:SKing@Annie-Mac.com");
+		$("#bdm-title-email").text("sking@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:sking@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 229-0639");
 		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
 		$("#number-id").attr("href", "tel:856-229-0639");
@@ -339,8 +339,8 @@ $(function() {
 		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Sean King");
-		$("#bdm-title-email").text("SKing@Annie-Mac.com");
-		$("#bdm-title-email").attr("href", "mailto:SKing@Annie-Mac.com");
+		$("#bdm-title-email").text("sking@annie-mac.com");
+		$("#bdm-title-email").attr("href", "mailto:sking@annie-mac.com");
 		$("#bdm-title-phone").text("(856) 229-0639");
 		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
 		$("#number-id").attr("href", "tel:856-229-0639");
