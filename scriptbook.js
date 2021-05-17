@@ -508,14 +508,4 @@ $(function() {
 		$("#product-type-conventional").removeAttr('checked');
 		$("#product-type-fha").removeAttr('checked');
 	});
-	if (window.location.href.indexOf ("construction.annie-mac.com") {
-		if (window.location.pathname != "/") {
-			window.location.href= "https://annie-mac.com" + window.location.pathname
-		}
-	};
-	if (window.location.href.indexOf ("renovation.annie-mac.com") {
-		if (window.location.pathname != "/") {
-			window.location.href= "https://annie-mac.com" + window.location.pathname
-		}
-	};
 })
