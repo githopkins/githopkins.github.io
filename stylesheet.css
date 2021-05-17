@@ -5,6 +5,9 @@
     border-bottom: none !important;
     padding-bottom: 10px !important;
 }
+#site-navigation ul li ul li a:hover {
+    font-weight: normal !important;
+}
 #list-switch {
     display: none;
 }
