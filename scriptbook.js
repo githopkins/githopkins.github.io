@@ -451,7 +451,7 @@ $(function() {
 		$('#submit-form').click(function(){
 			$("#hub-consultant-disclaimer").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./contractor-hub';
+			   window.location.href='./contractor-hub?agreement=true';
 			  } ,2750);
 		});
 	};
@@ -462,7 +462,7 @@ $(function() {
 		$('#submit-form').click(function(){
 			$("#hub-consultant-disclaimer").fadeOut(2500);
 			setTimeout(function(){
-			   window.location.href='./builder-hub';
+			   window.location.href='./builder-hub?agreement=true';
 			  },2750);
 		});
 	};
