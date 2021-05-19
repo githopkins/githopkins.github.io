@@ -97,7 +97,7 @@ $(function() {
 		$("#list_12148 > a:nth-child(1)").attr("href", "tel:303-668-3350");
 		$("#biography > div.manager-biography > h2").text("Scott Synovic is a Lifelong Mortgage Loan Originator.");
 	};
-	if (window.location.href.indexOf("call-capture") != -1) {
+	if (window.location.href.indexOf("capture") != -1) {
 		$("input[type='tel']").on("keyup", function() {
 			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
 			val = this.value;
