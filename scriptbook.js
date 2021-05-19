@@ -93,6 +93,9 @@ $(function() {
 			$(teamMemberReassignedBranchManager[i]).prependTo(".branch-manager-section");
 		}
 	};
+	if (window.location.href.indexOf("scottsynovic") != -1) {
+		$("#biography > div.manager-biography > h2").text("Scott Synovic is a Lifelong, Dedicated, Mortgage Loan Originator.");
+	}
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
 		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
@@ -346,7 +349,7 @@ $(function() {
 		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
 		$("#number-id").attr("href", "tel:856-229-0639");
 		$("#number-id").text("(856) 229-0639");
-		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean");
+		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean"); 
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-sean");
 		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
