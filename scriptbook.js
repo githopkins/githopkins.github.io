@@ -333,6 +333,7 @@ $(function() {
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-sean");
+		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=sean") != -1) {
@@ -347,6 +348,7 @@ $(function() {
 		$("#number-id").text("(856) 229-0639");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-sean");
+		$("#bdm-contact > h4:nth-child(3)").hide();
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
 	};
 	// Thanks Kelsey
