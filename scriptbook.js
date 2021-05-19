@@ -95,7 +95,7 @@ $(function() {
 	};
 	if (window.location.href.indexOf("scottsynovic") != -1) {
 		$("#list_12148 > a:nth-child(1)").attr("href", "tel:303-668-3350");
-		$("#biography > div.manager-biography > h2").text("Scott Synovic is a Lifelong, Dedicated, Mortgage Loan Originator.");
+		$("#biography > div.manager-biography > h2").text("Scott Synovic is a Lifelong Mortgage Loan Originator.");
 	}
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
 		$("#we-provide-more-2").hide();
