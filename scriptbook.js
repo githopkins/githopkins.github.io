@@ -315,7 +315,7 @@ $(function() {
 	};
 	// Sean King
 	if (window.location.href.indexOf("/get-elevated?r=sean") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background', 'url("https://www.annie-mac.com/uploads/sites/10713/public/sean_king.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Sean King");
 		$("#bdm-title-email").text("sking@annie-mac.com");
@@ -337,7 +337,7 @@ $(function() {
 		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=sean") != -1) {
-		// $("#bdm-avatar").css('background', 'url("https://annie-mac.com/uploads/sites/10713/public/linda-boyle.png")');
+		$("#bdm-avatar").css('background', 'url("https://www.annie-mac.com/uploads/sites/10713/public/sean_king.jpeg")');
 		$("#bdm-avatar").css('background-size', 'cover');
 		$("#bdm-title-name").text("Sean King");
 		$("#bdm-title-email").text("sking@annie-mac.com");
