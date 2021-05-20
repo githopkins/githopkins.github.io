@@ -41,7 +41,7 @@ $(function() {
 		var cookietrue = ""
 		if (cookiename === "") {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
-			createCookie('loanoriginatorlog', cookiename);
+			createCookie('LastLoanOriginatorVisited', cookiename);
 			var cookietrue = readCookie('loanoriginatorlog');
 			console.log(cookietrue);
 		}
