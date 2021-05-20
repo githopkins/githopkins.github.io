@@ -35,6 +35,7 @@ $(function() {
 		  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 		  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
 		  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+		  $('#lastvisitedoriginatornotice').remove();
 		});
 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
