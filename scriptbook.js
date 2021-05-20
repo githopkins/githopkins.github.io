@@ -1,4 +1,6 @@
 $(function() {
+	
+	// Begin testing prototype site code scripts...
 	var testingsitetrue = ['prototype'];
 	for (i = 0; i < testingsitetrue.length; i++) {
 		if (window.location.href.indexOf(testingsitetrue) != -1) {
@@ -49,6 +51,8 @@ $(function() {
 			}
 		}
 	};
+	
+	// Begin live site code
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
 	$(headeradditional).prependTo( $( "#site-navigation" ) );
 	$('#hide-popover').click(function() {
