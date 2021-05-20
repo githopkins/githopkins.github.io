@@ -32,6 +32,7 @@ $(function() {
 	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+		var loanofficerlastvisitednamedisplay = "https://" + readCookie('visitedloanoriginatorname')
 		console.log(loanofficerlastvisited + " was the loan officer page you visited.");
 		$(document.body).append("<div id='lastvisitedoriginatornotice'>Hey there! It seems you previously visited a loan officer's site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page. If not, feel free to dismiss this message.</div>");
 	};
@@ -39,6 +40,8 @@ $(function() {
 		if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
 		  const value = window.location.host.split('.')[0];
 		  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
+		  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
+		  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname;
 		  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		  console.log("A cookie has been created for " + loanofficerlastvisited);
 		}
