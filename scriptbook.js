@@ -31,6 +31,7 @@ $(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+							  document.cookie = "visitedloanoriginatorimage=false; path=/; max-age=-2592000; domain=.annie-mac.com";
 							  $('#lastvisitedoriginatornotice').remove();
 							});
 						};
@@ -48,6 +49,7 @@ $(function() {
 						  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 						  console.log("A cookie has been created for " + visitedloanoriginatorname);
 						  console.log("A cookie has been created for " + loanofficerlastvisited);
+						  console.log("A cookie has been created for " + visitedloanoriginatorimage);
 						}
 					}
 				}
