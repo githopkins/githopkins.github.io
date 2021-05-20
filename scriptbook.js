@@ -36,21 +36,21 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
-	localStorage.setItem('cookiecreated', 'false');
-	if ($('body').hasClass('site-type-loan_officer')) {	
-		if ((localStorage.cookiecreated) == "false") {
+	if ((localStorage.lastvisitcookie) == "true") {
+		console.log('a cookie has been already been created for a loan originator.');
+		var cookietrue = readCookie('LastLoanOriginatorVisited');
+		console.log(cookietrue);
+	};
+	if ($('body').hasClass('site-type-loan_officer')) {
+		if (localStorage.getItem("lastvisitcookie") === null) {	
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('LastLoanOriginatorVisited', cookiename);
-			localStorage.setItem('cookiecreated', 'true');
+			localStorage.setItem('lastvisitcookie', 'true');
 			console.log('a cookie has been created for loan originator.');
 			// var cookietrue = readCookie('LastLoanOriginatorVisited');
 			// console.log(cookietrue);
 		};
-		if ((localStorage.cookiecreated) == "true") {
-			console.log('a cookie has been already been created for loan originator.');
-			var cookietrue = readCookie('LastLoanOriginatorVisited');
-			console.log(cookietrue);
-		};
+		// if ((localStorage.cookiecreated) == "false") {
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
 		$('#dismisscovid').click(function() {
