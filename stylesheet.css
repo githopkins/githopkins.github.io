@@ -23,6 +23,10 @@
 }
 #lastvisitedoriginatornotice p:first-of-type {
     margin-bottom: -5px;
+    margin-top: 0;
+}
+#lastvisitedoriginatornotice p:last-of-type {
+    margin-bottom: 0;
 }
 #lastvisitedoriginatornotice p a {
     color: #fff;
