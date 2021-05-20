@@ -36,7 +36,7 @@ $(function() {
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
-		  const value = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
+		  const value = window.location.host.split('.')[0];
 		  document.cookie = "visitedloanoriginator=" + value + "; path=/; domain=.annie-mac.com";
 		  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		  console.log("A cookie has been created for " + loanofficerlastvisited);
