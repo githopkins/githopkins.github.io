@@ -43,13 +43,13 @@ $(function() {
 			createCookie('LastLoanOriginatorVisited', cookiename);
 			localStorage.setItem('cookiecreated', 'true');
 			console.log('a cookie has been created for loan originator.');
-			var cookietrue = readCookie('LastLoanOriginatorVisited');
-			console.log(cookietrue);
+			// var cookietrue = readCookie('LastLoanOriginatorVisited');
+			// console.log(cookietrue);
 		};
 		if ((localStorage.cookiecreated) == "true") {
 			console.log('a cookie has been already been created for loan originator.');
-			var cookietrue = readCookie('LastLoanOriginatorVisited');
-			console.log(cookietrue);
+			// var cookietrue = readCookie('LastLoanOriginatorVisited');
+			// console.log(cookietrue);
 		};
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
