@@ -39,7 +39,7 @@ $(function() {
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		var cookiename = "";
 		var cookietrue = ""
-		if (cookiename == "") {
+		if (cookiename === "") {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('loanoriginatorlog', cookiename);
 			var cookietrue = readCookie('loanoriginatorlog');
