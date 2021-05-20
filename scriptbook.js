@@ -1,4 +1,13 @@
 $(function() {
+	
+		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div id='' class='team-member-portrait' style='background: url(https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg); background-size: cover; background-position: center center; background-repeat: no-repeat;'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
+		var testingsitetrue = ['nickprototype'];
+		for (i = 0; i < testingsitetrue.length; i++) {
+			if (window.location.href.indexOf(testingsitetrue) != -1) {
+				console.log("This is a valid testing site.");
+			}
+		}
+	};
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
 	$(headeradditional).prependTo( $( "#site-navigation" ) );
 	$('#hide-popover').click(function() {
