@@ -20,9 +20,6 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
-	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-	  	console.log("A cookie already exists from site level alert.");
-	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
 		} else {
@@ -560,4 +557,7 @@ $(function() {
 		$("#product-type-conventional").removeAttr('checked');
 		$("#product-type-fha").removeAttr('checked');
 	});
+	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+		  console.log("A cookie already exists from site level alert. The cookie is: " + value);
+	};
 })
