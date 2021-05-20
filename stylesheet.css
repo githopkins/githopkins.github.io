@@ -335,13 +335,15 @@ footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_
     display: none;
 }
 .site-type-loan_officer .manager-biography ul {
-    width: 90%;
-    margin: 15px auto 30px;
-    padding-left: 35px;
-    list-style-type: square;
+    width: auto;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    list-style-type: none;
+    margin-top: 20px !important;
 }
 .site-type-loan_officer .manager-biography li {
-    padding-left: 5px;
+    padding-left: 0;
+    line-height: 2.5em;
 }
 #branch-content h2 {
     margin-top: 0;
