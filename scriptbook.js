@@ -45,7 +45,7 @@ $(function() {
 		if (localStorage.getItem("lastvisitcookie") === null) {	
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('LastLoanOriginatorVisited', cookiename);
-			localStorage.setItem('lastvisitcookie', 'true');
+			const lastvisited = cookiename;
 			console.log('a cookie has been created for loan originator.');
 			// var cookietrue = readCookie('LastLoanOriginatorVisited');
 			// console.log(cookietrue);
@@ -88,6 +88,7 @@ $(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
+	console.log(lastvisited);
 	if(document.URL.indexOf("/branch") >= 0){ 
 		const locationBranch = $(".location-listing");
 		$( locationBranch ).each(function() {
