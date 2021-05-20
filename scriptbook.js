@@ -33,7 +33,7 @@ $(function() {
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		console.log(loanofficerlastvisited + " was the loan officer page you visited.");
-		$(document.body).append("<div id='lastvisitedoriginatornotice'><a href='" +loanofficerlastvisited  "'>last visited loan originator</a></div>");
+		$(document.body).append("<div id='lastvisitedoriginatornotice'><a href='" + loanofficerlastvisited  + "'>last visited loan originator</a></div>");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
