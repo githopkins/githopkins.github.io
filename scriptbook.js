@@ -41,7 +41,7 @@ $(function() {
 		  const value = window.location.host.split('.')[0];
 		  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
 		  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
-		  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname;
+		  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
 		  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		  console.log("A cookie has been created for " + loanofficerlastvisited);
 		}
