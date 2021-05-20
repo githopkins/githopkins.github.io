@@ -4,6 +4,7 @@ $(function() {
 		if (window.location.href.indexOf(testingsitetrue) != -1) {
 			$("body").addClass("testingsite-true");
 			console.log("This is a valid testing site.");
+			
 		}
 	};
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
