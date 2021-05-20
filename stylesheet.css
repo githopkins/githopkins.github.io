@@ -15,8 +15,11 @@
     color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
-    background: rgb(45, 55, 72);
+    background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%);
     padding: 20px;
+}
+#lastvisitedoriginatornotice p {
+    line-height: 27px;
 }
 #lastvisitedoriginatornotice p:first-of-type {
     margin-bottom: -5px;
