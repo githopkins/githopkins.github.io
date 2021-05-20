@@ -30,19 +30,25 @@ $(function() {
 		}
 		return null;
 	};
+	// Checks if the cookie of a previously visited loan originator was visited.
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+		// Checks if previously, the message was NOT dismissed.
 		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
 			var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 			var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
-			console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
-			console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-			$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
-			$( "#dismisslastvisitor" ).click(function() {
-			  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
-			  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-			  $('#lastvisitedoriginatornotice').remove();
-			});
+			// Compares the URL to the variable of the last visited originator page and only shows if it does not contain that.
+			if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
+				console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
+				console.log(loanofficerlastvisited + " is the loan officer page you visited.");
+				$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+				// Dismisses the previous message by removing the cookies and adding a new one to act as an if condition for displaying the message.
+				$("#dismisslastvisitor").click(function() {
+				  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+				  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				  $('#lastvisitedoriginatornotice').remove();
+				});
+			};
 		};
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
