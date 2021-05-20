@@ -44,7 +44,7 @@ $(function() {
 			createCookie('LastLoanOriginatorVisited', cookiename);
 			var cookietrue = readCookie('loanoriginatorlog');
 			console.log(cookietrue);
-		}
+		};
 		// if (cookietrue != "") {
 		// 	var PreviousLoanOriginatorLink = "https://" + cookietrue + ".annie-mac.com";
 		// 	console.log(PreviousLoanOriginatorLink);
