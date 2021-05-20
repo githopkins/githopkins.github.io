@@ -1,6 +1,6 @@
 $(function() {
 	function createCookie(name,value) {
-		document.cookie = name + "=" + value + expires + "; path=/; domain=.annie-mac.com";
+		document.cookie = name + "=" + value "; path=/; domain=.annie-mac.com";
 	}
 	function readCookie(name) {
 		var nameEQ = name + "=";
