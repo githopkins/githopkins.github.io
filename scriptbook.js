@@ -38,7 +38,6 @@ $(function() {
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
 		localStorage.setItem('cookiecreated', 'false');
-		console.log('there is no cookie created for visited loan originator.');
 		if ((localStorage.cookiecreated) == "false") {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('LastLoanOriginatorVisited', cookiename);
