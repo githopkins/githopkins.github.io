@@ -18,6 +18,11 @@
     background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%);
     padding: 20px;
 }
+#lastvisitedoriginatornotice img {
+    height: 90px;
+    width: 90px;
+    margin: 0 auto 20px;
+}
 #lastvisitedoriginatornotice p {
     line-height: 27px;
 }
