@@ -4,10 +4,9 @@
 
 #lastvisitedoriginatornotice {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     z-index: 500;
-    left: 50%;
-    transform: translate(-50%, -25%);
+    right: 20px;
     background: #000000cf;
     padding: 6px 14px;
     background-color: #fff;
@@ -18,9 +17,10 @@
     color: rgb(0 0 0 / 68%);
     font-size: 15px;
     line-height: 29px;
+    width: 450px;
 }
 #lastvisitedoriginatornotice p:first-of-type {
-    margin-bottom: -15px;
+    margin-bottom: -5px;
 }
 #lastvisitedoriginatornotice p a {
     color: #000;
