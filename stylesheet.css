@@ -1865,6 +1865,10 @@ p, li, a {
     .site-type-loan_officer #we-provide-more-master h3 {
         margin-left: 0;
     }
+    div.calculations-primary:nth-child(2) {
+        margin-top: 50px;
+        padding: 0 50px;
+    }
 }
 #links-sidebar-full-width { 
     display: none;
