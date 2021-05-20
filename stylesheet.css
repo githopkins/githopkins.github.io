@@ -15,7 +15,7 @@
     color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
-    background: linear-gradient(900deg, #015886 0%, #2a6f94 100%);
+    background: rgb(45, 55, 72);
     padding: 20px;
 }
 #lastvisitedoriginatornotice p:first-of-type {
