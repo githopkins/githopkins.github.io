@@ -43,6 +43,7 @@ $(function() {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('loanoriginatorlog', cookiename);
 			var cookietrue = readCookie('loanoriginatorlog');
+			console.log(cookietrue);
 		}
 		// if (cookietrue != "") {
 		// 	var PreviousLoanOriginatorLink = "https://" + cookietrue + ".annie-mac.com";
