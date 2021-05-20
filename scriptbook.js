@@ -58,7 +58,7 @@ $(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 		if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-		  alert("A cookie already exists.");
+		  console.log("A cookie already exists.");
 		} else {
 		  const value = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 		  document.cookie = "visitedloanoriginator=" + value + "; path=/; domain=.annie-mac.com";
