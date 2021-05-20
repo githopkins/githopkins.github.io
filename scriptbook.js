@@ -30,18 +30,12 @@ $(function() {
 		}
 		return null;
 	};
-	// Checks if the cookie of a previously visited loan originator was visited.
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-		// Checks if previously, the message was NOT dismissed.
 		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
 			var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 			var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
-			// Compares the URL to the variable of the last visited originator page and only shows if it does not contain that.
 			if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
-				console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
-				console.log(loanofficerlastvisited + " is the loan officer page you visited.");
 				$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
-				// Dismisses the previous message by removing the cookies and adding a new one to act as an if condition for displaying the message.
 				$("#dismisslastvisitor").click(function() {
 				  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 				  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
@@ -58,8 +52,6 @@ $(function() {
 		  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
 		  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
 		  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-		  console.log("A cookie has been created for " + visitedloanoriginatorname);
-		  console.log("A cookie has been created for " + loanofficerlastvisited);
 		}
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
