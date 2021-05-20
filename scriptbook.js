@@ -30,6 +30,33 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
+	// function readCookie(name) {
+	// 	var nameEQ = name + "=";
+	// 	var ca = document.cookie.split(';');
+	// 	for(var i=0;i < ca.length;i++) {
+	// 		var c = ca[i];
+	// 		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	// 		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	// 	}
+	// 	return null;
+	// };
+	// if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+	// 	if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+	// 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+	// 		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
+	// 		if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
+	// 			// console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
+	// 			// console.log(loanofficerlastvisited + " is the loan officer page you visited.");
+	// 			$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+	// 			$("#dismisslastvisitor").click(function() {
+	// 			  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+	// 			  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+	// 			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+	// 			  $('#lastvisitedoriginatornotice').remove();
+	// 			});
+	// 		};
+	// 	};
+	// };
 	if ($('body').hasClass('site-type-loan_officer')) {
 		// if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
 		// 	if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
@@ -106,6 +133,7 @@ $(function() {
 		$(businessdevelopment).appendTo($( "#team-display" ));
 	};
 	if (window.location.href.indexOf("louisville") != -1) {
+		$("#team-display > div.team-member-section").prepend("<div id='' class='team-member'><div id='' class='team-member-information'><h4>Chrissy Pierson</h4><h5>Mortgage Loan Originator</h5><h5>NMLS: 1412881</h5><div id='' class='team-member-portrait' style='background: url(https://annie-mac.com/uploads/sites/10713/public/ChristinaPierson_Selects_0123.jpeg); background-size: cover; background-position: center center; background-repeat: no-repeat;'></div><button class='go flex space-between align-center'><a href='http://chrissypierson.annie-mac.com' class='btn button-main'>More Information</a><i class='fas fa-globe-americas'></i></button><button class='flex space-between align-center'>(513) 769-2038<i class='fas fa-mobile-alt'></i></button><button class='flex space-between align-center'><a href='mailto: cpierson@annie-mac.com'>Email Me</a><i class='fas fa-envelope'></i></button></div></div>");
 		var teamMemberReassignedBranchManager = ['#mikeprestigiacomo', '#brianlykins', '#kevinhulsey'];
 		for (i = 0; i < teamMemberReassignedBranchManager.length; i++) {
 			$(teamMemberReassignedBranchManager[i]).addClass("manager-information");
