@@ -36,8 +36,8 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
+	localStorage.setItem('cookiecreated', 'false');
 	if ($('body').hasClass('site-type-loan_officer')) {	
-		localStorage.setItem('cookiecreated', 'false');
 		if ((localStorage.cookiecreated) == "false") {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('LastLoanOriginatorVisited', cookiename);
