@@ -6,6 +6,46 @@ $(function() {
 			console.log("This is a valid testing site.");
 			if ($('body').hasClass('testingsite-true')) {
 				console.log("Testing site true added to body class.");
+				// function readCookie(name) {
+				// 	var nameEQ = name + "=";
+				// 	var ca = document.cookie.split(';');
+				// 	for(var i=0;i < ca.length;i++) {
+				// 		var c = ca[i];
+				// 		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				// 		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+				// 	}
+				// 	return null;
+				// };
+				// if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+				// 	if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+				// 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+				// 		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
+				// 		if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
+				// 			// console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
+				// 			// console.log(loanofficerlastvisited + " is the loan officer page you visited.");
+				// 			$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+				// 			$("#dismisslastvisitor").click(function() {
+				// 			  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+				// 			  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				// 			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				// 			  $('#lastvisitedoriginatornotice').remove();
+				// 			});
+				// 		};
+				// 	};
+				// };
+				// if ($('body').hasClass('site-type-loan_officer')) {
+				// if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+				// 	if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
+				// 	  const value = window.location.host.split('.')[0];
+				// 	  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
+				// 	  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
+				// 	  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
+				// 	  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+				// 	  console.log("A cookie has been created for " + visitedloanoriginatorname);
+				// 	  console.log("A cookie has been created for " + loanofficerlastvisited);
+				// 	}
+				// }
+				// }
 			}
 		}
 	};
@@ -30,45 +70,7 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
-	// function readCookie(name) {
-	// 	var nameEQ = name + "=";
-	// 	var ca = document.cookie.split(';');
-	// 	for(var i=0;i < ca.length;i++) {
-	// 		var c = ca[i];
-	// 		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-	// 		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-	// 	}
-	// 	return null;
-	// };
-	// if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-	// 	if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
-	// 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-	// 		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
-	// 		if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
-	// 			// console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
-	// 			// console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-	// 			$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
-	// 			$("#dismisslastvisitor").click(function() {
-	// 			  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
-	// 			  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-	// 			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-	// 			  $('#lastvisitedoriginatornotice').remove();
-	// 			});
-	// 		};
-	// 	};
-	// };
 	if ($('body').hasClass('site-type-loan_officer')) {
-		// if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
-		// 	if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
-		// 	  const value = window.location.host.split('.')[0];
-		// 	  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
-		// 	  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
-		// 	  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
-		// 	  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-		// 	  console.log("A cookie has been created for " + visitedloanoriginatorname);
-		// 	  console.log("A cookie has been created for " + loanofficerlastvisited);
-		// 	}
-		// }
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
 		$('#dismisscovid').click(function() {
