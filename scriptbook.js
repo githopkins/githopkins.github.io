@@ -31,17 +31,19 @@ $(function() {
 		return null;
 	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-		$( "#dismisslastvisitor" ).click(function() {
-		  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
-		  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-		  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-		  $('#lastvisitedoriginatornotice').remove();
-		});
-		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
-		console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
-		console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-		$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor' href='/?lod=true'>dismiss this message.</a></p></div>");
+		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+			var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+			var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
+			console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
+			console.log(loanofficerlastvisited + " is the loan officer page you visited.");
+			$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+			$( "#dismisslastvisitor" ).click(function() {
+			  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+			  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+			  $('#lastvisitedoriginatornotice').remove();
+			});
+		};
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
