@@ -22,10 +22,11 @@ $(function() {
 					if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
 						var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 						var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
+						var loanofficerlastvisitedimage = readCookie('visitedloanoriginatorimage');
 						if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
 							console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
 							console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-							$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+							$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! It seems you previously visited " + loanofficerlastvisitednamedisplay + "'s site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page.</p><p>If not, feel free to <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
 							$("#dismisslastvisitor").click(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
@@ -42,6 +43,8 @@ $(function() {
 						  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
 						  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
 						  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
+						  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
+						  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
 						  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 						  console.log("A cookie has been created for " + visitedloanoriginatorname);
 						  console.log("A cookie has been created for " + loanofficerlastvisited);
