@@ -31,6 +31,11 @@ $(function() {
 		return null;
 	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+		$( "#dismisslastvisitor" ).click(function() {
+		  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+		  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+		  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+		});
 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
 		console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
