@@ -21,7 +21,7 @@ $(function() {
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-	  	console.log("A cookie already exists from site level alert. ");
+	  	console.log("A loan officer cookie exists.");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
