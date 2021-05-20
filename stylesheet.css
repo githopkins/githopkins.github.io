@@ -9,13 +9,13 @@
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    width: 450px;
+    width: 280px;
     border-radius: 4px;
     margin-bottom: 12px;
     color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
-    background: linear-gradient(900deg, #5e982f 0%, #71a04b 100%);
+    background: linear-gradient(900deg, #2f7a98 0%, #4b59a0 100%);
     padding: 20px;
 }
 #lastvisitedoriginatornotice p:first-of-type {
