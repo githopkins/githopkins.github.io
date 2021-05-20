@@ -20,8 +20,19 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
+	function readCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-	  	console.log("A loan officer cookie exists.");
+		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+		console.log(loanofficerlastvisited + " was the loan officer page you visited.");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
