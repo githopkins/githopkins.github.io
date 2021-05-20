@@ -37,11 +37,13 @@ $(function() {
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
-		var cookiename = "";
-		var cookietrue = ""
-		if (cookiename === "") {
+		localStorage.setItem('cookiecreated', 'false');
+		console.log('there is no cookie created for visited loan originator.');
+		if ((localStorage.podcastpopuphidden) == "false") {
 			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
 			createCookie('LastLoanOriginatorVisited', cookiename);
+			localStorage.setItem('cookiecreated', 'true');
+			console.log('a cookie has been created for loan originator.');
 			var cookietrue = readCookie('loanoriginatorlog');
 			console.log(cookietrue);
 		};
