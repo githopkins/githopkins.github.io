@@ -67,7 +67,6 @@ $(function() {
 		$("#we-provide-more-master > h3").text(firstname[0] + ' Provides...');
 		$("#biography > div.manager-biography > h2").text('About ' + firstname[0]);
 	};
-	console.log(lastvisited);
 	if(document.URL.indexOf("/branch") >= 0){ 
 		const locationBranch = $(".location-listing");
 		$( locationBranch ).each(function() {
