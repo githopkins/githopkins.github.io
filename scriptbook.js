@@ -37,9 +37,13 @@ $(function() {
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {	
-		cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
-		createCookie('loanoriginatorlog', cookiename);
-		var cookietrue = readCookie('loanoriginatorlog');
+		var cookiename = "";
+		var cookietrue = ""
+		if (cookiename == "") {
+			cookiename = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
+			createCookie('loanoriginatorlog', cookiename);
+			var cookietrue = readCookie('loanoriginatorlog');
+		}
 		if (cookietrue != "") {
 			var PreviousLoanOriginatorLink = "https://" + cookietrue + ".annie-mac.com";
 			console.log(PreviousLoanOriginatorLink);
