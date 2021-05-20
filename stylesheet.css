@@ -4,6 +4,16 @@
 
 #lastvisitedoriginatornotice {
     display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 500;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background: #000000cf;
+    padding: 0 20px;
+    color: white;
+    box-shadow: 1px -1px 13px #000000c9;
+    text-shadow: 1px 0px 0px #ffffff87;
 }
 #lastvisitedoriginatornotice p {
     
