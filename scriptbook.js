@@ -1,5 +1,5 @@
 $(function() {
-	var testingsitetrue = ['nickprototype', 'branch-prototype', 'originator1-prototype', 'originator2-prototype'];
+	var testingsitetrue = ['prototype'];
 	for (i = 0; i < testingsitetrue.length; i++) {
 		if (window.location.href.indexOf(testingsitetrue) != -1) {
 			$("body").addClass("testingsite-true");
