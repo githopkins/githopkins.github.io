@@ -112,7 +112,7 @@ $(function() {
 		const locationBranch = $(".location-listing");
 		$( locationBranch ).each(function() {
 			var domain = $(this).find( "h4 > a" ).attr('href');
-			var subdomain = domain.replace('.annie-mac.com', '').replace('https://', ' ').replace('http://', '') + "-branch-listing";
+			var subdomain = domain.replace('.annie-mac.com', '').replace('https://', '').replace('http://', '') + "-branch-listing";
 			(this).id = subdomain;
 		});
 	};
