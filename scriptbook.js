@@ -5,7 +5,7 @@ $(function() {
 			$("body").addClass("testingsite-true");
 			console.log("This is a valid testing site.");
 		}
-	)};
+	};
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
 	$(headeradditional).prependTo( $( "#site-navigation" ) );
 	$('#hide-popover').click(function() {
