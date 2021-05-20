@@ -33,7 +33,7 @@ $(function() {
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
 		var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 		console.log(loanofficerlastvisited + " was the loan officer page you visited.");
-		$(document.body).append("<div id='lastvisitedoriginatornotice'><a href='" + loanofficerlastvisited  + "'>last visited loan originator</a></div>");
+		$(document.body).append("<div id='lastvisitedoriginatornotice'>Hey there! It seems you previously visited a loan officer's site. If you're still interested in working with them, please <a href='" + loanofficerlastvisited  + "'>click here</a> to go back to their page. If not, feel free to dismiss this message.</div>");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
