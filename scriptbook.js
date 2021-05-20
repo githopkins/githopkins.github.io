@@ -50,6 +50,8 @@ $(function() {
 				}
 			}
 		}
+	
+	// Keep prototype scripts above this closing syntax.
 	};
 	
 	// Begin live site code
