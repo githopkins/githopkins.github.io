@@ -3,9 +3,9 @@
 /* AnnieMac Stylesheet Document - Updated MAY 20 2021 */
 #lastvisitedoriginatornotice {
     position: fixed;
-    bottom: 20px;
+    top: 38%;
     z-index: 500;
-    right: 20px;
+    right: -8px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
