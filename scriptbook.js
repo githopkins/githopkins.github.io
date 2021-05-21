@@ -45,7 +45,9 @@ $(function() {
 						  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
 						  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
 						  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
-						  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
+						  if (visitedloanoriginatorimage.indexOf("unnamed") < 0 ) {
+							  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
+							  };
 						  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 						  console.log("A cookie has been created for " + visitedloanoriginatorname);
 						  console.log("A cookie has been created for " + loanofficerlastvisited);
