@@ -3,7 +3,7 @@
 /* AnnieMac Stylesheet Document - Updated MAY 20 2021 */
 #lastvisitedoriginatornotice {
     position: fixed;
-    top: 38%;
+    top: 42%;
     z-index: 500;
     right: -3px;
     display: flex;
@@ -20,13 +20,13 @@
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
     animation: slide 0.5s forwards;
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 @keyframes slide {
-    100% { left: 0; }
+    100% { right: -100; }
 }
 @-webkit-keyframes slide {
-    100% { left: 0; }
+    100% { right: -100; }
 }
 #lastvisitedoriginatornotice img {
    height: 160px;
