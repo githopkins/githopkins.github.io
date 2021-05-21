@@ -17,16 +17,6 @@
     box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
     background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%);
     padding: 20px;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 3s;
-}
-@keyframes slide {
-    100% { right: -100; }
-}
-@-webkit-keyframes slide {
-    100% { right: -100; }
 }
 #lastvisitedoriginatornotice img {
    height: 160px;
