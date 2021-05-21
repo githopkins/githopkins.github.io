@@ -41,23 +41,23 @@
 }
 #gotherenowtid {
     display: block;
-    font-size: 13px;
+    ffont-size: 12px;
     text-align: left;
     border-top: 1px solid rgba(255,255,255,.15);
     padding-top: 15px;
     text-transform: uppercase;
-    font-weight: 200 !important;
+    font-weight: 400 !important;
     letter-spacing: 2px !important;
     margin-top: 18px;
  }
 #dismisslastvisitor {
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
     border-top: 1px solid rgba(255,255,255,.15);
     padding-top: 15px;
     text-transform: uppercase;
-    font-weight: 200 !important;
+    font-weight: 400 !important;
     letter-spacing: 2px !important;
     margin-top: 18px;
 }
