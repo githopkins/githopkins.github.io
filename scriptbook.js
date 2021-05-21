@@ -31,7 +31,7 @@ $(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-							  document.cookie = "visitedloanoriginatorimage=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+							  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
 							  $('#lastvisitedoriginatornotice').remove();
 							});
 						};
@@ -44,8 +44,8 @@ $(function() {
 						  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
 						  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
 						  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
-						  var visitedloanoriginatorimagesrc = document.querySelector("#originator-core-details-portrait > img").src;
-						  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimagesrc + "; path=/; max-age=2592000; domain=.annie-mac.com";
+						  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
+						  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
 						  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
 						  console.log("A cookie has been created for " + visitedloanoriginatorname);
 						  console.log("A cookie has been created for " + loanofficerlastvisited);
