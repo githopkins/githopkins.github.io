@@ -38,6 +38,11 @@
     color: #fff;
     font-weight: bold;
 }
+#dismisslastvisitor {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
 #dismisslastvisitor:hover {
     cursor: pointer;
 }
