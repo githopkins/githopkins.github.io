@@ -27,10 +27,10 @@ $(function() {
 							console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
 							console.log(loanofficerlastvisited + " is the loan officer page you visited.");
 							if (document.cookie.indexOf("visitedloanoriginatorimage=") > 0) {
-								$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + ". Do you want to go back? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
+								$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + "before. Do you want to go back? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
 							};
 							if (document.cookie.indexOf("visitedloanoriginatorimage=") < 0) {
-								$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + ". Do you want to go back? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
+								$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + "before. Do you want to go back? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
 							};
 							$("#dismisslastvisitor").click(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
