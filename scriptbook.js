@@ -26,7 +26,7 @@ $(function() {
 						if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
 							console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
 							console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-							$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + "'s site previously. If you're still interested in working with them, <a href='" + loanofficerlastvisited  + "'>click here</a>. <a id='dismisslastvisitor'>dismiss this message.</a></p></div>");
+							$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! You visited " + loanofficerlastvisitednamedisplay + "'s site previously. If you're still interested in working with them, <a href='" + loanofficerlastvisited  + "'>click here</a>. <a id='dismisslastvisitor'>dismiss this message</a></p></div>");
 							$("#dismisslastvisitor").click(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 							  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
