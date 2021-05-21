@@ -40,8 +40,12 @@
 }
 #dismisslastvisitor {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
+    margin-top: 22px;
+    text-transform: uppercase;
+    font-weight: 200 !important;
+    letter-spacing: 2px !important;
 }
 #dismisslastvisitor:hover {
     cursor: pointer;
