@@ -19,9 +19,10 @@
     padding: 20px;
 }
 #lastvisitedoriginatornotice img {
-    height: 90px;
-    width: 90px;
+    height: 135px;
+    width: 135px;
     margin: 0 auto 20px;
+    border-radius: 100%;
 }
 #lastvisitedoriginatornotice p {
     line-height: 27px;
