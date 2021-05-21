@@ -36,6 +36,9 @@
     color: #fff;
     font-weight: bold;
 }
+#dismisslastvisitor:hover {
+    cursor: pointer;
+}
 #site-navigation ul li ul li {
     border-bottom: none !important;
     padding-bottom: 10px !important;
