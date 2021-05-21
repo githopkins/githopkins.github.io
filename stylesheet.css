@@ -15,7 +15,8 @@
     color: rgba(255,255,255,.8);
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
-    background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%);
+    background: rgb(57, 36, 91);
+    /* background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%); */
     padding: 20px;
 }
 #lastvisitedoriginatornotice img {
