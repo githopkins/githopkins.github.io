@@ -30,7 +30,7 @@ $(function() {
 								$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hey there! You already visited " + loanofficerlastvisitednamedisplay + ". <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go there now?</a><a id='dismisslastvisitor'>Dismiss this message.</a></p></div>");
 							};
 							if (document.cookie.indexOf("visitedloanoriginatorimage=") < 0) {
-								$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! You already visited " + loanofficerlastvisitednamedisplay + ". <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go there now?</a><a id='dismisslastvisitor'>Dismiss this message.</a></p></div>");
+								$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hey there! You already visited " + loanofficerlastvisitednamedisplay + ". <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go there now</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
 							};
 							$("#dismisslastvisitor").click(function() {
 							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
