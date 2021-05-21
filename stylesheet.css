@@ -14,10 +14,11 @@
     margin-bottom: 12px;
     color: rgba(255,255,255,.8);
     border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: inset rgb(255 255 255 / 10%) 0px 1px 0px;
-    /* background: rgb(57, 36, 91); */
-    background: linear-gradient(315deg, rgb(45, 55, 72) 0%, rgb(47 54 66) 100%);
+    background: linear-gradient(0deg, rgb(39, 48, 64) 0%, rgb(46, 54, 68) 100%);
     padding: 20px;
+    border-left: 3px solid rgb(59, 67, 83);
+    border-bottom: 1px solid rgb(55, 64, 81);
+    box-shadow: -2px 0px 13px #171d287d;
 }
 #lastvisitedoriginatornotice img {
    height: 160px;
