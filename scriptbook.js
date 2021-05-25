@@ -86,6 +86,12 @@ $(function() {
 	if ($('body').hasClass('site-type-branch')) {	
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
+	if (window.location.href.indexOf("annie-mac.com") > -1) {
+		if ($('body').hasClass('front')) {
+			var dropbanner2 = '<div id="inserted-banner"><div class="container-section"><h3>AnnieMac Home Mortgage <span>NMLS: 338923</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">Testimonials</a><div id="mobile-apply"><a href="/loan/apply" id="loan-officer-header-apply">Apply Now</a></div><div id="mobile-call"><a href="tel:866-312-6682" id="loan-officer-header-call">Call Now</a></div></div></div></div>';
+			$(dropbanner2).insertBefore( $( "header" ) );
+		};
+	};
 	if ($('body').hasClass('site-type-loan_officer')) {
 		$("#we-provide-more-2").hide();
 		$('.manager-biography p').each(function() {
@@ -115,10 +121,6 @@ $(function() {
 			$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
 			var dropnumber = '<a href="tel:' + loanoriginatornumber + '" target="_self" rel="noreferrer noopener" style="margin-right: 5px; background: #8c8c8c;">Call Me</a>'
 			$( dropnumber ).prependTo( $( "#list_12148" ) );
-			if ($('body').hasClass('front')) {
-				var dropbanner2 = '<div id="inserted-banner"><div class="container-section"><h3>AnnieMac Home Mortgage <span>NMLS: 338923</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">Testimonials</a><div id="mobile-apply"><a href="/loan/apply" id="loan-officer-header-apply">Apply Now</a></div><div id="mobile-call"><a href="tel:866-312-6682" id="loan-officer-header-call">Call Now</a></div></div></div></div>';
-				$(dropbanner2).insertBefore( $( "header" ) );
-			};
 		}
 		if (window.location.href.indexOf("lofidirect.com") > -1) {
 			$(dropbanner).insertBefore( $( "#lofidirect-loan-officer" ) );
