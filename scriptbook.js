@@ -89,6 +89,7 @@ $(function() {
 		$("#team-display > h3:nth-child(1)").text("Branch Management");
 	};
 	if ($('body').hasClass('site-type-loan_officer')) {
+		$("#we-provide-more-2").hide();
 		var covid = '<div id="covid-warning"><h4>To those affected by COVID-19 <span id="dismisscovid">Dismiss</span></h4><div id="covid-warning-container"><p>We are available to review your options with you and explain how to apply for relief. Borrowers interested in contacting AnnieMac to discuss payment assistance during the COVID19 pandemic can reach us using the options below.</p><a href="tel:877-204-1868">Call</a> <a href="mailto:CustomerService@annie-mac.com">Email</a></div></div>';
 		$(covid).insertBefore( $( "#biography" ) );
 		$('#dismisscovid').click(function() {
@@ -167,7 +168,6 @@ $(function() {
 		$("#biography > div.manager-biography > h2").text("Scott Synovic - Mortgage Loan Originator");
 	};
 	if (window.location.href.indexOf("kevinhulsey") != -1) {
-		$("#we-provide-more-2").hide();
 		$("#loan-officer-header-call").attr("href", "tel:502-773-1236");
 	};
 	if (window.location.href.indexOf("newsmyrna.annie-mac.com") != -1) {
