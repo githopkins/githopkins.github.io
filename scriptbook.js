@@ -1,5 +1,4 @@
 $(function() {
-	
 	// Begin testing prototype site code scripts...
 	var testingsitetrue = ['prototype'];
 	for (i = 0; i < testingsitetrue.length; i++) {
