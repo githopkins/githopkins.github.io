@@ -2274,7 +2274,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     margin-left: 0;
 }
 #home-reviews {
-   margin: -20px auto 60px;
+  display: none;
 }
 
 #home-banner {
