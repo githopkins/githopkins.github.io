@@ -61,11 +61,13 @@ $(function() {
 					};
 				};
 			};
+		
+		
+		
+		
+		// Keep prototype scripts above this closing syntax.
 		};
-	
-	// Keep prototype scripts above this closing syntax.
 	};
-	
 	// Begin live site code
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
 	$(headeradditional).prependTo( $( "#site-navigation" ) );
