@@ -7,67 +7,64 @@ $(function() {
 			console.log("This is a valid testing site.");
 			if ($('body').hasClass('testingsite-true')) {
 				console.log("Testing site true added to body class.");
-				function readCookie(name) {
-					var nameEQ = name + "=";
-					var ca = document.cookie.split(';');
-					for(var i=0;i < ca.length;i++) {
-						var c = ca[i];
-						while (c.charAt(0)==' ') c = c.substring(1,c.length);
-						if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-					}
-					return null;
-				};
-				if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-					if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
-						var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-						var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
-						var loanofficerlastvisitedimage = readCookie('visitedloanoriginatorimage');
-						if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
-							console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
-							console.log(loanofficerlastvisited + " is the loan officer page you visited.");
-							if (document.cookie.indexOf("visitedloanoriginatorimage=") > 0) {
-								$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hi! You visited " + loanofficerlastvisitednamedisplay + " before. Do you want to revisit their page? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back Now</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
-							};
-							if (document.cookie.indexOf("visitedloanoriginatorimage=") < 0) {
-								$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hi! You visited " + loanofficerlastvisitednamedisplay + " before. Do you want to revisit their page? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back Now</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
-							};
-							$("#dismisslastvisitor").click(function() {
-							  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
-							  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-							  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-							  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
-							  $('#lastvisitedoriginatornotice').remove();
-							});
-						};
-					};
-				};
-				if ($('body').hasClass('site-type-loan_officer')) {
-					if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
-						if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
-						  const value = window.location.host.split('.')[0];
-						  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
-						  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
-						  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
-						  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
-						  if (visitedloanoriginatorimage.indexOf("unnamed") < 0 ) {
-							  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
-							  };
-						  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
-						  console.log("A cookie has been created for " + visitedloanoriginatorname);
-						  console.log("A cookie has been created for " + loanofficerlastvisited);
-						  console.log("A cookie has been created for " + visitedloanoriginatorimage);
-						};
-					};
-				};
 			};
-		
-		
-		
-		
 		// Keep prototype scripts above this closing syntax.
 		};
 	};
+	
 	// Begin live site code
+	function readCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	};
+	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
+		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+			var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+			var loanofficerlastvisitednamedisplay = readCookie('visitedloanoriginatorname');
+			var loanofficerlastvisitedimage = readCookie('visitedloanoriginatorimage');
+			if (window.location.href.indexOf(loanofficerlastvisited) < 0) {
+				console.log(loanofficerlastvisitednamedisplay + " was the loan officer page you visited.");
+				console.log(loanofficerlastvisited + " is the loan officer page you visited.");
+				if (document.cookie.indexOf("visitedloanoriginatorimage=") > 0) {
+					$(document.body).append("<div id='lastvisitedoriginatornotice'><img src='" + loanofficerlastvisitedimage + "'><p>Hi! You visited " + loanofficerlastvisitednamedisplay + " before. Do you want to revisit their page? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back Now</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
+				};
+				if (document.cookie.indexOf("visitedloanoriginatorimage=") < 0) {
+					$(document.body).append("<div id='lastvisitedoriginatornotice'><p>Hi! You visited " + loanofficerlastvisitednamedisplay + " before. Do you want to revisit their page? <a id='gotherenowtid' href='" + loanofficerlastvisited  + "'>Go Back Now</a><a id='dismisslastvisitor'>Dismiss this message</a></p></div>");
+				};
+				$("#dismisslastvisitor").click(function() {
+				  document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
+				  document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-2592000; domain=.annie-mac.com";
+				  $('#lastvisitedoriginatornotice').remove();
+				});
+			};
+		};
+	};
+	if ($('body').hasClass('site-type-loan_officer')) {
+		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
+			if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
+			  const value = window.location.host.split('.')[0];
+			  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
+			  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
+			  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
+			  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
+			  if (visitedloanoriginatorimage.indexOf("unnamed") < 0 ) {
+				  document.cookie = "visitedloanoriginatorimage=" + visitedloanoriginatorimage + "; path=/; max-age=2592000; domain=.annie-mac.com";
+				  };
+			  var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
+			  console.log("A cookie has been created for " + visitedloanoriginatorname);
+			  console.log("A cookie has been created for " + loanofficerlastvisited);
+			  console.log("A cookie has been created for " + visitedloanoriginatorimage);
+			};
+		};
+	};
 	var headeradditional = '<h1 class="header-additional">AnnieMac Home Mortgage</hi>';
 	$(headeradditional).prependTo( $( "#site-navigation" ) );
 	$('#hide-popover').click(function() {
