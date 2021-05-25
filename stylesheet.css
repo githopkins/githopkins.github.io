@@ -690,11 +690,10 @@ html body.page-loan-apply-complete.logged-in.site-type-loan_officer section.inne
 }
 #covid-warning {
     background: #ffe7dc;
-    margin-bottom: -1px;
     color: #a91202;
     padding: 14px 25px;
     line-height: 1.6;
-    margin-top: 0;
+    margin: 15px auto !important;
 }
 #covid-warning h4 {
     font-size: 24px;
