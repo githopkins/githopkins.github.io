@@ -1,6 +1,6 @@
 $(function() {
 	// Begin testing prototype site code scripts...
-	var testingsitetrue = ['prototype'];
+	var testingsitetrue = ['prototype', 'www.annie-mac.com'];
 	for (i = 0; i < testingsitetrue.length; i++) {
 		if (window.location.href.indexOf(testingsitetrue) != -1) {
 			$("body").addClass("testingsite-true");
