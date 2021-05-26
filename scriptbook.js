@@ -24,7 +24,7 @@ $(function() {
 		return null;
 	};
 	if (document.cookie.indexOf("visitedloanoriginator=") >= 0) {
-		// Check if the name cookie is on browser beforehand to ensure no null message appears.
+		// Check if the name cookie is missing first to ensure no null message appears. If missing, remove old cookies.
 		if (document.cookie.indexOf("visitedloanoriginatorname=") >= -1) {
 			document.cookie = "noshowlastoriginator=true; path=/; max-age=2592000; domain=.annie-mac.com";
 			document.cookie = "visitedloanoriginator=false; path=/; max-age=-2592000; domain=.annie-mac.com";
