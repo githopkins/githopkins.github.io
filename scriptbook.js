@@ -27,8 +27,8 @@ $(function() {
 		if (document.cookie.indexOf("visitedloanoriginatorname=") < 0) {
 			document.cookie = "noshowlastoriginator=true; path=/; max-age=1; domain=.annie-mac.com";
 			document.cookie = "visitedloanoriginator=false; path=/; max-age=-1; domain=.annie-mac.com";
-			  document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-1; domain=.annie-mac.com";
-			  document.cookie = "visitedloanoriginatorimage=false; path=/; max-age=-1; domain=.annie-mac.com";
+			document.cookie = "visitedloanoriginatorname=false; path=/; max-age=-1; domain=.annie-mac.com";
+			document.cookie = "visitedloanoriginatorimage=false; path=/; max-age=-1; domain=.annie-mac.com";
 		};
 		if (document.cookie.indexOf("noshowlastoriginator=") < 0) {
 			var loanofficerlastvisited = "https://" + readCookie('visitedloanoriginator') + ".annie-mac.com";
