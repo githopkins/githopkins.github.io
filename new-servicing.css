@@ -3,9 +3,12 @@
 	font-family: 'Inter', sans-serif;
 }
 body, .footer {
-	background: #0f4879;
-	color: #fff;
+	background: #eee;
+	color: #333;
 	font-family: 'Inter', sans-serif !important;
+}
+footer {
+	display: none;
 }
 .page-header {
 font-family: 'Inter', sans-serif;
@@ -129,7 +132,7 @@ td {
 .section {
 	padding: 25px 0;
 }
-.card {
+.main .card {
 	background-color: #eeeeee;
 	color: #333;
 	margin-bottom: 20px;
@@ -142,20 +145,20 @@ td {
 	margin: 0 auto 60px;
 	box-shadow: none;
 }
-.card:hover {
+.main .card:hover {
 	box-shadow: none;
 }
-.card-header {
+.main .card-header {
 	background: #eeeeee;
 	border-bottom: none;
 }
 .btn-round {
 	border-radius: 4px;
 }
-.card:hover {
+.main .card:hover {
 	box-shadow: none !important;
 }
-.card .card-body {
+.main .card .card-body {
 	padding: 20px;
 	border-radius: 24px;
 	box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);

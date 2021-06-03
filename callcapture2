@@ -1,0 +1,207 @@
+<div id="inserted-banner">
+	<div class="container-section">
+		<h3>Kevin Hulsey<span>NMLS #: 205034</span></h3>
+		<div id="button-container-home" class="container-section">
+			<a href="/testimonial">Testimonials</a>
+			<div id="mobile-apply">
+				<a href="tel:502-773-1236" id="loan-officer-header-call">Call Now</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="annie-mac-2021-content-container">
+	<div class="annie-mac-2021-redesign-section" id="construction-lead-capture-section">
+		<div id="readable-section">
+			<div class="sectional-header">
+				<p>Whether you're ready to buy or refinance, you've come to the right place. We have a unique variety of loan product offerings to fit your specific needs. Fill out the questionnaire below to get started today.</p>
+			</div>
+			<div id="lead-capture">
+				<form action="./submitted-callback" method="POST" id="lead-capture-reno-construction">
+					<input type="hidden" id="TargetURL" value="https://anniemac.mortgageiqcrm.com/client">
+					<input type="hidden" id="Filter" value="CostCenter">
+					{% if site.siteType.keyName == 'branch'%}
+					{% set branch = site.settings.branch %}
+					{% if branch.costCenter is not empty %}
+					<input type="hidden" id="FilterValue" value="{{ branch.costCenter }}">
+					{% else %}
+					<input type="hidden" id="FilterValue" value="">
+					{% endif %}
+					{% endif %}
+					<input id="leadSource" type="hidden" value="Q6UJ9A1MZAAJ" data-xml-node="LeadSourceId" />
+					<input type="hidden" id="Entity" value="PreQual">
+					{% if site.siteType.keyName == 'loan_officer'%}
+					{% set officer = site.settings.loanOfficer %}
+					{% if site.settings.loanOfficer.miqGuid is not empty%}
+					<input type="hidden" id="UserId" name="UserId" value="{{ site.settings.loanOfficer.miqGuid }}">
+					{% else %}
+					<input type="hidden" id="UserId" name="UserId" value="">
+					{% endif %}
+					{% endif %}
+					<input type="hidden" id="Lead Import" value="true">
+					<input type="hidden" id="Notification" value="New Lead">
+					<label for="" class="primary-label">What type of loan are you looking for?</label>
+					<input type="hidden" data-xml-node="LoanPurpose" id="loan-purpose-selection">
+					<div class="single-selection-grouping">
+						<div class="single-selection">
+							<input type="radio" name="loan-type" id="loan-type-purchase" value="Purchase">
+							<label for="loan-type-purchase"> I'm looking to purchase.</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="loan-type" id="loan-type-refinance" value="Refinance">
+							<label for="loan-type-refinance"> I'm looking to refinance.</label>
+						</div>
+					</div>
+					<label for="" class="primary-label">What is the property type?</label>
+					<input type="hidden" data-xml-node="PropertyType" id="property-type-selection">
+					<div class="single-selection-grouping">
+						<div class="single-selection">
+							<input type="radio" name="lot-status" id="lot-status-single" value="Detached">
+							<label for="lot-status-single"> Single-Family Home</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="lot-status" id="lot-status-multi" value="Cooperative">
+							<label for="lot-status-multi"> Multi-Family Home</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="lot-status" id="lot-status-condo" value="Condominum">
+							<label for="lot-status-condo"> Condominium</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="lot-status" id="lot-status-townhouse" value="Attached">
+							<label for="lot-status-townhouse"> Townhouse</label>
+						</div>
+					</div>
+					<label for="" class="primary-label">What does your credit look like?</label>
+					<input type="hidden" data-xml-node="CreditScore" id="credit-score-selection">
+					<div class="single-selection-grouping">
+						<div class="single-selection">
+							<input type="radio" name="credit-rating" id="credit-rating-excellent" value="Excellent">
+							<label for="credit-rating-excellent"> Excellent (760+)</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="credit-rating" id="credit-rating-good" value="Good">
+							<label for="credit-rating-good"> Very Good (720-759)</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="credit-rating" id="credit-rating-fair" value="Fair">
+							<label for="credit-rating-fair"> Good (660-719)</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="credit-rating" id="credit-rating-poor" value="Poor">
+							<label for="credit-rating-poor"> Fair (580-659)</label>
+						</div>
+					</div>
+					<label for="" class="primary-label">What type of property will this loan be for?</label>
+					<input type="hidden" data-xml-node="OccupancyType" id="occupancy-type-selection">
+					<div class="single-selection-grouping">
+						<div class="single-selection">
+							<input type="radio" name="property-type" id="property-type-primary" value="PrimaryResidence">
+							<label for="property-type-primary"> Primary Residence</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="property-type" id="property-type-second" value="SecondHome">
+							<label for="property-type-second"> Secondary Home</label>
+						</div>
+						<div class="single-selection">
+							<input type="radio" name="property-type" id="property-type-invest" value="Investment">
+							<label for="property-type-invest"> Investment Property</label>
+						</div>
+					</div>
+					<div class="capture-field-group">
+						<div class="capture-input-field">
+							<label for="state" class="primary-label">State</label>
+							<input type="hidden" data-xml-node="PropertyState" name="state">
+							<select id="state-selection">
+								<option>select a state from below</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>
+						</div>
+						<div class="capture-input-field">
+							<div class="capture-input-field" id="ghost-spot">
+							</div>
+						</div>
+					</div>
+					<div class="capture-field-group">
+						<div class="capture-input-field">
+							<label for="name" class="primary-label">Name</label>
+							<input type="name" data-xml-node="BorrowerFullName" name="name" placeholder="Please include your full name.">
+						</div>
+						<div class="capture-input-field">
+							<label for="email-address" class="primary-label">Email</label>
+							<input type="email" data-xml-node="Email" name="email-address" placeholder="Please include your full email address.">
+						</div>
+					</div>
+					<div class="capture-field-group">
+						<div class="capture-input-field">
+							<label for="phone-number" class="primary-label">Phone</label>
+							<input type="tel" data-xml-node="MobilePhone" name="phone-number" placeholder="Please only input 10 digits." required>
+						</div>
+						<div class="capture-input-field" id="ghost-spot">
+						</div>
+					</div>
+					<input type="hidden" id="Production">
+					<input type="hidden" id="Personals">
+					<input type="hidden" id="Comments" data-xml-node="Comments">
+					<p>By submitting, I am authorizing AnnieMac Home Mortgage to deliver telemarketing calls and text messages to my cell phone using an auto-dialer, text message, or a prerecorded message. I also understand that I am not required to provide this authorization as a condition to doing business with AnnieMac Home Mortgage. Standard text message calling rates will apply.</p>
+					<div id="submit-overlay">
+						<div id="submit-overlayment">
+							<h4>Please complete the form above before attempting to submit.</h4>
+						</div>
+						<button data-qlf-submit="" id="toggle-captcha" class="g-recaptcha" data-sitekey="6LdDJPoUAAAAAMi9pjPYdfetUKDQk4AIRE4UdSL6" data-callback="onSubmit" data-action="submit">Submit</button>
+					</div>
+					<script src='https://anniemac.mortgageiqcrm.com/client/Libraries/MortgageIQ/jscript/qlf.core.js'></script>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

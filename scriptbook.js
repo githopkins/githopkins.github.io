@@ -459,6 +459,10 @@ $(function() {
 				$('#submit-overlayment').hide();
 			}
 		});
+		$("input[type='radio'][name='loan-type']").on('input',function(e){
+			var selectedLoanType = $("input[type='radio'][name='loan-type']:checked").val();
+			$("#loan-purpose-selection").attr('value', selectedLoanType);
+		});
 		$(":input").on("keyup change", function(e) {
 			var selectedState = $("#state-selection").val();
 			$('input[name=state]').val(selectedState);
