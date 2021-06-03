@@ -415,7 +415,7 @@ $(function() {
 		$("#bdm-title-phone").attr("href", "tel:856-229-0639");
 		$("#number-id").attr("href", "tel:856-229-0639");
 		$("#number-id").text("(856) 229-0639");
-		// $("#UserId").attr('value', "U6UJ9A00040G");
+		$("#UserId").attr('value', "U6UJ9A0004HO");
 		$("#toggle-captcha").click(function(){
 			$("#form-content").fadeOut(2500);
 			setTimeout(function(){
@@ -424,8 +424,7 @@ $(function() {
 		});
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean");
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-sean");
-		$("#bdm-contact > h4:nth-child(3)").hide();
-		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking1@annie-mac.com/bookings/");
 	};
 	if (window.location.href.indexOf("/get-more-thanks?r=sean") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://www.annie-mac.com/uploads/sites/10713/public/sean_king.jpeg")');
@@ -439,8 +438,7 @@ $(function() {
 		$("#number-id").text("(856) 229-0639");
 		$("#download-id-1").attr("href", "https://annie-mac.com/getmore-sean"); 
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-sean");
-		$("#bdm-contact > h4:nth-child(3)").hide();
-		// $("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking@annie-mac.com/bookings/");
+		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/sking1@annie-mac.com/bookings/");
 	};
 	// Thanks Kelsey
 	if (window.location.href.indexOf("/get-more-thanks?bdm=kelsey") != -1) {
