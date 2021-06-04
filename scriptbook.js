@@ -58,7 +58,7 @@ $(function() {
 			if (document.cookie.indexOf("visitedloanoriginator=") < 0) {
 			  const value = window.location.host.split('.')[0];
 			  document.cookie = "visitedloanoriginator=" + value + "; path=/; max-age=2592000; domain=.annie-mac.com";
-			  var visitedloanoriginatorname = $("#originator-core-details-text > h2").text();
+			  var visitedloanoriginatorname = $("#footer-branchlo-name").text().trim();
 			  document.cookie = "visitedloanoriginatorname=" + visitedloanoriginatorname + "; path=/; max-age=2592000; domain=.annie-mac.com";
 			  var visitedloanoriginatorimage = document.querySelector("#originator-core-details-portrait > img").src;
 			  if (visitedloanoriginatorimage.indexOf("unnamed") < 0 ) {
