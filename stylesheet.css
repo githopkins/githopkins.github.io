@@ -2275,5 +2275,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
 }
 
 @media screen and (max-width: 574px) {
-  
+  #branch-banner {
+    background-size: cover !important;
+  }
 }
