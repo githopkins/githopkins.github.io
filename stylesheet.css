@@ -2286,4 +2286,8 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
       margin: 20px 0 !important;
       width: 100%;
   }
+  .team-member {
+    width: 100%;
+    margin: 0 50px 50px;
+}
 }
