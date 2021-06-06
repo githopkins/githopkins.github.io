@@ -2278,4 +2278,12 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
   #branch-banner {
     background-size: cover !important;
   }
+  .calculations-primary:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    }
+    .branch-manager-section .manager-information {
+      margin: 20px 0 !important;
+      width: 100%;
+  }
 }
