@@ -321,10 +321,10 @@ select {
 #navigation-menu li:not(last-of-type) {
     margin-right: 30px;
 }
-footer #sitemap #list_11081 a, footer #sitemap #list_11344 a, footer #sitemap #list_11343 a, footer #sitemap #list_12525 a, footer #sitemap #list_11350 a {
+footer #sitemap #list_11081 a, footer #sitemap #list_11344 a, footer #sitemap #list_11343 a, footer #sitemap #list_12525 a, footer #sitemap #list_11350 a, footer #sitemap #list_12564 a {
     display: none;
 }
-footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_11343, footer #sitemap #list_12525, footer #sitemap #list_11350 {
+footer #sitemap #list_11081, footer #sitemap #list_11344, footer #sitemap #list_11343, footer #sitemap #list_12525, footer #sitemap #list_11350, footer #sitemap #list_12564 {
     width: 24.5%;
     min-width: 200px;
 }
