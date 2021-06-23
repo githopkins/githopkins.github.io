@@ -755,6 +755,11 @@ hr {
 	margin-top: 40px;
 }
 
+#timeout .text-danger, .text-danger:hover {
+	color: #f5593d!important;
+	font-weight: 500 !important;
+}
+
 .ficsApprove {
 	width: 200px;
 	border-radius: 4px;
@@ -830,6 +835,31 @@ li.nav-item .ficsLogOut {
 
 #timeout .col-md-12 {
 	margin-top: 37px;
+}
+
+.main .box-body, .card-body div div {
+	padding-top: 15px;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 16px !important;
+	line-height: 27px;
+	padding-bottom: 30px;
+}
+
+#HelpTarget p {
+	padding-top: 10px;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 16px !important;
+	line-height: 24px;
+}
+
+.pageTitle {
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-top: 15px;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 16px !important;
+	line-height: 34px;
+	padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 1175px) {

@@ -1,0 +1,749 @@
+<style>
+	.inner-banner {
+		display: none !important;
+	}
+	#content-area h1 {
+		display: none;
+	}
+	.sectional-team-members {
+		display: flex;
+		flex-wrap: wrap;
+		width: 95%;
+		justify-content: space-between;
+		margin: 0 auto 25px;
+		align-items: center;
+	}
+	#content-area h4 {
+		margin: 0 0 30px 0;
+		text-align: center;
+		color: #006ea9;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	#content-area h4:first-of-type {
+		margin-top: 40px;
+	}
+	.team-member {
+		width: 280px;
+		margin: 0 25px 30px 20px;
+		padding: 0 15px 15px 15px;
+		line-height: 23px;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+		position: relative;
+	}
+	.booking-link {
+		position: absolute;
+		top: 270px;
+		right: -20px;
+		background: #76c153;
+		width: 46px;
+		display: flex;
+		height: 46px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+		box-shadow: 0px 12px 18px rgb(0 0 0 / 24%);
+		z-index: 2;
+	}
+	.booking-link:hover {
+		background: #006ea9;
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+	.booking-link a i {
+		color: white;
+		font-size: 20px;
+	}
+	.booking-link a i:hover {
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.team-member-portrait {
+		display: flex;
+		justify-content: center;
+		max-height: 295px;
+		padding: 20px;
+		position: relative;
+	}
+	#content-area .team-member-portrait-overlay h4 {
+		color: #fff !important;
+		text-shadow: 1px 2px 3px rgb(0 0 0 / 40%);
+		font-size: 27px !important;
+		margin: 28px 0;
+	}
+	.team-member-portrait-overlay p {
+		padding: 0 10px;
+	}
+	.team-member-portrait-overlay p:first-of-type {
+		margin-top: -10px;
+	}
+	.team-member-portrait-overlay {
+		display: none;
+	}
+	.team-member-portrait img {
+		min-width: 270px;
+		object-fit: cover;
+		box-shadow: 0px 12px 18px rgb(0 0 0 / 24%);
+	}
+	.team-member-portrait:hover .team-member-portrait-overlay {
+		position: absolute;
+		background: url(img/footer-bg.png);
+		width: 340px;
+		height: 524px;
+		display: flex;
+		justify-content: flex-start;
+		z-index: 5;
+		flex-direction: column;
+		padding: 0 12px;
+		color: #fff;
+		line-height: 30px;
+		overflow: scroll;
+		font-size: 15px;
+		box-shadow: 0px 12px 18px rgb(0 0 0 / 34%);
+	}
+	.detached-editity {
+		overflow-x: hidden;
+		  overflow-y: auto;
+		background: url(img/footer-bg.png);
+		flex: 1;
+		display: flex;
+		justify-content: flex-start;
+		z-index: -1 !important;
+		flex-direction: column;
+		padding: 0 12px;
+		color: #fff;
+		line-height: 30px;
+		font-size: 15px;
+		box-shadow: 0px 12px 18px rgb(0 0 0 / 34%);
+		margin-left: 30px;
+		min-height: 400px;
+	}
+	.team-member h5 {
+		font-size: 20px;
+		font-weight: bold;
+		margin: -20px -10px 0px;
+		order: 1;
+		z-index: 1;
+		background: url(img/footer-bg.png);
+		color: white;
+		padding: 15px;
+		text-align: center;
+		background-size: cover;
+	}
+	.team-member h5 span {
+		display: block;
+		font-size: 14.9px;
+		margin-top: 10px;
+		font-weight: 400;
+	}
+	.team-member-contact {
+		line-height: 16px;
+		font-size: 16px;
+		order: 3;
+		margin-top: 5px;
+	}
+	.team-member-contact p {
+		border-top: 1px solid rgb(0 0 0 / 6%);
+		padding: 17px 12px;
+		background: white;
+		margin: -5px -10px 0;
+		border-left: 1px solid rgb(0 0 0 / 10%);
+		border-right: 1px solid rgb(0 0 0 / 10%);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.team-member-contact p:nth-child(even) {
+		background: #fdfdfd;
+	}
+	.team-member-contact p:last-of-type {
+		border-bottom: 1px solid rgb(0 0 0 / 10%);
+	}
+	.team-member-contact p:first-of-type {
+		border-top: none;
+	}
+	.team-member-contact strong {
+		background: #77c253;
+		width: 85px;
+		text-align: center;
+		padding: 8px;
+		font-size: 16px;
+		font-weight: 600;
+		color: #fff;
+		display: inline-block;
+		margin-right: 8px;
+	}
+	.team-member-contact p:last-of-type strong {
+		background: #006ea9;
+	}
+	#view-staff-navigation ul {
+		background: url(img/footer-bg.png);
+		color: white;
+		padding: 8px 18px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		list-style-type: none;
+		margin-top: 25px;
+		border-radius: 4px;
+		box-shadow: 0px 3px 9px rgb(0 0 0 / 24%);
+		border-bottom: 1px solid #bfbfbf;
+	}
+	#view-staff-navigation ul li {
+		font-size: 16px;
+		font-weight: bold;
+		padding: 10px 0;
+		position: relative;
+	}
+	#view-staff-navigation ul li:hover {
+		cursor: pointer;
+	}
+	#view-staff-navigation ul li ul {
+		display: none;
+	}
+	#view-staff-navigation ul li:hover ul {
+		display: block;
+		z-index: 1;
+		position: absolute;
+		background: white;
+		color: #222424;
+		min-width: 225px;
+		margin-top: 10px;
+		margin-left: 15px;
+		box-shadow: 0px 7px 13px rgb(0 0 0 / 26%);
+	}
+	#view-staff-navigation ul li ul li {
+		font-weight: 600;
+		padding: 12px;
+	}
+	#view-staff-navigation ul li ul li a {
+		color: #222424;
+	} 
+	#view-staff-navigation ul li ul li:hover {
+		background: #f7fbfd;
+		border-radius: 6px;
+	}
+	#view-staff-navigation ul li ul li a:hover {
+		text-decoration: none;
+		color: #222424;
+	}
+	#viewing-now, #viewing-default {
+		padding: 15px 18px;
+		background: #fdfdfd;
+		border-radius: 7px;
+		border-top: 1px solid rgb(0 0 0 / 5%);
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		.sectional-team-members {
+			justify-content: space-between;
+			padding: 0 60px;
+		}
+	}
+	@media only screen and (max-width: 991px) {
+		.sectional-team-members {
+			justify-content: center;
+		}
+		.isolated-biography {
+			flex-direction: column !important;
+		}
+		.detached-editity {
+			margin-left: 0px;
+			max-width: 80%;
+		}
+	}
+	@media only screen and (max-width: 670px) {
+		#view-staff-navigation ul {
+			width: 460px;
+			margin: 25px auto 0;
+		}
+		#viewing-now, #viewing-default {
+			width: 460px;
+			margin: 10px auto 0;
+		}
+		#mobile-shutter {
+			display: none;
+		}
+		#view-staff-navigation ul {
+			flex-direction: column;
+			text-align: center;
+		}
+		#view-staff-navigation ul li:hover ul {
+			display: none;
+		}
+		#view-staff-navigation ul li {
+			border-bottom: 1px solid rgba(255,255,255,.07);
+		}
+		#view-staff-navigation ul li:last-of-type {
+			border-bottom: none;
+		}
+	}
+	.hide {
+		display: none;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function() {
+	// Leadership Team Individuals
+	function teamToggleDisplay(selector, name) {
+		const $selector = $('#' + selector);
+		$('#toggle-' + selector).on('click', function() {
+			if(!$(".sectional-team-members").hasClass("isolated-biography")) {
+				$(".sectional-team-members").addClass("isolated-biography");
+			};
+			$(".detached-editity").remove();
+			$('.toggled-text-header').text(name);
+			$('.team-member').hide();
+			$selector.show();
+			$selector.find('div.team-member-portrait > div').addClass('detached-editity');
+			$selector.find('div.team-member-portrait > div').detach().appendTo( $selector.parent() );
+		});
+	}
+	teamToggleDisplay('Atchison', 'Caleb Atchison');
+	teamToggleDisplay('Meyerhoeffer', 'Clancy Meyerhoeffer');
+	teamToggleDisplay('Quick', 'Gary Quick');
+	teamToggleDisplay('McAlpin', 'Victoria McAlpin');
+	teamToggleDisplay('Houck', 'Lauren Houck');
+	teamToggleDisplay('Arellano', 'Brittany Arellano');
+	teamToggleDisplay('Tubertini', 'Glenn Tubertini');
+	teamToggleDisplay('Douglas', 'Trip Douglas');
+	teamToggleDisplay('Weber', 'Caleb Weber');
+	teamToggleDisplay('Autenrieb', 'Dan Autenrieb');
+	teamToggleDisplay('Cox', 'Zac Cox');
+	teamToggleDisplay('Thompson', 'Jason Thompson');
+	teamToggleDisplay('Bickford', 'Hilary Bickford');
+	teamToggleDisplay('Hartle', 'Samantha Hartle');
+	teamToggleDisplay('Crawford', 'James Crawford');
+	teamToggleDisplay('Sanchez', 'Sway Sanchez');	
+	if (window.location.href.indexOf("?team=leadership") != -1) {
+		$("#sales-team").hide();
+		$("#client-team").hide();
+		$("#viewing-default").addClass("hide");
+		$("#viewing-now").removeClass("hide");
+		$('.toggled-text-header').text("Your Leadership Team");
+		$("#viewing-team-selection").text("Leadership"); 
+		$("#client-toggle > ul > li:not(:nth-child(1)").hide();
+		$("#sales-toggle > ul > li:not(:nth-child(1)").hide();
+	};
+	
+	if (window.location.href.indexOf("?team=experience") != -1) {
+		$("#leadership-team").hide();
+		$("#sales-team").hide();
+		$("#viewing-default").addClass("hide");
+		$("#viewing-now").removeClass("hide");
+		$('.toggled-text-header').text("Your Client Experience Team");
+		$("#viewing-team-selection").text("Client Experience"); 
+		$("#leadership-toggle > ul > li:not(:nth-child(1)").hide();
+		$("#sales-toggle > ul > li:not(:nth-child(1)").hide();
+	};
+	
+	if (window.location.href.indexOf("?team=sales") != -1) {
+		$("#leadership-team").hide();
+		$("#client-team").hide();
+		$("#viewing-default").addClass("hide");
+		$("#viewing-now").removeClass("hide");
+		$('.toggled-text-header').text("Your Sales Team");
+		$("#viewing-team-selection").text("Sales"); 
+		$("#leadership-toggle > ul > li:not(:nth-child(1)").hide();
+		$("#client-toggle > ul > li:not(:nth-child(1)").hide();
+	};
+	
+	if ($(window).width() < 671) {
+		$("#leadership-toggle").click(function() {
+			location.href = 'https://www.anniemacinsurance.com/meet-your-team.html?team=leadership';
+		})
+		$("#sales-toggle").click(function() {
+			location.href = 'https://www.anniemacinsurance.com/meet-your-team.html?team=sales';
+		})
+		$("#client-toggle").click(function() {
+			location.href = 'https://www.anniemacinsurance.com/meet-your-team.html?team=experience';
+		})
+	};
+});
+</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<div id="team-page">
+	<div id="view-staff-navigation">
+		<ul>
+			<li id="leadership-toggle">Leadership Team
+				<ul>
+					<li><a href="?team=leadership">View Entire Team</a></li>
+					<li id="toggle-Atchison">Caleb Atchison</li>
+					<li id="toggle-Meyerhoeffer">Clancy Meyerhoeffer</li>
+					<li id="toggle-Quick">Gary Quick</li>
+				</ul>
+			</li>
+			<li id="sales-toggle">Sales Team
+				<ul>
+					<li><a href="?team=sales">View Entire Team</a></li>
+					<li id="toggle-Tubertini">Glenn Tubertini</li>
+					<li id="toggle-Douglas">Trip Douglas</li>
+					<li id="toggle-Weber">Caleb Weber</li>
+					<li id="toggle-Autenrieb">Dan Autenrieb</li>
+					<li id="toggle-Cox">Zac Cox</li>
+					<li id="toggle-Thompson">Jason Thompson</li>
+					<li id="toggle-Bickford">Hilary Bickford</li>
+					<li id="toggle-Hartle">Samantha Hartle</li>
+					<li id="toggle-Crawford">James Crawford</li>
+					<li id="toggle-Sanchez">Sway Sanchez</li>
+				</ul>
+			</li>
+			<li id="client-toggle">Client Experience Team
+				<ul>
+					<li><a href="?team=experience">View Entire Team</a></li>
+					<li id="toggle-McAlpin">Victoria McAlpin</li>
+					<li id="toggle-Houck">Lauren Houck</li>
+					<li id="toggle-Arellano">Brittany Arellano</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="viewing-default">
+		Navigate above to your desired team<span id="mobile-shutter"> or specific team member under the categories above</span>.
+	</div>
+	<div id="viewing-now" class="hide">
+		You're on the <span id="viewing-team-selection"></span> Team. <a href="/meet-your-team.html"><b>View the entire team.</b></a>
+	</div>
+	<h4 class="toggled-text-header">Your AnnieMac Insurance Team</h4>
+	<div id="leadership-team">
+	<div class="sectional-team-members">
+		<div class="team-member" id="Atchison">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Caleb</h4>
+					<p>Caleb comes to the AnnieMac team with more than 16 years’ experience in the Property and Casualty arena with a focus on the personal lines industry.  He has created success throughout his career by staying true to one simple philosophy:  Make culture, people, and team your organization’s priority, and keep your client’s best interest at the heart of every decision.  As a true Denver Native, Caleb has built both his personal and professional life in the state of Colorado.  He is a father of three beautiful daughters (Teagan 11, Bentley 9, Deklyn 7) and enjoys nothing more than activities, games, and adventures with each of them.  In his personal time, Caleb enjoys all things fitness, snowmobiling in the Colorado backcountry, camping, fishing, Travel, and live music.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/caleb-atchison.jpg">
+			</div>
+			<h5>Caleb Atchison
+				<span>Chief Operating Officer</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-334-7960">720-334-7960</a></p>
+				<p><strong>Email</strong> <a href="mailto:catchison@anniemacinsurance.com">@catchison</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Meyerhoeffer">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Clancy</h4>
+					<p>I started my insurance sales career in 2002 with GMAC Insurance in St. Louis, MO.  From there I was able to spend some valuable time working auto and injury claims with General Motors as well.  After 5 years with GMAC I took a position with Fireman’s Fund Insurance and for the next 7 years I held various roles in sales and underwriting in St. Louis, Seattle, and Phoenix.  I was offered an opportunity to open my own insurance agency with Farmers Insurance back in St. Louis and I built and grew that to one of the top Farmers Agencies in the country in just 5 short years.  After selling my agency I decided to open a sales and marketing consulting company and that took me on a project to Virginia.  I spent 3 years in Virginia before relocating to Colorado and working in the medical transport insurance industry.  I am very happy that all of that led me to AnnieMac Insurance and I am very excited to have joined the team. In my spare time I enjoy spending time with my two teenage sons camping, hiking, volunteering on ski patrol, fishing, wakeboarding, and traveling in our RV.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/clancy-meyerhoffer.jpg">
+			</div>
+			<h5>Clancy Meyerhoeffer
+				<span>Vice President of Sales</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-465-7048">720-465-7048</a></p>
+				<p><strong>Email</strong> <a href="mailto:cmeyerhoeffer@anniemacinsurance.com">@cmeyerhoeffer</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Quick">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Gary</h4>
+					<p>With over 8 years of insurance industry experience, Gary excels in the client interaction.  Client experience is something that he is extremely passionate about and excels in making the interaction with the client an unforgettable one.  When he is not helping clients, he is in the mountains with his shepherd mix, Ellie, enjoying the great outdoors in Colorado.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/gary_quick.jpg">
+			</div>
+			<h5>Gary Quick
+				<span>Vice President of Client Experience</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-779-1287">720-779-1287</a></p>
+				<p><strong>Email</strong> <a href="mailto:gquick@anniemacinsurance.com">@gquick</a></p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="sales-team">
+	<div class="sectional-team-members">
+		<div class="team-member" id="Tubertini">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Glenn</h4>
+					<p>My name is Glenn Tubertini. I have been in the insurance business for the last 30 plus years. I have sold insurance for numerous insurance companies including Travelers, Progressive, Nationwide , Safeco and Plymouth Rock.  I have done business in numerous states throughout my career. I am married with a daughter.We are all huge Disney and Star Wars fans.  I am on a Bocce team and play all spring and summer. My hobbies are going to Disney and collecting Disney and Star Wars memorabilia.  I look forward to helping you with all your insurance needs in the near future. </p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/glenn-tubertini.jpg">
+			</div>
+			<h5>Glenn Tubertini
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-590-6158">720-590-6158</a></p>
+				<p><strong>Email</strong> <a href="mailto:gtubertini@anniemacinsurance.com">@gtubertini</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Douglas">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Trip</h4>
+					<p>I have been in insurance since 2017 and has five insurance licenses and two professional designations. Client experience is my main focus. A family man at heart, I spend most of my free time with my wife and two children. I am also an avid gardener and grow as much food as possible in my backyard and hydroponic vegetable tower.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/trip-douglas.jpg">
+			</div>
+			<h5>Trip Douglas
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-726-9245">720-726-9245</a></p>
+				<p><strong>Email</strong> <a href="mailto:tdouglas@anniemacinsurance.com">@tdouglas</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Weber">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Caleb</h4>
+					<p>Caleb is an Ohio born and raised outdoorsman. He served in the United States Marine Corp after High School Graduation. For the last six years he has been in the insurance industry learning multiple product lines and found a niche for tailoring to his customers’ individual needs. He has four children that keep him busy, Zaiden (7) Amrynn (6) Lylah (4) and Josie (2). When he isn’t working he enjoys fishing, hunting, and staying active. He is excited to embark on this journey and see where life continues to bless the road ahead.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/caleb-weber.jpg">
+			</div>
+			<h5>Caleb Weber
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-625-8017">720-625-8017</a></p>
+				<p><strong>Email</strong> <a href="mailto:cweber@anniemacinsurance.com">@cweber</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Autenrieb">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Dan</h4>
+					<p>As a well-rounded insurance professional, I am always looking for ways to educate myself so I can offer the best protection for my clients. In my leisure time I enjoy spending time with my wife Beth and two children Hailey and Luke. We are a big sports family and love going to watch our Bearcats and Flyers. My daughter currently plays soccer for The University of Evansville and my son plays football for Elder High School. I look forward to providing you the best service and insurance options available.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/dan-autenrieb.jpg">
+			</div>
+			<h5>Dan Autenrieb
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-575-0368">720-575-0368</a></p>
+				<p><strong>Email</strong> <a href="mailto:dautenrieb@anniemacinsurance.com">@dautenrieb</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Cox">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Zac</h4>
+					<p>Hello! I got started in Insurance in 2019 and have worked with independent agencies licensed with several large carriers such as Nationwide, Progressive, Safeco, Travelers and many more, as well as AAA Insurance. I love basketball, watching sports, movies, and spending time with my friends.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/zac-cox.jpg">
+			</div>
+			<h5>Zac Cox
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-575-1315">720-575-1315</a></p>
+				<p><strong>Email</strong> <a href="mailto:zaccox@anniemacinsurance.com">@zaccox</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Thompson">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Jason</h4>
+					<p>Born and raised in a small coal mining town in SW VA, moved to Johnson City, TN in the summer of 1999 to Attend ETSU.  I have been married for 2 year to my wife Stephanie.  We don't have kids yet, but are talking about having one or possibly adopting.  In my spare time I enjoy riding the trails on my mountain bike as well as riding and racing motocross.  We also enjoy traveling and taking weekends away any opportunity we get.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/jason-thompson.jpg">
+			</div>
+			<h5>Jason Thompson
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-577-4474">720-577-4474</a></p>
+				<p><strong>Email</strong> <a href="mailto:jasonthompson@anniemacinsurance.com">@jasonthompson</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Bickford">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Hilary</h4>
+					<p>Hilary Bickford has been an insurance agent since 2014 and excels at helping clients find the right insurance coverage based on their needs. She specializes in helping first time home buyers and believes it is her responsibility to help clients make the best possible decisions for their unique situations. Hilary lives in New Hampshire with her cats. She is the secretary of the local boys and girls club. In her free time, she enjoys, running, golfing and traveling.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/hilary-bickford.jpg">
+			</div>
+			<h5>Hilary Bickford
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-465-1486">720-465-1486</a></p>
+				<p><strong>Email</strong> <a href="mailto:hilarybickford@anniemacinsurance.com">@hilarybickford</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Hartle">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Samantha</h4>
+					<p>Samantha began working as an Insurance Agent in 2020. She is a 2005 FHS grad with an Associate’s degree in Business from Heritage Institute and a Bachelor’s degree from Ashford University in Social Science. She brings over 15 years of sales experience and believes “Developing strong relationships is the foundation of everything she does, both professionally and personally.” She is licensed in VA, MD, WV, and DC for Home, Auto and Business insurance and currently resides in Marshall, VA with her two children, Xavier and Kalliope.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/Samantha Hartle-1.jpg">
+			</div>
+			<h5>Samantha Hartle
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-577-4484">720-577-4484</a></p>
+				<p><strong>Email</strong> <a href="mailto:shartle@anniemacinsurance.com">@shartle</a></p>
+			</div>
+		</div>	
+		<div class="team-member" id="Crawford">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About James</h4>
+					<p>James is an East Coast guy at heart as he was born and raised on the Jersey Shore.  He attended college in Maine and lived in Boston for 12 years before moving to his current residence of Phoenix Arizona.  James is a diehard NY Yankees fan as well as NY Giants fan!  James is a big fitness buff as well! James got into insurance after his wife was involved in a near fatal car accident 10 years ago.  He decided to get into insurance to educate people about insurance and how their coverages can truly make a difference.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/JamesProfilePic-1.jpg">
+			</div>
+			<h5>James Crawford
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-779-1719">720-779-1719</a></p>
+				<p><strong>Email</strong> <a href="mailto:jcrawford@anniemacinsurance.com">@jcrawford</a></p>
+			</div>
+		</div>	
+		<div class="team-member" id="Sanchez">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Sway</h4>
+					<p>My name is Sway Sanchez and I am a Sales Consultant For AnnieMac Insurance. As an experienced insurance producer, I enjoy using my knowledge in the industry to help individuals leverage our insurance products to adequately protect themselves and their assets. I was born and raised in Northern Virginia. Besides spending time with my loved ones, I enjoy taking my two-year-old daughter on field trips.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/Sway Sanchez HeadShot-1.jpg">
+			</div>
+			<h5>Sway Sanchez
+				<span>Sales Consultant</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-779-1867">720-779-1867</a></p>
+				<p><strong>Email</strong> <a href="mailto:ssanchez@anniemacinsurance.com">@ssanchez</a></p>
+			</div>
+		</div>	
+		<div class="team-member ghost">
+		</div>
+		<div class="team-member ghost">
+		</div>	
+	</div>
+	</div>
+	<div id="client-team">
+	<div class="sectional-team-members">
+		<div class="team-member" id="McAlpin">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Victoria</h4>
+					<p>Victoria is an experienced licensed sales producer, account manager, and customer service representative. Driven by her desire to help people, she takes pride in providing the best service possible and helping her clients financially guard against life’s uncertainties. As an Insurance agent, her goal is to provide professional guidance by leading with integrity and serving passionately. After moving in 2018 from Memphis, TN, Victoria has decided to make Kentucky her permanent home. She loves to travel and has visited 4 countries, 3 islands, and 18 states with the anticipation to visit many more! When she’s not traveling, she enjoys spending time with her fiancé and 3 dogs.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/victoria-mcalpine.jpg">
+			</div>
+			<h5>Victoria McAlpin
+				<span>Client Experience Advisor</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-647-5452">720-647-5452</a></p>
+				<p><strong>Email</strong> <a href="mailto:vmcalpin@anniemacinsurance.com">@vmcalpin</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Houck">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Lauren</h4>
+					<p>Lauren is a skilled insurance advisor having served in many roles in the insurance industry. She graduated with a bachelor’s degree in Insurance Studies from Kent State University in 2016, which gives Lauren an extensive knowledge of how to benefit her clients most. Lauren’s favorite part of her job is to show her clients how to protect their most valuable belongings against life’s twists and turns and give them peace of mind. She is extremely excited to work with AnnieMac while continuing to expand her expertise in the field. Lauren was born and raised in small-town Columbiana, Ohio. Outside of work, Lauren enjoys spending time with her family and their new golden retriever puppy, Waffle. They attend a lot of sporting events for her children, go on walks and bike rides, and soak up the sun as much as they can.</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/lauren-houck.jpg">
+			</div>
+			<h5>Lauren Houck
+				<span>Client Experience Advisor</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-464-1123">720-464-1123</a></p>
+				<p><strong>Email</strong> <a href="mailto:lhouck@anniemacinsurance.com">@lhouck</a></p>
+			</div>
+		</div>
+		<div class="team-member" id="Arellano">
+			<div class="booking-link">
+				<a href=""><i class="far fa-calendar-plus"></i></a>
+			</div>
+			<div class="team-member-portrait">
+				<div class="team-member-portrait-overlay">
+					<h4>About Brittany</h4>
+					<p>Brittany is an expert in the insurance industry who possesses the licensing and experience needed to offer the best possible service to her clients. She is outgoing, engaging and believes in building relationships with her clients to better understand their needs. This enables her to create a customized plan to protect her clients assets and help them continue to build their legacy. On her free time, you will find Brittany cherishing time with her friends and family. As a native to Colorado, she enjoys spending time outdoors to soak up the sun!</p>
+				</div>
+				<img src="https://www.anniemacinsurance.com/barellano.png">
+			</div>
+			<h5>Brittany Arellano
+				<span>Client Experience Advisor</span>
+			</h5>
+			<div class="team-member-contact">
+				<p><strong>Main</strong> <a href="tel:888-557-2855">888-557-2855</a></p>
+				<p><strong>Direct</strong> <a href="tel:720-575-4208">720-575-4208</a></p>
+				<p><strong>Email</strong> <a href="mailto:barellano@anniemacinsurance.com">@barellano</a></p>
+			</div>
+		</div>
+		<!-- <div class="team-member ghost">
+		</div> -->
+	</div>
+	</div>
+	</div>
