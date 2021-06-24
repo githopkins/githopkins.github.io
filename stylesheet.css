@@ -2175,6 +2175,7 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
       width: 400px;
       border-left: 0;
       border-bottom: 0;
+      align-items: center;
     }
     #lastvisitedoriginatornotice img {
       height: 100px;
