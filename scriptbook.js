@@ -13,6 +13,7 @@ $(function() {
 	};
 	
 	// Begin live site code
+	$(".navigation-sidebar-sectional .menu .option-listing").addClass("open-sub");
 	function readCookie(name) {
 		var nameEQ = name + "=";
 		var ca = document.cookie.split(';');
