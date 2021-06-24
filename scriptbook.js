@@ -1,3 +1,5 @@
+// Last updated June 24, 2021
+
 $(function() {
 	// Begin testing prototype site code scripts...
 	var testingsitetrue = ['prototype', 'www.annie-mac.com'];
