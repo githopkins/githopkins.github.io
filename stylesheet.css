@@ -1506,12 +1506,6 @@ thead {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #list_11344 {
-        display: none;
-    }
-}
-
 .navigation-sidebar-sectional ul li {
     display: block !important;
 }
@@ -2169,6 +2163,22 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
     #mobile-call {
         display: none;
     }
+    #list_11344 {
+      display: none;
+    }
+    #lastvisitedoriginatornotice {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+    }
+    #lastvisitedoriginatornotice img {
+      height: 100px;
+      width: 100px;
+      margin-right: 20px;
+  }
 }
 
  @media screen and (max-width: 750px) {
