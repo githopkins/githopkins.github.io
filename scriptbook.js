@@ -14,6 +14,9 @@ $(function() {
 	
 	// Begin live site code
 	$(".navigation-sidebar-sectional .menu .option-listing").addClass("open-sub");
+	$(".navigation-sidebar-sectional .nav h4 a").click(function(event) {
+		event.preventDefault();
+	}
 	function readCookie(name) {
 		var nameEQ = name + "=";
 		var ca = document.cookie.split(';');
