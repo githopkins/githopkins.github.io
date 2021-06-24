@@ -862,6 +862,43 @@ li.nav-item .ficsLogOut {
 	padding-bottom: 30px;
 }
 
+.box-body a {
+	  color: white !important;
+	  font-size: inherit !important;
+	  font-weight: 600 !important;
+	}
+	
+	.box-body a:hover {
+	  text-decoration: underline !important;
+	}
+	
+	#PaymentTarget .pageTitle,  .payTypeLinkSubHeading {
+	  margin-bottom: 50px;
+	  margin-top: -20px;
+	}
+	
+	#PaymentTarget .pageSubTitle {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	
+	label.ficsPaymentNoPayment {
+	  margin-top: -50px;
+	  font-weight: 700 !important;
+	}
+	
+	#PaymentTarget li.fics-border-0 {
+	  margin-bottom: -30px;
+	}
+	
+	.ficsSearchClear {
+	  margin-top: 20px
+	}
+	
+	#ResultsGrid_wrapper {
+	  margin-top: -160px;
+	}
+
 @media only screen and (max-width: 1175px) {
 #ResultsGrid_filter {
 	display: none;
