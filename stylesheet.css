@@ -2173,6 +2173,8 @@ footer #list_11344 > a, footer  #list_11343 > a, footer  #list_11350 > a {
       display: flex;
       flex-direction: row;
       width: 400px;
+      border-left: 0;
+      border-bottom: 0;
     }
     #lastvisitedoriginatornotice img {
       height: 100px;
