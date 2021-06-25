@@ -2894,39 +2894,39 @@ textarea#textarea-comments {
 
 
 #ring2 {
-	transform: rotate(40deg);
+	transform: rotate(0deg);
 }
 
 #ring2 .ring {
 	background-color: yellow;
-  transform: rotate(90deg);
+  transform: rotate(173deg)
 }
 
 #ring3 {
-	transform: rotate(90deg);
+	transform: rotate(0deg);
 }
 
 #ring3 .ring {
 	background-color: orange;
-  transform: rotate(100deg);
+  transform: rotate(173deg);
 }
 
 #ring4 {
-	transform: rotate(100deg);
+	transform: rotate(0deg);
 }
 
 #ring4 .ring {
 	background-color: green;
-  transform: rotate(140deg);
+  transform: rotate(173deg);
 }
 
 #ring5 {
-	transform: rotate(100deg);
+	transform: rotate(0deg);
 }
 
 #ring5 .ring {
 	background-color: blue;
-  transform: rotate(250deg);
+  transform: rotate(173deg);
 }
 
 .page-content-2021 {
