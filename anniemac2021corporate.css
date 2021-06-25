@@ -2942,6 +2942,11 @@ to {transform: rotate(111deg);}
 	font-weight: 500;
 }
 
+.page-content-2021 p strong a {
+	color: #076fa7;
+	text-decoration: underline;
+}
+
 .table-container {
 	display: flex;
 	flex: 1;
