@@ -2944,12 +2944,13 @@ to {transform: rotate(111deg);}
 
 .table-container {
 	display: flex;
+	flex: 1;
 }
 
 .table-column {
 	display: flex;
 	flex-direction: column;
-	width: 400px;
+	width: 50%;
 }
 
 .table-column p:first-of-type {
