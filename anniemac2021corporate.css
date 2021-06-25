@@ -82,10 +82,9 @@ footer {
 	color: #fff;
 	font-weight: 300;
 	padding: 40px 0 25px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
 }
+
+
 
 #copyrights ul:first-of-type li a {
 	margin: 0 0 5px;
