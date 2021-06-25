@@ -2933,6 +2933,7 @@ textarea#textarea-comments {
 	min-width: 20px;
 	min-height: 20px;
 	margin-left: 10px;
+	background: black;
 }
 
 #ring-legend-1 {
