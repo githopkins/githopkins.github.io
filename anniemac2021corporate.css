@@ -392,8 +392,7 @@ footer #sitemap ul {
 
 footer #sitemap ul:first-of-type li {
 	width: 185px;
-	margin: 0 0 5px;
-	line-height: 30px;
+	line-height: 35px;
 }
 
 footer #sitemap ul li ul {
