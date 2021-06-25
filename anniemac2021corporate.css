@@ -2858,7 +2858,7 @@ textarea#textarea-comments {
 }
 
 #credit-breakdown {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .donut-chart-block {
@@ -2869,7 +2869,7 @@ textarea#textarea-comments {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	margin: 20px auto 50px;
+	margin: 0px auto 50px;
 	border-radius: 100%;
 }
 
