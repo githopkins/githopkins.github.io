@@ -2864,7 +2864,7 @@ textarea#textarea-comments {
 }
 
 #credit-breakdown {
-	margin: 30px 0;
+	margin: 40px 0 50px;
 }
 
 .donut-chart {
@@ -2873,6 +2873,7 @@ textarea#textarea-comments {
 	height: 450px;
 	margin: 0px auto;
 	border-radius: 100%;
+	box-shadow: 0px 2px 28px 2px rgb(45 55 72 / 16%);
 }
 
 .ring-container {
