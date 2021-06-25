@@ -96,6 +96,7 @@ footer {
 	flex-direction: column;
 }
 
+/* Remove after */
 footer {
 	display: none !important;
 }
