@@ -2929,6 +2929,28 @@ textarea#textarea-comments {
     transform: rotate(280deg);
 }
 
+.color-legend {
+	min-width: 20px;
+	min-height: 20px;
+	margin-left: 10px;
+}
+
+#ring-legend-1 {
+	background: #;
+}
+#ring-legend-3 {
+	background: #;
+}
+#ring-legend-4 {
+	background: #;
+}
+#ring-legend-5 {
+	background: #;
+}
+#ring-legend-6 {
+	background: #;
+}
+
 .page-content-2021 {
 	margin: 40px 0;
 }
