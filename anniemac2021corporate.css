@@ -2846,9 +2846,9 @@ textarea#textarea-comments {
 }
 	
 .donut-chart {
-	  position: relative;
+	  	position: relative;
 		width: 200px;
-	  height: 200px;
+	    height: 200px;
 		margin: 0 auto 2rem;
 		border-radius: 100%;
 	 }
@@ -2856,7 +2856,7 @@ textarea#textarea-comments {
 	  background: #fff;
 	  position: absolute;
 	  text-align: center;
-	font-size: 28px;
+	  font-size: 28px;
 	  top:0;left:0;bottom:0;right:0;
 	  width: 130px;
 	  height: 130px;
