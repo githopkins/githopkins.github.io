@@ -11,6 +11,11 @@
 	display: none;
 }
 
+.editable-content .edit-group {
+	position: absolute;
+	right: 20px;
+}
+
 html,
 body,
 h1,
