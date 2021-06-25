@@ -186,6 +186,10 @@ body {
 	color: #036fa8;
 }
 
+.navigation-sectional .nav li a:hover {
+	color: #036fa8;
+}
+
 .navigation-sectional:nth-of-type(3) ul li a {
 	background: #7FC24A;
 	padding: 12px 20px;
@@ -406,7 +410,7 @@ footer #sitemap ul li ul {
 
 footer ul li {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 30px;
 }
 
