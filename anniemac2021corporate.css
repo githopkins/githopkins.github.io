@@ -3039,4 +3039,15 @@ textarea#textarea-comments {
 
 #minimum-scores h4, #minimum-scores p, #minimum-scores ul, #minimum-scores ul li strong a {
 	color: #fff;
+	font-weight: 400;
+}
+
+#minimum-scores h4 {
+	border-bottom: 2px solid white;
+	padding-bottom: 8px;
+	margin-top: 3px;
+}
+
+#minimum-scores ul li strong a {
+	font-weight: 800;
 }
