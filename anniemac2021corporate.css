@@ -2857,6 +2857,10 @@ textarea#textarea-comments {
 	box-sizing: border-box;
 }
 
+.donut-chart-block {
+	margin-left: 50px;
+}
+
 .donut-chart {
 	position: relative;
 	width: 200px;
