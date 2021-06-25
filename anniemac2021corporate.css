@@ -1,0 +1,2437 @@
+/* Reformated following Reno Launch for 2021 Corporate Design */
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+	font-family: 'inter', sans-serif !important;
+	line-height: 1.3;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 25px;
+	margin: 25px 0 12px;
+	color: #076fa6;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 20px;
+	margin: 20px 0 12px;
+	color: #076fa6;
+	font-weight: 400;
+}
+
+h6 {
+	font-weight: 500;
+	font-size: 18px;
+	margin: 20px 0 12px;
+}
+
+#product-banner {
+	display: none;
+}
+
+#home-banner,
+#home-reviews {
+	display: none;
+}
+
+.page-page-detail header {
+	display: none;
+}
+
+#text-based {
+	width: auto;
+	margin: auto;
+}
+
+/* This hides the renovation level block. */
+.content-block-list .row-item:nth-of-type(3) {
+	display: none !important;
+}
+
+/* .logged-in #site-navigation, .logged-in footer {
+display: block;
+} */
+
+/* .logged-in .content-block-list .row-item:nth-of-type(1){
+display: block !important;
+} */
+
+/* .logged-in .content-block-list .row-item:nth-of-type(3){
+display: none !important;
+} */
+
+.content-block-list .row-item:nth-of-type(2),
+.content-block-list .row-item:nth-of-type(4),
+.content-block-list .row-item:nth-of-type(5) {
+	display: none !important;
+}
+
+footer {
+	background: #5f5f5f;
+	/* background: rgb(15, 71, 119); */
+	line-height: 35px;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+footer #sitemap ul {
+	display: none !important;
+}
+
+#home-provide {
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+}
+
+#annie-mac-2021-redesign-container,
+.annie-mac-2021-redesign-section {
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+#annie-mac-2021-redesign-container {
+	line-height: 26px;
+	font-family: 'inter', sans-serif;
+	color: #333;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+
+#annie-mac-2021-redesign-container h1 {
+	font-size: 42px;
+	margin: 0;
+	color: inherit;
+	font-weight: inherit;
+}
+
+#annie-mac-2021-redesign-container h2 {
+	font-size: 36px;
+	margin: 0;
+	color: inherit;
+	font-weight: inherit;
+}
+
+#annie-mac-2021-redesign-container h3 {
+	font-size: 28px;
+	margin: 0;
+	color: inherit;
+	font-weight: inherit;
+}
+
+#annie-mac-2021-redesign-container h4 {
+	font-size: 24px;
+	margin: 0;
+	color: inherit;
+	font-weight: inherit;
+}
+
+#annie-mac-2021-redesign-container h5 {
+	font-size: 20px;
+	margin: 0;
+	color: inherit;
+	font-weight: 600;
+	margin-bottom: 9px;
+}
+
+#annie-mac-2021-redesign-container p {
+	font-size: 16px;
+	margin: 0;
+	color: inherit;
+}
+
+#annie-mac-2021-redesign-container ul {
+	font-size: 16px;
+	margin: 0;
+	color: inherit;
+}
+
+#annie-mac-2021-content-container {
+	box-sizing: border-box;
+}
+
+#annie-mac-2021-redesign-container button,
+#annie-mac-2021-content-container button,
+#annie-mac-2021-review-container button,
+.transformation-description button {
+	border-radius: initial;
+	border: none;
+	outline: none;
+	padding: initial;
+	display: initial;
+	font-weight: inherit;
+	margin: initial;
+	width: initial;
+	font-size: 14px;
+	letter-spacing: inherit;
+	background: initial;
+	color: initial;
+}
+
+#annie-mac-2021-redesign-header-section {
+	display: flex;
+	height: 55em;
+	position: relative;
+	overflow-y: hidden;
+}
+
+#annie-mac-2021-header-background-right {
+	flex: 1;
+	padding: 60px;
+	border-radius: 0 0 0 100%;
+	min-height: 500px;
+	background: url('https://annie-mac.com/uploads/sites/10713/public/happy-family-header.jpeg') top;
+	background-size: cover;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text {
+	padding: 60px 0 60px 90px;
+	text-align: left;
+	width: 815px;
+	align-self: center;
+	margin-top: 60px;
+}
+
+#reno-logo {
+	width: 450px;
+	margin: -75px -3px 100px;
+	height: auto;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text h1 {
+	color: #036fa8;
+	font-weight: 700;
+	line-height: 57px;
+	margin-bottom: 30px;
+	margin-top: -70px;
+	font-size: 50px;
+	width: 95%;
+	text-transform: capitalize;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text h1 span {
+	display: block;
+	font-size: 38px;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text h2 {
+	font-size: 25px;
+	margin-top: 40px;
+	font-weight: 500;
+	line-height: 30px;
+	opacity: .7;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text h3 {
+	font-size: 25px;
+	color: #036fa8;
+	font-weight: 600;
+	margin-bottom: 20px;
+	line-height: 30px;
+	margin-top: 7px;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text p {
+	width: 90%;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 15px;
+	line-height: 30px;
+}
+
+#annie-mac-2021-redesign-header-section #nested-container-text a {
+	font-weight: 600;
+	color: #076fa7;
+}
+
+#nested-button-selection button,
+#readable-section button,
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
+	background: #7FC24A;
+	padding: 28px 35px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 400;
+	margin-top: 45px;
+	margin-right: 30px;
+	font-size: 20px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 280px;
+	text-transform: capitalize;
+}
+
+#readable-section button,
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
+	margin: 45px auto;
+	display: block;
+	outline: none;
+	border: none;
+}
+
+#lead-capture-reno-construction input[type="submit"],
+#lead-capture-reno-construction input[type="button"] {
+	max-width: 280px;
+}
+
+#nested-button-selection button:hover,
+#readable-section button:hover,
+#lead-capture-reno-construction input[type="submit"]:hover,
+#lead-capture-reno-construction input[type="button"]:hover {
+	background: #76ce31;
+}
+
+#nested-button-selection a:last-of-type button {
+	background: #777;
+}
+
+#submit-overlayment {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background .75s;
+}
+
+#submit-overlay {
+	position: relative;
+}
+
+#submit-overlayment h4 {
+	display: none;
+}
+
+#submit-overlayment:hover {
+	background: rgb(255 255 255 / 54%);
+	cursor: not-allowed;
+}
+
+#submit-overlayment:hover h4 {
+	display: block;
+	font-weight: 600;
+}
+
+#learn-more-button-navigation:hover,
+#discover-perks:hover {
+	background: #036fa8 !important;
+}
+
+#annie-mac-covid-container {
+	position: absolute;
+	bottom: -12px;
+	right: 12px;
+}
+
+#annie-mac-2021-covid-warning {
+	background: #ffefe7;
+	color: #9f2a2b;
+	margin-bottom: 20px;
+	padding: 27px 29px;
+	border-radius: 6px;
+	width: 470px;
+	/* box-shadow: 1px 4px 30px rgb(0 0 0 / 15%); */
+}
+
+#annie-mac-2021-covid-warning h5 {
+	margin-top: -5px;
+}
+
+#close-covid-warning {
+	float: right;
+	margin-top: -4px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	font-weight: 500;
+	font-size: 17px;
+	background: #9f2a2b;
+	color: white;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+}
+
+#annie-mac-2021-covid-warning button {
+	background: #9f2a2b;
+	color: white;
+	margin-top: 19px;
+	margin-right: 11px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 125px;
+	font-size: 17px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	border-radius: 6px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+#annie-mac-2021-covid-warning button:hover,
+#close-covid-warning:hover {
+	background: #c32324;
+	cursor: pointer;
+}
+
+/* #annie-mac-2021-content-container {
+margin-bottom: 60px;
+} */
+
+.annie-mac-2021-redesign-section {
+	padding: 0 90px;
+}
+
+.annie-mac-2021-redesign-section h2 {
+	color: #7fc14a;
+	font-size: 46px;
+	margin: 15px 0 40px;
+	font-weight: 600;
+	line-height: 60px;
+}
+
+#product-information-section {
+	margin-bottom: 70px;
+	margin-top: 50px;
+}
+
+#product-information-section h2 {
+	color: #076fa7;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#product-information-section p {
+	margin-top: -5px;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 15px;
+	line-height: 33px;
+}
+
+#annie-mac-2021-product-option-grid {
+	display: flex;
+	flex-direction: column;
+	margin: 70px 0 100px;
+	width: 100%;
+}
+
+#annie-mac-2021-product-option-grid-row-1 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+	border-radius: 4px;
+}
+
+#annie-mac-2021-product-option-grid-row-1>* {
+	width: 25%;
+	flex: 1;
+}
+
+#annie-mac-2021-product-option-grid-row-2 {
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+	margin-top: 65px;
+	margin-bottom: 60px;
+	border-radius: 4px;
+}
+
+.remove-margin-top {
+	margin-top: -20px !important;
+}
+
+#annie-mac-2021-product-option-grid-row-2>* {
+	width: 30%;
+	flex: 1;
+}
+
+.annie-mac-2021-product-option {
+	padding: 40px 29px 0;
+	color: rgba(255, 255, 255, .85);
+}
+
+#annie-mac-2021-product-option-grid-row-1 .annie-mac-2021-product-option {
+	min-height: 330px;
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option {
+	min-height: 180px;
+	max-height: 180px;
+}
+
+#refinance-2021 {
+	background: #38a272;
+	order: 5;
+	border-radius: 6px 0 0 6px;
+}
+
+#conventional-2021 {
+	background: #076fa6;
+	order: 1;
+	border-radius: 6px 0 0 6px;
+	position: relative;
+}
+
+#selected-conventional h2 {
+	color: #076fa6;
+}
+
+#selected-conventional button {
+	background: #076fa6;
+}
+
+#rural-2021 {
+	background: #5db118;
+	color: white;
+	order: 2;
+	position: relative;
+	border-radius: 0;
+}
+
+#selected-usda h2 {
+	color: #5db118;
+}
+
+#selected-usda button {
+	background: #5db118;
+}
+
+#veteran-2021 {
+	background: #b71c1c;
+	order: 3;
+	position: relative;
+	border-radius: 0 6px 6px 0;
+}
+
+#selected-va h2 {
+	color: #b71c1c;
+}
+
+#selected-va button {
+	background: #b71c1c;
+}
+
+#fha-2021 {
+	background: #603c9c;
+	order: 2;
+	position: relative;
+}
+
+#selected-fha h2 {
+	color: #603c9c;
+}
+
+#selected-fha button {
+	background: #603c9c;
+}
+
+.selected-product-type-container {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.selected-product-title h2 strong {
+	display: block;
+}
+
+#product-selected-section button {
+	color: white;
+	padding: 28px 35px;
+	border-radius: 6px;
+	font-weight: 400;
+	margin-top: -10px;
+	margin-right: 30px;
+	font-size: 20px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 280px;
+}
+
+#reno-2021 {
+	background: #a23a64;
+	order: 6;
+}
+
+#construct-2021 {
+	background: #541d9a;
+	order: 7;
+	border-radius: 0 6px 6px 0;
+}
+
+#annie-mac-2021-product-option-grid .annie-mac-2021-product-option h3 {
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: 500;
+	color: #fff;
+}
+
+#annie-mac-2021-product-option-grid .annie-mac-2021-product-option h3 strong {
+	text-transform: capitalize;
+	font-size: 45px;
+	display: inline-block;
+	margin-top: 60px;
+	font-weight: 700;
+	word-spacing: 100vw;
+	border-bottom: 5px solid white;
+	margin-bottom: 119px;
+}
+
+.core-product-options .annie-mac-2021-product-option h3 strong {
+	margin-bottom: 80px !important;
+	margin-top: 35px !important;
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option h3 {
+	font-weight: 400;
+	text-transform: none;
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option h3 strong {
+	font-weight: 500;
+	border-bottom: 0px;
+	display: block;
+	margin-top: 40px;
+}
+
+#annie-mac-2021-product-option-grid-row-1 .annie-mac-2021-product-option p {
+	font-size: 17px;
+	line-height: 33px;
+	margin-bottom: 5px;
+	padding-bottom: 15px;
+	margin: auto -29px;
+	padding: 15px 29px;
+	display: none;
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option p {
+	font-size: 16px;
+	line-height: 33px;
+	margin-bottom: 5px;
+	padding-bottom: 15px;
+	margin: auto -29px;
+	padding: 15px 29px;
+}
+
+#annie-mac-2021-product-option-grid .annie-mac-2021-product-option a button {
+	padding: 17px 35px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: initial;
+	text-shadow: none;
+	margin-top: 25px;
+	font-size: 18px;
+	min-width: 85%;
+	background: rgba(255, 255, 255);
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	transform: translate(9%, -21%);
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option p button {
+	display: none;
+}
+
+#annie-mac-2021-product-option-grid-row-2 .annie-mac-2021-product-option:hover p button {
+	display: block;
+}
+
+#conventional-2021 a button {
+	color: #076fa6 !important;
+}
+
+#conventional-2021 a button:hover {
+	background: #e2efff;
+}
+
+#fha-2021 a button {
+	color: #603c9c !important;
+}
+
+#fha-2021 a button:hover {
+	background: #f1e9ff;
+}
+
+#rural-2021 a button {
+	color: #5db118 !important;
+}
+
+#rural-2021 a button:hover {
+	background: #eeffe0;
+}
+
+#veteran-2021 a button {
+	color: #b71c1c !important;
+}
+
+#veteran-2021 a button:hover {
+	background: #ffdfdf;
+}
+
+#refinance-2021 a button {
+	color: #38a272 !important;
+}
+
+#refinance-2021 a button:hover {
+	background: #e4fff3;
+}
+
+#reno-2021 a button {
+	color: #a23a64 !important;
+}
+
+#reno-2021 a button:hover {
+	background: #ffe4ef;
+}
+
+#construct-2021 a button {
+	color: #541d9a !important;
+}
+
+#construct-2021 a button:hover {
+	background: #e9d8ff;
+}
+
+#calculator-section,
+#resource-section,
+#vacational-section {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 300;
+	font-size: 17px;
+}
+
+#calculator-section {
+	background: linear-gradient(900deg, #0a699a 0%, #15506fe8 100%), url(https://images.pexels.com/photos/4386327/pexels-photo-4386327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	color: white;
+	padding: 40px 90px 95px;
+	margin-bottom: 100px;
+	background-size: cover;
+	background-position-y: 78%;
+}
+
+#calculator-section h3 {
+	color: white;
+}
+
+#calculator-section button,
+#resource-section button {
+	font-size: 20px;
+	min-width: 320px;
+	border: 4px solid white;
+	margin-right: 46px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #0b6897;
+	padding: 20px;
+	border-radius: 6px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-top: 25px;
+	background: rgba(255, 255, 255);
+}
+
+#calculator-section button:hover,
+#resource-section button:hover {
+	background: rgb(190 217 249);
+	border: 4px solid rgb(190 217 249);
+}
+
+.annie-mac-2021-resource-option p, .annie-mac-2021-calculator-option p {
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#vacation-section {
+	background: #fefefe;
+	padding: 30px 90px;
+}
+
+#annie-mac-2021-product-vacation-grid {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#annie-mac-2021-vacation-option {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#annie-mac-2021-vacation-selection {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg') top center;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	border-radius: 100%;
+	box-shadow: 1px 9px 30px rgb(0 0 0 / 25%);
+}
+
+#annie-mac-2021-vacation-blurb {
+	padding-left: 50px;
+	flex: 1;
+}
+
+#annie-mac-2021-product-vacation-grid h3 {}
+
+#annie-mac-2021-product-vacation-grid p {}
+
+#annie-mac-2021-product-vacation-grid button {
+	padding: 17px 35px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 400;
+	margin-top: 24px;
+	margin-right: 30px;
+	font-size: 18px;
+	min-width: 190px;
+	background: rgba(0, 0, 0, .10);
+}
+
+#annie-mac-2021-product-vacation-grid button:hover {
+	background: #a7a7a7;
+}
+
+#resource-section {
+	padding: 75px 90px 55px;
+	color: white;
+	background: linear-gradient(900deg, #087ca7f5 0%, #0a699a 100%), url(https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	margin-bottom: -18px;
+	background-size: cover;
+	background-position-y: 75%;
+}
+
+#resource-section h3 {
+	color: white;
+}
+
+#resource-section h3:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+#vacational-section {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+#vacational-section h4 {
+	font-size: 25px;
+	margin-top: 0px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+#vacational-section p {
+	line-height: 35px;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+#vacational-container-text button {
+	margin-top: 5px;
+}
+
+#vacational-section-background-left {
+	flex: 1;
+	padding: 60px;
+	border-radius: 100%;
+	background: url('https://images.pexels.com/photos/4473315/pexels-photo-4473315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') top;
+	min-width: 190px;
+	margin-right: 60px;
+	background-size: 172%;
+	box-shadow: 1px 1px 20px rgb(0 0 0 / 22%);
+}
+
+#annie-mac-review-now-section {
+	background: #fefefe;
+	margin-top: 150px;
+}
+
+#annie-mac-review-now-section #annie-mac-2021-content-container h3 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#declaration-reviews {
+	padding-top: 75px;
+	margin-top: 130px;
+}
+
+#declaration-reviews h3 {
+	text-align: center;
+	margin-bottom: -30px;
+	color: #7fc14a;
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 57px;
+	padding-bottom: 30px;
+	margin-top: -75px;
+}
+
+#annie-mac-2021-review-container {
+	/* background: linear-gradient(rgb(255 255 255) 0%, rgb(255 255 255 / 77%) 41%, rgb(255 255 255 / 50%) 54%, rgb(28 77 119 / 92%) 92%, rgb(15, 71, 119) 100%), url(https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg) top center; */
+	background: linear-gradient(rgb(255 255 255) 0%, rgb(255 255 255 / 77%) 41%, rgb(255 255 255 / 50%) 61%, rgb(117 109 109 / 82%) 88%, rgb(95 95 95) 100%), url(https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg) top center;
+	height: 690px;
+	background-size: 100%;
+	padding-top: 125px;
+	position: relative;
+	background-position-y: 100%;
+}
+
+#annie-mac-2021-inner-review-container {
+	margin: -150px auto;
+	width: 710px;
+	display: flex;
+	flex-direction: column;
+}
+
+#annie-mac-review-new {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 65px;
+}
+
+#annie-mac-2021-inner-review-container>* {
+	height: inherit;
+}
+
+#inner-review-new {
+	margin: 0 65px;
+	text-align: center;
+}
+
+#inner-review-new h4 {
+	font-size: 25px;
+	margin-top: 0px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+#inner-review-new h5 {
+	margin-top: 25px;
+	line-height: 35px;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+#inner-review-new p {
+	line-height: 35px;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#annie-mac-2021-review-container button {
+	background: #7FC24A;
+	border-radius: 6px;
+	color: white;
+	margin-top: 30px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 280px;
+	padding: 28px 35px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#annie-mac-2021-review-container button:hover {
+	background: #76ce31;
+}
+
+/* Renovations Specific */
+#annie-mac-2021-header-renovation-contruction-background-right {
+	flex: 1;
+	padding: 60px;
+	border-radius: 0 0 0 100%;
+	min-height: 500px;
+	background: url('https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') top;
+	background-size: cover;
+	background-position-y: 100%;
+}
+
+#ctp-informational {
+	margin-bottom: 55px;
+}
+
+#compare-chart {
+	display: flex;
+	margin: 50px 0;
+}
+
+#compare-chart>* {
+	flex: 1;
+}
+
+.compare-selection {
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid rgba(255, 255, 255, .05);
+	padding-left: 25px;
+}
+
+.compare-selection:last-of-type {
+	margin-right: 0;
+}
+
+.compare-selection:first-of-type {
+	margin-left: 0;
+	border-left: none;
+	padding-left: 0;
+}
+
+.compare-more {
+	flex-direction: column;
+	padding: 14px 20px;
+	margin: 0 40px;
+	opacity: .6;
+	height: 270px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.compare-more p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.construction-selection {
+	min-height: 400px !important;
+}
+
+.compare-selection h3 {
+	font-size: 22px;
+	padding-bottom: 14px;
+	font-weight: 800;
+}
+
+.specific {
+	border-top: 1px solid rgba(255, 255, 255, .03);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 40px;
+	margin: 0 -20px;
+	padding: 0 17px;
+}
+
+.columnize {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 -20px;
+	padding: 8px 20px;
+}
+
+.columnize:nth-of-type(8) {
+	min-height: 106px;
+}
+
+.specific strong {
+	font-weight: 700;
+}
+
+.specific span {
+	margin-top: 0;
+	font-weight: normal;
+	padding: 0px 50px 0 0;
+}
+
+.learn-more {
+	display: none;
+}
+
+#readable-section {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 75vh;
+	margin: 60px auto 0;
+}
+
+.sectional-header p, form p {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 33px;
+}
+
+#readable-section .sectional-header a {
+	color: #036fa8;
+	font-weight: 500;
+}
+
+.sectional-header:not(:first-of-type) {
+	margin-top: 15px;
+}
+
+#product-container-section {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.025);
+}
+
+.product-selectable {
+	width: 33.3%;
+	padding: 10px 20px;
+}
+
+#grid1 {
+	border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+#grid2 {
+	border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+/* Lead Capture */
+#lead-capture-reno-construction {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	font-family: 'inter', sans-serif !important;
+}
+
+#lead-capture-reno-construction h4 {
+	margin: 20px 0 0;
+}
+
+#lead-capture-reno-construction h4:not(:first-of-type) {
+	margin-top: 33px;
+}
+
+#contractor-form h4, #consultant-form h4, #builder-form h4 {
+	margin: 40px 0 15px;
+}
+
+form label {
+	font-family: 'inter', sans-serif !important;
+	font-weight: 300 !important;
+}
+
+#lead-capture-reno-construction>* {
+	font-family: 'inter', sans-serif !important;
+}
+
+.capture-field-group {
+	display: flex;
+}
+
+.capture-input-field {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.capture-field-group .capture-input-field:first-of-type {
+	margin-right: 25px;
+}
+
+#lead-capture-reno-construction label {
+	font-weight: 500 !important;
+	margin: 10px 0;
+	letter-spacing: .8px;
+	color: rgba(0, 0, 0, .85);
+}
+
+#lead-capture-reno-construction .single-selection label {
+	font-weight: 300 !important;
+}
+
+#lead-capture-reno-construction input,
+#lead-capture-reno-construction select {
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 1.5%);
+	padding: 18px;
+	color: rgba(0, 0, 0, .85);
+	font-weight: 400;
+	margin-bottom: 15px;
+	letter-spacing: .8px;
+	width: auto;
+	margin-top: -3px;
+	opacity: 1;
+}
+
+#lead-capture-reno-construction select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 19px;
+}
+
+#lead-capture-reno-construction input[type="checkbox"],
+#lead-capture-reno-construction input[type="radio"] {
+	padding: 15px;
+	max-width: 20px;
+	max-height: 20px;
+	margin: 0 10px 0 0;
+}
+
+:checked + label {
+	background: #ece91645;
+	padding: 0px 10px;
+}
+
+#lead-capture-reno-construction input:active,
+#lead-capture-reno-construction input:focus {
+	outline: none;
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 5%);
+}
+
+.single-selection-grouping {
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.single-selection-grouping:last-of-type {
+	margin-bottom: 0px;
+}
+
+.single-selection {
+	display: flex;
+	align-items: center;
+	line-height: 23px;
+	margin-top: -2px;
+}
+
+.single-selection label span {
+	margin-left: 4px;
+}
+
+.primary-label {
+	font-weight: 700;
+}
+
+.primary-label:not(:first-of-type) {
+	margin-top: 15px;
+}
+
+#hub-grid-filter-container {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+	display: flex;
+	flex-direction: column;
+	margin: -30px auto 5px
+}
+
+#hub-grid-filter-container-2 {
+	margin: -4px 0 12px;
+	display: flex;
+}
+
+.hub-grid-filter {
+	padding: 14px 27px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 400;
+	font-size: 17px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	text-transform: capitalize;
+	margin: 0 8px;
+}
+
+.hub-grid-filter:first-of-type {
+	margin-left: 0;
+}
+
+.filtered-active {
+	background: #7FC24A;
+}
+
+.filtered-active:hover {
+	background: #76ce31;
+}
+
+.filtered-inactive {
+	background: #ababab;
+}
+
+.filtered-inactive:hover {
+	background: #777;
+}
+
+.contractor-type {
+	padding: 10px 27px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	text-transform: capitalize;
+	text-align: center;
+	background: #7FC24A;
+	order: 2;
+	margin-left: 20px;
+	min-width: 90px;
+	display: none;
+}
+
+#hub-grid {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: flex-start;
+	margin: 0px auto 80px;
+}
+
+.hub-grid-row {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hub-grid-row>* {
+	margin: 15px 0;
+}
+
+.hub-consultant {
+	/* line-height: 20px;
+	margin: 10px 5px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 2%);
+	padding: 18px;
+	font-weight: 300;
+	letter-spacing: .8px; */
+}
+
+.company-main-information {
+	display: flex;
+	align-items: center;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	min-height: 75px;
+	margin-top: -13px;
+}
+
+.company-details {
+	margin-top: -30px;
+	padding-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.hub-consultant h4 {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: -4px;
+}
+
+.hub-consultant h5 {
+	font-weight: 300;
+	font-size: 16px;
+	margin: -6px 00 13px;
+	color: inherit;
+}
+
+.hub-consultant h6 {
+	order: -1;
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.hub-consultant p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 35px;
+	font-weight: 300;
+}
+
+.hub-consultant p span {
+	font-weight: 500;
+}
+
+.hub-contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	margin: 0 -18px;
+	padding: 14px 18px;
+	margin-top: 33px;
+}
+
+#transformation-section {
+	background: #5f5f5f;
+	color: #fff;
+}
+
+#transformation-section h3,
+#featured-transformation h4,
+#transformation-grid h4 {
+	color: #fff;
+}
+
+#transformation-grid h5,
+#featured-transformation h5 {
+	font-size: 25px;
+	font-weight: 200;
+	color: inherit;
+}
+
+#transformation-section p,
+#featured-transformation p,
+#transformation-grid p {
+	font-weight: 200;
+	font-size: 18px;
+	color: #fff;
+}
+
+#transformation-section button {
+	padding: 20px 35px;
+	border-radius: 6px;
+	font-weight: 400;
+	margin-top: 13px;
+	margin-right: 30px;
+	font-size: 18px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 242px;
+	max-width: 242px;
+	text-transform: capitalize;
+	background: white;
+	color: #2e2e2e;
+}
+
+#transformation-section button:hover {
+	background: #efefef;
+}
+
+.toggled-viewing {
+	background: #333333 !important;
+	color: #fbfbfb !important;
+	box-shadow: rgb(0 0 0 / 32%) 1px 3px 7px !important;
+}
+
+#annie-mac-2021-transformation-container {
+	margin-top: 18px;
+	padding-top: 70px;
+}
+
+#featured-transformation {
+	margin-top: 35px;
+	margin-bottom: 60px;
+}
+
+#featured-transformation-container {
+	background: #444444;
+	display: flex;
+	min-height: 480px;
+	margin: 50px auto;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+}
+
+#featured-transformation-before {
+	width: 50%;
+	background: gray;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+	background-size: cover;
+}
+
+#featured-transformation-after {
+	width: 50%;
+	background: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://images.unsplash.com/photo-1559329145-afaf18e3f349?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+	background-size: cover;
+}
+
+#transformation-grid {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+#transformation-grid h4 {
+	margin-bottom: 30px;
+}
+
+.transformation-row {
+	display: flex;
+	margin: 20px 0 50px;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 20%);
+}
+
+.transformation-main-image {
+	background: white;
+	width: 50%;
+	height: 470px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	/* border-left: 1px solid rgba(0,0,0,.2); */
+}
+
+.transformation-sub-image-grid {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	order: -1;
+}
+
+.transformation-sub-image {
+	background: gray;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	box-sizing: border-box;
+}
+
+#featured-transformation-before h5,
+#featured-transformation-after h5 {
+	font-size: 20px;
+	margin-bottom: 18px;
+	margin-right: 18px;
+	font-weight: 200;
+}
+
+.transformation-main-image h5,
+.transformation-sub-image h4 {
+	font-size: 17px;
+	margin-bottom: 14px !important;
+	margin-right: 14px;
+	font-weight: 100;
+}
+
+#transformation-renovation-project-1-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-front.png');
+	background-size: cover;
+}
+
+#project-1-before-1 {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/before-living.jpeg');
+	background-size: cover;
+}
+
+#project-1-before-2 {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/after-living.jpeg');
+	background-size: cover;
+}
+
+#project-1-before-3 {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-before.jpg');
+	background-size: cover;
+}
+
+#project-1-before-4 {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-after.jpg');
+	background-size: cover;
+}
+
+#full-transformation-gallery {
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+
+#full-transformation-gallery h5 {
+	font-weight: 300;
+	font-size: 26px;
+}
+
+#full-transformation-gallery-container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.full-transformation-row {
+	display: flex;
+}
+
+.transformation-photo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	min-height: 460px;
+	margin: 6px;
+	padding: 20px;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 20%);
+	background: #2b2b2b;
+	flex: 1;
+}
+
+.transformation-photo h4 {
+	font-size: 17px;
+	margin-bottom: 0px !important;
+	margin-right: 2px;
+	font-weight: 400;
+}
+
+#attic-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/attic-before.jpg');
+	background-size: cover;
+}
+#attic-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-attic.jpg');
+	background-size: cover;
+}
+#bathroom-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-before.jpeg');
+	background-size: cover;
+}
+#bathroom-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-after.jpeg');
+	background-size: cover;
+}
+#kitchen1-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-before.jpg');
+	background-size: cover;
+}
+#kitchen1-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-after.jpg');
+	background-size: cover;
+}
+#living-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/before-living.jpeg');
+	background-size: cover;
+}
+#living-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/after-living.jpeg');
+	background-size: cover;
+}
+#kitchen2-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-before.jpg');
+	background-size: cover;
+}
+#kitchen2-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-after.jpg');
+	background-size: cover;
+}
+#front-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/before-front.png');
+	background-size: cover;
+}
+#front-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-front.png');
+	background-size: cover;
+}
+#kitchen3-before {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-before.jpg');
+	background-size: cover;
+}
+#kitchen3-after {
+	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-after.jpg');
+	background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+	#home-provide {
+		width: initial;
+		padding: 0;
+		margin-top: initial !important;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	#annie-mac-2021-redesign-header-section {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#annie-mac-2021-header-renovation-contruction-background-right {
+		border-radius: 0;
+		order: -1;
+		display: none;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text {
+		align-self: initial;
+		width: 90%;
+		margin: 100px auto 50px;
+		padding: 0;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text h1 {
+		width: auto;
+	}
+
+	#nested-container-text h1 {
+		font-size: 46px;
+		line-height: 52px;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text h1 span {
+		font-size: 32px;
+		margin-top: 5px;
+		margin-bottom: -15px;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text p {
+		width: auto;
+	}
+
+	#nested-button-selection button {
+		margin-top: 30px;
+	}
+
+	#annie-mac-covid-container {
+		position: initial;
+		order: 2;
+		width: 100vw;
+	}
+
+	#annie-mac-2021-covid-warning {
+		margin-bottom: 0;
+		padding: 30px 45px;
+		border-radius: 0;
+		width: auto;
+		box-shadow: none;
+	}
+
+	#close-covid-warning {
+		display: none;
+	}
+
+	.annie-mac-2021-redesign-section {
+		padding: 0 45px;
+	}
+
+	#product-information-section h2 {
+		font-size: 38px;
+	}
+
+	#readable-section {
+		margin: 60px auto 0;
+	}
+
+	.capture-field-group {
+		flex-direction: column;
+	}
+
+	.capture-field-group .capture-input-field:first-of-type {
+		margin-right: 0;
+	}
+
+	.hub-grid-row>* {
+		width: 45% !important;
+	}
+
+	.hub-consultant {
+		/* margin: 15px 0;
+		width: auto;
+		max-height: 141px; */
+	}
+
+	#ghost-spot {
+		display: none;
+	}
+
+	#resource-section {
+		padding: 46px;
+	}
+
+	#master-compare-container {
+		display: flex;
+		margin: 50px 0;
+	}
+
+	#compare-chart {
+		flex-direction: column;
+		overflow-x: auto;
+		margin: 0;
+	}
+
+	.compare-selection {
+		display: flex;
+		flex-direction: row;
+		border-left: none;
+		padding-left: 0px;
+	}
+
+	.compare-selection h3 {
+		font-size: 27px;
+		padding-bottom: 0px;
+		min-width: 250px;
+		height: 220px;
+		border-right: 1px solid rgba(255, 255, 255, .07);
+		margin-right: 20px;
+		padding-top: 14px;
+		padding-right: 30px;
+	}
+
+	#compare-chart .compare-selection h3 {
+		display: none;
+	}
+
+	#compare-chart-header .compare-selection h3 span {
+		display: block;
+		font-size: 16px;
+		font-weight: 400;
+		color: #0b6f9d;
+		background: #d5f1ff;
+		width: 157px;
+		padding: 10px;
+		margin-top: 20px;
+		border-radius: 6px;
+		opacity: .75;
+	}
+
+	.specific {
+		border-top: none;
+		min-height: inherit;
+		min-width: 215px;
+		border-right: 1px solid rgba(255, 255, 255, .15);
+		margin-right: 25px;
+	}
+
+	.specific:last-of-type {
+		border-right: none;
+	}
+
+	/* EDIT NOTE: This is for the construction; edit last-of-type when split into different pages. */
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(1) {
+		min-width: 160px;
+	}
+
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(2) {
+		min-width: 140px;
+	}
+
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(3) {
+		min-width: 210px;
+	}
+
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(4) {
+		min-width: 201px;
+	}
+
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(5) {
+		min-width: 155px;
+	}
+
+	#compare-chart:last-of-type .compare-selection .specific:nth-of-type(6) {
+		min-width: 175px;
+	}
+
+	.specific span {
+		padding: 0 32px 0 0;
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	/* EDIT NOTE: This is for the renovation; edit last-of-type when split into different pages. */
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(1) {
+		min-width: 160px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(2) {
+		min-width: 130px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(3) {
+		min-width: 140px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(4) {
+		min-width: 105px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(5) {
+		min-width: 136px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(6) {
+		min-width: 140px;
+	}
+
+	#compare-chart:first-of-type .compare-selection .specific:nth-of-type(7) {
+		min-width: 255px;
+	}
+}
+
+@media only screen and (min-width: 1151px) {
+	#reno-logo {
+		width: 450px;
+		height: auto;
+	}
+
+	#compare-chart-header {
+		display: none;
+	}
+
+	#featured-transformation-container {
+		margin: 40px -90px 50px;
+	}
+}
+
+@media only screen and (min-width: 1287px) {
+	.hub-grid-row>* {
+		width: 30.1%;
+	}
+}
+
+@media only screen and (max-width: 1340px) {
+	#annie-mac-2021-product-option-grid {
+		margin: 50px 0 70px;
+	}
+
+	#annie-mac-2021-product-option-grid-row-1 {
+		flex-direction: column;
+		border-radius: 6px;
+	}
+
+	#annie-mac-2021-product-option-grid-row-1>* {
+		width: auto;
+	}
+
+	.annie-mac-2021-product-option {
+		min-height: auto;
+	}
+
+	#conventional-2021 {
+		border-radius: 6px 6px 0 0;
+	}
+
+	#va-2021 {
+		border-radius: 0 0 6px 6px;
+	}
+
+	#annie-mac-2021-product-option-grid-row-1 .annie-mac-2021-product-option p {
+		display: block;
+	}
+
+	#annie-mac-2021-product-option-grid .annie-mac-2021-product-option h3 {
+		text-transform: none;
+		font-size: 22px;
+	}
+
+	#annie-mac-2021-product-option-grid .annie-mac-2021-product-option h3 strong {
+		margin-bottom: 5px;
+		display: block;
+		word-spacing: initial;
+		font-size: inherit;
+		margin-left: 0;
+		border-bottom: none;
+		font-weight: 800;
+		margin-top: 0;
+	}
+
+	#annie-mac-2021-product-option-grid-row-1 .annie-mac-2021-product-option h3 span {
+		display: none;
+	}
+
+	#annie-mac-2021-product-option-grid .annie-mac-2021-product-option a button {
+		position: initial;
+		margin-bottom: 25px;
+		margin-top: 30px;
+		transform: none;
+		min-width: 350px;
+		display: block;
+	}
+
+	#conventional-2021 {
+		background: linear-gradient(900deg, #076fa6 0%, #213e63 100%);
+	}
+
+	#rural-2021 {
+		background: linear-gradient(900deg, #5db118 0%, #4e9217 100%);
+	}
+
+	#veteran-2021 {
+		background: linear-gradient(900deg, #b71c1c 0%, #7b1817 100%);
+	}
+
+	#fha-2021 {
+		background: linear-gradient(900deg, #603c9c 0%, #4a2e77 100%);
+	}
+
+	#refinance-2021 {
+		background: linear-gradient(900deg, #38a272 0%, #2b7d58 100%);
+	}
+
+	#reno-2021 {
+		background: linear-gradient(900deg, #a23a64 0%, #671f3c 100%);
+	}
+
+	#construct-2021 {
+		background: linear-gradient(900deg, #541d9a 0%, #370f6b 100%);
+	}
+}
+
+@media only screen and (min-width: 1341px) {
+	#conventional-2021:hover {
+		/* background: linear-gradient(900deg, #076fa6 0%, #213e63 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+		/* margin-bottom: -55px;
+		margin-top: -55px;
+		border-radius: 6px; */
+	}
+
+	#rural-2021:hover {
+		/* background: linear-gradient(900deg, #5db118 0%, #4e9217 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+		/* margin-bottom: -55px;
+		margin-top: -55px;
+		border-radius: 6px; */
+	}
+
+	#veteran-2021:hover {
+		/* background: linear-gradient(900deg, #b71c1c 0%, #7b1817 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+		/* margin-bottom: -55px;
+		margin-top: -55px;
+		border-radius: 6px; */
+	}
+
+	#fha-2021:hover {
+		/* background: linear-gradient(900deg, #603c9c 0%, #4a2e77 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+		/* margin-bottom: -55px;
+		margin-top: -55px;
+		border-radius: 6px; */
+	}
+
+	#refinance-2021:hover {
+		/* background: linear-gradient(900deg, #38a272 0%, #2b7d58 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	}
+
+	#reno-2021:hover {
+		/* background: linear-gradient(900deg, #a23a64 0%, #671f3c 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	}
+
+	#construct-2021:hover {
+		/* background: linear-gradient(900deg, #541d9a 0%, #370f6b 100%); */
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#featured-transformation-container {
+		flex-direction: column;
+		min-height: initial;
+	}
+
+	#featured-transformation-before,
+	#featured-transformation-after {
+		width: 100%;
+		height: 400px;
+	}
+
+	.transformation-sub-image-grid {
+		width: 100%;
+		height: 400px;
+	}
+
+	.transformation-main-image {
+		width: 100%;
+	}
+
+	.transformation-row {
+		flex-direction: column;
+	}
+
+	.full-transformation-row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.transformation-photo {
+		width: 43%;
+		margin: 5px;
+	}
+
+	.hub-grid-row {
+		flex-direction: column;
+	}
+
+	.hub-grid-row>* {
+		width: auto !important;
+	}
+}
+
+@media only screen and (max-width: 804px) {
+	#reno-logo {
+		width: 375px;
+		margin: -75px -3px 91px;
+	}
+
+	.full-transformation-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.transformation-photo {
+		flex: 1;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 22px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	h2 br {
+		display: none;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	#reno-logo {
+		width: 325px;
+		margin: -75px -3px 91px;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text h1,
+	#product-information-section h2,
+	.sectional-header h3 {
+		line-height: 40px;
+		font-size: 30px;
+	}
+
+	#annie-mac-2021-redesign-header-section #nested-container-text h1 span {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	#annie-mac-2021-covid-warning {
+		padding: 30px 27px;
+	}
+
+	.annie-mac-2021-redesign-section {
+		padding: 0 15px;
+	}
+
+	#nested-button-selection button {
+		padding: 19px 18px;
+		margin-top: 15px;
+		margin-right: 11px;
+		font-size: 18px;
+		min-width: 140px;
+	}
+
+	#annie-mac-2021-product-option-grid {
+		margin: 50px -15px 70px;
+		width: 100vw;
+	}
+
+	#conventional-2021,
+	#fha-2021,
+	#rural-2021,
+	#veteran-2021 {
+		border-radius: 0;
+	}
+
+	#readable-section button,
+	#lead-capture-reno-construction input[type="submit"],
+	#lead-capture-reno-construction input[type="button"] {
+		padding: 19px 18px;
+		margin: 18px auto 10px;
+		font-size: 18px;
+		min-width: 100%;
+	}
+
+	#annie-mac-2021-product-option-grid .annie-mac-2021-product-option a button {
+		min-width: 100%;
+		line-height: 28px;
+	}
+
+	#hub-grid-filter-container-2 {
+		margin: -4px 0 0px;
+		flex-direction: column;
+	}
+
+	.hub-grid-filter {
+		margin: 0 auto 9px;
+		min-width: 285px;
+	}
+
+	.hub-grid-filter:first-of-type {
+		margin-left: auto;
+	}
+
+	.hub-consultant {
+		/* max-height: initial; */
+	}
+
+	.contractor-type {
+		float: initial;
+		min-width: 145px;
+		margin: 0 auto 15px;
+	}
+
+	#resource-section {
+		padding: 50px 15px;
+	}
+
+	.compare-selection h3 {
+		font-size: 18px;
+		min-width: 110px;
+		padding-right: 15px;
+		background: rgba(0, 0, 0, .07);
+		padding-left: 10px;
+	}
+
+	#compare-chart-header .compare-selection h3 span {
+		display: none;
+	}
+}
+
+/*@media (prefers-color-scheme: dark) {
+	#site-navigation {
+		background: #001621;
+	}	
+	body,
+	#annie-mac-2021-redesign-container,
+	#transformation-section,
+	footer {
+		background: #001a27;
+		color: white;
+	}
+	#submit-overlayment:hover {
+		background: rgb(0 26 39 / 76%);
+	}
+	#reno-logo {
+		background: url('https://annie-mac.com/uploads/sites/10713/public/nightmode.png');
+		background-size: 100%;
+		object-position: -99999px 99999px;
+		background-repeat: no-repeat;
+	}
+
+	#annie-mac-2021-header-renovation-contruction-background-right {
+		background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url(https://images.pexels.com/photos/5495067/pexels-photo-5495067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) top;
+		background-size: cover;
+		background-position-y: 100%;
+	}
+	
+	:checked + label {
+		background: #036fa8;
+	}
+
+	#product-information-section h2,
+	#product-information-section h2,
+	h4,
+	#annie-mac-2021-redesign-header-section #nested-container-text h1,
+	h4 {
+		color: #77c253;
+		font-weight: 500;
+	}
+
+	#lead-capture-reno-construction label {
+		color: #efefef;
+	}
+
+	#readable-section .sectional-header a,
+	#annie-mac-2021-redesign-header-section #nested-container-text a {
+		color: #40bcff;
+	}
+
+	#resource-section {
+		background: transparent;
+	}
+	
+	.transformation-photo {
+		background: #00151f;
+	}
+
+	#annie-mac-2021-covid-warning {
+		color: #e8e8e8;
+		background: #032535;
+	}
+
+	#close-covid-warning,
+	#annie-mac-2021-covid-warning button {
+		background: #036fa8;
+	}
+
+	#annie-mac-2021-covid-warning button:hover,
+	#close-covid-warning:hover {
+		background: #076fa7;
+	}
+
+	#nested-button-selection button,
+	#readable-section button,
+	#lead-capture-reno-construction input[type="submit"],
+	#lead-capture-reno-construction input[type="button"] {
+		background: #036fa8;
+	}
+	
+	#conventional-2021 {
+		background: #0a4564;
+	}
+	
+	#rural-2021 {
+		background: #417517;
+	}
+	
+	#fha-2021 {
+		background: #3c2560;
+	}
+	
+	#veteran-2021 {
+		background: #660e0e;
+	}
+	
+	 #refinance-2021:hover {
+		background: #660e0e;
+	}
+
+	#reno-2021:hover {
+		background: #660e0e;
+	}
+
+	#construct-2021:hover {
+		background: #660e0e;
+	}
+}
+
+@media (prefers-color-scheme: dark), only screen and (min-width: 1341px) {
+	#conventional-2021:hover {
+		background: linear-gradient(900deg, #0a4564 0%, #213e63 100%);
+	}
+
+	#rural-2021:hover {
+		background: linear-gradient(900deg, #417517 0%, #4e9217 100%);
+	}
+
+	#veteran-2021:hover {
+		background: linear-gradient(900deg, #660e0e 0%, #7b1817 100%);
+	}
+
+	#fha-2021:hover {
+		background: linear-gradient(900deg, #3c2560 0%, #4a2e77 100%);
+	}
+	
+	#refinance-2021:hover {
+		background: linear-gradient(900deg, #38a272 0%, #2b7d58 100%);
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	}
+
+	#reno-2021:hover {
+		background: linear-gradient(900deg, #a23a64 0%, #671f3c 100%);
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	}
+
+	#construct-2021:hover {
+		background: linear-gradient(900deg, #541d9a 0%, #370f6b 100%);
+		box-shadow: 0 15px 15px 0 rgb(0 0 0 / 8%);
+	} 
+}
+
+#product-information-section,
+#annie-mac-2021-resource-option,
+#transformation-grid,
+#readable-section {
+	max-width: 1670px;
+}
+
+.annie-mac-2021-resource-option p, .annie-mac-2021-calculator-option p {
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 15px;
+	line-height: 33px;
+}
+
+textarea#textarea-comments {
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px 3px rgb(0 0 0 / 2%);
+	padding: 18px;
+	color: rgba(0, 0, 0, .85);
+	font-weight: 400;
+	margin-bottom: 15px;
+	letter-spacing: .8px;
+	width: auto;
+	margin-top: -3px;
+	opacity: 1;
+	line-height: 20px;
+}
+
+#quiz-callout-container {
+	width: 350px;
+	float: right;
+	margin-left: 30px;
+	margin-top: 35px;
+	margin-bottom: -15px;
+}
+
+#calculator-callout-container {
+	width: 350px;
+	float: right;
+	margin-left: 30px;
+	margin-top: 35px;
+	margin-bottom: -15px;
+}
+#quiz-callout-container #annie-mac-2021-product-option-grid {
+	margin: 0;
+	max-width: inherit;
+	float: right;
+}
+#quiz-callout-container #refinance-2021 {
+	border-radius: 6px;
+}
+#calculator-callout-container #annie-mac-2021-product-option-grid {
+	max-width: inherit;
+	margin-bottom: 35px;
+	margin-top: -10px;
+}
+#quiz-callout-container #annie-mac-2021-product-option-grid-row-2 {
+	width: inherit;
+	margin-bottom: 10px;
+}
+#calculator-callout-container #annie-mac-2021-product-option-grid-row-2 {
+	width: inherit;
+	margin-bottom: 10px;
+	flex-direction: column;
+	margin-top: -10px;
+}
+#calculator-callout-container #annie-mac-2021-product-option-grid-row-2 #reno-2021 {
+	border-radius: 6px 6px 0 0;
+}
+#calculator-callout-container #annie-mac-2021-product-option-grid-row-2 #construct-2021 {
+	border-radius: 0 0 6px 6px;
+}
+#calculator-callout-container #annie-mac-2021-product-option-grid-row-2 > * {
+	width: 100%;
+}
+*/
