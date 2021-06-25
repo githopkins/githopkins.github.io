@@ -2857,6 +2857,10 @@ textarea#textarea-comments {
 	box-sizing: border-box;
 }
 
+#credit-breakdown {
+	margin-top: 20px;
+}
+
 .donut-chart-block {
 	margin-left: 50px;
 }
