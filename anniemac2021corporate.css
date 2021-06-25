@@ -2945,4 +2945,5 @@ to {transform: rotate(111deg);}
 .table-column {
 	display: flex;
 	flex-direction: column;
+	width: 400px;
 }
