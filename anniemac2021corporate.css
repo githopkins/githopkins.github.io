@@ -2866,7 +2866,7 @@ textarea#textarea-comments {
 	padding: 15% 0 0;
 }
 
-.portion-block {
+.ring-container {
 	border-radius: 50%;
 	clip: rect(0px, 200px, 200px, 100px);
 	height: 100%;
@@ -2884,30 +2884,33 @@ textarea#textarea-comments {
 	font-size: 1.5rem;
 }
 
-#part1 {
+#portion1 {
 	transform: rotate(0deg);
 }
 
-#part1 .ring {
+#portion1 .ring {
 	background-color: #a23a64;
 }
   
-#part2 {
+#portion2 {
 	transform: rotate(100deg);
 }
 
-#part2 .ring {
+#portion2 .ring {
 	background-color: #38a272;
 }
 
-#part3 {
+#portion3 {
 	transform: rotate(250deg);
 }
 
-#part3 .ring {
+#portion3 .ring {
 	background-color: #541d9a;
 }
 
+.page-content-2021 {
+	margin: 50px 0;
+}
 .page-content-2021 h2 {
 	color: #076fa7;
 	font-weight: 700;
