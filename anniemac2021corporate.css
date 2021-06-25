@@ -287,10 +287,14 @@ body {
 
 .navigation-sidebar-sectional ul li h4 a {
 	font-weight: 600;
-	border-bottom: 1px solid rgba(0, 0, 0, .12);
 	display: block;
 	margin-bottom: -5px;
 	padding: 5px 15px;
+}
+
+.option-listing {
+	border-top: 1px solid rgba(0, 0, 0, .12);
+	margin-top: -9px;
 }
 
 .navigation-sidebar-sectional ul li h4 a:hover {
