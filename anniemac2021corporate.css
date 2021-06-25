@@ -2977,7 +2977,7 @@ textarea#textarea-comments {
 	margin: 0 0 11px;
 }
 
-.page-content-2021 p strong {
+.page-content-2021 p strong, .page-content-2021 ul li strong {
 	font-weight: 500;
 }
 
