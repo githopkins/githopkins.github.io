@@ -2932,3 +2932,12 @@ to {transform: rotate(111deg);}
 .page-content-2021 p {
 	margin: 0 0 11px;
 }
+
+.table-container {
+	display: flex;
+}
+
+.table-column {
+	display: flex;
+	flex-direction: column;
+}
