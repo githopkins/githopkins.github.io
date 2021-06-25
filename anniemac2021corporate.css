@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-#home-deserve, #home-blog {
+#home-deserve,
+#home-blog {
 	display: none;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, section {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+section {
 	margin: 0;
 	padding: 0;
 	font-family: 'inter', sans-serif;
@@ -12,7 +25,8 @@ html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, section {
 	font-weight: 300;
 }
 
-ul, ol {
+ul,
+ol {
 	list-style: none;
 }
 
@@ -55,7 +69,10 @@ p {
 	line-height: 30px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
 	line-height: 1.3;
 }
 
@@ -64,7 +81,11 @@ a {
 	text-decoration: none;
 }
 
-body, nav, header, section, footer {
+body,
+nav,
+header,
+section,
+footer {
 	display: flex;
 	flex-direction: column;
 }
@@ -84,9 +105,11 @@ body {
 	padding: 0 20px;
 	font-size: 17px;
 }
+
 #site-navigation h1 {
 	display: none;
 }
+
 #navigation_new_upper {
 	display: flex;
 	align-items: center;
@@ -113,7 +136,7 @@ body {
 	height: auto;
 }
 
-.navigation-sectional:nth-of-type(2){
+.navigation-sectional:nth-of-type(2) {
 	order: -1;
 	display: flex;
 	align-items: center;
@@ -149,7 +172,7 @@ body {
 .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation .sub-site-navigation-listing {
 	margin-top: 35px;
 	box-shadow: 0px 2px 4px -1px rgb(45 55 72 / 9%);
-	border: 1px solid rgba(0,0,0,.035);
+	border: 1px solid rgba(0, 0, 0, .035);
 	background: #f4f4f4;
 	padding: 5px 14px;
 }
@@ -158,7 +181,8 @@ body {
 	padding: 2px 0;
 }
 
-.navigation-sectional:nth-of-type(2) ul li a:hover > a:first-of-type, .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li a:hover {
+.navigation-sectional:nth-of-type(2) ul li a:hover>a:first-of-type,
+.navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li a:hover {
 	color: #036fa8;
 }
 
@@ -259,7 +283,7 @@ body {
 
 .navigation-sidebar-sectional ul li h4 a {
 	font-weight: 600;
-	border-bottom: 1px solid rgba(0,0,0,.12);
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
 	display: block;
 	margin-bottom: -5px;
 	padding: 5px 15px;
@@ -301,7 +325,8 @@ footer img {
 	height: 50px;
 }
 
-footer #sitemap, footer #copyrights {
+footer #sitemap,
+footer #copyrights {
 	display: flex;
 	width: 90%;
 	margin: 0 auto;
@@ -1049,7 +1074,8 @@ margin-bottom: 60px;
 	border: 4px solid rgb(190 217 249);
 }
 
-.annie-mac-2021-resource-option p, .annie-mac-2021-calculator-option p {
+.annie-mac-2021-resource-option p,
+.annie-mac-2021-calculator-option p {
 	line-height: 36px;
 	font-size: 18px;
 	font-weight: 300;
@@ -1365,7 +1391,8 @@ margin-bottom: 60px;
 	margin: 60px auto 0;
 }
 
-.sectional-header p, form p {
+.sectional-header p,
+form p {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 33px;
@@ -1420,7 +1447,9 @@ margin-bottom: 60px;
 	margin-top: 33px;
 }
 
-#contractor-form h4, #consultant-form h4, #builder-form h4 {
+#contractor-form h4,
+#consultant-form h4,
+#builder-form h4 {
 	margin: 40px 0 15px;
 }
 
@@ -1489,7 +1518,7 @@ form label {
 	margin: 0 10px 0 0;
 }
 
-:checked + label {
+:checked+label {
 	background: #ece91645;
 	padding: 0px 10px;
 }
@@ -1894,54 +1923,67 @@ form label {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/attic-before.jpg');
 	background-size: cover;
 }
+
 #attic-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-attic.jpg');
 	background-size: cover;
 }
+
 #bathroom-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-before.jpeg');
 	background-size: cover;
 }
+
 #bathroom-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/bathroom-after.jpeg');
 	background-size: cover;
 }
+
 #kitchen1-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-before.jpg');
 	background-size: cover;
 }
+
 #kitchen1-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen1-after.jpg');
 	background-size: cover;
 }
+
 #living-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/before-living.jpeg');
 	background-size: cover;
 }
+
 #living-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/after-living.jpeg');
 	background-size: cover;
 }
+
 #kitchen2-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-before.jpg');
 	background-size: cover;
 }
+
 #kitchen2-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen2-after.jpg');
 	background-size: cover;
 }
+
 #front-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/before-front.png');
 	background-size: cover;
 }
+
 #front-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://annie-mac.com/uploads/sites/10713/public/after-front.png');
 	background-size: cover;
 }
+
 #kitchen3-before {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-before.jpg');
 	background-size: cover;
 }
+
 #kitchen3-after {
 	background: linear-gradient(-5deg, rgb(5 6 6 / 40%) 14%, rgb(21 21 21 / 15%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/kitchen3-after.jpg');
 	background-size: cover;
