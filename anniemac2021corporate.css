@@ -2851,6 +2851,12 @@ textarea#textarea-comments {
 	box-sizing: border-box;
 }
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .donut-chart {
 	position: relative;
 	width: 200px;
@@ -2882,60 +2888,45 @@ textarea#textarea-comments {
 }
 
 #ring1 .ring {
-	background-color: #603c9c;
-	/*transform: rotate(76deg);*/
-	animation: first 1s 1 forwards;
+	background-color: pink;
+  transform: rotate(40deg);
 }
 
 
 #ring2 {
-	transform: rotate(100deg);
+	transform: rotate(40deg);
 }
 
 #ring2 .ring {
-	background-color: #38a272;
-	animation: second 1s 1 forwards 1s;
+	background-color: yellow;
+  transform: rotate(90deg);
 }
 
 #ring3 {
-	transform: rotate(250deg);
+	transform: rotate(90deg);
 }
 
 #ring3 .ring {
-	background-color: #076fa6;
-	animation: third 0.5s 1 forwards 2s;
+	background-color: orange;
+  transform: rotate(100deg);
 }
 
-
-/* Animation */
-@keyframes first {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(100deg);
-	}
+#ring4 {
+	transform: rotate(100deg);
 }
 
-@keyframes second {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(150deg);
-	}
+#ring4 .ring {
+	background-color: green;
+  transform: rotate(140deg);
 }
 
-@keyframes third {
-	from {
-		transform: rotate(0deg);
-	}
+#ring5 {
+	transform: rotate(100deg);
+}
 
-	to {
-		transform: rotate(111deg);
-	}
+#ring5 .ring {
+	background-color: blue;
+  transform: rotate(250deg);
 }
 
 .page-content-2021 {
