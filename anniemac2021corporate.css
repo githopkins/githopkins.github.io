@@ -215,6 +215,7 @@ body {
 .navigation-sectional:nth-of-type(3) ul li a:hover {
 	background: #036fa8;
 	transform: scale(1.1);
+	color: #fff;
 }
 
 #side-bar-navigation-toggle {
@@ -2917,7 +2918,7 @@ textarea#textarea-comments {
 }
 
 .page-content-2021 h2 {
-	color: #076fa7;
+	color: #7FC24A;
 	font-weight: 700;
 	margin-bottom: 20px;
 	}
