@@ -125,6 +125,7 @@ footer #sitemap ul li ul {
 	display: flex;
 	width: 80px;
 	justify-content: space-between;
+	visibility: hidden;
 }
 
 footer ul li {
