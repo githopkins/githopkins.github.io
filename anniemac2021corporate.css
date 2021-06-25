@@ -2891,7 +2891,7 @@ textarea#textarea-comments {
 #part1 .circle {
 	background-color: #a23a64;
 	/*transform: rotate(76deg);*/
-	animation: first 1s 1 forwards;
+	/* animation: first 1s 1 forwards; */
 }
   
 #part2 {
@@ -2900,7 +2900,7 @@ textarea#textarea-comments {
 
 #part2 .circle {
 	background-color: #38a272;
-	animation: second 1s 1 forwards 1s;
+	/* animation: second 1s 1 forwards 1s; */
 }
 
 #part3 {
@@ -2909,11 +2909,11 @@ textarea#textarea-comments {
 
 #part3 .circle {
 	background-color: #541d9a;
-	animation: third 0.5s 1 forwards 2s;
+	/* animation: third 0.5s 1 forwards 2s; */
 }
 
 /* Animation */
-@keyframes first {
+/* @keyframes first {
 from {transform: rotate(0deg);}
 to {transform: rotate(100deg);}
 }
@@ -2926,7 +2926,7 @@ to {transform: rotate(150deg);}
 @keyframes third {
 from {transform: rotate(0deg);}
 to {transform: rotate(111deg);}
-}
+} */
 
 .page-content-2021 h2 {
 	color: #076fa7;
