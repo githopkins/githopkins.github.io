@@ -134,7 +134,7 @@ body {
 	top: 0;
 	left: 0;
 	margin-left: 0;
-	width: max-content;
+	min-width: 190px;
 	z-index: 1;
 }
 .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation .sub-site-navigation-listing {
@@ -145,7 +145,7 @@ body {
 	padding: 5px 14px;
 }
 .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li {
-	padding: 6px 0;
+	padding: 2px 0;
 }
 
 .navigation-sectional:nth-of-type(2) ul li a:hover > a:first-of-type, .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li a:hover {
