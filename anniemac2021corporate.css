@@ -2923,6 +2923,12 @@ from {transform: rotate(0deg);}
 to {transform: rotate(111deg);}
 }
 
+.page-content-2021 h2 {
+	color: #076fa7;
+	font-weight: 700;
+	margin-bottom: 20px;
+	}
+
 .page-content-2021 p {
 	margin: 0 0 11px;
 }
