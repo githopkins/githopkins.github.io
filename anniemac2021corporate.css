@@ -2890,7 +2890,7 @@ textarea#textarea-comments {
 	  }
 	
 		#part1 .circle {
-			background-color: #E64C65;
+			background-color: #38a272;
 			/*transform: rotate(76deg);*/
 			animation: first 1s 1 forwards;
 		  }
@@ -2900,14 +2900,14 @@ textarea#textarea-comments {
 		transform: rotate(100deg);
 	  }
 	#part2 .circle {
-		background-color: #11A8AB;
+		background-color: #603c9c;
 		animation: second 1s 1 forwards 1s;
 	  }
 	#part3 {
 		transform: rotate(250deg);
 	}
 		#part3 .circle {
-			background-color: #4FC4F6;
+			background-color: #076fa6;
 			animation: third 0.5s 1 forwards 2s;
 		}
 		
