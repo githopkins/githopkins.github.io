@@ -3016,8 +3016,7 @@ textarea#textarea-comments {
 
 .header-table-container {
 	display: flex;
-	align-items: center;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .header-table-column {
@@ -3029,6 +3028,10 @@ textarea#textarea-comments {
 	width: 500px;
 	flex: 1;
 	margin-right: 50px;
+}
+
+.header-table-column:first-of-type h4 {
+	margin-top: 0;
 }
 
 #minimum-scores {
