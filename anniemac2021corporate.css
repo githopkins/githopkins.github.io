@@ -2869,15 +2869,15 @@ textarea#textarea-comments {
 
 .donut-chart {
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 450px;
+	height: 450px;
 	margin: 0px auto;
 	border-radius: 100%;
 }
 
 .ring-container {
 	border-radius: 50%;
-	clip: rect(0px, 200px, 200px, 100px);
+	clip: rect(0px, 450px, 450px, 225px);
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -2885,7 +2885,7 @@ textarea#textarea-comments {
 
 .ring {
 	border-radius: 50%;
-	clip: rect(0px, 100px, 200px, 0px);
+	clip: rect(0px, 450px, 450px, 0px);
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -2899,7 +2899,7 @@ textarea#textarea-comments {
 
 #ring1 .ring {
 	background-color: #076fa6;
-    transform: rotate(173deg);
+	transform: rotate(173deg);
 }
 
 
@@ -2909,7 +2909,7 @@ textarea#textarea-comments {
 
 #ring2 .ring {
 	background-color: #b71c1c;
-    transform: rotate(175deg);
+	transform: rotate(175deg);
 }
 
 #ring3 {
@@ -2918,7 +2918,7 @@ textarea#textarea-comments {
 
 #ring3 .ring {
 	background-color: #5db118;
-    transform: rotate(195deg);
+	transform: rotate(195deg);
 }
 
 #ring4 {
@@ -2927,16 +2927,16 @@ textarea#textarea-comments {
 
 #ring4 .ring {
 	background-color: #603c9c;
-    transform: rotate(173deg);
+	transform: rotate(173deg);
 }
 
 #ring5 {
-	transform: rotate(228deg);
+	transform: rotate(200deg);
 }
 
 #ring5 .ring {
 	background-color: #a23a64;
-    transform: rotate(280deg);
+	transform: rotate(101deg);
 }
 
 .color-legend {
@@ -2991,7 +2991,6 @@ textarea#textarea-comments {
 .table-container {
 	display: flex;
 	flex: 1;
-	align-items: center;
 }
 
 .table-column {
@@ -3003,6 +3002,12 @@ textarea#textarea-comments {
 .table-column:first-of-type {
 	width: 350px;
 	margin-right: 50px;
+}
+
+.table-column:last-of-type {
+	justify-content: center;
+	align-items: center;
+	flex: 1;
 }
 
 .table-column p:first-of-type {
