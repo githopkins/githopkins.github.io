@@ -176,7 +176,7 @@ body {
 }
 
 .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation .sub-site-navigation-listing {
-	margin-top: 35px;
+	margin-top: 48px;
 	box-shadow: 0px 2px 4px -1px rgb(45 55 72 / 9%);
 	border: 1px solid rgba(0, 0, 0, .035);
 	background: #f4f4f4;
