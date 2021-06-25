@@ -212,16 +212,21 @@ body {
 	transform: scale(1.1);
 }
 
-#side-bar-navigation-toggle i {
+#side-bar-navigation-toggle {
 	background: #036fa8;
 	border-radius: 100%;
-	height: 17px;
+	height: 19px;
 	width: 18px;
-	display: flex;
-	justify-content: center;
 	color: white;
 	margin-top: 0;
-	padding: 8px;
+	padding: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#side-bar-navigation-toggle i {
+	font-size: 16px;
 }
 
 #side-bar-navigation-toggle i:hover {
