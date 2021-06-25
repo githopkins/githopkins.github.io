@@ -165,7 +165,7 @@ body {
 	top: 0;
 	left: 0;
 	margin-left: 0;
-	min-width: 190px;
+	width: 240px;
 	z-index: 1;
 }
 
