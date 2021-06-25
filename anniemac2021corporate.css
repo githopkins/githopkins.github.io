@@ -96,6 +96,10 @@ footer {
 	flex-direction: column;
 }
 
+footer {
+	display: none !important;
+}
+
 body {
 	color: #444;
 	letter-spacing: .015em;
