@@ -2969,7 +2969,11 @@ textarea#textarea-comments {
 .table-column {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	align-items: flex-start;
+}
+
+.table-column:first-of-type {
+	width: 350px;
 }
 
 .table-column p:first-of-type {
