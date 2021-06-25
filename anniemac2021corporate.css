@@ -286,10 +286,11 @@ body {
 }
 
 .navigation-sidebar-sectional ul li h4 a {
-	font-weight: 600;
+	font-weight: 300;
 	display: block;
 	margin-bottom: -5px;
 	padding: 5px 15px;
+	font-size: 22px;
 }
 
 .navigation-sidebar-sectional .option-listing {
