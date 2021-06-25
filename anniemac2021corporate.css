@@ -2857,7 +2857,10 @@ textarea#textarea-comments {
 	position: absolute;
 	text-align: center;
 	font-size: 28px;
-	top:0;left:0;bottom:0;right:0;
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0;
 	width: 130px;
 	height: 130px;
 	margin: auto;
