@@ -2947,3 +2947,13 @@ to {transform: rotate(111deg);}
 	flex-direction: column;
 	width: 400px;
 }
+
+.table-column p:first-of-type {
+	margin: 10px 0 5px;
+	font-size: 20px;
+	font-weight: 450;
+}
+
+.table-column ul {
+	list-style: inside;
+}
