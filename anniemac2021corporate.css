@@ -2938,6 +2938,10 @@ to {transform: rotate(111deg);}
 	margin: 0 0 11px;
 }
 
+.page-content-2021 p strong {
+	font-weight: 500;
+}
+
 .table-container {
 	display: flex;
 }
