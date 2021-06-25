@@ -3038,6 +3038,24 @@ textarea#textarea-comments {
 	margin-top: 0;
 }
 
+.credit-brackdown-legend {
+	background: #fcfcfc;
+	list-style: none;
+	padding: 4px 17px;
+	border: 1px inset #e3e0e01f;
+	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 4%);
+}
+
+.credit-brackdown-legend li {
+	border-bottom: 1px solid #e3e0e087;
+	margin: 0 -17px;
+	padding: 0 26px;
+}
+
+.credit-brackdown-legend li:last-of-type {
+	border-bottom: none;
+}
+
 #minimum-scores {
 	background: #7fc14a;
 	padding: 20px 30px;
