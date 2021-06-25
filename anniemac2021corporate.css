@@ -1189,7 +1189,7 @@ display: none !important;
 #resource-section h3, #calculator-section h3 {
 	color: white;
 	font-weight: 500;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 #resource-section h3:nth-of-type(2) {
