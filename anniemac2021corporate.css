@@ -2754,13 +2754,6 @@ form label {
 	max-width: 1670px;
 }
 
-.annie-mac-2021-resource-option p, .annie-mac-2021-calculator-option p {
-	font-weight: 300;
-	font-size: 18px;
-	margin-bottom: 15px;
-	line-height: 33px;
-}
-
 textarea#textarea-comments {
 	background: #fff;
 	border-radius: 4px;
