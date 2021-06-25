@@ -3038,7 +3038,7 @@ textarea#textarea-comments {
 	margin-top: 0;
 }
 
-.credit-brackdown-legend {
+.credit-breackdown-legend {
 	background: #fcfcfc;
 	list-style: none;
 	padding: 4px 17px;
@@ -3046,13 +3046,13 @@ textarea#textarea-comments {
 	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 4%);
 }
 
-.credit-brackdown-legend li {
+.credit-breackdown-legend li {
 	border-bottom: 1px solid #e3e0e087;
 	margin: 0 -17px;
 	padding: 0 26px;
 }
 
-.credit-brackdown-legend li:last-of-type {
+.credit-breakdown-legend li:last-of-type {
 	border-bottom: none;
 }
 
