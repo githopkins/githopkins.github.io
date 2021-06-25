@@ -2867,10 +2867,6 @@ textarea#textarea-comments {
 	margin-top: 30px;
 }
 
-.donut-chart-block {
-	margin-left: 20px;
-}
-
 .donut-chart {
 	position: relative;
 	width: 200px;
@@ -3005,6 +3001,7 @@ textarea#textarea-comments {
 
 .table-column:first-of-type {
 	width: 350px;
+	margin-right: 50px;
 }
 
 .table-column p:first-of-type {
@@ -3015,4 +3012,19 @@ textarea#textarea-comments {
 
 .table-column ul {
 	list-style: inside;
+}
+
+.header-table-container {
+	display: flex;
+}
+
+.header-table-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-table-column:first-of-type {
+	width: 500px;
+	flex: 1;
+	margin-right: 50px;
 }
