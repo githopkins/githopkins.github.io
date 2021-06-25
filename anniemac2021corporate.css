@@ -229,7 +229,7 @@ body {
 	font-size: 16px;
 }
 
-#side-bar-navigation-toggle i:hover {
+#side-bar-navigation-toggle:hover {
 	background: #7fc14a;
 	cursor: pointer;
 	transform: scale(1.1);
