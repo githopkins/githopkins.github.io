@@ -292,8 +292,8 @@ body {
 	padding: 5px 15px;
 }
 
-.option-listing {
-	border-top: 1px solid rgba(0, 0, 0, .12);
+.navigation-sidebar-sectional .option-listing {
+	border-top: 1px solid rgba(0, 0, 0, .07);
 	margin-top: -9px;
 }
 
