@@ -2932,8 +2932,11 @@ textarea#textarea-comments {
 .color-legend {
 	min-width: 20px;
 	min-height: 20px;
-	margin-left: 10px;
+	margin-left: 26px;
 	background: black;
+	display: inline-block;
+	margin-top: 12px;
+	float: right;
 }
 
 #ring-legend-1 {
