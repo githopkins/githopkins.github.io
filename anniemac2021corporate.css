@@ -3111,7 +3111,7 @@ textarea#textarea-comments {
 .header-table-column:first-of-type {
 	width: 500px;
 	flex: 1;
-	margin-right: 50px;
+	margin-left: 50px;
 }
 
 .header-table-column:first-of-type h4 {
@@ -3140,6 +3140,7 @@ textarea#textarea-comments {
 	background: #7fc14a;
 	padding: 20px 30px;
 	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 9%);
+	order: -1;
 }
 
 #minimum-scores h4, #minimum-scores p, #minimum-scores ul, #minimum-scores ul li strong a {
