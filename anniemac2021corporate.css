@@ -2871,7 +2871,7 @@ textarea#textarea-comments {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	margin: 0px auto 50px;
+	margin: 0px auto;
 	border-radius: 100%;
 }
 
