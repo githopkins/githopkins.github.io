@@ -2965,6 +2965,80 @@ textarea#textarea-comments {
 	background: #a23a64;
 }
 
+/* Smaller 
+
+.donut-chart {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+	border-radius: 100%;
+}
+
+.ring-container {
+	border-radius: 50%;
+	clip: rect(0px, 200px, 200px, 100px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.ring {
+	border-radius: 50%;
+	clip: rect(0px, 100px, 200px, 0px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+
+#ring1 {
+	transform: rotate(0deg);
+}
+
+#ring1 .ring {
+	background-color: #076fa6;
+	transform: rotate(173deg);
+}
+
+
+#ring2 {
+	transform: rotate(120deg);
+}
+
+#ring2 .ring {
+	background-color: #b71c1c;
+	transform: rotate(175deg);
+}
+
+#ring3 {
+	transform: rotate(145deg);
+}
+
+#ring3 .ring {
+	background-color: #5db118;
+	transform: rotate(195deg);
+}
+
+#ring4 {
+	transform: rotate(234deg);
+}
+
+#ring4 .ring {
+	background-color: #603c9c;
+	transform: rotate(173deg);
+}
+
+#ring5 {
+	transform: rotate(228deg);
+}
+
+#ring5 .ring {
+	background-color: #a23a64;
+	transform: rotate(280deg);
+} */
+
 .page-content-2021 {
 	margin: 40px 0;
 }
