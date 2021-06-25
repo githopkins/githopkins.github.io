@@ -75,6 +75,203 @@ body {
 	line-height: 2.5em;
 }
 
+#site-navigation {
+	background: #fcfcfc;
+	color: #333;
+	height: 55px;
+	border-bottom: 1px inset #e3e0e0;
+	box-shadow: 0px 2px 4px -1px rgb(45 55 72 / 9%);
+	padding: 0 20px;
+	font-size: 17px;
+}
+#site-navigation h1 {
+	display: none;
+}
+#navigation_new_upper {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex: 1;
+	height: inherit;
+	justify-content: space-between;
+}
+.hide {
+	display: none;
+}
+.navigation-sectional:nth-of-type(1) {
+	max-width: 260px;
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.navigation-sectional:nth-of-type(1) li a img {
+	max-width: 260px;
+	height: auto;
+}
+.navigation-sectional:nth-of-type(2){
+	order: -1;
+	display: flex;
+	align-items: center;
+}
+.navigation-sectional:nth-of-type(2) ul {
+	display: flex;
+	margin-left: 20px;
+	width: 320px;
+	justify-content: space-between;
+}
+.navigation-sectional:nth-of-type(2) ul li {
+	font-weight: 300;
+	font-size: 16px;
+	position: relative;
+}
+.navigation-sectional:nth-of-type(2) ul li ul {
+	display: none;
+}
+.navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	width: max-content;
+	z-index: 1;
+}
+.navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation .sub-site-navigation-listing {
+	margin-top: 35px;
+	box-shadow: 0px 2px 4px -1px rgb(45 55 72 / 9%);
+	border: 1px solid rgba(0,0,0,.035);
+	background: #f4f4f4;
+	padding: 5px 14px;
+}
+.navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li {
+	padding: 6px 0;
+}
+
+.navigation-sectional:nth-of-type(2) ul li a:hover > a:first-of-type, .navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation li a:hover {
+	color: #036fa8;
+}
+
+.navigation-sectional:nth-of-type(3) ul li a {
+	background: #7FC24A;
+	padding: 12px 20px;
+	border-radius: 3px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: .8px;
+	text-align: center;
+}
+
+.navigation-sectional:nth-of-type(3) ul li a:hover {
+	background: #036fa8;
+	transform: scale(1.1);
+}
+
+#side-bar-navigation-toggle i {
+	background: #036fa8;
+	border-radius: 100%;
+	height: 17px;
+	width: 18px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	margin-top: 0;
+	padding: 8px;
+}
+
+#side-bar-navigation-toggle i:hover {
+	background: #7fc14a;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#navigation-sidebar {
+	display: flex !important;
+	background: #fcfcfc;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 0;
+	flex-direction: column;
+	border-bottom: 1px inset #e3e0e0;
+	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 9%);
+	overflow: auto;
+	max-height: 600px;
+}
+
+#close-navigation-side {
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#apply-now-sidebar {
+	background: #7FC24A;
+	padding: 4px;
+	border-radius: 3px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: .8px;
+	text-align: center;
+	display: block;
+	max-width: 200px;
+margin: 0 auto 20px;
+}
+
+#apply-now-sidebar:hover {
+	background: #036fa8;
+}
+
+#prequal-now-sidebar {
+	display: none;
+}
+
+#navigation-sidebar .navigation-sidebar-sectional a h4 {
+	color: #555;
+	font-weight: 200;
+	height: 12px;
+	display: none;
+	margin: 0px 0 10px !important;
+}
+
+#navigation-sidebar .navigation-sidebar-sectional a h4 span {
+	display: none;
+}
+
+.navigation-sidebar-sectional ul li .option-listing ul li {
+	height: 35px;
+	padding: 0 18px;
+	min-width: 250px;
+}
+
+.navigation-sidebar-sectional ul li h4 a {
+	font-weight: 600;
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	display: block;
+	margin-bottom: -5px;
+	padding: 5px 15px;
+}
+
+.navigation-sidebar-sectional ul li h4 a:hover {
+	text-decoration: none;
+}
+
+.navigation-sidebar-sectional ul li .option-listing ul li a {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.navigation-sidebar-sectional ul li .option-listing ul li a:hover {
+	color: #036fa8;
+}
+
+.navigation-sidebar-sectional ul li .option-listing ul li .option-listing-go i {
+	display: none !important;
+}
+
 footer {
 	line-height: 35px;
 	background: #5f5f5f;
