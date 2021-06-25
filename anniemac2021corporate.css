@@ -1095,10 +1095,6 @@ display: none !important;
 	background-position-y: 78%;
 }
 
-#calculator-section h3 {
-	color: white;
-}
-
 #calculator-section button,
 #resource-section button {
 	font-size: 20px;
@@ -1190,8 +1186,10 @@ display: none !important;
 	background-position-y: 75%;
 }
 
-#resource-section h3 {
+#resource-section h3, #calculator-section h3 {
 	color: white;
+	font-weight: 500;
+	margin-bottom: 15px;
 }
 
 #resource-section h3:nth-of-type(2) {
