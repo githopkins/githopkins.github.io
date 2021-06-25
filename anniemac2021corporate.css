@@ -2888,45 +2888,45 @@ textarea#textarea-comments {
 }
 
 #ring1 .ring {
-	background-color: pink;
-  transform: rotate(173deg);
+	background-color: #076fa6;
+    transform: rotate(173deg);
 }
 
 
 #ring2 {
-	transform: rotate(0deg);
+	transform: rotate(120deg);
 }
 
 #ring2 .ring {
-	background-color: yellow;
-  transform: rotate(173deg)
+	background-color: #b71c1c;
+    transform: rotate(175deg);
 }
 
 #ring3 {
-	transform: rotate(0deg);
+	transform: rotate(145deg);
 }
 
 #ring3 .ring {
-	background-color: orange;
-  transform: rotate(173deg);
+	background-color: #5db118;
+    transform: rotate(195deg);
 }
 
 #ring4 {
-	transform: rotate(0deg);
+	transform: rotate(234deg);
 }
 
 #ring4 .ring {
-	background-color: green;
-  transform: rotate(173deg);
+	background-color: #603c9c;
+    transform: rotate(173deg);
 }
 
 #ring5 {
-	transform: rotate(0deg);
+	transform: rotate(228deg);
 }
 
 #ring5 .ring {
-	background-color: blue;
-  transform: rotate(173deg);
+	background-color: #a23a64;
+    transform: rotate(280deg);
 }
 
 .page-content-2021 {
