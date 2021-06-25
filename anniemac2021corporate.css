@@ -11,6 +11,7 @@
 	display: none;
 }
 
+/* Move the edit cog when logged in as an admin. */
 .editable-content .edit-group {
 	position: absolute;
 	right: 20px;
