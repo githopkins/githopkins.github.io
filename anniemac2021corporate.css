@@ -2844,7 +2844,7 @@ textarea#textarea-comments {
 	width: 100%;
 }
 	
-.donut-chart {
+.donut-matrix-ring {
 	position: relative;
 	width: 200px;
 	height: 200px;
@@ -2852,7 +2852,7 @@ textarea#textarea-comments {
 	border-radius: 100%
 }
 
-.donut-chart p.center {
+.donut-matrix-ring p.center {
 	background: #fff;
 	position: absolute;
 	text-align: center;
@@ -2874,7 +2874,7 @@ textarea#textarea-comments {
 	width: 100%;
 }
 
-.circle {
+.ring {
 	border-radius: 50%;
 	clip: rect(0px, 100px, 200px, 0px);
 	height: 100%;
@@ -2888,45 +2888,25 @@ textarea#textarea-comments {
 	transform: rotate(0deg);
 }
 
-#part1 .circle {
+#part1 .ring {
 	background-color: #a23a64;
-	/*transform: rotate(76deg);*/
-	/* animation: first 1s 1 forwards; */
 }
   
 #part2 {
 	transform: rotate(100deg);
 }
 
-#part2 .circle {
+#part2 .ring {
 	background-color: #38a272;
-	/* animation: second 1s 1 forwards 1s; */
 }
 
 #part3 {
 	transform: rotate(250deg);
 }
 
-#part3 .circle {
+#part3 .ring {
 	background-color: #541d9a;
-	/* animation: third 0.5s 1 forwards 2s; */
 }
-
-/* Animation */
-/* @keyframes first {
-from {transform: rotate(0deg);}
-to {transform: rotate(100deg);}
-}
-
-@keyframes second {
-from {transform: rotate(0deg);}
-to {transform: rotate(150deg);}
-}
-
-@keyframes third {
-from {transform: rotate(0deg);}
-to {transform: rotate(111deg);}
-} */
 
 .page-content-2021 h2 {
 	color: #076fa7;
