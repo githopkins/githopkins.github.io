@@ -171,7 +171,7 @@ body {
 	top: 0;
 	left: 0;
 	margin-left: 0;
-	width: 240px;
+	width: max-content;
 	z-index: 1;
 }
 
