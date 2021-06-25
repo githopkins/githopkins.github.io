@@ -289,13 +289,6 @@ footer {
 	color: #fff;
 	font-weight: 300;
 	padding: 40px 0 25px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-.front footer {
-	position: initial;
 }
 
 #copyrights ul:first-of-type li a {
