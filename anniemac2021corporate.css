@@ -2853,7 +2853,7 @@ textarea#textarea-comments {
 		border-radius: 100%
 	 }
 	p.center {
-	  background: #394264;
+	  background: transparent;
 	  position: absolute;
 	  text-align: center;
 	font-size: 28px;
