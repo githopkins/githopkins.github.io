@@ -169,7 +169,7 @@ body {
 	display: block;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -17px;
 	margin-left: 0;
 	width: max-content;
 	z-index: 1;
