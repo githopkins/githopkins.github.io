@@ -725,6 +725,7 @@ display: none !important;
 #learn-more-button-navigation:hover,
 #discover-perks:hover {
 	background: #036fa8 !important;
+	cursor: pointer;
 }
 
 #annie-mac-covid-container {
