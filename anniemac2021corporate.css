@@ -1361,6 +1361,7 @@ display: none !important;
 
 #annie-mac-2021-review-container button:hover {
 	background: #76ce31;
+	cursor: pointer;
 }
 
 /* Renovations Specific */
