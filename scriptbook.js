@@ -1,7 +1,7 @@
 // Last updated June 24, 2021
 
 $(function() {
-	$( ".inner-layout:contains('requested')" ).css( "min-height", "90vh" );
+	$( ".inner-layout:contains('the page you requested could not be found')" ).css( "min-height", "90vh" );
 	// Begin testing prototype site code scripts...
 	var testingsitetrue = ['prototype', 'www.annie-mac.com'];
 	for (i = 0; i < testingsitetrue.length; i++) {
