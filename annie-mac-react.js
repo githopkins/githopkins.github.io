@@ -28,11 +28,9 @@ class FirstTimeHomeBuyerGuide2 extends React.Component {
 }
 
 class App extends React.Component {
-	render(){
-	  <React.Fragment>
-		<FirstTimeHomeBuyerGuide />
-		<FirstTimeHomeBuyerGuide2 />
-	  </React.Fragment>
+	render() {
+		return FirstTimeHomeBuyerGuide
+		return FirstTimeHomeBuyerGuide2
 	}
 }
 
