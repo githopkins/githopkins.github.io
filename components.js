@@ -1,7 +1,7 @@
 'use strict';
 
 // Declaration of Components
-class FirstTimeHomeBuyerGuide extends React.Component {
+export default class FirstTimeHomeBuyerGuide extends React.Component {
 	render() {
 		return (
 			<div id="annie-mac-2021-content-container">
@@ -13,7 +13,7 @@ class FirstTimeHomeBuyerGuide extends React.Component {
 	}
 };
 
-class testingreact extends React.Component {
+export default class testingreact extends React.Component {
 	render() {
 		return (
 			<div id="understanding-scores" class="page-content-2021">
