@@ -15,7 +15,7 @@ class FirstTimeHomeBuyerGuide extends React.Component {
 	  }
 };
 
-class testingreact extends React.Component {
+class UnderstandingCreditScores extends React.Component {
 	render() {
 		return (
 			<div id="understanding-scores" class="page-content-2021">
@@ -101,7 +101,7 @@ if (window.location.href.indexOf("react-test") != -1) {
 };
 
 if (window.location.href.indexOf("testing-react") != -1) {
-	ReactDOM.render(e(testingreact), domContainer);
+	ReactDOM.render(e(UnderstandingCreditScores), domContainer);
 };
 
 $(function() {
