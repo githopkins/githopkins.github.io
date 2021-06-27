@@ -1,7 +1,7 @@
 'use strict';
 
 const e = React.createElement;
-const element = <h1>Hello, world</h1>;
+const element = '<h1>Hello, world</h1>';
 
 // class LikeButton extends React.Component {
 //   constructor(props) {
