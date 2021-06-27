@@ -1,4 +1,4 @@
-// Declaration of Componenets
+// Declaration of Components
 class FirstTimeHomeBuyerGuide extends React.Component {
 	render() {
 		return (
