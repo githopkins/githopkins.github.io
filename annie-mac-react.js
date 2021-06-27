@@ -2,20 +2,35 @@
 const domContainer = document.querySelector('#react-test');
 const e = React.createElement;
 
-class Car extends React.Component {
-	  render() {
-		return <h2>Hi, I am a Car!</h2>;
+// Declaration of Componenets
+class FirstTimeHomeBuyerGuide extends React.Component {
+	render() {
+		return (
+			<div id="annie-mac-2021-content-container">
+				<div class="annie-mac-2021-redesign-section" id="product-information-section">
+					<h2>First Time Home Buyer Guide</h2>
+				</div>
+			</div>
+		);
 	  }
-	}
-	
-ReactDOM.render(<Car />, document.getElementById('react-test'));
+};
 
-// if (window.location.href.indexOf("react-test") != -1) {
-// 	import FirstTimeHomeBuyerGuide from 'components.js'
-// 	ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
-// };
-// 
-// if (window.location.href.indexOf("testing-react") != -1) {
-// 	import testingreact from 'components'
-// 	ReactDOM.render(e(testingreact), domContainer);
-// };
+class testingreact extends React.Component {
+	render() {
+		return (
+			<div id="annie-mac-2021-content-container">
+				<div class="annie-mac-2021-redesign-section" id="product-information-section">
+					<h2>Just Testing React</h2>
+				</div>
+			</div>
+		);
+	  }
+};
+
+if (window.location.href.indexOf("react-test") != -1) {
+	ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
+};
+
+if (window.location.href.indexOf("testing-react") != -1) {
+	ReactDOM.render(e(testingreact), domContainer);
+};
