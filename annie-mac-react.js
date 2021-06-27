@@ -105,5 +105,5 @@ if (window.location.href.indexOf("testing-react") != -1) {
 };
 
 $(function() {
-	$("#understanding-scores > #annie-mac-2021-content-container > h2").text("Heei");
+	// $("#understanding-scores > #annie-mac-2021-content-container > h2").text("Heei");
 })
