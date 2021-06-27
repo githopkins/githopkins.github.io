@@ -3139,6 +3139,18 @@ textarea#textarea-comments {
 	border-bottom: none;
 }
 
+#credit-image {
+	background: url('https://annie-mac.com/uploads/sites/10713/public/credit_score.jpeg');
+	background-size: cover;
+	min-width: 580px;
+	min-height: 200px;
+	float: right; 
+	margin-top: 20px; 
+	margin-left: 30px; 
+	margin-bottom: 30px; 
+	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 9%);
+}
+
 #minimum-scores {
 	background: #7fc14a;
 	padding: 20px 30px;
