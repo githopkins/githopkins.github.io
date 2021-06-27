@@ -3,7 +3,7 @@ const domContainer = document.querySelector('#react-test');
 const e = React.createElement;
 
 // Declaration of Componenets
-class FirstTimeHomeBuyerGuide extends React.Component {
+class FirstTimeHomeBuyerGuideHeaderContent extends React.Component {
 	render() {
 		return (
 			<div id="annie-mac-2021-content-container">
@@ -13,7 +13,7 @@ class FirstTimeHomeBuyerGuide extends React.Component {
 	  }
 }
 
-class FirstTimeHomeBuyerGuide2 extends React.Component {
+class FirstTimeHomeBuyerGuideParagraphContent extends React.Component {
 	render() {
 		return (
 					<p>This should show.</p>
@@ -23,11 +23,11 @@ class FirstTimeHomeBuyerGuide2 extends React.Component {
 	  }
 }
 
-class App extends React.Component {
+class FirstTimeHomeBuyerGuide extends React.Component {
 	render() {
-		return FirstTimeHomeBuyerGuide
-		return FirstTimeHomeBuyerGuide2
+		return FirstTimeHomeBuyerGuideHeaderContent
+		return FirstTimeHomeBuyerGuideParagraphContent
 	}
 }
 
-ReactDOM.render(e(App), domContainer);
+ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
