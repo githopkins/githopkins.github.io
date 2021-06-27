@@ -20,7 +20,7 @@ class FirstTimeHomeBuyerGuide2 extends React.Component {
 		return (
 			<div id="annie-mac-2021-content-container">
 				<div class="annie-mac-2021-redesign-section" id="product-information-section">
-					<h2>First Time Home Buyer Guide 2</h2>
+					<p>This should show.</p>
 				</div>
 			</div>
 		);
