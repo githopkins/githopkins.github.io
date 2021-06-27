@@ -13,6 +13,8 @@ class FirstTimeHomeBuyerGuide extends React.Component {
 			</div>
 		);
 	  }
-}
+};
 
+if (window.location.href.indexOf("react-test") != -1) {
 ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
+};
