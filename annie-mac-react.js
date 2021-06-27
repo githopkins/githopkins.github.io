@@ -2,8 +2,8 @@
 const domContainer = document.querySelector('#react-test');
 const e = React.createElement;
 
-// Declaration of Components
-export default class FirstTimeHomeBuyerGuide extends React.Component {
+// Declaration of Componenets
+class FirstTimeHomeBuyerGuide extends React.Component {
 	render() {
 		return (
 			<div id="annie-mac-2021-content-container">
@@ -12,10 +12,10 @@ export default class FirstTimeHomeBuyerGuide extends React.Component {
 				</div>
 			</div>
 		);
-	}
+	  }
 };
 
-export default class testingreact extends React.Component {
+class testingreact extends React.Component {
 	render() {
 		return (
 			<div id="understanding-scores" class="page-content-2021">
@@ -93,8 +93,9 @@ export default class testingreact extends React.Component {
 			</div>
 		</div>
 		);
-	}
+	  }
 };
+
 if (window.location.href.indexOf("react-test") != -1) {
 	ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
 };
@@ -102,3 +103,7 @@ if (window.location.href.indexOf("react-test") != -1) {
 if (window.location.href.indexOf("testing-react") != -1) {
 	ReactDOM.render(e(testingreact), domContainer);
 };
+
+$(function() {
+	// $("#understanding-scores > #annie-mac-2021-content-container > h2").text("Heei");
+})
