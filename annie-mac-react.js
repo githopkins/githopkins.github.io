@@ -12,7 +12,7 @@ class FirstTimeHomeBuyerGuide extends React.Component {
 				</div>
 			</div>
 		);
-	  }
+	}
 };
 
 class testingreact extends React.Component {
@@ -24,13 +24,13 @@ class testingreact extends React.Component {
 				</div>
 			</div>
 		);
-	  }
+	}
 };
 
 if (window.location.href.indexOf("react-test") != -1) {
-ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
+	ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
 };
 
 if (window.location.href.indexOf("testing-react") != -1) {
 	ReactDOM.render(e(testingreact), domContainer);
-	};
+};
