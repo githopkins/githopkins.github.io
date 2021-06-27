@@ -11,7 +11,3 @@ if (window.location.href.indexOf("react-test") != -1) {
 if (window.location.href.indexOf("testing-react") != -1) {
 	ReactDOM.render(e(testingreact), domContainer);
 };
-
-$(function() {
-	$('#credit-image').prepend('<img src="https://annie-mac.com/uploads/sites/10713/public/credit_score.jpeg" />')
-})

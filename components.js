@@ -1,3 +1,5 @@
+'use strict';
+
 // Declaration of Components
 class FirstTimeHomeBuyerGuide extends React.Component {
 	render() {
