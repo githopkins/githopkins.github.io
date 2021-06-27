@@ -2,7 +2,7 @@
 const domContainer = document.querySelector('#react-test');
 const e = React.createElement;
 
-import {FirstTimeHomeBuyerGuide, testingreact} from 'components.js'
+import {FirstTimeHomeBuyerGuide, testingreact} from 'components'
 
 if (window.location.href.indexOf("react-test") != -1) {
 	ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
