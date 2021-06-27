@@ -26,5 +26,14 @@ class FirstTimeHomeBuyerGuide2 extends React.Component {
 		);
 	  }
 }
-ReactDOM.render(e(FirstTimeHomeBuyerGuide), domContainer);
-ReactDOM.render(e(FirstTimeHomeBuyerGuide2), domContainer);
+
+Class App extends Component {
+	render(){
+	  <React.Fragment>
+		<FirstTimeHomeBuyerGuide />
+		<FirstTimeHomeBuyerGuide2 />
+	  </React.Fragment>
+	}
+}
+
+ReactDOM.render(e(App), domContainer);
