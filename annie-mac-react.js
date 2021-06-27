@@ -27,7 +27,7 @@ class FirstTimeHomeBuyerGuide2 extends React.Component {
 	  }
 }
 
-Class App extends Component {
+class App extends React.Component {
 	render(){
 	  <React.Fragment>
 		<FirstTimeHomeBuyerGuide />
