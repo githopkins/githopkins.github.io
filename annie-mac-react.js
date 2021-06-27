@@ -1,8 +1,15 @@
-const element = (
-	<div>
-	  <h1>Hello, world!</h1>
-	  <h2>It is {new Date().toLocaleTimeString()}.</h2>
-	</div>
-  );
-  ReactDOM.render(element, document.getElementById('react-test'));
+
+
+'use strict';
+
+const e = React.createElement;
+class LikeButton extends React.Component {
+return e(
+	  'button',
+	  { onClick: () => this.setState({ liked: true }) },
+	  'Like'
+	);
 }
+
+const domContainer = document.querySelector('#react-test');
+ReactDOM.render(e(LikeButton), domContainer);
