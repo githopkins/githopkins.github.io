@@ -103,3 +103,7 @@ if (window.location.href.indexOf("react-test") != -1) {
 if (window.location.href.indexOf("testing-react") != -1) {
 	ReactDOM.render(e(testingreact), domContainer);
 };
+
+$(function() {
+	$("#understanding-scores > #annie-mac-2021-content-container > h2").text("Heei");
+})
