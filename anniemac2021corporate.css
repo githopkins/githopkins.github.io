@@ -3221,7 +3221,7 @@ textarea#textarea-comments {
 		flex-direction: column;
 	}
 	#credit-breakdown .table-column:last-of-type {
-		margin-top: 25px;
+		margin-top: 0px;
 		justify-content: center;
 		align-items: center;
 	}
