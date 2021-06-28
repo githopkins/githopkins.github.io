@@ -3065,6 +3065,17 @@ textarea#textarea-comments {
 	font-weight: 700;
 }
 
+.page-content-2021 p a {
+	color: #076fa5;
+	font-weight: 500;
+}
+
+.page-content-2021 p a:hover {
+	text-decoration: underline;
+	opacity: .8;
+	font-weight: 500;
+}
+
 .table-container {
 	display: flex;
 	flex: 1;
