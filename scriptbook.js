@@ -470,6 +470,7 @@ $(function() {
 			$("#loan-purpose-selection").attr('value', selectedLoanType);
 		});
 		$("#state-selection > option:nth-child(1)").attr('disabled','disabled');
+		$("#referred-selection > option:nth-child(1)").attr('disabled','disabled');
 		$(":input").on("keyup change", function(e) {
 			var selectedState = $("#state-selection").val();
 			$('input[name=state]').val(selectedState);
@@ -514,6 +515,7 @@ $(function() {
 			}
 		});
 		$("#state-selection > option:nth-child(1)").attr('disabled','disabled');
+		$("#referred-selection > option:nth-child(1)").attr('disabled','disabled');
 		$(":input").on("keyup change", function(e) {
 			var selectedState = $("#state-selection").val();
 			$('input[name=state]').val(selectedState);
