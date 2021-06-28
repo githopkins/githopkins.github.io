@@ -3165,6 +3165,7 @@ textarea#textarea-comments {
 	padding: 20px 30px;
 	box-shadow: 0px 2px 4px 2px rgb(45 55 72 / 9%);
 	order: -1;
+	max-height: 300px;
 }
 
 #minimum-scores h4, #minimum-scores p, #minimum-scores ul, #minimum-scores ul li strong a {
