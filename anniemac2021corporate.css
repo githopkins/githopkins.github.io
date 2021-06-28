@@ -3182,3 +3182,46 @@ textarea#textarea-comments {
 #minimum-scores ul li strong a {
 	font-weight: 800;
 }
+
+
+@media only screen and (max-width: 1040px) {
+	#navigation_new_upper > div:nth-child(2) > ul {
+		display: none;
+	}
+	.header-table-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.header-table-column:first-of-type {
+		width: 100%;
+		flex: 1;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	#minimum-scores {
+		order: 2;
+		width: 100%;
+	}
+	#credit-breakdown {
+		flex-direction: column;
+	}
+	#credit-breakdown .table-column:last-of-type {
+		order: -1;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	#credit-image img {
+		display: none;
+	}
+}
+@media only screen and (max-width: 920px) {
+	.table-container {
+		flex-direction: column;
+	}
+	.table-column:last-of-type {
+		margin-top: 25px;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
