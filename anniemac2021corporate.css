@@ -3222,7 +3222,7 @@ textarea#textarea-comments {
 	}
 	#credit-breakdown .table-column:last-of-type {
 		margin-top: 25px;
-		justify-content: flex-start;
-		align-items: flex-start;
+		justify-content: center;
+		align-items: center;
 	}
 }
