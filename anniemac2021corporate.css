@@ -3188,11 +3188,11 @@ textarea#textarea-comments {
 	#navigation_new_upper > div:nth-child(2) > ul {
 		display: none;
 	}
-	.header-table-container {
+	#credit-ending-comment .header-table-container {
 		display: flex;
 		flex-direction: column;
 	}
-	.header-table-column:first-of-type {
+	#credit-ending-comment .header-table-container:first-of-type {
 		width: 100%;
 		flex: 1;
 		margin-left: 0;
@@ -3216,10 +3216,10 @@ textarea#textarea-comments {
 	}
 }
 @media only screen and (max-width: 920px) {
-	.table-container {
+	#credit-ending-comment .table-container {
 		flex-direction: column;
 	}
-	.table-column:last-of-type {
+	#credit-breakdown .table-column:last-of-type {
 		margin-top: 25px;
 		justify-content: flex-start;
 		align-items: flex-start;
