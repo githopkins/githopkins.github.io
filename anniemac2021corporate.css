@@ -3217,6 +3217,15 @@ textarea#textarea-comments {
 	}
 }
 @media only screen and (max-width: 920px) {
+	#compare-pre {
+		flex-direction: column;
+	}
+	#compare-pre .table-column:last-of-type {
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex: 1;
+		margin-top: 10px;
+	}
 	#credit-ending-comment .table-container {
 		flex-direction: column;
 	}
