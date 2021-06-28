@@ -3188,11 +3188,11 @@ textarea#textarea-comments {
 	#navigation_new_upper > div:nth-child(2) > ul {
 		display: none;
 	}
-	#credit-ending-comment .header-table-container {
-		display: flex;
+	#credit-ending-comment {
 		flex-direction: column;
 	}
-	#credit-ending-comment .header-table-container:first-of-type {
+	#credit-ending-comment .header-table-column {
+		order: -1;
 		width: 100%;
 		flex: 1;
 		margin-left: 0;
