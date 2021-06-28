@@ -3217,6 +3217,9 @@ textarea#textarea-comments {
 	}
 }
 @media only screen and (max-width: 920px) {
+	.page-content-2021 h2 {
+		font-size: 38px;
+	}
 	#compare-pre {
 		flex-direction: column;
 	}
