@@ -2259,7 +2259,7 @@ form label {
 	margin: 40px 0;
 	}
 	
-	.media-body h3, .page-blog-list .block h3 {
+	.media-body h3 {
 	font-size: 22px;
 	font-weight: 400 !important;
 	max-height: 28px;
