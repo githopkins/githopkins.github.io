@@ -2077,6 +2077,7 @@ form label {
 /* Blog Styling */
 .page-blog-list #text-based, .page-blog-detail #text-based {
 	width: 98%;
+	padding: 50px 20px;
 	}
 	.page-blog-list header#product-banner, .page-blog-list footer {
 	display: none;
