@@ -176,7 +176,7 @@ body {
 	display: none;
 }
 
-.navigation-sectional:nth-of-type(2) ul li a:hover .sub-site-navigation {
+.navigation-sectional:nth-of-type(2) ul li:hover .sub-site-navigation {
 	display: block;
 	position: absolute;
 	top: 0;
