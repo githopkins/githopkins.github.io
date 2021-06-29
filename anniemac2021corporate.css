@@ -1256,14 +1256,14 @@ display: none !important;
 }
 
 #vacational-section-background-left {
-	flex: 1;
-	padding: 60px;
 	border-radius: 100%;
 	background: url('https://images.pexels.com/photos/4473315/pexels-photo-4473315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') top;
 	min-width: 285px;
 	margin-right: 65px;
 	background-size: cover;
 	box-shadow: 1px 1px 20px rgb(0 0 0 / 22%);
+	max-height: 290px;
+	max-width: 285px;
 }
 
 #annie-mac-review-now-section {
