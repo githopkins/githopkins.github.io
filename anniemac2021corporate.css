@@ -2094,6 +2094,10 @@ form label {
 		padding: 50px 20px;
 	}
 	
+	.blog-index .items {
+		margin-right: 40px;
+	}
+	
 	.page-blog-list .flex {
 		display: flex;
 	flex-direction: row;
