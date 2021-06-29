@@ -480,8 +480,9 @@ $(function() {
 			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
 			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
 			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
+			var additionalcomments = "They added the following message: " + $('input[name=additional-comments]').val() + ". "
 			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
-			$("#Production").val(producttype + " " + builderStatus + " " + lotstatus + " " + referredStatus);
+			$("#Production").val(additionalcomments);
 			var commentScruba = $('#Production').val();
 			if (commentScruba.indexOf(undefined) < 1) {
 				var productionsummary = $("#Production").val()
