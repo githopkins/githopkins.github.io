@@ -1305,7 +1305,7 @@ display: none !important;
 
 #annie-mac-2021-inner-review-container {
 	margin: -150px auto;
-	width: 710px;
+	max-width: 710px;
 	display: flex;
 	flex-direction: column;
 }
