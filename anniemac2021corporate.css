@@ -2271,6 +2271,7 @@ form label {
 	border-bottom: 1px solid rgb(0 0 0 / 10%);
 	padding-bottom: 12px;
 	font-weight:  600 !important;
+	color: #036fa8;
 	}
 	
 	.page-blog-list .media-body h3 a, .page-blog-detail .media-body h3 a {
