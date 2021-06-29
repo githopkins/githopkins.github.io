@@ -1293,8 +1293,7 @@ display: none !important;
 }
 
 #annie-mac-2021-review-container {
-	/* background: linear-gradient(rgb(255 255 255) 0%, rgb(255 255 255 / 77%) 41%, rgb(255 255 255 / 50%) 54%, rgb(28 77 119 / 92%) 92%, rgb(15, 71, 119) 100%), url(https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg) top center; */
-	background: linear-gradient(rgb(255 255 255) 0%, rgb(255 255 255 / 77%) 41%, rgb(255 255 255 / 50%) 61%, rgb(117 109 109 / 82%) 88%, rgb(95 95 95) 100%), url(https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg) top center;
+	background: linear-gradient(rgb(255 255 255) 0%, rgb(249 248 248) 31%, rgb(255 255 255 / 50%) 61%, rgb(117 109 109 / 82%) 88%, rgb(95 95 95) 100%), url(https://annie-mac.com/uploads/sites/10713/public/review-happy-family.jpeg) top center;
 	height: 690px;
 	background-size: 100%;
 	padding-top: 125px;
