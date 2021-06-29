@@ -456,6 +456,54 @@ $(function() {
 		$("#download-id-2").attr("href", "https://annie-mac.com/getmore-kelsey");
 		$("#booking-id").attr("href", "https://outlook.office365.com/owa/calendar/bk_krauchut@annie-mac.com/bookings/");
 	};
+	// Contact Us
+	if (window.location.href.indexOf("/contact-us") != -1) {
+		$("input[type='tel']").on("keyup", function() {
+			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
+				val = this.value;
+			if (valid) {
+				$('#submit-overlayment').hide();
+			}
+		});
+		$("#state-selection > option:nth-child(1)").attr('disabled','disabled');
+		$("#state-selection").attr('required','true');
+		$("#referred-selection > option:nth-child(1)").attr('disabled','disabled');
+		$("#referred-selection").attr('required','true');
+		$(":input").on("keyup change", function(e) {
+			var selectedState = $("#state-selection").val();
+			$('input[name=state]').val(selectedState);
+			var referred = $("#referred-selection").val();
+			$('input[name=referred]').val(referred);
+			var windowurl = window.location.href
+			var windowurlmessage = "Summary: This lead was captured at " + windowurl
+			var nameinput = " Borrower Informaton: The borrower's name is " + $('input[name=name]').val() + ". "
+			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
+			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
+			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
+			var producttype = "The product type is " + $('input[name="product-type"]:checked').val() + ". "
+			var builderStatus = "The builder status is " + $('input[name="builder-status"]:checked').val() + ". "
+			var lotstatus = "The lot status is " + $('input[name="lot-status"]:checked').val() + ". "
+			var referredStatus = "The borrower was referred to us by: " + $('input[name="referred"]').val() + "."
+			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
+			$("#Production").val(producttype + " " + builderStatus + " " + lotstatus + " " + referredStatus);
+			var commentScruba = $('#Production').val();
+			if (commentScruba.indexOf(undefined) < 1) {
+				var productionsummary = $("#Production").val()
+			}
+			var commentScrubb = $('#Personals').val();
+			if (commentScrubb.indexOf("is .") < 1) {
+				var personalsummary = $("#Personals").val()
+			}
+			$("#Comments").attr('value', personalsummary + " " + productionsummary);
+		});
+		$('#submit-form').click(function(){
+			$( window ).scrollTop( 30 );
+			$("#construction-lead-capture-section").fadeOut(2500);
+			setTimeout(function(){
+			   window.location.href='./lead-sent';
+			  } ,2750);
+		});
+	};
 	// Renovation and Construction
 	if (window.location.href.indexOf("/renovation-start") != -1) {
 		$("input[type='tel']").on("keyup", function() {
