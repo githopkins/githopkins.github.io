@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1400px) {
+  #annie-mac-2021-header-background-right {
+	display: none;
+  }
+  #annie-mac-2021-product-option-grid-row-1 {
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-shadow: none;
+	background: transparent;
+	width: 100%;
+	justify-content: space-between;
+  }
+  #annie-mac-2021-product-option-grid-row-1 > * {
+	flex: 1;
+	margin: 5px 0;
+	min-width: 40%;
+  }
+  #conventional-2021, #fha-2021, #veteran-2021, #rural-2021 {
+	border-radius: 4px;
+	box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+  }
+  #conventional-2021, #rural-2021 {
+	margin-right: 10px;
+  }
+  #fha-2021, #veteran-2021 {
+	margin-left: 10px;
+  }
+  #annie-mac-2021-product-option-grid-row-2 {
+	flex-direction: column;
+	box-shadow: none;
+	background: none;
+	width: 100%;
+  }
+  #annie-mac-2021-product-option-grid-row-2 > * {
+	flex: 1;
+	min-width: 100%;
+	margin: 10px 0;
+  }
+  #refinance-2021, #reno-2021, #construct-2021 {
+	  border-radius: 4px;
+	  height: 100%;
+	  box-shadow: 1px 7px 11px rgb(0 0 0 / 19%);
+	}
+}
+  @media only screen and (max-width: 985px) {
+  #annie-mac-2021-review-container {
+	background-position-y: 140%;
+  }
+  #calculator-section button, #resource-section button {
+	max-width: 300px;
+  }
+  #annie-mac-review-now-section {
+	margin-top: 0;
+  }
+  #declaration-reviews {
+	padding-top: 0;
+	margin-top: 100px;
+  }
+  #vacational-section {
+	flex-direction: column;
+  }
+  #vacational-section-background-left {
+	min-height: 290px;
+	  margin: 0 auto 50px;
+  }
+}
