@@ -2088,6 +2088,7 @@ form label {
 	}
 	
 	.page-blog-list .flex {
+		display: flex;
 	flex-direction: row;
 	}
 	
