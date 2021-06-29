@@ -552,6 +552,7 @@ display: none !important;
 
 #annie-mac-2021-content-container {
 	box-sizing: border-box;
+	width: auto;
 	overflow-x: hidden;
 }
 
