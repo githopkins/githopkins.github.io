@@ -2088,6 +2088,12 @@ form label {
 	text-decoration: none !important;
 	}
 	
+	.blog-index {
+		display: flex;
+		width: 98%;
+		padding: 50px 20px;
+	}
+	
 	.page-blog-list .flex {
 		display: flex;
 	flex-direction: row;
