@@ -2173,11 +2173,7 @@ form label {
 	#ghost-spot {
 		display: none;
 	}
-
-	#resource-section {
-		padding: 46px;
-	}
-
+	
 	#master-compare-container {
 		display: flex;
 		margin: 50px 0;
