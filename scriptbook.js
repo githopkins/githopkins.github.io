@@ -480,10 +480,6 @@ $(function() {
 			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
 			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
 			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
-			var producttype = "The product type is " + $('input[name="product-type"]:checked').val() + ". "
-			var builderStatus = "The builder status is " + $('input[name="builder-status"]:checked').val() + ". "
-			var lotstatus = "The lot status is " + $('input[name="lot-status"]:checked').val() + ". "
-			var referredStatus = "The borrower was referred to us by: " + $('input[name="referred"]').val() + "."
 			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
 			$("#Production").val(producttype + " " + builderStatus + " " + lotstatus + " " + referredStatus);
 			var commentScruba = $('#Production').val();
