@@ -2080,7 +2080,14 @@ form label {
 	padding: 50px 20px;
 	}
 
-	
+	.page-blog-list #product-banner h2 {
+		color: #7fc14a;
+		font-weight: 800;
+		font-size: 50px;
+		text-align: center;
+		margin: 50px 0 -60px;
+		text-transform: capitalize;
+	}
 	.page-blog-list a:hover {
 	color: #076fa7;
 	text-decoration: none !important;
