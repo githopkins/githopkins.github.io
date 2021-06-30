@@ -228,6 +228,13 @@ $(function() {
 	if ($('.team-member-section > .team-member').length < 1) {
 		$("#team-display > h3:nth-child(3)").hide();
 	};
+	// Hide team members if no team members are present on team page.
+	if ($('body').hasClass('site-type-team')) {
+		if ($('.team-member-section > .team-member').length < 1) {
+			$("body > div.main-content > h3").remove();
+			$('.team-member-section').remove();
+		};
+	};
 	// For new pages and the blog, remove old stylesheets and add the new 2021 stylesheet.
 	if ((window.location.href.indexOf("credit-score-basics") != -1) || (window.location.href.indexOf("blog") != -1) || (window.location.href.indexOf("prequal-vs-preapproval") != -1)) {
 		$('head').append('<link rel="stylesheet" href="https://githopkins.github.io/anniemac2021corporate.css" type="text/css" />');
