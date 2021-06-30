@@ -2366,7 +2366,7 @@ summary {
 
 .google-plus,
 .pinterest {
-	display: none;
+	display: none !important;
 }
 
 @media only screen and (max-width: 1483px) {
