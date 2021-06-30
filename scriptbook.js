@@ -132,6 +132,7 @@ $(function() {
 		$('#list_11409').addClass('hide');
 		var loanoriginatorname = document.querySelector("#footer-branchlo-name").innerText;
 		var loanoriginatornmls = document.querySelector("#footer-nmls").innerText;
+		loanoriginatornmls = loanoriginatornmls.replace(/[NMLS # ]/g, '');
 		var dropbanner = '<div id="inserted-banner"><div class="container-section"><h3>' + loanoriginatorname + '<span>' + loanoriginatornmls + '</span></h3><div id="button-container-home" class="container-section"><a href="/testimonial">Testimonials</a><div id="mobile-apply"><a href="/loan/apply" id="loan-officer-header-apply">Apply Now</a></div><div id="mobile-call"><a href="tel:' + loanoriginatornumber + '" id="loan-officer-header-call">Call Now</a></div></div></div></div>';
 		if (window.location.href.indexOf("annie-mac.com") > -1) {
 			$(dropbanner).insertBefore( $( "#annie_mac-loan-officer" ) );
