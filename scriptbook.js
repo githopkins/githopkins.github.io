@@ -525,18 +525,12 @@ $(function() {
 			var borrowerLocation = "The borrower is from " + $('input[name=state]').val() + ". "
 			var emailaddress = "Their email address is " + $('input[name=email-address]').val() + ". "
 			var phonenumber = "Their phone number is " + $('input[name=phone-number]').val() + ". "
-			var additionalcomments = "They added the following message: " + $('textarea[name=additional-comments]').val() + ". "
 			$("#Personals").val(windowurlmessage + " " + nameinput + " " + borrowerLocation + " " + emailaddress + " " + phonenumber);
-			$("#Production").val(additionalcomments);
-			var commentScruba = $('#Production').val();
-			if (commentScruba.indexOf(undefined) < 1) {
-				var productionsummary = $("#Production").val()
-			}
 			var commentScrubb = $('#Personals').val();
 			if (commentScrubb.indexOf("is .") < 1) {
 				var personalsummary = $("#Personals").val()
 			}
-			$("#Comments").attr('value', personalsummary + " " + productionsummary);
+			$("#Comments").attr('value', personalsummary);
 		});
 		$('#submit-form').click(function(){
 			$( window ).scrollTop( 30 );
