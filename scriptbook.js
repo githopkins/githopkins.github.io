@@ -238,6 +238,14 @@ $(function() {
 			$("head > link:nth-child(39)").remove();
 			$("head > link:nth-child(38)").remove();
 			$("head > link:nth-child(37)").remove();
+		} else if ($('body').hasClass('site-type-branch')){
+				$("head > link:nth-child(42)").remove();
+				$("head > link:nth-child(41)").remove();
+				$("head > link:nth-child(40)").remove();
+				$("head > link:nth-child(39)").remove();
+				$("head > link:nth-child(38)").remove();
+				$("head > link:nth-child(37)").remove();
+			}
 		} else {
 			$("head > link:nth-child(37)").remove();
 			$("head > link:nth-child(36)").remove();
@@ -245,7 +253,6 @@ $(function() {
 			$("head > link:nth-child(34)").remove();
 			$("head > link:nth-child(33)").remove();
 			$("head > link:nth-child(32)").remove();
-		};
 	};
 	// BEGIN BDM PAGES
 	// ALL BDM PAGES
