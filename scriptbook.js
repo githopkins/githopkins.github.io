@@ -231,12 +231,21 @@ $(function() {
 	// For new pages and the blog, remove old stylesheets and add the new 2021 stylesheet.
 	if ((window.location.href.indexOf("credit-score-basics") != -1) || (window.location.href.indexOf("blog") != -1) || (window.location.href.indexOf("prequal-vs-preapproval") != -1)) {
 		$('head').append('<link rel="stylesheet" href="https://githopkins.github.io/anniemac2021corporate.css" type="text/css" />');
-		// $("head > link:nth-child(37)").remove();
-		// $("head > link:nth-child(36)").remove();
-		// $("head > link:nth-child(35)").remove();
-		// $("head > link:nth-child(34)").remove();
-		// $("head > link:nth-child(33)").remove();
-		// $("head > link:nth-child(32)").remove();
+		if ($('body').hasClass('site-type-loan_officer')) {
+			$("head > link:nth-child(42)").remove();
+			$("head > link:nth-child(41)").remove();
+			$("head > link:nth-child(40)").remove();
+			$("head > link:nth-child(39)").remove();
+			$("head > link:nth-child(38)").remove();
+			$("head > link:nth-child(37)").remove();
+		} else {
+			$("head > link:nth-child(37)").remove();
+			$("head > link:nth-child(36)").remove();
+			$("head > link:nth-child(35)").remove();
+			$("head > link:nth-child(34)").remove();
+			$("head > link:nth-child(33)").remove();
+			$("head > link:nth-child(32)").remove();
+		};
 	};
 	// BEGIN BDM PAGES
 	// ALL BDM PAGES
