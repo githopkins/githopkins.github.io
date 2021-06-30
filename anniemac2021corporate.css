@@ -3226,7 +3226,8 @@ textarea#textarea-comments {
 
 .page-content-2021 p strong,
 .page-content-2021 ul li strong {
-	font-weight: 500;
+	font-weight: 700;
+	color: #7FC24A;
 }
 
 .page-content-2021 p strong a,
