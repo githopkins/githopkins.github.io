@@ -217,10 +217,6 @@ ul.menu.nav {
     border-radius: 100%;
     width: 210px;
 }
-#team-site .branch-manager-section .manager-information {
-  margin: 20px 0 !important;
-  width: initial !important;
-}
 select {
     text-transform: none;
     font-weight: normal;
@@ -285,7 +281,10 @@ select {
     margin: 20px 0 !important;
     width: 25% !important;
 }
-
+#team-site .branch-manager-section .manager-information {
+  margin: 20px 0 !important;
+  width: initial !important;
+}
 .manager-information .team-member-information {
     width: auto !important;
 }
