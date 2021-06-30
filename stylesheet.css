@@ -13,7 +13,9 @@
   align-items: center;
   transition: background .75s;
 }
-
+form button, .message-contents button, .go {
+  display: block;
+}
 #submit-overlay {
   position: relative;
 }
