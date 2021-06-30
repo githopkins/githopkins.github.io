@@ -757,6 +757,5 @@ $(function() {
 		$("head > link:nth-child(34)").remove();
 		$("head > link:nth-child(33)").remove();
 		$("head > link:nth-child(32)").remove();
-		$("head > link:nth-child(31)").remove();
 	};
 })
