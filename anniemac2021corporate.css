@@ -116,10 +116,10 @@ body {
 #site-navigation {
 	background: #fcfcfc;
 	color: #333;
-	height: 55px;
+	height: 62px;
 	border-bottom: 1px inset #e3e0e0;
 	box-shadow: 0px 2px 4px -1px rgb(45 55 72 / 9%);
-	padding: 0 20px;
+	padding: 1px 20px;
 	font-size: 17px;
 }
 
