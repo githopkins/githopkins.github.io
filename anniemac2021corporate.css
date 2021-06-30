@@ -435,7 +435,7 @@ footer #sitemap ul li ul {
 	visibility: hidden;
 }
 
-footer ul li {
+footer ul li, .footer-directory-listing p {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
