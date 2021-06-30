@@ -3278,6 +3278,10 @@ textarea#textarea-comments {
 	list-style: inside;
 }
 
+.table-column ul li {
+	line-height: 30px;
+}
+
 .adjusted-line-height {
 	line-height: 33px;
 }
