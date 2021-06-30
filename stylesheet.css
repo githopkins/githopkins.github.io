@@ -219,7 +219,7 @@ ul.menu.nav {
 }
 #team-site .branch-manager-section .manager-information {
   margin: 20px 0 !important;
-  width: initial;
+  width: initial !important;
 }
 select {
     text-transform: none;
