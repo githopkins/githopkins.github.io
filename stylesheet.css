@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* AnnieMac Stylesheet Document - Updated June 29 2021 */
-#submit-overlayment {
+#form-final-block #submit-overlayment {
   position: absolute;
   width: 100%;
-  min-height: 150px;
+  min-height: 110px;
   top: 0;
   left: 0;
   z-index: 100;
