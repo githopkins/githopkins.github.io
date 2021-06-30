@@ -228,6 +228,16 @@ $(function() {
 		$("#team-display > h3:nth-child(3)").hide();
 	};
 	// BEGIN BDM PAGES
+	ALL BDM PAGES
+	if (window.location.href.indexOf("/get-elevated") != -1) {
+		$("input[type='tel']").on("keyup", function() {
+			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
+			val = this.value;
+			if (valid) {
+				$('#submit-overlayment').hide();
+			}
+		});
+	};
 	// Jessica Helwig
 	if (window.location.href.indexOf("/get-elevated?r=jessica") != -1) {
 		$("#bdm-avatar").css('background', 'url("https://annie-mac.wmmortgageware.com/uploads/sites/10713/public/jessicahelwig.jpeg")');
