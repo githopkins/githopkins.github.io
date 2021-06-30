@@ -236,7 +236,7 @@ $(function() {
 		$("head > link:nth-child(35)").remove();
 		$("head > link:nth-child(34)").remove();
 		$("head > link:nth-child(33)").remove();
-		$("head > link:nth-child(32)").remove();
+		// $("head > link:nth-child(32)").remove();
 	};
 	// BEGIN BDM PAGES
 	// ALL BDM PAGES
