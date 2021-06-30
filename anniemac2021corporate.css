@@ -2079,7 +2079,9 @@ form label {
 	width: 98%;
 	padding: 50px 20px;
 	}
-
+.page-blog-list #product-banner {
+	display: block;
+}
 	.page-blog-list #product-banner h2 {
 		color: #7fc14a;
 		font-weight: 800;
