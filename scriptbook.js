@@ -228,7 +228,7 @@ $(function() {
 		$("#team-display > h3:nth-child(3)").hide();
 	};
 	// BEGIN BDM PAGES
-	ALL BDM PAGES
+	// ALL BDM PAGES
 	if ((window.location.href.indexOf("get-elevated") != -1) || (window.location.href.indexOf("elevate-career") != -1) || (window.location.href.indexOf("elevate-branch-2") != -1) || (window.location.href.indexOf("page/kelsey") != -1)) {
 		$("input[type='tel']").on("keyup", function() {
 			var valid = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/.test(this.value),
