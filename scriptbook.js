@@ -749,7 +749,7 @@ $(function() {
 		$("#product-type-conventional").removeAttr('checked');
 		$("#product-type-fha").removeAttr('checked');
 	});
-	if (window.location.href.indexOf("credit-score-basics") != -1) {
+	if ((window.location.href.indexOf("credit-score-basics") != -1) || (window.location.href.indexOf("prequal-vs-preapproval") != -1)) {
 		$('head').append('<link rel="stylesheet" href="https://githopkins.github.io/anniemac2021corporate.css" type="text/css" />');
 		$("head > link:nth-child(37)").remove();
 		$("head > link:nth-child(36)").remove();
