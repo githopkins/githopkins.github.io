@@ -2082,11 +2082,11 @@ form label {
 	padding: 50px 20px;
 }
 
-.page-blog-list #product-banner {
+.page-blog-detail #product-banner {
 	display: block;
 }
 
-.page-blog-list #product-banner h2 {
+.page-blog-detail #product-banner h2 {
 	color: #7fc14a;
 	font-weight: 800;
 	font-size: 50px;
