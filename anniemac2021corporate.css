@@ -2079,9 +2079,7 @@ form label {
 	width: 98%;
 	padding: 50px 20px;
 	}
-	.page-blog-list header#product-banner, .page-blog-list footer {
-	display: none;
-	}
+
 	
 	.page-blog-list a:hover {
 	color: #076fa7;
