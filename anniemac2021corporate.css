@@ -3561,13 +3561,16 @@ textarea#textarea-comments {
 }
 
 #branch-banner {
-	background: linear-gradient(
-177deg
-, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
+	background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
 	max-height: 450px !important;
 	background-position-y: 68% !important;
 	background-size: 101% !important;
 	text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
+	min-height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
 }
 
 #branch-content {
@@ -3584,4 +3587,22 @@ textarea#textarea-comments {
 	margin: 15px 0;
 	font-size: .9rem;
 	letter-spacing: 0.073em;
+}
+
+#branch-content a {
+	color: #fff;
+}
+
+#branch-content button {
+	background: #036fa8;
+	padding: 15px 30px;
+	border-radius: 3px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: .8px;
+	text-align: center;
+	border: none;
+	outline: none;
+	margin: 20px 0;
 }
