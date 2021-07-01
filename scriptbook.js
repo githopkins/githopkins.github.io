@@ -11,6 +11,7 @@ $(function() {
 			$('#covid-warning').remove();
 			$('#home-deserve').remove();
 			$('#home-reviews').remove();
+			$('perks-home').remove();
 			if ($('body').hasClass('site-type-branch')) {
 				$('.front #branch-steps').remove();
 				$('#branch-overlay').remove();
@@ -20,6 +21,11 @@ $(function() {
 				$( ".team-member-section" ).appendTo( $( "#annie-mac-2021-content-container" ) );
 				$( "#team-display" ).appendTo( $( ".team-member-section" ) );
 			};
+			$('*').contents().each(function() {
+				if(this.nodeType === Node.COMMENT_NODE) {
+					$(this).remove();
+				}
+			});
 		};
 	};
 	
