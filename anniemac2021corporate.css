@@ -338,7 +338,7 @@ body {
 	display: none !important;
 }
 
-#inserted-banner {
+/* #inserted-banner {
 	height: 350px;
 	background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url('https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg') top left no-repeat;
 	display: flex;
@@ -363,6 +363,10 @@ body {
 	font-weight: 200;
 	font-size: 18px;
 	margin: 5px 0 40px;
+} */
+
+#inserted-banner {
+	display: none;
 }
 
 #button-container-home a:first-of-type {
