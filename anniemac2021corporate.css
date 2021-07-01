@@ -1265,7 +1265,7 @@ footer ul li,
 }
 
 #vacational-section-background-left {
-	border-radius: 100%;
+	border-radius: 2%;
 	background: url('https://images.pexels.com/photos/4473315/pexels-photo-4473315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') top;
 	min-width: 285px;
 	margin-right: 65px;
@@ -3740,7 +3740,7 @@ textarea#textarea-comments {
 	height: 250px;
 	width: 250px;
 	margin: 0 auto;
-	border-radius: 100%;
+	border-radius: 2%;
 	margin: 20px auto 40px!important;
 }
 
