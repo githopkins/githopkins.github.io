@@ -3595,6 +3595,13 @@ textarea#textarea-comments {
 	letter-spacing: 0.073em;
 }
 
+#branch-content h5 {
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 30px;
+	margin-top: 8px;
+}
+
 #branch-content a {
 	color: #fff;
 }
