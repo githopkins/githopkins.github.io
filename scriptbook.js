@@ -2,13 +2,15 @@
 
 $(function() {
 	$( ".inner-layout:contains('the page you requested could not be found')" ).css( "min-height", "90vh" );
-	window.location.href='./get-more-thanks?r=jeanna';
 	// Begin testing prototype site code scripts...
 	if (window.location.href.indexOf("prototype") != -1) {
 		$("body").addClass("testingsite-true");
 		if ($('body').hasClass('testingsite-true')) {
 			$('.manager-biography iframe').remove();
 			$('#accolades-originator').remove();
+			if (".inner-layout:contains('the page you requested could not be found')") {
+				window.location.href='./?redirect=404';
+				}
 			// alert("Testing site true added to body class.");
 		};
 	};
