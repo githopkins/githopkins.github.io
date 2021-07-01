@@ -3691,6 +3691,12 @@ textarea#textarea-comments {
 	text-align: center;
 }
 
+.team-member-information h5:first-of-type {
+	font-weight: 500;
+	margin: 5px;
+	font-size: 20px;
+}
+
 .team-member-information h5 {
 	line-height: 15px;
 	font-weight: 300;
