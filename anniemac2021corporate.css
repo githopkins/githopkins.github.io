@@ -3538,7 +3538,7 @@ textarea#textarea-comments {
 }
 
 @media only screen and (max-width: 1090px) {
-	li#list_12564 {
+	.navigation-sectional li#list_12564 {
 		opacity: 0;
 	}
 }
