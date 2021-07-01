@@ -14,7 +14,6 @@ $(function() {
 				$('#branch-overlay').remove();
 				$("#branch-welcome h3").remove();
 				$('<p>We believe you deserve more from the mortgage industry.</p><p>We believe in the need for live, human interaction during a complex process. The kind of service and guidance which an app simply can’t provide. We believe paperwork cannot tell your whole story.</p><p>Our customers are more than credit scores and income documents. They are the individuals and families who live in and strengthen our communities.</p>').insertBefore( $( "#branch-content h5" ) );
-				$("#deserve-more-container-master").remove();
 			};
 		};
 	};
