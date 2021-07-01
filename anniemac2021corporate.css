@@ -3736,7 +3736,7 @@ textarea#textarea-comments {
 	margin: 5px auto !important;
 	min-width: 240px;
 	background: #8c8c8c;
-	padding: 12px 20px;
+	padding: 15px 25px;
 	border-radius: 3px;
 	color: white;
 	font-weight: 600;
@@ -3747,4 +3747,9 @@ textarea#textarea-comments {
 
 .team-member button:first-of-type {
 	background: #7FC24A;
+}
+
+.team-member button:hover {
+	background: #076fa6;
+	cursor: pointer;
 }
