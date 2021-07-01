@@ -3709,7 +3709,6 @@ textarea#textarea-comments {
 }
 
 .team-member, .manager-information {
-	min-width: 400px;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -3719,5 +3718,11 @@ textarea#textarea-comments {
 .team-member-information {
 	display: flex;
 	flex-direction: column;
-	background: red;
+}
+
+.team-member-portrait {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 100%;
 }
