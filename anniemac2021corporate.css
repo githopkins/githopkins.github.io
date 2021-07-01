@@ -3654,3 +3654,14 @@ textarea#textarea-comments {
 .branch-media-links {
 	display: none;
 }
+
+.team-member-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-member-section .team-member {
+	order: 2;
+}
