@@ -3721,6 +3721,10 @@ textarea#textarea-comments {
 .team-member-information {
 	display: flex;
 	flex-direction: column;
+	background: #fbf9f9;
+	padding: 40px 60px 50px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
 }
 
 .team-member-portrait {
@@ -3728,12 +3732,10 @@ textarea#textarea-comments {
 	width: 250px;
 	margin: 0 auto;
 	border-radius: 100%;
-	box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
-	border: 1px solid rgba(0,0,0,.1);
 	margin: 20px auto 40px!important;
 }
 
-#annie-mac-2021-content-container .team-member button {
+#annie-mac-2021-content-container .team-member-information button {
 	margin: 5px auto !important;
 	min-width: 240px;
 	background: #8c8c8c;
@@ -3746,11 +3748,11 @@ textarea#textarea-comments {
 	text-align: center;
 }
 
-#annie-mac-2021-content-container .team-member button:first-of-type {
+#annie-mac-2021-content-container .team-member-information button:first-of-type {
 	background: #7FC24A;
 }
 
-#annie-mac-2021-content-container .team-member button:hover {
+#annie-mac-2021-content-container .team-member-information button:hover {
 	background: #076fa6;
 	cursor: pointer;
 }
