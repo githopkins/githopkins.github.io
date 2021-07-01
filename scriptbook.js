@@ -8,6 +8,7 @@ $(function() {
 		if ($('body').hasClass('testingsite-true')) {
 			$('.manager-biography iframe').remove();
 			$('#accolades-originator').remove();
+			$('#covid-warning').remove();
 			// alert("Testing site true added to body class.");
 		};
 	};
