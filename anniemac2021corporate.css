@@ -3703,3 +3703,21 @@ textarea#textarea-comments {
 .team-member-section #team-display {
 	order: -1;
 }
+
+#branch-managers {
+	margin-bottom: 80px;
+}
+
+.team-member, .manager-information {
+	min-width: 400px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex: 1;
+}
+
+.team-member-information {
+	display: flex;
+	flex-direction: column;
+	background: red;
+}
