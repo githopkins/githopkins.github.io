@@ -3489,6 +3489,10 @@ textarea#textarea-comments {
 }
 
 @media only screen and (max-width: 920px) {
+	.navigation-sectional:nth-of-type(1) li a img {
+		max-width: 230px;
+	}
+	
 	.page-content-2021 h2 {
 		font-size: 38px;
 	}
@@ -3530,5 +3534,11 @@ textarea#textarea-comments {
 
 	.ring {
 		clip: rect(0px, 350px, 350px, 0px);
+	}
+}
+
+@media only screen and (max-width: 1090px) {
+	li#list_12564 {
+		opacity: 0;
 	}
 }
