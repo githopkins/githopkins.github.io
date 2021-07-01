@@ -3765,12 +3765,3 @@ textarea#textarea-comments {
 	background: #076fa6;
 	cursor: pointer;
 }
-
-.site-type-loan_officer .main-content {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.site-type-loan_officer footer {
-	width: 100%;
-}
