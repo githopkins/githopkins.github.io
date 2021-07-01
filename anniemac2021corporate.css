@@ -3610,6 +3610,10 @@ align-self: center;
   opacity: .8;
 }
 
+#branch-content h5 {
+	margin: 30px 0 0px;
+}
+
 #branch-content h5 a {
   color: #444;
   opacity: .6;
