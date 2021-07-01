@@ -3657,11 +3657,41 @@ textarea#textarea-comments {
 
 .team-member-section {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .team-member-section .team-member {
 	order: 2;
+}
+
+.team-member-section h3 {
+	text-align: center;
+	color: #7fc14a;
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 57px;
+	padding-bottom: 30px;
+	flex: 1;
+	min-width: 100%;
+}
+
+.team-member-information h4 {
+	margin: 25px 0 12px;
+	color: #076fa6;
+	font-weight: 400;
+	font-size: 25px;
+	margin-top: 0px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.team-member-information h5 {
+	line-height: 15px;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #444;
 }
