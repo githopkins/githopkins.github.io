@@ -3725,5 +3725,7 @@ textarea#textarea-comments {
 	width: 250px;
 	margin: 0 auto;
 	border-radius: 100%;
-	box-shadow: 1px 1px 20px rgb(0 0 0 / 22%);
+	box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
+	border: 1px solid rgba(0,0,0,.1);
+	margin: 20px 0 40px!important;
 }
