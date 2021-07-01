@@ -3658,9 +3658,11 @@ textarea#textarea-comments {
 .team-member-section {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 0 90px;
+	width: 100vw;
+	box-sizing: border-box;
 }
 
 .team-member-section .team-member {
@@ -3668,7 +3670,7 @@ textarea#textarea-comments {
 }
 
 .team-member-section h3 {
-	text-align: center;
+	text-align: left;
 	color: #7fc14a;
 	font-size: 42px;
 	font-weight: 500;
@@ -3712,17 +3714,16 @@ textarea#textarea-comments {
 }
 
 .team-member, .manager-information {
-	justify-content: center;
+	margin: 15px;
 	align-items: center;
 	display: flex;
-	flex: 1;
 }
 
 .team-member-information {
 	display: flex;
 	flex-direction: column;
 	background: #fbf9f9;
-	padding: 40px 60px 50px;
+	padding: 40px 47px 50px;
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
 }
