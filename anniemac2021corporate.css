@@ -2781,6 +2781,10 @@ background: #7FC24A;
 	h4 {
 		font-size: 22px;
 	}
+	
+	.navigation-sectional:last-of-type {
+		display: none;
+	}
 
 	#reno-logo {
 		width: 325px;
