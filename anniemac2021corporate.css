@@ -3769,3 +3769,8 @@ textarea#textarea-comments {
 #loan-originator-backdrop, #inserted-banner {
 	display: none;
 }
+
+#originator #biography {
+	display: flex;
+	flex-wrap: wrap;
+}
