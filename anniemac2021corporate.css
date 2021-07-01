@@ -3732,7 +3732,7 @@ textarea#textarea-comments {
 	margin: 20px auto 40px!important;
 }
 
-.team-member button {
+#annie-mac-2021-content-container .team-member button {
 	margin: 5px auto !important;
 	min-width: 240px;
 	background: #8c8c8c;
@@ -3745,11 +3745,11 @@ textarea#textarea-comments {
 	text-align: center;
 }
 
-.team-member button:first-of-type {
+#annie-mac-2021-content-container .team-member button:first-of-type {
 	background: #7FC24A;
 }
 
-.team-member button:hover {
+#annie-mac-2021-content-container .team-member button:hover {
 	background: #076fa6;
 	cursor: pointer;
 }
