@@ -429,6 +429,11 @@ footer #sitemap ul li ul {
 	flex-direction: column;
 }
 
+#copyrights {
+	border-top: 1px solid rgba(255,255,255,.3);
+	padding-top: 30px;
+}
+
 #sitemap #list_11344 > a,
 #sitemap #list_11343 > a, 
 #sitemap #list_11350 > a {
