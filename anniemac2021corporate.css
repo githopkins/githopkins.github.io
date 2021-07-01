@@ -365,13 +365,6 @@ body {
 	margin: 5px 0 40px;
 } */
 
-#inserted-banner {
-	display: none;
-}
-
-#loan-originator-backdrop {
-	display: none;
-}
 
 #button-container-home a:first-of-type {
 	background: #575757;
