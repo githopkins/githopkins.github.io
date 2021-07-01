@@ -471,11 +471,11 @@ footer ul li,
 	margin: auto;
 }
 
-.content-block-list .row-item:nth-of-type(1) {
+.site-type-branch .content-block-list .row-item:nth-of-type(1) {
 	display: none !important;
 }
 
-.content-block-list .row-item:nth-of-type(3) {
+.site-type-branch .content-block-list .row-item:nth-of-type(3) {
 	display: none !important;
 }
 
