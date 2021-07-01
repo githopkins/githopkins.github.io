@@ -10,6 +10,7 @@ $(function() {
 			$('#accolades-originator').remove();
 			$('#covid-warning').remove();
 			$('#home-deserve').remove();
+			$('#home-reviews').remove();
 			if ($('body').hasClass('site-type-branch')) {
 				$('.front #branch-steps').remove();
 				$('#branch-overlay').remove();
