@@ -3560,67 +3560,91 @@ textarea#textarea-comments {
 	}
 }
 
-/* #branch-banner {
-	background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
-	max-height: 450px !important;
-	background-position-y: 68% !important;
-	background-size: 101% !important;
-	text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
-	min-height: 450px;
+#annie_mac-branch {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
+	flex-wrap: wrap;
 }
 
-#branch-content {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+#annie_mac-branch #branch-welcome {
+  order: 1;
+  display: flex;
+  flex: 1;
+  padding: 60px;
+  border-radius: 0 0 0 100%;
+  min-height: 800px;
+  background: url(https://annie-mac.com/uploads/sites/10713/public/happy-family-header.jpeg) top;
+  background-size: cover;
+}
+
+#annie_mac-branch  #branch-banner {
+  order: -1;
+  padding: 60px 0 60px 90px;
+	text-align: left;
+	width: 815px;
+	align-self: center;
+  background: transparent;
 }
 
 #branch-content h2 {
-	margin: 0;
-	font-size: 36px;
-	font-weight: 500;
+  color: #036fa8;
+	font-weight: 700;
+	line-height: 57px;
+	margin-bottom: 30px;
+	margin-top: -70px;
+	font-size: 50px;
+	width: 95%;
 }
 
 #branch-content h3 {
-	margin: 10px 0;
-	font-size: 17px;
-	letter-spacing: 0.073em;
+  font-size: 25px;
+  margin-top: -10px;
+  opacity: .8;
 }
 
-#branch-content h5 {
-	font-weight: 300;
-	font-size: 17px;
-	line-height: 30px;
-	margin-top: 8px;
+#branch-content h5 a {
+  color: #444;
+  opacity: .6;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-#branch-content a {
-	color: #fff;
-}
-
-#branch-content a:hover {
+#branch-content h5 a:hover {
 	text-decoration: none;
 }
 
+#annie_mac-branch #home-provide {
+  order: 3;
+}
+
 #branch-content button {
-	background: #036fa8;
-	padding: 15px 30px;
-	border-radius: 3px;
+  background: #7FC24A;
+	padding: 28px 35px;
+	border-radius: 6px;
 	color: white;
-	font-weight: 600;
-	font-size: 16px;
-	letter-spacing: .8px;
-	text-align: center;
+	font-weight: 400;
+	margin-top: 45px;
+	margin-right: 30px;
+	font-size: 20px;
+	box-shadow: 1px 1px 3px rgb(0 0 0 / 12%);
+	min-width: 280px;
+	text-transform: capitalize;
 	border: none;
 	outline: none;
-	margin: 20px 0;
 }
 
 #branch-content button:hover {
-	cursor: pointer;
-	background: #7FC24A;
-} */
+  background: #036fa8;
+ cursor: pointer; 
+}
+
+.branch-media-links {
+  margin-top: 60px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.branch-media-links svg {
+  font-size: 30px;
+}
