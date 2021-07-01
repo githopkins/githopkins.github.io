@@ -3559,3 +3559,29 @@ textarea#textarea-comments {
 		opacity: 0;
 	}
 }
+
+#branch-banner {
+	background: linear-gradient(
+177deg
+, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
+	max-height: 450px !important;
+	background-position-y: 68% !important;
+	background-size: 101% !important;
+	text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
+}
+
+#branch-content {
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#branch-content h3 {
+	margin: 15px 0;
+	font-size: .9rem;
+	letter-spacing: 0.073em;
+}
