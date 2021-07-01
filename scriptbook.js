@@ -10,6 +10,7 @@ $(function() {
 			$('#accolades-originator').remove();
 			$('#covid-warning').remove();
 			$('.front #branch-steps').remove();
+			$('#branch-overlay').remove();
 			// alert("Testing site true added to body class.");
 		};
 	};
