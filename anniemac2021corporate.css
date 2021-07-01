@@ -3765,3 +3765,7 @@ textarea#textarea-comments {
 	background: #076fa6;
 	cursor: pointer;
 }
+
+#loan-originator-backdrop, #inserted-banner {
+	display: none;
+}
