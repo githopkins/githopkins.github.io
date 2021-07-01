@@ -11,6 +11,7 @@ $(function() {
 			$('#covid-warning').remove();
 			$('.front #branch-steps').remove();
 			$('#branch-overlay').remove();
+			$("#branch-welcome h3").remove();
 			// alert("Testing site true added to body class.");
 		};
 	};
