@@ -3694,6 +3694,8 @@ textarea#textarea-comments {
 	font-size: 18px;
 	margin-bottom: 15px;
 	color: #444;
+	margin: 10px;
+	text-align: center;
 }
 
 .team-member-information button i {
@@ -3727,5 +3729,5 @@ textarea#textarea-comments {
 	border-radius: 100%;
 	box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
 	border: 1px solid rgba(0,0,0,.1);
-	margin: 20px 0 40px!important;
+	margin: 20px auto 40px!important;
 }
