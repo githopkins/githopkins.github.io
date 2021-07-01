@@ -9,6 +9,7 @@ $(function() {
 			$('.manager-biography iframe').remove();
 			$('#accolades-originator').remove();
 			$('#covid-warning').remove();
+			$('.front #branch-steps').remove();
 			// alert("Testing site true added to body class.");
 		};
 	};
