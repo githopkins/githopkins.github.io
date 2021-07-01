@@ -3731,3 +3731,20 @@ textarea#textarea-comments {
 	border: 1px solid rgba(0,0,0,.1);
 	margin: 20px auto 40px!important;
 }
+
+.team-member button {
+	margin: 5px auto !important;
+	min-width: 240px;
+	background: #8c8c8c;
+	padding: 12px 20px;
+	border-radius: 3px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: .8px;
+	text-align: center;
+}
+
+.team-member button:first-of-type {
+	background: #7FC24A;
+}
