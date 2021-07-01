@@ -6,11 +6,6 @@ $(function() {
 	if (window.location.href.indexOf("prototype") != -1) {
 		$("body").addClass("testingsite-true");
 		if ($('body').hasClass('testingsite-true')) {
-			$(function(){
-				   setTimeout(function(){
-					 $('body').show();
-				   },5000);
-				});
 			$('.manager-biography iframe').remove();
 			$('#accolades-originator').remove();
 			$('#covid-warning').remove();
