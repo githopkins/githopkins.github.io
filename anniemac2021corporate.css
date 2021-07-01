@@ -369,6 +369,10 @@ body {
 	display: none;
 }
 
+#loan-originator-backdrop {
+	display: none;
+}
+
 #button-container-home a:first-of-type {
 	background: #575757;
 	display: block;
