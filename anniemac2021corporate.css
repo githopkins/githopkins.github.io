@@ -3560,7 +3560,7 @@ textarea#textarea-comments {
 	}
 }
 
-#branch-banner {
+/* #branch-banner {
 	background: linear-gradient(177deg, rgb(23 16 5 / 21%) 30%, rgb(29 27 18 / 60%) 80%), url(https://www.annie-mac.com/uploads/sites/10713/public/House-at-Dusk.jpeg) top left no-repeat !important;
 	max-height: 450px !important;
 	background-position-y: 68% !important;
@@ -3623,4 +3623,4 @@ textarea#textarea-comments {
 #branch-content button:hover {
 	cursor: pointer;
 	background: #7FC24A;
-}
+} */
