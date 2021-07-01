@@ -3606,3 +3606,7 @@ textarea#textarea-comments {
 	outline: none;
 	margin: 20px 0;
 }
+
+#branch-content button:hover {
+	cursor: pointer;
+}
