@@ -3699,3 +3699,7 @@ textarea#textarea-comments {
 .team-member-information button i {
 	display: none;
 }
+
+.team-member-section #team-display {
+	order: -1;
+}
