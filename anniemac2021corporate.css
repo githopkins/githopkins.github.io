@@ -3707,6 +3707,7 @@ textarea#textarea-comments {
 
 .team-member-section #team-display {
 	order: -1;
+	width: 100%;
 }
 
 #branch-managers {
