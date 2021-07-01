@@ -3373,6 +3373,10 @@ textarea#textarea-comments {
 	line-height: 30px;
 }
 
+.credit-breakdown-legend ul li {
+	line-height: 45px;
+}
+
 .adjusted-line-height {
 	line-height: 33px;
 }
