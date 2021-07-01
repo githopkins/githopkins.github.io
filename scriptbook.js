@@ -12,6 +12,7 @@ $(function() {
 			$('#home-deserve').remove();
 			$('#home-reviews').remove();
 			$('perks-home').remove();
+			$('#text-based-branch').remove();
 			if ($('body').hasClass('site-type-branch')) {
 				$('.front #branch-steps').remove();
 				$('#branch-overlay').remove();
