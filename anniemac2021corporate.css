@@ -3626,4 +3626,5 @@ textarea#textarea-comments {
 
 #branch-content button:hover {
 	cursor: pointer;
+	background: #7FC24A;
 }
