@@ -3574,13 +3574,9 @@ textarea#textarea-comments {
 }
 
 #branch-content {
-	position: absolute;
-	z-index: 1;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin-top: 20px;
 }
 
 #branch-content h2 {
