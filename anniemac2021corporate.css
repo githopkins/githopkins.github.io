@@ -3656,12 +3656,5 @@ align-self: center;
 }
 
 .branch-media-links {
-  margin-top: 60px;
-  display: flex;
-  width: 300px;
-  justify-content: space-between;
-}
-
-.branch-media-links svg {
-  font-size: 30px;
+  display: none;
 }
