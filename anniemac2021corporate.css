@@ -428,6 +428,12 @@ footer #sitemap ul li ul {
 	flex-direction: column;
 }
 
+#sitemap #list_11344 > a,
+#sitemap #list_11343 > a, 
+#sitemap #list_11350 > a {
+	display: none;
+}
+
 #social-media {
 	display: flex;
 	width: 80px;
