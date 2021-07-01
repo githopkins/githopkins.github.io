@@ -3686,6 +3686,7 @@ textarea#textarea-comments {
 	margin-top: 0px;
 	font-weight: 600;
 	line-height: 30px;
+	text-align: center;
 }
 
 .team-member-information h5 {
