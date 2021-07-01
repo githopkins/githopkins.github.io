@@ -3582,7 +3582,7 @@ textarea#textarea-comments {
 	text-align: left;
 	width: 815px;
 	align-self: center;
-  background: transparent;
+  background: transparent !important;
 }
 
 #branch-content h2 {
