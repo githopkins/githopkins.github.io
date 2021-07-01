@@ -3571,7 +3571,7 @@ textarea#textarea-comments {
   flex: 1;
   padding: 60px;
   border-radius: 0 0 0 100%;
-  min-height: 800px;
+  min-height: 850px;
   background: url(https://annie-mac.com/uploads/sites/10713/public/happy-family-header.jpeg) top;
   background-size: cover;
 }
@@ -3615,6 +3615,10 @@ align-self: center;
 
 #branch-content h5 a:hover {
 	text-decoration: none;
+}
+
+#branch-content p {
+	margin: 30px 0 -10px;
 }
 
 #annie_mac-branch #home-provide {
