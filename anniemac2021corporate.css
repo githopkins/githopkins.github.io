@@ -3583,14 +3583,24 @@ textarea#textarea-comments {
 	margin-top: 20px;
 }
 
+#branch-content h2 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 500;
+}
+
 #branch-content h3 {
-	margin: 15px 0;
-	font-size: .9rem;
+	margin: 10px 0;
+	font-size: 17px;
 	letter-spacing: 0.073em;
 }
 
 #branch-content a {
 	color: #fff;
+}
+
+#branch-content a:hover {
+	text-decoration: none;
 }
 
 #branch-content button {
