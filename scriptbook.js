@@ -12,7 +12,7 @@ $(function() {
 			$('.front #branch-steps').remove();
 			$('#branch-overlay').remove();
 			$("#branch-welcome h3").remove();
-			// alert("Testing site true added to body class.");
+			$('<p>We believe in the need for live, human interaction during a complex process. The kind of service and guidance which an app simply can’t provide. We believe paperwork cannot tell your whole story.</p><p>Our customers are more than credit scores and income documents. They are the individuals and families who live in and strengthen our communities.</p>').insertBefore( $( "#branch-content h5" ) );
 		};
 	};
 	
