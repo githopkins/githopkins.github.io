@@ -2,16 +2,15 @@
 
 $(function() {
 	$( ".inner-layout:contains('the page you requested could not be found')" ).css( "min-height", "90vh" );
+	window.location.href='./get-more-thanks?r=jeanna';
 	// Begin testing prototype site code scripts...
-	var testingsitetrue = ['prototype', 'www.annie-mac.com'];
-	for (i = 0; i < testingsitetrue.length; i++) {
-		if (window.location.href.indexOf(testingsitetrue) != -1) {
-			$("body").addClass("testingsite-true");
-			console.log("This is a valid testing site.");
-			if ($('body').hasClass('testingsite-true')) {
-				console.log("Testing site true added to body class.");
-			};
-		// Keep prototype scripts above this closing syntax.
+	if (window.location.href.indexOf("prototype") != -1) {
+		$("body").addClass("testingsite-true");
+		if ($('body').hasClass('testingsite-true')) {
+			if (".inner-layout:contains('the page you requested could not be found')") {
+				window.location.href='./?redirect=404';
+				}
+			// alert("Testing site true added to body class.");
 		};
 	};
 	
