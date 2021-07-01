@@ -8,6 +8,7 @@ $(function() {
 		$("body").addClass("testingsite-true");
 		if ($('body').hasClass('testingsite-true')) {
 			$('.manager-biography iframe').remove();
+			$('#accolades-originator').remove();
 			if (".inner-layout:contains('the page you requested could not be found')") {
 				window.location.href='./?redirect=404';
 				}
