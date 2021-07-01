@@ -2398,6 +2398,7 @@ summary {
 }
 
 #login-form input {
+	margin: 18px 0 25px 0;
   background: #fff;
 	border-radius: 4px;
 	border: 1px solid rgba(0, 0, 0, .2);
@@ -2446,6 +2447,13 @@ background: #7FC24A;
   font-weight: 400;
 }
 
+#not-consumer p a {
+	font-weight: 600;
+}
+
+#not-consumer p a:hover {
+	text-decoration: underline;
+}
 
 @media only screen and (max-width: 1483px) {
 	.page-blog-list article {
