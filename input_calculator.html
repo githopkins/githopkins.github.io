@@ -24,16 +24,21 @@
 		}
 		</style>
 		<script>
-		$(document).ready(function(){
+		$(document).ready(function(){	 
 			$('input.int-value').on('input', function() {
 			  this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
 			});
 			$('input[type="text"]').keyup(function () {
 			  var val1 = parseInt($('.value1').val());
 			  var val2 = parseInt($('.value2').val());
-					  var sum = val1+val2;
-					  $("input#result").val(sum);
-			});
+			  var val3 = parseInt($('.value3').val());	  
+				 var result = (val1+val2)*val3;
+				$("input#result").val(result);
+			}); 
+			$("#calculate").click(function() {
+				$('#results').show();
+				  $('#result').prop({type:"text"});
+			 });
 		});
 		</script>
 	</head>
@@ -41,10 +46,15 @@
 		<form>
 			<label>Integer 1</label>
 			<input type="text" class="input int-value value1">
-			<label>Integer 1</label>
-			<input type="text" class="input int-value value2 ">
+			<label>Integer 2</label>
+			<input type="text" class="input int-value value2">
+			<label>Integer 3</label>
+			<input type="text" class="input int-value value3">
+			<button type="button" id="calculate">Calculate</button>
+			<div id="results" style="display: none">
 			<label>Result</label>
-			<input type="text" disabled="disabled" id="result">
+			<input type="hidden" disabled="disabled" id="result">
+			</div>
 		</form>
 	</body>
 </html>
