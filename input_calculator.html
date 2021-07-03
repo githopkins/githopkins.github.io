@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<style>
+		html, body {
+			font-family: sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+			margin: 20px auto;
+		}
+		from label {
+			font-size: 12px;
+			margin: 2px 0;
+		}
+		form input {
+			margin: 5px 0;
+		}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('input[type="text"]').keyup(function () {
+			  var val1 = parseInt($('.value1').val());
+			  var val2 = parseInt($('.value2').val());
+					  var sum = val1+val2;
+					  $("input#result").val(sum);
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<form>
+			<label>Integer 1</label>
+			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="input value1">
+			<label>Integer 1</label>
+			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="input value2 ">
+			<label>Result</label>
+			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" disabled="disabled" id="result">
+		</form>
+	</body>
+</html>
