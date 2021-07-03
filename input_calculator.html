@@ -25,6 +25,9 @@
 		</style>
 		<script>
 		$(document).ready(function(){
+			$('input.int-value').on('input', function() {
+			  this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+			});
 			$('input[type="text"]').keyup(function () {
 			  var val1 = parseInt($('.value1').val());
 			  var val2 = parseInt($('.value2').val());
@@ -37,11 +40,11 @@
 	<body>
 		<form>
 			<label>Integer 1</label>
-			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="input value1">
+			<input type="text" class="input int-value value1">
 			<label>Integer 1</label>
-			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="input value2 ">
+			<input type="text" class="input int-value value2 ">
 			<label>Result</label>
-			<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" disabled="disabled" id="result">
+			<input type="text" disabled="disabled" id="result">
 		</form>
 	</body>
 </html>
