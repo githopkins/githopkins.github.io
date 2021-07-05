@@ -33,14 +33,21 @@
 			margin-bottom: 20px;
 		}
 		.hide {
-			display: none;
+			display: none !important;
 		}
 		.contents {
 			width: 600px !important;
 			display: flex;
 		}
-		.monthly-payment-target {
+		.results {
+			display: flex;
+			flex-direction: column;
 			flex: 1;
+		}
+		#advance-calculator {
+			display: flex;
+			flex-direction: column;
+			width: 220px;
 		}
 		</style>
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -88,68 +95,96 @@
 				// var remainingBalance = parseInt(monthlyIncome)  parseInt(totalCosts);
 				// console.log(remainingBalance);
 			});
+			$("#advance-calculator-toggle a").click(function(event) {
+				event.preventDefault();
+				$("#advance-calculator").removeClass("hide");
+				$("#advance-calculator-toggle").addClass("hide");
+				$("#simple-calculator").addClass("hide");
+				$("#monthly-payment-target").addClass("hide");
+				$("#advance-calculator-results").removeClass("hide");
+			});
 		});
 		</script>
 	</head>
 	<body>
 		<div class="contents">
 			<form>
-				<h3>Affordability Calculation</h3>
-				<!-- <label>Loan Term</label> -->
-				<input type="hidden" value="30" name="loan-term">
-				<!-- <label>Downpayment</label>
-				<input type="text" value="20000" name="downpayment"> -->
-				<label>Targeted Monthly Payment</label>
-				<div class="slide-container">
-					<input type="range" min="10" max="2000" value="" id="slide-selection">
+				<div id="simple-calculator">
+					<h3>Affordability Calculation</h3>
+					<!-- <label>Loan Term</label> -->
+					<input type="hidden" value="30" name="loan-term">
+					<!-- <label>Downpayment</label>
+					<input type="text" value="20000" name="downpayment"> -->
+					<label>Targeted Monthly Payment</label>
+					<div class="slide-container">
+						<input type="range" min="10" max="2000" value="" id="slide-selection">
+					</div>
+					<small><span id="slider-value-display"></span>/month</small>
+					<input type="hidden" name="monthly-payment">
+					<input type="hidden" name="monthly-income">
 				</div>
-				<small><span id="slider-value-display"></span>/month</small>
-				<input type="hidden" name="monthly-payment">
-				<input type="hidden" name="monthly-income">
-				<!-- <label>Monthly Debts Breakdown</label> -->
-				<!-- <div class="monthly-debt-breakdown-container">
-						<div class="monthly-debt-sub-breakdown">
-							<label>Car Payment</label>
-							<input type="text" name="car-payment-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Credit Cards</label>
-							<input type="text" name="credit-cards-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Subscriptions</label>
-							<input type="text" name="subscriptions-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Insurance</label>
-							<input type="text" name="insurance-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Utilities</label>
-							<input type="text" name="utilities-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Groceries</label>
-							<input type="text" name="groceries-costs">
-						</div>
-						<div class="monthly-debt-sub-breakdown">
-							<label>Other</label>
-							<input type="text" name="other-costs">
-						</div>
-				</div> -->
-				<!-- <label>Total Monthly Expenses</label> -->
-				<!-- <input type="text" value="" name="monthly-debts"> -->
-				<!-- <button type="button" id="calculate">Calculate</button>
-				<div id="results" style="display: none">
-					<label>Result</label>
-					<input type="hidden" disabled="disabled" id="result">
-				</div> -->
+				<div id="advance-calculator" class="hide">
+					<h3>Affordability Calculation</h3>
+					<label>Monthly Income</label>
+					<input type="text" name="advance-monthly-income">
+					<label>Loan Term</label>
+					<input type="text" name="advance-loan-term">
+					<label>Interest Rate</label>
+					<input type="text" name="advance-interest-rate">
+					<label>Monthly Debts Breakdown</label>
+					<div class="monthly-debt-breakdown-container">
+							<div class="monthly-debt-sub-breakdown">
+								<label>Car Payment</label>
+								<input type="text" name="car-payment-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Credit Cards</label>
+								<input type="text" name="credit-cards-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Subscriptions</label>
+								<input type="text" name="subscriptions-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Insurance</label>
+								<input type="text" name="insurance-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Utilities</label>
+								<input type="text" name="utilities-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Groceries</label>
+								<input type="text" name="groceries-costs">
+							</div>
+							<div class="monthly-debt-sub-breakdown">
+								<label>Other</label>
+								<input type="text" name="other-costs">
+							</div>
+					</div>
+					<label>Total Monthly Expenses</label>
+					<input type="text" value="" name="monthly-debts">
+					<button type="button" id="calculate">Calculate</button>
+					<div id="results" style="display: none">
+						<label>Result</label>
+						<input type="hidden" disabled="disabled" id="result">
+					</div>
+				</div>	
 			</form>
-			<div class="monthly-payment-target">
-				<p>Based on your monthly payment, we estimate your monthly income to be at <u>least</u> <strong><span id="estimated-monthly-income"></span></strong>.</p> 
-				<p>Based on your answers, we recommend looking for a house no greater than <strong><span id="afforded-house-target"></span></strong>.</p>
-				<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
-				<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
+			<div class="results">
+				<div id="monthly-payment-target">
+					<p>Based on your monthly payment, we estimate your monthly income to be at <u>least</u> <strong><span id="estimated-monthly-income"></span></strong>.</p> 
+					<p>Based on your answers, we recommend looking for a house no greater than <strong><span id="afforded-house-target"></span></strong>.</p>
+					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
+					<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
+					<p id="advance-calculator-toggle"><a href=""><strong>Interested in a more advanced calculator?</strong></a></p>
+				</div>
+				<div id="advance-calculator-results" class="hide">
+					<p>With consideration for your monthly debts, such as car payments, insurance, utility bills and groceries, we recommend looking for a house no greater than <strong><span id="afforded-house-target-advance">$$$$$$</span></strong>.</p>
+					<p>We recommend paying a maximum monthly payment of <strong><span id="estimated-monthly-income-advance">$$$$</span></strong>.</p> 
+					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
+					<p id="advance-calculator-toggle"><a href=""><strong>Interested in a more advanced calculator?</strong></a></p>
+				</div>
 			</div>
 		</div>
 	</body>
