@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<title>Calculator</title>
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<style>
 		html, body {
 			font-family: sans-serif;
@@ -12,8 +11,7 @@
 		form {
 			display: flex;
 			flex-direction: column;
-			width: 300px;
-			margin: 20px auto;
+			width: 250px;
 		}
 		from label {
 			font-size: 12px;
@@ -22,39 +20,139 @@
 		form input {
 			margin: 5px 0;
 		}
+		.monthly-debt-breakdown-container {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.monthly-debt-sub-breakdown {
+			display: flex;
+			flex-direction: column;
+			width: 49%;
+		}
+		.slide-container {
+			margin-bottom: 20px;
+		}
+		.hide {
+			display: none;
+		}
+		.contents {
+			width: 600px !important;
+			display: flex;
+		}
+		.monthly-payment-target {
+			flex: 1;
+		}
 		</style>
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script>
-		$(document).ready(function(){	 
-			$('input.int-value').on('input', function() {
-				this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
-			});
-			$('input[type="text"]').keyup(function () {
-				var val1 = parseInt($('.value1').val());
-				var val2 = parseInt($('.value2').val());
-				var val3 = parseInt($('.value3').val());	  
-				var result = (val1+val2)*val3;
-				$("input#result").val(result);
-			}); 
-			$("#calculate").click(function() {
-				$('#results').show();
-				$('#result').prop({type:"text"});
+		$(document).ready(function(){
+			var loanTerm = parseInt($('input[name="loan-term"]').val());
+			var monthlyPayment;
+			// var monthlyIncome;
+			var carPayment = $('input[name="car-payment-costs"]').attr("value", 0);
+			var creditCards = $('input[name="credit-cards-costs"]').attr("value", 0);
+			var subscriptions = $('input[name="subscriptions-costs"]').attr("value", 0);
+			var insurance = $('input[name="insurance-costs"]').attr("value", 0);
+			var utilities = $('input[name="utilities-costs"]').attr("value", 0);
+			var groceries = $('input[name="groceries-costs"]').attr("value", 0);
+			var other = $('input[name="other-costs"]').attr("value", 0);
+			var slider = $('#slide-selection')[0];
+			var sliderdisplaytext = $('#slider-value-display')[0];
+			slider.oninput = function() {
+			  sliderdisplaytext.innerHTML = this.value;
+			  var slidervalue = sliderdisplaytext.innerHTML;
+			  $('input[name="monthly-payment"]').attr("value", parseInt(slidervalue));
+			  $('input[name="monthly-income"]').attr("value", Math.ceil(parseInt(slidervalue) / .28));
+			  monthlyPayment = $('input[name="monthly-payment"]').val();
+			  monthlyIncome = $('input[name="monthly-income"]').val();
+			  $("#estimated-monthly-income").text("$" + monthlyIncome);
+			  var affordedTarget = Math.ceil(parseInt(monthlyIncome)*360*.28);
+			  $("#afforded-house-target").text("$" + affordedTarget);
+			  $('#monthly-payment-target').removeClass("hide");
+			};
+			$('#calculate').click(function(){
+				$("#estimated-monthly-income").text(monthlyIncome);
+				// carPayment = parseInt($('input[name="car-payment-costs"]').val());
+				// creditCards = parseInt($('input[name="credit-cards-costs"]').val());
+				// subscriptions = parseInt($('input[name="subscriptions-costs"]').val());
+				// insurance = parseInt($('input[name="insurance-costs"]').val());
+				// utilities = parseInt($('input[name="utilities-costs"]').val());
+				// groceries = parseInt($('input[name="groceries-costs"]').val());
+				// other = parseInt($('input[name="other-costs"]').val());
+				// $('input[name="monthly-debts"]').val(carPayment + creditCards + subscriptions + insurance + utilities + groceries + other);
+				// var totalCosts = $('input[name="monthly-debts"]').val();
+				// console.log(loanTerm * 12 + " total payments");
+				// console.log(monthlyPayment + " monthly payment cost");
+				// console.log(monthlyIncome + " total monthly income");
+				// console.log(totalCosts + " total monthly costs");
+				// var remainingBalance = parseInt(monthlyIncome)  parseInt(totalCosts);
+				// console.log(remainingBalance);
 			});
 		});
 		</script>
 	</head>
 	<body>
-		<form>
-			<label>Integer 1</label>
-			<input type="text" class="input int-value value1">
-			<label>Integer 2</label>
-			<input type="text" class="input int-value value2">
-			<label>Integer 3</label>
-			<input type="text" class="input int-value value3">
-			<button type="button" id="calculate">Calculate</button>
-			<div id="results" style="display: none">
-				<label>Result</label>
-				<input type="hidden" disabled="disabled" id="result">
+		<div class="contents">
+			<form>
+				<h3>Affordability Calculation</h3>
+				<!-- <label>Loan Term</label> -->
+				<input type="hidden" value="30" name="loan-term">
+				<!-- <label>Downpayment</label>
+				<input type="text" value="20000" name="downpayment"> -->
+				<label>Targeted Monthly Payment</label>
+				<div class="slide-container">
+					<input type="range" min="10" max="2000" value="" id="slide-selection">
+				</div>
+				<small><span id="slider-value-display"></span>/month</small>
+				<input type="hidden" name="monthly-payment">
+				<input type="hidden" name="monthly-income">
+				<!-- <label>Monthly Debts Breakdown</label> -->
+				<!-- <div class="monthly-debt-breakdown-container">
+						<div class="monthly-debt-sub-breakdown">
+							<label>Car Payment</label>
+							<input type="text" name="car-payment-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Credit Cards</label>
+							<input type="text" name="credit-cards-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Subscriptions</label>
+							<input type="text" name="subscriptions-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Insurance</label>
+							<input type="text" name="insurance-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Utilities</label>
+							<input type="text" name="utilities-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Groceries</label>
+							<input type="text" name="groceries-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Other</label>
+							<input type="text" name="other-costs">
+						</div>
+				</div> -->
+				<!-- <label>Total Monthly Expenses</label> -->
+				<!-- <input type="text" value="" name="monthly-debts"> -->
+				<!-- <button type="button" id="calculate">Calculate</button>
+				<div id="results" style="display: none">
+					<label>Result</label>
+					<input type="hidden" disabled="disabled" id="result">
+				</div> -->
+			</form>
+			<div class="monthly-payment-target">
+				<p>Based on your monthly payment, we estimate your monthly income to be at <u>least</u> <strong><span id="estimated-monthly-income"></span></strong>.</p> 
+				<p>Based on your answers, we recommend looking for a house no greater than <strong><span id="afforded-house-target"></span></strong>.</p>
+				<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
+				<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
 			</div>
-		</form>
+		</div>
+	</body>
 	</body>
 </html>

@@ -1,0 +1,1088 @@
+_N_E = (window.webpackJsonp_N_E = window.webpackJsonp_N_E || []).push([
+[36], {
+	"3SFY": function(e, a, t) {
+		"use strict";
+		var n = t("vOnD"),
+			r = t("W3xS"),
+			o = n.d.div.withConfig({
+				componentId: "zgmi__sjl7mp-0"
+			})(["", ""], (function(e) {
+				var a = e.breakpoint;
+				return Object(n.c)(["display:block;", ";"], Object(r.a)(a, Object(n.c)(["display:none;"])))
+			}));
+		a.a = o
+	},
+	"DPn+": function(e, a, t) {
+		"use strict";
+		var n = t("BZA2"),
+			r = t("hvL5");
+		var o = {
+			type: "tel",
+			parser: function(e) {
+				return Math.round(Object(r.g)(e))
+			},
+			formatter: function(e) {
+				return "number" === typeof e && e.toString() || e
+			}
+		};
+		a.a = Object.assign({}, o, {
+			parser: n.a
+		})
+	},
+	HG10: function(e, a, t) {
+		"use strict";
+		e.exports = {
+			CONTENT: {
+				head: {
+					description: "Our affordability calculator estimates how much house you can afford by examining factors that impact affordability like income and monthly debts.",
+					title: "Affordability Calculator - How Much House Can I Afford? | Zillow",
+					canonicalURL: "/mortgage-calculator/",
+					ogImage: "/static/images/mortgage/calculators/seo/FB_IMG_AffordabilityCalc.jpg"
+				},
+				page: {
+					title: "Affordability Calculator",
+					metaDescription: "Use Zillow's affordability calculator to estimate a comfortable mortgage amount based on your current budget. Enter details about your income, down payment and monthly debts to determine how much to spend on a house."
+				}
+			},
+			SECTION_IDENTIFIERS: {
+				calculateAffordability: "how-to-calculate-affordability",
+				factorsForAffordability: "factors-that-impact-affordability",
+				howMuchMortgageSection: "how-much-mortgage-can-i-qualify-for",
+				mostAffordableMarkets: "most-affordable-markets-for-homebuyers"
+			}
+		}
+	},
+	HJ5b: function(e, a, t) {
+		"use strict";
+		var n = t("q1tI"),
+			r = t("QyMi"),
+			o = t("1Lm9");
+		a.a = function(e, a) {
+			var t, l = (null !== (t = Object(n.useContext)(o.a)) && void 0 !== t ? t : {}).zillowBaseURL;
+			return Object(r.a)(e, a, l)
+		}
+	},
+	Us3G: function(e, a, t) {
+		(window.__NEXT_P = window.__NEXT_P || []).push(["/mortgage-calculator/house-affordability", function() {
+			return t("vBYB")
+		}])
+	},
+	vBYB: function(e, a, t) {
+		"use strict";
+		t.r(a), t.d(a, "__N_SSG", (function() {
+			return Ha
+		})), t.d(a, "default", (function() {
+			return za
+		}));
+		var n = t("q1tI"),
+			r = t.n(n),
+			o = (t("jjEv"), t("17x9"), t("Ru9x")),
+			l = t("HG10"),
+			i = t("/MKj"),
+			c = t("igDK"),
+			u = t("3Eff"),
+			s = t("2GYL"),
+			m = t("QRgj"),
+			d = t("fvjX"),
+			p = t("QkVN"),
+			y = t.n(p),
+			f = t("Znm+"),
+			h = t.n(f),
+			b = t("n8Vd"),
+			g = t("CtYs"),
+			v = t("hvL5"),
+			E = t("HGEC"),
+			w = b.b.affordabilityByDTI,
+			I = b.b.affordabilityDefaults;
+
+		function O(e) {
+			return a = e.inputs, Object.keys(a).reduce((function(e, t) {
+				return e[t] = a[t].value, e
+			}), {});
+			var a
+		}
+		var T = {
+			_reduxMountPoint: "inputs",
+			annualIncome: {
+				defaultValue: 7e4,
+				validator: E.a.Validator.isGTEZero,
+				queryParser: E.a.Parser.dollar
+			},
+			monthlyDebts: {
+				defaultValue: 250,
+				validator: E.a.Validator.isGTEZero,
+				queryParser: E.a.Parser.dollar
+			},
+			customPayment: {
+				defaultValue: !1,
+				validator: h.a
+			},
+			monthlyPayment: {
+				defaultValue: 1850,
+				validator: E.a.Validator.isGTEZero,
+				queryParser: E.a.Parser.dollar,
+				onChange: function(e, a, t, n) {
+					e.fromSlider || n(Object(g.i)(T, {
+						monthlyPaymentMax: {
+							value: 2 * e.value
+						}
+					}))
+				}
+			},
+			monthlyPaymentMax: {
+				defaultValue: 3700
+			},
+			downPayment: {
+				defaultValue: 2e4,
+				validator: E.a.Validator.isGTEZero,
+				queryParser: E.a.Parser.dollar
+			},
+			dti: {
+				defaultValue: 36,
+				validator: E.a.Validator.percent,
+				queryParser: E.a.Parser.integer
+			},
+			rate: {
+				defaultValue: 3.875,
+				validator: E.a.Validator.percent
+			},
+			term: {
+				defaultValue: 360,
+				validator: E.a.Validator.isPositive,
+				queryParser: E.a.Parser.integer
+			},
+			includeTaxesInsurance: {
+				defaultValue: !0,
+				validator: h.a,
+				onChange: function(e, a, t, n) {
+					n(Object(g.i)(T, {
+						includeHomeownersInsurance: {
+							value: e.value
+						},
+						includePropertyTax: {
+							value: e.value
+						},
+						includeHOA: {
+							value: e.value
+						}
+					}))
+				}
+			},
+			includeHomeownersInsurance: {
+				defaultValue: !0
+			},
+			includePropertyTax: {
+				defaultValue: !0
+			},
+			propertyTaxRate: {
+				defaultValue: 1.2,
+				validator: E.a.Validator.percent
+			},
+			annualHomeownersInsurance: {
+				defaultValue: 800,
+				validator: E.a.Validator.isGTEZero,
+				queryParser: E.a.Parser.dollar
+			},
+			includePMI: {
+				defaultValue: !0,
+				validator: h.a
+			},
+			includeHOA: {
+				defaultValue: !0
+			},
+			monthlyHOA: {
+				defaultValue: 0,
+				validator: E.a.Validator.isGTEZero
+			},
+			loanType: {
+				defaultValue: b.a.FIXED
+			}
+		};
+
+		function P(e) {
+			var a = O(e);
+			a = I(a);
+			var t = w(a),
+				n = Object(b.d)(y()({
+					homePrice: t.affordabilityByDTI
+				}, a));
+			return Object.assign({}, t, n, {
+				annualPropertyTax: 12 * n.monthlyPropertyTax
+			})
+		}
+
+		function x(e) {
+			return Object(g.i)(T, {
+				customPayment: {
+					value: !e
+				}
+			})
+		}
+		var j = Object(g.d)(T),
+			C = Object(d.c)({
+				inputs: j
+			}),
+			k = [Object(u.b)({
+				event: {
+					category: "Mortgages",
+					action: "Affordability Calc"
+				}
+			}), Object(u.a)({
+				category: "Mortgages",
+				action: "Affordability Calc"
+			}, Object(s.a)({
+				annualIncome: "Annual Income Edit",
+				monthlyPayment: "Monthly Payment Edit",
+				monthlyDebts: "Monthly Debts Edit",
+				downPayment: "Down Payment Edit",
+				rate: "Rate Edit",
+				term: "Term Edit",
+				includeTaxesInsurance: "Include Taxes/Insurance Edit",
+				propertyTaxRate: "Annual Property Tax Rate Edit",
+				annualHomeownersInsurance: "Annual Homeowners Insurance Edit",
+				includePMI: "Include PMI Edit",
+				monthlyHOA: "Monthly HOA Edit"
+			})), Object(m.a)("Affordability")],
+			A = Object(c.b)(C, k),
+			M = t("wSls"),
+			S = function(e) {
+				return function(a, t) {
+					return new Promise((function(n, r) {
+						var o, l;
+						return l = t(), o = {
+							homePrice: Math.round(Object(v.g)(P(l).affordabilityByDTI)),
+							downPayment: l.inputs.downPayment.value
+						}, Promise.resolve(a(Object(M.a)(T, o, (function(a) {
+							return Object.assign({}, e, {
+								rate: a
+							})
+						})))).then((function(e) {
+							try {
+								return n()
+							} catch (a) {
+								return r(a)
+							}
+						}), r)
+					}))
+				}
+			},
+			_ = t("noZS"),
+			z = t.n(_),
+			H = t("s4NR"),
+			D = t.n(H),
+			q = t("XEOV"),
+			V = t("n82u"),
+			N = t("TRtT"),
+			R = t("OB79"),
+			L = t("YDW8"),
+			Y = t("rsVh"),
+			F = t("lffx"),
+			Z = t("3SFY"),
+			G = t("dccT"),
+			B = t("Zre3"),
+			$ = t("HJ5b"),
+			W = t("tyQX"),
+			X = function(e) {
+				var a = e.path,
+					t = e.children,
+					n = Object($.a)(a);
+				return r.a.createElement(G.b, {
+					href: n
+				}, t)
+			};
+		X.propTypes = {};
+		var J = function() {
+				return r.a.createElement(W.a, {
+					sectionTitle: "How to calculate affordability",
+					identifier: l.SECTION_IDENTIFIERS.calculateAffordability,
+					descriptionList: [r.a.createElement(B.a, null, "Zillow's affordability calculator allows you to customize your payment details, while also providing helpful suggestions in each field to get you started. You can calculate affordability based on your annual income, monthly debts and down payment, or based on your estimated monthly payments and down payment amount."), r.a.createElement(B.a, null, "Our calculator also includes advanced filters to help you get a more accurate estimate of your house affordability, including specific amounts of property taxes, homeowner's insurance and HOA dues (if applicable). Learn more about the line items in our calculator to determine your ideal housing budget.")],
+					contentList: [{
+						title: "Annual income",
+						descriptions: [r.a.createElement(B.a, null, "This is the total amount of money earned for the year before taxes and other deductions. You can usually find the amount on your W2 form. If you have a co-borrower who will contribute to the mortgage, combine the total of both incomes to get your annual income.")]
+					}, {
+						title: "Total monthly debts",
+						descriptions: [r.a.createElement(B.a, null, "These are recurring monthly expenses like car payments, minimum credit card payments or student loans. You can adjust this amount in our affordability calculator as needed. For example, if you have a $250 monthly car payment and $50 minimum credit card payment, your monthly debt would be $300.")]
+					}, {
+						title: "Down payment",
+						descriptions: [r.a.createElement(B.a, null, "The amount of money you spend upfront to purchase a home. Most home loans require", " ", r.a.createElement(X, {
+							path: "mortgage-learning/low-down-payment-mortgage/"
+						}, "a down payment of at least 3%"), ". A 20% down payment is ideal to lower your monthly payment, avoid private mortgage insurance and increase your affordability. For a $250,000 home, a down payment of 3% is $7,500 and a down payment of 20% is $50,000.")]
+					}, {
+						title: "Debt-to-income ratio (DTI)",
+						descriptions: [r.a.createElement(B.a, null, "The total of your monthly debt payments divided by your gross monthly income, which is shown as a percentage. Your DTI is one way lenders measure your ability to manage monthly payments and repay the money you plan to borrow. Our affordability calculator will suggest a DTI of 36% by default. You can get an estimate of your debt-to-income ratio using our", " ", r.a.createElement(X, {
+							path: "mortgage-calculator/debt-to-income-calculator/"
+						}, "DTI Calculator"), ".")]
+					}, {
+						title: "Interest rate",
+						descriptions: [r.a.createElement(B.a, null, "The amount that a lender charges a borrower for taking out a loan. Typically, the interest rate is expressed as an annual percentage of the loan balance. The borrower makes payments (with interest) to the lender over a set period of time until the loan is paid in full. Our affordability calculator uses the current national average mortgage rate. Your interest rate will vary based on factors like credit score and down payment. Calculate your", " ", r.a.createElement(X, {
+							path: "mortgage-rates/?source=Z_Affordabilitycalculator_PageContent"
+						}, "mortgage interest rate"), ".")]
+					}, {
+						title: "Loan term",
+						descriptions: [r.a.createElement(B.a, null, "The length by which you agree to pay back the home loan. The most common term for a mortgage is 30 years, or 360 months, but different terms are available depending on the", " ", r.a.createElement(X, {
+							path: "mortgage-calculator/"
+						}, "type of home loan"), " ", "that works best for your situation. You can edit your loan term (in months) in the affordability calculator's advanced options.")]
+					}, {
+						title: "Property tax",
+						descriptions: [r.a.createElement(B.a, null, "When owning a home, you pay annual property taxes based on the assessed value of the property or purchase price of the home, which can affect your affordability. The tax rate you pay can vary by state, county and municipality. Our calculator assumes a property tax rate by default, but you can edit this amount in the calculator's advanced options. To obtain a more accurate total payment amount,", " ", r.a.createElement(X, {
+							path: "pre-qualify/?source=Z_Affordabilitycalculator_PageContent"
+						}, "get pre-qualified by a lender"), ".")]
+					}, {
+						title: "Homeowner's insurance (HOI)",
+						descriptions: [r.a.createElement(B.a, null, "Also known as homeowner's insurance is a", " ", r.a.createElement(X, {
+							path: "mortgage-learning/homeowners-insurance/"
+						}, "type of property insurance"), " ", "that covers a private residence. Typically, HOI is required to get a home loan. The cost may vary depending on your location, type of coverage, any discounts you qualify for and your insurance provider. Generally, homeowner's insurance costs roughly", " ", r.a.createElement(X, {
+							path: "mortgage-learning/homeowners-insurance/"
+						}, "$35 per month for every $100,000"), " ", "of the home's value. Consult your insurance carrier for the exact cost. You can edit the calculator's default amount in the advanced options.")]
+					}, {
+						title: "Private mortgage insurance (PMI)",
+						descriptions: [r.a.createElement(B.a, null, "Many lenders commonly require private mortgage insurance if a borrower contributes less than a 20% down payment on a home purchase. PMI protects the lender against losses that may occur when a borrower defaults on a mortgage loan. Our calculator bases the PMI on the home price and down payment amount. You can choose to include or exclude PMI in the advanced options of the affordability calculator.")]
+					}, {
+						title: "Homeowner's Association (HOA) dues",
+						descriptions: [r.a.createElement(B.a, null, "Some communities, such as condominiums and townhomes, are governed by a homeowner's association (HOA) that maintains communal areas and enforces rules and regulations for a monthly fee. Any HOA dues you pay each month can affect your affordability. You can edit this number in the affordability calculator advanced options.")]
+					}]
+				})
+			},
+			U = t("JZIF"),
+			K = t("ymRn"),
+			Q = t("zJEo"),
+			ee = function(e) {
+				var a = e.name,
+					t = e.path;
+				return r.a.createElement(K.a, {
+					path: t
+				}, a)
+			};
+		ee.propTypes = {};
+		var ae, te = {
+				name: "Affordable market list",
+				columns: [{
+					Header: "Market",
+					accessor: "name",
+					Cell: ee
+				}, {
+					Header: "Share of Income Spent on Mortgage",
+					accessor: "incomeSpentPercent"
+				}, {
+					Header: "Zillow Home Value Index (December 2020)",
+					accessor: "valueIndex"
+				}],
+				items: [{
+					id: "birmingham-al",
+					name: "Birmingham, AL",
+					path: "birmingham-al/",
+					incomeSpentPercent: "12.4%",
+					valueIndex: "$186,523"
+				}, {
+					id: "oklahoma-city-ok",
+					name: "Oklahoma City, OK",
+					path: "oklahoma-city-ok/",
+					incomeSpentPercent: "12.6%",
+					valueIndex: "$168,880"
+				}, {
+					id: "indianapolis-in",
+					name: "Indianapolis, IN",
+					path: "indianapolis-in/",
+					incomeSpentPercent: "12.7%",
+					valueIndex: "$202,370"
+				}, {
+					id: "louisville-ky",
+					name: "Louisville-Jefferson County, KY",
+					path: "louisville-ky/",
+					incomeSpentPercent: "12.9%",
+					valueIndex: "$196,330"
+				}, {
+					id: "memphis-tn",
+					name: "Memphis, TN",
+					path: "memphis-tn/",
+					incomeSpentPercent: "13.0%",
+					valueIndex: "$171,488"
+				}, {
+					id: "cincinnati-oh",
+					name: "Cincinnati, OH",
+					path: "cincinnati-oh/",
+					incomeSpentPercent: "13.2%",
+					valueIndex: "$205,977"
+				}, {
+					id: "pittsburgh-pa",
+					name: "Pittsburgh, PA",
+					path: "pittsburgh-pa/",
+					incomeSpentPercent: "13.2%",
+					valueIndex: "$175,882"
+				}, {
+					id: "saint-louis-mo",
+					name: "St. Louis, MO",
+					path: "saint-louis-mo/",
+					incomeSpentPercent: "13.5%",
+					valueIndex: "$195,380"
+				}, {
+					id: "cleveland-oh",
+					name: "Cleveland, OH",
+					path: "cleveland-oh/",
+					incomeSpentPercent: "13.8%",
+					valueIndex: "$173,637"
+				}, {
+					id: "milwaukee-wi",
+					name: "Milwaukee, WI",
+					path: "milwaukee-wi/",
+					incomeSpentPercent: "14.0%",
+					valueIndex: "$217,160"
+				}]
+			},
+			ne = function() {
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
+					sectionTitle: "Most affordable markets for homebuyers",
+					identifier: l.SECTION_IDENTIFIERS.mostAffordableMarkets,
+					descriptionList: [r.a.createElement(B.a, null, "According to 2020 data from", " ", r.a.createElement(K.a, {
+						path: "research/low-rates-mortgage-affordability-28264/"
+					}, "Zillow Research"), ", record low mortgage rates have helped to boost affordability for potential homeowners. The table below shows the top 10 most affordable markets to live in (among the nation's 50 largest) for December 2020 and is based on a typical home value of no more than $300,000 (the typical U.S. home value is about $270,000). The market and share of income spent on a mortgage may fluctuate based on the current mortgage rate, the typical local homeowner's income and the typical local home value.")]
+				}, r.a.createElement(U.a, {
+					marginY: "md"
+				}, r.a.createElement(Q.b, {
+					appearance: "zebra",
+					"aria-label": te.name,
+					columns: te.columns,
+					items: te.items
+				}))))
+			},
+			re = t("sgRv"),
+			oe = function() {
+				return r.a.createElement(W.a, {
+					sectionTitle: "Factors that impact affordability",
+					identifier: l.SECTION_IDENTIFIERS.factorsForAffordability,
+					descriptionList: [r.a.createElement(B.a, null, "When it comes to calculating affordability, your income, debts and down payment are primary factors. How much house you can afford is also dependent on the interest rate you get, because a", " ", r.a.createElement(K.a, {
+						path: "mortgage-rates?source=Z_Affordabilitycalculator_PageContent"
+					}, "lower interest rate"), " ", "could significantly lower your monthly mortgage payment. While your personal savings goals or spending habits can impact your affordability,", " ", r.a.createElement(re.a, {
+						to: l.SECTION_IDENTIFIERS.howMuchMortgageSection
+					}, "getting pre-qualified for a home loan"), " ", "can help you determine a sensible housing budget.")]
+				})
+			},
+			le = function() {
+				return r.a.createElement(W.a, {
+					sectionTitle: "How much mortgage can I qualify for?",
+					identifier: l.SECTION_IDENTIFIERS.howMuchMortgageSection,
+					descriptionList: [r.a.createElement(B.a, null, "Lenders have a", " ", r.a.createElement(K.a, {
+						path: "mortgage-learning/what-is-mortgage-pre-qualification/"
+					}, "pre-qualification process"), " ", "that takes your finances (such as income and debt) into account to determine how much they are willing to lend you. Once the lender has completed a preliminary review, they generally provide a pre-qualification letter that states how much mortgage you qualify for. Get pre-qualified by a lender to", " ", r.a.createElement(K.a, {
+						path: "pre-qualify?source=Z_Affordabilitycalculator_PageContent"
+					}, "confirm your affordability"), ".")]
+				})
+			},
+			ie = t("VbXa"),
+			ce = t.n(ie),
+			ue = t("vOnD"),
+			se = t("3e8h"),
+			me = t("hIrF"),
+			de = t("W3xS"),
+			pe = t("y5K0"),
+			ye = t("8k1L"),
+			fe = t("0EQD"),
+			he = t("4+FG"),
+			be = t("Va9A"),
+			ge = t("z0gd");
+
+		function ve() {
+			return (ve = Object.assign || function(e) {
+				for (var a = 1; a < arguments.length; a++) {
+					var t = arguments[a];
+					for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+				}
+				return e
+			}).apply(this, arguments)
+		}
+		var Ee, we, Ie = function(e) {
+			return r.a.createElement("svg", ve({
+				viewBox: "0 0 48 48"
+			}, e), ae || (ae = r.a.createElement("path", {
+				fill: "#010101",
+				d: "M45.289 17.132h-2.814c-.666-1.541-1.619-2.966-2.813-4.238.923-1.495 2.361-2.422 2.771-3.41.437-1.055-3.363-1.385-6.268.549-3.182-1.999-7.151-3.199-11.472-3.199-9.653 0-17.6 5.931-18.729 13.579-2.561-.336-4.533-4.756-4.814-4.99-.343-.287-.563 6.272 4.623 9.998.187.134.365.244.539.34.764 2.711 2.397 5.145 4.65 7.101v4.871c0 1.887 1.933 3.433 4.291 3.433s4.292-1.546 4.292-3.433v-.601c1.639.38 3.361.597 5.149.597 1.787 0 3.509-.217 5.148-.597v.597c0 1.888 1.934 3.434 4.293 3.434 2.357 0 4.289-1.546 4.281-4.274V32.87c1.783-1.547 3.175-3.392 4.061-5.438h2.814c.943 0 1.715-.773 1.715-1.717v-6.866a1.724 1.724 0 00-1.717-1.717zM28.996 31.55c-.783.771-1.924 1.249-3.424 1.434v2.128H23.29V33.05a13.109 13.109 0 01-4.652-1.08v-3.66c.853.434 1.778.795 2.778 1.086 1 .29 1.878.436 2.635.436.625 0 1.082-.075 1.373-.227.29-.15.436-.402.436-.755 0-.243-.105-.448-.314-.617-.209-.17-.559-.36-1.047-.574a35.131 35.131 0 00-1.979-.771c-.934-.346-1.687-.733-2.26-1.163s-.991-.911-1.251-1.444c-.261-.533-.392-1.196-.392-1.99 0-1.212.39-2.161 1.169-2.844.779-.684 1.948-1.106 3.506-1.268v-1.51h2.282v1.488c1.463.081 2.937.441 4.422 1.081l-1.312 3.142c-1.536-.691-2.922-1.036-4.157-1.036-.588 0-1.001.071-1.24.215a.693.693 0 00-.358.634c0 .243.086.443.259.601.172.158.472.334.898.529s1.018.421 1.775.678c1.536.544 2.639 1.163 3.308 1.858.669.694 1.003 1.589 1.003 2.685-.002 1.23-.394 2.234-1.176 3.006zm2.561-16.134s-4.318-1.716-7.75-1.716c-3.433 0-7.697 1.716-7.697 1.716v-3.433s4.264-1.716 7.697-1.716c3.432 0 7.75 1.716 7.75 1.716v3.433z"
+			})))
+		};
+
+		function Oe() {
+			return (Oe = Object.assign || function(e) {
+				for (var a = 1; a < arguments.length; a++) {
+					var t = arguments[a];
+					for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+				}
+				return e
+			}).apply(this, arguments)
+		}
+		var Te = function(e) {
+				return r.a.createElement("svg", Oe({
+					viewBox: "0 0 48 48"
+				}, e), Ee || (Ee = r.a.createElement("path", {
+					d: "M46.59 20.429l-7.652-6.064V7.438h-5.25v2.766l-10.094-8L1.438 19.75l2.875 3.5 1.938-1.494V43.75H41.627V22.132L44.062 24l2.528-3.571zm-7.152 21.133h-31V20.069l15.2-11.722 15.799 12.109v21.106z"
+				})), we || (we = r.a.createElement("path", {
+					d: "M12.562 22.312h5.875V29h-5.875zM20.625 22.312H26.5V29h-5.875zM12.562 31h5.875v6.688h-5.875zM20.625 31H26.5v6.688h-5.875z"
+				})))
+			},
+			Pe = t("vjog"),
+			xe = t("oqc9"),
+			je = Object(ue.d)(Pe.b).withConfig({
+				componentId: "zgmi__wrg1qt-0"
+			})(["text-align:center;"]),
+			Ce = ue.d.span.withConfig({
+				componentId: "zgmi__wrg1qt-1"
+			})(["display:block;margin-top:", ";"], Object(me.a)("xs")),
+			ke = ue.d.div.withConfig({
+				componentId: "zgmi__wrg1qt-2"
+			})(["text-align:center;max-width:400px;margin:", " auto 0;"], Object(me.a)("sm")),
+			Ae = Object(ue.d)(B.a).withConfig({
+				componentId: "zgmi__wrg1qt-3"
+			})(["margin-bottom:0;"]),
+			Me = function(e) {
+				var a = e.inputs,
+					t = e.outputs,
+					n = a.dti > 36,
+					o = null;
+				return o = a.customPayment ? "Based on the information you provided, a house at this price would keep you within your monthly payment budget. You could afford more with a bigger down payment." : n ? "Based on the information you provided, a house at this price may stretch your budget too thin." : "Based on the information you provided, a house at this price should fit comfortably within your budget.", r.a.createElement("div", null, r.a.createElement(je, {
+					fontType: "h5",
+					as: "h2"
+				}, "You can likely afford a house up to", " ", r.a.createElement(Ce, null, r.a.createElement(Pe.b, {
+					fontType: "h3"
+				}, Object(v.c)(t.affordabilityByDTI)))), r.a.createElement(ke, null, r.a.createElement(Ae, null, o), r.a.createElement(xe.Link, {
+					role: "link",
+					"aria-label": "learn-more-description",
+					to: l.SECTION_IDENTIFIERS.calculateAffordability,
+					className: "za-track-event zmm-affordability-calc-learn-more",
+					"data-za-category": "!inherit",
+					"data-za-action": "!inherit",
+					"data-za-label": "Learn more: Calculator Help"
+				}, "Learn more")))
+			};
+		Me.propTypes = {};
+		var Se = Me,
+			_e = t("pVnL"),
+			ze = t.n(_e),
+			He = t("UB5X"),
+			De = t.n(He),
+			qe = t("uJIP"),
+			Ve = t.n(qe),
+			Ne = t("FeKh"),
+			Re = t("ibAR"),
+			Le = t("aloN"),
+			Ye = t("DPn+"),
+			Fe = t("s8D1"),
+			Ze = {
+				type: "tel",
+				formatter: function(e) {
+					return e && e.toString()
+				},
+				parser: function(e) {
+					if ("" === e) return 0;
+					var a = Object(Fe.a)(e);
+					return a > 43 ? 43 : a
+				},
+				overlayRight: "%"
+			},
+			Ge = {
+				type: "number",
+				formatter: function(e) {
+					return De()(e) ? Object(v.d)(e, 3) : ""
+				},
+				parser: E.a.Parser.rate
+			},
+			Be = {
+				type: "number",
+				formatter: function(e) {
+					return De()(e) ? Object(v.d)(e, 1) : ""
+				},
+				parser: E.a.Parser.rate
+			},
+			$e = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-annualincome"
+			}, r.a.createElement("h4", null, "Annual Income"), r.a.createElement("p", null, "Your total annual earnings before taxes, for you and your co-borrower. Annual income includes your base salary and any additional commissions, bonuses, tips, and investment income.")),
+			We = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-dti"
+			}, r.a.createElement("h4", null, "Debt-to-income (DTI) Ratio"), r.a.createElement("p", null, "Enter the percentage of your income you are comfortable spending towards your mortgage. This number will also take monthly debts into account."), r.a.createElement("p", null, "Typically your DTI should be 36% or lower to qualify for a mortgage. Certain loans allow for higher DTIs, such as FHA loans (43%) and VA or USDA loans (41%).")),
+			Xe = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-term"
+			}, r.a.createElement("h4", null, "Loan Term"), r.a.createElement("p", null, "The loan term is the amount of time set by the lender for a buyer to pay off a mortgage. To convert a loan term to months from years, multiply the number of years by 12.")),
+			Je = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-taxesinsurance"
+			}, r.a.createElement("h4", null, "Taxes and Insurance"), r.a.createElement("p", null, "Includes property taxes, homeowners insurance, private mortgage insurance, and homeowners association dues.")),
+			Ue = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-taxes"
+			}, r.a.createElement("h4", null, "Property Tax"), r.a.createElement("p", null, "The mortgage payment calculator includes estimated property taxes. The value represents an annual tax on homeowners' property and the tax amount is based on the home's value.")),
+			Ke = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-insurance"
+			}, r.a.createElement("h4", null, "Home Insurance"), r.a.createElement("p", null, "Commonly known as hazard insurance, most lenders require insurance to provide damage protection for your home and personal property from a variety of events, including fire, lightning, burglary, vandalism, storms, explosions, and more. The personal liability coverage in standard homeowner's insurance policies is intended to protect against lawsuits involving injuries that occur on your property. Borrowers shop for their own home insurance.")),
+			Qe = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-pmi"
+			}, r.a.createElement("h4", null, "Private Mortgage Insurance"), r.a.createElement("p", null, "Mortgage insurance is required primarily for borrowers on a conventional loan with a down payment of less than 20% of the home's purchase price. It protects lenders against some or most of the losses that can occur when a borrower defaults on a mortgage loan. Contact your lender for more details.")),
+			ea = r.a.createElement(Ve.a, {
+				id: "zmm-calc-tooltip-hoa"
+			}, r.a.createElement("h4", null, "Homeowners Association Dues"), r.a.createElement("p", null, "Typically, owners of condominiums or townhomes are required to pay homeowners association dues (known as HOA fees), to cover common amenities or services within the property such as garbage collection, landscaping, snow removal, pool maintenance, and hazard insurance.")),
+			aa = function(e) {
+				function a() {
+					return e.apply(this, arguments) || this
+				}
+				return ce()(a, e), a.prototype.render = function() {
+					var e = this.props,
+						a = e.reduxInputs,
+						t = e.dispatch,
+						n = a.inputProps,
+						o = n.annualIncome,
+						l = n.monthlyDebts,
+						i = n.monthlyPayment,
+						c = n.downPayment,
+						u = n.dti,
+						s = n.rate,
+						m = n.term,
+						d = n.includeTaxesInsurance,
+						p = n.propertyTaxRate,
+						y = n.annualHomeownersInsurance,
+						f = n.includePMI,
+						h = n.monthlyHOA,
+						b = a.values,
+						g = null,
+						v = null;
+					return g = b.customPayment ? r.a.createElement(Ne.b, ze()({
+						id: "monthlyPayment",
+						label: "Maximum payment",
+						helpText: r.a.createElement("span", null, "Calculate by", " ", r.a.createElement("a", {
+							onClick: function() {
+								return t(x(b.customPayment))
+							}
+						}, "income"))
+					}, i, Le.a, {
+						errorText: "Invalid maximum payment"
+					})) : r.a.createElement("div", null, r.a.createElement(Ne.b, ze()({
+						id: "annualIncome",
+						label: "Annual income",
+						helpText: r.a.createElement("span", null, "Calculate by", " ", r.a.createElement("a", {
+							onClick: function() {
+								return t(x(b.ustomPayment))
+							}
+						}, "payment")),
+						tooltip: $e
+					}, o, Le.a, {
+						errorText: "Invalid annual income"
+					})), r.a.createElement(Ne.b, ze()({
+						id: "monthlyDebts",
+						label: "Monthly debts"
+					}, l, Le.a, {
+						errorText: "Invalid monthly debts"
+					}))), b.includeTaxesInsurance && (v = r.a.createElement("div", null, r.a.createElement(Ne.b, ze()({
+						label: "Property tax",
+						overlayRight: "%",
+						tooltip: Ue
+					}, p, Be, {
+						errorText: "Invalid property tax amount"
+					})), r.a.createElement(Ne.b, ze()({
+						id: "annualHomeownersInsurance",
+						label: "Home insurance",
+						overlayRight: "/year",
+						tooltip: Ke
+					}, y, Le.a, {
+						errorText: "Invalid home insurance"
+					})), r.a.createElement(Ne.a, ze()({
+						id: "includePMI",
+						label: "Include PMI",
+						tooltip: Qe
+					}, f)), r.a.createElement(Ne.b, ze()({
+						id: "monthlyHOA",
+						label: "HOA dues",
+						overlayRight: "/month",
+						tooltip: ea
+					}, h, Le.a, {
+						errorText: "Invalid HOA dues"
+					})))), r.a.createElement("div", null, g, r.a.createElement(Ne.b, ze()({
+						id: "downPayment",
+						label: "Down payment"
+					}, c, Le.a, {
+						errorText: "Invalid down payment"
+					})), r.a.createElement(Re.a, {
+						initialShown: !1,
+						more: r.a.createElement("a", null, "Advanced\xa0", r.a.createElement("span", {
+							className: "zsg-icon-expando-down"
+						})),
+						less: r.a.createElement("a", null, "Simple\xa0", r.a.createElement("span", {
+							className: "zsg-icon-expando-up"
+						}))
+					}, b.customPayment ? "" : r.a.createElement(Ne.b, ze()({
+						id: "dti",
+						label: "Debt-to-income",
+						tooltip: We
+					}, u, Ze, {
+						errorText: "Invalid debt-to-income"
+					})), r.a.createElement(Ne.b, ze()({
+						id: "rate",
+						label: "Interest rate",
+						overlayRight: "%"
+					}, s, Ge, {
+						errorText: "Invalid interest rate"
+					})), r.a.createElement(Ne.b, ze()({
+						id: "term",
+						label: "Loan term",
+						overlayRight: "months",
+						tooltip: Xe
+					}, m, Ye.a, {
+						errorText: "Invalid loan term"
+					})), r.a.createElement(Ne.a, ze()({
+						id: "includeTaxesInsurance",
+						label: "Include taxes/ins.",
+						tooltip: Je
+					}, d)), v))
+				}, a
+			}(r.a.Component);
+		aa.propTypes = {};
+		var ta = Object(g.c)(T)((function(e) {
+				return e
+			}))(aa),
+			na = ue.d.div.withConfig({
+				componentId: "zgmi__sl24br-0"
+			})(["margin:", " ", " ", ";"], Object(me.a)("xs"), Object(me.a)("xl"), Object(de.a)("sm_lte", Object(ue.c)(["display:none;"]))),
+			ra = ue.d.div.withConfig({
+				componentId: "zgmi__sl24br-1"
+			})(["min-height:100px;position:relative;margin-bottom:", ";"], Object(me.a)("xs")),
+			oa = Object(ue.c)(["position:absolute;bottom:0;opacity:0.2;"]),
+			la = Object(ue.d)(Ie).withConfig({
+				componentId: "zgmi__sl24br-2"
+			})(["", " left:", ";"], oa, Object(me.a)("md")),
+			ia = Object(ue.d)(Te).withConfig({
+				componentId: "zgmi__sl24br-3"
+			})(["", " right:", ";"], oa, Object(me.a)("md")),
+			ca = Object(ue.d)(pe.a.Panel).withConfig({
+				componentId: "zgmi__sl24br-4"
+			})(["padding-bottom:", ";"], Object(me.a)("xl")),
+			ua = function(e) {
+				var a = e.dispatch;
+				return r.a.createElement(ge.a, {
+					horizontalPlacement: "right",
+					tweetMessage: "How much house can you afford? Find out with @Zillow's affordability calculator: " + Object(he.a)("mortgage-calculator/house-affordability/") + ".",
+					linkedInTitle: "How Much House Can You Afford?",
+					linkedInMessage: "Use Zillow's affordability calculator to see how much house you can comfortably afford.",
+					emailSubject: "I thought you might like this tool on Zillow",
+					emailMessage: "Check out Zillow's affordability calculator to see how much house you can comfortably afford: " + Object(he.a)("mortgage-calculator/house-affordability/") + ".",
+					onClick: function(e) {
+						var t = e.analyticsEvent;
+						return a(Object(u.c)({
+							event: {
+								label: t
+							}
+						}))
+					},
+					isFluid: !0
+				})
+			};
+		ua.propTypes = {};
+		var sa = function(e) {
+			function a() {
+				for (var a, t = arguments.length, n = new Array(t), r = 0; r < t; r++) n[r] = arguments[r];
+				return (a = e.call.apply(e, [this].concat(n)) || this).onSliderChange = function(e) {
+					var t = a.props,
+						n = t.dispatch;
+					t.inputs.customPayment ? n(Object(g.i)(T, {
+						monthlyPayment: {
+							value: e,
+							fromSlider: !0
+						}
+					})) : n(Object(g.i)(T, {
+						dti: {
+							value: e
+						}
+					}))
+				}, a.onAfterSliderChange = function() {
+					a.props.dispatch(Object(u.c)({
+						event: {
+							label: "Slider Edit"
+						}
+					}))
+				}, a
+			}
+			return ce()(a, e), a.prototype.render = function() {
+				var e, a = this.props,
+					t = a.outputs,
+					n = a.inputs,
+					o = a.dispatch,
+					l = n.dti > 36,
+					i = 40 + 60 * (e = n.customPayment ? n.monthlyPayment / n.monthlyPaymentMax : n.dti / 43),
+					c = 100 - 60 * e,
+					s = Object(he.a)("/mortgage/calculator/affordability/advanced-report/?" + D.a.stringify(n));
+				return r.a.createElement(ye.a, {
+					display: "flex",
+					flexWrap: {
+						default: "wrap-reverse",
+						xl: "nowrap"
+					}
+				}, r.a.createElement(ye.a, {
+					flexGrow: "1"
+				}, r.a.createElement(ta, null)), r.a.createElement(fe.f, {
+					defaultSelected: "homeprice-tab"
+				}, r.a.createElement(fe.c, {
+					display: "flex",
+					justifyContent: "space-between"
+				}, r.a.createElement(pe.a.List, null, r.a.createElement(pe.a.Tab, {
+					id: "homeprice-tab",
+					"aria-controls": "homeprice-panel"
+				}, "Home price"), r.a.createElement(pe.a.Tab, {
+					id: "payment-tab",
+					"aria-controls": "payment-panel"
+				}, "Payment")), r.a.createElement(fe.e, {
+					"aria-label": "calculator-buttons",
+					size: "sm"
+				}, r.a.createElement(fe.b, {
+					href: s,
+					target: "_blank",
+					rel: "noopener noreferrer",
+					onClick: function() {
+						return o(Object(u.c)({
+							event: {
+								label: "Advanced Report Click"
+							}
+						}))
+					}
+				}, "Full report"), r.a.createElement(fe.a, null, r.a.createElement(ua, {
+					dispatch: o
+				})))), r.a.createElement(pe.a.Panels, null, r.a.createElement(ca, {
+					id: "homeprice-panel",
+					"aria-labelledby": "homeprice-tab"
+				}, r.a.createElement(Se, {
+					inputs: n,
+					outputs: t
+				}), r.a.createElement(na, null, r.a.createElement(ra, null, r.a.createElement(la, {
+					"aria-hidden": "true",
+					width: c,
+					height: c
+				}), r.a.createElement(ia, {
+					"aria-hidden": "true",
+					width: i,
+					height: i
+				})), r.a.createElement(se.a, {
+					className: "zmm-affordability-slider",
+					thumbClassName: "zmm-affordability-slider-handle",
+					trackClassName: !n.customPayment && l ? "zmm-affordability-slider-bar-aggressive" : "zmm-affordability-slider-bar-comfortable",
+					withTracks: !0,
+					min: 0,
+					max: n.customPayment ? n.monthlyPaymentMax : 43,
+					value: n.customPayment ? n.monthlyPayment : n.dti,
+					onChange: this.onSliderChange,
+					onAfterChange: this.onAfterSliderChange,
+					renderThumb: function(e) {
+						return r.a.createElement("div", e, r.a.createElement("a", {
+							className: "zmm-affordability-slider-bubble"
+						}, r.a.createElement("span", {
+							className: "zmm-affordability-slider-bubble-text"
+						}, Object(v.c)(t.monthlyPayment) + "/mo")))
+					}
+				}))), r.a.createElement(pe.a.Panel, {
+					id: "payment-panel",
+					"aria-labelledby": "payment-tab"
+				}, r.a.createElement(be.a, t)))), r.a.createElement(fe.d, {
+					flexGrow: "1"
+				}, r.a.createElement(ua, {
+					dispatch: o
+				})))
+			}, a
+		}(r.a.Component);
+		sa.propTypes = {}, sa.propTypes = {};
+		var ma = Object(i.b)((function(e) {
+				return {
+					outputs: P(e),
+					inputs: O(e)
+				}
+			}))(sa),
+			da = t("JZM8"),
+			pa = t.n(da),
+			ya = Object(i.b)((function(e) {
+				return {
+					values: Object(g.n)(T)(e)
+				}
+			}))((function(e) {
+				var a = e.values;
+				return (0, e.children)(Object($.a)("pre-qualify/#" + D.a.stringify(Object.assign({
+					source: "Z_Affordabilitycalculator_Getpre-qualifiedbutton"
+				}, pa()(a, ["annualIncome", "monthlyDebts", "downPayment"]))), !0))
+			})),
+			fa = function(e) {
+				return r.a.createElement(ya, null, (function(a) {
+					return r.a.createElement("a", ze()({
+						href: a
+					}, e))
+				}))
+			},
+			ha = t("je0q"),
+			ba = t("1m+C"),
+			ga = t("rCYp"),
+			va = ["annualIncome", "monthlyDebts", "downPayment"],
+			Ea = function(e) {
+				var a = e.reduxInputs;
+				return r.a.createElement(ba.a, {
+					title: "Next: See how much you can borrow",
+					description: "You've estimated your affordability, now get pre-qualified by a lender to find out just how much you can borrow."
+				}, r.a.createElement(U.a, {
+					marginTop: "md"
+				}, r.a.createElement(ga.a, {
+					onSubmit: function(e) {
+						return new Promise((function(t, n) {
+							var r, o, l;
+							r = e.zipCode;
+							var i = function() {
+									try {
+										return t()
+									} catch (e) {
+										return n(e)
+									}
+								},
+								c = function(e) {
+									try {
+										return i()
+									} catch (a) {
+										return n(a)
+									}
+								};
+							try {
+								return Promise.resolve(a.validateInputs(va)).then((function(e) {
+									try {
+										return o = pa()(a.values, va), l = D.a.stringify(Object.assign({
+											source: "Z_Affordabilitycalculator_Getpre-qualifiedbutton",
+											zipCode: r
+										}, o)), Object(ha.trackEvent)({
+											category: "Mortgages",
+											action: "Affordability Calculator",
+											label: "C Column: Get pre-qualified",
+											href: Object(he.a)("pre-qualify/#" + l)
+										}), i()
+									} catch (t) {
+										return c()
+									}
+								}), c)
+							} catch (u) {
+								c()
+							}
+						}))
+					}
+				})))
+			};
+		Ea.propTypes = {};
+		var wa = Object(g.c)(T)((function(e) {
+				return e
+			}))(Ea),
+			Ia = t("rkRe"),
+			Oa = t("wXop"),
+			Ta = t("MSe4"),
+			Pa = function() {
+				return r.a.createElement(Ta.b, {
+					title: "Frequently asked questions about affordability"
+				}, r.a.createElement(Oa.a, {
+					content: Ia.a,
+					topic: "affordability"
+				}))
+			},
+			xa = t("7YxX"),
+			ja = [{
+				title: "Low down payment mortgages",
+				description: "Looking for a low down payment home loan? Here's a look at home loan options that allow for down payments of 3.5% or less.",
+				link: Object(he.a)("mortgage-learning/guide-low-payment-mortgages/")
+			}, {
+				title: "How to qualify for a mortgage",
+				description: "When you apply for a loan, a lender will scrutinize your financial situation to make sure you qualify. Here's what they're looking for.",
+				link: Object(he.a)("mortgage-learning/qualifying-for-a-mortgage/")
+			}, {
+				title: "Buying with bad credit",
+				description: "If you have bad credit and fear you'll be denied for a mortgage, don't worry. You may still be able to get a loan with a low credit score.",
+				link: Object(he.a)("mortgage-learning/bad-credit-home-loans/")
+			}],
+			Ca = function() {
+				return r.a.createElement(Ta.b, {
+					title: "Related Articles"
+				}, r.a.createElement(xa.a, {
+					list: ja,
+					category: "Affordability Calculator",
+					action: "Calculator page - affordability article click"
+				}))
+			},
+			ka = function(e) {
+				var a = e.initializeCalculator,
+					t = e.title,
+					o = e.metaDescription;
+				return Object(n.useEffect)((function() {
+					var e = {};
+					if (0 === document.location.search.indexOf("?")) {
+						var t = D.a.parse(document.location.search.substring(1));
+						e = z()(t, (function(e, a) {
+							var t;
+							return "function" === typeof(null === (t = T[a]) || void 0 === t ? void 0 : t.queryParser) ? T[a].queryParser(e) : e
+						}))
+					}
+					a(e)
+				}), [a]), r.a.createElement(N.a, {
+					current: "Mortgages"
+				}, r.a.createElement(F.a, {
+					subNav: r.a.createElement(V.b, null)
+				}, r.a.createElement(Y.a, {
+					id: "zmm-calc-affordability",
+					"data-za-category": "Mortgages",
+					"data-za-action": t,
+					subNav: r.a.createElement(V.b, null),
+					title: t,
+					metaDescription: o,
+					calculator: r.a.createElement(r.a.Fragment, null, r.a.createElement(ma, null), r.a.createElement(Z.a, {
+						breakpoint: "lg"
+					}, r.a.createElement(R.a, null, r.a.createElement(fa, {
+						className: "zsg-button_primary",
+						"data-za-label": "Stickybar: Get pre-qualified"
+					}, "Get pre-qualified")))),
+					upSell: r.a.createElement(wa, null)
+				}), r.a.createElement(q.b, {
+					calculators: [q.a.payment, q.a.va, q.a.dti, q.a.refinance]
+				}), r.a.createElement(oe, null), r.a.createElement(J, null), r.a.createElement(le, null), r.a.createElement(ne, null), r.a.createElement(Pa, null), r.a.createElement(Ca, null), r.a.createElement(L.a, null)))
+			};
+		ka.propTypes = {};
+		var Aa = ka,
+			Ma = Object(i.b)(null, (function(e) {
+				return {
+					initializeCalculator: function() {
+						return e(S.apply(void 0, arguments))
+					}
+				}
+			}))(Aa),
+			Sa = function(e) {
+				return r.a.createElement(i.a, {
+					store: A
+				}, r.a.createElement(Ma, e))
+			},
+			_a = function(e) {
+				var a = e.head,
+					t = e.page;
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement(o.a, a), r.a.createElement(Sa, {
+					title: t.title,
+					metaDescription: t.metaDescription
+				}))
+			};
+		_a.propTypes = {};
+		var za = _a,
+			Ha = !0
+	},
+	wSls: function(e, a, t) {
+		"use strict";
+		t.d(a, "a", (function() {
+			return o
+		}));
+		var n = t("CtYs"),
+			r = t("h7Yp"),
+			o = function(e, a, t) {
+				return function(o) {
+					return new Promise((function(l, i) {
+						var c;
+						return Promise.resolve(Object(r.a)(a)).then((function(a) {
+							try {
+								return c = a, o(Object(n.f)(e, t(c), {
+									automatedInput: !0,
+									suppressChange: !0
+								})), l()
+							} catch (r) {
+								return i(r)
+							}
+						}), i)
+					}))
+				}
+			}
+	}
+},
+[
+	["Us3G", 0, 1, 11, 2, 3, 4, 5, 7, 6, 9, 10, 12, 13, 14, 15, 17, 19, 20, 24, 8]
+]
+]);
