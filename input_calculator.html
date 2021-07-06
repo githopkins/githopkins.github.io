@@ -111,6 +111,8 @@
 				greatestValue = beforeInterest + interestAdded;
 				monthlyPaymentEstimate = Math.ceil(parseInt(greatestValue)/360);
 				homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + greatestValue;
+				$("#detailed-view").removeClass("hide");
+				$("#other-cost-toggle").removeClass("hide");
 				$("#homehunt-search-price").removeClass("hide");
 				$('#homehunt-search-price').attr('href', homeHuntLink);
 				$("#interest-rate-total").text("$" + interestAdded).digits();
@@ -123,7 +125,6 @@
 			$("#other-cost-toggle").click(function(event) {
 				event.preventDefault();
 				$('#other-costs-container').removeClass("hide");
-				$("#other-cost-toggle").addClass("hide");
 			});
 		});
 		</script>
@@ -146,7 +147,7 @@
 					<!-- <label>Maximum Per Month</label> -->
 					<input type="hidden" name="monthly-payment-display" disabled>
 					<input type="hidden" name="monthly-income">
-					<strong> <a href="" id="other-cost-toggle">Toggle Other Cost Calculations</a></strong>
+					<strong> <a href="" id="other-cost-toggle" class="hide">Toggle Other Cost Calculations</a></strong>
 					<div id="other-costs-container" class="hide">
 						<div class="monthly-debt-sub-breakdown">
 							<label>Car Payment</label>
@@ -184,8 +185,9 @@
 				<div id="monthly-payment-target">
 					<h4>Monthly Payments</h4>
 					<p><strong><span style="background: #7FC24A; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="estimated-monthly-payment">$0</span></strong>Based on your targeted monthly payment, we recommend your monthly income to be at <strong>least</strong> this value:</p>
+					<div id="detailed-view" class="hide">
 					<h4>Recommended Minimum Monthly Income</h4>
-					<p><strong><span style="background: #a900a7; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="targeted-monthly-income">$0</span></strong>
+					<p><strong><span style="background: #a900a7; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="targeted-monthly-income">$0</span></strong></p>
 					<p>Based on recommendations that your monthly mortgage payments should not exceed 28% of your total monthly income with a mortgage term of 30 years, we estimate your monthly payments should be at or below your desired target.</p>
 					<p><strong>This is reflected in our <span style="background: #006fa9; padding: 2px 6px; color: #fff;">suggestion</span></strong></p>
 					<h3>We Suggest</h3>
@@ -195,8 +197,7 @@
 					<p><a href="" id="homehunt-search-price" class="hide"><strong>Use this budget at HomeHunt.</strong></a></p>
 					<h4>After Expenses</h4>
 					<p><strong><span style="background: #7348c2; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="after-expenses-display">$0</span></strong>What we estimate to be your remaining balance, after your mortgage payment and other expenses (if calculated) from your Recommended Minimum Income to be. 
-					</p>
-					<!-- <p>Before Interest: <strong><span id="house-before-interest">$0</span></strong>  -->
+				</p></div>
 				</div>
 			</div>
 		</div>
