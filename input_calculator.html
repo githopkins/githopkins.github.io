@@ -63,8 +63,9 @@
 			var beforeInterest;
 			var interestAdded;
 			var interestRateDeclared = $('input[name="simple-interest"]').val();
-			var interestRate = ".00" + $('input[name="simple-interest"]').val();
+			var interestRate = ".0" + $('input[name="simple-interest"]').val();
 			var greatestValue;
+			var monthlyPaymentEstimate;
 			// var monthlyIncome;
 			// var carPayment = $('input[name="car-payment-costs"]').attr("value", 0);
 			// var creditCards = $('input[name="credit-cards-costs"]').attr("value", 0);
@@ -76,7 +77,7 @@
 			var slider = $('#slide-selection')[0];
 			var sliderdisplaytext = $('#slider-value-display')[0];
 			slider.oninput = function() {
-			  sliderdisplaytext.innerHTML = this.value;
+			  sliderdisplaytext.innerHTML = slider.value;
 			  var slidervalue = sliderdisplaytext.innerHTML;
 			  $('input[name="monthly-payment"]').attr("value", parseInt(slidervalue));
 			  $('input[name="monthly-income"]').attr("value", Math.ceil(parseInt(slidervalue) / .28));
@@ -92,10 +93,13 @@
 			  // $("#afforded-house-target").text("$" + appliedInterest);
 			  greatestValue = beforeInterest + interestAdded;
 			  $("#afforded-house-target").text("$" + greatestValue);
+			  monthlyPaymentEstimate = Math.ceil(parseInt(greatestValue)/360);
 			  $('#monthly-payment-target').removeClass("hide");
-			  var homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + greatestValue;
+			  var homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + $("#afforded-house-target").text();
 			  $("#homehunt-search-price").removeClass("hide");
 			  $('#homehunt-search-price').attr('href', homeHuntLink);
+			  $("#estimated-monthly-payment").text("$" + monthlyPaymentEstimate);
+			  $('input[name="monthly-payment-display"]').attr("value", parseInt(monthlyPaymentEstimate));
 			};
 			$(":input").on("keyup change", function(e) {
 				interestRateDeclared = $('input[name="simple-interest"]').val();
@@ -103,8 +107,10 @@
 				$("#interest-rate-declared").text(interestRateDeclared + "%");
 				interestAdded = Math.ceil(parseInt(beforeInterest) * interestRate);
 				greatestValue = beforeInterest + interestAdded;
+				homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + greatestValue;
 				$("#interest-rate-total").text("$" + interestAdded);
 				$("#afforded-house-target").text("$" + greatestValue);
+				$('input[name="monthly-payment-display"]').attr("value", parseInt(monthlyPaymentEstimate));
 			});
 		});
 		</script>
@@ -122,8 +128,10 @@
 					<div class="slide-container">
 						<input type="range" min="10" max="2000" value="" id="slide-selection">
 					</div>
-					<small>MAXIMUM $<span id="slider-value-display">0</span>/month</small>
+					<small class="hide">MAXIMUM $<span id="slider-value-display">0</span>/month</small>
 					<input type="hidden" name="monthly-payment">
+					<label>Maximum Per Month</label>
+					<input type="text" name="monthly-payment-display" disabled>
 					<input type="hidden" name="monthly-income">
 				</div>
 				<div id="advance-calculator" class="hide">
@@ -177,10 +185,10 @@
 			<div class="results">
 				<div id="monthly-payment-target">
 					<p>Based on your targeted monthly payment, we recommend your monthly income to be at <u>least</u> <strong><span id="targeted-monthly-income">$0</span></strong>.</p>
-					<!-- <p>Before Interest: <strong><span id="house-before-interest">$0</span></strong>  -->
+					<p>Before Interest: <strong><span id="house-before-interest">$0</span></strong> 
 					<p>We recommend looking for a house no greater than <strong><span id="afforded-house-target">$0</span></strong> 
 					<p>With an interest rate of <strong><span id="interest-rate-declared">3%</span></strong>, we calculate you will accrue a total of <strong><span id="interest-rate-total">$0</span></strong> throughout the life of your loan.</p> 
-					<!-- <p>With a monthly payment of an estimated <strong><span id="estimated-monthly-income">$0</span></strong>.</p> -->
+					<p>With a monthly payment of an estimated <strong><span id="estimated-monthly-payment">$0</span></strong>.</p>
 					<p><a href="" id="homehunt-search-price" ><strong>Use this budget at HomeHunt.</strong></a></p>
 					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
 					<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
