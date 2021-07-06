@@ -65,6 +65,7 @@
 			}
 			var loanTerm = parseInt($('input[name="loan-term"]').val());
 			var monthlyPayment;
+			var monthlyIncome;
 			var beforeInterest;
 			var interestAdded;
 			var interestRateDeclared = $('input[name="simple-interest"]').val();
@@ -72,14 +73,14 @@
 			var greatestValue;
 			var monthlyPaymentEstimate;
 			var homeHuntLink;
-			// var monthlyIncome;
-			// var carPayment = $('input[name="car-payment-costs"]').attr("value", 0);
-			// var creditCards = $('input[name="credit-cards-costs"]').attr("value", 0);
-			// var subscriptions = $('input[name="subscriptions-costs"]').attr("value", 0);
-			// var insurance = $('input[name="insurance-costs"]').attr("value", 0);
-			// var utilities = $('input[name="utilities-costs"]').attr("value", 0);
-			// var groceries = $('input[name="groceries-costs"]').attr("value", 0);
-			// var other = $('input[name="other-costs"]').attr("value", 0);
+			var afterExpensesCalculation;
+			var carPayment = $('input[name="car-payment-costs"]').val(0);
+			var creditCards = $('input[name="credit-cards-costs"]').val(0);
+			var subscriptions = $('input[name="subscriptions-costs"]').val(0);
+			var insurance = $('input[name="insurance-costs"]').val(0);
+			var utilities = $('input[name="utilities-costs"]').val(0);
+			var groceries = $('input[name="groceries-costs"]').val(0);
+			var other = $('input[name="other-costs"]').val(0);
 			var slider = $('#slide-selection')[0];
 			var sliderdisplaytext = $('#slider-value-display')[0];
 			slider.oninput = function() {
@@ -91,6 +92,16 @@
 			  monthlyIncome = $('input[name="monthly-income"]').val();
 			};
 			$(":input").on("input keyup change", function(e) {
+				carPayment = $('input[name="car-payment-costs"]').val();
+				creditCards = $('input[name="credit-cards-costs"]').val();
+				subscriptions = $('input[name="subscriptions-costs"]').val();
+				insurance = $('input[name="insurance-costs"]').val();
+				utilities = $('input[name="utilities-costs"]').val();
+				groceries = $('input[name="groceries-costs"]').val();
+				other = $('input[name="other-costs"]').val();
+				var totalAdditionalCosts = parseInt(carPayment) + parseInt(creditCards) + parseInt(subscriptions) + parseInt(insurance) + parseInt(utilities) + parseInt(groceries) + parseInt(other);
+				console.log(totalAdditionalCosts);
+				$('input[name="total-additional-costs"]').val(totalAdditionalCosts)
 				$("#targeted-monthly-income").text("$" + monthlyIncome).digits();
 				beforeInterest = Math.ceil(parseInt(monthlyIncome)*360*.28);
 				interestRateDeclared = $('input[name="simple-interest"]').val();
@@ -106,6 +117,13 @@
 				$("#estimated-monthly-payment").text("$" + monthlyPaymentEstimate).digits();
 				$("#afforded-house-target").text("$" + greatestValue).digits();
 				$('input[name="monthly-payment-display"]').attr("value", parseInt(monthlyPaymentEstimate));
+				afterExpensesCalculation = monthlyIncome - monthlyPaymentEstimate - totalAdditionalCosts;
+				$("#after-expenses-display").text("$" + afterExpensesCalculation).digits();
+			});
+			$("#other-cost-toggle").click(function(event) {
+				event.preventDefault();
+				$('#other-costs-container').removeClass("hide");
+				$("#other-cost-toggle").addClass("hide");
 			});
 		});
 		</script>
@@ -117,8 +135,8 @@
 					<h3>Affordability Calculation</h3>
 					<!-- <label>Loan Term (in years)</label> -->
 					<input type="hidden" value="30" name="loan-term">
-					<label>Interest Rate</label>
-					<input type="text" name="simple-interest" value="3">
+					<!-- <label>Interest Rate</label> -->
+					<input type="hidden" name="simple-interest" value="3">
 					<label>Maximum Desired Monthly Payment</label>
 					<div class="slide-container">
 						<input type="range" min="10" max="2000" value="" id="slide-selection">
@@ -128,66 +146,58 @@
 					<!-- <label>Maximum Per Month</label> -->
 					<input type="hidden" name="monthly-payment-display" disabled>
 					<input type="hidden" name="monthly-income">
-				</div>
-				<!-- <div id="advance-calculator" class="hide">
-					<h3>Affordability Calculation</h3>
-					<label>Monthly Income</label>
-					<input type="text" name="advance-monthly-income">
-					<label>Loan Term</label>
-					<input type="text" name="advance-loan-term">
-					<label>Interest Rate</label>
-					<input type="text" name="advance-interest-rate">
-					<label>Monthly Debts Breakdown</label>
-					<div class="monthly-debt-breakdown-container">
-							<div class="monthly-debt-sub-breakdown">
-								<label>Car Payment</label>
-								<input type="text" name="car-payment-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Credit Cards</label>
-								<input type="text" name="credit-cards-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Subscriptions</label>
-								<input type="text" name="subscriptions-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Insurance</label>
-								<input type="text" name="insurance-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Utilities</label>
-								<input type="text" name="utilities-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Groceries</label>
-								<input type="text" name="groceries-costs">
-							</div>
-							<div class="monthly-debt-sub-breakdown">
-								<label>Other</label>
-								<input type="text" name="other-costs">
-							</div>
+					<strong> <a href="" id="other-cost-toggle">Toggle Other Cost Calculations</a></strong>
+					<div id="other-costs-container" class="hide">
+						<div class="monthly-debt-sub-breakdown">
+							<label>Car Payment</label>
+							<input type="text" name="car-payment-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Credit Cards</label>
+							<input type="text" name="credit-cards-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Subscriptions</label>
+							<input type="text" name="subscriptions-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Insurance</label>
+							<input type="text" name="insurance-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Utilities</label>
+							<input type="text" name="utilities-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Groceries</label>
+							<input type="text" name="groceries-costs">
+						</div>
+						<div class="monthly-debt-sub-breakdown">
+							<label>Other</label>
+							<input type="text" name="other-costs">
+						</div>
+						<input type="hidden" name="total-additional-costs">
 					</div>
-					<label>Total Monthly Expenses</label>
-					<input type="text" value="" name="monthly-debts">
-					<button type="button" id="calculate">Calculate</button>
-				</div> -->
+				</div>
 			</form> 
 			<div class="results">
 				<div id="monthly-payment-target">
 					<h4>Monthly Payments</h4>
-					<p><strong><span style="background: #7FC24A; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="estimated-monthly-payment">$0</span></strong>
-					We estimate your monthly payments should be at or below your desired target. </p>
-					<h4>Monthly Income</h4>
-					<p>Based on your targeted monthly payment, we recommend your monthly income to be at <u>least</u> <strong><span id="targeted-monthly-income">$0</span></strong>.</p>
-					<p>This is based off recommendations that your monthly mortgage payments should not exceed 28% of your total monthly income with a mortgage term of 30 years.</p>
-					<!-- <p>Before Interest: <strong><span id="house-before-interest">$0</span></strong>  -->
-					<h4>Interest</h4> 
-					<p>With an interest rate of <strong><span id="interest-rate-declared">3%</span></strong>, we calculate that you will accrue a total of <strong><span id="interest-rate-total">$0</span></strong> throughout the life of your loan.</p> 
+					<p><strong><span style="background: #7FC24A; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="estimated-monthly-payment">$0</span></strong>Based on your targeted monthly payment, we recommend your monthly income to be at <strong>least</strong> this value:</p>
+					<h4>Recommended Minimum Monthly Income</h4>
+					<p><strong><span style="background: #a900a7; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: -10px 0 10px; "id="targeted-monthly-income">$0</span></strong>
+					<p>Based on recommendations that your monthly mortgage payments should not exceed 28% of your total monthly income with a mortgage term of 30 years, we estimate your monthly payments should be at or below your desired target.</p>
+					<p><strong>This is reflected in our <span style="background: #006fa9; padding: 2px 6px; color: #fff;">suggestion</span></strong></p>
 					<h3>We Suggest</h3>
-					<p>We recommend looking for a house no greater than <strong><span style="background: #006fa9; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: 10px 0; "id="afforded-house-target">$0</span></strong>
-					<p><a href="" id="homehunt-search-price" ><strong>Use this budget at HomeHunt.</strong></a></p>
+					<p><strong><span style="background: #006fa9; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: 10px 0; "id="afforded-house-target">$0</span></strong> To account for interest added, we recommend looking for a house no greater than this value. </p>
+					<p>With an interest rate of <strong><span id="interest-rate-declared">3%</span></strong>, we calculate that you will accrue a total of <strong><span id="interest-rate-total">$0</span></strong> throughout the life of your loan.</p>
+					<p><strong>This is reflected in our <span style="background: #006fa9; padding: 2px 6px; color: #fff;">suggestion</span> to not exceed your <span style="background: #7FC24A; padding: 2px 6px; color: #fff;">budget</span></strong></p>
 					
+					<p><a href="" id="homehunt-search-price" ><strong>Use this budget at HomeHunt.</strong></a></p>
+					<h4>After Expenses</h4>
+					<p>We estimate to be your remaining balance, after your mortgage payment and other expenses (if calculated) from your Recommended Minimum Income to be: <strong><span style="background: #7348c2; color: white;font-size: 20px; padding: 10px 8px; display: block; margin: 10px 0 10px; "id="after-expenses-display">$0</span></strong>
+					</p>
+					<!-- <p>Before Interest: <strong><span id="house-before-interest">$0</span></strong>  -->
 				</div>
 			</div>
 		</div>
