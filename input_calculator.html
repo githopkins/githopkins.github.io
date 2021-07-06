@@ -76,24 +76,11 @@
 			  var affordedTarget = Math.ceil(parseInt(monthlyIncome)*360*.28);
 			  $("#afforded-house-target").text("$" + affordedTarget);
 			  $('#monthly-payment-target').removeClass("hide");
+			  var homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + affordedTarget;
+			  $('#homehunt-search-price').attr('href', homeHuntLink);
 			};
 			$('#calculate').click(function(){
-				$("#estimated-monthly-income").text(monthlyIncome);
-				// carPayment = parseInt($('input[name="car-payment-costs"]').val());
-				// creditCards = parseInt($('input[name="credit-cards-costs"]').val());
-				// subscriptions = parseInt($('input[name="subscriptions-costs"]').val());
-				// insurance = parseInt($('input[name="insurance-costs"]').val());
-				// utilities = parseInt($('input[name="utilities-costs"]').val());
-				// groceries = parseInt($('input[name="groceries-costs"]').val());
-				// other = parseInt($('input[name="other-costs"]').val());
-				// $('input[name="monthly-debts"]').val(carPayment + creditCards + subscriptions + insurance + utilities + groceries + other);
-				// var totalCosts = $('input[name="monthly-debts"]').val();
-				// console.log(loanTerm * 12 + " total payments");
-				// console.log(monthlyPayment + " monthly payment cost");
-				// console.log(monthlyIncome + " total monthly income");
-				// console.log(totalCosts + " total monthly costs");
-				// var remainingBalance = parseInt(monthlyIncome)  parseInt(totalCosts);
-				// console.log(remainingBalance);
+				
 			});
 			$("#advance-calculator-toggle a").click(function(event) {
 				event.preventDefault();
@@ -183,15 +170,15 @@
 				<div id="monthly-payment-target">
 					<p>Based on your targeted monthly payment, we recommend your monthly income to be at <u>least</u> <strong><span id="estimated-monthly-income">$0</span></strong>.</p> 
 					<p>Based on your answers, we recommend looking for a house no greater than <strong><span id="afforded-house-target">$0</span></strong>.</p>
-					<p><a href=""><strong>Use this budget at HomeHunt</strong></a></p>
+					<p><a href="" id="homehunt-search-price"><strong>Use this budget at HomeHunt.</strong></a></p>
 					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
 					<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
 					<p id="advance-calculator-toggle"><a href=""><strong>Interested in a more advanced calculator? <span style="background: red; color: white; text-decoration: none;">(NOT FUNCTIONING YET)</span></strong></a></p>
 				</div>
 				<div id="advance-calculator-results" class="hide">
 					<p>With consideration for your monthly debts, such as car payments, insurance, utility bills and groceries, we recommend looking for a house no greater than <strong><span id="afforded-house-target-advance">$$$$$$</span></strong>.</p>
-					<p><a href=""><strong>Use this budget at HomeHunt</strong></a></p>
-					<p>We recommend paying a maximum monthly payment of <strong><span id="estimated-monthly-income-advance">$$$$</span></strong>.</p> 
+					<p><a href="" id="homehunt-search-price"><strong>Use this budget at HomeHunt.</strong></a></p>
+					<p>Based on your monthly income and expenses, we recommend seeking a mortgage that allows you to pay a maximum monthly payment of <strong><span id="estimated-monthly-income-advance">$$$$</span></strong>.</p> 
 					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income.</p>
 					<p id="simple-calculator-toggle"><a href=""><strong>Interested in our simple calculator?</strong></a></p>
 				</div>
