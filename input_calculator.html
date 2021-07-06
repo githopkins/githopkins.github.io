@@ -106,6 +106,7 @@
 				beforeInterest = Math.ceil(parseInt(monthlyIncome)*360*.28);
 				interestRateDeclared = $('input[name="simple-interest"]').val();
 				interestRate = ".0" + $('input[name="simple-interest"]').val();
+				interestRate = Math.ceil(interestRate * 360);
 				$("#interest-rate-declared").text(interestRateDeclared + "%");
 				interestAdded = Math.ceil(parseInt(beforeInterest) * interestRate);
 				greatestValue = beforeInterest + interestAdded;
