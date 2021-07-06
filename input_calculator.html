@@ -77,27 +77,28 @@
 			  $("#afforded-house-target").text("$" + affordedTarget);
 			  $('#monthly-payment-target').removeClass("hide");
 			  var homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + affordedTarget;
+			  $("#homehunt-search-price").removeClass("hide");
 			  $('#homehunt-search-price').attr('href', homeHuntLink);
 			};
 			$('#calculate').click(function(){
 				
 			});
-			$("#advance-calculator-toggle a").click(function(event) {
-				event.preventDefault();
-				$("#advance-calculator").removeClass("hide");
-				$("#advance-calculator-toggle").addClass("hide");
-				$("#simple-calculator").addClass("hide");
-				$("#monthly-payment-target").addClass("hide");
-				$("#advance-calculator-results").removeClass("hide");
-			});
-			$("#simple-calculator-toggle a").click(function(event) {
-				event.preventDefault();
-				$("#advance-calculator").addClass("hide");
-				$("#advance-calculator-toggle").removeClass("hide");
-				$("#simple-calculator").removeClass("hide");
-				$("#monthly-payment-target").removeClass("hide");
-				$("#advance-calculator-results").addClass("hide");
-			});
+			// $("#advance-calculator-toggle a").click(function(event) {
+			// 	event.preventDefault();
+			// 	$("#advance-calculator").removeClass("hide");
+			// 	$("#advance-calculator-toggle").addClass("hide");
+			// 	$("#simple-calculator").addClass("hide");
+			// 	$("#monthly-payment-target").addClass("hide");
+			// 	$("#advance-calculator-results").removeClass("hide");
+			// });
+			// $("#simple-calculator-toggle a").click(function(event) {
+			// 	event.preventDefault();
+			// 	$("#advance-calculator").addClass("hide");
+			// 	$("#advance-calculator-toggle").removeClass("hide");
+			// 	$("#simple-calculator").removeClass("hide");
+			// 	$("#monthly-payment-target").removeClass("hide");
+			// 	$("#advance-calculator-results").addClass("hide");
+			// });
 		});
 		</script>
 	</head>
@@ -170,14 +171,14 @@
 				<div id="monthly-payment-target">
 					<p>Based on your targeted monthly payment, we recommend your monthly income to be at <u>least</u> <strong><span id="estimated-monthly-income">$0</span></strong>.</p> 
 					<p>Based on your answers, we recommend looking for a house no greater than <strong><span id="afforded-house-target">$0</span></strong>.</p>
-					<p><a href="" id="homehunt-search-price"><strong>Use this budget at HomeHunt.</strong></a></p>
+					<p><a href="" id="homehunt-search-price" class="hide"><strong>Use this budget at HomeHunt.</strong></a></p>
 					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income assuming you have selected a mortgage of 30 years.</p>
 					<p>This estimate does not take into account your monthly debts, such as car payments, insurance, utility bills and groceries.</p>
 					<p id="advance-calculator-toggle"><a href=""><strong>Interested in a more advanced calculator? <span style="background: red; color: white; text-decoration: none;">(NOT FUNCTIONING YET)</span></strong></a></p>
 				</div>
 				<div id="advance-calculator-results" class="hide">
 					<p>With consideration for your monthly debts, such as car payments, insurance, utility bills and groceries, we recommend looking for a house no greater than <strong><span id="afforded-house-target-advance">$$$$$$</span></strong>.</p>
-					<p><a href="" id="homehunt-search-price"><strong>Use this budget at HomeHunt.</strong></a></p>
+					<p><a href="" id="homehunt-search-price" class="hide"><strong>Use this budget at HomeHunt.</strong></a></p>
 					<p>Based on your monthly income and expenses, we recommend seeking a mortgage that allows you to pay a maximum monthly payment of <strong><span id="estimated-monthly-income-advance">$$$$</span></strong>.</p> 
 					<p>This is based off recommendations that your monthly mortgage payments should not be greater than 28% of your total monthly income.</p>
 					<p id="simple-calculator-toggle"><a href=""><strong>Interested in our simple calculator?</strong></a></p>
