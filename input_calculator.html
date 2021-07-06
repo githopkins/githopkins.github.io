@@ -110,7 +110,7 @@
 				interestAdded = Math.ceil(parseInt(beforeInterest) * interestRate);
 				greatestValue = beforeInterest + interestAdded;
 				monthlyPaymentEstimate = Math.ceil(parseInt(greatestValue)/360);
-				homeHuntLink = "https://homehunt.ylopo.com/search?s[maxPrice]=" + greatestValue;
+				homeHuntLink = "https://homehunt.ylopo.com/search/map?s[maxPrice]=" + greatestValue;
 				$("#detailed-view").removeClass("hide");
 				$("#other-cost-toggle").removeClass("hide");
 				$("#homehunt-search-price").removeClass("hide");
