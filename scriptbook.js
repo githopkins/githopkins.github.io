@@ -31,6 +31,7 @@ $(function() {
 	};
 	
 	// Begin live site code
+	$("#copyrights > img").attr('src', 'https://annie-mac.com/dev/themes/annie_mac/img/equalhousingwhite.png');
 	var annieMacLogo = $("#navigation_new_upper > div:nth-child(1) > li > a > img").attr('src');
 	if (annieMacLogo === "/uploads/sites/10713/public/AMLogoTEST_2_1.png") {
 	$("#navigation_new_upper > div:nth-child(1) > li > a > img").attr('src', 'https://annie-mac.com/uploads/sites/10713/public/AMLogoTEST_2_1.png');
