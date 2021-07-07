@@ -31,6 +31,10 @@ $(function() {
 	};
 	
 	// Begin live site code
+	var annieMacLogo = $("#navigation_new_upper > div:nth-child(1) > li > a > img").attr('src');
+	if (annieMacLogo === "/uploads/sites/10713/public/AMLogoTEST_2_1.png") {
+	$("#navigation_new_upper > div:nth-child(1) > li > a > img").attr('src', 'https://annie-mac.com/uploads/sites/10713/public/AMLogoTEST_2_1.png');
+	};
 	$(".navigation-sidebar-sectional .menu .option-listing").addClass("open-sub");
 	$(".navigation-sidebar-sectional .nav h4 a").click(function(event) {
 		event.preventDefault();
